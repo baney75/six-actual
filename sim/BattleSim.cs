@@ -65,6 +65,22 @@ public static class BattleSim
         return state;
     }
 
+    public static BattleState CreateArtillery()
+    {
+        var defs = new[]
+        {
+            new UnitDef { Id = "gun", Kind = UnitDef.KindArtillery, SpeedMmS = 0, Hp = 40, Ammo = 6, RangeM = 2000, ReloadTicks = 5, OpticsM = 1000, PenMm = 80 },
+            new UnitDef { Id = "target", Kind = UnitDef.KindTank, SpeedMmS = 0, Hp = 80, ArmorFront = 20, ArmorSide = 10, OpticsM = 100 },
+        };
+        var state = NewState(defs, 400, 12);
+        state.Units =
+        [
+            Make(defs, 0, 0, 0, 40, 200),
+            Make(defs, 1, 1, 1, 200, 200),
+        ];
+        return state;
+    }
+
     public static BattleState CreateSupply()
     {
         var defs = new[]
@@ -180,6 +196,28 @@ public static class BattleSim
             Step(state, orders);
         }
     }
+
+    public static int WeatherScale(int weather) => weather switch
+    {
+        1 => 75,
+        2 => 45,
+        3 => 60,
+        4 => 55,
+        _ => 100,
+    };
+
+    public static bool SeenBy(BattleState state, int player, int unitIndex)
+    {
+        var unit = state.Units[unitIndex];
+        if (unit.Player == player)
+        {
+            return true;
+        }
+
+        return (unit.Spotted & (1 << player)) != 0;
+    }
+
+    public static readonly string[] CommanderSeats = ["XO", "Army1", "Army2", "Arty1", "Arty2", "Air1", "Air2", "Armor", "Logistics"];
 
     public static int Penetration(UnitDef def, int rangeM)
     {
@@ -384,6 +422,10 @@ public static class BattleSim
         if (unit.Z.Raw < Fp.FromInt(180).Raw)
         {
             unit.Z += Fp.FromInt(4);
+            if (unit.Fuel > 0)
+            {
+                unit.Fuel--;
+            }
         }
 
         if (unit.Fuel > 0)
@@ -487,7 +529,7 @@ public static class BattleSim
                 continue;
             }
 
-            var optics = state.Defs[state.Units[i].Def].OpticsM;
+            var optics = state.Defs[state.Units[i].Def].OpticsM * WeatherScale(state.Weather) / 100;
             if ((state.Units[i].Flags & BattleState.FlagOptics) != 0)
             {
                 optics /= 2;
@@ -512,7 +554,7 @@ public static class BattleSim
                     continue;
                 }
 
-                state.Units[j].Spotted = 1;
+                state.Units[j].Spotted |= 1 << state.Units[i].Player;
             }
         }
     }

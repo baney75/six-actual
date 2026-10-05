@@ -40,6 +40,12 @@ public partial class Main : Node
         var play = new Button { Text = "Fulda skirmish" };
         play.Pressed += () => CallDeferred(MethodName.StartBattle);
         box.AddChild(play);
+        var campaign = new Button { Text = "Cold War campaign" };
+        campaign.Pressed += () => CallDeferred(MethodName.StartCampaign);
+        box.AddChild(campaign);
+        var strategy = new Button { Text = "Grand strategy" };
+        strategy.Pressed += () => CallDeferred(MethodName.StartStrategy);
+        box.AddChild(strategy);
         var quit = new Button { Text = "Quit" };
         quit.Pressed += () => GetTree().Quit();
         box.AddChild(quit);
@@ -53,6 +59,20 @@ public partial class Main : Node
     {
         var battle = new BattleView();
         GetTree().Root.AddChild(battle);
+        QueueFree();
+    }
+
+    void StartCampaign()
+    {
+        var screen = new CampaignScreen();
+        GetTree().Root.AddChild(screen);
+        QueueFree();
+    }
+
+    void StartStrategy()
+    {
+        var screen = new StrategyScreen();
+        GetTree().Root.AddChild(screen);
         QueueFree();
     }
 }

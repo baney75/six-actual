@@ -121,6 +121,8 @@ public sealed class BattleState
 
     public int Winner;
 
+    public int Weather;
+
     public int LastShotActive;
 
     public Fp LastShotX0;

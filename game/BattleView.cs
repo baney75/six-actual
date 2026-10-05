@@ -7,9 +7,11 @@ public partial class BattleView : Node3D
     readonly System.Collections.Generic.Dictionary<int, Node3D> _views = new();
     BattleState _state = null!;
     Camera3D _camera = null!;
+    public System.Action<int>? OnDecided;
     Label _status = null!;
     Label _result = null!;
     double _accum;
+    bool _reported;
     int _selected = -1;
     bool _shot;
 
@@ -85,9 +87,11 @@ public partial class BattleView : Node3D
         _status.Text = _state.XoCommand == 1
             ? $"XO has the battle.  NATO {alive0}   Pact {alive1}   tick {_state.Tick}"
             : $"Six Actual.  NATO {alive0}   Pact {alive1}   tick {_state.Tick}";
-        if (_state.Winner >= 0 && !_result.Visible)
+        if (_state.Winner >= 0 && !_reported)
         {
+            _reported = true;
             _result.Visible = true;
+            OnDecided?.Invoke(_state.Winner);
             _result.Text = _state.Winner switch
             {
                 0 => "NATO holds the field",

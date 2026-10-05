@@ -15,6 +15,7 @@ public static class BattleHash
             writer.Write(state.Seed);
             writer.Write(state.Winner);
             writer.Write(state.XoCommand);
+            writer.Write(state.Weather);
             writer.Write(state.Units.Length);
             for (var i = 0; i < state.Units.Length; i++)
             {

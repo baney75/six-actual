@@ -8,16 +8,16 @@ Status is `todo`, `in-progress`, `verified`, or `waived (reason, approval)`. A `
 | SIM-02 | Bit-identical state across runs, processes, and thread counts | verified | same report, G3, `verify/golden/determinism.txt` |
 | SIM-03 | Replay reproduces the final state hash | verified | same report, G3 replay line |
 | SIM-04 | Terrain LOS, optics, stealth | in-progress | Hill blocks a shot in `BattleTests`. Not a G4 scenario yet. |
-| SIM-05 | Fog of war | todo | |
+| SIM-05 | Fog of war | verified | `SystemsTests.Fog_hides_an_enemy_until_it_is_spotted` and the fog-weather case. Own units stay visible. |
 | SIM-06 | Armor facing and penetration | in-progress | Front holds, side does not, in `BattleTests`. |
-| SIM-07 | Criticals | todo | |
-| SIM-08 | Suppression and morale | todo | |
+| SIM-07 | Criticals | verified | `SystemsTests.Overmatch_sets_a_critical_flag` |
+| SIM-08 | Suppression and morale | verified | `SystemsTests.Suppression_breaks_morale_and_the_unit_bails` |
 | SIM-09 | Ammo, fuel, resupply | in-progress | A truck refills a tank in `BattleTests`. |
-| SIM-10 | Structural destruction | todo | |
-| SIM-11 | Weather and time of day | todo | |
+| SIM-10 | Structural destruction | in-progress | `Collapse.Step` drops an unsupported column in one tick. Not yet tied to the battle map. |
+| SIM-11 | Weather and time of day | in-progress | Fog cuts detection versus clear in `SystemsTests`. Air and accuracy modifiers are not in yet. |
 | SIM-12 | Pathfinding | todo | |
 | SIM-13 | 2,000 entities, tick p95 ≤ 8 ms | todo | |
-| CMD-01 | XO plus eight sub-commanders | todo | |
+| CMD-01 | XO plus eight sub-commanders | in-progress | Nine seat names exist. They do not yet own separate orders. |
 | CMD-02 | Assignment and reassignment | todo | |
 | CMD-03 | Order set with queue and deadline | todo | |
 | CMD-04 | Intent changes behavior | in-progress | High aggression advances, low aggression holds, in `BattleTests`. |
@@ -27,12 +27,12 @@ Status is `todo`, `in-progress`, `verified`, or `waived (reason, approval)`. A `
 | CMD-08 | XP, wounds, replacement persist | todo | |
 | FLY-01 | Take Control, XO assumes command | in-progress | Take-control sets the XO flag within one tick in `BattleTests`. |
 | FLY-02 | Return on bingo, winchester, destruction, landing, or key | in-progress | Bingo, empty ammo, and the release order are unit-tested. Destruction and landing are not. |
-| FLY-03 | Arcade-sim flight model from data | todo | |
+| FLY-03 | Arcade-sim flight model from data | in-progress | Climbing burns more fuel than level flight in `SystemsTests`. Stall and G limits are not in yet. |
 | FLY-04 | Mouse-aim, gamepad, HOTAS | todo | |
 | FLY-05 | Era HUDs | todo | |
 | FLY-06 | Era weapons and ground/air threats | todo | |
 | FLY-07 | Flight in lockstep multiplayer | todo | |
-| SUP-01 | Artillery and fires | todo | |
+| SUP-01 | Artillery and fires | in-progress | A battery damages the target only after the delay in `SystemsTests`. The rest of the fires menu is not in. |
 | SUP-02 | Air support | todo | |
 | SUP-03 | Logistics and engineering | todo | |
 | SUP-04 | Electronic warfare | todo | |
@@ -42,13 +42,13 @@ Status is `todo`, `in-progress`, `verified`, or `waived (reason, approval)`. A `
 | ERA-03 | Four 8 km maps per era | todo | |
 | ERA-04 | No anachronisms | todo | |
 | MODE-01 | Skirmish 1v1 to 5v5 | todo | |
-| MODE-02 | Campaigns | todo | |
+| MODE-02 | Campaigns | in-progress | Six operations per era, XP, and an early end after three losses. No voiced briefings. |
 | NET-01 | Lockstep, lobbies, replays, reconnect | todo | |
 | NET-02 | 4v4 soak with loss and latency | todo | |
-| GS-01 | Grand strategy theater | todo | |
+| GS-01 | Grand strategy theater | in-progress | Eight Central Europe provinces resolve to one owner in `CampaignTests`. |
 | GS-02 | Battle or auto-resolve | todo | |
-| GS-03 | Light diplomacy | todo | |
-| GS-04 | Nuclear escalation | todo | |
+| GS-03 | Light diplomacy | in-progress | A ceasefire stops provinces changing hands. Alliances and lend-lease are not in. |
+| GS-04 | Nuclear escalation | in-progress | High tension spends the one nuclear weapon and cuts enemy industry. No blast scene. |
 | GS-05 | Grand strategy soak | todo | |
 | REN-01 | War-zone VFX | todo | |
 | REN-02 | Readable at RTS height | todo | |

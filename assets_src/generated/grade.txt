@@ -32,13 +32,13 @@ p51.glb side=0.43 top=0.21 tris=324
 p51_Destroyed.glb
 b26.glb side=0.43 top=0.21 tris=324
 b26_Destroyed.glb
-b17.glb side=0.43 top=0.21 tris=324
+b17.glb side=0.43 top=0.20 tris=324
 b17_Destroyed.glb
 typhoon.glb side=0.43 top=0.21 tris=324
 typhoon_Destroyed.glb
 spitfire.glb side=0.43 top=0.21 tris=324
 spitfire_Destroyed.glb
-lancaster.glb side=0.43 top=0.21 tris=324
+lancaster.glb side=0.43 top=0.20 tris=324
 lancaster_Destroyed.glb
 fw190.glb side=0.43 top=0.21 tris=324
 fw190_Destroyed.glb
@@ -110,15 +110,15 @@ a10.glb side=0.43 top=0.21 tris=324
 a10_Destroyed.glb
 f16.glb side=0.43 top=0.23 tris=324
 f16_Destroyed.glb
-f15.glb side=0.43 top=0.23 tris=324
+f15.glb side=0.43 top=0.22 tris=324
 f15_Destroyed.glb
-tornado.glb side=0.43 top=0.23 tris=324
+tornado.glb side=0.43 top=0.22 tris=324
 tornado_Destroyed.glb
 jaguar.glb side=0.43 top=0.24 tris=324
 jaguar_Destroyed.glb
 su25.glb side=0.43 top=0.21 tris=324
 su25_Destroyed.glb
-mig29.glb side=0.43 top=0.23 tris=324
+mig29.glb side=0.43 top=0.22 tris=324
 mig29_Destroyed.glb
 mig23.glb side=0.43 top=0.22 tris=324
 mig23_Destroyed.glb
@@ -163,7 +163,7 @@ s400.glb side=0.52 top=0.76 tris=750
 s400_Destroyed.glb
 pantsir.glb side=0.54 top=0.76 tris=750
 pantsir_Destroyed.glb
-f35.glb side=0.43 top=0.23 tris=324
+f35.glb side=0.43 top=0.22 tris=324
 f35_Destroyed.glb
 f16v.glb side=0.43 top=0.23 tris=324
 f16v_Destroyed.glb
@@ -171,11 +171,11 @@ a10c.glb side=0.43 top=0.21 tris=324
 a10c_Destroyed.glb
 mq9.glb side=0.43 top=0.20 tris=324
 mq9_Destroyed.glb
-su34.glb side=0.43 top=0.23 tris=324
+su34.glb side=0.43 top=0.22 tris=324
 su34_Destroyed.glb
 su35.glb side=0.43 top=0.22 tris=324
 su35_Destroyed.glb
-j16.glb side=0.43 top=0.23 tris=324
+j16.glb side=0.43 top=0.22 tris=324
 j16_Destroyed.glb
 j20.glb side=0.43 top=0.22 tris=324
 j20_Destroyed.glb

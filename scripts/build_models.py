@@ -278,7 +278,7 @@ def build_air(unit, burned):
         vert.co.y *= length * 0.18
         vert.co.z *= height * 0.09
     mesh_object("TailBoom", fuse, (0, length * 0.34, height * 0.02), boom, mat)
-    tail_y = length * 0.42
+    tail_y = length * 0.34
     mesh_object("Elevator_L", fuse, (-span * 0.10, tail_y, height * 0.04), wing_mesh(span * 0.16, length * 0.10, 0.045, 0), mat)
     mesh_object("Elevator_R", fuse, (span * 0.10, tail_y, height * 0.04), wing_mesh(span * 0.16, length * 0.10, 0.045, 0), mat)
     rudder = mesh_object("Rudder", fuse, (0, tail_y, height * 0.02), wing_mesh(height * 0.42, length * 0.16, 0.05, 0), mat)

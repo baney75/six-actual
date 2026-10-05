@@ -27,6 +27,10 @@ Not claimed: a second user account has not run bootstrap. There is no battle, no
 
 Blender 5.2.1 wrote a GLB for each of the 103 roster entries. The Fulda skirmish runs: NATO 11 against Pact 11, with move orders and the take-control flag. The tick-30 frame is `docs/shots/fulda-tick30.png`. Armor facing, a hill blocking sight, supply, bingo fuel, and the aggression slider have unit tests. Those requirements are not marked verified. Campaigns, multiplayer, grand strategy, and voiced radio are not in the build.
 
+## 2026-10-05 — Campaign, theater, fog, morale, criticals
+
+`scripts/verify.sh --phase 0` passed. Report: `build/reports/20261005T030547Z-phase0.md`. 54 tests. Fog of war, criticals, and morale bail are covered. The menu can start the Cold War campaign and the 1989 province map. A ceasefire holds the front. Tension can spend the nuclear weapon. Chunks fall when the piece under them is gone. Climbing burns extra fuel. Artillery waits out its delay. The rest of the brief is still open.
+
 ## 2026-10-05 — Box silhouettes are rejected
 
 The model script now refuses a mesh that fills its side or top bounding rectangle the way a box does. 183 models passed. Tanks have a glacis, turret, barrel, and road wheels. The Fulda frame was shot again after the rebuild. Aircraft tails still sit slightly off the fuselage. Phase 0 was not re-run after this mesh change.
