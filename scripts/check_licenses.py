@@ -21,7 +21,13 @@ def main() -> int:
                 continue
             checked += 1
             relative = path.relative_to(ROOT).as_posix()
-            if relative not in assets_md:
+            covered = relative in assets_md
+            if not covered:
+                for line in assets_md.splitlines():
+                    if line.startswith("PREFIX ") and relative.startswith(line.split()[1]):
+                        covered = True
+                        break
+            if not covered:
                 missing.append(relative)
     if missing:
         print("assets missing an ASSETS.md entry:", file=sys.stderr)

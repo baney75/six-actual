@@ -31,11 +31,26 @@ def main() -> int:
     if len(unit_ids) != len(set(unit_ids)):
         errors.append("duplicate unit ids")
 
+    roster = json.loads((ROOT / "data" / "units.json").read_text(encoding="utf-8"))
+    seen = set()
+    for unit in roster["units"]:
+        if unit["id"] in seen:
+            errors.append(f"duplicate roster id {unit['id']}")
+        seen.add(unit["id"])
+        if unit["era"] not in known:
+            errors.append(f"{unit['id']}: unknown era {unit['era']}")
+            continue
+        era = next(item for item in catalog["eras"] if item["id"] == unit["era"])
+        if not era["year_start"] <= unit["year"] <= era["year_end"]:
+            errors.append(f"{unit['id']}: year {unit['year']} is outside {unit['era']}")
+        if unit["armor_front"] < unit["armor_side"]:
+            errors.append(f"{unit['id']}: side armor exceeds front armor")
+
     if errors:
         for error in errors:
             print(error, file=sys.stderr)
         return 1
-    print(f"catalog ok: {len(era_ids)} eras, {len(unit_ids)} units")
+    print(f"catalog ok: {len(era_ids)} eras, {len(unit_ids)} catalog units, {len(seen)} roster units")
     return 0
 
 

@@ -34,6 +34,10 @@ G3 runs eight independent simulations on the same seed and orders and requires e
 
 Godot 4.7.2 looks for `game/SixActual.sln` and exits the C# export if it only finds the repo `SixActual.slnx`. The game directory holds a classic solution. The repo root keeps `SixActual.slnx` for the sim, tests, and analyzers. `dotnet` 10 creates `slnx` by default.
 
+## D010 — Roster stats and meshes are game-scale, not a historical table
+
+`data/units.json` holds 103 units named in the brief. Lengths are public-approximate meters. Armor, penetration, and speed are game-scale integers so the sim can stay fixed-point. They are not a claimed reference table. `scripts/build_models.py` builds a Blender mesh per unit from those dimensions: hull, turret, gun, and wheels, or a fuselage and wings, or a person. Silhouette checks against photos are not done. A destroyed GLB is written for vehicles and aircraft.
+
 ## D008 — Infantry counting is undecided
 
 SIM-13 allows squad members or squads as entities. No choice yet. The performance target is not in Phase 0.

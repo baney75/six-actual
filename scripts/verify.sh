@@ -125,7 +125,17 @@ gate_g10() {
     echo "data/catalog.json does not match scripts/generate_catalog.py" >&2
     return 1
   fi
+  python3 scripts/generate_units.py build/units.generated.json
+  if ! cmp -s data/units.json build/units.generated.json; then
+    echo "data/units.json does not match scripts/generate_units.py" >&2
+    return 1
+  fi
+  if ! cmp -s game/data/units.json build/units.generated.json; then
+    echo "game/data/units.json does not match scripts/generate_units.py" >&2
+    return 1
+  fi
   mise exec -- uvx --from check-jsonschema check-jsonschema --schemafile data/schema/catalog.schema.json data/catalog.json
+  mise exec -- uvx --from check-jsonschema check-jsonschema --schemafile data/schema/units.schema.json data/units.json
   python3 scripts/validate_data.py
 }
 

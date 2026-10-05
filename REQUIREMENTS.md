@@ -7,12 +7,12 @@ Status is `todo`, `in-progress`, `verified`, or `waived (reason, approval)`. A `
 | SIM-01 | Fixed tick, fixed-point state, no binary floating point in sim state | verified | `build/reports/20261005T020355Z-phase0.md` (G1, G2) |
 | SIM-02 | Bit-identical state across runs, processes, and thread counts | verified | same report, G3, `verify/golden/determinism.txt` |
 | SIM-03 | Replay reproduces the final state hash | verified | same report, G3 replay line |
-| SIM-04 | Terrain LOS, optics, stealth | todo | |
+| SIM-04 | Terrain LOS, optics, stealth | in-progress | Hill blocks a shot in `BattleTests`. Not a G4 scenario yet. |
 | SIM-05 | Fog of war | todo | |
-| SIM-06 | Armor facing and penetration | todo | |
+| SIM-06 | Armor facing and penetration | in-progress | Front holds, side does not, in `BattleTests`. |
 | SIM-07 | Criticals | todo | |
 | SIM-08 | Suppression and morale | todo | |
-| SIM-09 | Ammo, fuel, resupply | todo | |
+| SIM-09 | Ammo, fuel, resupply | in-progress | A truck refills a tank in `BattleTests`. |
 | SIM-10 | Structural destruction | todo | |
 | SIM-11 | Weather and time of day | todo | |
 | SIM-12 | Pathfinding | todo | |
@@ -20,13 +20,13 @@ Status is `todo`, `in-progress`, `verified`, or `waived (reason, approval)`. A `
 | CMD-01 | XO plus eight sub-commanders | todo | |
 | CMD-02 | Assignment and reassignment | todo | |
 | CMD-03 | Order set with queue and deadline | todo | |
-| CMD-04 | Intent changes behavior | todo | |
+| CMD-04 | Intent changes behavior | in-progress | High aggression advances, low aggression holds, in `BattleTests`. |
 | CMD-05 | Support requests | todo | |
 | CMD-06 | Utility AI or HTN, with behavior metrics | todo | |
 | CMD-07 | Names, portraits, voices, traits, reports | todo | |
 | CMD-08 | XP, wounds, replacement persist | todo | |
-| FLY-01 | Take Control, XO assumes command | todo | |
-| FLY-02 | Return on bingo, winchester, destruction, landing, or key | todo | |
+| FLY-01 | Take Control, XO assumes command | in-progress | Take-control sets the XO flag within one tick in `BattleTests`. |
+| FLY-02 | Return on bingo, winchester, destruction, landing, or key | in-progress | Bingo, empty ammo, and the release order are unit-tested. Destruction and landing are not. |
 | FLY-03 | Arcade-sim flight model from data | todo | |
 | FLY-04 | Mouse-aim, gamepad, HOTAS | todo | |
 | FLY-05 | Era HUDs | todo | |
@@ -62,6 +62,6 @@ Status is `todo`, `in-progress`, `verified`, or `waived (reason, approval)`. A `
 | PERF-01 | 1440p benchmark | todo | |
 | PERF-02 | Soak frame time and memory | todo | |
 | QA-01 | No warnings, format clean, no unfinished markers | verified | same report, G12 |
-| QA-02 | 80% line coverage on sim | verified | same report, G2, sim line coverage 0.956 |
+| QA-02 | 80% line coverage on sim | verified | `build/reports/20261005T023633Z-phase0.md`, sim line coverage 0.934 |
 
 The Phase 0 tick advances positions from orders at 20 Hz. Combat resolution is not in that tick yet. See `DECISIONS.md`.

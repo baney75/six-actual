@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-actual.local/schema/units.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "units"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id", "era", "faction", "year", "kind",
+          "length_mm", "width_mm", "height_mm", "speed_mm_s", "hp",
+          "armor_front", "armor_side", "armor_rear", "armor_top",
+          "pen_mm", "pen_drop_per_km", "range_m", "reload_ticks",
+          "optics_m", "stealth", "ammo", "fuel"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "era": { "enum": ["ww2", "cold_war", "modern"] },
+          "faction": { "type": "string", "minLength": 1 },
+          "year": { "type": "integer" },
+          "kind": { "enum": ["infantry", "tank", "ifv", "artillery", "aa", "air", "supply"] },
+          "length_mm": { "type": "integer", "minimum": 1 },
+          "width_mm": { "type": "integer", "minimum": 1 },
+          "height_mm": { "type": "integer", "minimum": 1 },
+          "speed_mm_s": { "type": "integer", "minimum": 0 },
+          "hp": { "type": "integer", "minimum": 1 },
+          "armor_front": { "type": "integer", "minimum": 0 },
+          "armor_side": { "type": "integer", "minimum": 0 },
+          "armor_rear": { "type": "integer", "minimum": 0 },
+          "armor_top": { "type": "integer", "minimum": 0 },
+          "pen_mm": { "type": "integer", "minimum": 0 },
+          "pen_drop_per_km": { "type": "integer", "minimum": 0 },
+          "range_m": { "type": "integer", "minimum": 0 },
+          "reload_ticks": { "type": "integer", "minimum": 0 },
+          "optics_m": { "type": "integer", "minimum": 0 },
+          "stealth": { "type": "integer", "minimum": 0 },
+          "ammo": { "type": "integer", "minimum": 0 },
+          "fuel": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,12 @@
 # State
 
-- Phase: 0 Foundations
-- Verified this session: SIM-01, SIM-02, SIM-03, QA-01, QA-02
-- Last verify: pass, 2026-10-05T02:03:55Z, `build/reports/20261005T020355Z-phase0.md`
-- Gates in that run: G1, G2, G3, G10, G11, G12, zero failures
-- Not verified: a fresh Omarchy account has not run `scripts/bootstrap.sh`. The script is written, and the same install steps were run on this machine.
-- Blockers: none for the next sim requirement
+- Phase: 0 gates still pass. A Cold War skirmish now runs on top of that core.
+- Last verify: pass, 2026-10-05T02:36:33Z, `build/reports/20261005T023633Z-phase0.md`
+- Verified IDs remain SIM-01, SIM-02, SIM-03, QA-01, QA-02. The new battle behavior has unit tests. It is not marked verified against the phase-1 scenario gates.
+- Playable: menu, Fulda skirmish, NATO vs Pact, move orders, take-control flag, XO line. Screenshot: `docs/shots/fulda-tick30.png`
+- Models: 103 roster entries, GLBs in `game/assets/units/`, built by Blender 5.2.1.
+- Not built: campaigns, multiplayer, grand strategy, voiced radio, 8 km maps, style-board sign-off, silhouette validation.
 - Next:
-  1. SIM-04 terrain line of sight, with a failing scenario first.
-  2. Keep the 20 Hz tick and fixed-point state. Do not put combat results in the view.
-  3. Style board stays unstarted until the slice needs it. That needs Donovan's sign-off.
-
-The exported shell runs and prints a foundation hash. It is not a playable battle.
+  1. Keep the Fulda fight readable and finish one 20-minute play through without a crash.
+  2. Turn the unit tests for sight, armor, supply, and flight return into the scenario files the phase gate expects.
+  3. Ask for the style board before replacing the block meshes with finished models.

@@ -11,6 +11,11 @@ run/main_scene="res://Main.tscn"
 
 project/assembly_name="SixActual"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [rendering]
 
 renderer/rendering_method="forward_plus"
