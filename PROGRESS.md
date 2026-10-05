@@ -27,4 +27,8 @@ Not claimed: a second user account has not run bootstrap. There is no battle, no
 
 Blender 5.2.1 wrote a GLB for each of the 103 roster entries. The Fulda skirmish runs: NATO 11 against Pact 11, with move orders and the take-control flag. The tick-30 frame is `docs/shots/fulda-tick30.png`. Armor facing, a hill blocking sight, supply, bingo fuel, and the aggression slider have unit tests. Those requirements are not marked verified. Campaigns, multiplayer, grand strategy, and voiced radio are not in the build.
 
+## 2026-10-05 — Box silhouettes are rejected
+
+The model script now refuses a mesh that fills its side or top bounding rectangle the way a box does. 183 models passed. Tanks have a glacis, turret, barrel, and road wheels. The Fulda frame was shot again after the rebuild. Aircraft tails still sit slightly off the fuselage. Phase 0 was not re-run after this mesh change.
+
 Performance targets in the brief are for an RTX 3060-class GPU. This machine is faster. Numbers still have to be measured here, and the 3060 target remains the bar.
