@@ -1,0 +1,183 @@
+us_rifle.glb side=0.24 top=0.22 tris=460
+uk_rifle.glb side=0.24 top=0.22 tris=460
+ger_rifle.glb side=0.24 top=0.22 tris=460
+su_rifle.glb side=0.24 top=0.22 tris=460
+mg42.glb side=0.24 top=0.22 tris=460
+bren.glb side=0.24 top=0.22 tris=460
+m4_sherman.glb side=0.53 top=0.76 tris=750
+m4_sherman_Destroyed.glb
+cromwell.glb side=0.54 top=0.76 tris=750
+cromwell_Destroyed.glb
+pz4.glb side=0.54 top=0.76 tris=750
+pz4_Destroyed.glb
+panther.glb side=0.54 top=0.76 tris=750
+panther_Destroyed.glb
+tiger.glb side=0.54 top=0.76 tris=750
+tiger_Destroyed.glb
+t34_85.glb side=0.54 top=0.76 tris=750
+t34_85_Destroyed.glb
+is2.glb side=0.54 top=0.75 tris=750
+is2_Destroyed.glb
+m7_priest.glb side=0.55 top=0.76 tris=750
+m7_priest_Destroyed.glb
+wespe.glb side=0.54 top=0.76 tris=750
+wespe_Destroyed.glb
+nebelwerfer.glb side=0.52 top=0.76 tris=750
+nebelwerfer_Destroyed.glb
+katyusha.glb side=0.53 top=0.76 tris=750
+katyusha_Destroyed.glb
+p47.glb side=0.43 top=0.21 tris=324
+p47_Destroyed.glb
+p51.glb side=0.43 top=0.21 tris=324
+p51_Destroyed.glb
+b26.glb side=0.43 top=0.21 tris=324
+b26_Destroyed.glb
+b17.glb side=0.43 top=0.21 tris=324
+b17_Destroyed.glb
+typhoon.glb side=0.43 top=0.21 tris=324
+typhoon_Destroyed.glb
+spitfire.glb side=0.43 top=0.21 tris=324
+spitfire_Destroyed.glb
+lancaster.glb side=0.43 top=0.21 tris=324
+lancaster_Destroyed.glb
+fw190.glb side=0.43 top=0.21 tris=324
+fw190_Destroyed.glb
+bf109.glb side=0.43 top=0.21 tris=324
+bf109_Destroyed.glb
+ju87.glb side=0.43 top=0.21 tris=324
+ju87_Destroyed.glb
+il2.glb side=0.43 top=0.21 tris=324
+il2_Destroyed.glb
+supply_us_ww2.glb side=0.53 top=0.76 tris=750
+supply_us_ww2_Destroyed.glb
+us_rifle_cw.glb side=0.24 top=0.22 tris=460
+wg_rifle.glb side=0.24 top=0.22 tris=460
+uk_rifle_cw.glb side=0.24 top=0.22 tris=460
+fr_rifle.glb side=0.24 top=0.22 tris=460
+su_rifle_cw.glb side=0.24 top=0.22 tris=460
+ddr_rifle.glb side=0.24 top=0.22 tris=460
+pol_rifle.glb side=0.24 top=0.22 tris=460
+m1_abrams.glb side=0.54 top=0.76 tris=750
+m1_abrams_Destroyed.glb
+leopard2.glb side=0.54 top=0.76 tris=750
+leopard2_Destroyed.glb
+challenger.glb side=0.54 top=0.75 tris=750
+challenger_Destroyed.glb
+amx30.glb side=0.53 top=0.75 tris=750
+amx30_Destroyed.glb
+t80.glb side=0.55 top=0.75 tris=750
+t80_Destroyed.glb
+t72.glb side=0.55 top=0.75 tris=750
+t72_Destroyed.glb
+t72_ddr.glb side=0.55 top=0.75 tris=750
+t72_ddr_Destroyed.glb
+t72_pol.glb side=0.55 top=0.75 tris=750
+t72_pol_Destroyed.glb
+m2_bradley.glb side=0.54 top=0.76 tris=750
+m2_bradley_Destroyed.glb
+m113.glb side=0.54 top=0.76 tris=750
+m113_Destroyed.glb
+marder.glb side=0.55 top=0.76 tris=750
+marder_Destroyed.glb
+bmp2.glb side=0.54 top=0.76 tris=750
+bmp2_Destroyed.glb
+tow_team.glb side=0.24 top=0.22 tris=460
+milan.glb side=0.24 top=0.22 tris=460
+konkurs.glb side=0.24 top=0.22 tris=460
+stinger_team.glb side=0.24 top=0.22 tris=460
+stinger_team_Destroyed.glb
+blowpipe.glb side=0.24 top=0.22 tris=460
+blowpipe_Destroyed.glb
+igla.glb side=0.24 top=0.22 tris=460
+igla_Destroyed.glb
+m109.glb side=0.54 top=0.76 tris=750
+m109_Destroyed.glb
+mlrs.glb side=0.54 top=0.76 tris=750
+mlrs_Destroyed.glb
+s2s3.glb side=0.54 top=0.76 tris=750
+s2s3_Destroyed.glb
+bm21.glb side=0.53 top=0.76 tris=750
+bm21_Destroyed.glb
+zsu23.glb side=0.54 top=0.76 tris=750
+zsu23_Destroyed.glb
+gepard.glb side=0.54 top=0.76 tris=750
+gepard_Destroyed.glb
+sa8.glb side=0.53 top=0.75 tris=750
+sa8_Destroyed.glb
+hawk.glb side=0.54 top=0.76 tris=750
+hawk_Destroyed.glb
+a10.glb side=0.43 top=0.21 tris=324
+a10_Destroyed.glb
+f16.glb side=0.43 top=0.23 tris=324
+f16_Destroyed.glb
+f15.glb side=0.43 top=0.23 tris=324
+f15_Destroyed.glb
+tornado.glb side=0.43 top=0.23 tris=324
+tornado_Destroyed.glb
+jaguar.glb side=0.43 top=0.24 tris=324
+jaguar_Destroyed.glb
+su25.glb side=0.43 top=0.21 tris=324
+su25_Destroyed.glb
+mig29.glb side=0.43 top=0.23 tris=324
+mig29_Destroyed.glb
+mig23.glb side=0.43 top=0.22 tris=324
+mig23_Destroyed.glb
+su24.glb side=0.43 top=0.22 tris=324
+su24_Destroyed.glb
+supply_us_cw.glb side=0.53 top=0.76 tris=750
+supply_us_cw_Destroyed.glb
+supply_su_cw.glb side=0.53 top=0.76 tris=750
+supply_su_cw_Destroyed.glb
+us_rifle_m.glb side=0.24 top=0.22 tris=460
+ru_rifle.glb side=0.24 top=0.22 tris=460
+cn_rifle.glb side=0.24 top=0.22 tris=460
+m1a2.glb side=0.54 top=0.76 tris=750
+m1a2_Destroyed.glb
+leo2a7.glb side=0.54 top=0.76 tris=750
+leo2a7_Destroyed.glb
+t90m.glb side=0.55 top=0.76 tris=750
+t90m_Destroyed.glb
+t14.glb side=0.54 top=0.75 tris=750
+t14_Destroyed.glb
+type99.glb side=0.54 top=0.75 tris=750
+type99_Destroyed.glb
+stryker.glb side=0.53 top=0.76 tris=750
+stryker_Destroyed.glb
+bmp3.glb side=0.54 top=0.76 tris=750
+bmp3_Destroyed.glb
+zbd04.glb side=0.54 top=0.76 tris=750
+zbd04_Destroyed.glb
+javelin.glb side=0.24 top=0.22 tris=460
+kornet.glb side=0.24 top=0.22 tris=460
+fpv_ru.glb side=0.24 top=0.22 tris=460
+fpv_cn.glb side=0.24 top=0.22 tris=460
+himars.glb side=0.53 top=0.76 tris=750
+himars_Destroyed.glb
+tornados.glb side=0.53 top=0.75 tris=750
+tornados_Destroyed.glb
+pcl191.glb side=0.52 top=0.75 tris=750
+pcl191_Destroyed.glb
+patriot.glb side=0.52 top=0.76 tris=750
+patriot_Destroyed.glb
+s400.glb side=0.52 top=0.76 tris=750
+s400_Destroyed.glb
+pantsir.glb side=0.54 top=0.76 tris=750
+pantsir_Destroyed.glb
+f35.glb side=0.43 top=0.23 tris=324
+f35_Destroyed.glb
+f16v.glb side=0.43 top=0.23 tris=324
+f16v_Destroyed.glb
+a10c.glb side=0.43 top=0.21 tris=324
+a10c_Destroyed.glb
+mq9.glb side=0.43 top=0.20 tris=324
+mq9_Destroyed.glb
+su34.glb side=0.43 top=0.23 tris=324
+su34_Destroyed.glb
+su35.glb side=0.43 top=0.22 tris=324
+su35_Destroyed.glb
+j16.glb side=0.43 top=0.23 tris=324
+j16_Destroyed.glb
+j20.glb side=0.43 top=0.22 tris=324
+j20_Destroyed.glb
+supply_us_m.glb side=0.52 top=0.76 tris=750
+supply_us_m_Destroyed.glb

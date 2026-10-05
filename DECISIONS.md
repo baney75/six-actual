@@ -34,6 +34,10 @@ G3 runs eight independent simulations on the same seed and orders and requires e
 
 Godot 4.7.2 looks for `game/SixActual.sln` and exits the C# export if it only finds the repo `SixActual.slnx`. The game directory holds a classic solution. The repo root keeps `SixActual.slnx` for the sim, tests, and analyzers. `dotnet` 10 creates `slnx` by default.
 
+## D011 — A box silhouette is a failed model
+
+`scripts/build_models.py` grades every mesh before it writes the GLB. It rasterizes the side and top views and rejects the model when the silhouette fills its own bounding rectangle the way a box does. Tanks have to show a glacis, a barrel, and road wheels. Aircraft have to show a lofted fuselage and wings. The check is in the build, so a later edit that collapses a mesh back into a crate fails the Blender run. The meshes are still low poly. They are not photo-matched, and aircraft tails sit a little proud of the fuselage.
+
 ## D010 — Roster stats and meshes are game-scale, not a historical table
 
 `data/units.json` holds 103 units named in the brief. Lengths are public-approximate meters. Armor, penetration, and speed are game-scale integers so the sim can stay fixed-point. They are not a claimed reference table. `scripts/build_models.py` builds a Blender mesh per unit from those dimensions: hull, turret, gun, and wheels, or a fuselage and wings, or a person. Silhouette checks against photos are not done. A destroyed GLB is written for vehicles and aircraft.
