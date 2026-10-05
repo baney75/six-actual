@@ -1,0 +1,38 @@
+# Thresholds may be tightened freely. Loosening one needs evidence and approval.
+# See DECISIONS.md.
+
+[coverage]
+sim_line_min = 0.80
+
+[determinism]
+ticks = [100, 1000, 12000]
+seeds = [1, 2, 3]
+thread_counts = [1, 8]
+processes = 2
+lockstep_clients = 8
+entities = 32
+
+[perf]
+tick_p95_ms = 8.0
+frame_p95_ms = 16.7
+frame_max_ms = 100.0
+memory_growth_max = 0.05
+
+[ai]
+stuck_seconds = 120
+unstuck_min = 0.995
+mirror_win_min = 0.40
+mirror_win_max = 0.60
+cross_win_min = 0.35
+cross_win_max = 0.65
+fire_support_before_assault_min = 0.70
+force_committed_min = 0.60
+damaged_withdrawal_min = 0.60
+
+[audio]
+dialogue_lufs = -16.0
+dialogue_lufs_tolerance = 1.5
+sfx_peak_dbtp = -1.0
+music_lufs = -18.0
+music_lufs_tolerance = 2.0
+edge_silence_ms = 300

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "eras": [
+    {
+      "id": "ww2",
+      "year_start": 1944,
+      "year_end": 1945
+    },
+    {
+      "id": "cold_war",
+      "year_start": 1989,
+      "year_end": 1989
+    },
+    {
+      "id": "modern",
+      "year_start": 2020,
+      "year_end": 2029
+    }
+  ],
+  "units": []
+}

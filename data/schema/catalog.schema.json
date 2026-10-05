@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-actual.local/schema/catalog.json",
+  "title": "Six Actual content catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "eras", "units"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "eras": {
+      "type": "array",
+      "minItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "year_start", "year_end"],
+        "properties": {
+          "id": { "enum": ["ww2", "cold_war", "modern"] },
+          "year_start": { "type": "integer", "minimum": 1900, "maximum": 2100 },
+          "year_end": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        }
+      }
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "era", "faction", "year"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "era": { "enum": ["ww2", "cold_war", "modern"] },
+          "faction": { "type": "string", "minLength": 1 },
+          "year": { "type": "integer" }
+        }
+      }
+    }
+  }
+}

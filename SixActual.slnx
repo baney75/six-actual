@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/analyzers/">
+    <Project Path="analyzers/SixActual.Analyzers.csproj" />
+  </Folder>
+  <Folder Name="/game/">
+    <Project Path="game/SixActual.csproj" />
+  </Folder>
+  <Folder Name="/sim.Tests/">
+    <Project Path="sim.Tests/SixActual.Sim.Tests.csproj" />
+  </Folder>
+  <Folder Name="/sim/">
+    <Project Path="sim/SixActual.Sim.csproj" />
+  </Folder>
+  <Folder Name="/sim/Headless/">
+    <Project Path="sim/Headless/SixActual.Headless.csproj" />
+  </Folder>
+</Solution>
