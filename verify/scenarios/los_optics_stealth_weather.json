@@ -1,0 +1,84 @@
+{
+  "id": "los_optics_stealth_weather",
+  "requirement": "SIM-04",
+  "description": "An M1A1 (optics 2400 m) detects a motor rifle squad (stealth 120, +150 in forest: effective 2130 m) at 604 m but not at 2250 m; a T-80BV outside the forest at 2245 m is detected (2400 m). The two groups are >3400 m apart so they cannot spot for each other.",
+  "ticks": 2,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "forest",
+        "x": 3000,
+        "y": 0,
+        "w": 16,
+        "h": 4000,
+        "density": 40
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 2400,
+      "y": 300
+    },
+    {
+      "tag": "inf_near",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 3004,
+      "y": 300
+    },
+    {
+      "tag": "tank2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 754,
+      "y": 3700
+    },
+    {
+      "tag": "inf_far",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 3004,
+      "y": 3700
+    },
+    {
+      "tag": "tank_far",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2990,
+      "y": 3500
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "inf_near",
+      "player": 0,
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "inf_far",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "tank_far",
+      "player": 0,
+      "expect": true
+    }
+  ]
+}

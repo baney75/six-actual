@@ -1,0 +1,77 @@
+{
+  "id": "los_hedgerow",
+  "requirement": "SIM-04",
+  "description": "A 3 m hedgerow between two tanks 300 m apart on flat ground blocks their 2.5 m eye line. A tank on a 2 m bank sees over it (eye 4.5 m) to the far tank.",
+  "ticks": 2,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "hedge",
+        "x": 1000,
+        "y": 500,
+        "w": 8,
+        "h": 1000
+      },
+      {
+        "type": "rect",
+        "x": 840,
+        "y": 1300,
+        "w": 24,
+        "h": 24,
+        "height_dm": 20
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "blue",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 850,
+      "y": 1000
+    },
+    {
+      "tag": "red",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1150,
+      "y": 1000
+    },
+    {
+      "tag": "bank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 850,
+      "y": 1310
+    },
+    {
+      "tag": "red2",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1150,
+      "y": 1310
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "blue",
+      "other": "red",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "bank",
+      "other": "red2",
+      "expect": true
+    }
+  ]
+}

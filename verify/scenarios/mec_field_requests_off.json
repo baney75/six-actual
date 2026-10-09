@@ -1,0 +1,62 @@
+{
+  "id": "mec_field_requests_off",
+  "requirement": "MEC-06",
+  "description": "Field Requests are a toggle (MEC-06): with field_requests left off (skirmish default), no task forces are offered at the phase changes and a field_request order does nothing.",
+  "ticks": 24100,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [],
+  "players": [
+    {
+      "deck": "us_1989_armored",
+      "income": "balanced",
+      "start_dp": 0,
+      "spawn_x": 300,
+      "spawn_y": 300
+    },
+    {
+      "deck": "su_1989_motor_rifle",
+      "start_dp": 0,
+      "spawn_x": 1700,
+      "spawn_y": 1700,
+      "ai": true
+    }
+  ],
+  "orders": [
+    {
+      "tick": 12100,
+      "kind": "field_request",
+      "player": 0,
+      "value": 1
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 12001,
+      "check": "field_offers_open",
+      "player": 0,
+      "value": 0
+    },
+    {
+      "at_tick": 12101,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 24001,
+      "check": "field_offers_open",
+      "player": 0,
+      "value": 0
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "supply_fuel",
+  "requirement": "SIM-09",
+  "description": "Fuel: an M1A1 with 30 fuel (3 km) ordered 3.6 km east stops after 3 km (x ~ 3200) and logs OutOfFuel.",
+  "ticks": 6000,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 200,
+      "y": 200,
+      "fuel": 30
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "tank",
+      "kind": "move",
+      "x": 3800,
+      "y": 200
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 6000,
+      "check": "near",
+      "unit": "tank",
+      "x": 3200,
+      "y": 200,
+      "value": 40
+    },
+    {
+      "at_tick": 6000,
+      "check": "fuel_at_most",
+      "unit": "tank",
+      "value": 0
+    },
+    {
+      "at_tick": 6000,
+      "check": "events_at_least",
+      "value": 18,
+      "player": 1
+    }
+  ]
+}

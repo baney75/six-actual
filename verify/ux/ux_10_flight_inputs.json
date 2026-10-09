@@ -1,0 +1,125 @@
+{
+  "id": "ux_10_flight_inputs",
+  "requirement": "FLY-04",
+  "also": [
+    "FLY-01"
+  ],
+  "description": "Flight input: the gamepad Y button takes control, the left stick (as a gamepad or a HOTAS reports it) steers; after returning and taking control again, mouse-aim (right button held, pointer right of and above centre) steers right and up.",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "phase",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "joy_button": "Y"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "joy_axis": "LeftX",
+      "value": 1.0
+    },
+    {
+      "wait_event": "stick_input"
+    },
+    {
+      "joy_axis": "LeftX",
+      "value": 0.0
+    },
+    {
+      "press": "ReturnControl"
+    },
+    {
+      "wait_event": "control_returned"
+    },
+    {
+      "press": "TakeControl"
+    },
+    {
+      "wait_event": "take_control",
+      "count": 2
+    },
+    {
+      "mouse_aim": [
+        0.6,
+        -0.4
+      ]
+    },
+    {
+      "wait_event": "stick_input",
+      "count": 2
+    },
+    {
+      "mouse_aim": "release"
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "take_control"
+    },
+    {
+      "event": "stick_input",
+      "fields": {
+        "source": "joypad",
+        "turn": 100,
+        "climb": 0
+      }
+    },
+    {
+      "event": "control_returned",
+      "fields": {
+        "reason": 5
+      }
+    },
+    {
+      "event": "take_control"
+    },
+    {
+      "event": "stick_input",
+      "fields": {
+        "source": "mouse"
+      },
+      "range": {
+        "turn": [
+          55,
+          65
+        ],
+        "climb": [
+          35,
+          45
+        ]
+      }
+    },
+    {
+      "event": "debrief"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "morale_recovery",
+  "requirement": "SIM-08",
+  "description": "A squad starting at suppression 150 in friendly ground is routed, then recovers one rung at a time as suppression decays 1/tick with a 20-point margin: pinned below 110 (tick 41), shaken below 60 (tick 91), normal below 20 (tick 131). A routed squad falls back toward its home point (0.069 m/tick on foot: ~4 m in 60 ticks).",
+  "ticks": 140,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "sq",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "suppression": 150
+    },
+    {
+      "tag": "runner",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 1500,
+      "y": 800,
+      "suppression": 150,
+      "home_x": 1500,
+      "home_y": 200
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2,
+      "check": "morale_state",
+      "unit": "sq",
+      "value": 3
+    },
+    {
+      "at_tick": 38,
+      "check": "morale_state",
+      "unit": "sq",
+      "value": 3
+    },
+    {
+      "at_tick": 43,
+      "check": "morale_state",
+      "unit": "sq",
+      "value": 2
+    },
+    {
+      "at_tick": 88,
+      "check": "morale_state",
+      "unit": "sq",
+      "value": 2
+    },
+    {
+      "at_tick": 93,
+      "check": "morale_state",
+      "unit": "sq",
+      "value": 1
+    },
+    {
+      "at_tick": 128,
+      "check": "morale_state",
+      "unit": "sq",
+      "value": 1
+    },
+    {
+      "at_tick": 133,
+      "check": "morale_state",
+      "unit": "sq",
+      "value": 0
+    },
+    {
+      "at_tick": 60,
+      "check": "near",
+      "unit": "runner",
+      "x": 1500,
+      "y": 800,
+      "value": 3,
+      "expect": false
+    },
+    {
+      "at_tick": 60,
+      "check": "near",
+      "unit": "runner",
+      "x": 1500,
+      "y": 796,
+      "value": 3
+    }
+  ]
+}

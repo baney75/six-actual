@@ -1,0 +1,89 @@
+{
+  "id": "armor_rear",
+  "requirement": "SIM-06",
+  "description": "Rear arc: an M1A1 firing only its M2HB (.50 cal, ~21 mm at 300 m) penetrates a BMP-2 from behind (rear 15 mm, target heading away) but not from the front (35 mm). Lanes behind a 100 m ridge.",
+  "ticks": 2000,
+  "seeds": {
+    "start": 1,
+    "count": 3
+  },
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "ridge",
+        "x0": 0,
+        "y0": 1000,
+        "x1": 2000,
+        "y1": 1000,
+        "width_m": 200,
+        "height_dm": 1000
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "s_rear",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "ammo": [
+        0,
+        900,
+        0
+      ]
+    },
+    {
+      "tag": "t_rear",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 800,
+      "y": 500,
+      "heading_deg": 0,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_front",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 1500,
+      "ammo": [
+        0,
+        900,
+        0
+      ]
+    },
+    {
+      "tag": "t_front",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 800,
+      "y": 1500,
+      "heading_deg": 180,
+      "roe": "hold_fire"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2000,
+      "check": "hits",
+      "unit": "s_rear",
+      "other": "t_rear",
+      "mount": 1,
+      "outcome": "pen",
+      "face": "rear"
+    },
+    {
+      "at_tick": 2000,
+      "check": "hits",
+      "unit": "s_front",
+      "other": "t_front",
+      "mount": 1,
+      "outcome": "nonpen",
+      "face": "front"
+    }
+  ]
+}

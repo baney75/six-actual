@@ -1,0 +1,27 @@
+{
+  "id": "sup_repair",
+  "requirement": "SUP-03",
+  "description": "Field repair (SUP-03). An M88A1 recovery vehicle halted beside an M1A1 at 50% hp with a thrown track and a damaged engine restores 1 hp per second (77 hp in 77 s: still under 131 hp at 50 s, full 154 by 80 s) and fixes one critical per 60 s, track first (gone by 61 s, engine still out), then engine (gone by 121 s). The repaired tank can drive again: ordered 200 m east at 125 s, it arrives. A second tank with a thrown track 400 m away, outside the 60 m supply radius, is not repaired.",
+  "ticks": 4000,
+  "roe": "hold_fire",
+  "seeds": [1],
+  "terrain": {"size_m": 2000, "cell_m": 8},
+  "units": [
+    {"tag": "m1", "unit": "m1a1_abrams", "player": 0, "x": 500, "y": 500, "hp_pct": 50, "flags": ["tracked", "engine"]},
+    {"tag": "arv", "unit": "m88a1_arv", "player": 0, "x": 520, "y": 500},
+    {"tag": "far", "unit": "m1a1_abrams", "player": 0, "x": 900, "y": 500, "flags": ["tracked"]}
+  ],
+  "orders": [
+    {"tick": 2500, "kind": "move", "tag": "m1", "x": 700, "y": 500}
+  ],
+  "assert": [
+    {"at_tick": 1000, "check": "hp_at_most", "unit": "m1", "value": 130},
+    {"at_tick": 1600, "check": "hp_at_most", "unit": "m1", "value": 153, "expect": false},
+    {"at_tick": 1199, "check": "flag_set", "unit": "m1", "value": 1},
+    {"at_tick": 1201, "check": "flag_set", "unit": "m1", "value": 1, "expect": false},
+    {"at_tick": 1201, "check": "flag_set", "unit": "m1", "value": 4},
+    {"at_tick": 2401, "check": "flag_set", "unit": "m1", "value": 4, "expect": false},
+    {"at_tick": 3900, "check": "near", "unit": "m1", "x": 700, "y": 500, "value": 30},
+    {"at_tick": 3900, "check": "flag_set", "unit": "far", "value": 1}
+  ]
+}

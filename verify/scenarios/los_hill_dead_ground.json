@@ -1,0 +1,78 @@
+{
+  "id": "los_hill_dead_ground",
+  "requirement": "SIM-04",
+  "description": "A tank on a 40 m hill sees a target 200 m behind a 6 m fold that hides it from a tank at base height (dead ground). Hand check: the line from 42.5 m crosses the fold at 7.8 m.",
+  "ticks": 2,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "hill",
+        "x": 600,
+        "y": 2000,
+        "radius_m": 500,
+        "height_dm": 400
+      },
+      {
+        "type": "ridge",
+        "x0": 1800,
+        "y0": 1500,
+        "x1": 1800,
+        "y1": 2500,
+        "width_m": 60,
+        "height_dm": 60
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "low",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1300,
+      "y": 2100
+    },
+    {
+      "tag": "high",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 600,
+      "y": 2000
+    },
+    {
+      "tag": "hidden",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2000,
+      "y": 2050
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "low",
+      "other": "hidden",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "high",
+      "other": "hidden",
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "hidden",
+      "player": 0,
+      "expect": true
+    }
+  ]
+}

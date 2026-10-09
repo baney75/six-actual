@@ -1,0 +1,94 @@
+{
+  "id": "front_encircled",
+  "requirement": "MEC-02",
+  "description": "A red tank and supply truck deep in blue ground form a red island cut off from red's rear edge: encircled, so the empty tank is not resupplied. A blue tank with a truck in blue ground is not encircled and is rearmed. The encircled red tank keeps all its suppression (on its own island it is in friendly ground, so only encirclement stops recovery); the blue tank sheds its 100 in 100 ticks.",
+  "ticks": 402,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "red_tank",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1000,
+      "y": 400,
+      "ammo": [
+        0,
+        0,
+        0
+      ],
+      "suppression": 100
+    },
+    {
+      "tag": "red_truck",
+      "unit": "ural4320",
+      "player": 1,
+      "x": 1010,
+      "y": 400
+    },
+    {
+      "tag": "blue_tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 300,
+      "y": 300,
+      "ammo": [
+        0,
+        0,
+        0
+      ],
+      "suppression": 100
+    },
+    {
+      "tag": "blue_truck",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 310,
+      "y": 300
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 25,
+      "check": "encircled",
+      "unit": "red_tank"
+    },
+    {
+      "at_tick": 25,
+      "check": "encircled",
+      "unit": "blue_tank",
+      "expect": false
+    },
+    {
+      "at_tick": 401,
+      "check": "ammo_at_most",
+      "unit": "red_tank",
+      "value": 1
+    },
+    {
+      "at_tick": 401,
+      "check": "ammo_at_least",
+      "unit": "blue_tank",
+      "value": 20
+    },
+    {
+      "at_tick": 300,
+      "check": "suppression_at_least",
+      "unit": "red_tank",
+      "value": 100
+    },
+    {
+      "at_tick": 300,
+      "check": "suppression_at_least",
+      "unit": "blue_tank",
+      "value": 1,
+      "expect": false
+    }
+  ]
+}

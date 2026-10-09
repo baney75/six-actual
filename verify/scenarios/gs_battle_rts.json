@@ -1,0 +1,40 @@
+{
+  "id": "gs_battle_rts",
+  "requirement": "GS-02",
+  "seeds": [
+    1
+  ],
+  "turns": 1,
+  "ai": [],
+  "rts": true,
+  "description": "A grand-strategy battle fought in full RTS (GS-02): the Fulda attack is played out as an AI-vs-AI battle on an 8 km map generated from Erfurt's forest terrain in the turn's weather (Cold War decks by side), and its result feeds back into strengths and ownership as an auto-resolved one would.",
+  "orders": [
+    {
+      "turn": 0,
+      "kind": "move",
+      "faction": "usa",
+      "army_in": "fulda",
+      "province": "erfurt"
+    }
+  ],
+  "assert": [
+    {
+      "turn": 1,
+      "check": "rts_battles_at_least",
+      "value": 1
+    },
+    {
+      "turn": 1,
+      "check": "battles_at_least",
+      "value": 1
+    },
+    {
+      "turn": 1,
+      "check": "faction_strength_at_most",
+      "faction": "usa",
+      "value": 62
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

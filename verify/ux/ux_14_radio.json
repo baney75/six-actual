@@ -1,0 +1,109 @@
+{
+  "id": "ux_14_radio",
+  "requirement": "CMD-07",
+  "also": [
+    "AUD-03"
+  ],
+  "description": "Commanders on the radio: the battle lists the 8 commanders by name with a trait; once the XO has the battle (the player flies), commanders report by voice on the Cold War radio chain (Radio_coldwar bus: band-pass and saturation, with a squelch tail), with a text log and map pings, rate-limited per speaker.",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "phase",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "press": "TakeControl"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "speed": 40
+    },
+    {
+      "wait_event": "radio",
+      "count": 6,
+      "timeout_s": 120
+    },
+    {
+      "wait_event": "map_ping",
+      "timeout_s": 120
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "commanders",
+      "nonempty": [
+        "army1",
+        "army2",
+        "arty1",
+        "arty2",
+        "air1",
+        "air2",
+        "armor",
+        "logistics",
+        "xo"
+      ]
+    },
+    {
+      "event": "map_ping"
+    },
+    {
+      "event": "radio",
+      "min_count": 6,
+      "fields": {
+        "voiced": true,
+        "bus": "Radio_coldwar",
+        "squelch": true
+      },
+      "nonempty": [
+        "name",
+        "line"
+      ],
+      "range": {
+        "duration_ms": [
+          500,
+          15000
+        ]
+      }
+    },
+    {
+      "event": "radio",
+      "fields": {
+        "speaker": "xo",
+        "trigger": "take_control",
+        "voiced": true,
+        "bus": "Radio_coldwar"
+      }
+    },
+    {
+      "event": "debrief"
+    }
+  ]
+}

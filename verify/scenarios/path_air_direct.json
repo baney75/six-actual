@@ -1,0 +1,83 @@
+{
+  "id": "path_air_direct",
+  "requirement": "SIM-12",
+  "description": "Air pathing (SIM-12): aircraft fly straight over terrain that stops ground units. A 200 m water barrier splits the map north to south. An A-10A ordered 3 km east flies the straight line and arrives in about 20 s (155.6 m/s); an M1A1 given the same order has no route and stays on its side.",
+  "ticks": 1200,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "water",
+        "x": 1904,
+        "y": 0,
+        "w": 208,
+        "h": 4000
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 500,
+      "y": 2000
+    },
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 2400
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "move",
+      "tag": "a10",
+      "x": 3500,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "move",
+      "tag": "tank",
+      "x": 3500,
+      "y": 2400
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 450,
+      "check": "near",
+      "unit": "a10",
+      "x": 3500,
+      "y": 2000,
+      "value": 60
+    },
+    {
+      "at_tick": 1100,
+      "check": "near",
+      "unit": "tank",
+      "x": 1904,
+      "y": 2400,
+      "value": 1500,
+      "expect": true
+    },
+    {
+      "at_tick": 1100,
+      "check": "near",
+      "unit": "tank",
+      "x": 3500,
+      "y": 2400,
+      "value": 1500,
+      "expect": false
+    }
+  ]
+}

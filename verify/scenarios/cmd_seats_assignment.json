@@ -1,0 +1,88 @@
+{
+  "id": "cmd_seats_assignment",
+  "requirement": "CMD-02",
+  "description": "Units start under their scenario seats (Armor = seat 7, Army1 = seat 1) or under direct player control (-1). An assign order at tick 10 moves a tank from Armor to Army2 (seat 2); seats are player * 9 + role (CMD-01: XO + 8 sub-commanders).",
+  "ticks": 20,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "seat": "Armor"
+    },
+    {
+      "tag": "ifv",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 600,
+      "y": 500,
+      "seat": "Army1"
+    },
+    {
+      "tag": "mine",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 700,
+      "y": 500
+    },
+    {
+      "tag": "red",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 3500,
+      "y": 3500,
+      "seat": "Armor"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 10,
+      "tag": "tank",
+      "kind": "assign",
+      "player": 0,
+      "seat": "Army2"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5,
+      "check": "seat_of",
+      "unit": "tank",
+      "value": 7
+    },
+    {
+      "at_tick": 5,
+      "check": "seat_of",
+      "unit": "ifv",
+      "value": 1
+    },
+    {
+      "at_tick": 5,
+      "check": "seat_of",
+      "unit": "mine",
+      "value": -1
+    },
+    {
+      "at_tick": 5,
+      "check": "seat_of",
+      "unit": "red",
+      "value": 16
+    },
+    {
+      "at_tick": 15,
+      "check": "seat_of",
+      "unit": "tank",
+      "value": 2
+    }
+  ]
+}

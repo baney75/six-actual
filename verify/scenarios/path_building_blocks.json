@@ -1,0 +1,64 @@
+{
+  "id": "path_building_blocks",
+  "requirement": "SIM-12",
+  "description": "Control for collapse_breach_route: with the block intact and no blasts, the rifle team gets no route across the river.",
+  "ticks": 30,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 1000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "water",
+        "x": 0,
+        "y": 480,
+        "w": 464,
+        "h": 48
+      },
+      {
+        "type": "water",
+        "x": 536,
+        "y": 480,
+        "w": 464,
+        "h": 48
+      },
+      {
+        "type": "building",
+        "x": 464,
+        "y": 480,
+        "nx": 24,
+        "ny": 16,
+        "floors": 1,
+        "material": "brick"
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "rifles",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 500,
+      "y": 300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 20,
+      "tag": "rifles",
+      "kind": "move",
+      "x": 500,
+      "y": 700
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 25,
+      "check": "no_path",
+      "unit": "rifles"
+    }
+  ]
+}

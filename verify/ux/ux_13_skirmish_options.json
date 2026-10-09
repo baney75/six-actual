@@ -1,0 +1,25 @@
+{
+  "id": "ux_13_skirmish_options",
+  "requirement": "MODE-01",
+  "description": "Skirmish options: a 5v5 with 2000 starting DP, the juggernaut income profile, annihilation victory, night and fog. The battle world holds every option (read back from the sim: 10 players, 5 per team, 9 AI XOs, aircraft grounded by fog), and the 5v5 against the AI plays to its end.",
+  "steps": [
+    {"press": "Skirmish"},
+    {"select": "Size", "index": 4},
+    {"select": "Points", "index": 2},
+    {"select": "Income", "index": 2},
+    {"select": "Victory", "index": 1},
+    {"select": "TimeOfDay", "index": 3},
+    {"select": "Weather", "index": 3},
+    {"press": "Deck_us_1989_armored"},
+    {"wait_event": "battle_started"},
+    {"speed": 1000},
+    {"wait_event": "battle_over", "timeout_s": 600},
+    {"wait_event": "debrief"}
+  ],
+  "expect": [
+    {"event": "battle_started", "fields": {"players": 10, "team0": 5, "start_dp": 2000, "income": "juggernaut", "victory": "annihilation", "time_of_day": "night", "weather": "fog", "air_grounded": 1, "ai_xos": 9}},
+    {"event": "battle_over"},
+    {"event": "debrief"}
+  ],
+  "timeout_s": 900
+}

@@ -1,0 +1,135 @@
+{
+  "id": "fires_cep_ww2_m2a1_105_towed",
+  "requirement": "SUP-01",
+  "era": "ww2",
+  "description": "Six 105 mm Howitzer M2A1 (towed) fire 30 rounds each (us_105mm_m2a1) at a point 8400 m away. Data CEP 7 permille of range = 58 m; the median miss of 180 impacts must lie within +-10%. First impact: setup 200 ticks + flight 8350 m (the nearest of the six guns) / 350 m/s = 477 ticks -> tick 677.",
+  "ticks": 8280,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 9900,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "g0",
+      "unit": "m2a1_105_towed",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tag": "g1",
+      "unit": "m2a1_105_towed",
+      "player": 0,
+      "x": 500,
+      "y": 510
+    },
+    {
+      "tag": "g2",
+      "unit": "m2a1_105_towed",
+      "player": 0,
+      "x": 500,
+      "y": 520
+    },
+    {
+      "tag": "g3",
+      "unit": "m2a1_105_towed",
+      "player": 0,
+      "x": 500,
+      "y": 530
+    },
+    {
+      "tag": "g4",
+      "unit": "m2a1_105_towed",
+      "player": 0,
+      "x": 500,
+      "y": 540
+    },
+    {
+      "tag": "g5",
+      "unit": "m2a1_105_towed",
+      "player": 0,
+      "x": 500,
+      "y": 550
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "g0",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8900,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g1",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8900,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g2",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8900,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g3",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8900,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g4",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8900,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g5",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8900,
+      "rounds": 30
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 697,
+      "check": "first_impact_after",
+      "value": 672
+    },
+    {
+      "at_tick": 697,
+      "check": "first_impact_before",
+      "value": 682
+    },
+    {
+      "at_tick": 8280,
+      "check": "impact_count_at_least",
+      "value": 180
+    },
+    {
+      "at_tick": 8280,
+      "check": "impacts_cep_pct",
+      "x": 500,
+      "y": 8900,
+      "mount": 58,
+      "player": 90,
+      "value": 110
+    }
+  ]
+}

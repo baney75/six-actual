@@ -1,0 +1,136 @@
+{
+  "id": "ux_18_sound_detail",
+  "requirement": "DET-08",
+  "also": [
+    "AUD-03"
+  ],
+  "description": "Sound detail (BRIEF D7): at night the ambience is wind and insects; every sound arrives delayed by distance / 343 m/s within one frame; the listener's reverb zone is reported from the terrain; wildlife falls silent once fighting starts; the music ducks under radio dialogue; radio lines play on the era's chain with a squelch tail.",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "select": "TimeOfDay",
+      "index": 3
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "phase",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "press": "TakeControl"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "frames": 20
+    },
+    {
+      "press": "ReturnControl"
+    },
+    {
+      "wait_event": "control_returned"
+    },
+    {
+      "speed": 20
+    },
+    {
+      "wait_event": "map_ping",
+      "timeout_s": 120
+    },
+    {
+      "press": "JumpToAlert"
+    },
+    {
+      "wait_event": "camera_jump"
+    },
+    {
+      "speed": 0
+    },
+    {
+      "wait_event": "sfx_play",
+      "count": 20,
+      "timeout_s": 240
+    },
+    {
+      "wait_event": "ambience",
+      "count": 2,
+      "timeout_s": 120
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "ambience_beds",
+      "fields": {
+        "wildlife": "insects",
+        "wind": true
+      }
+    },
+    {
+      "event": "reverb_zone",
+      "nonempty": [
+        "zone"
+      ]
+    },
+    {
+      "event": "music_duck",
+      "fields": {
+        "ducked": true
+      }
+    },
+    {
+      "event": "radio",
+      "fields": {
+        "bus": "Radio_coldwar",
+        "squelch": true
+      }
+    },
+    {
+      "event": "ambience",
+      "fields": {
+        "state": "silenced"
+      }
+    },
+    {
+      "event": "sfx_play",
+      "min_count": 20,
+      "range": {
+        "delay_error_ms": [
+          -17,
+          17
+        ]
+      },
+      "positive": [
+        "distance_m"
+      ]
+    },
+    {
+      "event": "debrief"
+    }
+  ]
+}

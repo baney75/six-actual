@@ -1,0 +1,92 @@
+{
+  "id": "fog_contact_lost",
+  "requirement": "SIM-05",
+  "description": "Blue sees a red tank, which then drives behind a 30 m ridge: blue loses it (Lost event) while red, on the crest-side, keeps no sight of blue either. Player-scoped: red's own unit stays known to red only.",
+  "ticks": 1200,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "ridge",
+        "x0": 1500,
+        "y0": 200,
+        "x1": 1500,
+        "y1": 1800,
+        "width_m": 300,
+        "height_dm": 300
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "blue",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 1000
+    },
+    {
+      "tag": "red",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1250,
+      "y": 1000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "red",
+      "kind": "move",
+      "x": 1850,
+      "y": 1000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "red",
+      "player": 0,
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "blue",
+      "player": 1,
+      "expect": true
+    },
+    {
+      "at_tick": 1200,
+      "check": "spotted",
+      "unit": "red",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 1200,
+      "check": "spotted",
+      "unit": "blue",
+      "player": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 1200,
+      "check": "event_lost_count_at_least",
+      "player": 0,
+      "value": 1
+    },
+    {
+      "at_tick": 1200,
+      "check": "event_spotted_count_at_least",
+      "player": 0,
+      "value": 1
+    }
+  ]
+}

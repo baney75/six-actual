@@ -1,0 +1,203 @@
+{
+  "id": "ux_12_strategy",
+  "requirement": "GS-01",
+  "also": [
+    "CMD-08"
+  ],
+  "description": "Grand strategy on the GS sim: the Cold War theater map (19 provinces) opens with the US commanding armies led by commanders; the player moves the Fulda army to Kassel and ends the turn while the AI plays every other faction; with production in hand it funds research and builds an army, and the next turn shows research points and a fourth army. A save and a load restore the exact state (same hash); the WW2 theater opens too.",
+  "steps": [
+    {
+      "press": "Strategy"
+    },
+    {
+      "wait_event": "gs_started"
+    },
+    {
+      "press": "Prov_fulda"
+    },
+    {
+      "wait_event": "gs_army_selected"
+    },
+    {
+      "press": "Prov_kassel"
+    },
+    {
+      "press": "EndTurn"
+    },
+    {
+      "wait_event": "gs_turn"
+    },
+    {
+      "press": "Research"
+    },
+    {
+      "press": "Build"
+    },
+    {
+      "press": "EndTurn"
+    },
+    {
+      "wait_event": "gs_turn",
+      "count": 2
+    },
+    {
+      "press": "EndTurn"
+    },
+    {
+      "wait_event": "gs_turn",
+      "count": 3
+    },
+    {
+      "press": "SaveGs"
+    },
+    {
+      "wait_event": "gs_saved"
+    },
+    {
+      "press": "EndTurn"
+    },
+    {
+      "wait_event": "gs_turn",
+      "count": 4
+    },
+    {
+      "press": "LoadGs"
+    },
+    {
+      "wait_event": "gs_loaded"
+    },
+    {
+      "select": "GsEra",
+      "index": 1
+    },
+    {
+      "wait_event": "gs_started",
+      "count": 2
+    },
+    {
+      "press": "Back"
+    },
+    {
+      "wait_event": "screen",
+      "count": 3
+    }
+  ],
+  "expect": [
+    {
+      "event": "gs_started",
+      "fields": {
+        "era": "coldwar",
+        "faction": "usa",
+        "provinces": 19,
+        "first_army_in": "fulda"
+      },
+      "positive": [
+        "armies",
+        "commanders"
+      ]
+    },
+    {
+      "event": "gs_army_selected",
+      "fields": {
+        "province": "fulda"
+      },
+      "positive": [
+        "strength"
+      ]
+    },
+    {
+      "event": "gs_order",
+      "fields": {
+        "kind": "move",
+        "turn": 0
+      }
+    },
+    {
+      "event": "gs_turn",
+      "fields": {
+        "turn": 1,
+        "armies": 3
+      },
+      "positive": [
+        "production",
+        "manpower",
+        "owned"
+      ]
+    },
+    {
+      "event": "gs_order",
+      "fields": {
+        "kind": "research",
+        "turn": 1
+      },
+      "positive": [
+        "value"
+      ]
+    },
+    {
+      "event": "gs_order",
+      "fields": {
+        "kind": "build",
+        "turn": 1
+      },
+      "positive": [
+        "value"
+      ]
+    },
+    {
+      "event": "gs_turn",
+      "fields": {
+        "turn": 2
+      },
+      "range": {
+        "research": [
+          1,
+          29
+        ],
+        "armies": [
+          4,
+          99
+        ]
+      }
+    },
+    {
+      "event": "gs_turn",
+      "fields": {
+        "turn": 3
+      }
+    },
+    {
+      "event": "gs_saved",
+      "fields": {
+        "turn": 3
+      }
+    },
+    {
+      "event": "gs_turn",
+      "fields": {
+        "turn": 4
+      }
+    },
+    {
+      "event": "gs_loaded",
+      "fields": {
+        "turn": 3
+      },
+      "same_as": {
+        "hash": "gs_saved"
+      }
+    },
+    {
+      "event": "gs_started",
+      "fields": {
+        "era": "ww2"
+      }
+    },
+    {
+      "event": "screen",
+      "fields": {
+        "name": "main_menu"
+      }
+    }
+  ]
+}

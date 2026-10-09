@@ -1,0 +1,168 @@
+{
+  "id": "collapse_cantilever_and_material",
+  "requirement": "SIM-10",
+  "description": "Brick 4x4x3: blasting out one ground corner leaves the chunk above standing on its neighbours (one-chunk cantilever). Blasting the two ground neighbours too drops that corner chunk. Material: the same 600-point, 4 m blast 0.7 m from a chunk centre deals 600*33/40 = 495 before armor: brick (armor 30, hp 400) takes 465 and is destroyed; concrete (armor 50, hp 600) takes 445 and stands.",
+  "ticks": 60,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "building",
+        "x": 1000,
+        "y": 1000,
+        "nx": 4,
+        "ny": 4,
+        "floors": 3,
+        "material": "brick"
+      },
+      {
+        "type": "building",
+        "x": 1200,
+        "y": 1000,
+        "nx": 2,
+        "ny": 2,
+        "floors": 1,
+        "material": "concrete"
+      },
+      {
+        "type": "building",
+        "x": 1400,
+        "y": 1000,
+        "nx": 1,
+        "ny": 1,
+        "floors": 1,
+        "material": "brick"
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "obs",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 1001,
+      "y": 1001,
+      "z_dm": 15,
+      "radius_m": 2,
+      "damage": 1000
+    },
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 1201,
+      "y": 1001,
+      "z_dm": 15,
+      "radius_m": 4,
+      "damage": 600
+    },
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 1401,
+      "y": 1001,
+      "z_dm": 15,
+      "radius_m": 4,
+      "damage": 600
+    },
+    {
+      "tick": 20,
+      "kind": "blast",
+      "x": 1004,
+      "y": 1001,
+      "z_dm": 15,
+      "radius_m": 2,
+      "damage": 1000
+    },
+    {
+      "tick": 20,
+      "kind": "blast",
+      "x": 1001,
+      "y": 1004,
+      "z_dm": 15,
+      "radius_m": 2,
+      "damage": 1000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 15,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 15,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 1
+    },
+    {
+      "at_tick": 15,
+      "check": "chunk_standing",
+      "player": 1,
+      "x": 0,
+      "y": 0,
+      "value": 0
+    },
+    {
+      "at_tick": 15,
+      "check": "chunk_standing",
+      "player": 2,
+      "x": 0,
+      "y": 0,
+      "value": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 25,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 1
+    },
+    {
+      "at_tick": 35,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 35,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 1,
+      "y": 0,
+      "value": 1
+    },
+    {
+      "at_tick": 35,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 2
+    }
+  ]
+}

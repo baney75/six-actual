@@ -1,0 +1,49 @@
+{
+  "id": "armor_top_attack",
+  "requirement": "SIM-06",
+  "description": "An A-10A at 300 m altitude strafes a T-80BV that faces it: the GAU-8 (53 mm at 1000 m) strikes the 30 mm top armor and penetrates; against the 478 mm front it could not. Fire from aircraft resolves against top armor.",
+  "ticks": 2000,
+  "seeds": {
+    "start": 1,
+    "count": 3
+  },
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 1000,
+      "y": 2000,
+      "altitude_m": 300,
+      "ammo": [
+        1174,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "tank",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2000,
+      "y": 2000,
+      "heading_deg": 180,
+      "roe": "hold_fire"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2000,
+      "check": "hits",
+      "unit": "a10",
+      "other": "tank",
+      "mount": 0,
+      "outcome": "pen",
+      "face": "top"
+    }
+  ]
+}

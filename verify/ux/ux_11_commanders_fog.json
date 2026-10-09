@@ -1,0 +1,204 @@
+{
+  "id": "ux_11_commanders_fog",
+  "requirement": "CMD-02",
+  "also": [
+    "CMD-01",
+    "SIM-05"
+  ],
+  "description": "Commanders: a sector painted for Army1 assigns every friendly ground unit inside it (read back from the sim); painting Player takes them back; a unit under player control is selected and moved directly. The commander panel lists the 8 seats. Fog: in every sample the view draws exactly the enemies the sim says are spotted, and some enemies are hidden.",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "press": "Card_*_ground"
+    },
+    {
+      "wait_event": "deployed",
+      "count": 1
+    },
+    {
+      "press": "Card_*_ground"
+    },
+    {
+      "wait_event": "deployed",
+      "count": 2
+    },
+    {
+      "press": "Card_*_ground"
+    },
+    {
+      "wait_event": "deployed",
+      "count": 3
+    },
+    {
+      "press": "Card_*_ground"
+    },
+    {
+      "wait_event": "deployed",
+      "count": 4
+    },
+    {
+      "speed": 2
+    },
+    {
+      "frames": 10
+    },
+    {
+      "press": "Paint_Army1"
+    },
+    {
+      "drag": [
+        -0.98,
+        -0.3,
+        0.98,
+        0.98
+      ]
+    },
+    {
+      "wait_event": "seats"
+    },
+    {
+      "press": "Paint_Player"
+    },
+    {
+      "drag": [
+        -0.98,
+        -0.3,
+        0.98,
+        0.98
+      ]
+    },
+    {
+      "wait_event": "seats",
+      "count": 2
+    },
+    {
+      "click_unit": "friendly"
+    },
+    {
+      "wait_event": "selected"
+    },
+    {
+      "click": [
+        0.0,
+        -0.35
+      ],
+      "button": "right"
+    },
+    {
+      "wait_event": "move_ordered"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "fog",
+      "count": 40,
+      "timeout_s": 120
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "deployed"
+    },
+    {
+      "event": "paint_armed",
+      "fields": {
+        "seat": "Army1"
+      }
+    },
+    {
+      "event": "sector_painted",
+      "fields": {
+        "seat": "Army1"
+      },
+      "range": {
+        "units": [
+          4,
+          100
+        ]
+      }
+    },
+    {
+      "event": "seats",
+      "range": {
+        "Army1": [
+          4,
+          100
+        ]
+      },
+      "fields": {
+        "Player": 0
+      }
+    },
+    {
+      "event": "sector_painted",
+      "fields": {
+        "seat": "Player"
+      },
+      "range": {
+        "units": [
+          4,
+          100
+        ]
+      }
+    },
+    {
+      "event": "seats",
+      "fields": {
+        "Army1": 0
+      },
+      "range": {
+        "Player": [
+          4,
+          100
+        ]
+      }
+    },
+    {
+      "event": "selected",
+      "fields": {
+        "seat": -1
+      }
+    },
+    {
+      "event": "move_ordered",
+      "fields": {
+        "seat": -1
+      }
+    },
+    {
+      "event": "fog",
+      "min_count": 40,
+      "equal_fields": [
+        [
+          "shown",
+          "spotted"
+        ]
+      ]
+    },
+    {
+      "event": "fog",
+      "positive": [
+        "spotted",
+        "hidden"
+      ]
+    },
+    {
+      "event": "debrief"
+    }
+  ]
+}

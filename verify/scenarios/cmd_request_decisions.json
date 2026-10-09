@@ -1,0 +1,166 @@
+{
+  "id": "cmd_request_decisions",
+  "requirement": "CMD-05",
+  "ticks": 6500,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 5000,
+    "cell_m": 8
+  },
+  "description": "The player approves, denies and reprioritises support requests (CMD-05). Three seats attack with their units already at staging, so each files a preparatory fire request (ids 0, 1, 2 for Army1, Army2, Armor) to Arty1, which asks before spending (approval mode 1). At tick 100 the player denies request 2, approves request 0 at its default priority and approves request 1 with priority 0. The single battery serves request 1 first: until tick 2000 every impact lands around Army2's objective (3000,3000), none around Army1's (2000,3000). Request 0 is fired after that mission; the denied request is never fired.",
+  "units": [
+    {
+      "tag": "a1",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2000,
+      "y": 1500,
+      "seat": "Army1"
+    },
+    {
+      "tag": "a2",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 3000,
+      "y": 1500,
+      "seat": "Army2"
+    },
+    {
+      "tag": "ar",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 4000,
+      "y": 1500,
+      "seat": "Armor"
+    },
+    {
+      "tag": "how",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 2500,
+      "y": 200,
+      "seat": "Arty1"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Arty1",
+      "field": "approval",
+      "value": 1
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "attack",
+      "x": 2000,
+      "y": 3000
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army2",
+      "task": "attack",
+      "x": 3000,
+      "y": 3000
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Armor",
+      "task": "attack",
+      "x": 4000,
+      "y": 3000
+    },
+    {
+      "tick": 100,
+      "kind": "deny",
+      "request": 2
+    },
+    {
+      "tick": 100,
+      "kind": "approve",
+      "request": 0
+    },
+    {
+      "tick": 100,
+      "kind": "approve",
+      "request": 1,
+      "priority": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 90,
+      "check": "request_pending",
+      "value": 0
+    },
+    {
+      "at_tick": 90,
+      "check": "request_pending",
+      "value": 1
+    },
+    {
+      "at_tick": 90,
+      "check": "request_pending",
+      "value": 2
+    },
+    {
+      "at_tick": 200,
+      "check": "request_status",
+      "x": 2,
+      "value": 2
+    },
+    {
+      "at_tick": 200,
+      "check": "request_status",
+      "x": 1,
+      "value": 3
+    },
+    {
+      "at_tick": 200,
+      "check": "request_status",
+      "x": 0,
+      "value": 1
+    },
+    {
+      "at_tick": 2000,
+      "check": "impacts_cep_pct",
+      "x": 3000,
+      "y": 3000,
+      "mount": 200,
+      "player": 0,
+      "value": 100
+    },
+    {
+      "at_tick": 2000,
+      "check": "impacts_cep_pct",
+      "x": 2000,
+      "y": 3000,
+      "mount": 200,
+      "player": 300,
+      "value": 100000
+    },
+    {
+      "at_tick": 6500,
+      "check": "request_status",
+      "x": 0,
+      "value": 3
+    },
+    {
+      "at_tick": 6500,
+      "check": "request_status",
+      "x": 2,
+      "value": 2
+    }
+  ]
+}

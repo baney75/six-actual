@@ -1,0 +1,32 @@
+{
+  "id": "net_reconnect_replay",
+  "requirement": "NET-01",
+  "players_per_side": 4,
+  "ticks": 4000,
+  "latency_ms": 60,
+  "jitter_ms": 10,
+  "loss_pct": 1,
+  "input_delay_ticks": 4,
+  "seed": 14,
+  "hash_interval_ticks": 50,
+  "drop": {
+    "client": 3,
+    "at_tick": 1500,
+    "rejoin_after_ms": 5000
+  },
+  "description": "Replays and reconnect (NET-01): client 3 drops at tick 1500 and is gone 5 s; it rebuilds its state from the confirmed input log, rejoins, and the match continues with zero desyncs; the input log replays to the clients' final state.",
+  "assert": [
+    {
+      "check": "reconnects",
+      "value": 1
+    },
+    {
+      "check": "desyncs",
+      "value": 0
+    },
+    {
+      "check": "replay_matches"
+    }
+  ],
+  "type": "net"
+}

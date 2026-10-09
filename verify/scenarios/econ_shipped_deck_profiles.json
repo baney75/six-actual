@@ -1,0 +1,20 @@
+{
+  "id": "econ_shipped_deck_profiles",
+  "requirement": "MEC-01",
+  "description": "Shipped decks carry their income profile: a player given us_1989_armored_cavalry (vanguard) with no income override earns exactly 60 DP in the first minute of phase A, and su_1989_tank_division (juggernaut) earns exactly 30.",
+  "ticks": 1300,
+  "roe": "hold_fire",
+  "seeds": [1],
+  "terrain": {"size_m": 1000, "cell_m": 8},
+  "units": [],
+  "players": [
+    {"deck": "us_1989_armored_cavalry", "start_dp": 0, "spawn_x": 200, "spawn_y": 200},
+    {"deck": "su_1989_tank_division", "start_dp": 0, "spawn_x": 800, "spawn_y": 800}
+  ],
+  "assert": [
+    {"at_tick": 1200, "check": "dp_at_least", "player": 0, "value": 60},
+    {"at_tick": 1200, "check": "dp_at_most", "player": 0, "value": 60},
+    {"at_tick": 1200, "check": "dp_at_least", "player": 1, "value": 30},
+    {"at_tick": 1200, "check": "dp_at_most", "player": 1, "value": 30}
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "ux_08_rebound_controls",
+  "requirement": "UX-02",
+  "also": [
+    "FLY-04"
+  ],
+  "description": "With the settings ux_05 saved: the battle uses the deuteranopia palette, the rebound key Y takes control of an aircraft, the right stick (rebound to fly-left) turns it left, the slow-time key toggles half speed, and pause stops the clock. Subtitles are off (ux_05), so the XO's handover shows no subtitle.",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "phase",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "key": "T"
+    },
+    {
+      "frames": 10
+    },
+    {
+      "key": "Y"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "joy_axis": "RightX",
+      "value": -1.0
+    },
+    {
+      "wait_event": "stick_input"
+    },
+    {
+      "joy_axis": "RightX",
+      "value": 0.0
+    },
+    {
+      "key": "Comma"
+    },
+    {
+      "wait_event": "slow_time"
+    },
+    {
+      "key": "Space"
+    },
+    {
+      "wait_event": "pause"
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "battle_started",
+      "fields": {
+        "palette": "deuteranopia"
+      }
+    },
+    {
+      "event": "deployed"
+    },
+    {
+      "event": "take_control_ordered"
+    },
+    {
+      "event": "take_control",
+      "tick_within": {
+        "of": "take_control_ordered",
+        "max": 1
+      }
+    },
+    {
+      "event": "stick_input",
+      "fields": {
+        "source": "joypad",
+        "turn": -100
+      }
+    },
+    {
+      "event": "slow_time",
+      "fields": {
+        "slow": true
+      }
+    },
+    {
+      "event": "pause",
+      "fields": {
+        "paused": true
+      }
+    },
+    {
+      "event": "debrief"
+    },
+    {
+      "absent": "subtitle"
+    }
+  ]
+}

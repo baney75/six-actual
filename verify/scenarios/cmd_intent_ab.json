@@ -1,0 +1,221 @@
+{
+  "id": "cmd_intent_ab",
+  "requirement": "CMD-04",
+  "description": "Intent changes behavior. Aggression: identical forces 3 km from their objectives; the aggressive seat (90) stages 900 m short (1500 x 0.6), the cautious one (10) 2100 m short (1500 x 1.4). Casualty tolerance: two damaged M1A1s (60% hp); with tolerance 20 the threshold is 80% and it withdraws, with 80 the threshold is 20% and it stays. ROE: a hold-fire seat never fires at an enemy in range; a fire-at-will seat does.",
+  "ticks": 3000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "a0",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1000,
+      "y": 500,
+      "seat": "Army1",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "a1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1060,
+      "y": 500,
+      "seat": "Army1",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "a2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1120,
+      "y": 500,
+      "seat": "Army1",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "c0",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 6000,
+      "y": 500,
+      "seat": "Army2",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "c1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 6060,
+      "y": 500,
+      "seat": "Army2",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "c2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 6120,
+      "y": 500,
+      "seat": "Army2",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "brave",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 3000,
+      "y": 6000,
+      "seat": "Armor",
+      "roe": "hold_fire",
+      "hp_pct": 60
+    },
+    {
+      "tag": "timid",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 3600,
+      "y": 6000,
+      "seat": "Logistics",
+      "roe": "hold_fire",
+      "hp_pct": 60
+    },
+    {
+      "tag": "quiet",
+      "unit": "m1a1_abrams",
+      "player": 1,
+      "x": 7000,
+      "y": 7000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "loud",
+      "unit": "m1a1_abrams",
+      "player": 1,
+      "x": 7000,
+      "y": 7600,
+      "seat": "Army2"
+    },
+    {
+      "tag": "tgt",
+      "unit": "btr80",
+      "player": 0,
+      "x": 7500,
+      "y": 7300,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Army1",
+      "field": "aggression",
+      "value": 90
+    },
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Army2",
+      "field": "aggression",
+      "value": 10
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "attack",
+      "x": 1060,
+      "y": 3500
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army2",
+      "task": "attack",
+      "x": 6060,
+      "y": 3500
+    },
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Armor",
+      "field": "casualty_tolerance",
+      "value": 80
+    },
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Logistics",
+      "field": "casualty_tolerance",
+      "value": 20
+    },
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 1,
+      "seat": "Army1",
+      "field": "roe",
+      "value": 2
+    },
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 1,
+      "seat": "Army2",
+      "field": "roe",
+      "value": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 40,
+      "check": "task_staging",
+      "mount": 0,
+      "x": 1060,
+      "y": 2600,
+      "value": 5
+    },
+    {
+      "at_tick": 40,
+      "check": "task_staging",
+      "mount": 1,
+      "x": 6060,
+      "y": 1400,
+      "value": 5
+    },
+    {
+      "at_tick": 100,
+      "check": "withdrawing",
+      "unit": "timid"
+    },
+    {
+      "at_tick": 100,
+      "check": "withdrawing",
+      "unit": "brave",
+      "expect": false
+    },
+    {
+      "at_tick": 3000,
+      "check": "fired_any",
+      "unit": "quiet",
+      "expect": false
+    },
+    {
+      "at_tick": 3000,
+      "check": "fired_any",
+      "unit": "loud"
+    }
+  ]
+}

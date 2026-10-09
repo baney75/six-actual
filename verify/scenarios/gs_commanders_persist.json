@@ -1,0 +1,26 @@
+{
+  "id": "gs_commanders_persist",
+  "requirement": "CMD-08",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "turns": 5,
+  "ai": "all",
+  "description": "Commander persistence (CMD-08). After five AI-vs-AI turns the commanders have earned XP in their battles (wounded ones are out and their armies fight under a 0-XP replacement until they return). Saving the grand-strategy state and loading it reproduces it exactly, commander XP and wounds included, and two loaded copies play five more turns identically.",
+  "assert": [
+    {
+      "turn": 5,
+      "check": "commanders_xp_total_at_least",
+      "value": 20
+    },
+    {
+      "turn": 5,
+      "check": "save_load_roundtrip",
+      "turns": 5
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

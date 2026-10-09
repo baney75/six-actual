@@ -1,0 +1,173 @@
+{
+  "id": "cmd_defend_hold_recon",
+  "requirement": "CMD-03",
+  "description": "Defend: Army2's four M2A2s spread along a 2 km line, the one whose slot is beside a wood moves into it. Hold: Armor's tank, driving east, stops when a hold task arrives at tick 100. Recon: Army1's two M3A2s drive to the recon area and switch to return-fire ROE.",
+  "ticks": 4000,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "forest",
+        "x": 1700,
+        "y": 2030,
+        "w": 64,
+        "h": 64,
+        "density": 90
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "d0",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 1500,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "d1",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 1600,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "d2",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 1700,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "d3",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 1800,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 300,
+      "y": 400,
+      "seat": "Armor"
+    },
+    {
+      "tag": "s1",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 3000,
+      "y": 500,
+      "seat": "Army1"
+    },
+    {
+      "tag": "s2",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 3060,
+      "y": 500,
+      "seat": "Army1"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army2",
+      "task": "defend",
+      "x": 1000,
+      "y": 2000,
+      "x2": 3000,
+      "y2": 2000
+    },
+    {
+      "tick": 0,
+      "tag": "tank",
+      "kind": "move",
+      "x": 3500,
+      "y": 400
+    },
+    {
+      "tick": 100,
+      "kind": "task",
+      "player": 0,
+      "seat": "Armor",
+      "task": "hold",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "recon",
+      "x": 3000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "d0",
+      "x": 1250,
+      "y": 2000,
+      "value": 110
+    },
+    {
+      "at_tick": 4000,
+      "check": "in_forest",
+      "unit": "d1"
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "d2",
+      "x": 2250,
+      "y": 2000,
+      "value": 110
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "d3",
+      "x": 2750,
+      "y": 2000,
+      "value": 110
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "tank",
+      "x": 372,
+      "y": 400,
+      "value": 12
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "s1",
+      "x": 3000,
+      "y": 3000,
+      "value": 80
+    },
+    {
+      "at_tick": 4000,
+      "check": "roe_is",
+      "unit": "s1",
+      "value": 1
+    }
+  ]
+}

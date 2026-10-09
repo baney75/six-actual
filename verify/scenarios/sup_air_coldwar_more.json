@@ -1,0 +1,261 @@
+{
+  "id": "sup_air_coldwar_more",
+  "requirement": "SUP-02",
+  "description": "More Cold War air support (SUP-02). Napalm: an Su-25 ZAB-500 run sets the two M113s at the aim point on fire. Air assault: a UH-60 lift lands a 3-squad platoon at the LZ (120 s); a VDV drop lands 3 squads around the DZ (150 s). Gunship: an AC-130H orbit (called at 50 s, 120 s delay, 90 s orbit) destroys two spotted BTR-80s within 800 m of its orbit point while a BTR 1.4 km away is untouched. Cruise missile: a Tomahawk (240 s) destroys a T-80BV at the aim point with no designator anywhere near. Drone: a Pioneer UAV reveals a BMP-2 no NATO unit can see. Escort: F-15C escort cuts a MiG-29's missile chance against an F-16 from 39% to 15%.",
+  "ticks": 5000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 1000
+    },
+    {
+      "start_sp": 500
+    }
+  ],
+  "units": [
+    {
+      "tag": "m113a",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 1000,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m113b",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 1012,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "obs",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 1000,
+      "y": 2400,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "btr1",
+      "unit": "btr80",
+      "player": 1,
+      "x": 1000,
+      "y": 3000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "btr2",
+      "unit": "btr80",
+      "player": 1,
+      "x": 1050,
+      "y": 3000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "btr_far",
+      "unit": "btr80",
+      "player": 1,
+      "x": 2400,
+      "y": 3000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t80",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 6000,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "hidden",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 7800,
+      "y": 7800,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "f16",
+      "unit": "f16c_block30",
+      "player": 0,
+      "x": 300,
+      "y": 4000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "mig",
+      "unit": "mig29_9_12",
+      "player": 1,
+      "x": 300,
+      "y": 6000,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 1000,
+      "kind": "support",
+      "player": 1,
+      "option": "pact_su25_napalm",
+      "x": 1006,
+      "y": 1000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_air_assault",
+      "x": 3000,
+      "y": 1000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 1,
+      "option": "pact_vdv_paradrop",
+      "x": 3000,
+      "y": 5000
+    },
+    {
+      "tick": 1000,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_ac130_gunship",
+      "x": 1000,
+      "y": 3000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_tomahawk",
+      "x": 6000,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_pioneer_uav",
+      "x": 7800,
+      "y": 7800
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_f15_escort",
+      "x": 300,
+      "y": 4000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 3100,
+      "check": "flag_set",
+      "unit": "m113a",
+      "value": 32
+    },
+    {
+      "at_tick": 3100,
+      "check": "flag_set",
+      "unit": "m113b",
+      "value": 32
+    },
+    {
+      "at_tick": 2300,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 7,
+      "expect": false
+    },
+    {
+      "at_tick": 2500,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 7
+    },
+    {
+      "at_tick": 2900,
+      "check": "units_of_player_at_least",
+      "player": 1,
+      "value": 9,
+      "expect": false
+    },
+    {
+      "at_tick": 3100,
+      "check": "units_of_player_at_least",
+      "player": 1,
+      "value": 9
+    },
+    {
+      "at_tick": 4950,
+      "check": "alive",
+      "unit": "btr1",
+      "expect": false
+    },
+    {
+      "at_tick": 4950,
+      "check": "alive",
+      "unit": "btr2",
+      "expect": false
+    },
+    {
+      "at_tick": 4950,
+      "check": "alive",
+      "unit": "btr_far"
+    },
+    {
+      "at_tick": 4700,
+      "check": "alive",
+      "unit": "t80"
+    },
+    {
+      "at_tick": 4900,
+      "check": "alive",
+      "unit": "t80",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "hidden",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 1300,
+      "check": "spotted",
+      "unit": "hidden",
+      "player": 0
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "mig",
+      "other": "f16",
+      "mount": 1,
+      "x": 39,
+      "value": 39
+    },
+    {
+      "at_tick": 700,
+      "check": "hit_chance_between",
+      "unit": "mig",
+      "other": "f16",
+      "mount": 1,
+      "x": 15,
+      "value": 15
+    }
+  ]
+}

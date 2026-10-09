@@ -1,0 +1,53 @@
+{
+  "id": "morale_hq_steadies",
+  "requirement": "SIM-08",
+  "description": "A command post within 300 m doubles suppression decay: a squad from 150 is normal by tick ~66, while an identical squad 1 km from the HQ is still shaken or worse.",
+  "ticks": 80,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "near",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "suppression": 150
+    },
+    {
+      "tag": "hq",
+      "unit": "m577a2_cp",
+      "player": 0,
+      "x": 600,
+      "y": 500
+    },
+    {
+      "tag": "farsq",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 1600,
+      "y": 500,
+      "suppression": 150
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 72,
+      "check": "morale_state",
+      "unit": "near",
+      "value": 0
+    },
+    {
+      "at_tick": 72,
+      "check": "morale_at_least",
+      "unit": "farsq",
+      "value": 1
+    }
+  ]
+}

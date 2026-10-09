@@ -1,0 +1,94 @@
+{
+  "id": "cmd_cas_approval",
+  "requirement": "CMD-05",
+  "ticks": 3600,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 10000,
+    "cell_m": 8
+  },
+  "description": "Air requests go through the player (CMD-05). As cmd_cas, but Air1 asks before spending (approval mode 1): the CAS request stays pending and the A-10 stays on standby until the player approves it at tick 2000; then it flies to the objective.",
+  "units": [
+    {
+      "tag": "inf",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 5000,
+      "y": 6500,
+      "seat": "Army1"
+    },
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 400,
+      "y": 400,
+      "seat": "Air1"
+    },
+    {
+      "tag": "target",
+      "unit": "ural4320",
+      "player": 1,
+      "x": 5000,
+      "y": 9000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Air1",
+      "field": "approval",
+      "value": 1
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Air1",
+      "task": "cas",
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "attack",
+      "x": 5000,
+      "y": 9000
+    },
+    {
+      "tick": 2000,
+      "kind": "approve",
+      "request": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1950,
+      "check": "request_pending",
+      "value": 0
+    },
+    {
+      "at_tick": 1950,
+      "check": "near",
+      "unit": "a10",
+      "x": 500,
+      "y": 500,
+      "value": 200
+    },
+    {
+      "at_tick": 3600,
+      "check": "near",
+      "unit": "a10",
+      "x": 5000,
+      "y": 9000,
+      "value": 300
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "ww2_armor_and_support",
+  "requirement": "ERA-01",
+  "era": "ww2",
+  "description": "WW2 1944 slice (ERA-01) from sourced data (assets_src/research/ww2_1944_roster_sources.json). Armour: an M4A3(75)W's 75 mm M3 (78 mm at 500 m, normal) cannot defeat a Panther G's front (80 mm at 55 deg glacis, 100 mm mantlet: 117 mm effective) in 60 s of firing, but kills a Panther shown its 50 mm side; a Panther's KwK 42 (139 mm at 1 km) kills a Sherman (97 mm effective front) head-on. Era-gated support: a Waco glider landing brings a 3-squad platoon, a Ju 87 dive attack destroys an M8 Greyhound at the aim point, and a Cold War option is refused in a WW2 battle (reason 5).",
+  "ticks": 4000,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 9000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 400
+    },
+    {
+      "start_sp": 400
+    }
+  ],
+  "units": [
+    {
+      "tag": "sherman_a",
+      "unit": "m4a3_75w",
+      "player": 0,
+      "x": 1000,
+      "y": 1000,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "panther_a",
+      "unit": "panther_g",
+      "player": 1,
+      "x": 1000,
+      "y": 1500,
+      "heading_deg": 270
+    },
+    {
+      "tag": "sherman_b",
+      "unit": "m4a3_75w",
+      "player": 0,
+      "x": 4000,
+      "y": 1000,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "panther_b",
+      "unit": "panther_g",
+      "player": 1,
+      "x": 4000,
+      "y": 1500,
+      "heading_deg": 0
+    },
+    {
+      "tag": "panther_c",
+      "unit": "panther_g",
+      "player": 1,
+      "x": 7000,
+      "y": 2000,
+      "heading_deg": 270,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "sherman_c",
+      "unit": "m4a3_75w",
+      "player": 0,
+      "x": 7000,
+      "y": 1000,
+      "heading_deg": 90
+    },
+    {
+      "tag": "greyhound",
+      "unit": "m8_greyhound",
+      "player": 0,
+      "x": 8500,
+      "y": 8500
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "allies_waco_glider",
+      "x": 2000,
+      "y": 4000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 1,
+      "option": "axis_ju87_dive",
+      "x": 8500,
+      "y": 8500
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fa_battalion_155",
+      "x": 3000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1200,
+      "check": "alive",
+      "unit": "panther_a"
+    },
+    {
+      "at_tick": 2900,
+      "check": "alive",
+      "unit": "panther_b",
+      "expect": false
+    },
+    {
+      "at_tick": 1200,
+      "check": "alive",
+      "unit": "sherman_c",
+      "expect": false
+    },
+    {
+      "at_tick": 2900,
+      "check": "alive",
+      "unit": "greyhound",
+      "expect": false
+    },
+    {
+      "at_tick": 5,
+      "check": "support_refused",
+      "player": 0,
+      "value": 5
+    },
+    {
+      "at_tick": 3500,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 3,
+      "expect": false
+    },
+    {
+      "at_tick": 3700,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 5
+    }
+  ]
+}

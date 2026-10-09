@@ -1,0 +1,134 @@
+{
+  "id": "fires_cep_155",
+  "requirement": "SUP-01",
+  "description": "Six M109A3 fire 30 rounds each at a point 12 km away (CEP in data 0.5% of range = 60 m). Median miss of 180 impacts within +-10% (54-66 m). First impact: setup 200 ticks + flight 12000 m / 500 m/s = 480 ticks -> tick 680.",
+  "ticks": 18400,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 13000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "h0",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tag": "h1",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 500,
+      "y": 510
+    },
+    {
+      "tag": "h2",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 500,
+      "y": 520
+    },
+    {
+      "tag": "h3",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 500,
+      "y": 530
+    },
+    {
+      "tag": "h4",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 500,
+      "y": 540
+    },
+    {
+      "tag": "h5",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 500,
+      "y": 550
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "h0",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 12550,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "h1",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 12550,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "h2",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 12550,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "h3",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 12550,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "h4",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 12550,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "h5",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 12550,
+      "rounds": 30
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 700,
+      "check": "first_impact_after",
+      "value": 675
+    },
+    {
+      "at_tick": 700,
+      "check": "first_impact_before",
+      "value": 685
+    },
+    {
+      "at_tick": 18400,
+      "check": "impact_count_at_least",
+      "value": 180
+    },
+    {
+      "at_tick": 18400,
+      "check": "impacts_cep_pct",
+      "x": 500,
+      "y": 12550,
+      "mount": 60,
+      "player": 90,
+      "value": 110
+    }
+  ]
+}

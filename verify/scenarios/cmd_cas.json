@@ -1,0 +1,121 @@
+{
+  "id": "cmd_cas",
+  "requirement": "CMD-03",
+  "ticks": 5000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 10000,
+    "cell_m": 8
+  },
+  "description": "CAS on request (CMD-03, CMD-05). Air1 holds an A-10 on CAS standby at (500,500), more than 8 km from the objective (beyond Maverick range, so the strike can only come through a request). Army1 (holding fire, so the strike is the A-10's) attacks (5000,9000), where an enemy truck stands; after assembling at its staging point it files a CAS request (id 0; no artillery seat, so no fire request) that auto-approves. Air1 dispatches the A-10, which destroys the truck, comes on station within cas_on_station_m (1.5 km), works the area for cas_loiter_ticks (1200), closes the request and returns to standby.",
+  "units": [
+    {
+      "tag": "inf",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 5000,
+      "y": 6500,
+      "seat": "Army1"
+    },
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 400,
+      "y": 400,
+      "seat": "Air1"
+    },
+    {
+      "tag": "target",
+      "unit": "ural4320",
+      "player": 1,
+      "x": 5000,
+      "y": 9000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Army1",
+      "field": "roe",
+      "value": 2
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Air1",
+      "task": "cas",
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "attack",
+      "x": 5000,
+      "y": 9000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1000,
+      "check": "near",
+      "unit": "a10",
+      "x": 500,
+      "y": 500,
+      "value": 200
+    },
+    {
+      "at_tick": 2600,
+      "check": "near",
+      "unit": "a10",
+      "x": 5000,
+      "y": 9000,
+      "value": 300
+    },
+    {
+      "at_tick": 2600,
+      "check": "events_at_least",
+      "value": 39,
+      "player": 1
+    },
+    {
+      "at_tick": 2600,
+      "check": "events_at_least",
+      "value": 40,
+      "player": 1
+    },
+    {
+      "at_tick": 2600,
+      "check": "fired_any",
+      "unit": "a10"
+    },
+    {
+      "at_tick": 2600,
+      "check": "alive",
+      "unit": "target",
+      "expect": false
+    },
+    {
+      "at_tick": 3800,
+      "check": "request_status",
+      "x": 0,
+      "value": 3
+    },
+    {
+      "at_tick": 5000,
+      "check": "near",
+      "unit": "a10",
+      "x": 500,
+      "y": 500,
+      "value": 200
+    }
+  ]
+}

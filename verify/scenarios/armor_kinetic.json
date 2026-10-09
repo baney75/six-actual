@@ -1,0 +1,211 @@
+{
+  "id": "armor_kinetic",
+  "requirement": "SIM-06",
+  "description": "Reference table, KE (pen from data/weapons.json, armor from data/roster.json). Lanes are 800 m apart behind 100 m ridges. 1) M829A1 at 2000 m: 650 vs T-80BV front 478 -> pen. 2) M833 at 2000 m: 420 vs T-80BV front 478 -> no pen. 3) M833 at 2000 m vs T-80BV side 65 -> pen, side face. 4) 2A42 30 mm at 300 m: 52 vs M2A2 front 40 -> pen. 5) 2A42 at 1600 m: 36 vs 40 -> no pen (KE falls off with range).",
+  "ticks": 3000,
+  "seeds": {
+    "start": 1,
+    "count": 3
+  },
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "ridge",
+        "x0": 0,
+        "y0": 800,
+        "x1": 4000,
+        "y1": 800,
+        "width_m": 200,
+        "height_dm": 1000
+      },
+      {
+        "type": "ridge",
+        "x0": 0,
+        "y0": 1600,
+        "x1": 4000,
+        "y1": 1600,
+        "width_m": 200,
+        "height_dm": 1000
+      },
+      {
+        "type": "ridge",
+        "x0": 0,
+        "y0": 2400,
+        "x1": 4000,
+        "y1": 2400,
+        "width_m": 200,
+        "height_dm": 1000
+      },
+      {
+        "type": "ridge",
+        "x0": 0,
+        "y0": 3200,
+        "x1": 4000,
+        "y1": 3200,
+        "width_m": 200,
+        "height_dm": 1000
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "s0",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 400,
+      "heading_deg": 0,
+      "ammo": [
+        40,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "t0",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2500,
+      "y": 400,
+      "heading_deg": 180,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s1",
+      "unit": "m60a3_tts",
+      "player": 0,
+      "x": 500,
+      "y": 1200,
+      "heading_deg": 0,
+      "ammo": [
+        63,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "t1",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2500,
+      "y": 1200,
+      "heading_deg": 180,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s2",
+      "unit": "m60a3_tts",
+      "player": 0,
+      "x": 500,
+      "y": 2000,
+      "heading_deg": 0,
+      "ammo": [
+        63,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "t2",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2500,
+      "y": 2000,
+      "heading_deg": 90,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s3",
+      "unit": "bmp2",
+      "player": 0,
+      "x": 500,
+      "y": 2800,
+      "heading_deg": 0,
+      "ammo": [
+        500,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "t3",
+      "unit": "m2a2_bradley",
+      "player": 1,
+      "x": 800,
+      "y": 2800,
+      "heading_deg": 180,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s4",
+      "unit": "bmp2",
+      "player": 0,
+      "x": 500,
+      "y": 3600,
+      "heading_deg": 0,
+      "ammo": [
+        500,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "t4",
+      "unit": "m2a2_bradley",
+      "player": 1,
+      "x": 2100,
+      "y": 3600,
+      "heading_deg": 180,
+      "roe": "hold_fire"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 3000,
+      "check": "hits",
+      "unit": "s0",
+      "other": "t0",
+      "mount": 0,
+      "outcome": "pen",
+      "face": "front"
+    },
+    {
+      "at_tick": 3000,
+      "check": "hits",
+      "unit": "s1",
+      "other": "t1",
+      "mount": 0,
+      "outcome": "nonpen",
+      "face": "front"
+    },
+    {
+      "at_tick": 3000,
+      "check": "hits",
+      "unit": "s2",
+      "other": "t2",
+      "mount": 0,
+      "outcome": "pen",
+      "face": "side"
+    },
+    {
+      "at_tick": 3000,
+      "check": "hits",
+      "unit": "s3",
+      "other": "t3",
+      "mount": 0,
+      "outcome": "pen",
+      "face": "front"
+    },
+    {
+      "at_tick": 3000,
+      "check": "hits",
+      "unit": "s4",
+      "other": "t4",
+      "mount": 0,
+      "outcome": "nonpen",
+      "face": "front"
+    }
+  ]
+}

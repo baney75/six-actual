@@ -1,0 +1,131 @@
+{
+  "id": "ux_03_campaign",
+  "requirement": "MODE-02",
+  "also": [
+    "MEC-06"
+  ],
+  "description": "Branching campaign: a new Cold War campaign opens on operation cw1 with a voiced briefing; the operation is fought on the battle sim with Field Requests on; a loss (surrender) sends the campaign down the fallback branch to cw2f, whose briefing is voiced too.",
+  "steps": [
+    {
+      "press": "Campaign"
+    },
+    {
+      "press": "NewCampaign_coldwar"
+    },
+    {
+      "press": "Fight"
+    },
+    {
+      "wait_event": "briefing"
+    },
+    {
+      "press": "Deploy"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "campaign_result"
+    },
+    {
+      "press": "Continue"
+    },
+    {
+      "wait_event": "campaign_started",
+      "count": 2
+    },
+    {
+      "press": "Fight"
+    },
+    {
+      "wait_event": "briefing",
+      "count": 2
+    },
+    {
+      "press": "Back"
+    },
+    {
+      "press": "Back"
+    },
+    {
+      "wait_event": "screen",
+      "count": 9
+    }
+  ],
+  "expect": [
+    {
+      "event": "campaign_new",
+      "fields": {
+        "era": "coldwar",
+        "operation": "cw1"
+      }
+    },
+    {
+      "event": "briefing",
+      "fields": {
+        "operation": "cw1",
+        "level": 1,
+        "voiced": true
+      },
+      "range": {
+        "duration_ms": [
+          3000,
+          60000
+        ]
+      }
+    },
+    {
+      "event": "campaign_operation",
+      "fields": {
+        "operation": "cw1"
+      }
+    },
+    {
+      "event": "battle_started",
+      "fields": {
+        "deck": "us_1989_armored_cavalry",
+        "enemy": "su_1989_forward_detachment",
+        "time_of_day": "dawn",
+        "weather": "overcast"
+      }
+    },
+    {
+      "event": "campaign_result",
+      "fields": {
+        "operation": "cw1",
+        "won": false,
+        "next": "cw2f"
+      }
+    },
+    {
+      "event": "campaign_started",
+      "fields": {
+        "operation": "cw2f",
+        "fought": 1
+      }
+    },
+    {
+      "event": "briefing",
+      "fields": {
+        "operation": "cw2f",
+        "level": 2,
+        "voiced": true
+      },
+      "range": {
+        "duration_ms": [
+          3000,
+          60000
+        ]
+      }
+    },
+    {
+      "event": "screen",
+      "fields": {
+        "name": "main_menu"
+      }
+    }
+  ]
+}

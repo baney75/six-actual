@@ -1,0 +1,139 @@
+{
+  "id": "ux_09_credits_deck_builder",
+  "requirement": "UX-01",
+  "description": "Credits generated from ASSETS.md; the deck builder clamps a card at its availability cap, saves a custom deck, and the custom deck starts a battle.",
+  "steps": [
+    {
+      "press": "Credits"
+    },
+    {
+      "wait_event": "credits_shown"
+    },
+    {
+      "press": "Back"
+    },
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Build"
+    },
+    {
+      "wait_event": "screen",
+      "count": 5
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Plus_0"
+    },
+    {
+      "press": "Minus_1"
+    },
+    {
+      "press": "Minus_1"
+    },
+    {
+      "press": "Minus_1"
+    },
+    {
+      "press": "Minus_1"
+    },
+    {
+      "press": "SaveDeck"
+    },
+    {
+      "wait_event": "deck_saved"
+    },
+    {
+      "press": "Deck_custom_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "credits_shown",
+      "fields": {
+        "source": "ASSETS.md"
+      },
+      "positive": [
+        "lines",
+        "sections"
+      ]
+    },
+    {
+      "event": "screen",
+      "fields": {
+        "name": "deck_builder"
+      }
+    },
+    {
+      "event": "deck_card_count",
+      "fields": {
+        "card": 0,
+        "clamped": true
+      }
+    },
+    {
+      "event": "deck_card_count",
+      "fields": {
+        "card": 1,
+        "count": 0
+      }
+    },
+    {
+      "event": "deck_saved",
+      "fields": {
+        "deck": "custom_us_1989_armored"
+      }
+    },
+    {
+      "event": "battle_started",
+      "fields": {
+        "deck": "custom_us_1989_armored"
+      }
+    },
+    {
+      "event": "debrief"
+    }
+  ]
+}

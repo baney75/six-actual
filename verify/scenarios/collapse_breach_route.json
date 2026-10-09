@@ -1,0 +1,122 @@
+{
+  "id": "collapse_breach_route",
+  "requirement": "SIM-10",
+  "description": "A brick block fills the only gap in a river. Blasts at tick 0 cut a channel through it. A rifle team ordered across at tick 20 climbs through the rubble and arrives (walking 1.39 m/s, half speed in rubble); a truck gets no route (rubble is impassable to wheels, D2/SIM-12).",
+  "ticks": 9000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 1000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "water",
+        "x": 0,
+        "y": 480,
+        "w": 464,
+        "h": 48
+      },
+      {
+        "type": "water",
+        "x": 536,
+        "y": 480,
+        "w": 464,
+        "h": 48
+      },
+      {
+        "type": "building",
+        "x": 464,
+        "y": 480,
+        "nx": 24,
+        "ny": 16,
+        "floors": 1,
+        "material": "brick"
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "rifles",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 500,
+      "y": 300
+    },
+    {
+      "tag": "truck",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 520,
+      "y": 300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 500,
+      "y": 484,
+      "z_dm": 15,
+      "radius_m": 14,
+      "damage": 6000
+    },
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 500,
+      "y": 496,
+      "z_dm": 15,
+      "radius_m": 14,
+      "damage": 6000
+    },
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 500,
+      "y": 508,
+      "z_dm": 15,
+      "radius_m": 14,
+      "damage": 6000
+    },
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 500,
+      "y": 520,
+      "z_dm": 15,
+      "radius_m": 14,
+      "damage": 6000
+    },
+    {
+      "tick": 20,
+      "tag": "rifles",
+      "kind": "move",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "tick": 20,
+      "tag": "truck",
+      "kind": "move",
+      "x": 520,
+      "y": 700
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 25,
+      "check": "no_path",
+      "unit": "truck"
+    },
+    {
+      "at_tick": 9000,
+      "check": "near",
+      "unit": "rifles",
+      "x": 500,
+      "y": 700,
+      "value": 2
+    }
+  ]
+}

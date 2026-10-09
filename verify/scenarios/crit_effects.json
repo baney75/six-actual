@@ -1,0 +1,283 @@
+{
+  "id": "crit_effects",
+  "requirement": "SIM-07",
+  "description": "Each critical has its effect. Tracked: no movement. Engine: half speed (0.348 vs 0.696 m/tick). Optics: detection range halved (2400 -> 1200 m; target at 1500 m seen by a healthy observer of another player only). Turret jam: cannot fire outside +-10 deg of the hull (target behind) while a healthy tank does. Bail: a bailed crew fires nothing. Fire: 1 hp per tick until destroyed (T-80BV 127 hp).",
+  "ticks": 900,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "ridge",
+        "x0": 0,
+        "y0": 1000,
+        "x1": 2000,
+        "y1": 1000,
+        "width_m": 160,
+        "height_dm": 800
+      },
+      {
+        "type": "ridge",
+        "x0": 0,
+        "y0": 1550,
+        "x1": 2000,
+        "y1": 1550,
+        "width_m": 160,
+        "height_dm": 800
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "trk",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 300,
+      "y": 200,
+      "flags": [
+        "tracked"
+      ]
+    },
+    {
+      "tag": "ok",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 200
+    },
+    {
+      "tag": "eng",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 700,
+      "y": 200,
+      "flags": [
+        "engine"
+      ]
+    },
+    {
+      "tag": "blind",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 200,
+      "y": 1300,
+      "flags": [
+        "optics"
+      ]
+    },
+    {
+      "tag": "seer",
+      "unit": "m1a1_abrams",
+      "player": 2,
+      "x": 200,
+      "y": 1320
+    },
+    {
+      "tag": "far",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1700,
+      "y": 1300
+    },
+    {
+      "tag": "jam",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1500,
+      "y": 1700,
+      "heading_deg": 0,
+      "flags": [
+        "turret"
+      ],
+      "roe": "fire_at_will",
+      "ammo": [
+        40,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "free",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1500,
+      "y": 1900,
+      "heading_deg": 0,
+      "roe": "fire_at_will",
+      "ammo": [
+        40,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "behind_a",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 800,
+      "y": 1700
+    },
+    {
+      "tag": "behind_b",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 800,
+      "y": 1900
+    },
+    {
+      "tag": "bailed",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1500,
+      "y": 300,
+      "flags": [
+        "bail"
+      ],
+      "roe": "fire_at_will",
+      "ammo": [
+        40,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "bail_tgt",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1700,
+      "y": 300
+    },
+    {
+      "tag": "burning",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1800,
+      "y": 700,
+      "flags": [
+        "fire"
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "trk",
+      "kind": "move",
+      "x": 300,
+      "y": 700
+    },
+    {
+      "tick": 0,
+      "tag": "ok",
+      "kind": "move",
+      "x": 500,
+      "y": 700
+    },
+    {
+      "tick": 0,
+      "tag": "eng",
+      "kind": "move",
+      "x": 700,
+      "y": 700
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5,
+      "check": "spotted",
+      "unit": "far",
+      "player": 2,
+      "expect": true
+    },
+    {
+      "at_tick": 5,
+      "check": "spotted",
+      "unit": "far",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 100,
+      "check": "alive",
+      "unit": "burning"
+    },
+    {
+      "at_tick": 130,
+      "check": "alive",
+      "unit": "burning",
+      "expect": false
+    },
+    {
+      "at_tick": 800,
+      "check": "near",
+      "unit": "trk",
+      "x": 300,
+      "y": 200,
+      "value": 3
+    },
+    {
+      "at_tick": 800,
+      "check": "near",
+      "unit": "ok",
+      "x": 500,
+      "y": 700,
+      "value": 2
+    },
+    {
+      "at_tick": 800,
+      "check": "near",
+      "unit": "eng",
+      "x": 700,
+      "y": 700,
+      "value": 60,
+      "expect": false
+    },
+    {
+      "at_tick": 800,
+      "check": "near",
+      "unit": "eng",
+      "x": 700,
+      "y": 478,
+      "value": 15
+    },
+    {
+      "at_tick": 900,
+      "check": "hits",
+      "unit": "jam",
+      "other": "behind_a",
+      "mount": 0,
+      "outcome": "any",
+      "expect": false
+    },
+    {
+      "at_tick": 900,
+      "check": "hits",
+      "unit": "jam",
+      "other": "behind_b",
+      "mount": 0,
+      "outcome": "any",
+      "expect": false
+    },
+    {
+      "at_tick": 900,
+      "check": "hits",
+      "unit": "free",
+      "other": "behind_b",
+      "mount": 0,
+      "outcome": "pen"
+    },
+    {
+      "at_tick": 900,
+      "check": "hits",
+      "unit": "bailed",
+      "other": "bail_tgt",
+      "mount": 0,
+      "outcome": "any",
+      "expect": false
+    }
+  ]
+}

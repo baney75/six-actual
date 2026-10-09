@@ -1,0 +1,35 @@
+{
+  "id": "net_4v4_loss2",
+  "requirement": "NET-02",
+  "players_per_side": 4,
+  "ticks": 24000,
+  "latency_ms": 40,
+  "jitter_ms": 10,
+  "loss_pct": 2,
+  "input_delay_ticks": 4,
+  "seed": 12,
+  "hash_interval_ticks": 100,
+  "description": "The same 20-minute 4v4 match with 2% packet loss (lost input packets are resent after a round trip): zero desyncs, replay matches, and loss really happened.",
+  "assert": [
+    {
+      "check": "desyncs",
+      "value": 0
+    },
+    {
+      "check": "hash_checks_at_least",
+      "value": 230
+    },
+    {
+      "check": "replay_matches"
+    },
+    {
+      "check": "battle_progressed",
+      "value": 40
+    },
+    {
+      "check": "packets_lost_at_least",
+      "value": 100
+    }
+  ],
+  "type": "net"
+}

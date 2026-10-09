@@ -1,0 +1,76 @@
+{
+  "id": "modern_gps_jammed",
+  "requirement": "SUP-04",
+  "era": "modern",
+  "description": "GPS degradation (SUP-04): under Russian Pole-21 jamming over the target, the same two Excalibur missions scatter: median miss at least 10x the 4 m CEP (jamming multiplies it by 25; Excalibur's real efficiency fell from 70% to 6% under Russian EW).",
+  "ticks": 2100,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 9000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {
+      "start_sp": 300
+    }
+  ],
+  "units": [
+    {
+      "tag": "o",
+      "unit": "us_infantry_squad_2026",
+      "player": 0,
+      "x": 300,
+      "y": 300
+    },
+    {
+      "tag": "r",
+      "unit": "rus_motor_rifle_squad_2026",
+      "player": 1,
+      "x": 8700,
+      "y": 8700
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 1,
+      "option": "ru_pole21_gps_jam",
+      "x": 5000,
+      "y": 5000
+    },
+    {
+      "tick": 700,
+      "kind": "support",
+      "player": 0,
+      "option": "us_excalibur",
+      "x": 5000,
+      "y": 5000
+    },
+    {
+      "tick": 700,
+      "kind": "support",
+      "player": 0,
+      "option": "us_excalibur",
+      "x": 5000,
+      "y": 5000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2000,
+      "check": "impacts_cep_pct",
+      "x": 5000,
+      "y": 5000,
+      "mount": 4,
+      "player": 1000,
+      "value": 100000
+    }
+  ]
+}

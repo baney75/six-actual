@@ -1,0 +1,129 @@
+{
+  "id": "era_factions_coldwar",
+  "requirement": "ERA-01",
+  "era": "coldwar",
+  "description": "Cold War 1989 allied factions (ERA-01) from sourced data (assets_src/research/cw1989_allies_sources.json). Armour: a UK MILAN 2 team (790 mm CE) kills a Polish T-72M1 head-on at 1.5 km (480 mm CE front); a Challenger 1's L11A5 (466 mm at 1 km) kills a second T-72M1 head-on (398 mm KE), and a third T-72M1's export-grade 3BM22 (414 mm at 1 km) cannot defeat a holding Challenger's 580 mm front in 60 s. Decks: a French AI commander (fr_1989_division_blindee) and an East German one (nva_1989_mot_schuetzen) each buy and field an army of at least 5 units from their own nation-filtered deck within 60 s.",
+  "ticks": 1600,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 9000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "deck": "fr_1989_division_blindee",
+      "start_dp": 1000,
+      "spawn_x": 1500,
+      "spawn_y": 8800,
+      "ai": true
+    },
+    {
+      "deck": "nva_1989_mot_schuetzen",
+      "start_dp": 1000,
+      "spawn_x": 7500,
+      "spawn_y": 8800,
+      "ai": true
+    },
+    {
+      "start_sp": 0
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "milan",
+      "unit": "uk_milan_team",
+      "player": 2,
+      "x": 500,
+      "y": 500,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "t72_a",
+      "unit": "t72m1_pl",
+      "player": 3,
+      "x": 500,
+      "y": 2000,
+      "heading_deg": 270
+    },
+    {
+      "tag": "chally",
+      "unit": "challenger1",
+      "player": 2,
+      "x": 8500,
+      "y": 500,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "t72_b",
+      "unit": "t72m1_pl",
+      "player": 3,
+      "x": 8500,
+      "y": 1500,
+      "heading_deg": 270,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "chally_hold",
+      "unit": "challenger1",
+      "player": 2,
+      "x": 4500,
+      "y": 3500,
+      "heading_deg": 90
+    },
+    {
+      "tag": "t72_c",
+      "unit": "t72m1_pl",
+      "player": 3,
+      "x": 4500,
+      "y": 4500,
+      "heading_deg": 270,
+      "roe": "fire_at_will"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1500,
+      "check": "alive",
+      "unit": "t72_a",
+      "expect": false
+    },
+    {
+      "at_tick": 1500,
+      "check": "alive",
+      "unit": "t72_b",
+      "expect": false
+    },
+    {
+      "at_tick": 1500,
+      "check": "alive",
+      "unit": "chally"
+    },
+    {
+      "at_tick": 1200,
+      "check": "alive",
+      "unit": "chally_hold"
+    },
+    {
+      "at_tick": 1200,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 5
+    },
+    {
+      "at_tick": 1200,
+      "check": "units_of_player_at_least",
+      "player": 1,
+      "value": 5
+    }
+  ]
+}

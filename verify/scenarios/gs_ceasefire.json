@@ -1,0 +1,33 @@
+{
+  "id": "gs_ceasefire",
+  "requirement": "GS-03",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "turns": 12,
+  "ai": "all",
+  "description": "Ceasefire (GS-03): with every faction under AI, a ceasefire agreed on turn 0 holds for 6 turns: no battle is fought while it lasts, and the war resumes after it.",
+  "orders": [
+    {
+      "turn": 0,
+      "kind": "ceasefire"
+    }
+  ],
+  "assert": [
+    {
+      "turn": 6,
+      "check": "battles_at_least",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "turn": 12,
+      "check": "battles_at_least",
+      "value": 1
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

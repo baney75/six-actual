@@ -1,0 +1,68 @@
+{
+  "id": "modern_gps_precision",
+  "requirement": "SUP-04",
+  "era": "modern",
+  "description": "GPS-guided precision rounds without jamming (SUP-01/04): two Excalibur missions (4 rounds) land with a median miss within 1-8 m of the aim point (4 m data CEP), no designator needed.",
+  "ticks": 1400,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 9000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {
+      "start_sp": 300
+    }
+  ],
+  "units": [
+    {
+      "tag": "o",
+      "unit": "us_infantry_squad_2026",
+      "player": 0,
+      "x": 300,
+      "y": 300
+    },
+    {
+      "tag": "r",
+      "unit": "rus_motor_rifle_squad_2026",
+      "player": 1,
+      "x": 8700,
+      "y": 8700
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "us_excalibur",
+      "x": 5000,
+      "y": 5000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "us_excalibur",
+      "x": 5000,
+      "y": 5000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1300,
+      "check": "impacts_cep_pct",
+      "x": 5000,
+      "y": 5000,
+      "mount": 4,
+      "player": 25,
+      "value": 200
+    }
+  ]
+}

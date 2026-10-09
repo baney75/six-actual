@@ -1,0 +1,161 @@
+{
+  "id": "sup_electronic_warfare",
+  "requirement": "SUP-04",
+  "description": "Electronic warfare (SUP-04), Cold War. Radar jamming: NATO's EF-111A (60 s delay, 2 min) halves a ZSU-23-4's hit chance on an A-10 at 1.5 km from 18% to 9%, and it is back to 18% once the jamming ends. Decoys: a chaff corridor (30 s delay, 90 s) over an F-16 halves a Strela-10's chance from 27% to 13%, back to 27% after it lapses. Comms jamming: Compass Call (60 s delay, 2 min) over a Pact 2S1 battery adds 30 s to its fire-mission setup: ordered at 65 s to a target 6 km away, its first round lands at tick 2366 (1300 + 200 setup + 600 jamming + 266 time of flight) instead of 1766.",
+  "ticks": 3800,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 400
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "zsu",
+      "unit": "zsu23_4_shilka",
+      "player": 1,
+      "x": 1000,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 1000,
+      "y": 2500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "strela",
+      "unit": "9k35_strela10",
+      "player": 1,
+      "x": 3000,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "f16",
+      "unit": "f16c_block30",
+      "player": 0,
+      "x": 3000,
+      "y": 3500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "gun",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 6000,
+      "y": 7000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_ef111_jamming",
+      "x": 1000,
+      "y": 1000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_chaff_corridor",
+      "x": 3000,
+      "y": 3500
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_compass_call",
+      "x": 6000,
+      "y": 7000
+    },
+    {
+      "tick": 1300,
+      "tag": "gun",
+      "kind": "fire_mission",
+      "x": 6000,
+      "y": 1000,
+      "rounds": 2
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "zsu",
+      "other": "a10",
+      "mount": 0,
+      "x": 18,
+      "value": 18
+    },
+    {
+      "at_tick": 1500,
+      "check": "hit_chance_between",
+      "unit": "zsu",
+      "other": "a10",
+      "mount": 0,
+      "x": 9,
+      "value": 9
+    },
+    {
+      "at_tick": 3700,
+      "check": "hit_chance_between",
+      "unit": "zsu",
+      "other": "a10",
+      "mount": 0,
+      "x": 18,
+      "value": 18
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "strela",
+      "other": "f16",
+      "mount": 0,
+      "x": 27,
+      "value": 27
+    },
+    {
+      "at_tick": 1500,
+      "check": "hit_chance_between",
+      "unit": "strela",
+      "other": "f16",
+      "mount": 0,
+      "x": 13,
+      "value": 13
+    },
+    {
+      "at_tick": 2500,
+      "check": "hit_chance_between",
+      "unit": "strela",
+      "other": "f16",
+      "mount": 0,
+      "x": 27,
+      "value": 27
+    },
+    {
+      "at_tick": 3000,
+      "check": "first_impact_after",
+      "value": 2366
+    },
+    {
+      "at_tick": 3000,
+      "check": "first_impact_before",
+      "value": 2367
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "op_persistence",
+  "requirement": "MEC-07",
+  "description": "Multi-phase operation (MEC-07). Three phases on one persistent map, breaking at ticks 13000 and 14000. In phase 1 a 155 mm battalion barrage cratters the ground at (1000, 1000), an F-16 Mk 82 stick destroys a BTR-80, and NATO seeds a FASCAM minefield on a road junction. After both breaks the craters are still there, the BTR is still a wreck, and a BMP-2 driving through the junction in phase 3 strikes one of the phase-1 mines. The clock advances one step per break (dawn, day, dusk); one event card is drawn per break; the economy restarts at phase A (phase B before the first break, A after it); scoring restarts.",
+  "ticks": 15000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "time_of_day": "dawn",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 600
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "btr",
+      "unit": "btr80",
+      "player": 1,
+      "x": 2000,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "bmp",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 3400,
+      "y": 3300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 300,
+      "y": 300,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fa_battalion_155",
+      "x": 1000,
+      "y": 1000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fascam_155",
+      "x": 3400,
+      "y": 3600
+    },
+    {
+      "tick": 14100,
+      "kind": "move",
+      "tag": "bmp",
+      "x": 3400,
+      "y": 3900
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_mk82_bombing",
+      "x": 2000,
+      "y": 2000
+    }
+  ],
+  "phase_breaks": [
+    {
+      "at_tick": 13000,
+      "outcome": 0
+    },
+    {
+      "at_tick": 14000,
+      "outcome": 1
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 12999,
+      "check": "crater_count_at_least",
+      "value": 1
+    },
+    {
+      "at_tick": 12999,
+      "check": "alive",
+      "unit": "btr",
+      "expect": false
+    },
+    {
+      "at_tick": 12999,
+      "check": "time_of_day",
+      "value": 0
+    },
+    {
+      "at_tick": 12999,
+      "check": "phase_is",
+      "value": 1
+    },
+    {
+      "at_tick": 13001,
+      "check": "phase_is",
+      "value": 0
+    },
+    {
+      "at_tick": 13001,
+      "check": "time_of_day",
+      "value": 1
+    },
+    {
+      "at_tick": 13001,
+      "check": "operation_phase",
+      "value": 1
+    },
+    {
+      "at_tick": 13001,
+      "check": "operation_events_drawn",
+      "value": 1
+    },
+    {
+      "at_tick": 14001,
+      "check": "time_of_day",
+      "value": 2
+    },
+    {
+      "at_tick": 14001,
+      "check": "operation_events_drawn",
+      "value": 2
+    },
+    {
+      "at_tick": 14900,
+      "check": "crater_count_at_least",
+      "value": 1
+    },
+    {
+      "at_tick": 14900,
+      "check": "alive",
+      "unit": "btr",
+      "expect": false
+    },
+    {
+      "at_tick": 14900,
+      "check": "flag_set",
+      "unit": "bmp",
+      "value": 1
+    }
+  ]
+}

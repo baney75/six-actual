@@ -1,0 +1,31 @@
+{
+  "id": "net_4v4_clean",
+  "requirement": "NET-02",
+  "players_per_side": 4,
+  "ticks": 24000,
+  "latency_ms": 40,
+  "jitter_ms": 0,
+  "loss_pct": 0,
+  "input_delay_ticks": 4,
+  "seed": 11,
+  "hash_interval_ticks": 100,
+  "description": "A 20-minute (24 000-tick) 4v4 Cold War skirmish on an 8 km map, one lockstep client per player (8 clients), each player sending scripted orders on top of its AI commanders, over a clean 40 ms network: state hashes compared every 5 s never differ, the confirmed input log replays to the same final state, and the battle actually progresses (units deployed and destroyed).",
+  "assert": [
+    {
+      "check": "desyncs",
+      "value": 0
+    },
+    {
+      "check": "hash_checks_at_least",
+      "value": 230
+    },
+    {
+      "check": "replay_matches"
+    },
+    {
+      "check": "battle_progressed",
+      "value": 40
+    }
+  ],
+  "type": "net"
+}

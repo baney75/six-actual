@@ -1,0 +1,100 @@
+{
+  "id": "mec_spearhead",
+  "requirement": "MEC-05",
+  "ticks": 6000,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "description": "Spearhead (MEC-05). Army1 (two M1A1s, two M2A2s, spread across 600 m) gets a spearhead order on (2300,4500). It forms a narrow column on the axis, tanks leading then infantry fighting vehicles, formation_spacing_m (60 m) apart, and drives through the objective to a point objective_radius_m (300 m) beyond it without asking for preparatory fires: the lead tank ends at (2300,4800) with the second tank 60 m behind and the Bradleys at 120 and 180 m.",
+  "units": [
+    {
+      "tag": "i1",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2000,
+      "y": 1000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "t1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 2200,
+      "y": 1000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "i2",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2400,
+      "y": 1000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "t2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 2600,
+      "y": 1000,
+      "seat": "Army1"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "spearhead",
+      "x": 2300,
+      "y": 4500
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 6000,
+      "check": "near",
+      "unit": "t1",
+      "x": 2300,
+      "y": 4800,
+      "value": 30
+    },
+    {
+      "at_tick": 6000,
+      "check": "near",
+      "unit": "t2",
+      "x": 2300,
+      "y": 4740,
+      "value": 30
+    },
+    {
+      "at_tick": 6000,
+      "check": "near",
+      "unit": "i1",
+      "x": 2300,
+      "y": 4680,
+      "value": 30
+    },
+    {
+      "at_tick": 6000,
+      "check": "near",
+      "unit": "i2",
+      "x": 2300,
+      "y": 4620,
+      "value": 30
+    },
+    {
+      "at_tick": 6000,
+      "check": "events_at_least",
+      "value": 33,
+      "player": 1,
+      "expect": false
+    }
+  ]
+}

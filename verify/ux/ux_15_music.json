@@ -1,0 +1,84 @@
+{
+  "id": "ux_15_music",
+  "requirement": "AUD-03",
+  "description": "Dynamic music: the battle loads the era's three looping stems; the calm layer leads before contact, the music moves to combat when the fighting peaks, and steps back down as it eases (with hysteresis).",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "phase",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "press": "TakeControl"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "battle_over",
+      "timeout_s": 300
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "music_ready",
+      "fields": {
+        "era": "coldwar",
+        "stems": 3
+      }
+    },
+    {
+      "event": "music_layer",
+      "fields": {
+        "layer": "calm"
+      }
+    },
+    {
+      "event": "music_layer",
+      "fields": {
+        "layer": "combat"
+      },
+      "range": {
+        "intensity": [
+          20,
+          100000
+        ]
+      }
+    },
+    {
+      "event": "music_layer",
+      "forbid": {
+        "layer": "combat"
+      }
+    },
+    {
+      "event": "debrief"
+    }
+  ]
+}

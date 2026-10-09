@@ -1,0 +1,169 @@
+{
+  "id": "mec_veterancy_retreat",
+  "requirement": "MEC-04",
+  "ticks": 5000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "description": "Veterancy, retreat and reinforcement (MEC-04). An M1A1 at 60% hp kills two BMP-2s and is promoted to veterancy 1 (two kills). At tick 1200 it is ordered to retreat to its home point 1 km back: it holds its fire on the way, even with a third BMP-2 inside its 4 km gun range for the last 40 s of the drive, and on reaching home it is reinforced to full strength (154 hp) and keeps its veterancy. A scout section pinned by suppression retreats anyway (a retreat ignores pinning) and is reinforced at its home point with its morale restored. Once reinforced it fights again.",
+  "units": [
+    {
+      "tag": "vet",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 2000,
+      "y": 2000,
+      "home_x": 2000,
+      "home_y": 1000,
+      "hp_pct": 60
+    },
+    {
+      "tag": "b1",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 1950,
+      "y": 3200,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "b2",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 2050,
+      "y": 3200,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "b3",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 6000,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "pin",
+      "unit": "us_scout_section",
+      "player": 0,
+      "x": 5000,
+      "y": 2000,
+      "home_x": 5000,
+      "home_y": 1850,
+      "suppression": 100
+    }
+  ],
+  "orders": [
+    {
+      "tick": 10,
+      "tag": "pin",
+      "kind": "retreat"
+    },
+    {
+      "tick": 1200,
+      "tag": "vet",
+      "kind": "retreat"
+    },
+    {
+      "tick": 1200,
+      "tag": "b3",
+      "kind": "move",
+      "x": 3600,
+      "y": 1300
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5,
+      "check": "morale_state",
+      "unit": "pin",
+      "value": 2
+    },
+    {
+      "at_tick": 1100,
+      "check": "veterancy_at_least",
+      "unit": "vet",
+      "value": 1
+    },
+    {
+      "at_tick": 1100,
+      "check": "events_at_least",
+      "value": 44,
+      "player": 1
+    },
+    {
+      "at_tick": 1300,
+      "check": "retreating",
+      "unit": "vet"
+    },
+    {
+      "at_tick": 2600,
+      "check": "alive",
+      "unit": "b3"
+    },
+    {
+      "at_tick": 2600,
+      "check": "within_m",
+      "unit": "vet",
+      "other": "b3",
+      "value": 4000
+    },
+    {
+      "at_tick": 2600,
+      "check": "fired_since",
+      "unit": "vet",
+      "x": 1200,
+      "expect": false
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "vet",
+      "x": 2000,
+      "y": 1000,
+      "value": 40
+    },
+    {
+      "at_tick": 4000,
+      "check": "hp_at_most",
+      "unit": "vet",
+      "value": 153,
+      "expect": false
+    },
+    {
+      "at_tick": 4000,
+      "check": "veterancy_at_least",
+      "unit": "vet",
+      "value": 1
+    },
+    {
+      "at_tick": 4000,
+      "check": "events_at_least",
+      "value": 45,
+      "player": 2
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "pin",
+      "x": 5000,
+      "y": 1850,
+      "value": 20
+    },
+    {
+      "at_tick": 4000,
+      "check": "morale_state",
+      "unit": "pin",
+      "value": 0
+    },
+    {
+      "at_tick": 3200,
+      "check": "alive",
+      "unit": "b3",
+      "expect": false
+    }
+  ]
+}

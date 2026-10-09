@@ -1,0 +1,171 @@
+{
+  "id": "modern_top_attack_drones",
+  "requirement": "ERA-01",
+  "era": "modern",
+  "description": "Modern 2026 slice (ERA-01, SUP-01): a Javelin team's top attack (>760 mm against 40 mm of roof) destroys a T-90M whose Relikt front (~1,900 mm vs HEAT) no missile could defeat, while a Kornet team (1,200 mm, line of sight only) fails against an M1A2 SEPv3 front (~1,400 mm vs HEAT). Loitering munitions: a Switchblade 600 strikes the most valuable vehicle in view (a T-72B3M) from above; a Lancet-3 hits an M2A4 Bradley. An FPV section's four strikes land on Strykers in view.",
+  "ticks": 2400,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 9000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {
+      "start_sp": 300
+    }
+  ],
+  "units": [
+    {
+      "tag": "jav",
+      "unit": "us_javelin_team",
+      "player": 0,
+      "x": 1000,
+      "y": 1000,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "t90",
+      "unit": "t90m",
+      "player": 1,
+      "x": 1000,
+      "y": 3000,
+      "heading_deg": 270
+    },
+    {
+      "tag": "korn",
+      "unit": "rus_kornet_team",
+      "player": 1,
+      "x": 3000,
+      "y": 3000,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "abrams",
+      "unit": "m1a2_sepv3",
+      "player": 0,
+      "x": 3000,
+      "y": 1000,
+      "heading_deg": 90
+    },
+    {
+      "tag": "obs1",
+      "unit": "us_infantry_squad_2026",
+      "player": 0,
+      "x": 5000,
+      "y": 1000
+    },
+    {
+      "tag": "t72",
+      "unit": "t72b3m",
+      "player": 1,
+      "x": 5000,
+      "y": 2000
+    },
+    {
+      "tag": "btr",
+      "unit": "btr82a",
+      "player": 1,
+      "x": 5100,
+      "y": 2000
+    },
+    {
+      "tag": "obs2",
+      "unit": "rus_motor_rifle_squad_2026",
+      "player": 1,
+      "x": 7000,
+      "y": 3000
+    },
+    {
+      "tag": "brad",
+      "unit": "m2a4_bradley",
+      "player": 0,
+      "x": 7000,
+      "y": 2000
+    },
+    {
+      "tag": "s1",
+      "unit": "m1126_stryker",
+      "player": 0,
+      "x": 7500,
+      "y": 6000
+    },
+    {
+      "tag": "s2",
+      "unit": "m1126_stryker",
+      "player": 0,
+      "x": 7600,
+      "y": 6000
+    },
+    {
+      "tag": "obs3",
+      "unit": "rus_motor_rifle_squad_2026",
+      "player": 1,
+      "x": 7550,
+      "y": 7000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "us_switchblade600",
+      "x": 5000,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 1,
+      "option": "ru_lancet3",
+      "x": 7000,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 1,
+      "option": "ru_fpv_strikes",
+      "x": 7550,
+      "y": 6000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2300,
+      "check": "alive",
+      "unit": "t90",
+      "expect": false
+    },
+    {
+      "at_tick": 2300,
+      "check": "alive",
+      "unit": "abrams"
+    },
+    {
+      "at_tick": 2300,
+      "check": "hp_at_most",
+      "unit": "t72",
+      "value": 50
+    },
+    {
+      "at_tick": 2300,
+      "check": "hp_at_most",
+      "unit": "brad",
+      "value": 100
+    },
+    {
+      "at_tick": 2300,
+      "check": "impact_count_at_least",
+      "value": 3
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "mec_garrison",
+  "requirement": "MEC-05",
+  "ticks": 3000,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "building",
+        "x": 3000,
+        "y": 3000,
+        "nx": 2,
+        "ny": 1,
+        "floors": 2,
+        "material": "brick"
+      },
+      {
+        "type": "building",
+        "x": 3030,
+        "y": 3020,
+        "nx": 1,
+        "ny": 1,
+        "floors": 2,
+        "material": "plaster"
+      }
+    ]
+  },
+  "description": "Garrison (MEC-05). Army2's garrison order on (3015,3010) sends its three infantry squads into the three ground-floor building chunks within planner_garrison_radius_m (200 m), nearest first; its M2A2 holds at the point outside.",
+  "units": [
+    {
+      "tag": "q1",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 2980,
+      "y": 2900,
+      "seat": "Army2"
+    },
+    {
+      "tag": "q2",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 3010,
+      "y": 2900,
+      "seat": "Army2"
+    },
+    {
+      "tag": "q3",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 3040,
+      "y": 2900,
+      "seat": "Army2"
+    },
+    {
+      "tag": "ifv",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 3100,
+      "y": 2850,
+      "seat": "Army2"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army2",
+      "task": "garrison",
+      "x": 3015,
+      "y": 3010
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 3000,
+      "check": "in_building",
+      "unit": "q1"
+    },
+    {
+      "at_tick": 3000,
+      "check": "in_building",
+      "unit": "q2"
+    },
+    {
+      "at_tick": 3000,
+      "check": "in_building",
+      "unit": "q3"
+    },
+    {
+      "at_tick": 3000,
+      "check": "in_building",
+      "unit": "ifv",
+      "expect": false
+    },
+    {
+      "at_tick": 3000,
+      "check": "near",
+      "unit": "ifv",
+      "x": 3015,
+      "y": 3010,
+      "value": 40
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "id": "ux_17_tutorials",
+  "requirement": "UX-03",
+  "description": "Tutorials: command basics (call, select, move, assign to a commander), support (off-map strike, then a fire mission from the player's own battery) and Take Control (wait for phase B, call an aircraft, fly it, hand it back) each complete only by doing every step.",
+  "steps": [
+    {
+      "press": "Tutorials"
+    },
+    {
+      "press": "Tutorial_command"
+    },
+    {
+      "wait_event": "tutorial_started"
+    },
+    {
+      "press": "Card_*_ground"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "speed": 2
+    },
+    {
+      "frames": 5
+    },
+    {
+      "click_unit": "friendly"
+    },
+    {
+      "wait_event": "selected"
+    },
+    {
+      "click": [
+        0.0,
+        0.2
+      ],
+      "button": "right"
+    },
+    {
+      "wait_event": "move_ordered"
+    },
+    {
+      "press": "Paint_Army1"
+    },
+    {
+      "drag": [
+        -0.98,
+        -0.3,
+        0.98,
+        0.98
+      ]
+    },
+    {
+      "wait_event": "tutorial_complete"
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "press": "MainMenu"
+    },
+    {
+      "press": "Tutorials"
+    },
+    {
+      "press": "Tutorial_support"
+    },
+    {
+      "wait_event": "tutorial_started",
+      "count": 2
+    },
+    {
+      "press": "Support_*"
+    },
+    {
+      "click": [
+        0.0,
+        -0.2
+      ]
+    },
+    {
+      "wait_event": "support_called"
+    },
+    {
+      "speed": 20
+    },
+    {
+      "wait_event": "support_arrived",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_artillery_ground"
+    },
+    {
+      "wait_event": "deployed",
+      "count": 2
+    },
+    {
+      "speed": 2
+    },
+    {
+      "frames": 5
+    },
+    {
+      "speed": 0
+    },
+    {
+      "click_unit": "friendly"
+    },
+    {
+      "wait_event": "selected",
+      "count": 2
+    },
+    {
+      "press": "FireMission"
+    },
+    {
+      "click": [
+        0.0,
+        -0.3
+      ]
+    },
+    {
+      "wait_event": "tutorial_complete",
+      "count": 2,
+      "timeout_s": 60
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "press": "MainMenu"
+    },
+    {
+      "press": "Tutorials"
+    },
+    {
+      "press": "Tutorial_fly"
+    },
+    {
+      "wait_event": "tutorial_step",
+      "count": 10,
+      "timeout_s": 60
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed_air"
+    },
+    {
+      "press": "TakeControl"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "joy_axis": "LeftX",
+      "value": 1.0
+    },
+    {
+      "wait_event": "stick_input"
+    },
+    {
+      "joy_axis": "LeftX",
+      "value": 0.0
+    },
+    {
+      "press": "ReturnControl"
+    },
+    {
+      "wait_event": "tutorial_complete",
+      "count": 3,
+      "timeout_s": 60
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief",
+      "count": 3
+    }
+  ],
+  "expect": [
+    {
+      "event": "tutorial_started",
+      "fields": {
+        "tutorial": "command",
+        "steps": 5
+      }
+    },
+    {
+      "event": "tutorial_complete",
+      "fields": {
+        "tutorial": "command"
+      }
+    },
+    {
+      "event": "tutorial_started",
+      "fields": {
+        "tutorial": "support",
+        "steps": 4
+      }
+    },
+    {
+      "event": "support_called"
+    },
+    {
+      "event": "support_arrived"
+    },
+    {
+      "event": "fire_mission"
+    },
+    {
+      "event": "tutorial_complete",
+      "fields": {
+        "tutorial": "support"
+      }
+    },
+    {
+      "event": "tutorial_started",
+      "fields": {
+        "tutorial": "fly",
+        "steps": 5
+      }
+    },
+    {
+      "event": "take_control"
+    },
+    {
+      "event": "stick_input"
+    },
+    {
+      "event": "control_returned"
+    },
+    {
+      "event": "tutorial_complete",
+      "fields": {
+        "tutorial": "fly"
+      }
+    }
+  ]
+}

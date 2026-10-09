@@ -1,0 +1,133 @@
+{
+  "id": "cmd_attack_with_fires",
+  "requirement": "CMD-03",
+  "description": "Army1 (3 M1A1 + 3 M2A2) is ordered to attack an objective 2.7 km away held by two BTR-80s. It assembles at a staging point 1.5 km short, asks Arty1 (2 M109A3) for preparatory fire, waits for the rounds to land, then assaults in line and takes the objective (task done). No assault starts without fires.",
+  "ticks": 7000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "m1_0",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1700,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m1_1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1760,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m1_2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1820,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m2_0",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2060,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m2_1",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2120,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m2_2",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2180,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "how1",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 800,
+      "y": 200,
+      "seat": "Arty1",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "how2",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 860,
+      "y": 200,
+      "seat": "Arty1",
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "btr1",
+      "unit": "btr80",
+      "player": 1,
+      "x": 1980,
+      "y": 3000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "btr2",
+      "unit": "btr80",
+      "player": 1,
+      "x": 2040,
+      "y": 3000,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "attack",
+      "x": 2000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 7000,
+      "check": "assault_with_fires",
+      "value": 1
+    },
+    {
+      "at_tick": 7000,
+      "check": "assault_without_fires",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 7000,
+      "check": "events_at_least",
+      "value": 30,
+      "player": 1
+    },
+    {
+      "at_tick": 7000,
+      "check": "alive",
+      "unit": "btr1",
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "net_desync_detector",
+  "requirement": "NET-02",
+  "players_per_side": 2,
+  "ticks": 1200,
+  "latency_ms": 40,
+  "jitter_ms": 0,
+  "loss_pct": 0,
+  "input_delay_ticks": 4,
+  "seed": 16,
+  "fault_client": 2,
+  "hash_interval_ticks": 20,
+  "description": "The desync detector works: client 2 is made to drop the first real input it executes, and the hash comparison catches the divergence.",
+  "assert": [
+    {
+      "check": "desyncs_at_least",
+      "value": 1
+    }
+  ],
+  "type": "net"
+}

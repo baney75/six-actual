@@ -1,0 +1,139 @@
+{
+  "id": "front_push",
+  "requirement": "MEC-02",
+  "description": "Three M1A1s push 800 m into the enemy half and take the ground: the frontline cell at their position becomes team 0. A recon Bradley (front weight 0) driving into enemy ground does not move the line (C1-2). A lone rifle squad walking 300 m into enemy ground takes the cell it stands in. A Dragon AT team walking into enemy ground does not take it either (front weight 0).",
+  "ticks": 1700,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "t1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1960,
+      "y": 1800
+    },
+    {
+      "tag": "t2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 2000,
+      "y": 1800
+    },
+    {
+      "tag": "t3",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 2040,
+      "y": 1800
+    },
+    {
+      "tag": "scout",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 500,
+      "y": 1800
+    },
+    {
+      "tag": "squad",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 3500,
+      "y": 1900
+    },
+    {
+      "tag": "dragon",
+      "unit": "m47_dragon_team",
+      "player": 0,
+      "x": 1200,
+      "y": 1900
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "t1",
+      "kind": "move",
+      "x": 1960,
+      "y": 2600
+    },
+    {
+      "tick": 0,
+      "tag": "t2",
+      "kind": "move",
+      "x": 2000,
+      "y": 2600
+    },
+    {
+      "tick": 0,
+      "tag": "t3",
+      "kind": "move",
+      "x": 2040,
+      "y": 2600
+    },
+    {
+      "tick": 0,
+      "tag": "scout",
+      "kind": "move",
+      "x": 500,
+      "y": 2600
+    },
+    {
+      "tick": 0,
+      "tag": "squad",
+      "kind": "move",
+      "x": 3500,
+      "y": 2200
+    },
+    {
+      "tick": 0,
+      "tag": "dragon",
+      "kind": "move",
+      "x": 1200,
+      "y": 2150
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "territory_at",
+      "x": 2000,
+      "y": 2600,
+      "value": 1
+    },
+    {
+      "at_tick": 1700,
+      "check": "territory_at",
+      "x": 2000,
+      "y": 2600,
+      "value": 0
+    },
+    {
+      "at_tick": 1700,
+      "check": "territory_at",
+      "x": 500,
+      "y": 2600,
+      "value": 1
+    },
+    {
+      "at_tick": 1700,
+      "check": "territory_at",
+      "x": 3500,
+      "y": 2200,
+      "value": 0
+    },
+    {
+      "at_tick": 1700,
+      "check": "territory_at",
+      "x": 1200,
+      "y": 2150,
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "sup_precision_needs_designator",
+  "requirement": "SUP-01",
+  "description": "Precision rounds need a designator (SUP-01): with no friendly unit within 3 km of the aim point, a Copperhead call is refused (reason 8) and nothing lands.",
+  "ticks": 2000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "far",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 300,
+      "y": 300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_copperhead",
+      "x": 6000,
+      "y": 6000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5,
+      "check": "support_refused",
+      "player": 0,
+      "value": 8
+    },
+    {
+      "at_tick": 1900,
+      "check": "impact_count_at_least",
+      "value": 1,
+      "expect": false
+    }
+  ]
+}

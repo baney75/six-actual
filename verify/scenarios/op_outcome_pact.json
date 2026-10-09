@@ -1,0 +1,94 @@
+{
+  "requirement": "MEC-12",
+  "ticks": 200,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "spawn_x": 2000,
+      "spawn_y": 300
+    },
+    {
+      "spawn_x": 2000,
+      "spawn_y": 3700
+    }
+  ],
+  "units": [
+    {
+      "tag": "n",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 2000,
+      "y": 300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "p",
+      "unit": "btr80",
+      "player": 1,
+      "x": 2000,
+      "y": 3700,
+      "roe": "hold_fire"
+    }
+  ],
+  "objectives": [
+    {
+      "x": 1000,
+      "y": 2000
+    },
+    {
+      "x": 2000,
+      "y": 2000
+    },
+    {
+      "x": 3000,
+      "y": 2000
+    }
+  ],
+  "id": "op_outcome_pact",
+  "description": "Campaign outcomes change the next map state (MEC-12), Pact wins the phase: all three objectives pass to the Pact and NATO's entry point falls back 500 m (to y 50, the map edge limit), the Pact's stays at y 3700. Compare op_outcome_nato.",
+  "phase_breaks": [
+    {
+      "at_tick": 100,
+      "outcome": 1
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 101,
+      "check": "objective_owner",
+      "x": 0,
+      "value": 1
+    },
+    {
+      "at_tick": 101,
+      "check": "objective_owner",
+      "x": 1,
+      "value": 1
+    },
+    {
+      "at_tick": 101,
+      "check": "objective_owner",
+      "x": 2,
+      "value": 1
+    },
+    {
+      "at_tick": 101,
+      "check": "spawn_y",
+      "player": 0,
+      "value": 50
+    },
+    {
+      "at_tick": 101,
+      "check": "spawn_y",
+      "player": 1,
+      "value": 3700
+    }
+  ]
+}

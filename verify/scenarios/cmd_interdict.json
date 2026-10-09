@@ -1,0 +1,88 @@
+{
+  "id": "cmd_interdict",
+  "requirement": "CMD-03",
+  "ticks": 4000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 12000,
+    "cell_m": 8
+  },
+  "description": "Interdiction (CMD-03). Air1 tasks an A-10 at (500,500) to interdict the box (6000,6000)-(11500,11500) behind the enemy line. Every target starts more than 8 km away (beyond Maverick range), so nothing is hit until the order moves the aircraft. An enemy Ural truck drives through the box and a T-80BV is parked in it. The A-10 sweeps toward the box centre, spots the targets (the planner steers toward spotted vehicles in the box, supply vehicles preferred) and destroys the truck.",
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "seat": "Air1"
+    },
+    {
+      "tag": "truck",
+      "unit": "ural4320",
+      "player": 1,
+      "x": 10500,
+      "y": 8000
+    },
+    {
+      "tag": "tank",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 9000,
+      "y": 9500
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Air1",
+      "task": "interdict",
+      "x": 6000,
+      "y": 6000,
+      "x2": 11500,
+      "y2": 11500
+    },
+    {
+      "tick": 0,
+      "tag": "truck",
+      "kind": "move",
+      "x": 7000,
+      "y": 10500
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 100,
+      "check": "alive",
+      "unit": "truck"
+    },
+    {
+      "at_tick": 100,
+      "check": "has_goal",
+      "unit": "a10"
+    },
+    {
+      "at_tick": 4000,
+      "check": "alive",
+      "unit": "truck",
+      "expect": false
+    },
+    {
+      "at_tick": 4000,
+      "check": "fired_any",
+      "unit": "a10"
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "a10",
+      "x": 8750,
+      "y": 8750,
+      "value": 4000
+    }
+  ]
+}

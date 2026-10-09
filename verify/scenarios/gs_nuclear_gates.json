@@ -1,0 +1,43 @@
+{
+  "id": "gs_nuclear_gates",
+  "requirement": "GS-04",
+  "seeds": [
+    1
+  ],
+  "turns": 1,
+  "ai": [],
+  "start": {
+    "tension": 10
+  },
+  "description": "Escalation gates (GS-04): at tension 10 neither a tactical (threshold 20) nor a theater (40) release is possible; nothing is released and no province is struck.",
+  "orders": [
+    {
+      "turn": 0,
+      "kind": "nuke",
+      "faction": "usa",
+      "value": 1
+    },
+    {
+      "turn": 0,
+      "kind": "nuke",
+      "faction": "usa",
+      "value": 2,
+      "province": "leipzig"
+    }
+  ],
+  "assert": [
+    {
+      "turn": 1,
+      "check": "nuclear_level",
+      "value": 0
+    },
+    {
+      "turn": 1,
+      "check": "fallout",
+      "province": "leipzig",
+      "expect": false
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

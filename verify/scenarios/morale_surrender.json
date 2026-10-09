@@ -1,0 +1,67 @@
+{
+  "id": "morale_surrender",
+  "requirement": "SIM-08",
+  "description": "A routed squad that cannot recover (enemy ground) with a detected enemy within 150 m surrenders after 200 ticks routed; a routed squad with no enemy close does not.",
+  "ticks": 320,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "cornered",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 1000,
+      "y": 1500,
+      "suppression": 200,
+      "home_x": 1000,
+      "home_y": 1500
+    },
+    {
+      "tag": "btr",
+      "unit": "btr80",
+      "player": 1,
+      "x": 1000,
+      "y": 1600
+    },
+    {
+      "tag": "alone",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 300,
+      "y": 1500,
+      "suppression": 200,
+      "home_x": 300,
+      "home_y": 1500
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 150,
+      "check": "alive",
+      "unit": "cornered"
+    },
+    {
+      "at_tick": 215,
+      "check": "alive",
+      "unit": "cornered",
+      "expect": false
+    },
+    {
+      "at_tick": 215,
+      "check": "events_at_least",
+      "value": 15,
+      "player": 1
+    },
+    {
+      "at_tick": 320,
+      "check": "alive",
+      "unit": "alone"
+    }
+  ]
+}

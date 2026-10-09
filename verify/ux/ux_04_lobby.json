@@ -1,0 +1,21 @@
+{
+  "id": "ux_04_lobby",
+  "requirement": "NET-01",
+  "description": "Lobby flow: start is refused until an opponent slot exists and you are ready; then the lobby starts and goes to deck choice.",
+  "steps": [
+    {"press": "Lobby"},
+    {"press": "StartLobby"},
+    {"press": "AddAi"},
+    {"press": "Ready"},
+    {"press": "StartLobby"},
+    {"wait_event": "screen", "count": 3}
+  ],
+  "expect": [
+    {"event": "lobby_created"},
+    {"event": "lobby_start_refused"},
+    {"event": "lobby_slot_added", "fields": {"slots": 2}},
+    {"event": "lobby_ready"},
+    {"event": "lobby_started", "fields": {"players": 2}},
+    {"event": "screen", "fields": {"name": "deck"}}
+  ]
+}

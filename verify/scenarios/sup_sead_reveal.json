@@ -1,0 +1,143 @@
+{
+  "id": "sup_sead_reveal",
+  "requirement": "SUP-02",
+  "ticks": 3000,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 12000,
+    "cell_m": 16
+  },
+  "description": "SEAD and reveal (SUP-02). An F-4G HARM strike (90 s) on (5700,5900) kills the radar-directed ZSU-23-4 2.4 km away and spares the nearer Strela-10 (infrared, no emitter). An RF-4C recon pass called at tick 10 (60 s delay, 30 s window) reveals a BMP-2 far beyond any NATO sensor from tick 1210 until 1810, and it is lost again afterwards. An E-3A AWACS (30 s delay, 2 min) reveals an enemy aircraft 15 km out but not the ground unit beside it.",
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tag": "zsu",
+      "unit": "zsu23_4_shilka",
+      "player": 1,
+      "x": 7500,
+      "y": 7500
+    },
+    {
+      "tag": "strela",
+      "unit": "9k35_strela10",
+      "player": 1,
+      "x": 5800,
+      "y": 6000
+    },
+    {
+      "tag": "bmp",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 11000,
+      "y": 2000
+    },
+    {
+      "tag": "su25",
+      "unit": "su25_frogfoot",
+      "player": 1,
+      "x": 11000,
+      "y": 11000
+    },
+    {
+      "tag": "gnd",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 11100,
+      "y": 11000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_f4g_sead",
+      "x": 5700,
+      "y": 5900
+    },
+    {
+      "tick": 10,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_rf4c_recon",
+      "x": 11000,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_e3_awacs",
+      "x": 2000,
+      "y": 2000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1799,
+      "check": "alive",
+      "unit": "zsu"
+    },
+    {
+      "at_tick": 1810,
+      "check": "alive",
+      "unit": "zsu",
+      "expect": false
+    },
+    {
+      "at_tick": 1810,
+      "check": "alive",
+      "unit": "strela"
+    },
+    {
+      "at_tick": 1100,
+      "check": "spotted",
+      "unit": "bmp",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 1300,
+      "check": "spotted",
+      "unit": "bmp",
+      "player": 0
+    },
+    {
+      "at_tick": 2000,
+      "check": "spotted",
+      "unit": "bmp",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 700,
+      "check": "spotted",
+      "unit": "su25",
+      "player": 0
+    },
+    {
+      "at_tick": 700,
+      "check": "spotted",
+      "unit": "gnd",
+      "player": 0,
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ux_06_settings_load",
+  "requirement": "UX-02",
+  "description": "Settings persistence, part 2: a new process starts with the settings ux_05 saved.",
+  "steps": [],
+  "expect": [
+    {
+      "event": "settings_loaded",
+      "fields": {
+        "ui_scale": 1.25,
+        "palette": "deuteranopia",
+        "subtitles": false,
+        "take_control_key": "Y",
+        "fly_left_pad": "a:2:-1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "sup_air_modern",
+  "requirement": "SUP-02",
+  "era": "modern",
+  "description": "Modern air support per era (SUP-02): F-35A SEAD destroys the radar-directed Pantsir-S1 within 6 km while the Tor-M2 (missile-only, no gun-dish emitter in the model) is not the SEAD target; a Tomahawk destroys a T-90M at the aim point; an Orlan-10 reveals a Bradley no Russian unit can see.",
+  "ticks": 5000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 9000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 500
+    },
+    {
+      "start_sp": 300
+    }
+  ],
+  "units": [
+    {
+      "tag": "pantsir",
+      "unit": "pantsir_s1",
+      "player": 1,
+      "x": 2000,
+      "y": 2000
+    },
+    {
+      "tag": "tor",
+      "unit": "tor_m2",
+      "player": 1,
+      "x": 2400,
+      "y": 2000
+    },
+    {
+      "tag": "t90",
+      "unit": "t90m",
+      "player": 1,
+      "x": 6000,
+      "y": 2000
+    },
+    {
+      "tag": "hidden",
+      "unit": "m2a4_bradley",
+      "player": 0,
+      "x": 8500,
+      "y": 8500
+    },
+    {
+      "tag": "o",
+      "unit": "us_infantry_squad_2026",
+      "player": 0,
+      "x": 300,
+      "y": 300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "us_f35_sead",
+      "x": 2200,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "us_tomahawk_block5",
+      "x": 6000,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 1,
+      "option": "ru_orlan10_recon",
+      "x": 8500,
+      "y": 8500
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2000,
+      "check": "alive",
+      "unit": "pantsir",
+      "expect": false
+    },
+    {
+      "at_tick": 2000,
+      "check": "alive",
+      "unit": "tor"
+    },
+    {
+      "at_tick": 4700,
+      "check": "alive",
+      "unit": "t90"
+    },
+    {
+      "at_tick": 4900,
+      "check": "alive",
+      "unit": "t90",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "hidden",
+      "player": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 700,
+      "check": "spotted",
+      "unit": "hidden",
+      "player": 1
+    }
+  ]
+}

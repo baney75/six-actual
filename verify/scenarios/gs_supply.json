@@ -1,0 +1,50 @@
+{
+  "id": "gs_supply",
+  "requirement": "GS-01",
+  "type": "grand_strategy",
+  "era": "coldwar",
+  "seeds": [
+    1,
+    2
+  ],
+  "turns": 2,
+  "ai": [],
+  "start": {
+    "owners": {
+      "frankfurt": "ussr"
+    }
+  },
+  "description": "Supply (GS-01): with Frankfurt, the US capital, in Soviet hands, every US army is cut off from its capital and loses 10% strength a turn (the Nuremberg army: 24 to 21 to 18), while the West German army at Munich, whose capital Bonn still stands, keeps its 32.",
+  "assert": [
+    {
+      "turn": 0,
+      "check": "army_strength_at_least",
+      "faction": "usa",
+      "province": "nuremberg",
+      "value": 24
+    },
+    {
+      "turn": 1,
+      "check": "army_strength_at_least",
+      "faction": "usa",
+      "province": "nuremberg",
+      "value": 22,
+      "expect": false
+    },
+    {
+      "turn": 2,
+      "check": "army_strength_at_least",
+      "faction": "usa",
+      "province": "nuremberg",
+      "value": 19,
+      "expect": false
+    },
+    {
+      "turn": 2,
+      "check": "army_strength_at_least",
+      "faction": "frg",
+      "province": "munich",
+      "value": 32
+    }
+  ]
+}

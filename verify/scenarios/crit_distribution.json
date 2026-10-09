@@ -1,0 +1,88 @@
+{
+  "id": "crit_distribution",
+  "requirement": "SIM-07",
+  "description": "One M829A1 round at 500 m into a T-80BV's side (682 vs 65 mm: overmatch makes a critical certain on a hit; hit chance ~92%). Over 200 seeds the target has a critical in >=75% (Wilson lower bound) and each of the six criticals (weights 20/15/15/15/15/20) occurs with a lower bound >= 6%.",
+  "ticks": 300,
+  "seeds": {
+    "start": 1,
+    "count": 200
+  },
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "gun",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 1000,
+      "ammo": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "tgt",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1000,
+      "y": 1000,
+      "heading_deg": 90,
+      "roe": "hold_fire"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 300,
+      "check": "flag_set",
+      "unit": "tgt",
+      "value": 63,
+      "ci_lower_pct": 75
+    },
+    {
+      "at_tick": 300,
+      "check": "flag_set",
+      "unit": "tgt",
+      "value": 1,
+      "ci_lower_pct": 6
+    },
+    {
+      "at_tick": 300,
+      "check": "flag_set",
+      "unit": "tgt",
+      "value": 2,
+      "ci_lower_pct": 6
+    },
+    {
+      "at_tick": 300,
+      "check": "flag_set",
+      "unit": "tgt",
+      "value": 4,
+      "ci_lower_pct": 6
+    },
+    {
+      "at_tick": 300,
+      "check": "flag_set",
+      "unit": "tgt",
+      "value": 8,
+      "ci_lower_pct": 6
+    },
+    {
+      "at_tick": 300,
+      "check": "flag_set",
+      "unit": "tgt",
+      "value": 16,
+      "ci_lower_pct": 6
+    },
+    {
+      "at_tick": 300,
+      "check": "flag_set",
+      "unit": "tgt",
+      "value": 32,
+      "ci_lower_pct": 6
+    }
+  ]
+}

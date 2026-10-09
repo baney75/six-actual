@@ -1,0 +1,105 @@
+{
+  "id": "econ_sp_spot_assist",
+  "requirement": "MEC-03",
+  "ticks": 2400,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "rect",
+        "x": 3800,
+        "y": 0,
+        "w": 40,
+        "h": 8000,
+        "height_dm": 1000
+      }
+    ]
+  },
+  "description": "Recon pays within a side (MEC-03). An M109 sits behind a 100 m wall with no line of sight to a Pact truck (card cost 100) that a NATO scout section can see. The M109 kills the truck with a fire mission: NATO earns the kill SP (20% = 20) and, because the kill came from the scout's spotting, the spot assist too (10% = 10): 30 SP and a SpotAssist event.",
+  "players": [
+    {
+      "start_sp": 0
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "how",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 1500,
+      "y": 4000
+    },
+    {
+      "tag": "scout",
+      "unit": "us_scout_section",
+      "player": 0,
+      "x": 5000,
+      "y": 3500
+    },
+    {
+      "tag": "truck",
+      "unit": "ural4320",
+      "player": 1,
+      "x": 5600,
+      "y": 4000,
+      "cost": 100
+    }
+  ],
+  "orders": [
+    {
+      "tick": 20,
+      "tag": "how",
+      "kind": "fire_mission",
+      "x": 5600,
+      "y": 4000,
+      "rounds": 12
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 10,
+      "check": "line",
+      "unit": "how",
+      "other": "truck",
+      "expect": false
+    },
+    {
+      "at_tick": 10,
+      "check": "spotted",
+      "unit": "truck",
+      "player": 0
+    },
+    {
+      "at_tick": 2400,
+      "check": "alive",
+      "unit": "truck",
+      "expect": false
+    },
+    {
+      "at_tick": 2400,
+      "check": "events_at_least",
+      "value": 50,
+      "player": 1
+    },
+    {
+      "at_tick": 2400,
+      "check": "sp_at_least",
+      "player": 0,
+      "value": 30
+    },
+    {
+      "at_tick": 2400,
+      "check": "sp_at_most",
+      "player": 0,
+      "value": 30
+    }
+  ]
+}

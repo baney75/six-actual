@@ -1,0 +1,74 @@
+{
+  "id": "cmd_cap",
+  "requirement": "CMD-03",
+  "ticks": 3000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 10000,
+    "cell_m": 8
+  },
+  "description": "CAP (CMD-03). Air1 sends an F-15C from (500,500) to fly a 2 km racetrack around (7000,7000), more than 8 km away (beyond its missile range, so only the CAP brings it into the fight). An enemy Su-25 flies in to attack a point inside the protected area. The F-15C takes up its orbit, engages with its air-to-air weapons and shoots the Su-25 down, staying on its racetrack.",
+  "units": [
+    {
+      "tag": "f15",
+      "unit": "f15c_eagle",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "seat": "Air1"
+    },
+    {
+      "tag": "su25",
+      "unit": "su25_frogfoot",
+      "player": 1,
+      "x": 9500,
+      "y": 9500
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Air1",
+      "task": "cap",
+      "x": 7000,
+      "y": 7000
+    },
+    {
+      "tick": 0,
+      "tag": "su25",
+      "kind": "move",
+      "x": 7000,
+      "y": 7200
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 100,
+      "check": "has_goal",
+      "unit": "f15"
+    },
+    {
+      "at_tick": 3000,
+      "check": "fired_any",
+      "unit": "f15"
+    },
+    {
+      "at_tick": 3000,
+      "check": "alive",
+      "unit": "su25",
+      "expect": false
+    },
+    {
+      "at_tick": 3000,
+      "check": "near",
+      "unit": "f15",
+      "x": 7000,
+      "y": 7000,
+      "value": 2300
+    }
+  ]
+}

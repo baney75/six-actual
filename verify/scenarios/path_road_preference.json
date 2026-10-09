@@ -1,0 +1,108 @@
+{
+  "id": "path_road_preference",
+  "requirement": "SIM-12",
+  "description": "A road loop 600 m north of the direct line: 3000 m of road. The truck (road cost 40%) takes it (12000 < 16000); the tank (road cost 60%) drives straight (18000 > 16000).",
+  "ticks": 5000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "road",
+        "x": 150,
+        "y": 800,
+        "w": 1700,
+        "h": 32
+      },
+      {
+        "type": "road",
+        "x": 150,
+        "y": 150,
+        "w": 32,
+        "h": 682
+      },
+      {
+        "type": "road",
+        "x": 1818,
+        "y": 150,
+        "w": 32,
+        "h": 682
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "truck",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 166,
+      "y": 200
+    },
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 200,
+      "y": 240
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "truck",
+      "kind": "move",
+      "x": 1834,
+      "y": 200
+    },
+    {
+      "tick": 0,
+      "tag": "tank",
+      "kind": "move",
+      "x": 1800,
+      "y": 240
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1500,
+      "check": "on_road",
+      "unit": "truck"
+    },
+    {
+      "at_tick": 1500,
+      "check": "near",
+      "unit": "truck",
+      "x": 1000,
+      "y": 816,
+      "value": 900
+    },
+    {
+      "at_tick": 1200,
+      "check": "near",
+      "unit": "tank",
+      "x": 1010,
+      "y": 240,
+      "value": 80
+    },
+    {
+      "at_tick": 5000,
+      "check": "near",
+      "unit": "truck",
+      "x": 1834,
+      "y": 200,
+      "value": 2
+    },
+    {
+      "at_tick": 5000,
+      "check": "near",
+      "unit": "tank",
+      "x": 1800,
+      "y": 240,
+      "value": 2
+    }
+  ]
+}

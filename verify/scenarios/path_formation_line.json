@@ -1,0 +1,138 @@
+{
+  "id": "path_formation_line",
+  "requirement": "SIM-12",
+  "description": "Formations (SIM-12): Army1's four M1A1s ordered to attack an objective 2.7 km north assemble, then assault in line abreast: at the objective they stand side by side across the axis of advance, 60 m apart (rules.command.formation_spacing_m), each within 60 m of its slot on the line through the objective.",
+  "ticks": 6000,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "m0",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1700,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1760,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1820,
+      "y": 300,
+      "seat": "Army1"
+    },
+    {
+      "tag": "m3",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1880,
+      "y": 300,
+      "seat": "Army1"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "attack",
+      "x": 2000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5900,
+      "check": "within_m",
+      "unit": "m0",
+      "other": "m1",
+      "value": 75
+    },
+    {
+      "at_tick": 5900,
+      "check": "within_m",
+      "unit": "m0",
+      "other": "m1",
+      "value": 45,
+      "expect": false
+    },
+    {
+      "at_tick": 5900,
+      "check": "within_m",
+      "unit": "m1",
+      "other": "m2",
+      "value": 75
+    },
+    {
+      "at_tick": 5900,
+      "check": "within_m",
+      "unit": "m1",
+      "other": "m2",
+      "value": 45,
+      "expect": false
+    },
+    {
+      "at_tick": 5900,
+      "check": "within_m",
+      "unit": "m2",
+      "other": "m3",
+      "value": 75
+    },
+    {
+      "at_tick": 5900,
+      "check": "within_m",
+      "unit": "m2",
+      "other": "m3",
+      "value": 45,
+      "expect": false
+    },
+    {
+      "at_tick": 5900,
+      "check": "near",
+      "unit": "m0",
+      "x": 2060,
+      "y": 3000,
+      "value": 60
+    },
+    {
+      "at_tick": 5900,
+      "check": "near",
+      "unit": "m1",
+      "x": 2000,
+      "y": 3000,
+      "value": 60
+    },
+    {
+      "at_tick": 5900,
+      "check": "near",
+      "unit": "m2",
+      "x": 1940,
+      "y": 3000,
+      "value": 60
+    },
+    {
+      "at_tick": 5900,
+      "check": "near",
+      "unit": "m3",
+      "x": 1880,
+      "y": 3000,
+      "value": 60
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "fly_return_bingo",
+  "requirement": "FLY-02",
+  "ticks": 400,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 20000,
+    "cell_m": 16
+  },
+  "description": "Automatic return on Bingo fuel (FLY-02). A player-flown A-10A starts 10 fuel above Bingo (25% of 5000); after about 1 km of flight it reaches Bingo, control returns to the AI pilot (reason 1) and the XO hands command back; the AI pilot then flies home and lands to refuel (off-map turnaround).",
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 5000,
+      "y": 5000,
+      "fuel": 1260
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "a10",
+      "player": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2,
+      "check": "flown",
+      "unit": "a10"
+    },
+    {
+      "at_tick": 400,
+      "check": "control_returned",
+      "unit": "a10",
+      "value": 1
+    },
+    {
+      "at_tick": 400,
+      "check": "flown",
+      "unit": "a10",
+      "expect": false
+    },
+    {
+      "at_tick": 400,
+      "check": "xo_active",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 400,
+      "check": "off_map",
+      "unit": "a10"
+    }
+  ]
+}

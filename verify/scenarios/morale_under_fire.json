@@ -1,0 +1,39 @@
+{
+  "id": "morale_under_fire",
+  "requirement": "SIM-08",
+  "description": "Real fire, not fixtures: a US rifle squad under a BTR-80's KPVT and PKT at 400 m is pinned or worse within 10 s (200 ticks) in at least 80% of 30 seeds (Wilson lower bound).",
+  "ticks": 200,
+  "seeds": {
+    "start": 1,
+    "count": 30
+  },
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "sq",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 1000,
+      "y": 600
+    },
+    {
+      "tag": "btr",
+      "unit": "btr80",
+      "player": 1,
+      "x": 1000,
+      "y": 1000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 200,
+      "check": "morale_at_least",
+      "unit": "sq",
+      "value": 2,
+      "ci_lower_pct": 80
+    }
+  ]
+}

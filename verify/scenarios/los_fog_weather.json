@@ -1,0 +1,75 @@
+{
+  "id": "los_fog_weather",
+  "requirement": "SIM-04",
+  "description": "In fog (45% optics) a tank at 1200 m is not detected by unaided optics (T-80BV observer: 2400 m x 45% = 1080 m); at about 800 m it is. A thermal sight sees through fog: an M1A1 (thermal, 85% floor, D045) does detect a tank at 1200 m.",
+  "ticks": 2,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "weather": "fog",
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "blue",
+      "unit": "t80bv",
+      "player": 0,
+      "x": 500,
+      "y": 2000
+    },
+    {
+      "tag": "red_far",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1700,
+      "y": 2000
+    },
+    {
+      "tag": "red_near",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1200,
+      "y": 2400
+    },
+    {
+      "tag": "thermal",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 5500
+    },
+    {
+      "tag": "red_thermal",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1700,
+      "y": 5500
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "red_far",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "red_near",
+      "player": 0,
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "red_thermal",
+      "player": 0,
+      "expect": true
+    }
+  ]
+}

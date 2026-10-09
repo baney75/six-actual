@@ -1,0 +1,68 @@
+{
+  "id": "sup_naval_gunfire",
+  "requirement": "SUP-01",
+  "description": "Naval gunfire support (SUP-01). Two Iowa-class 16 in fire missions (27 rounds each) on a point 20 km from the ship: the median miss of the 54 impacts is within +-10% of the data CEP (0.4% of 20 km = 80 m: 72-88 m), and the first splash arrives exactly at the 120 s response delay (tick 2400).",
+  "ticks": 2600,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 300,
+      "y": 300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_iowa_ngfs",
+      "x": 3000,
+      "y": 3000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_iowa_ngfs",
+      "x": 3000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2500,
+      "check": "impacts_cep_pct",
+      "x": 3000,
+      "y": 3000,
+      "mount": 80,
+      "player": 90,
+      "value": 110
+    },
+    {
+      "at_tick": 2500,
+      "check": "first_impact_after",
+      "value": 2400
+    },
+    {
+      "at_tick": 2500,
+      "check": "first_impact_before",
+      "value": 2400
+    }
+  ]
+}

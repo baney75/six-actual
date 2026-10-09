@@ -1,0 +1,77 @@
+# Section R3 reference coverage checklist. Each slot needs at least `min`
+# tagged references before an item leaves the `refs` stage. Read by
+# scripts/refs/check_coverage.py (gate G14). Thresholds may be tightened freely.
+
+# Stages at which an item counts as "in production" for G14.
+[stages]
+before_production = ["placeholder", "spec", "refs"]
+
+[class.ground_vehicle]
+front = 1
+rear = 1
+left = 1
+right = 1
+top_or_plan = 1
+three_quarter = 4
+running_gear = 1
+turret_detail = 1
+rear_deck_engine = 1
+interior_or_hatch_open = 1
+variant_difference = 1
+camo_per_faction = 2
+destroyed = 1
+dimension_source = 1
+
+[class.aircraft]
+side = 1
+top = 1
+front = 1
+cockpit_canopy = 1
+gear_doors = 1
+pylon_config = 1
+exhaust_or_prop = 1
+engine_glow = 1
+wreck = 1
+dimension_source = 1
+
+[class.helicopter]
+side = 1
+top = 1
+front = 1
+cockpit_canopy = 1
+gear_doors = 1
+pylon_config = 1
+rotor = 1
+wreck = 1
+dimension_source = 1
+
+[class.infantry_kit]
+uniform_front = 1
+uniform_side = 1
+uniform_back = 1
+webbing = 1
+helmet = 1
+weapon_held = 1
+radio_or_launcher_carry = 1
+
+[class.building_kit]
+street_level = 10
+roof_types = 1
+window_door_patterns = 1
+damaged = 1
+collapsed = 1
+rubble = 1
+
+[class.vfx]
+footage = 5
+timing_notes = 1
+
+[class.sound]
+listening_near = 1
+listening_mid = 1
+listening_far = 1
+character_note = 1
+
+[class.animation_set]
+field_manual = 1
+footage = 2

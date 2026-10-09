@@ -1,0 +1,72 @@
+{
+  "id": "supply_aircraft",
+  "requirement": "SIM-09",
+  "description": "Off-map rearm: a Winchester A-10 (no ammo) flies home (1900 m at 7.78 m/tick = ~245 ticks), spends 2400 ticks at the airbase, and returns full (1174 rounds). An F-16 at Bingo (1000 of 5000 fuel, <25%) also goes home.",
+  "ticks": 2900,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 2000,
+      "y": 2000,
+      "altitude_m": 300,
+      "ammo": [
+        0,
+        0,
+        0
+      ],
+      "home_x": 100,
+      "home_y": 2000
+    },
+    {
+      "tag": "f16",
+      "unit": "f16c_block30",
+      "player": 0,
+      "x": 2000,
+      "y": 3000,
+      "altitude_m": 500,
+      "fuel": 1000,
+      "home_x": 100,
+      "home_y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 100,
+      "check": "off_map",
+      "unit": "a10",
+      "expect": false
+    },
+    {
+      "at_tick": 400,
+      "check": "off_map",
+      "unit": "a10"
+    },
+    {
+      "at_tick": 2800,
+      "check": "off_map",
+      "unit": "a10",
+      "expect": false
+    },
+    {
+      "at_tick": 2800,
+      "check": "ammo_at_least",
+      "unit": "a10",
+      "value": 1174
+    },
+    {
+      "at_tick": 400,
+      "check": "off_map",
+      "unit": "f16"
+    }
+  ]
+}

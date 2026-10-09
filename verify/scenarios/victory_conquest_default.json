@@ -1,0 +1,65 @@
+{
+  "requirement": "MODE-01",
+  "ticks": 2400,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 3000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 0
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "abrams_a",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1400,
+      "y": 800,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "abrams_b",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1600,
+      "y": 800,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "bmp",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 1500,
+      "y": 1800,
+      "heading_deg": 270
+    }
+  ],
+  "id": "victory_conquest_default",
+  "description": "Conquest (the default victory type): with the same fight, destroying every enemy unit does not end the battle, because conquest is decided by objective points.",
+  "assert": [
+    {
+      "at_tick": 1100,
+      "check": "alive",
+      "unit": "bmp",
+      "expect": false
+    },
+    {
+      "at_tick": 2300,
+      "check": "winner",
+      "value": -1
+    }
+  ]
+}

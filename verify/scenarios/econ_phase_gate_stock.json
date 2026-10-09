@@ -1,0 +1,103 @@
+{
+  "id": "econ_phase_gate_stock",
+  "requirement": "MEC-01",
+  "description": "Deck cards: a phase-C heavy tank is refused in phase A and accepted in phase C. A phase-A card with stock 2 and cost 300 can be called twice; the third call is refused and DP drops by exactly 600.",
+  "ticks": 24010,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 1000,
+    "cell_m": 8
+  },
+  "units": [],
+  "players": [
+    {
+      "income": "balanced",
+      "start_dp": 1000,
+      "spawn_x": 100,
+      "spawn_y": 100,
+      "deck": {
+        "cards": [
+          {
+            "unit": "us_mech_rifle_squad",
+            "count": 2,
+            "phase": "A",
+            "cost": 300
+          },
+          {
+            "unit": "m1a1_abrams",
+            "count": 1,
+            "phase": "C",
+            "cost": 200
+          }
+        ]
+      }
+    }
+  ],
+  "orders": [
+    {
+      "tick": 1,
+      "kind": "deploy",
+      "player": 0,
+      "card": 0
+    },
+    {
+      "tick": 2,
+      "kind": "deploy",
+      "player": 0,
+      "card": 0
+    },
+    {
+      "tick": 3,
+      "kind": "deploy",
+      "player": 0,
+      "card": 0
+    },
+    {
+      "tick": 4,
+      "kind": "deploy",
+      "player": 0,
+      "card": 1
+    },
+    {
+      "tick": 24002,
+      "kind": "deploy",
+      "player": 0,
+      "card": 1
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 2
+    },
+    {
+      "at_tick": 5,
+      "check": "units_of_player_at_most",
+      "player": 0,
+      "value": 2
+    },
+    {
+      "at_tick": 5,
+      "check": "dp_at_most",
+      "player": 0,
+      "value": 400
+    },
+    {
+      "at_tick": 5,
+      "check": "dp_at_least",
+      "player": 0,
+      "value": 400
+    },
+    {
+      "at_tick": 24003,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 3
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "sup_offmap_economy",
+  "requirement": "MEC-03",
+  "ticks": 9700,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 12000,
+    "cell_m": 16
+  },
+  "description": "Off-map support is bought with Support Points and has charges that recharge; it arrives after its delay (MEC-03, SUP-05). NATO starts with 200 SP and calls the 155 mm battalion (60 SP, 2 charges, 240 s recharge, 60 s delay) twice (ticks 10 and 20): SP 80, no charge left. A third call is refused (no charges), a Pact option is refused (wrong side), MLRS (90 SP) is refused (short of SP). The first 18 rounds land from tick 1210 and the second from 1220, exactly on the delay; one charge returns at tick 4810, the second at 9610.",
+  "players": [
+    {
+      "start_sp": 200
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 1000,
+      "y": 1000
+    },
+    {
+      "tag": "tgt",
+      "unit": "ural4320",
+      "player": 1,
+      "x": 9000,
+      "y": 9000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 10,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fa_battalion_155",
+      "x": 6000,
+      "y": 6000
+    },
+    {
+      "tick": 20,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fa_battalion_155",
+      "x": 6000,
+      "y": 6000
+    },
+    {
+      "tick": 30,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fa_battalion_155",
+      "x": 6000,
+      "y": 6000
+    },
+    {
+      "tick": 40,
+      "kind": "support",
+      "player": 0,
+      "option": "pact_grad_strike",
+      "x": 6000,
+      "y": 6000
+    },
+    {
+      "tick": 50,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_mlrs_strike",
+      "x": 6000,
+      "y": 6000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 60,
+      "check": "sp_at_least",
+      "player": 0,
+      "value": 80
+    },
+    {
+      "at_tick": 60,
+      "check": "sp_at_most",
+      "player": 0,
+      "value": 80
+    },
+    {
+      "at_tick": 60,
+      "check": "support_charges",
+      "player": 0,
+      "seat": "nato_fa_battalion_155",
+      "value": 0
+    },
+    {
+      "at_tick": 60,
+      "check": "support_refused",
+      "player": 0,
+      "value": 3
+    },
+    {
+      "at_tick": 60,
+      "check": "support_refused",
+      "player": 0,
+      "value": 1
+    },
+    {
+      "at_tick": 60,
+      "check": "support_refused",
+      "player": 0,
+      "value": 2
+    },
+    {
+      "at_tick": 1300,
+      "check": "first_impact_after",
+      "value": 1209
+    },
+    {
+      "at_tick": 1300,
+      "check": "first_impact_before",
+      "value": 1211
+    },
+    {
+      "at_tick": 1300,
+      "check": "impact_count_at_least",
+      "value": 36
+    },
+    {
+      "at_tick": 4800,
+      "check": "support_charges",
+      "player": 0,
+      "seat": "nato_fa_battalion_155",
+      "value": 0
+    },
+    {
+      "at_tick": 4820,
+      "check": "support_charges",
+      "player": 0,
+      "seat": "nato_fa_battalion_155",
+      "value": 1
+    },
+    {
+      "at_tick": 9620,
+      "check": "support_charges",
+      "player": 0,
+      "seat": "nato_fa_battalion_155",
+      "value": 2
+    }
+  ]
+}

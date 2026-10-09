@@ -1,0 +1,87 @@
+{
+  "id": "sup_tactical_nuke_gated",
+  "requirement": "GS-04",
+  "description": "The tactical nuclear support card is gated by escalation (GS-04): without a release from the grand-strategy escalation the W79 shell is refused (reason 7) and the T-80BV platoon at the aim point is untouched.",
+  "ticks": 3000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "t0",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2000,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t1",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2060,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t2",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2120,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 300,
+      "y": 300,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_w79_tactical",
+      "x": 2060,
+      "y": 2000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5,
+      "check": "support_refused",
+      "player": 0,
+      "value": 7
+    },
+    {
+      "at_tick": 2900,
+      "check": "alive",
+      "unit": "t0"
+    },
+    {
+      "at_tick": 2900,
+      "check": "alive",
+      "unit": "t1"
+    },
+    {
+      "at_tick": 2900,
+      "check": "alive",
+      "unit": "t2"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "fly_env_speed",
+  "requirement": "FLY-03",
+  "ticks": 2400,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 60000,
+    "cell_m": 64
+  },
+  "description": "Flight envelope: level speed (FLY-03). Player-flown at full throttle in level flight, each aircraft accelerates toward and settles at its sourced sea-level maximum speed (assets_src/research/flight_envelopes_1989.json): A-10A 706 km/h (196.1 m/s), F-15C 1482 km/h (411.7 m/s). Thrust a_max is derived from the sourced climb rate and drag balances it exactly at vmax, so the speed approaches vmax from below: within 97-100% after 120 s (A-10A) and 60 s (F-15C).",
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 5000,
+      "y": 30000,
+      "altitude_m": 500
+    },
+    {
+      "tag": "f15",
+      "unit": "f15c_eagle",
+      "player": 1,
+      "x": 5000,
+      "y": 10000,
+      "altitude_m": 500
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "a10",
+      "player": 0
+    },
+    {
+      "tick": 0,
+      "kind": "stick",
+      "tag": "a10",
+      "x": 100,
+      "y": 0,
+      "z_dm": 0
+    },
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "f15",
+      "player": 1
+    },
+    {
+      "tick": 0,
+      "kind": "stick",
+      "tag": "f15",
+      "x": 100,
+      "y": 0,
+      "z_dm": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2400,
+      "check": "airspeed_at_least",
+      "unit": "a10",
+      "value": 190228
+    },
+    {
+      "at_tick": 2400,
+      "check": "airspeed_at_most",
+      "unit": "a10",
+      "value": 196111
+    },
+    {
+      "at_tick": 1200,
+      "check": "airspeed_at_least",
+      "unit": "f15",
+      "value": 399317
+    },
+    {
+      "at_tick": 1200,
+      "check": "airspeed_at_most",
+      "unit": "f15",
+      "value": 411667
+    }
+  ]
+}

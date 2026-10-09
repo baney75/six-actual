@@ -1,0 +1,143 @@
+{
+  "id": "mec_planner_prep",
+  "requirement": "MEC-05",
+  "ticks": 2500,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 10000,
+    "cell_m": 8
+  },
+  "description": "Battle-planner preparation and micromanagement (MEC-05). Two identical fronts (defend orders, task 0 for Army1, task 1 for Army2), each an M1A1 facing a T-80BV 3 km away. Army1's front is left to its commander and reaches full preparation (100) after planner_prep_ticks (2400): its tank's hit chance rises from 50% to 60% (+20%). Army2's tank gets a direct move order every 400 ticks (micromanagement): each costs 25 points (PrepLost), so its front ends near 21 points and its hit chance near 52%.",
+  "units": [
+    {
+      "tag": "a1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1000,
+      "y": 1000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "t1",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1000,
+      "y": 4000
+    },
+    {
+      "tag": "a2",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 5000,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "t2",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 5000,
+      "y": 4000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "front",
+      "x": 900,
+      "y": 1000,
+      "x2": 1100,
+      "y2": 1000
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army2",
+      "task": "front",
+      "x": 4900,
+      "y": 1000,
+      "x2": 5100,
+      "y2": 1000
+    },
+    {
+      "tick": 400,
+      "tag": "a2",
+      "kind": "move",
+      "x": 5000,
+      "y": 1000
+    },
+    {
+      "tick": 800,
+      "tag": "a2",
+      "kind": "move",
+      "x": 5000,
+      "y": 1000
+    },
+    {
+      "tick": 1200,
+      "tag": "a2",
+      "kind": "move",
+      "x": 5000,
+      "y": 1000
+    },
+    {
+      "tick": 1600,
+      "tag": "a2",
+      "kind": "move",
+      "x": 5000,
+      "y": 1000
+    },
+    {
+      "tick": 2000,
+      "tag": "a2",
+      "kind": "move",
+      "x": 5000,
+      "y": 1000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2500,
+      "check": "task_prep_at_least",
+      "mount": 0,
+      "value": 100
+    },
+    {
+      "at_tick": 2500,
+      "check": "task_prep_at_most",
+      "mount": 1,
+      "value": 30
+    },
+    {
+      "at_tick": 2500,
+      "check": "events_at_least",
+      "value": 46,
+      "player": 5
+    },
+    {
+      "at_tick": 2500,
+      "check": "hit_chance_between",
+      "unit": "a1",
+      "other": "t1",
+      "mount": 0,
+      "x": 59,
+      "value": 61
+    },
+    {
+      "at_tick": 2500,
+      "check": "hit_chance_between",
+      "unit": "a2",
+      "other": "t2",
+      "mount": 0,
+      "x": 50,
+      "value": 53
+    }
+  ]
+}

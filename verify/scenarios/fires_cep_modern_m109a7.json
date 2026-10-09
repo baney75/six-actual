@@ -1,0 +1,135 @@
+{
+  "id": "fires_cep_modern_m109a7",
+  "requirement": "SUP-01",
+  "era": "modern",
+  "description": "Six M109A7 Paladin fire 30 rounds each (m284_155_he) at a point 15800 m away. Data CEP 5 permille of range = 79 m; the median miss of 180 impacts must lie within +-10%. First impact: setup 200 ticks + flight 15750 m (the nearest of the six guns) / 500 m/s = 630 ticks -> tick 830.",
+  "ticks": 19232,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 17300,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "g0",
+      "unit": "m109a7",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tag": "g1",
+      "unit": "m109a7",
+      "player": 0,
+      "x": 500,
+      "y": 510
+    },
+    {
+      "tag": "g2",
+      "unit": "m109a7",
+      "player": 0,
+      "x": 500,
+      "y": 520
+    },
+    {
+      "tag": "g3",
+      "unit": "m109a7",
+      "player": 0,
+      "x": 500,
+      "y": 530
+    },
+    {
+      "tag": "g4",
+      "unit": "m109a7",
+      "player": 0,
+      "x": 500,
+      "y": 540
+    },
+    {
+      "tag": "g5",
+      "unit": "m109a7",
+      "player": 0,
+      "x": 500,
+      "y": 550
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "g0",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 16300,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g1",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 16300,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g2",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 16300,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g3",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 16300,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g4",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 16300,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g5",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 16300,
+      "rounds": 30
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 850,
+      "check": "first_impact_after",
+      "value": 825
+    },
+    {
+      "at_tick": 850,
+      "check": "first_impact_before",
+      "value": 835
+    },
+    {
+      "at_tick": 19232,
+      "check": "impact_count_at_least",
+      "value": 180
+    },
+    {
+      "at_tick": 19232,
+      "check": "impacts_cep_pct",
+      "x": 500,
+      "y": 16300,
+      "mount": 79,
+      "player": 90,
+      "value": 110
+    }
+  ]
+}

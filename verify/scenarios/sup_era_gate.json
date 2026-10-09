@@ -1,0 +1,56 @@
+{
+  "id": "sup_era_gate",
+  "requirement": "SUP-05",
+  "ticks": 20,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 12000,
+    "cell_m": 16
+  },
+  "description": "Support options are era-gated (SUP-05): in a WW2 battle the Cold War 155 mm battalion is refused (reason 5) and no SP is spent.",
+  "players": [
+    {
+      "start_sp": 100
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 1000,
+      "y": 1000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 5,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fa_battalion_155",
+      "x": 3000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 10,
+      "check": "support_refused",
+      "player": 0,
+      "value": 5
+    },
+    {
+      "at_tick": 10,
+      "check": "sp_at_least",
+      "player": 0,
+      "value": 100
+    }
+  ],
+  "era": "ww2"
+}

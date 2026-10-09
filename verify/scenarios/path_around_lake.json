@@ -1,0 +1,84 @@
+{
+  "id": "path_around_lake",
+  "requirement": "SIM-12",
+  "description": "A tank ordered across a 400x1200 m lake paths around it (~1720 m at 0.675 m/tick = ~2550 ticks) and never enters the water.",
+  "ticks": 4000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "water",
+        "x": 800,
+        "y": 400,
+        "w": 400,
+        "h": 1200
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 200,
+      "y": 1000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "tank",
+      "kind": "move",
+      "x": 1800,
+      "y": 1000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 800,
+      "check": "near",
+      "unit": "tank",
+      "x": 1000,
+      "y": 1000,
+      "value": 190,
+      "expect": false
+    },
+    {
+      "at_tick": 1300,
+      "check": "near",
+      "unit": "tank",
+      "x": 1000,
+      "y": 1000,
+      "value": 190,
+      "expect": false
+    },
+    {
+      "at_tick": 1800,
+      "check": "near",
+      "unit": "tank",
+      "x": 1000,
+      "y": 1000,
+      "value": 190,
+      "expect": false
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "tank",
+      "x": 1800,
+      "y": 1000,
+      "value": 2
+    },
+    {
+      "at_tick": 4000,
+      "check": "has_goal",
+      "unit": "tank",
+      "expect": false
+    }
+  ]
+}

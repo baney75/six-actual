@@ -1,0 +1,91 @@
+{
+  "id": "gs_battle_feedback",
+  "requirement": "GS-02",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "turns": 1,
+  "ai": [],
+  "description": "Auto-resolved battles with transparent odds (GS-02). The US army at Fulda (8 strength, commander +10%) attacking the Soviet army in Erfurt (16, forest x1.25, commander) has odds of 305 permille, shown before the attack. Whatever the roll, the result feeds back: one battle, the winner loses 15% and the loser 35%, so US strength falls from 64 to at most 62 and Soviet from 88 to at most 86. Battle maps follow the province terrain: a forest province's 8 km map is at least 20% woodland (open: at most 10%), an urban one has at least 150 buildings (open: at most 40), a hills one reaches at least 80 m relief (open: under 40 m).",
+  "orders": [
+    {
+      "turn": 0,
+      "kind": "move",
+      "faction": "usa",
+      "army_in": "fulda",
+      "province": "erfurt"
+    }
+  ],
+  "assert": [
+    {
+      "turn": 0,
+      "check": "odds_between",
+      "faction": "usa",
+      "from": "fulda",
+      "province": "erfurt",
+      "min": 305,
+      "max": 305
+    },
+    {
+      "turn": 1,
+      "check": "battles_at_least",
+      "value": 1
+    },
+    {
+      "turn": 1,
+      "check": "faction_strength_at_most",
+      "faction": "usa",
+      "value": 62
+    },
+    {
+      "turn": 1,
+      "check": "faction_strength_at_most",
+      "faction": "ussr",
+      "value": 86
+    },
+    {
+      "turn": 0,
+      "check": "battle_map",
+      "terrain": "forest",
+      "seed": 1,
+      "forest_pct_min": 20
+    },
+    {
+      "turn": 0,
+      "check": "battle_map",
+      "terrain": "open",
+      "seed": 1,
+      "forest_pct_max": 10,
+      "buildings_max": 40,
+      "height_dm_min": 0
+    },
+    {
+      "turn": 0,
+      "check": "battle_map",
+      "terrain": "urban",
+      "seed": 1,
+      "buildings_min": 150
+    },
+    {
+      "turn": 0,
+      "check": "battle_map",
+      "terrain": "hills",
+      "seed": 1,
+      "height_dm_min": 800
+    },
+    {
+      "turn": 0,
+      "check": "battle_map",
+      "terrain": "open",
+      "seed": 1,
+      "height_dm_min": 400,
+      "expect": false
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

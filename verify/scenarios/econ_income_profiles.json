@@ -1,0 +1,114 @@
+{
+  "id": "econ_income_profiles",
+  "requirement": "MEC-01",
+  "description": "Income follows the profile and phase: after 1 min of phase A Vanguard has exactly 60 DP and Juggernaut 30. Phase B from tick 12000, C from 24000. In the first minute of phase C (ticks 24000-25200) Vanguard earns 30 and Juggernaut 65. Accrual is exact (remainder carried in 1/1200 of a point), so totals are whole: 600+400 = 1000 and 300+400 = 700 at the end of phase B.",
+  "ticks": 25300,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 1000,
+    "cell_m": 8
+  },
+  "units": [],
+  "players": [
+    {
+      "income": "vanguard",
+      "start_dp": 0
+    },
+    {
+      "income": "juggernaut",
+      "start_dp": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1200,
+      "check": "dp_at_least",
+      "player": 0,
+      "value": 60
+    },
+    {
+      "at_tick": 1200,
+      "check": "dp_at_most",
+      "player": 0,
+      "value": 60
+    },
+    {
+      "at_tick": 1200,
+      "check": "dp_at_least",
+      "player": 1,
+      "value": 30
+    },
+    {
+      "at_tick": 1200,
+      "check": "dp_at_most",
+      "player": 1,
+      "value": 30
+    },
+    {
+      "at_tick": 11999,
+      "check": "phase_is",
+      "value": 0
+    },
+    {
+      "at_tick": 12001,
+      "check": "phase_is",
+      "value": 1
+    },
+    {
+      "at_tick": 24001,
+      "check": "phase_is",
+      "value": 2
+    },
+    {
+      "at_tick": 24000,
+      "check": "dp_at_least",
+      "player": 0,
+      "value": 1000
+    },
+    {
+      "at_tick": 24000,
+      "check": "dp_at_most",
+      "player": 0,
+      "value": 1000
+    },
+    {
+      "at_tick": 25200,
+      "check": "dp_at_least",
+      "player": 0,
+      "value": 1030
+    },
+    {
+      "at_tick": 25200,
+      "check": "dp_at_most",
+      "player": 0,
+      "value": 1030
+    },
+    {
+      "at_tick": 24000,
+      "check": "dp_at_least",
+      "player": 1,
+      "value": 700
+    },
+    {
+      "at_tick": 24000,
+      "check": "dp_at_most",
+      "player": 1,
+      "value": 700
+    },
+    {
+      "at_tick": 25200,
+      "check": "dp_at_least",
+      "player": 1,
+      "value": 765
+    },
+    {
+      "at_tick": 25200,
+      "check": "dp_at_most",
+      "player": 1,
+      "value": 765
+    }
+  ]
+}

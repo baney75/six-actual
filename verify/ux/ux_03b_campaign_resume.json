@@ -1,0 +1,27 @@
+{
+  "id": "ux_03b_campaign_resume",
+  "requirement": "MODE-02",
+  "also": [
+    "CMD-08"
+  ],
+  "description": "Campaign persistence: a new process resumes the campaign ux_03 saved, at the fallback operation cw2f with one operation fought and one loss.",
+  "steps": [
+    {
+      "press": "Campaign"
+    },
+    {
+      "wait_event": "campaign_started"
+    }
+  ],
+  "expect": [
+    {
+      "event": "campaign_started",
+      "fields": {
+        "era": "coldwar",
+        "operation": "cw2f",
+        "fought": 1,
+        "losses": 1
+      }
+    }
+  ]
+}

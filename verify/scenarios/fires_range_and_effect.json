@@ -1,0 +1,214 @@
+{
+  "id": "fires_range_and_effect",
+  "requirement": "SUP-01",
+  "description": "A 2S12 Sani mortar cannot fire at 9 km (max 7.18 km) or 300 m (min 500 m): both missions refused. Six 2S1s' 72 rounds of 122 mm HE (CEP 36 m at 6 km, blast radius 22 m: ~16 rounds expected inside it) on a dug-in US rifle squad at 6 km pins it (suppression) and causes casualties. A smoke mission at 5 km lands a screen that hides an M1A1 from a T-80BV.",
+  "ticks": 6000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 10000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "sani",
+      "unit": "2s12_sani",
+      "player": 1,
+      "x": 500,
+      "y": 9500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "sani2",
+      "unit": "2s12_sani",
+      "player": 1,
+      "x": 700,
+      "y": 9500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "g1",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 3000,
+      "y": 9000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "g2",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 3020,
+      "y": 9000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "g3",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 3040,
+      "y": 9000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "g6",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 3120,
+      "y": 9000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "g5",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 3100,
+      "y": 9000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "g4",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 3080,
+      "y": 9000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "squad",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 3000,
+      "y": 3000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "smoker",
+      "unit": "2s1_gvozdika",
+      "player": 1,
+      "x": 7000,
+      "y": 9000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 7000,
+      "y": 3500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t80",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 7000,
+      "y": 5000,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "sani",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 500,
+      "rounds": 5
+    },
+    {
+      "tick": 0,
+      "tag": "sani2",
+      "kind": "fire_mission",
+      "x": 700,
+      "y": 9200,
+      "rounds": 5
+    },
+    {
+      "tick": 0,
+      "tag": "g1",
+      "kind": "fire_mission",
+      "x": 3000,
+      "y": 3000,
+      "rounds": 12
+    },
+    {
+      "tick": 0,
+      "tag": "g2",
+      "kind": "fire_mission",
+      "x": 3000,
+      "y": 3000,
+      "rounds": 12
+    },
+    {
+      "tick": 0,
+      "tag": "g3",
+      "kind": "fire_mission",
+      "x": 3000,
+      "y": 3000,
+      "rounds": 12
+    },
+    {
+      "tick": 0,
+      "tag": "g6",
+      "kind": "fire_mission",
+      "x": 3000,
+      "y": 3000,
+      "rounds": 12
+    },
+    {
+      "tick": 0,
+      "tag": "g5",
+      "kind": "fire_mission",
+      "x": 3000,
+      "y": 3000,
+      "rounds": 12
+    },
+    {
+      "tick": 0,
+      "tag": "g4",
+      "kind": "fire_mission",
+      "x": 3000,
+      "y": 3000,
+      "rounds": 12
+    },
+    {
+      "tick": 0,
+      "tag": "smoker",
+      "kind": "fire_mission",
+      "x": 7000,
+      "y": 4250,
+      "rounds": 6,
+      "round": "smoke"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "events_at_least",
+      "value": 26,
+      "player": 2
+    },
+    {
+      "at_tick": 5,
+      "check": "spotted",
+      "unit": "m1",
+      "player": 1,
+      "expect": true
+    },
+    {
+      "at_tick": 6000,
+      "check": "members_at_most",
+      "unit": "squad",
+      "value": 8
+    },
+    {
+      "at_tick": 2400,
+      "check": "spotted",
+      "unit": "m1",
+      "player": 1,
+      "expect": false
+    }
+  ]
+}

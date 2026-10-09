@@ -1,0 +1,75 @@
+{
+  "id": "ux_05_settings_save",
+  "requirement": "UX-02",
+  "description": "Settings persistence, part 1: UI scale 1.25, the deuteranopia palette, subtitles off Take Control rebound to the Y key and fly-left rebound to the right stick are saved. ux_06 reads them back in a fresh process.",
+  "steps": [
+    {
+      "press": "Settings"
+    },
+    {
+      "select": "UiScale",
+      "index": 2
+    },
+    {
+      "select": "Palette",
+      "index": 1
+    },
+    {
+      "press": "Subtitles"
+    },
+    {
+      "press": "Rebind_take_control"
+    },
+    {
+      "key": "Y"
+    },
+    {
+      "wait_event": "key_rebound"
+    },
+    {
+      "press": "Rebind_fly_left"
+    },
+    {
+      "joy_axis": "RightX",
+      "value": -1.0
+    },
+    {
+      "wait_event": "pad_rebound"
+    },
+    {
+      "joy_axis": "RightX",
+      "value": 0.0
+    },
+    {
+      "press": "Save"
+    },
+    {
+      "wait_event": "settings_saved"
+    }
+  ],
+  "expect": [
+    {
+      "event": "key_rebound",
+      "fields": {
+        "action": "take_control",
+        "key": "Y"
+      }
+    },
+    {
+      "event": "pad_rebound",
+      "fields": {
+        "action": "fly_left",
+        "binding": "a:2:-1"
+      }
+    },
+    {
+      "event": "settings_saved",
+      "fields": {
+        "ui_scale": 1.25,
+        "palette": "deuteranopia",
+        "subtitles": false,
+        "take_control_key": "Y"
+      }
+    }
+  ]
+}

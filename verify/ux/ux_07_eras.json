@@ -1,0 +1,29 @@
+{
+  "id": "ux_07_eras",
+  "requirement": "MODE-01",
+  "also": ["ERA-01"],
+  "description": "Skirmish in every era: a WW2 British deck and a modern Chinese deck start battles against the AI's opposing side; surrender leads to the debrief.",
+  "steps": [
+    {"press": "Skirmish"},
+    {"select": "Era", "index": 1},
+    {"press": "Deck_uk_1944_infantry_division"},
+    {"wait_event": "battle_started"},
+    {"press": "Surrender"},
+    {"press": "MainMenu"},
+    {"press": "Skirmish"},
+    {"select": "Era", "index": 2},
+    {"press": "Deck_pla_2026_combined_arms_brigade"},
+    {"wait_event": "battle_started", "count": 2},
+    {"press": "Surrender"},
+    {"wait_event": "debrief", "count": 2}
+  ],
+  "expect": [
+    {"event": "deck_selected", "fields": {"deck": "uk_1944_infantry_division", "era": "ww2", "enemy": "ger_1944_infanterie_division"}},
+    {"event": "battle_started"},
+    {"event": "surrendered"},
+    {"event": "debrief"},
+    {"event": "deck_selected", "fields": {"deck": "pla_2026_combined_arms_brigade", "era": "modern"}},
+    {"event": "battle_started"},
+    {"event": "debrief"}
+  ]
+}

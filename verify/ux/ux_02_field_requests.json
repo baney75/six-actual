@@ -1,0 +1,24 @@
+{
+  "id": "ux_02_field_requests",
+  "requirement": "MEC-06",
+  "description": "Skirmish toggle for Field Requests: at the phase change the offer panel shows 3 task forces; picking one closes the offers and the task force arrives.",
+  "steps": [
+    {"press": "Skirmish"},
+    {"press": "FieldRequests"},
+    {"press": "Deck_us_1989_armored"},
+    {"wait_event": "battle_started"},
+    {"speed": 400},
+    {"wait_event": "field_offered", "timeout_s": 60},
+    {"speed": 0},
+    {"press": "Offer_1"},
+    {"wait_event": "field_taken"},
+    {"press": "Surrender"},
+    {"wait_event": "debrief"}
+  ],
+  "expect": [
+    {"event": "deck_selected", "fields": {"field_requests": true}},
+    {"event": "field_offered", "array_len": {"offers": 3}},
+    {"event": "field_taken", "positive": ["units"]},
+    {"event": "debrief", "fields": {"result": "defeat"}}
+  ]
+}

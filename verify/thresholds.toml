@@ -13,7 +13,7 @@ lockstep_clients = 8
 entities = 32
 
 [perf]
-tick_p95_ms = 8.0
+tick_p95_ms = 5.0
 frame_p95_ms = 16.7
 frame_max_ms = 100.0
 memory_growth_max = 0.05
@@ -28,6 +28,9 @@ cross_win_max = 0.65
 fire_support_before_assault_min = 0.70
 force_committed_min = 0.60
 damaged_withdrawal_min = 0.60
+aa_air_value_ratio_max = 1.5   # MEC-09: aircraft card value destroyed per AA card value deployed, per AA card
+single_class_win_max = 0.55    # MEC-09: single-class deck win rate against combined arms
+gs_reinforce_min = 0.80        # MEC-13: GS AI reinforces an attacked province within 2 turns when a reserve exists
 
 [audio]
 dialogue_lufs = -16.0

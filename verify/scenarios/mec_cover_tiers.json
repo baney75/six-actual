@@ -1,0 +1,285 @@
+{
+  "id": "mec_cover_tiers",
+  "requirement": "MEC-04",
+  "ticks": 2,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 10000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "forest",
+        "x": 1960,
+        "y": 1260,
+        "w": 80,
+        "h": 80,
+        "density": 100
+      },
+      {
+        "type": "building",
+        "x": 2999,
+        "y": 1299,
+        "nx": 1,
+        "ny": 1,
+        "floors": 2,
+        "material": "brick"
+      },
+      {
+        "type": "crater",
+        "x": 6000,
+        "y": 1103
+      },
+      {
+        "type": "forest",
+        "x": 7960,
+        "y": 1560,
+        "w": 80,
+        "h": 80,
+        "density": 100
+      }
+    ]
+  },
+  "description": "Directional cover tiers (MEC-04), on the combat hit chance itself. An M113's .50 cal at 300 m has 39% against a T-80BV in the open. Light cover (x0.7): inside forest 27%, behind a wreck between target and shooter 27%; a wreck behind the target (wrong side) gives none, 39%. Heavy cover (x0.4): inside a standing building 15%. Infantry in a crater at 100 m: 6% in the open, 4% in the crater. Fire from an aircraft ignores light cover: an A-10's GAU-8 (600 m ground range) has the same 58% against a tank in forest as in the open.",
+  "units": [
+    {
+      "tag": "s_open",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 1000,
+      "y": 1000
+    },
+    {
+      "tag": "t_open",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1000,
+      "y": 1300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_forest",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 2000,
+      "y": 1000
+    },
+    {
+      "tag": "t_forest",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2000,
+      "y": 1300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_bldg",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 3000,
+      "y": 1000
+    },
+    {
+      "tag": "t_bldg",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 3000,
+      "y": 1300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_wreckfront",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 4000,
+      "y": 1000
+    },
+    {
+      "tag": "t_wreckfront",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 4000,
+      "y": 1300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_wreckback",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 5000,
+      "y": 1000
+    },
+    {
+      "tag": "t_wreckback",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 5000,
+      "y": 1300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_crater",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 6000,
+      "y": 1000
+    },
+    {
+      "tag": "t_crater",
+      "unit": "us_scout_section",
+      "player": 1,
+      "x": 6000,
+      "y": 1100,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "w_front",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 4000,
+      "y": 1292,
+      "wreck": true
+    },
+    {
+      "tag": "w_back",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 5000,
+      "y": 1308,
+      "wreck": true
+    },
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 7000,
+      "y": 1000,
+      "altitude_m": 300
+    },
+    {
+      "tag": "t_airopen",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 7000,
+      "y": 1600,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "a10b",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 8000,
+      "y": 1000,
+      "altitude_m": 300
+    },
+    {
+      "tag": "t_airforest",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 8000,
+      "y": 1600,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_infopen",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 9000,
+      "y": 1000
+    },
+    {
+      "tag": "t_infopen",
+      "unit": "us_scout_section",
+      "player": 1,
+      "x": 9000,
+      "y": 1100,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_open",
+      "other": "t_open",
+      "mount": 0,
+      "x": 38,
+      "value": 40
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_forest",
+      "other": "t_forest",
+      "mount": 0,
+      "x": 26,
+      "value": 28
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_bldg",
+      "other": "t_bldg",
+      "mount": 0,
+      "x": 14,
+      "value": 16
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_wreckfront",
+      "other": "t_wreckfront",
+      "mount": 0,
+      "x": 26,
+      "value": 28
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_wreckback",
+      "other": "t_wreckback",
+      "mount": 0,
+      "x": 38,
+      "value": 40
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_crater",
+      "other": "t_crater",
+      "mount": 0,
+      "x": 3,
+      "value": 5
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "a10",
+      "other": "t_airopen",
+      "mount": 0,
+      "x": 57,
+      "value": 59
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "a10b",
+      "other": "t_airforest",
+      "mount": 0,
+      "x": 57,
+      "value": 59
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_infopen",
+      "other": "t_infopen",
+      "mount": 0,
+      "x": 5,
+      "value": 7
+    }
+  ]
+}

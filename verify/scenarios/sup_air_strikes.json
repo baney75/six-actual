@@ -1,0 +1,150 @@
+{
+  "id": "sup_air_strikes",
+  "requirement": "SUP-02",
+  "ticks": 2200,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 12000,
+    "cell_m": 16
+  },
+  "description": "Air strikes on call (SUP-02, Cold War subset): an A-10A gun run (10 bursts along 500 m east from the aim point, 90 s), a CBU-87 cluster pattern (24 clusters over 300 m, 100 s) and a stick of 6 Mk 82 (240 m, 100 s, called 5 s later). Each arrives after its delay and lays exactly its impacts at its interval: 10 by tick 1830, 34 by 2030, 40 by 2130, none before 1800. Each motor-rifle squad on the gun-run line takes a burst and is cut to a quarter of its strength (80 to 20 hp); a squad 150 m off the line is untouched.",
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 1000,
+      "y": 1000
+    },
+    {
+      "tag": "q0",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 2000,
+      "y": 5000
+    },
+    {
+      "tag": "q1",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 2222,
+      "y": 5000
+    },
+    {
+      "tag": "q2",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 2444,
+      "y": 5000
+    },
+    {
+      "tag": "off",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 2250,
+      "y": 5150
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_a10_strafe",
+      "x": 2000,
+      "y": 5000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_cbu87_cluster",
+      "x": 2000,
+      "y": 8000
+    },
+    {
+      "tick": 100,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_mk82_bombing",
+      "x": 6000,
+      "y": 8000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1799,
+      "check": "impact_count_at_least",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 1830,
+      "check": "impact_count_at_least",
+      "value": 10
+    },
+    {
+      "at_tick": 1999,
+      "check": "impact_count_at_least",
+      "value": 11,
+      "expect": false
+    },
+    {
+      "at_tick": 2030,
+      "check": "impact_count_at_least",
+      "value": 34
+    },
+    {
+      "at_tick": 2099,
+      "check": "impact_count_at_least",
+      "value": 35,
+      "expect": false
+    },
+    {
+      "at_tick": 2130,
+      "check": "impact_count_at_least",
+      "value": 40
+    },
+    {
+      "at_tick": 1830,
+      "check": "alive",
+      "unit": "off"
+    },
+    {
+      "at_tick": 1830,
+      "check": "hp_at_most",
+      "unit": "off",
+      "value": 39,
+      "expect": false
+    },
+    {
+      "at_tick": 1830,
+      "check": "hp_at_most",
+      "unit": "q0",
+      "value": 20
+    },
+    {
+      "at_tick": 1830,
+      "check": "hp_at_most",
+      "unit": "q1",
+      "value": 20
+    },
+    {
+      "at_tick": 1830,
+      "check": "hp_at_most",
+      "unit": "q2",
+      "value": 20
+    }
+  ]
+}

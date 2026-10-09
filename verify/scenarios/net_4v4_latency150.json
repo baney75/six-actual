@@ -1,0 +1,35 @@
+{
+  "id": "net_4v4_latency150",
+  "requirement": "NET-02",
+  "players_per_side": 4,
+  "ticks": 24000,
+  "latency_ms": 150,
+  "jitter_ms": 30,
+  "loss_pct": 0,
+  "input_delay_ticks": 8,
+  "seed": 13,
+  "hash_interval_ticks": 100,
+  "description": "The same 20-minute 4v4 match at 150 ms latency with 30 ms jitter (input delay 8 ticks = 400 ms): zero desyncs, replay matches, and no client stalls longer than half a second.",
+  "assert": [
+    {
+      "check": "desyncs",
+      "value": 0
+    },
+    {
+      "check": "hash_checks_at_least",
+      "value": 230
+    },
+    {
+      "check": "replay_matches"
+    },
+    {
+      "check": "battle_progressed",
+      "value": 40
+    },
+    {
+      "check": "max_stall_ms_at_most",
+      "value": 500
+    }
+  ],
+  "type": "net"
+}

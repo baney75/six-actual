@@ -1,0 +1,612 @@
+# G4 mutation checks: each mutant alters data/rules.json; every listed scenario
+# must then FAIL. Proves the scenarios test the behavior they claim. Tighten freely.
+
+[[mutant]]
+name = "no_forest_or_smoke"
+set = { "los.forest_height_dm" = 0, "los.smoke_height_dm" = 0 }
+must_fail = ["los_forest_depth", "los_smoke_screen"]
+
+[[mutant]]
+name = "weather_ignored"
+set = { "weather_optics_pct.fog" = 100 }
+must_fail = ["los_fog_weather"]
+
+[[mutant]]
+name = "no_forest_stealth"
+set = { "detect.stealth_forest_bonus" = 0 }
+must_fail = ["los_optics_stealth_weather"]
+
+[[mutant]]
+name = "wheels_climb_anything"
+set = { "move.max_slope_pct.wheeled" = 100 }
+must_fail = ["path_slope_by_class"]
+
+[[mutant]]
+name = "roads_not_cheaper"
+set = { "move.cost_road.wheeled" = 100, "move.cost_road.tracked" = 100 }
+must_fail = ["path_road_preference"]
+
+[[mutant]]
+name = "no_cross_country_slowdown"
+set = { "move.speed_open.wheeled" = 100 }
+must_fail = ["path_terrain_speed"]
+
+[[mutant]]
+name = "forest_no_slowdown"
+set = { "move.speed_forest.tracked" = 100 }
+must_fail = ["path_terrain_speed"]
+
+[[mutant]]
+name = "no_collapse"
+set = { "structure.collapse_delay_ticks" = 100000 }
+must_fail = ["collapse_tower", "collapse_cantilever_and_material"]
+
+[[mutant]]
+name = "falling_chunks_harmless"
+set = { "structure.fall_damage" = 0 }
+must_fail = ["collapse_tower"]
+
+[[mutant]]
+name = "wheels_cross_rubble"
+set = { "move.cost_rubble.wheeled" = 300, "move.speed_rubble.wheeled" = 20 }
+must_fail = ["collapse_breach_route"]
+
+[[mutant]]
+name = "brick_like_concrete"
+set = { "structure.materials.brick.armor" = 50, "structure.materials.brick.hp" = 600 }
+must_fail = ["collapse_cantilever_and_material"]
+
+[[mutant]]
+name = "no_rubble"
+set = { "structure.rubble_dm_per_chunk" = 0 }
+must_fail = ["collapse_tower", "collapse_breach_route"]
+
+[[mutant]]
+name = "hedges_transparent"
+set = { "los.hedge_height_dm" = 0 }
+must_fail = ["los_hedgerow"]
+
+[[mutant]]
+name = "short_phase_a"
+set = { "economy.phase_ticks" = [6000, 12000] }
+must_fail = ["econ_income_profiles"]
+
+[[mutant]]
+name = "profiles_flat"
+set = { "economy.income_per_minute.vanguard" = [45, 45, 45], "economy.income_per_minute.juggernaut" = [45, 45, 45] }
+must_fail = ["econ_income_profiles"]
+
+[[mutant]]
+name = "no_sp_for_kills"
+set = { "economy.sp_kill_pct" = 0 }
+must_fail = ["econ_sp_from_kill"]
+
+[[mutant]]
+name = "t80_front_thicker"
+set = { "roster:t80bv.armor.front_ke" = 700 }
+must_fail = ["armor_kinetic"]
+
+[[mutant]]
+name = "autocannon_no_falloff"
+set = { "weapons:2a42_30mm.pen" = [[0, 55], [2000, 55]] }
+must_fail = ["armor_kinetic"]
+
+[[mutant]]
+name = "t64_no_era"
+set = { "roster:t64bv.armor.front_ce" = 500 }
+must_fail = ["armor_chemical"]
+
+[[mutant]]
+name = "front_arc_swallows_sides"
+set = { "combat.arc_front_half_deg" = 100 }
+must_fail = ["armor_kinetic", "armor_chemical"]
+
+[[mutant]]
+name = "bmp2_rear_like_front"
+set = { "roster:bmp2.armor.rear" = 35 }
+must_fail = ["armor_rear"]
+
+[[mutant]]
+name = "no_turret_crits"
+set = { "combat.crit_weights.turret" = 0 }
+must_fail = ["crit_distribution"]
+
+[[mutant]]
+name = "no_crits"
+set = { "combat.crit_base_pct" = 0, "combat.crit_per_100mm_overmatch_pct" = 0 }
+must_fail = ["crit_distribution"]
+
+[[mutant]]
+name = "fire_harmless"
+set = { "combat.fire_hp_per_tick" = 0 }
+must_fail = ["crit_effects"]
+
+[[mutant]]
+name = "fast_recovery"
+set = { "morale.decay_per_tick" = 2 }
+must_fail = ["morale_recovery"]
+
+[[mutant]]
+name = "no_hysteresis"
+set = { "morale.recover_margin" = 0 }
+must_fail = ["morale_recovery"]
+
+[[mutant]]
+name = "hq_useless"
+set = { "morale.hq_decay_bonus" = 0 }
+must_fail = ["morale_hq_steadies"]
+
+[[mutant]]
+name = "never_surrender"
+set = { "morale.surrender_after_ticks" = 100000 }
+must_fail = ["morale_surrender"]
+
+[[mutant]]
+name = "slow_resupply"
+set = { "supply.ammo_interval_ticks" = 40 }
+must_fail = ["supply_rearm", "front_encircled"]
+
+[[mutant]]
+name = "airbase_never_returns"
+set = { "supply.aircraft_turnaround_ticks" = 100000 }
+must_fail = ["supply_aircraft"]
+
+[[mutant]]
+name = "no_bingo"
+set = { "supply.bingo_fuel_pct" = 0 }
+must_fail = ["supply_aircraft"]
+
+[[mutant]]
+name = "tanks_hold_no_ground"
+set = { "frontline.weight_by_kind.tank" = 0 }
+must_fail = ["front_push"]
+
+[[mutant]]
+name = "recon_moves_the_line"
+set = { "roster:m3a2_bradley_cfv.front_weight" = 2 }
+must_fail = ["front_push"]
+
+[[mutant]]
+name = "grad_tighter_than_data"
+set = { "weapons:grad_9m22u.cep_permille" = 9 }
+must_fail = ["fires_cep_grad"]
+
+[[mutant]]
+name = "how155_wider_than_data"
+set = { "weapons:how_155.cep_permille" = 6 }
+must_fail = ["fires_cep_155"]
+
+[[mutant]]
+name = "instant_setup"
+set = { "fires.setup_ticks" = 0 }
+must_fail = ["fires_cep_155"]
+
+[[mutant]]
+name = "slow_shells"
+set = { "weapons:how_155.tof_m_s" = 400 }
+must_fail = ["fires_cep_155"]
+
+[[mutant]]
+name = "smoke_no_screen"
+set = { "fires.smoke_radius_m" = 0 }
+must_fail = ["fires_range_and_effect"]
+
+[[mutant]]
+name = "radar_slow"
+set = { "fires.cb_locate_ticks" = 2000 }
+must_fail = ["fires_counterbattery_illum"]
+
+[[mutant]]
+name = "flares_dark"
+set = { "fires.illum_radius_m" = 0 }
+must_fail = ["fires_counterbattery_illum"]
+
+[[mutant]]
+name = "attack_never_assembles"
+set = { "command.assemble_timeout_ticks" = 100000, "command.assemble_radius_m" = 0 }
+must_fail = ["cmd_attack_with_fires"]
+
+[[mutant]]
+name = "no_prep_wait"
+set = { "command.prep_wait_ticks" = 0 }
+must_fail = ["cmd_attack_with_fires"]
+
+[[mutant]]
+name = "staging_fixed"
+set = { "command.staging_distance_m" = 0 }
+must_fail = ["cmd_intent_ab"]
+
+[[mutant]]
+name = "no_withdrawal"
+set = { "command.damaged_hp_pct" = 0 }
+must_fail = ["cmd_intent_ab"]
+
+[[mutant]]
+name = "never_ask_resupply"
+set = { "command.low_ammo_pct" = 0 }
+must_fail = ["cmd_requests"]
+
+[[mutant]]
+name = "cas_no_loiter"
+set = { "command.cas_loiter_ticks" = 0 }
+must_fail = ["cmd_cas"]
+
+[[mutant]]
+name = "cas_never_releases"
+set = { "command.cas_loiter_ticks" = 100000 }
+must_fail = ["cmd_cas"]
+
+[[mutant]]
+name = "cap_orbit_off_station"
+set = { "command.cap_orbit_m" = 20000 }
+must_fail = ["cmd_cap"]
+
+[[mutant]]
+name = "screen_holds_under_fire"
+set = { "command.screen_withdraw_m" = 0 }
+must_fail = ["cmd_screen"]
+
+[[mutant]]
+name = "priority_targets_ignored"
+set = { "command.priority_target_pct" = 100 }
+must_fail = ["cmd_intent_stats_priority"]
+
+[[mutant]]
+name = "never_withdraw_damaged"
+set = { "command.damaged_hp_pct" = 0 }
+must_fail = ["cmd_intent_stats_tolerance"]
+
+[[mutant]]
+name = "a10_g_limit_low"
+set = { "roster:a10a_thunderbolt.flight.g_limit_x10" = 40 }
+must_fail = ["fly_env_turn"]
+
+[[mutant]]
+name = "a10_never_stalls"
+set = { "roster:a10a_thunderbolt.flight.vstall_mm_s" = 20000 }
+must_fail = ["fly_env_stall"]
+
+[[mutant]]
+name = "a10_weak_climb"
+set = { "roster:a10a_thunderbolt.flight.climb_mm_s" = 15000 }
+must_fail = ["fly_env_climb"]
+
+[[mutant]]
+name = "no_light_cover"
+set = { "combat.cover_light_pct" = 100 }
+must_fail = ["mec_cover_tiers"]
+
+[[mutant]]
+name = "no_heavy_cover"
+set = { "combat.cover_heavy_pct" = 100 }
+must_fail = ["mec_cover_tiers"]
+
+[[mutant]]
+name = "veterancy_unreachable"
+set = { "combat.vet_kills" = [0, 99, 99, 99] }
+must_fail = ["mec_veterancy_retreat"]
+
+[[mutant]]
+name = "no_prep_bonus"
+set = { "command.planner_prep_bonus_pct" = 0 }
+must_fail = ["mec_planner_prep"]
+
+[[mutant]]
+name = "micromanagement_free"
+set = { "command.planner_micro_decay" = 0 }
+must_fail = ["mec_planner_prep"]
+
+[[mutant]]
+name = "support_instant"
+set = { "support:nato_fa_battalion_155.delay_ticks" = 0 }
+must_fail = ["sup_offmap_economy"]
+
+[[mutant]]
+name = "support_free"
+set = { "support:nato_fa_battalion_155.sp_cost" = 0 }
+must_fail = ["sup_offmap_economy"]
+
+[[mutant]]
+name = "sead_blind"
+set = { "support:nato_f4g_sead.params.radius_m" = 100 }
+must_fail = ["sup_sead_reveal"]
+
+[[mutant]]
+name = "no_spot_assist"
+set = { "economy.sp_spot_assist_pct" = 0 }
+must_fail = ["econ_sp_spot_assist"]
+
+[[mutant]]
+name = "shipped_deck_income_ignored"
+set = { "decks:us_1989_armored_cavalry.income" = "balanced", "decks:su_1989_tank_division.income" = "balanced" }
+must_fail = ["econ_shipped_deck_profiles"]
+
+[[mutant]]
+name = "direct_control_buff"
+set = { "combat.direct_control_hit_pct" = 25 }
+must_fail = ["mec_no_control_buff"]
+
+[[mutant]]
+name = "direct_control_nerf"
+set = { "combat.direct_control_hit_pct" = -25 }
+must_fail = ["mec_no_control_buff"]
+
+[[mutant]]
+name = "field_request_xo_never_picks"
+set = { "economy.field_request_auto_ticks" = 999999 }
+must_fail = ["mec_field_requests"]
+
+[[mutant]]
+name = "field_request_xo_picks_instantly"
+set = { "economy.field_request_auto_ticks" = 0 }
+must_fail = ["mec_field_requests"]
+
+[[mutant]]
+name = "repair_never_fixes_criticals"
+set = { "supply.repair_crit_ticks" = 999999 }
+must_fail = ["sup_repair"]
+
+[[mutant]]
+name = "mines_harmless"
+set = { "combat.mine_damage" = 0 }
+must_fail = ["sup_engineering"]
+
+[[mutant]]
+name = "fascam_empty"
+set = { "support:nato_fascam_155.params.density" = 0 }
+must_fail = ["sup_engineering"]
+
+[[mutant]]
+name = "trenches_no_cover"
+set = { "combat.cover_heavy_pct" = 100 }
+must_fail = ["sup_engineering"]
+
+[[mutant]]
+name = "bridge_too_short"
+set = { "support:nato_avlb_bridge.params.length_m" = 4 }
+must_fail = ["sup_engineer_support"]
+
+[[mutant]]
+name = "breach_clears_nothing"
+set = { "support:nato_miclic_breach.params.width_m" = 0 }
+must_fail = ["sup_engineer_support"]
+
+[[mutant]]
+name = "medevac_never"
+set = { "supply.medevac_ticks" = 999999 }
+must_fail = ["sup_logistics"]
+
+[[mutant]]
+name = "dump_never_reloads"
+set = { "supply.dump_refill_per_tick" = 0 }
+must_fail = ["sup_logistics"]
+
+[[mutant]]
+name = "helicopter_carries_nothing"
+set = { "roster:uh60a_black_hawk.supply" = 0 }
+must_fail = ["sup_logistics"]
+
+[[mutant]]
+name = "radar_jamming_ineffective"
+set = { "combat.jam_radar_pct" = 100 }
+must_fail = ["sup_electronic_warfare"]
+
+[[mutant]]
+name = "decoys_ineffective"
+set = { "combat.decoy_pct" = 100 }
+must_fail = ["sup_electronic_warfare"]
+
+[[mutant]]
+name = "comms_jamming_no_delay"
+set = { "combat.jam_comms_delay_ticks" = 0 }
+must_fail = ["sup_electronic_warfare"]
+
+[[mutant]]
+name = "night_no_accuracy_penalty"
+set = { "weather_accuracy_pct.night" = 100 }
+must_fail = ["sim_weather_night"]
+
+[[mutant]]
+name = "fog_does_not_ground_aircraft"
+set = { "weather_air_ops.fog" = 1 }
+must_fail = ["sim_weather_fog"]
+
+[[mutant]]
+name = "thermal_sights_useless"
+set = { "thermal.optics_pct" = 40 }
+must_fail = ["sim_weather_night"]
+
+[[mutant]]
+name = "formation_bunched"
+set = { "command.formation_spacing_m" = 10 }
+must_fail = ["path_formation_line"]
+
+[[mutant]]
+name = "aircraft_crawl"
+set = { "roster:a10a_thunderbolt.speed_mm_s" = 50000 }
+must_fail = ["path_air_direct"]
+
+[[mutant]]
+name = "loser_never_falls_back"
+set = { "operation.spawn_pullback_m" = 0 }
+must_fail = ["op_outcome_nato", "op_outcome_pact"]
+
+[[mutant]]
+name = "gs_no_lend_lease"
+set = { "grand_strategy.lend_lease_pct" = 0 }
+must_fail = ["gs_diplomacy"]
+
+[[mutant]]
+name = "gs_ceasefire_void"
+set = { "grand_strategy.ceasefire_turns" = 0 }
+must_fail = ["gs_ceasefire"]
+
+[[mutant]]
+name = "gs_fallout_harmless"
+set = { "grand_strategy.fallout_attrition_pct" = 0 }
+must_fail = ["gs_nuclear_theater"]
+
+[[mutant]]
+name = "gs_forest_no_defence"
+set = { "grand_strategy.terrain_defence_pct.forest" = 100 }
+must_fail = ["gs_battle_feedback"]
+
+[[mutant]]
+name = "gs_tactical_ungated"
+set = { "grand_strategy.tension_tactical" = 5 }
+must_fail = ["gs_nuclear_gates"]
+
+[[mutant]]
+name = "gs_commanders_never_learn"
+set = { "grand_strategy.commander_xp_win" = 0, "grand_strategy.commander_xp_loss" = 0 }
+must_fail = ["gs_commanders_persist"]
+
+[[mutant]]
+name = "tactical_nuke_dud"
+set = { "support:nato_w79_tactical.params.blast_damage" = 1 }
+must_fail = ["sup_tactical_nuke_released"]
+
+[[mutant]]
+name = "gs_supply_free"
+set = { "grand_strategy.attrition_unsupplied_pct" = 0 }
+must_fail = ["gs_supply"]
+
+[[mutant]]
+name = "napalm_does_not_burn"
+set = { "weapons:zab500.type" = "he" }
+must_fail = ["fly_loadouts"]
+
+[[mutant]]
+name = "copperhead_unguided"
+set = { "support:nato_copperhead.params.cep_m" = 30 }
+must_fail = ["sup_precision_rounds"]
+
+[[mutant]]
+name = "battleship_scatter"
+set = { "weapons:naval_406.cep_permille" = 8 }
+must_fail = ["sup_naval_gunfire"]
+
+[[mutant]]
+name = "designator_anywhere"
+set = { "support:nato_copperhead.params.designator_m" = 100000 }
+must_fail = ["sup_precision_needs_designator"]
+
+[[mutant]]
+name = "napalm_run_inert"
+set = { "support:pact_su25_napalm.params.incendiary" = false }
+must_fail = ["sup_air_coldwar_more"]
+
+[[mutant]]
+name = "air_assault_empty"
+set = { "support:nato_air_assault.params.count" = 0 }
+must_fail = ["sup_air_coldwar_more"]
+
+[[mutant]]
+name = "gunship_blanks"
+set = { "support:nato_ac130_gunship.params.blast_damage" = 1 }
+must_fail = ["sup_air_coldwar_more"]
+
+[[mutant]]
+name = "escort_absent"
+set = { "combat.escort_pct" = 100 }
+must_fail = ["sup_air_coldwar_more"]
+
+[[mutant]]
+name = "tomahawk_dud"
+set = { "support:nato_tomahawk.params.blast_damage" = 1 }
+must_fail = ["sup_air_coldwar_more"]
+
+[[mutant]]
+name = "sherman_75_overpowered"
+set = { "weapons:us_75mm_m3.pen" = [[0, 200]] }
+must_fail = ["ww2_armor_and_support"]
+
+[[mutant]]
+name = "glider_lands_nobody"
+set = { "support:allies_waco_glider.params.count" = 0 }
+must_fail = ["ww2_armor_and_support"]
+
+[[mutant]]
+name = "javelin_direct_attack_only"
+set = { "weapons:javelin_fgm148.top_attack" = false }
+must_fail = ["modern_top_attack_drones"]
+
+[[mutant]]
+name = "gps_jamming_harmless"
+set = { "combat.gps_jam_cep_x" = 1 }
+must_fail = ["modern_gps_jammed"]
+
+[[mutant]]
+name = "switchblade_dud"
+set = { "support:us_switchblade600.params.pen" = 10 }
+must_fail = ["modern_top_attack_drones"]
+
+[[mutant]]
+name = "fpv_never_arrive"
+set = { "combat.fpv_success_pct" = 0 }
+must_fail = ["modern_top_attack_drones"]
+
+[[mutant]]
+name = "b26_bombs_inert"
+set = { "support:allies_b26_level.params.blast_damage" = 1 }
+must_fail = ["sup_air_ww2"]
+
+[[mutant]]
+name = "f35_sead_blind"
+set = { "support:us_f35_sead.params.radius_m" = 100 }
+must_fail = ["sup_air_modern"]
+
+[[mutant]]
+name = "hj12_no_top_attack"
+set = { "weapons:hj12.top_attack" = false }
+must_fail = ["era_factions_modern"]
+
+[[mutant]]
+name = "zpt98_overmatch"
+set = { "weapons:zpt98_125.pen" = [[0, 1300], [4000, 1300]] }
+must_fail = ["era_factions_modern"]
+
+[[mutant]]
+name = "pla_deck_empty"
+set = { "decks:pla_2026_combined_arms_brigade.cards" = [] }
+must_fail = ["era_factions_modern"]
+
+[[mutant]]
+name = "milan2_weak"
+set = { "weapons:milan2.pen" = [[0, 400]] }
+must_fail = ["era_factions_coldwar"]
+
+[[mutant]]
+name = "challenger_thin_front"
+set = { "roster:challenger1.armor.front_ke" = 350 }
+must_fail = ["era_factions_coldwar"]
+
+[[mutant]]
+name = "nva_deck_empty"
+set = { "decks:nva_1989_mot_schuetzen.cards" = [] }
+must_fail = ["era_factions_coldwar"]
+
+[[mutant]]
+name = "annihilation_never"
+set = { "victory.annihilation_grace_ticks" = 1000000 }
+must_fail = ["victory_annihilation"]
+
+[[mutant]]
+name = "annihilation_no_grace"
+set = { "victory.annihilation_grace_ticks" = 0 }
+must_fail = ["victory_annihilation"]
+
+[[mutant]]
+name = "lefh18_wider_than_data"
+set = { "weapons:ger_105mm_lefh18.cep_permille" = 9 }
+must_fail = ["fires_cep_ww2_lefh18_towed"]
+
+[[mutant]]
+name = "us_81mm_wider_than_data"
+set = { "weapons:us_81mm_m1.cep_permille" = 15 }
+must_fail = ["fires_cep_ww2_us_81mm_mortar_1944"]
+
+[[mutant]]
+name = "m284_slow_shells"
+set = { "weapons:m284_155_he.tof_m_s" = 400 }
+must_fail = ["fires_cep_modern_m109a7"]

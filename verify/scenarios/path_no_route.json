@@ -1,0 +1,75 @@
+{
+  "id": "path_no_route",
+  "requirement": "SIM-12",
+  "description": "A tank walled in by water gets a NoPath result and drops the goal instead of hanging (never permanently stuck).",
+  "ticks": 10,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "water",
+        "x": 800,
+        "y": 800,
+        "w": 400,
+        "h": 64
+      },
+      {
+        "type": "water",
+        "x": 800,
+        "y": 1136,
+        "w": 400,
+        "h": 64
+      },
+      {
+        "type": "water",
+        "x": 800,
+        "y": 800,
+        "w": 64,
+        "h": 400
+      },
+      {
+        "type": "water",
+        "x": 1136,
+        "y": 800,
+        "w": 64,
+        "h": 400
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1000,
+      "y": 1000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "tank",
+      "kind": "move",
+      "x": 1800,
+      "y": 1800
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 5,
+      "check": "no_path",
+      "unit": "tank"
+    },
+    {
+      "at_tick": 5,
+      "check": "has_goal",
+      "unit": "tank",
+      "expect": false
+    }
+  ]
+}

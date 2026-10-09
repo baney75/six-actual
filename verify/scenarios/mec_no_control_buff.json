@@ -1,0 +1,187 @@
+{
+  "id": "mec_no_control_buff",
+  "requirement": "MEC-08",
+  "description": "No direct-control stat buff (MEC-08). Two A-10As fly the same attack profile, a level pass at 300 m and 155.6 m/s due east past an identical row of five BMP-2s offset 100 m from the track, GAU-8 only. One has its AI pilot on a move order; the player flies the other through Take Control and the stick, holding the AI's cruise speed (throttle 63: drag balances at vmax*sqrt(0.63) = 155.6 m/s). Summed over 40 seeds, the player-flown per-shot hit rate is within 10% of the AI pilot's, with at least 300 shots each. Flown aircraft fire through the same Combat.Fire and HitChance path; this checks that the result holds empirically.",
+  "ticks": 700,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 16
+  },
+  "units": [
+    {
+      "tag": "ai_hog",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 200,
+      "y": 1000,
+      "altitude_m": 300,
+      "roe": "fire_at_will",
+      "ammo": [
+        1000,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "flown_hog",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 200,
+      "y": 4000,
+      "altitude_m": 300,
+      "roe": "fire_at_will",
+      "ammo": [
+        1000,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "a0",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 1400,
+      "y": 1100
+    },
+    {
+      "tag": "a1",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 1700,
+      "y": 1100
+    },
+    {
+      "tag": "a2",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 2000,
+      "y": 1100
+    },
+    {
+      "tag": "a3",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 2300,
+      "y": 1100
+    },
+    {
+      "tag": "a4",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 2600,
+      "y": 1100
+    },
+    {
+      "tag": "f0",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 1400,
+      "y": 4100
+    },
+    {
+      "tag": "f1",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 1700,
+      "y": 4100
+    },
+    {
+      "tag": "f2",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 2000,
+      "y": 4100
+    },
+    {
+      "tag": "f3",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 2300,
+      "y": 4100
+    },
+    {
+      "tag": "f4",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 2600,
+      "y": 4100
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "move",
+      "tag": "ai_hog",
+      "x": 5800,
+      "y": 1000
+    },
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "flown_hog",
+      "player": 0
+    },
+    {
+      "tick": 0,
+      "kind": "stick",
+      "tag": "flown_hog",
+      "x": 63,
+      "y": 0,
+      "z_dm": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 699,
+      "check": "hit_rate_parity_pct",
+      "unit": "flown_hog",
+      "other": "ai_hog",
+      "mount": 0,
+      "x": 300,
+      "value": 10
+    }
+  ]
+}

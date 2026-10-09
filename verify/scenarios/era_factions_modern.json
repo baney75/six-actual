@@ -1,0 +1,100 @@
+{
+  "id": "era_factions_modern",
+  "requirement": "ERA-01",
+  "era": "modern",
+  "description": "China, the third modern faction (ERA-01), from sourced data (assets_src/research/modern_2026_roster_sources.json). An HJ-12 team's fire-and-forget top attack (1,100 mm) kills a T-90M from the front: the tank's 1,900 mm CE front would stop it, its 40 mm roof cannot. A Type 99A's ZPT-98 (695 mm at 0) cannot defeat a T-90M front (1,150 mm KE) in 60 s. A PLA AI commander (pla_2026_combined_arms_brigade) and a Russian one (ru_2026_motor_rifle) each field an army of at least 5 units from their own nation-filtered deck within 60 s.",
+  "ticks": 1600,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 9000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "deck": "pla_2026_combined_arms_brigade",
+      "start_dp": 1000,
+      "spawn_x": 4500,
+      "spawn_y": 3000,
+      "ai": true
+    },
+    {
+      "deck": "ru_2026_motor_rifle",
+      "start_dp": 1000,
+      "spawn_x": 4500,
+      "spawn_y": 6000,
+      "ai": true
+    },
+    {
+      "start_sp": 0
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "hj12",
+      "unit": "pla_hj12_team",
+      "player": 2,
+      "x": 500,
+      "y": 500,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "t90_a",
+      "unit": "t90m",
+      "player": 3,
+      "x": 500,
+      "y": 2500,
+      "heading_deg": 270
+    },
+    {
+      "tag": "ztz99",
+      "unit": "type99a",
+      "player": 2,
+      "x": 8500,
+      "y": 500,
+      "heading_deg": 90,
+      "roe": "fire_at_will"
+    },
+    {
+      "tag": "t90_b",
+      "unit": "t90m",
+      "player": 3,
+      "x": 8500,
+      "y": 1500,
+      "heading_deg": 270
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1500,
+      "check": "alive",
+      "unit": "t90_a",
+      "expect": false
+    },
+    {
+      "at_tick": 1200,
+      "check": "alive",
+      "unit": "t90_b"
+    },
+    {
+      "at_tick": 1200,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 5
+    },
+    {
+      "at_tick": 1200,
+      "check": "units_of_player_at_least",
+      "player": 1,
+      "value": 5
+    }
+  ]
+}

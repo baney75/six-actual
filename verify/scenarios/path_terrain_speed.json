@@ -1,0 +1,130 @@
+{
+  "id": "path_terrain_speed",
+  "requirement": "SIM-12",
+  "description": "Terrain sets speed per class. HEMTT 800 m on a road: 27.8 m/s = 1.389 m/tick = 576 ticks. HEMTT 800 m cross-country: 55% = 0.764 m/tick = 1047 ticks. M1A1 400 m inside a full-height forest band: 30% of 18.56 m/s = 0.278 m/tick = 1438 ticks.",
+  "ticks": 2000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "road",
+        "x": 100,
+        "y": 192,
+        "w": 1000,
+        "h": 32
+      },
+      {
+        "type": "forest",
+        "x": 1150,
+        "y": 0,
+        "w": 800,
+        "h": 2000,
+        "density": 90
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "truck_road",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 200,
+      "y": 208
+    },
+    {
+      "tag": "truck_open",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 200,
+      "y": 816
+    },
+    {
+      "tag": "tank_forest",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1208,
+      "y": 1488
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "truck_road",
+      "kind": "move",
+      "x": 1000,
+      "y": 208
+    },
+    {
+      "tick": 0,
+      "tag": "truck_open",
+      "kind": "move",
+      "x": 1000,
+      "y": 816
+    },
+    {
+      "tick": 0,
+      "tag": "tank_forest",
+      "kind": "move",
+      "x": 1608,
+      "y": 1488
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 540,
+      "check": "near",
+      "unit": "truck_road",
+      "x": 1000,
+      "y": 208,
+      "value": 10,
+      "expect": false
+    },
+    {
+      "at_tick": 620,
+      "check": "near",
+      "unit": "truck_road",
+      "x": 1000,
+      "y": 208,
+      "value": 2
+    },
+    {
+      "at_tick": 1000,
+      "check": "near",
+      "unit": "truck_open",
+      "x": 1000,
+      "y": 816,
+      "value": 10,
+      "expect": false
+    },
+    {
+      "at_tick": 1100,
+      "check": "near",
+      "unit": "truck_open",
+      "x": 1000,
+      "y": 816,
+      "value": 2
+    },
+    {
+      "at_tick": 1390,
+      "check": "near",
+      "unit": "tank_forest",
+      "x": 1608,
+      "y": 1488,
+      "value": 10,
+      "expect": false
+    },
+    {
+      "at_tick": 1490,
+      "check": "near",
+      "unit": "tank_forest",
+      "x": 1608,
+      "y": 1488,
+      "value": 2
+    }
+  ]
+}

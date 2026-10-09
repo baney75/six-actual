@@ -1,0 +1,32 @@
+{
+  "id": "mec_field_requests",
+  "requirement": "MEC-06",
+  "description": "Field Requests (MEC-06), on for this match. No offer stands during phase A. At the phase change to B (tick 12000) each player is offered 3 different task forces of their own side for phase B; at C (24000), 3 for phase C. Player 0 (no XO) takes offer 1 at tick 12100: the offers close and the task force arrives at its entry point without spending deployment points (DP stays at the exact balanced-income accrual, 453 at tick 12101, start 0). Player 1's XO runs the battle and takes an offer for it after 30 s (field_request_auto_ticks), so its offers close by tick 12601. Player 0 lets the phase-C offer stand.",
+  "ticks": 24100,
+  "roe": "hold_fire",
+  "field_requests": true,
+  "seeds": [1, 2, 3],
+  "terrain": {"size_m": 2000, "cell_m": 8},
+  "units": [],
+  "players": [
+    {"deck": "us_1989_armored", "income": "balanced", "start_dp": 0, "spawn_x": 300, "spawn_y": 300},
+    {"deck": "su_1989_motor_rifle", "start_dp": 0, "spawn_x": 1700, "spawn_y": 1700, "ai": true}
+  ],
+  "orders": [
+    {"tick": 12100, "kind": "field_request", "player": 0, "value": 1}
+  ],
+  "assert": [
+    {"at_tick": 11999, "check": "field_offers_open", "player": 0, "value": 0},
+    {"at_tick": 12001, "check": "field_offers_open", "player": 0, "value": 3},
+    {"at_tick": 12001, "check": "field_offers_distinct", "player": 0},
+    {"at_tick": 12001, "check": "field_offers_distinct", "player": 1},
+    {"at_tick": 12101, "check": "field_offers_open", "player": 0, "value": 0},
+    {"at_tick": 12101, "check": "units_of_player_at_least", "player": 0, "value": 3},
+    {"at_tick": 12101, "check": "dp_at_least", "player": 0, "value": 453},
+    {"at_tick": 12101, "check": "dp_at_most", "player": 0, "value": 453},
+    {"at_tick": 12599, "check": "field_offers_open", "player": 1, "value": 3},
+    {"at_tick": 12602, "check": "field_offers_open", "player": 1, "value": 0},
+    {"at_tick": 24001, "check": "field_offers_open", "player": 0, "value": 3},
+    {"at_tick": 24001, "check": "field_offers_distinct", "player": 0}
+  ]
+}

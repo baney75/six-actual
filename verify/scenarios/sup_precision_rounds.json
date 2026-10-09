@@ -1,0 +1,75 @@
+{
+  "id": "sup_precision_rounds",
+  "requirement": "SUP-01",
+  "description": "Precision rounds (SUP-01). With an M3A2 scout lasing the aim point from 2 km, two M712 Copperhead missions (4 rounds each) land with a median miss near the 3 m data CEP (8 rounds: asserted within 1-5 m), the first exactly at the 90 s delay (tick 1800).",
+  "ticks": 2000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 300
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "fist",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 3000,
+      "y": 1000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_copperhead",
+      "x": 3000,
+      "y": 3000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_copperhead",
+      "x": 3000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1900,
+      "check": "impacts_cep_pct",
+      "x": 3000,
+      "y": 3000,
+      "mount": 3,
+      "player": 33,
+      "value": 167
+    },
+    {
+      "at_tick": 1900,
+      "check": "first_impact_after",
+      "value": 1800
+    },
+    {
+      "at_tick": 1900,
+      "check": "first_impact_before",
+      "value": 1800
+    },
+    {
+      "at_tick": 5,
+      "check": "support_refused",
+      "player": 0,
+      "value": 8,
+      "expect": false
+    }
+  ]
+}

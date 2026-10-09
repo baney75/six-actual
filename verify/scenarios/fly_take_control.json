@@ -1,0 +1,78 @@
+{
+  "id": "fly_take_control",
+  "requirement": "FLY-01",
+  "ticks": 300,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 20000,
+    "cell_m": 16
+  },
+  "description": "Take Control (FLY-01) and manual return (FLY-02). The player takes control of an A-10A at tick 10: by the next tick (within 1 tick) it is player-flown and the player's XO has command of the commanders, announced by an XoTookCommand event. At tick 200 the player hands it back with one order: control returns (reason 5, manual), the aircraft is AI-flown again and the XO hands command back.",
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 5000,
+      "y": 5000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 10,
+      "kind": "take_control",
+      "tag": "a10",
+      "player": 0
+    },
+    {
+      "tick": 200,
+      "kind": "release",
+      "tag": "a10"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 9,
+      "check": "xo_active",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 11,
+      "check": "xo_active",
+      "player": 0
+    },
+    {
+      "at_tick": 11,
+      "check": "flown",
+      "unit": "a10"
+    },
+    {
+      "at_tick": 11,
+      "check": "events_at_least",
+      "value": 41,
+      "player": 1
+    },
+    {
+      "at_tick": 201,
+      "check": "control_returned",
+      "unit": "a10",
+      "value": 5
+    },
+    {
+      "at_tick": 201,
+      "check": "flown",
+      "unit": "a10",
+      "expect": false
+    },
+    {
+      "at_tick": 201,
+      "check": "xo_active",
+      "player": 0,
+      "expect": false
+    }
+  ]
+}

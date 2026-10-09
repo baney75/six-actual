@@ -1,0 +1,93 @@
+{
+  "id": "gs_economy",
+  "requirement": "GS-01",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "turns": 7,
+  "ai": [],
+  "description": "Grand strategy economy (GS-01), Cold War theater (19 provinces, 7 factions). Production is the industry of owned provinces each turn (USA: Frankfurt 4 + Fulda 1 + Nuremberg 3 = 8). Building spends production and manpower: 5 points raise the Frankfurt army from 32 to 57 strength (5 per point), leaving 3, so 11 after the next turn. Research: 8 points a turn reach technology level 1 (30 points) on the fourth investment.",
+  "orders": [
+    {
+      "turn": 1,
+      "kind": "build",
+      "faction": "usa",
+      "army_in": "frankfurt",
+      "value": 5
+    },
+    {
+      "turn": 2,
+      "kind": "research",
+      "faction": "usa",
+      "value": 8
+    },
+    {
+      "turn": 3,
+      "kind": "research",
+      "faction": "usa",
+      "value": 8
+    },
+    {
+      "turn": 4,
+      "kind": "research",
+      "faction": "usa",
+      "value": 8
+    },
+    {
+      "turn": 5,
+      "kind": "research",
+      "faction": "usa",
+      "value": 8
+    }
+  ],
+  "assert": [
+    {
+      "turn": 1,
+      "check": "production_at_least",
+      "faction": "usa",
+      "value": 8
+    },
+    {
+      "turn": 1,
+      "check": "production_at_most",
+      "faction": "usa",
+      "value": 8
+    },
+    {
+      "turn": 2,
+      "check": "army_strength_at_least",
+      "faction": "usa",
+      "province": "frankfurt",
+      "value": 57
+    },
+    {
+      "turn": 2,
+      "check": "production_at_least",
+      "faction": "usa",
+      "value": 11
+    },
+    {
+      "turn": 2,
+      "check": "production_at_most",
+      "faction": "usa",
+      "value": 11
+    },
+    {
+      "turn": 5,
+      "check": "tech_at_least",
+      "faction": "usa",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "turn": 6,
+      "check": "tech_at_least",
+      "faction": "usa",
+      "value": 1
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

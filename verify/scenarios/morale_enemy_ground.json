@@ -1,0 +1,48 @@
+{
+  "id": "morale_enemy_ground",
+  "requirement": "MEC-02",
+  "description": "Units in enemy territory cannot shed suppression (C1-2): a routed squad in the enemy half is still routed at tick 300, while the same squad in friendly ground is normal by tick 133.",
+  "ticks": 300,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "home",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "suppression": 150
+    },
+    {
+      "tag": "deep",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 500,
+      "y": 1600,
+      "suppression": 150,
+      "home_x": 500,
+      "home_y": 1600
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 300,
+      "check": "morale_state",
+      "unit": "home",
+      "value": 0
+    },
+    {
+      "at_tick": 300,
+      "check": "morale_state",
+      "unit": "deep",
+      "value": 3
+    }
+  ]
+}

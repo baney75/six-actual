@@ -1,0 +1,90 @@
+{
+  "id": "fly_env_climb",
+  "requirement": "FLY-03",
+  "ticks": 2400,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 60000,
+    "cell_m": 64
+  },
+  "description": "Flight envelope: sustained climb (FLY-03). At full throttle with the flight path that holds best-climb speed (sin gamma = climb / (0.55 vmax): stick 57% for the A-10A, 80% for the Su-25), each aircraft settles into a steady climb at its sourced sea-level climb rate: A-10A 30.5 m/s, Su-25 58 m/s, within 10% after 120 s (the model's maximum specific excess power equals g x the sourced climb rate). Climb rates of the F-15C and MiG-29 are peak (zoom) figures beyond a 30 deg flight path and are not tested here.",
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 5000,
+      "y": 30000,
+      "altitude_m": 500
+    },
+    {
+      "tag": "su25",
+      "unit": "su25_frogfoot",
+      "player": 1,
+      "x": 5000,
+      "y": 10000,
+      "altitude_m": 500
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "a10",
+      "player": 0
+    },
+    {
+      "tick": 0,
+      "kind": "stick",
+      "tag": "a10",
+      "x": 100,
+      "y": 0,
+      "z_dm": 57
+    },
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "su25",
+      "player": 1
+    },
+    {
+      "tick": 0,
+      "kind": "stick",
+      "tag": "su25",
+      "x": 100,
+      "y": 0,
+      "z_dm": 80
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2400,
+      "check": "vertical_speed_between",
+      "unit": "a10",
+      "x": 27450,
+      "value": 33550
+    },
+    {
+      "at_tick": 2400,
+      "check": "vertical_speed_between",
+      "unit": "su25",
+      "x": 52200,
+      "value": 63800
+    },
+    {
+      "at_tick": 2400,
+      "check": "altitude_at_least",
+      "unit": "a10",
+      "value": 4000
+    },
+    {
+      "at_tick": 2400,
+      "check": "altitude_at_least",
+      "unit": "su25",
+      "value": 7500
+    }
+  ]
+}

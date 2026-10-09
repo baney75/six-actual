@@ -1,0 +1,109 @@
+{
+  "id": "ux_16_sfx",
+  "requirement": "AUD-03",
+  "also": [
+    "AUD-02"
+  ],
+  "description": "World sound: weapons and explosions play as 3D sounds at their source, in the near, mid or far version by distance to the listener; the sim's line of sight from the listener decides occlusion (low-pass and -6 dB). From the start line the distant fighting is far and occluded; after jumping the camera to the latest alert, nearer versions play. No sound file is missing.",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "phase",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "press": "TakeControl"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "wait_event": "control_returned",
+      "timeout_s": 120
+    },
+    {
+      "speed": 20
+    },
+    {
+      "wait_event": "map_ping",
+      "timeout_s": 120
+    },
+    {
+      "press": "JumpToAlert"
+    },
+    {
+      "wait_event": "camera_jump"
+    },
+    {
+      "speed": 4
+    },
+    {
+      "frames": 600
+    },
+    {
+      "wait_event": "sfx_stats",
+      "count": 40,
+      "timeout_s": 120
+    },
+    {
+      "press": "Surrender"
+    },
+    {
+      "wait_event": "debrief"
+    }
+  ],
+  "expect": [
+    {
+      "event": "sfx",
+      "min_count": 30,
+      "nonempty": [
+        "family",
+        "band"
+      ]
+    },
+    {
+      "event": "sfx",
+      "fields": {
+        "occluded": true,
+        "cutoff_hz": 900,
+        "volume_db": -6
+      }
+    },
+    {
+      "event": "camera_jump"
+    },
+    {
+      "event": "sfx_stats",
+      "fields": {
+        "missing": 0
+      },
+      "positive": [
+        "mid",
+        "occluded"
+      ]
+    },
+    {
+      "event": "debrief"
+    }
+  ]
+}

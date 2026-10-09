@@ -1,0 +1,103 @@
+{
+  "id": "fires_counterbattery_illum",
+  "requirement": "SUP-01",
+  "description": "Counter-battery: a 2S3 firing on blue (first round at tick 200 after setup) is located by blue's radar 600 ticks later: no fix at tick 750, a fix by tick 900. Illumination: at night (40% optics) a non-thermal M113 (1800 m optics -> 720 m) cannot see a T-80BV at 1500 m until a 122 mm illumination round lights the tank (500 m radius, 45 s); inside the light, daylight range applies.",
+  "ticks": 3200,
+  "seeds": [
+    1
+  ],
+  "weather": "night",
+  "terrain": {
+    "size_m": 12000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "akatsiya",
+      "unit": "2s3_akatsiya",
+      "player": 1,
+      "x": 6000,
+      "y": 11000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m109",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 6000,
+      "y": 500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "illum_gun",
+      "unit": "2s1_gvozdika",
+      "player": 0,
+      "x": 2000,
+      "y": 500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m1",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 2000,
+      "y": 4000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t80",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2000,
+      "y": 5500,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "akatsiya",
+      "kind": "fire_mission",
+      "x": 6000,
+      "y": 3000,
+      "rounds": 4
+    },
+    {
+      "tick": 1500,
+      "tag": "illum_gun",
+      "kind": "fire_mission",
+      "x": 2000,
+      "y": 5500,
+      "rounds": 2,
+      "round": "illum"
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 750,
+      "check": "battery_located_by",
+      "unit": "akatsiya",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 900,
+      "check": "battery_located_by",
+      "unit": "akatsiya",
+      "player": 0
+    },
+    {
+      "at_tick": 1400,
+      "check": "spotted",
+      "unit": "t80",
+      "player": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 2400,
+      "check": "spotted",
+      "unit": "t80",
+      "player": 0
+    }
+  ]
+}

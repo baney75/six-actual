@@ -1,0 +1,68 @@
+{
+  "id": "econ_sp_from_kill",
+  "requirement": "MEC-03",
+  "description": "Support points from combat: when blue destroys a red tank worth 250, blue earns 20% = 50 SP. Red, holding fire, earns none.",
+  "ticks": 2000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "blue",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 800,
+      "y": 1000,
+      "heading_deg": 0,
+      "cost": 250
+    },
+    {
+      "tag": "red",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1200,
+      "y": 1000,
+      "heading_deg": 90,
+      "roe": "hold_fire",
+      "cost": 250
+    }
+  ],
+  "players": [
+    {
+      "start_dp": 0
+    },
+    {
+      "start_dp": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 0,
+      "check": "sp_at_most",
+      "player": 0,
+      "value": 0
+    },
+    {
+      "at_tick": 2000,
+      "check": "alive",
+      "unit": "red",
+      "expect": false
+    },
+    {
+      "at_tick": 2000,
+      "check": "sp_at_least",
+      "player": 0,
+      "value": 50
+    },
+    {
+      "at_tick": 2000,
+      "check": "sp_at_most",
+      "player": 1,
+      "value": 0
+    }
+  ]
+}

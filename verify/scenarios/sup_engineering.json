@@ -1,0 +1,241 @@
+{
+  "id": "sup_engineering",
+  "requirement": "SUP-03",
+  "description": "Engineering (SUP-03). Field fortifications: an M2A2's 25 mm has 18% against a motor rifle squad in the open at 300 m and 7% against one in a trench line (heavy cover, x0.4). Obstacles: a 32 m anti-tank ditch line across the map stops an M1A1 ordered across it (no route), while a dismounted squad crosses. Minefields: an enemy (Pact) minefield of density 100 on the road immobilises an M60A3 driving into it (track thrown, 60 of 135 hp lost), and a Pact BTR-80 crosses its own side's field untouched. Scatterable mines: NATO calls 155 mm FASCAM (90 s delay) on a crossroads; a BMP-2 driving through it after the mines land strikes one.",
+  "ticks": 4000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "trench",
+        "x": 1960,
+        "y": 1290,
+        "w": 80,
+        "h": 20
+      },
+      {
+        "type": "obstacle",
+        "x": 2592,
+        "y": 0,
+        "w": 32,
+        "h": 4000
+      },
+      {
+        "type": "minefield",
+        "x": 1000,
+        "y": 2960,
+        "w": 80,
+        "h": 80,
+        "density": 100,
+        "team": 1
+      },
+      {
+        "type": "road",
+        "x": 0,
+        "y": 2990,
+        "w": 2400,
+        "h": 20
+      }
+    ]
+  },
+  "players": [
+    {
+      "start_sp": 100
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "s_open",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 1000,
+      "y": 1000
+    },
+    {
+      "tag": "i_open",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 1000,
+      "y": 1300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "s_trench",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2000,
+      "y": 1000
+    },
+    {
+      "tag": "i_trench",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 2000,
+      "y": 1300,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 2300,
+      "y": 2000
+    },
+    {
+      "tag": "squad",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 2300,
+      "y": 2200
+    },
+    {
+      "tag": "m60",
+      "unit": "m60a3_tts",
+      "player": 0,
+      "x": 400,
+      "y": 3000
+    },
+    {
+      "tag": "btr",
+      "unit": "btr80",
+      "player": 1,
+      "x": 1600,
+      "y": 3000
+    },
+    {
+      "tag": "bmp",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 3400,
+      "y": 3300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 10,
+      "kind": "move",
+      "tag": "tank",
+      "x": 3000,
+      "y": 2000
+    },
+    {
+      "tick": 10,
+      "kind": "move",
+      "tag": "squad",
+      "x": 3000,
+      "y": 2200
+    },
+    {
+      "tick": 10,
+      "kind": "move",
+      "tag": "m60",
+      "x": 1600,
+      "y": 3000
+    },
+    {
+      "tick": 10,
+      "kind": "move",
+      "tag": "btr",
+      "x": 400,
+      "y": 3000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_fascam_155",
+      "x": 3400,
+      "y": 3600
+    },
+    {
+      "tick": 2000,
+      "kind": "move",
+      "tag": "bmp",
+      "x": 3400,
+      "y": 3900
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_open",
+      "other": "i_open",
+      "mount": 0,
+      "x": 17,
+      "value": 19
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_trench",
+      "other": "i_trench",
+      "mount": 0,
+      "x": 6,
+      "value": 8
+    },
+    {
+      "at_tick": 3900,
+      "check": "near",
+      "unit": "squad",
+      "x": 3000,
+      "y": 2200,
+      "value": 40
+    },
+    {
+      "at_tick": 3900,
+      "check": "near",
+      "unit": "tank",
+      "x": 3000,
+      "y": 2000,
+      "value": 300,
+      "expect": false
+    },
+    {
+      "at_tick": 3900,
+      "check": "flag_set",
+      "unit": "m60",
+      "value": 1
+    },
+    {
+      "at_tick": 3900,
+      "check": "hp_at_most",
+      "unit": "m60",
+      "value": 75
+    },
+    {
+      "at_tick": 3900,
+      "check": "near",
+      "unit": "btr",
+      "x": 400,
+      "y": 3000,
+      "value": 40
+    },
+    {
+      "at_tick": 3900,
+      "check": "flag_set",
+      "unit": "btr",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 1700,
+      "check": "flag_set",
+      "unit": "bmp",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 3900,
+      "check": "flag_set",
+      "unit": "bmp",
+      "value": 1
+    }
+  ]
+}

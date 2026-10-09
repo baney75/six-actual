@@ -1,0 +1,28 @@
+{
+  "id": "net_fly_lockstep",
+  "requirement": "FLY-07",
+  "players_per_side": 4,
+  "ticks": 2400,
+  "latency_ms": 150,
+  "jitter_ms": 30,
+  "loss_pct": 2,
+  "input_delay_ticks": 8,
+  "seed": 15,
+  "script": "fly",
+  "hash_interval_ticks": 20,
+  "description": "Flying in multiplayer (FLY-07): player 0 takes control of an A-10 and flies it with a stick input every second, exchanged through lockstep among 8 clients at 150 ms latency and 2% loss; every client sees the Take Control, and the flight stays identical everywhere (zero desyncs, replay matches).",
+  "assert": [
+    {
+      "check": "flown",
+      "value": 100
+    },
+    {
+      "check": "desyncs",
+      "value": 0
+    },
+    {
+      "check": "replay_matches"
+    }
+  ],
+  "type": "net"
+}

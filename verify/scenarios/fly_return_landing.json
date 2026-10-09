@@ -1,0 +1,53 @@
+{
+  "id": "fly_return_landing",
+  "requirement": "FLY-02",
+  "ticks": 2400,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 20000,
+    "cell_m": 16
+  },
+  "description": "Landing returns control (FLY-02). The player takes an A-10A at 45 m over its home strip, closes the throttle and circles: once it is within 600 m of home, below 50 m and slower than 1.5x its stall speed it lands, goes off-map to rearm and refuel, and control returns (reason 4).",
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 5000,
+      "y": 5000,
+      "altitude_m": 45
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "a10",
+      "player": 0
+    },
+    {
+      "tick": 1,
+      "kind": "stick",
+      "tag": "a10",
+      "x": 0,
+      "y": 100,
+      "z_dm": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2400,
+      "check": "control_returned",
+      "unit": "a10",
+      "value": 4
+    },
+    {
+      "at_tick": 2400,
+      "check": "off_map",
+      "unit": "a10"
+    }
+  ]
+}

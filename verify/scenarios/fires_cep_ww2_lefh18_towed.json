@@ -1,0 +1,135 @@
+{
+  "id": "fires_cep_ww2_lefh18_towed",
+  "requirement": "SUP-01",
+  "era": "ww2",
+  "description": "Six 10.5 cm leFH 18 (towed) fire 30 rounds each (ger_105mm_lefh18) at a point 8000 m away. Data CEP 7 permille of range = 56 m; the median miss of 180 impacts must lie within +-10%. First impact: setup 200 ticks + flight 7950 m (the nearest of the six guns) / 350 m/s = 454 ticks -> tick 654.",
+  "ticks": 8257,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 9500,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "g0",
+      "unit": "lefh18_towed",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tag": "g1",
+      "unit": "lefh18_towed",
+      "player": 0,
+      "x": 500,
+      "y": 510
+    },
+    {
+      "tag": "g2",
+      "unit": "lefh18_towed",
+      "player": 0,
+      "x": 500,
+      "y": 520
+    },
+    {
+      "tag": "g3",
+      "unit": "lefh18_towed",
+      "player": 0,
+      "x": 500,
+      "y": 530
+    },
+    {
+      "tag": "g4",
+      "unit": "lefh18_towed",
+      "player": 0,
+      "x": 500,
+      "y": 540
+    },
+    {
+      "tag": "g5",
+      "unit": "lefh18_towed",
+      "player": 0,
+      "x": 500,
+      "y": 550
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "g0",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g1",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g2",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g3",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g4",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g5",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 8500,
+      "rounds": 30
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 674,
+      "check": "first_impact_after",
+      "value": 649
+    },
+    {
+      "at_tick": 674,
+      "check": "first_impact_before",
+      "value": 659
+    },
+    {
+      "at_tick": 8257,
+      "check": "impact_count_at_least",
+      "value": 180
+    },
+    {
+      "at_tick": 8257,
+      "check": "impacts_cep_pct",
+      "x": 500,
+      "y": 8500,
+      "mount": 56,
+      "player": 90,
+      "value": 110
+    }
+  ]
+}

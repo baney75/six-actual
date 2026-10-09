@@ -1,0 +1,93 @@
+{
+  "id": "path_slope_by_class",
+  "requirement": "SIM-12",
+  "description": "An 80 m ridge with 40% flanks: passable for tracked (60%), not wheeled (30%). The M1A1 crosses (1600 m at 0.696 m/tick = 2300 ticks). A truck driving straight would sit on the crest at tick 1047 (800 m at 0.764 m/tick); it must be away round the ridge end instead, and arrives later.",
+  "ticks": 7000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "ridge",
+        "x0": 1000,
+        "y0": 300,
+        "x1": 1000,
+        "y1": 1700,
+        "width_m": 400,
+        "height_dm": 800
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 200,
+      "y": 1000
+    },
+    {
+      "tag": "truck",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 200,
+      "y": 1040
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "tank",
+      "kind": "move",
+      "x": 1800,
+      "y": 1000
+    },
+    {
+      "tick": 0,
+      "tag": "truck",
+      "kind": "move",
+      "x": 1800,
+      "y": 1040
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2800,
+      "check": "near",
+      "unit": "tank",
+      "x": 1800,
+      "y": 1000,
+      "value": 2
+    },
+    {
+      "at_tick": 1047,
+      "check": "near",
+      "unit": "truck",
+      "x": 1000,
+      "y": 1040,
+      "value": 400,
+      "expect": false
+    },
+    {
+      "at_tick": 2800,
+      "check": "near",
+      "unit": "truck",
+      "x": 1800,
+      "y": 1040,
+      "value": 300,
+      "expect": false
+    },
+    {
+      "at_tick": 7000,
+      "check": "near",
+      "unit": "truck",
+      "x": 1800,
+      "y": 1040,
+      "value": 2
+    }
+  ]
+}

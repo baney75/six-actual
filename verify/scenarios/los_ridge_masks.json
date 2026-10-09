@@ -1,0 +1,85 @@
+{
+  "id": "los_ridge_masks",
+  "requirement": "SIM-04",
+  "description": "A 30 m ridge between two tanks blocks sight both ways. A third tank on the crest sees both.",
+  "ticks": 2,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "ridge",
+        "x0": 1500,
+        "y0": 1000,
+        "x1": 1500,
+        "y1": 3000,
+        "width_m": 400,
+        "height_dm": 300
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "blue",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1000,
+      "y": 2000
+    },
+    {
+      "tag": "red",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2000,
+      "y": 2000
+    },
+    {
+      "tag": "crest",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1500,
+      "y": 2200
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "blue",
+      "other": "red",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "red",
+      "other": "blue",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "crest",
+      "other": "red",
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "crest",
+      "other": "blue",
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "red",
+      "player": 0,
+      "expect": true
+    }
+  ]
+}

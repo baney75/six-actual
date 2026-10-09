@@ -1,0 +1,101 @@
+{
+  "id": "cmd_requests",
+  "requirement": "CMD-05",
+  "description": "Arty1 asks before spending (approval mode 1): Army1's preparatory fire request (id 0) stays pending and no round lands until the player approves it at tick 200; then the guns fire (setup 200 + flight). Logistics answers automatically: an M1A1 down to 5 of 40 main-gun rounds asks for resupply and a HEMTT 800 m away drives over and refills it.",
+  "ticks": 4000,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "inf",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2000,
+      "y": 2000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "how",
+      "unit": "m109a3_sph",
+      "player": 0,
+      "x": 2000,
+      "y": 200,
+      "seat": "Arty1"
+    },
+    {
+      "tag": "low",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 1000,
+      "seat": "Armor",
+      "ammo": [
+        5,
+        900,
+        10400
+      ]
+    },
+    {
+      "tag": "truck",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 500,
+      "y": 200,
+      "seat": "Logistics"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Arty1",
+      "field": "approval",
+      "value": 1
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "attack",
+      "x": 2000,
+      "y": 3000
+    },
+    {
+      "tick": 200,
+      "kind": "approve",
+      "request": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 100,
+      "check": "request_pending",
+      "value": 0
+    },
+    {
+      "at_tick": 190,
+      "check": "impact_count_at_least",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 900,
+      "check": "impact_count_at_least",
+      "value": 1
+    },
+    {
+      "at_tick": 4000,
+      "check": "ammo_at_least",
+      "unit": "low",
+      "value": 30
+    }
+  ]
+}

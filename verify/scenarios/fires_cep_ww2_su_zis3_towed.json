@@ -1,0 +1,135 @@
+{
+  "id": "fires_cep_ww2_su_zis3_towed",
+  "requirement": "SUP-01",
+  "era": "ww2",
+  "description": "Six 76 mm ZiS-3 (towed) fire 30 rounds each (su_76mm_zis3_indirect) at a point 10000 m away. Data CEP 8 permille of range = 80 m; the median miss of 180 impacts must lie within +-10%. First impact: setup 200 ticks + flight 9950 m (the nearest of the six guns) / 350 m/s = 568 ticks -> tick 768.",
+  "ticks": 2971,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 11500,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "g0",
+      "unit": "su_zis3_towed",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tag": "g1",
+      "unit": "su_zis3_towed",
+      "player": 0,
+      "x": 500,
+      "y": 510
+    },
+    {
+      "tag": "g2",
+      "unit": "su_zis3_towed",
+      "player": 0,
+      "x": 500,
+      "y": 520
+    },
+    {
+      "tag": "g3",
+      "unit": "su_zis3_towed",
+      "player": 0,
+      "x": 500,
+      "y": 530
+    },
+    {
+      "tag": "g4",
+      "unit": "su_zis3_towed",
+      "player": 0,
+      "x": 500,
+      "y": 540
+    },
+    {
+      "tag": "g5",
+      "unit": "su_zis3_towed",
+      "player": 0,
+      "x": 500,
+      "y": 550
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "g0",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 10500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g1",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 10500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g2",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 10500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g3",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 10500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g4",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 10500,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g5",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 10500,
+      "rounds": 30
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 788,
+      "check": "first_impact_after",
+      "value": 763
+    },
+    {
+      "at_tick": 788,
+      "check": "first_impact_before",
+      "value": 773
+    },
+    {
+      "at_tick": 2971,
+      "check": "impact_count_at_least",
+      "value": 180
+    },
+    {
+      "at_tick": 2971,
+      "check": "impacts_cep_pct",
+      "x": 500,
+      "y": 10500,
+      "mount": 80,
+      "player": 90,
+      "value": 110
+    }
+  ]
+}

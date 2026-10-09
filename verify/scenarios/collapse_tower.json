@@ -1,0 +1,165 @@
+{
+  "id": "collapse_tower",
+  "requirement": "SIM-10",
+  "description": "A 1x1-chunk, 5-floor brick tower loses its ground chunk to a blast at tick 0. The four floors above lose support, fall 10 ticks later, crush the rifle team sheltering in the ground-floor column, and leave rubble. Before: the tower blocks sight between two tanks on 10 m plateaus; after: the 3 m rubble pile does not. Two rifle teams at ground level either side cannot see each other over the 3 m rubble pile.",
+  "ticks": 40,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "rect",
+        "x": 880,
+        "y": 980,
+        "w": 40,
+        "h": 40,
+        "height_dm": 100
+      },
+      {
+        "type": "rect",
+        "x": 1080,
+        "y": 980,
+        "w": 40,
+        "h": 40,
+        "height_dm": 100
+      },
+      {
+        "type": "building",
+        "x": 1000,
+        "y": 1000,
+        "nx": 1,
+        "ny": 1,
+        "floors": 5,
+        "material": "brick"
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "west",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 900,
+      "y": 1001
+    },
+    {
+      "tag": "east",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1100,
+      "y": 1001
+    },
+    {
+      "tag": "inside",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 1001,
+      "y": 1001
+    },
+    {
+      "tag": "low_w",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 985,
+      "y": 1003
+    },
+    {
+      "tag": "low_e",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 1020,
+      "y": 1003
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "blast",
+      "x": 1001,
+      "y": 1001,
+      "z_dm": 15,
+      "radius_m": 3,
+      "damage": 1000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 0,
+      "check": "line",
+      "unit": "west",
+      "other": "east",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 0,
+      "expect": false
+    },
+    {
+      "at_tick": 5,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 4
+    },
+    {
+      "at_tick": 5,
+      "check": "alive",
+      "unit": "inside"
+    },
+    {
+      "at_tick": 12,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 12,
+      "check": "chunk_standing",
+      "player": 0,
+      "x": 0,
+      "y": 0,
+      "value": 4,
+      "expect": false
+    },
+    {
+      "at_tick": 12,
+      "check": "alive",
+      "unit": "inside",
+      "expect": false
+    },
+    {
+      "at_tick": 12,
+      "check": "rubble_at",
+      "x": 1001,
+      "y": 1001,
+      "value": 30
+    },
+    {
+      "at_tick": 13,
+      "check": "line",
+      "unit": "west",
+      "other": "east",
+      "expect": true
+    },
+    {
+      "at_tick": 13,
+      "check": "line",
+      "unit": "low_w",
+      "other": "low_e",
+      "expect": false
+    }
+  ]
+}

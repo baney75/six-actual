@@ -1,0 +1,115 @@
+{
+  "id": "los_forest_depth",
+  "requirement": "SIM-04",
+  "description": "A ray crossing 60 m of dense forest still connects; 200 m of dense forest blocks it. A 25 m-high observer clears the canopy.",
+  "ticks": 2,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "forest",
+        "x": 1000,
+        "y": 1000,
+        "w": 64,
+        "h": 400,
+        "density": 90
+      },
+      {
+        "type": "forest",
+        "x": 1000,
+        "y": 2000,
+        "w": 200,
+        "h": 400,
+        "density": 90
+      },
+      {
+        "type": "rect",
+        "x": 400,
+        "y": 2550,
+        "w": 24,
+        "h": 24,
+        "height_dm": 250
+      },
+      {
+        "type": "forest",
+        "x": 1000,
+        "y": 2500,
+        "w": 200,
+        "h": 400,
+        "density": 90
+      }
+    ]
+  },
+  "units": [
+    {
+      "tag": "obs_thin",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 1200
+    },
+    {
+      "tag": "tgt_thin",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1500,
+      "y": 1200
+    },
+    {
+      "tag": "obs_thick",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 2200
+    },
+    {
+      "tag": "tgt_thick",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1500,
+      "y": 2200
+    },
+    {
+      "tag": "obs_tower",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 410,
+      "y": 2560
+    },
+    {
+      "tag": "tgt_far",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 2400,
+      "y": 2700
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "obs_thin",
+      "other": "tgt_thin",
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "obs_thick",
+      "other": "tgt_thick",
+      "expect": false
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "obs_tower",
+      "other": "tgt_far",
+      "expect": true
+    }
+  ]
+}

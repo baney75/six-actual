@@ -1,0 +1,114 @@
+{
+  "id": "sup_air_ww2",
+  "requirement": "SUP-02",
+  "era": "ww2",
+  "description": "WW2 air support per era (SUP-02): a B-26 level-bombing stick lays 8 bombs along 400 m and destroys a Panzer IV under the third bomb; a P-47 napalm drop sets two Sd.Kfz. 251s on fire; an airborne drop lands a 3-squad platoon.",
+  "ticks": 4000,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_sp": 500
+    },
+    {
+      "start_sp": 300
+    }
+  ],
+  "units": [
+    {
+      "tag": "pz",
+      "unit": "panzer_iv_h",
+      "player": 1,
+      "x": 2000,
+      "y": 2000
+    },
+    {
+      "tag": "ht1",
+      "unit": "sdkfz_251_1",
+      "player": 1,
+      "x": 5000,
+      "y": 2000
+    },
+    {
+      "tag": "ht2",
+      "unit": "sdkfz_251_1",
+      "player": 1,
+      "x": 5015,
+      "y": 2000
+    },
+    {
+      "tag": "o",
+      "unit": "m8_greyhound",
+      "player": 0,
+      "x": 300,
+      "y": 300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "allies_b26_level",
+      "x": 1886,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "allies_p47_napalm",
+      "x": 5007,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "allies_82nd_paradrop",
+      "x": 4000,
+      "y": 6000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 3900,
+      "check": "alive",
+      "unit": "pz",
+      "expect": false
+    },
+    {
+      "at_tick": 2500,
+      "check": "flag_set",
+      "unit": "ht1",
+      "value": 32
+    },
+    {
+      "at_tick": 2500,
+      "check": "flag_set",
+      "unit": "ht2",
+      "value": 32
+    },
+    {
+      "at_tick": 3500,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 2,
+      "expect": false
+    },
+    {
+      "at_tick": 3700,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 4
+    }
+  ]
+}

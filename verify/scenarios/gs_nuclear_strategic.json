@@ -1,0 +1,40 @@
+{
+  "id": "gs_nuclear_strategic",
+  "requirement": "GS-04",
+  "seeds": [
+    1
+  ],
+  "turns": 1,
+  "ai": [],
+  "start": {
+    "tension": 75
+  },
+  "description": "Strategic exchange (GS-04): at tension 75 (threshold 70) a strategic release ends the war for everyone (winner: exchange).",
+  "orders": [
+    {
+      "turn": 0,
+      "kind": "nuke",
+      "faction": "usa",
+      "value": 3
+    }
+  ],
+  "assert": [
+    {
+      "turn": 0,
+      "check": "winner",
+      "value": "none"
+    },
+    {
+      "turn": 1,
+      "check": "winner",
+      "value": "exchange"
+    },
+    {
+      "turn": 1,
+      "check": "nuclear_level",
+      "value": 3
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

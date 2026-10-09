@@ -1,0 +1,209 @@
+{
+  "id": "cmd_intent_stats_tolerance",
+  "requirement": "CMD-04",
+  "ticks": 2400,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "description": "Casualty tolerance, statistical A/B over 50 seeds (CMD-04). Two identical fights: three M1A1s per seat holding against three T-80BVs 2 km away. Army1 has tolerance 15 (withdraws below 70% hp), Army2 tolerance 85 (below 15%). Hit rolls differ per seed. Army1 withdraws a unit in at least 60% of seeds (95% Wilson lower bound); Army2 has no withdrawal in at least 50% of seeds, i.e. its withdrawal rate is at most 50%: the two intervals do not overlap. Some Army2 withdrawals remain because thrown tracks and crew bail-outs withdraw a unit at any tolerance.",
+  "units": [
+    {
+      "tag": "t1a",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1000,
+      "y": 1000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "t1b",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1300,
+      "y": 1000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "t1c",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1600,
+      "y": 1000,
+      "seat": "Army1"
+    },
+    {
+      "tag": "t2a",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 6000,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "t2b",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 6300,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "t2c",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 6600,
+      "y": 1000,
+      "seat": "Army2"
+    },
+    {
+      "tag": "e1a",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1000,
+      "y": 3000
+    },
+    {
+      "tag": "e1b",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1300,
+      "y": 3000
+    },
+    {
+      "tag": "e1c",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1600,
+      "y": 3000
+    },
+    {
+      "tag": "e2a",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 6000,
+      "y": 3000
+    },
+    {
+      "tag": "e2b",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 6300,
+      "y": 3000
+    },
+    {
+      "tag": "e2c",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 6600,
+      "y": 3000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Army1",
+      "field": "casualty_tolerance",
+      "value": 15
+    },
+    {
+      "tick": 0,
+      "kind": "intent",
+      "player": 0,
+      "seat": "Army2",
+      "field": "casualty_tolerance",
+      "value": 85
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army1",
+      "task": "hold",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army2",
+      "task": "hold",
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2400,
+      "check": "seat_withdrawals_at_least",
+      "player": 0,
+      "seat": "Army1",
+      "value": 1,
+      "ci_lower_pct": 60
+    },
+    {
+      "at_tick": 2400,
+      "check": "seat_withdrawals_at_least",
+      "player": 0,
+      "seat": "Army2",
+      "value": 1,
+      "expect": false,
+      "ci_lower_pct": 50
+    }
+  ]
+}

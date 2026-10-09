@@ -1,0 +1,60 @@
+{
+  "id": "fly_return_eject",
+  "requirement": "FLY-02",
+  "ticks": 400,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 20000,
+    "cell_m": 16
+  },
+  "description": "Destruction returns control (FLY-02). The player dives an F-16C from 200 m at full throttle into the ground: the aircraft is destroyed, the pilot ejects, control returns (reason 3) and the XO hands command back.",
+  "units": [
+    {
+      "tag": "f16",
+      "unit": "f16c_block30",
+      "player": 0,
+      "x": 5000,
+      "y": 5000,
+      "altitude_m": 200
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "f16",
+      "player": 0
+    },
+    {
+      "tick": 1,
+      "kind": "stick",
+      "tag": "f16",
+      "x": 100,
+      "y": 0,
+      "z_dm": -100
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 400,
+      "check": "alive",
+      "unit": "f16",
+      "expect": false
+    },
+    {
+      "at_tick": 400,
+      "check": "control_returned",
+      "unit": "f16",
+      "value": 3
+    },
+    {
+      "at_tick": 400,
+      "check": "xo_active",
+      "player": 0,
+      "expect": false
+    }
+  ]
+}

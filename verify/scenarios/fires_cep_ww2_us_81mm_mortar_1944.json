@@ -1,0 +1,135 @@
+{
+  "id": "fires_cep_ww2_us_81mm_mortar_1944",
+  "requirement": "SUP-01",
+  "era": "ww2",
+  "description": "Six 81 mm Mortar M1 Squad fire 30 rounds each (us_81mm_m1) at a point 2200 m away. Data CEP 12 permille of range = 26 m; the median miss of 180 impacts must lie within +-10%. First impact: setup 200 ticks + flight 2150 m (the nearest of the six guns) / 180 m/s = 238 ticks -> tick 438.",
+  "ticks": 3244,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 3700,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "g0",
+      "unit": "us_81mm_mortar_1944",
+      "player": 0,
+      "x": 500,
+      "y": 500
+    },
+    {
+      "tag": "g1",
+      "unit": "us_81mm_mortar_1944",
+      "player": 0,
+      "x": 500,
+      "y": 510
+    },
+    {
+      "tag": "g2",
+      "unit": "us_81mm_mortar_1944",
+      "player": 0,
+      "x": 500,
+      "y": 520
+    },
+    {
+      "tag": "g3",
+      "unit": "us_81mm_mortar_1944",
+      "player": 0,
+      "x": 500,
+      "y": 530
+    },
+    {
+      "tag": "g4",
+      "unit": "us_81mm_mortar_1944",
+      "player": 0,
+      "x": 500,
+      "y": 540
+    },
+    {
+      "tag": "g5",
+      "unit": "us_81mm_mortar_1944",
+      "player": 0,
+      "x": 500,
+      "y": 550
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "tag": "g0",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 2700,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g1",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 2700,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g2",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 2700,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g3",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 2700,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g4",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 2700,
+      "rounds": 30
+    },
+    {
+      "tick": 0,
+      "tag": "g5",
+      "kind": "fire_mission",
+      "x": 500,
+      "y": 2700,
+      "rounds": 30
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 458,
+      "check": "first_impact_after",
+      "value": 433
+    },
+    {
+      "at_tick": 458,
+      "check": "first_impact_before",
+      "value": 443
+    },
+    {
+      "at_tick": 3244,
+      "check": "impact_count_at_least",
+      "value": 180
+    },
+    {
+      "at_tick": 3244,
+      "check": "impacts_cep_pct",
+      "x": 500,
+      "y": 2700,
+      "mount": 26,
+      "player": 90,
+      "value": 110
+    }
+  ]
+}

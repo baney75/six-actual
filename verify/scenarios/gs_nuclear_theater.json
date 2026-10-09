@@ -1,0 +1,61 @@
+{
+  "id": "gs_nuclear_theater",
+  "requirement": "GS-04",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "turns": 1,
+  "ai": [
+    "ussr",
+    "gdr",
+    "pol"
+  ],
+  "start": {
+    "tension": 45
+  },
+  "description": "Theater nuclear strike and retaliation (GS-04). At tension 45 (theater threshold 40) the US strikes Leipzig: its industry falls from 4 to 1 and it becomes a fallout zone; the East German army there loses 20% strength to fallout that turn (32 to 25). The Pact AI, now owed a retaliation, strikes NATO's most industrial province (the Ruhr) in kind the same turn.",
+  "orders": [
+    {
+      "turn": 0,
+      "kind": "nuke",
+      "faction": "usa",
+      "value": 2,
+      "province": "leipzig"
+    }
+  ],
+  "assert": [
+    {
+      "turn": 1,
+      "check": "nuclear_level",
+      "value": 2
+    },
+    {
+      "turn": 1,
+      "check": "fallout",
+      "province": "leipzig"
+    },
+    {
+      "turn": 1,
+      "check": "industry_at_most",
+      "province": "leipzig",
+      "value": 1
+    },
+    {
+      "turn": 1,
+      "check": "army_strength_at_least",
+      "faction": "gdr",
+      "province": "leipzig",
+      "value": 26,
+      "expect": false
+    },
+    {
+      "turn": 1,
+      "check": "fallout",
+      "province": "ruhr"
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

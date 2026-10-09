@@ -1,0 +1,117 @@
+{
+  "id": "fly_loadouts",
+  "requirement": "FLY-06",
+  "description": "Aircraft loadouts (FLY-06) as separate cards of one airframe. An Su-24M with the Kh-58 SEAD loadout picks the radar-directed M163 out of a group and destroys it while ignoring the M1A1 beside it (anti-radiation homing). An Su-25 with ZAB-500 incendiaries sets the M113s in the burst on fire. An A-10A with the CBU-87 cluster loadout wrecks a BMP-2 (shaped-charge bomblets). Each aircraft carries only its loadout weapon for the test.",
+  "ticks": 1200,
+  "roe": "hold_fire",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "terrain": {
+    "size_m": 8000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "sead",
+      "unit": "su24m_kh58",
+      "player": 1,
+      "x": 1500,
+      "y": 5000,
+      "roe": "fire_at_will",
+      "ammo": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "tag": "m163",
+      "unit": "m163_vads",
+      "player": 0,
+      "x": 1500,
+      "y": 1000
+    },
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1540,
+      "y": 1000
+    },
+    {
+      "tag": "zab",
+      "unit": "su25_zab500",
+      "player": 1,
+      "x": 4000,
+      "y": 2000,
+      "roe": "fire_at_will",
+      "ammo": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "tag": "m113a",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 4000,
+      "y": 1000
+    },
+    {
+      "tag": "m113b",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 4015,
+      "y": 1000
+    },
+    {
+      "tag": "cbu",
+      "unit": "a10a_cbu87",
+      "player": 0,
+      "x": 6500,
+      "y": 1000,
+      "roe": "fire_at_will",
+      "ammo": [
+        0,
+        6,
+        0
+      ]
+    },
+    {
+      "tag": "bmp",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 6500,
+      "y": 2000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1100,
+      "check": "alive",
+      "unit": "m163",
+      "expect": false
+    },
+    {
+      "at_tick": 1100,
+      "check": "alive",
+      "unit": "tank"
+    },
+    {
+      "at_tick": 1100,
+      "check": "flag_set",
+      "unit": "m113a",
+      "value": 32
+    },
+    {
+      "at_tick": 1100,
+      "check": "hp_at_most",
+      "unit": "bmp",
+      "value": 30
+    }
+  ]
+}

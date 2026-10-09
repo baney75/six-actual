@@ -1,0 +1,112 @@
+{
+  "id": "cmd_screen",
+  "requirement": "CMD-03",
+  "ticks": 4000,
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 8
+  },
+  "description": "Screen (CMD-03). Army2 screens the line (1500,3000)-(4500,3000) with three M3 scout vehicles: they spread to slots at x 2000, 3000 and 4000 with return-fire ROE (they do not open fire on their own). An enemy T-80BV advancing from the north engages the centre post; the post returns fire and, engaged and not already moving, falls back screen_withdraw_m (600 m) straight away from the nearest visible enemy. The flank posts, not engaged, hold their slots.",
+  "units": [
+    {
+      "tag": "s0",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 2000,
+      "y": 2800,
+      "seat": "Army2"
+    },
+    {
+      "tag": "s1",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 3000,
+      "y": 2800,
+      "seat": "Army2"
+    },
+    {
+      "tag": "s2",
+      "unit": "m3a2_bradley_cfv",
+      "player": 0,
+      "x": 4000,
+      "y": 2800,
+      "seat": "Army2"
+    },
+    {
+      "tag": "tank",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 3000,
+      "y": 5200
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "task",
+      "player": 0,
+      "seat": "Army2",
+      "task": "screen",
+      "x": 1500,
+      "y": 3000,
+      "x2": 4500,
+      "y2": 3000
+    },
+    {
+      "tick": 0,
+      "tag": "tank",
+      "kind": "move",
+      "x": 3000,
+      "y": 4200
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 200,
+      "check": "roe_is",
+      "unit": "s1",
+      "value": 1
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "s1",
+      "x": 3000,
+      "y": 2400,
+      "value": 150
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "s1",
+      "x": 3000,
+      "y": 3000,
+      "value": 300,
+      "expect": false
+    },
+    {
+      "at_tick": 4000,
+      "check": "alive",
+      "unit": "s1"
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "s0",
+      "x": 2000,
+      "y": 3000,
+      "value": 60
+    },
+    {
+      "at_tick": 4000,
+      "check": "near",
+      "unit": "s2",
+      "x": 4000,
+      "y": 3000,
+      "value": 60
+    }
+  ]
+}

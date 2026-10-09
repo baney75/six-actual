@@ -1,0 +1,66 @@
+{
+  "id": "morale_pinned_stops",
+  "requirement": "SIM-08",
+  "description": "A pinned squad (suppression 90) does not move when ordered; an unsuppressed squad does.",
+  "ticks": 200,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "pinned",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 500,
+      "y": 300,
+      "suppression": 120
+    },
+    {
+      "tag": "fresh",
+      "unit": "us_mech_rifle_squad",
+      "player": 0,
+      "x": 700,
+      "y": 300
+    }
+  ],
+  "orders": [
+    {
+      "tick": 1,
+      "tag": "pinned",
+      "kind": "move",
+      "x": 500,
+      "y": 600
+    },
+    {
+      "tick": 1,
+      "tag": "fresh",
+      "kind": "move",
+      "x": 700,
+      "y": 600
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 30,
+      "check": "near",
+      "unit": "pinned",
+      "x": 500,
+      "y": 300,
+      "value": 1
+    },
+    {
+      "at_tick": 200,
+      "check": "near",
+      "unit": "fresh",
+      "x": 700,
+      "y": 300,
+      "value": 10,
+      "expect": false
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "sup_smoke",
+  "requirement": "SUP-02",
+  "ticks": 1600,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 16
+  },
+  "description": "Smoke on call (SUP-01/02 support catalogue): a 155 mm smoke screen (8 rounds, 60 s delay) called between a NATO observer and a T-80BV 2 km apart blocks the line of sight once the rounds land.",
+  "players": [
+    {
+      "start_sp": 100
+    },
+    {
+      "start_sp": 0
+    }
+  ],
+  "units": [
+    {
+      "tag": "obs",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 3000,
+      "y": 2000
+    },
+    {
+      "tag": "tank",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 3000,
+      "y": 4000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_smoke_155",
+      "x": 3000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1100,
+      "check": "line",
+      "unit": "obs",
+      "other": "tank"
+    },
+    {
+      "at_tick": 1300,
+      "check": "line",
+      "unit": "obs",
+      "other": "tank",
+      "expect": false
+    }
+  ]
+}

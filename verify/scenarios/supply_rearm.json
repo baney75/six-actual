@@ -1,0 +1,87 @@
+{
+  "id": "supply_rearm",
+  "requirement": "SIM-09",
+  "description": "A HEMTT next to an empty M1A1 restores one round per mount every 20 ticks: by tick 401 the main gun has 21 rounds; the 63 supply points delivered earn 6 support points (MEC-03). An empty tank 200 m away gets nothing.",
+  "ticks": 402,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 2000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "tank",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 500,
+      "ammo": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "tag": "truck",
+      "unit": "m977_hemtt",
+      "player": 0,
+      "x": 510,
+      "y": 500
+    },
+    {
+      "tag": "lonely",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 700,
+      "y": 500,
+      "ammo": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "players": [
+    {
+      "start_dp": 0
+    },
+    {
+      "start_dp": 0
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 0,
+      "check": "ammo_at_most",
+      "unit": "tank",
+      "value": 0
+    },
+    {
+      "at_tick": 401,
+      "check": "ammo_at_least",
+      "unit": "tank",
+      "value": 21
+    },
+    {
+      "at_tick": 401,
+      "check": "ammo_at_most",
+      "unit": "tank",
+      "value": 21
+    },
+    {
+      "at_tick": 401,
+      "check": "ammo_at_most",
+      "unit": "lonely",
+      "value": 0
+    },
+    {
+      "at_tick": 401,
+      "check": "sp_at_least",
+      "player": 0,
+      "value": 6
+    }
+  ]
+}

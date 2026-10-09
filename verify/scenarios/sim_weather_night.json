@@ -1,0 +1,162 @@
+{
+  "id": "sim_weather_night",
+  "requirement": "SIM-11",
+  "description": "Night (SIM-11): accuracy and detection, and thermal sights. A T-80BV (no thermal sight) has 85% against an M60A3 at 1 km by day and 59% at night (x0.70); the thermal-sighted M1A1 keeps 90% against a T-80BV. Detection: the M1A1's thermal sight keeps 85% of its 2.4 km range (a BMP-2 at 1.5 km is spotted), while a T-64BV is cut to 40% (an M113 at 1.5 km is not). Aircraft fly at night: an A-10 card deploys and an A-10 gun run is accepted.",
+  "ticks": 60,
+  "roe": "hold_fire",
+  "weather": "night",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 6000,
+    "cell_m": 8
+  },
+  "players": [
+    {
+      "start_dp": 1000,
+      "start_sp": 200,
+      "spawn_x": 5000,
+      "spawn_y": 5000,
+      "deck": {
+        "cards": [
+          {
+            "unit": "a10a_thunderbolt",
+            "count": 2,
+            "phase": "A",
+            "cost": 300
+          }
+        ]
+      }
+    },
+    {}
+  ],
+  "units": [
+    {
+      "tag": "t80",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1000,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m60",
+      "unit": "m60a3_tts",
+      "player": 0,
+      "x": 1000,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 3000,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t1",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 3000,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m1b",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 5000,
+      "y": 1000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "bmp",
+      "unit": "bmp2",
+      "player": 1,
+      "x": 5000,
+      "y": 2500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t64",
+      "unit": "t64bv",
+      "player": 1,
+      "x": 5800,
+      "y": 3500,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "m113",
+      "unit": "m113a2",
+      "player": 0,
+      "x": 5800,
+      "y": 5000,
+      "roe": "hold_fire"
+    }
+  ],
+  "orders": [
+    {
+      "tick": 25,
+      "kind": "deploy",
+      "player": 0,
+      "card": 0
+    },
+    {
+      "tick": 25,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_a10_strafe",
+      "x": 3000,
+      "y": 3000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "t80",
+      "other": "m60",
+      "mount": 0,
+      "x": 59,
+      "value": 59
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "m1",
+      "other": "t1",
+      "mount": 0,
+      "x": 90,
+      "value": 90
+    },
+    {
+      "at_tick": 20,
+      "check": "spotted",
+      "unit": "bmp",
+      "player": 0
+    },
+    {
+      "at_tick": 20,
+      "check": "spotted",
+      "unit": "m113",
+      "player": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 30,
+      "check": "units_of_player_at_least",
+      "player": 0,
+      "value": 5
+    },
+    {
+      "at_tick": 30,
+      "check": "support_refused",
+      "player": 0,
+      "value": 6,
+      "expect": false
+    }
+  ]
+}

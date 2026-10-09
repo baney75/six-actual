@@ -1,0 +1,94 @@
+{
+  "id": "gs_diplomacy",
+  "requirement": "GS-03",
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "turns": 2,
+  "ai": [],
+  "description": "Light diplomacy (GS-03). France starts outside the war and joins it through its alliance. Lend-lease: the US gives 20% of its production (1 of 8) to West Germany each turn (FRG 20 + 1 = 21, US 7). War goals: the US declares Erfurt its war goal; the Soviet army there pulls back to Leipzig, the Fulda army walks in, and NATO wins on its war goal at the end of that turn.",
+  "orders": [
+    {
+      "turn": 0,
+      "kind": "alliance",
+      "faction": "fra"
+    },
+    {
+      "turn": 0,
+      "kind": "lend_lease",
+      "faction": "usa",
+      "target": "frg"
+    },
+    {
+      "turn": 0,
+      "kind": "war_goal",
+      "faction": "usa",
+      "province": "erfurt"
+    },
+    {
+      "turn": 0,
+      "kind": "move",
+      "faction": "ussr",
+      "army_in": "erfurt",
+      "province": "leipzig"
+    },
+    {
+      "turn": 1,
+      "kind": "move",
+      "faction": "usa",
+      "army_in": "fulda",
+      "province": "erfurt"
+    }
+  ],
+  "assert": [
+    {
+      "turn": 0,
+      "check": "at_war",
+      "faction": "fra",
+      "expect": false
+    },
+    {
+      "turn": 1,
+      "check": "at_war",
+      "faction": "fra"
+    },
+    {
+      "turn": 1,
+      "check": "production_at_least",
+      "faction": "frg",
+      "value": 21
+    },
+    {
+      "turn": 1,
+      "check": "production_at_most",
+      "faction": "frg",
+      "value": 21
+    },
+    {
+      "turn": 1,
+      "check": "production_at_most",
+      "faction": "usa",
+      "value": 7
+    },
+    {
+      "turn": 1,
+      "check": "winner",
+      "value": "none"
+    },
+    {
+      "turn": 2,
+      "check": "owner",
+      "province": "erfurt",
+      "faction": "usa"
+    },
+    {
+      "turn": 2,
+      "check": "winner",
+      "value": "NATO"
+    }
+  ],
+  "type": "grand_strategy",
+  "era": "coldwar"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "fly_env_stall",
+  "requirement": "FLY-03",
+  "ticks": 1600,
+  "seeds": [
+    1
+  ],
+  "roe": "hold_fire",
+  "terrain": {
+    "size_m": 60000,
+    "cell_m": 64
+  },
+  "description": "Flight envelope: stall (FLY-03). A player-flown A-10A at 2000 m closes the throttle and holds the nose up: it zooms, bleeds speed below its sourced stall speed (222 km/h, 61.7 m/s) and stalls (StallWarning); the nose drops whatever the stick says and it sinks, regaining speed in the dive.",
+  "units": [
+    {
+      "tag": "a10",
+      "unit": "a10a_thunderbolt",
+      "player": 0,
+      "x": 20000,
+      "y": 20000,
+      "altitude_m": 2000
+    }
+  ],
+  "orders": [
+    {
+      "tick": 0,
+      "kind": "take_control",
+      "tag": "a10",
+      "player": 0
+    },
+    {
+      "tick": 0,
+      "kind": "stick",
+      "tag": "a10",
+      "x": 0,
+      "y": 0,
+      "z_dm": 60
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1300,
+      "check": "events_at_least",
+      "value": 43,
+      "player": 1
+    },
+    {
+      "at_tick": 800,
+      "check": "altitude_at_least",
+      "unit": "a10",
+      "value": 2640
+    },
+    {
+      "at_tick": 1600,
+      "check": "altitude_at_most",
+      "unit": "a10",
+      "value": 2600
+    },
+    {
+      "at_tick": 1600,
+      "check": "airspeed_at_least",
+      "unit": "a10",
+      "value": 61667
+    }
+  ]
+}

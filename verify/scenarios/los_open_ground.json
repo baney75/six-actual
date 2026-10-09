@@ -1,0 +1,74 @@
+{
+  "id": "los_open_ground",
+  "requirement": "SIM-04",
+  "description": "Two tanks 1200 m apart on flat open ground see each other; at 2500 m they are past optics range even with a clear line.",
+  "ticks": 2,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8
+  },
+  "units": [
+    {
+      "tag": "blue",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 500,
+      "y": 2000
+    },
+    {
+      "tag": "red",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 1700,
+      "y": 2000
+    },
+    {
+      "tag": "far",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 3000,
+      "y": 2000
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "blue",
+      "other": "red",
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "red",
+      "player": 0,
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "blue",
+      "player": 1,
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "line",
+      "unit": "blue",
+      "other": "far",
+      "expect": true
+    },
+    {
+      "at_tick": 1,
+      "check": "spotted",
+      "unit": "far",
+      "player": 0,
+      "expect": false
+    }
+  ]
+}

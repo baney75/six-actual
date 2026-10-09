@@ -1,0 +1,234 @@
+{
+  "id": "sup_engineer_support",
+  "requirement": "SUP-03",
+  "description": "Engineer support (SUP-03), called through off-map support. Bridging: a 16 m river cuts the map; an M1A1 ordered across has no route until the M60 AVLB (150 s) lays a 20 m span, after which it crosses. Fortification: Pact's PZM-2 trench digging (300 s) puts a motor rifle squad in a trench line, so an M2A2's 25 mm drops from 18% to 7%. Obstacle: NATO's ACE digs a 100 m anti-tank ditch across an 80 m corridor between two water lines; a T-80BV ordered through it after it is dug cannot pass. Breach: an M58 MICLIC (60 s) clears a lane through a density-100 Pact minefield; an M60A3 driving north down the lane is untouched, while one driving through the uncleared part strikes a mine.",
+  "ticks": 8000,
+  "roe": "hold_fire",
+  "seeds": [
+    1
+  ],
+  "terrain": {
+    "size_m": 4000,
+    "cell_m": 8,
+    "features": [
+      {
+        "type": "water",
+        "x": 0,
+        "y": 992,
+        "w": 4000,
+        "h": 16
+      },
+      {
+        "type": "water",
+        "x": 0,
+        "y": 2992,
+        "w": 4000,
+        "h": 16
+      },
+      {
+        "type": "water",
+        "x": 0,
+        "y": 3088,
+        "w": 4000,
+        "h": 16
+      },
+      {
+        "type": "minefield",
+        "x": 1500,
+        "y": 3500,
+        "w": 100,
+        "h": 100,
+        "density": 100,
+        "team": 1
+      }
+    ]
+  },
+  "players": [
+    {
+      "start_sp": 400
+    },
+    {
+      "start_sp": 400
+    }
+  ],
+  "units": [
+    {
+      "tag": "m1",
+      "unit": "m1a1_abrams",
+      "player": 0,
+      "x": 1000,
+      "y": 800
+    },
+    {
+      "tag": "s_trench",
+      "unit": "m2a2_bradley",
+      "player": 0,
+      "x": 2000,
+      "y": 1700
+    },
+    {
+      "tag": "i_trench",
+      "unit": "sov_motor_rifle_squad",
+      "player": 1,
+      "x": 2000,
+      "y": 2000,
+      "roe": "hold_fire"
+    },
+    {
+      "tag": "t80",
+      "unit": "t80bv",
+      "player": 1,
+      "x": 3800,
+      "y": 3048
+    },
+    {
+      "tag": "lane",
+      "unit": "m60a3_tts",
+      "player": 0,
+      "x": 1544,
+      "y": 3400
+    },
+    {
+      "tag": "nolane",
+      "unit": "m60a3_tts",
+      "player": 0,
+      "x": 1585,
+      "y": 3400
+    }
+  ],
+  "orders": [
+    {
+      "tick": 10,
+      "kind": "move",
+      "tag": "m1",
+      "x": 1000,
+      "y": 1300
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_avlb_bridge",
+      "x": 1000,
+      "y": 1000
+    },
+    {
+      "tick": 3100,
+      "kind": "move",
+      "tag": "m1",
+      "x": 1000,
+      "y": 1300
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 1,
+      "option": "pact_bat_fortify",
+      "x": 2000,
+      "y": 2000
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_ace_obstacle",
+      "x": 3500,
+      "y": 3048
+    },
+    {
+      "tick": 6100,
+      "kind": "move",
+      "tag": "t80",
+      "x": 3200,
+      "y": 3048
+    },
+    {
+      "tick": 0,
+      "kind": "support",
+      "player": 0,
+      "option": "nato_miclic_breach",
+      "x": 1544,
+      "y": 3550
+    },
+    {
+      "tick": 1300,
+      "kind": "move",
+      "tag": "lane",
+      "x": 1544,
+      "y": 3700
+    },
+    {
+      "tick": 1300,
+      "kind": "move",
+      "tag": "nolane",
+      "x": 1585,
+      "y": 3700
+    }
+  ],
+  "assert": [
+    {
+      "at_tick": 2900,
+      "check": "near",
+      "unit": "m1",
+      "x": 1000,
+      "y": 800,
+      "value": 30
+    },
+    {
+      "at_tick": 4500,
+      "check": "near",
+      "unit": "m1",
+      "x": 1000,
+      "y": 1300,
+      "value": 30
+    },
+    {
+      "at_tick": 1,
+      "check": "hit_chance_between",
+      "unit": "s_trench",
+      "other": "i_trench",
+      "mount": 0,
+      "x": 17,
+      "value": 19
+    },
+    {
+      "at_tick": 6100,
+      "check": "hit_chance_between",
+      "unit": "s_trench",
+      "other": "i_trench",
+      "mount": 0,
+      "x": 6,
+      "value": 8
+    },
+    {
+      "at_tick": 7900,
+      "check": "near",
+      "unit": "t80",
+      "x": 3200,
+      "y": 3048,
+      "value": 200,
+      "expect": false
+    },
+    {
+      "at_tick": 3000,
+      "check": "flag_set",
+      "unit": "lane",
+      "value": 1,
+      "expect": false
+    },
+    {
+      "at_tick": 3000,
+      "check": "near",
+      "unit": "lane",
+      "x": 1544,
+      "y": 3700,
+      "value": 30
+    },
+    {
+      "at_tick": 3000,
+      "check": "flag_set",
+      "unit": "nolane",
+      "value": 1
+    }
+  ]
+}

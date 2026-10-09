@@ -1,0 +1,170 @@
+{
+  "id": "ux_01_skirmish_smoke",
+  "requirement": "UX-01",
+  "also": [
+    "MODE-01",
+    "FLY-01",
+    "MEC-11"
+  ],
+  "description": "G13 smoke: menu, deck, deployment, battle, Take Control of an aircraft (the XO takes the battle within 1 tick), return, battle to its end, debrief, back to the menu. Every card shows a role icon, a range bar (a numeric effective range on every card; 0 for unarmed units) and a use-it-for line. With default settings the XO's handover shows as a subtitle.",
+  "steps": [
+    {
+      "press": "Skirmish"
+    },
+    {
+      "press": "Deck_us_1989_armored"
+    },
+    {
+      "wait_event": "battle_started"
+    },
+    {
+      "press": "Card_*_ground"
+    },
+    {
+      "wait_event": "deployed"
+    },
+    {
+      "speed": 400
+    },
+    {
+      "wait_event": "phase",
+      "timeout_s": 60
+    },
+    {
+      "speed": 0
+    },
+    {
+      "press": "Card_*_air"
+    },
+    {
+      "wait_event": "deployed",
+      "count": 2
+    },
+    {
+      "press": "TakeControl"
+    },
+    {
+      "wait_event": "take_control"
+    },
+    {
+      "frames": 30
+    },
+    {
+      "press": "ReturnControl"
+    },
+    {
+      "wait_event": "control_returned"
+    },
+    {
+      "speed": 2000
+    },
+    {
+      "wait_event": "battle_over",
+      "timeout_s": 300
+    },
+    {
+      "wait_event": "debrief"
+    },
+    {
+      "press": "MainMenu"
+    },
+    {
+      "wait_event": "screen",
+      "count": 5
+    }
+  ],
+  "expect": [
+    {
+      "event": "screen",
+      "fields": {
+        "name": "main_menu"
+      }
+    },
+    {
+      "event": "screen",
+      "fields": {
+        "name": "deck"
+      }
+    },
+    {
+      "event": "deck_selected",
+      "fields": {
+        "deck": "us_1989_armored",
+        "era": "coldwar"
+      }
+    },
+    {
+      "event": "card_shown",
+      "min_count": 10,
+      "nonempty": [
+        "icon",
+        "role",
+        "use_for"
+      ],
+      "forbid": {
+        "use_for": "Support role"
+      },
+      "range": {
+        "range_m": [
+          0,
+          200000
+        ]
+      }
+    },
+    {
+      "event": "battle_started"
+    },
+    {
+      "event": "deployed"
+    },
+    {
+      "event": "phase",
+      "fields": {
+        "phase": "B"
+      }
+    },
+    {
+      "event": "deployed"
+    },
+    {
+      "event": "take_control_ordered"
+    },
+    {
+      "event": "take_control",
+      "fields": {
+        "xo_active": 1
+      },
+      "tick_within": {
+        "of": "take_control_ordered",
+        "max": 1
+      }
+    },
+    {
+      "event": "subtitle",
+      "fields": {
+        "speaker": "XO"
+      },
+      "nonempty": [
+        "text"
+      ]
+    },
+    {
+      "event": "control_returned",
+      "fields": {
+        "reason": 5
+      }
+    },
+    {
+      "event": "battle_over"
+    },
+    {
+      "event": "debrief"
+    },
+    {
+      "event": "screen",
+      "fields": {
+        "name": "main_menu"
+      }
+    }
+  ]
+}
