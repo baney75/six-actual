@@ -1,0 +1,20 @@
+{
+  "id": "modern_tension",
+  "era": "modern",
+  "layer": "tension",
+  "prompt": "modern military thriller score, hybrid orchestra, deep synth pulses, taut percussion, tense and building, ostinato, low pulse, 90 BPM, instrumental, no vocals, loopable",
+  "seed": 221,
+  "duration_requested_s": 60,
+  "model": "ACE-Step 1.5 (MIT), local on Parish1",
+  "job": {
+    "status": "reused raw take"
+  },
+  "lufs": -17.79,
+  "true_peak_db": -3.86,
+  "flatness": 0.178,
+  "transcript": "I'll see you next time.",
+  "loop": "loop points chosen for a stable seam; the end cross-fades into the 3 s before the loop start",
+  "processing": "ffmpeg loudnorm two-pass to -18 LUFS / -1.5 dBTP, loop, Vorbis q5",
+  "seam_jump_ratio": 0.07,
+  "seam_spectral_corr": 0.949
+}

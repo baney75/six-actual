@@ -1,0 +1,55 @@
+{
+  "id": "army1_contact_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "Enemy in front of us. Engaging.",
+  "speaker": "army1",
+  "mode": "design",
+  "instruction": "American male infantry officer in his thirties, brisk and energetic, mid voice, slightly breathless over a field radio",
+  "seed": 1021,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:24:58-0400",
+    "directory": "parish-media:outputs/20261009-132458-voice-a4bd84",
+    "status": "success",
+    "unit": "parish-media-job-bf0ec4412b49492d83bd5fef877e073d.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.08,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:25:03.583857+00:00",
+    "input_text": "Enemy in front of us. Engaging.",
+    "segments_text": [
+      "Enemy in front of us. Engaging."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male infantry officer in his thirties, brisk and energetic, mid voice, slightly breathless over a field radio",
+    "language": "English",
+    "seed": 1021,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.48,
+    "audio_sha256": "8a268509de33059924e7ad2308a8d3917a98555d2d0627f4008d05ffb0df3e00",
+    "output": "parish-media:outputs/six-actual-voice/army1_contact_ww2_s1021.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "3e20d47025827c26",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "enemy in front of us, engaging.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

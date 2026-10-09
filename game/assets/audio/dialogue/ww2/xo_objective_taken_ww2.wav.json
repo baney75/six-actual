@@ -1,0 +1,55 @@
+{
+  "id": "xo_objective_taken_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "We hold the objective.",
+  "speaker": "xo",
+  "mode": "design",
+  "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+  "seed": 17,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:58:22-0400",
+    "directory": "parish-media:outputs/20261009-125822-voice-7f70c5",
+    "status": "success",
+    "unit": "parish-media-job-2855056f66d343ba93552063df53e745.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.09,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:58:27.171792+00:00",
+    "input_text": "We hold the objective.",
+    "segments_text": [
+      "We hold the objective."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+    "language": "English",
+    "seed": 17,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 1.44,
+    "audio_sha256": "c569b90839a789e5afa42d02aa42fd6afedf65efb1df246352729834e4380d62",
+    "output": "parish-media:outputs/six-actual-voice/xo_objective_taken_ww2.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "84b0528ad0e9d733",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "We hold the objective.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

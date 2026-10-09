@@ -1,0 +1,55 @@
+{
+  "id": "air2_request_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "Air two requesting clearance to engage.",
+  "speaker": "air2",
+  "mode": "design",
+  "instruction": "American female pilot in her thirties, crisp and fast, bright clear voice over aircraft radio",
+  "seed": 2026,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:26:20-0400",
+    "directory": "parish-media:outputs/20261009-132620-voice-ce4525",
+    "status": "success",
+    "unit": "parish-media-job-bc83a28e1bc94caba3cf1d2a1a69762a.service",
+    "peak_gpu_mib_sampled": 4515,
+    "elapsed_seconds": 6.08,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:26:25.938289+00:00",
+    "input_text": "Air two requesting clearance to engage.",
+    "segments_text": [
+      "Air two requesting clearance to engage."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American female pilot in her thirties, crisp and fast, bright clear voice over aircraft radio",
+    "language": "English",
+    "seed": 2026,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.32,
+    "audio_sha256": "fda12a849971ec77283b2c43cb70080bcf52801bc4ae048121447142ff54f06b",
+    "output": "parish-media:outputs/six-actual-voice/air2_request_ww2_s2026.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "302cf6d347eba728",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Air 2 requesting clearance to engage.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "operation": "ww3a",
+  "era": "ww2",
+  "text": "Their reconnaissance battalion is all that stands between us and open country. Run it down and keep moving.",
+  "speaker": "Aiden",
+  "mode": "custom",
+  "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+  "seed": 1103,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:33:29-0400",
+    "directory": "parish-media:outputs/20261009-123329-voice-a222da",
+    "status": "success",
+    "unit": "parish-media-job-ef5e484790d448cb8d9a07a21dd02861.service",
+    "peak_gpu_mib_sampled": 4631,
+    "elapsed_seconds": 10.13,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:33:36.780458+00:00",
+    "input_text": "Their reconnaissance battalion is all that stands between us and open country. Run it down and keep moving.",
+    "segments_text": [
+      "Their reconnaissance battalion is all that stands between us and open country. Run it down and keep moving."
+    ],
+    "mode": "custom",
+    "speaker": "Aiden",
+    "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+    "language": "English",
+    "seed": 1103,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 6.96,
+    "audio_sha256": "d4e6d4ecdee51af0b0a8c8337e57bd076dfab4d5256942b5a85c837bcbe62b15",
+    "output": "parish-media:outputs/six-actual-briefings/ww3a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-19.15",
+    "input_tp": "-2.47"
+  },
+  "loudness_after": {
+    "input_i": "-16.18",
+    "input_tp": "-1.50"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Their reconnaissance battalion is all that stands between us and open country. Run it down, and keep moving.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "ww2_combat",
+  "era": "ww2",
+  "layer": "combat",
+  "prompt": "1940s orchestral war film score, brass and strings, military snare, intense battle music, driving percussion, full ensemble, 120 BPM, instrumental, no vocals, loopable",
+  "seed": 202,
+  "duration_requested_s": 60,
+  "model": "ACE-Step 1.5 (MIT), local on Parish1",
+  "job": {
+    "status": "reused raw take"
+  },
+  "lufs": -17.87,
+  "true_peak_db": -4.6,
+  "flatness": 0.196,
+  "transcript": "Thanks for watching!",
+  "loop": "loop points chosen for a stable seam; the end cross-fades into the 3 s before the loop start",
+  "processing": "ffmpeg loudnorm two-pass to -18 LUFS / -1.5 dBTP, loop, Vorbis q5",
+  "seam_jump_ratio": 0.1,
+  "seam_spectral_corr": 0.976
+}

@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "era": "coldwar",
+  "cards": [
+    {
+      "id": "fog_bank",
+      "effect": "weather",
+      "params": {
+        "weather": "fog"
+      },
+      "weight": 2,
+      "why": "North German Plain autumn fog: grounds aircraft, shortens sight lines"
+    },
+    {
+      "id": "rain_front",
+      "effect": "weather",
+      "params": {
+        "weather": "rain"
+      },
+      "weight": 2,
+      "why": "an Atlantic front moves through"
+    },
+    {
+      "id": "clear_skies",
+      "effect": "weather",
+      "params": {
+        "weather": "clear"
+      },
+      "weight": 3,
+      "why": "high pressure: good flying weather"
+    },
+    {
+      "id": "nightfall_overcast",
+      "effect": "weather",
+      "params": {
+        "weather": "overcast"
+      },
+      "weight": 2,
+      "why": "low cloud over the front"
+    },
+    {
+      "id": "nato_reinforcements",
+      "effect": "dp_side",
+      "params": {
+        "side": "NATO",
+        "dp": 300
+      },
+      "weight": 2,
+      "why": "a REFORGER battalion arrives from the POMCUS sites"
+    },
+    {
+      "id": "pact_second_echelon",
+      "effect": "dp_side",
+      "params": {
+        "side": "Warsaw Pact",
+        "dp": 300
+      },
+      "weight": 2,
+      "why": "the army's second echelon regiment is committed"
+    },
+    {
+      "id": "night_resupply",
+      "effect": "resupply",
+      "params": {},
+      "weight": 3,
+      "why": "both sides rearm and refuel in the lull between attacks"
+    }
+  ]
+}

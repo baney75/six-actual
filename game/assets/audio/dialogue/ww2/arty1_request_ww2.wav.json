@@ -1,0 +1,55 @@
+{
+  "id": "arty1_request_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "First fires requesting clearance for the fire mission.",
+  "speaker": "arty1",
+  "mode": "design",
+  "instruction": "American male artillery officer in his fifties, gravelly low voice, methodical and precise over the radio",
+  "seed": 23,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:07:07-0400",
+    "directory": "parish-media:outputs/20261009-130707-voice-8cc5bd",
+    "status": "success",
+    "unit": "parish-media-job-cce7f85308c244159030510fdb3fd457.service",
+    "peak_gpu_mib_sampled": 4529,
+    "elapsed_seconds": 8.11,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:07:13.321446+00:00",
+    "input_text": "First fires requesting clearance for the fire mission.",
+    "segments_text": [
+      "First fires requesting clearance for the fire mission."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male artillery officer in his fifties, gravelly low voice, methodical and precise over the radio",
+    "language": "English",
+    "seed": 23,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 3.44,
+    "audio_sha256": "ff7de6f9d859b2bcc23868c4939bf11d3f8f1c573abf9ec17aa8413fed48ba19",
+    "output": "parish-media:outputs/six-actual-voice/arty1_request_ww2.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "11153f3e3e38cebf",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "FIRST FIRE'S REQUESTING CLEARANCE FOR THE FIRE MISSION",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

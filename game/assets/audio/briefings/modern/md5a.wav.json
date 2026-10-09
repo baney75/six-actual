@@ -1,0 +1,61 @@
+{
+  "operation": "md5a",
+  "era": "modern",
+  "text": "Their tank army is committed. Division wants us through the gap before their second echelon arrives. Break through.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+  "seed": 1207,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:36:56-0400",
+    "directory": "parish-media:outputs/20261009-123656-voice-cf98c1",
+    "status": "success",
+    "unit": "parish-media-job-c9d4ed76bd344087ad0c8a7aeb6c19c4.service",
+    "peak_gpu_mib_sampled": 4695,
+    "elapsed_seconds": 10.12,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:37:04.189432+00:00",
+    "input_text": "Their tank army is committed. Division wants us through the gap before their second echelon arrives. Break through.",
+    "segments_text": [
+      "Their tank army is committed. Division wants us through the gap before their second echelon arrives. Break through."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+    "language": "English",
+    "seed": 1207,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 7.6,
+    "audio_sha256": "d72966603b78e194ecc61f00c98b90fad430d0da389f7d6358c821a9d12eaf1f",
+    "output": "parish-media:outputs/six-actual-briefings/md5a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-22.88",
+    "input_tp": "-5.41"
+  },
+  "loudness_after": {
+    "input_i": "-16.29",
+    "input_tp": "-1.49"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Their tank army is committed. Division wants us through the gap before their second echelon arrives. Break through.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

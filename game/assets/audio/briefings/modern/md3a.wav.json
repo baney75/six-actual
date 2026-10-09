@@ -1,0 +1,61 @@
+{
+  "operation": "md3a",
+  "era": "modern",
+  "text": "Their guns are hitting the road junction. Find the batteries, silence them, and then take the junction.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+  "seed": 1203,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:36:13-0400",
+    "directory": "parish-media:outputs/20261009-123613-voice-1a4af5",
+    "status": "success",
+    "unit": "parish-media-job-9b074a44d04a454d99c3b2f6c342d3f1.service",
+    "peak_gpu_mib_sampled": 4625,
+    "elapsed_seconds": 10.12,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:36:21.351649+00:00",
+    "input_text": "Their guns are hitting the road junction. Find the batteries, silence them, and then take the junction.",
+    "segments_text": [
+      "Their guns are hitting the road junction. Find the batteries, silence them, and then take the junction."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+    "language": "English",
+    "seed": 1203,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 6.72,
+    "audio_sha256": "af209ca519c600ee686caec1d7fdc4c531ee3195827887246be78a5a88d1ab2f",
+    "output": "parish-media:outputs/six-actual-briefings/md3a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-23.49",
+    "input_tp": "-4.33"
+  },
+  "loudness_after": {
+    "input_i": "-17.02",
+    "input_tp": "-1.49"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Their guns are hitting the road junction, find the batteries, silence them, and then take the junction.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

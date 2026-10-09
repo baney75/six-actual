@@ -1,0 +1,55 @@
+{
+  "id": "air1_cas_on_station_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "Fighter-bombers overhead. Ready to strike.",
+  "speaker": "air1",
+  "mode": "design",
+  "instruction": "American male pilot in his thirties, cool and laconic, relaxed drawl over aircraft radio",
+  "seed": 1025,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:25:11-0400",
+    "directory": "parish-media:outputs/20261009-132511-voice-fbcb3b",
+    "status": "success",
+    "unit": "parish-media-job-90b894c3ae1d4c40bab8be835160ea18.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.09,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:25:16.452833+00:00",
+    "input_text": "Fighter-bombers overhead. Ready to strike.",
+    "segments_text": [
+      "Fighter-bombers overhead. Ready to strike."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male pilot in his thirties, cool and laconic, relaxed drawl over aircraft radio",
+    "language": "English",
+    "seed": 1025,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.64,
+    "audio_sha256": "45e322f5d5a0513e3300059b6aa9a67785f78918212f08597fbf145522188c02",
+    "output": "parish-media:outputs/six-actual-voice/air1_cas_on_station_ww2_s1025.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "bc90797ae3f68e04",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Fighter bombers overhead, ready to strike.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

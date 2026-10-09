@@ -1,0 +1,55 @@
+{
+  "id": "arty1_escalation_modern",
+  "kind": "dialogue",
+  "era": "modern",
+  "text": "First fires, we are taking counter-battery. Displacing.",
+  "speaker": "arty1",
+  "mode": "design",
+  "instruction": "American male artillery officer in his fifties, gravelly low voice, methodical and precise over the radio",
+  "seed": 23,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:07:50-0400",
+    "directory": "parish-media:outputs/20261009-130750-voice-7c6a6e",
+    "status": "success",
+    "unit": "parish-media-job-142bafced4b1483c8d21c3c118b6ef15.service",
+    "peak_gpu_mib_sampled": 4531,
+    "elapsed_seconds": 8.1,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:07:56.876810+00:00",
+    "input_text": "First fires, we are taking counter-battery. Displacing.",
+    "segments_text": [
+      "First fires, we are taking counter-battery. Displacing."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male artillery officer in his fifties, gravelly low voice, methodical and precise over the radio",
+    "language": "English",
+    "seed": 23,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 5.52,
+    "audio_sha256": "fa0e48b44d509ceaa782fb7c2085ad80eeb0d58836d018d57caa9c546f551fb5",
+    "output": "parish-media:outputs/six-actual-voice/arty1_escalation_modern.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "abae6c19501c0e8b",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "First fires. We are taking counter-battery. Displacing.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "army2_withdraw_coldwar",
+  "kind": "dialogue",
+  "era": "coldwar",
+  "text": "Second maneuver, falling back to rearm.",
+  "speaker": "army2",
+  "mode": "design",
+  "instruction": "American female infantry officer in her thirties, firm and level, clear mid voice over a field radio",
+  "seed": 22,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:03:05-0400",
+    "directory": "parish-media:outputs/20261009-130305-voice-a3ef64",
+    "status": "success",
+    "unit": "parish-media-job-2f2662d4614e49e2a2edfca8dea07fb5.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.09,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:03:10.738613+00:00",
+    "input_text": "Second maneuver, falling back to rearm.",
+    "segments_text": [
+      "Second maneuver, falling back to rearm."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American female infantry officer in her thirties, firm and level, clear mid voice over a field radio",
+    "language": "English",
+    "seed": 22,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.56,
+    "audio_sha256": "1811d4a002ee96b2ee8f5031aa98f84c1bf62f502614030a73fb44284b4ff1d5",
+    "output": "parish-media:outputs/six-actual-voice/army2_withdraw_coldwar.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "18a047986531fcad",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Second maneuver, falling back to rearm.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

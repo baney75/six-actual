@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "offers_per_phase": 3,
+  "task_forces": [
+    {
+      "id": "nato_b_mech_team",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "B",
+      "name": "Mech infantry team",
+      "value": 460,
+      "units": [
+        {
+          "unit": "m2a2_bradley",
+          "count": 1,
+          "cost": 220
+        },
+        {
+          "unit": "us_mech_rifle_squad",
+          "count": 2,
+          "cost": 85
+        },
+        {
+          "unit": "m47_dragon_team",
+          "count": 1,
+          "cost": 70
+        }
+      ],
+      "why": "a Bradley platoon element cross-attached with its dismounts"
+    },
+    {
+      "id": "nato_b_antiarmor",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "B",
+      "name": "Antiarmor section",
+      "value": 475,
+      "units": [
+        {
+          "unit": "m901_itv",
+          "count": 2,
+          "cost": 165
+        },
+        {
+          "unit": "m220_tow_team",
+          "count": 1,
+          "cost": 145
+        }
+      ],
+      "why": "battalion antiarmor company ITV section plus a ground TOW"
+    },
+    {
+      "id": "nato_b_fires",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "B",
+      "name": "Fires and observation",
+      "value": 455,
+      "units": [
+        {
+          "unit": "m109a3_sph",
+          "count": 2,
+          "cost": 190
+        },
+        {
+          "unit": "us_scout_section",
+          "count": 1,
+          "cost": 75
+        }
+      ],
+      "why": "a DS howitzer section with forward observers"
+    },
+    {
+      "id": "nato_b_air_defense",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "B",
+      "name": "Air defense and scouts",
+      "value": 510,
+      "units": [
+        {
+          "unit": "m163_vads",
+          "count": 1,
+          "cost": 80
+        },
+        {
+          "unit": "m48_chaparral",
+          "count": 1,
+          "cost": 110
+        },
+        {
+          "unit": "stinger_team",
+          "count": 1,
+          "cost": 100
+        },
+        {
+          "unit": "m3a2_bradley_cfv",
+          "count": 1,
+          "cost": 220
+        }
+      ],
+      "why": "divisional ADA attachment screened by a cavalry track"
+    },
+    {
+      "id": "nato_c_tank_platoon",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "C",
+      "name": "Tank platoon",
+      "value": 790,
+      "units": [
+        {
+          "unit": "m1a1_abrams",
+          "count": 2,
+          "cost": 300
+        },
+        {
+          "unit": "m60a3_tts",
+          "count": 1,
+          "cost": 190
+        }
+      ],
+      "why": "an armor platoon (three tanks) cross-attached to the task force"
+    },
+    {
+      "id": "nato_c_armored_cav",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "C",
+      "name": "Armored cavalry troop element",
+      "value": 740,
+      "units": [
+        {
+          "unit": "m3a2_bradley_cfv",
+          "count": 2,
+          "cost": 220
+        },
+        {
+          "unit": "m1a1_abrams",
+          "count": 1,
+          "cost": 300
+        }
+      ],
+      "why": "cavalry scout section with a tank"
+    },
+    {
+      "id": "nato_c_attack_helicopters",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "C",
+      "name": "Attack helicopter team",
+      "value": 615,
+      "units": [
+        {
+          "unit": "ah64a_apache",
+          "count": 2,
+          "cost": 270
+        },
+        {
+          "unit": "us_scout_section",
+          "count": 1,
+          "cost": 75
+        }
+      ],
+      "why": "an AH-64 team on call to the brigade, with ground scouts to cue it"
+    },
+    {
+      "id": "nato_c_rocket_and_cas",
+      "era": "coldwar",
+      "side": "NATO",
+      "phase": "C",
+      "name": "Close air support",
+      "value": 655,
+      "units": [
+        {
+          "unit": "a10a_thunderbolt",
+          "count": 1,
+          "cost": 390
+        },
+        {
+          "unit": "m109a3_sph",
+          "count": 1,
+          "cost": 190
+        },
+        {
+          "unit": "us_scout_section",
+          "count": 1,
+          "cost": 75
+        }
+      ],
+      "why": "an A-10 sortie allocated to the brigade, with a howitzer and its observers"
+    },
+    {
+      "id": "pact_b_motor_rifle",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "B",
+      "name": "Motor rifle platoon",
+      "value": 395,
+      "units": [
+        {
+          "unit": "bmp2",
+          "count": 1,
+          "cost": 140
+        },
+        {
+          "unit": "sov_motor_rifle_squad",
+          "count": 2,
+          "cost": 80
+        },
+        {
+          "unit": "9k111_fagot_team",
+          "count": 1,
+          "cost": 95
+        }
+      ],
+      "why": "a BMP-2 platoon element with its dismounts and a Fagot team"
+    },
+    {
+      "id": "pact_b_antitank",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "B",
+      "name": "Antitank platoon",
+      "value": 410,
+      "units": [
+        {
+          "unit": "9p148_konkurs",
+          "count": 2,
+          "cost": 110
+        },
+        {
+          "unit": "9k111_fagot_team",
+          "count": 2,
+          "cost": 95
+        }
+      ],
+      "why": "the regiment's antitank battery reinforcement"
+    },
+    {
+      "id": "pact_b_artillery",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "B",
+      "name": "Artillery battery element",
+      "value": 405,
+      "units": [
+        {
+          "unit": "2s1_gvozdika",
+          "count": 3,
+          "cost": 110
+        },
+        {
+          "unit": "sov_razvedka_section",
+          "count": 1,
+          "cost": 75
+        }
+      ],
+      "why": "a 2S1 section with reconnaissance"
+    },
+    {
+      "id": "pact_b_air_defence",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "B",
+      "name": "Air defence and recon",
+      "value": 345,
+      "units": [
+        {
+          "unit": "zsu23_4_shilka",
+          "count": 1,
+          "cost": 85
+        },
+        {
+          "unit": "9k35_strela10",
+          "count": 1,
+          "cost": 105
+        },
+        {
+          "unit": "9k38_igla_team",
+          "count": 1,
+          "cost": 85
+        },
+        {
+          "unit": "brdm2",
+          "count": 1,
+          "cost": 70
+        }
+      ],
+      "why": "the regimental air defence battery attachment"
+    },
+    {
+      "id": "pact_c_tank_platoon",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "C",
+      "name": "Tank platoon",
+      "value": 580,
+      "units": [
+        {
+          "unit": "t80bv",
+          "count": 1,
+          "cost": 295
+        },
+        {
+          "unit": "t64bv",
+          "count": 1,
+          "cost": 285
+        }
+      ],
+      "why": "a tank platoon element attached to the motor rifle battalion"
+    },
+    {
+      "id": "pact_c_forward_detachment",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "C",
+      "name": "Forward detachment",
+      "value": 575,
+      "units": [
+        {
+          "unit": "t80bv",
+          "count": 1,
+          "cost": 295
+        },
+        {
+          "unit": "bmp2",
+          "count": 2,
+          "cost": 140
+        }
+      ],
+      "why": "a forward detachment's lead tank and BMPs"
+    },
+    {
+      "id": "pact_c_attack_helicopters",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "C",
+      "name": "Attack helicopter flight",
+      "value": 645,
+      "units": [
+        {
+          "unit": "mi24v_hind",
+          "count": 3,
+          "cost": 215
+        }
+      ],
+      "why": "a Mi-24 flight from the army aviation regiment"
+    },
+    {
+      "id": "pact_c_frontal_aviation",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "phase": "C",
+      "name": "Frontal aviation sortie",
+      "value": 570,
+      "units": [
+        {
+          "unit": "su25_frogfoot",
+          "count": 1,
+          "cost": 340
+        },
+        {
+          "unit": "2s3_akatsiya",
+          "count": 1,
+          "cost": 160
+        },
+        {
+          "unit": "brdm2",
+          "count": 1,
+          "cost": 70
+        }
+      ],
+      "why": "an Su-25 sortie with a 152 mm gun in support and a BRDM to spot for it"
+    }
+  ]
+}

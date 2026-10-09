@@ -1,0 +1,61 @@
+{
+  "operation": "cw5f",
+  "era": "coldwar",
+  "text": "This is the last line before the Rhine crossings. Reinforcements land in two days. Hold here through the night, whatever it costs.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+  "seed": 1008,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:32:27-0400",
+    "directory": "parish-media:outputs/20261009-123227-voice-fbafa3",
+    "status": "success",
+    "unit": "parish-media-job-94dc6c51bf4e4fc899626ccb5aa01aba.service",
+    "peak_gpu_mib_sampled": 4549,
+    "elapsed_seconds": 10.11,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:32:36.244895+00:00",
+    "input_text": "This is the last line before the Rhine crossings. Reinforcements land in two days. Hold here through the night, whatever it costs.",
+    "segments_text": [
+      "This is the last line before the Rhine crossings. Reinforcements land in two days. Hold here through the night, whatever it costs."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+    "language": "English",
+    "seed": 1008,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 9.2,
+    "audio_sha256": "9b7ebbb232207e7f59e74a0d3c78e460f3089fe2a0a88d00fe90b52ea40b79a2",
+    "output": "parish-media:outputs/six-actual-briefings/cw5f.wav"
+  },
+  "loudness_before": {
+    "input_i": "-26.88",
+    "input_tp": "-9.36"
+  },
+  "loudness_after": {
+    "input_i": "-16.11",
+    "input_tp": "-1.44"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "This is the last line before the Rhine Crossings. Reinforcements land in two days. Hold here through the night, whatever it costs.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

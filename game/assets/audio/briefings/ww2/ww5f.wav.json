@@ -1,0 +1,61 @@
+{
+  "operation": "ww5f",
+  "era": "ww2",
+  "text": "Snow and a long night ahead. They will attack before dawn. Hold the village and keep the guns registered on the approaches.",
+  "speaker": "Aiden",
+  "mode": "custom",
+  "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+  "seed": 1108,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:34:38-0400",
+    "directory": "parish-media:outputs/20261009-123438-voice-ec8af0",
+    "status": "success",
+    "unit": "parish-media-job-564ee937e3ac4c05a31a90809a9f1785.service",
+    "peak_gpu_mib_sampled": 4705,
+    "elapsed_seconds": 10.12,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:34:46.581348+00:00",
+    "input_text": "Snow and a long night ahead. They will attack before dawn. Hold the village and keep the guns registered on the approaches.",
+    "segments_text": [
+      "Snow and a long night ahead. They will attack before dawn. Hold the village and keep the guns registered on the approaches."
+    ],
+    "mode": "custom",
+    "speaker": "Aiden",
+    "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+    "language": "English",
+    "seed": 1108,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 7.76,
+    "audio_sha256": "f09de1228bf68abcfb27b1b88d0d9130bba2d0012db630b9b0ecf07b984cc517",
+    "output": "parish-media:outputs/six-actual-briefings/ww5f.wav"
+  },
+  "loudness_before": {
+    "input_i": "-20.21",
+    "input_tp": "-1.91"
+  },
+  "loudness_after": {
+    "input_i": "-16.51",
+    "input_tp": "-1.50"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Snow and a long night ahead. They will attack before dawn. Hold the village and keep the guns registered on the approaches.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

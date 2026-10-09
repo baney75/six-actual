@@ -1,0 +1,61 @@
+{
+  "operation": "ww6f",
+  "era": "ww2",
+  "text": "Reinforcements are up and the weather is turning. We attack at dawn. Take back everything we gave up.",
+  "speaker": "Aiden",
+  "mode": "custom",
+  "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+  "seed": 1110,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:34:59-0400",
+    "directory": "parish-media:outputs/20261009-123459-voice-41e5f6",
+    "status": "success",
+    "unit": "parish-media-job-7cbfc5ffbe5f4720af294ce979061054.service",
+    "peak_gpu_mib_sampled": 4537,
+    "elapsed_seconds": 8.11,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:35:06.970672+00:00",
+    "input_text": "Reinforcements are up and the weather is turning. We attack at dawn. Take back everything we gave up.",
+    "segments_text": [
+      "Reinforcements are up and the weather is turning. We attack at dawn. Take back everything we gave up."
+    ],
+    "mode": "custom",
+    "speaker": "Aiden",
+    "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+    "language": "English",
+    "seed": 1110,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 6.16,
+    "audio_sha256": "a5faeff1ac8cd3e979fc6f634820784018e90e2ae8bac4c667f69afb0a75ee55",
+    "output": "parish-media:outputs/six-actual-briefings/ww6f.wav"
+  },
+  "loudness_before": {
+    "input_i": "-19.95",
+    "input_tp": "-2.45"
+  },
+  "loudness_after": {
+    "input_i": "-16.35",
+    "input_tp": "-1.50"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Reinforcements are up, and the weather is turning. We attack at dawn, take back everything we gave up.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

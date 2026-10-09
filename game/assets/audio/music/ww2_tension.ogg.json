@@ -1,0 +1,20 @@
+{
+  "id": "ww2_tension",
+  "era": "ww2",
+  "layer": "tension",
+  "prompt": "1940s orchestral war film score, brass and strings, military snare, tense and building, ostinato, low pulse, 90 BPM, instrumental, no vocals, loopable",
+  "seed": 201,
+  "duration_requested_s": 60,
+  "model": "ACE-Step 1.5 (MIT), local on Parish1",
+  "job": {
+    "status": "reused raw take"
+  },
+  "lufs": -17.79,
+  "true_peak_db": -6.19,
+  "flatness": 0.085,
+  "transcript": "",
+  "loop": "loop points chosen for a stable seam; the end cross-fades into the 3 s before the loop start",
+  "processing": "ffmpeg loudnorm two-pass to -18 LUFS / -1.5 dBTP, loop, Vorbis q5",
+  "seam_jump_ratio": 1.49,
+  "seam_spectral_corr": 0.985
+}

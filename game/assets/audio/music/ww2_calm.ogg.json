@@ -1,0 +1,20 @@
+{
+  "id": "ww2_calm",
+  "era": "ww2",
+  "layer": "calm",
+  "prompt": "1940s orchestral war film score, brass and strings, military snare, calm, sparse and watchful, soft sustained notes, 70 BPM, instrumental, no vocals, loopable",
+  "seed": 200,
+  "duration_requested_s": 60,
+  "model": "ACE-Step 1.5 (MIT), local on Parish1",
+  "job": {
+    "status": "reused raw take"
+  },
+  "lufs": -18.23,
+  "true_peak_db": -2.88,
+  "flatness": 0.104,
+  "transcript": "Thanks for watching!",
+  "loop": "loop points chosen for a stable seam; the end cross-fades into the 3 s before the loop start",
+  "processing": "ffmpeg loudnorm two-pass to -18 LUFS / -1.5 dBTP, loop, Vorbis q5",
+  "seam_jump_ratio": 0.64,
+  "seam_spectral_corr": 0.95
+}

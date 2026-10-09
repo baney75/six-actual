@@ -1,0 +1,1443 @@
+{
+  "version": 1,
+  "options": [
+    {
+      "id": "nato_fa_battalion_155",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "barrage",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 4800,
+      "delay_ticks": 1200,
+      "params": {
+        "weapon": "how_155",
+        "rounds": 18,
+        "range_m": 12000
+      },
+      "why": "M109 battalion (3 batteries x 6 guns), one volley: 18 rounds. ~2 min call-to-FFE halved"
+    },
+    {
+      "id": "nato_mlrs_strike",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "barrage",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "mlrs_m26",
+        "rounds": 12,
+        "range_m": 25000
+      },
+      "why": "one M270 MLRS ripple of 12 M26 rockets from a hide; ~3 min halved"
+    },
+    {
+      "id": "nato_smoke_155",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "smoke",
+      "sp_cost": 20,
+      "charges": 3,
+      "recharge_ticks": 2400,
+      "delay_ticks": 1200,
+      "params": {
+        "weapon": "how_155",
+        "rounds": 8,
+        "range_m": 12000
+      },
+      "why": "M825 WP smoke screen from a 155 mm battery, 8 rounds"
+    },
+    {
+      "id": "nato_illum_155",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "illum",
+      "sp_cost": 10,
+      "charges": 4,
+      "recharge_ticks": 1200,
+      "delay_ticks": 900,
+      "params": {
+        "weapon": "how_155",
+        "rounds": 2,
+        "range_m": 12000
+      },
+      "why": "M485 illumination, 2 rounds"
+    },
+    {
+      "id": "nato_a10_strafe",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "strike_run",
+      "sp_cost": 70,
+      "charges": 2,
+      "recharge_ticks": 6000,
+      "delay_ticks": 1800,
+      "params": {
+        "impacts": 10,
+        "blast_radius_m": 12,
+        "blast_damage": 60,
+        "suppression": 40,
+        "length_m": 500,
+        "heading_deg": 0,
+        "interval_ticks": 3
+      },
+      "why": "A-10A GAU-8 gun run on call (CAS from a holding point, ~3 min halved): 10 bursts along 500 m"
+    },
+    {
+      "id": "nato_cbu87_cluster",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "strike_run",
+      "sp_cost": 80,
+      "charges": 1,
+      "recharge_ticks": 7200,
+      "delay_ticks": 2000,
+      "params": {
+        "impacts": 24,
+        "blast_radius_m": 15,
+        "blast_damage": 45,
+        "suppression": 60,
+        "length_m": 300,
+        "heading_deg": 0,
+        "interval_ticks": 1
+      },
+      "why": "F-16C CBU-87 CEM (202 bomblets each) pattern: 24 submunition clusters over 300 m"
+    },
+    {
+      "id": "nato_mk82_bombing",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "strike_run",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 6000,
+      "delay_ticks": 2000,
+      "params": {
+        "impacts": 6,
+        "blast_radius_m": 40,
+        "blast_damage": 150,
+        "suppression": 80,
+        "length_m": 240,
+        "heading_deg": 0,
+        "interval_ticks": 4
+      },
+      "why": "F-16C level/dive attack with 6 Mk 82 (227 kg), stick of 6 over 240 m"
+    },
+    {
+      "id": "nato_f4g_sead",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "sead",
+      "sp_cost": 80,
+      "charges": 1,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1800,
+      "params": {
+        "radius_m": 3000
+      },
+      "why": "F-4G Wild Weasel AGM-88 HARM shot at the nearest emitting SAM within 3 km"
+    },
+    {
+      "id": "nato_rf4c_recon",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "reveal",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 4800,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 1500,
+        "duration_ticks": 600,
+        "air_only": false
+      },
+      "why": "RF-4C photo/IR recon pass: everything within 1.5 km revealed for 30 s"
+    },
+    {
+      "id": "nato_e3_awacs",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "reveal",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 15000,
+        "duration_ticks": 2400,
+        "air_only": true
+      },
+      "why": "E-3A AWACS on station: all aircraft within 15 km revealed for 2 min"
+    },
+    {
+      "id": "nato_fascam_155",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "minefield",
+      "sp_cost": 50,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1800,
+      "params": {
+        "radius_m": 150,
+        "density": 30
+      },
+      "why": "155 mm FASCAM (M741 RAAM anti-tank mines, fielded 1980s): a battery mission seeds ~300 m of road; ~3 min halved"
+    },
+    {
+      "id": "nato_avlb_bridge",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "bridge",
+      "sp_cost": 40,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 3000,
+      "params": {
+        "length_m": 20,
+        "width_m": 8,
+        "heading_deg": 90
+      },
+      "why": "M60 AVLB scissors bridge (18.3 m span), emplaced in ~3 min; ~5 min with travel, halved"
+    },
+    {
+      "id": "nato_ace_fortify",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "fortify",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 6000,
+      "params": {
+        "length_m": 100,
+        "width_m": 8,
+        "heading_deg": 0
+      },
+      "why": "M9 ACE / engineer squad digs a 100 m section of fighting positions: hours of digging compressed to 5 min"
+    },
+    {
+      "id": "nato_ace_obstacle",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "obstacle",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 6000,
+      "params": {
+        "length_m": 100,
+        "width_m": 32,
+        "heading_deg": 90
+      },
+      "why": "M9 ACE anti-tank ditch, 100 m: compressed to 5 min"
+    },
+    {
+      "id": "nato_miclic_breach",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "breach",
+      "sp_cost": 40,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1200,
+      "params": {
+        "length_m": 100,
+        "width_m": 16,
+        "heading_deg": 90
+      },
+      "why": "M58 MICLIC line charge clears a ~100 x 8-16 m lane through mines and wire"
+    },
+    {
+      "id": "nato_ef111_jamming",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "jam_radar",
+      "sp_cost": 50,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 3000,
+        "duration_ticks": 2400
+      },
+      "why": "EF-111A Raven (1981) stand-off ALQ-99 radar jamming: enemy gun-dish radars degraded within 3 km for 2 min"
+    },
+    {
+      "id": "nato_compass_call",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "jam_comms",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 4000,
+        "duration_ticks": 2400
+      },
+      "why": "EC-130H Compass Call (1983) command-net jamming: enemy fire-control nets within 4 km slowed for 2 min"
+    },
+    {
+      "id": "nato_chaff_corridor",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "decoy",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 2000,
+        "duration_ticks": 1800
+      },
+      "why": "chaff corridor and flare discipline for a strike package: enemy missiles at our aircraft within 2 km degraded for 90 s"
+    },
+    {
+      "id": "nato_w79_tactical",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "tactical_nuke",
+      "sp_cost": 200,
+      "charges": 1,
+      "recharge_ticks": 1999980,
+      "delay_ticks": 2400,
+      "params": {
+        "blast_radius_m": 400,
+        "blast_damage": 3000,
+        "suppression": 200
+      },
+      "why": "W79 8-inch enhanced-radiation shell (in service 1981) from an M110A2 battery: only when the grand-strategy escalation has released tactical weapons (GS-04); one round"
+    },
+    {
+      "id": "nato_iowa_ngfs",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "barrage",
+      "sp_cost": 120,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 2400,
+      "params": {
+        "weapon": "naval_406",
+        "rounds": 27,
+        "range_m": 20000
+      },
+      "why": "Iowa-class battleship naval gunfire support: three 9-gun 16 in broadsides from 20 km offshore; ~4 min call to splash halved"
+    },
+    {
+      "id": "nato_copperhead",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "precision",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "how_155",
+        "rounds": 4,
+        "cep_m": 3,
+        "designator_m": 3000
+      },
+      "why": "M712 Copperhead laser-guided 155 mm (1982): needs a friendly unit lasing the target within 3 km with line of sight"
+    },
+    {
+      "id": "nato_ac130_gunship",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "gunship",
+      "sp_cost": 110,
+      "charges": 1,
+      "recharge_ticks": 14400,
+      "delay_ticks": 2400,
+      "params": {
+        "radius_m": 800,
+        "duration_ticks": 1800,
+        "interval_ticks": 60,
+        "blast_radius_m": 10,
+        "blast_damage": 120,
+        "suppression": 60
+      },
+      "why": "AC-130H Spectre orbit (night attack, 105 mm and 40 mm): a hit every 3 s on the nearest visible enemy within 800 m for 90 s"
+    },
+    {
+      "id": "nato_tomahawk",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "cruise",
+      "sp_cost": 150,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 4800,
+      "params": {
+        "blast_radius_m": 40,
+        "blast_damage": 600,
+        "suppression": 100
+      },
+      "why": "BGM-109 Tomahawk land-attack cruise missile (1983) from a ship: a precise 450 kg warhead on the aim point after ~8 min flight, halved"
+    },
+    {
+      "id": "nato_pioneer_uav",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "reveal",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 1200,
+        "duration_ticks": 3600,
+        "air_only": false
+      },
+      "why": "RQ-2 Pioneer reconnaissance drone (1986): everything within 1.2 km revealed for 3 min"
+    },
+    {
+      "id": "nato_kh11_pass",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "reveal",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 48000,
+      "delay_ticks": 12000,
+      "params": {
+        "radius_m": 6000,
+        "duration_ticks": 400,
+        "air_only": false
+      },
+      "why": "KH-11 imaging satellite pass (1976): a wide area revealed for 20 s, tasking and downlink delay 30 s"
+    },
+    {
+      "id": "nato_f15_escort",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "escort",
+      "sp_cost": 50,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 3000,
+        "duration_ticks": 2400
+      },
+      "why": "F-15C fighter escort for the strike package: enemy air-to-air missiles at our aircraft within 3 km degraded for 2 min"
+    },
+    {
+      "id": "nato_air_assault",
+      "era": "coldwar",
+      "side": "NATO",
+      "type": "air_landing",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 2400,
+      "params": {
+        "unit": "us_mech_rifle_squad",
+        "count": 3,
+        "scatter_m": 60
+      },
+      "why": "UH-60 air assault: a rifle platoon (3 squads, modelled with the mech squad's infantry stats) landed at the LZ"
+    },
+    {
+      "id": "pact_art_battalion_152",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "barrage",
+      "sp_cost": 55,
+      "charges": 2,
+      "recharge_ticks": 4800,
+      "delay_ticks": 1200,
+      "params": {
+        "weapon": "how_152",
+        "rounds": 18,
+        "range_m": 12000
+      },
+      "why": "2S3 battalion volley, 18 rounds"
+    },
+    {
+      "id": "pact_grad_strike",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "barrage",
+      "sp_cost": 85,
+      "charges": 1,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "grad_9m22u",
+        "rounds": 40,
+        "range_m": 15000
+      },
+      "why": "one BM-21 Grad salvo of 40 rockets"
+    },
+    {
+      "id": "pact_smoke_152",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "smoke",
+      "sp_cost": 20,
+      "charges": 3,
+      "recharge_ticks": 2400,
+      "delay_ticks": 1200,
+      "params": {
+        "weapon": "how_152",
+        "rounds": 8,
+        "range_m": 12000
+      },
+      "why": "152 mm smoke screen, 8 rounds"
+    },
+    {
+      "id": "pact_illum_152",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "illum",
+      "sp_cost": 10,
+      "charges": 4,
+      "recharge_ticks": 1200,
+      "delay_ticks": 900,
+      "params": {
+        "weapon": "how_152",
+        "rounds": 2,
+        "range_m": 12000
+      },
+      "why": "152 mm illumination, 2 rounds"
+    },
+    {
+      "id": "pact_su25_strafe",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "strike_run",
+      "sp_cost": 65,
+      "charges": 2,
+      "recharge_ticks": 6000,
+      "delay_ticks": 1800,
+      "params": {
+        "impacts": 8,
+        "blast_radius_m": 12,
+        "blast_damage": 55,
+        "suppression": 40,
+        "length_m": 450,
+        "heading_deg": 180,
+        "interval_ticks": 3
+      },
+      "why": "Su-25 GSh-30-2 gun and S-8 rocket run: 8 bursts along 450 m"
+    },
+    {
+      "id": "pact_rbk500_cluster",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "strike_run",
+      "sp_cost": 75,
+      "charges": 1,
+      "recharge_ticks": 7200,
+      "delay_ticks": 2000,
+      "params": {
+        "impacts": 22,
+        "blast_radius_m": 15,
+        "blast_damage": 45,
+        "suppression": 60,
+        "length_m": 300,
+        "heading_deg": 180,
+        "interval_ticks": 1
+      },
+      "why": "Su-24M RBK-500 cluster pattern: 22 submunition clusters over 300 m"
+    },
+    {
+      "id": "pact_fab500_bombing",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "strike_run",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 6000,
+      "delay_ticks": 2000,
+      "params": {
+        "impacts": 4,
+        "blast_radius_m": 55,
+        "blast_damage": 180,
+        "suppression": 90,
+        "length_m": 200,
+        "heading_deg": 180,
+        "interval_ticks": 5
+      },
+      "why": "Su-24M stick of 4 FAB-500 (500 kg) over 200 m"
+    },
+    {
+      "id": "pact_su24_kh25mp_sead",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "sead",
+      "sp_cost": 80,
+      "charges": 1,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1800,
+      "params": {
+        "radius_m": 3000
+      },
+      "why": "Su-24M Kh-25MP anti-radiation missile at the nearest emitting SAM within 3 km"
+    },
+    {
+      "id": "pact_uragan_mines",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "minefield",
+      "sp_cost": 50,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1800,
+      "params": {
+        "radius_m": 150,
+        "density": 30
+      },
+      "why": "BM-27 Uragan 9M27K3 remote anti-tank mining rockets (PTM-1 mines): ~300 m minefield; ~3 min halved"
+    },
+    {
+      "id": "pact_mtu20_bridge",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "bridge",
+      "sp_cost": 40,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 3000,
+      "params": {
+        "length_m": 20,
+        "width_m": 8,
+        "heading_deg": 90
+      },
+      "why": "MTU-20 tank-launched bridge (18 m span), ~3 min to emplace; halved with travel"
+    },
+    {
+      "id": "pact_bat_fortify",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "fortify",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 6000,
+      "params": {
+        "length_m": 100,
+        "width_m": 8,
+        "heading_deg": 0
+      },
+      "why": "PZM-2 / BAT-M trench digger: 100 m of trench compressed to 5 min"
+    },
+    {
+      "id": "pact_bat_obstacle",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "obstacle",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 6000,
+      "params": {
+        "length_m": 100,
+        "width_m": 32,
+        "heading_deg": 90
+      },
+      "why": "BAT-M anti-tank ditch, 100 m, compressed to 5 min"
+    },
+    {
+      "id": "pact_ur77_breach",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "breach",
+      "sp_cost": 40,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1200,
+      "params": {
+        "length_m": 100,
+        "width_m": 16,
+        "heading_deg": 90
+      },
+      "why": "UR-77 Meteorit line charge (1978): a ~90 x 6-14 m lane through a minefield"
+    },
+    {
+      "id": "pact_mi8ppa_jamming",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "jam_radar",
+      "sp_cost": 50,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 3000,
+        "duration_ticks": 2400
+      },
+      "why": "Mi-8PPA airborne jammer (1980s): enemy air-defence gun radars degraded within 3 km for 2 min"
+    },
+    {
+      "id": "pact_r330_comms",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "jam_comms",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 4000,
+        "duration_ticks": 2400
+      },
+      "why": "R-330 series VHF comms jamming station: enemy fire-control nets within 4 km slowed for 2 min"
+    },
+    {
+      "id": "pact_chaff_corridor",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "decoy",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 2000,
+        "duration_ticks": 1800
+      },
+      "why": "chaff corridor and flares for a strike group: enemy missiles at our aircraft within 2 km degraded for 90 s"
+    },
+    {
+      "id": "pact_3bv3_tactical",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "tactical_nuke",
+      "sp_cost": 200,
+      "charges": 1,
+      "recharge_ticks": 1999980,
+      "delay_ticks": 2400,
+      "params": {
+        "blast_radius_m": 400,
+        "blast_damage": 3000,
+        "suppression": 200
+      },
+      "why": "152 mm 3BV3 nuclear shell from a 2S3 battery: only when the escalation has released tactical weapons (GS-04); one round"
+    },
+    {
+      "id": "pact_sovremenny_ngfs",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "barrage",
+      "sp_cost": 100,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 2400,
+      "params": {
+        "weapon": "naval_130",
+        "rounds": 40,
+        "range_m": 15000
+      },
+      "why": "Sovremenny-class destroyer AK-130 fire mission from the Baltic, 40 rounds at 15 km; ~4 min halved"
+    },
+    {
+      "id": "pact_krasnopol",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "precision",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "how_152",
+        "rounds": 4,
+        "cep_m": 3,
+        "designator_m": 3000
+      },
+      "why": "Krasnopol laser-guided 152 mm (1985): needs a friendly unit lasing the target within 3 km with line of sight"
+    },
+    {
+      "id": "pact_su25_napalm",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "strike_run",
+      "sp_cost": 70,
+      "charges": 1,
+      "recharge_ticks": 7200,
+      "delay_ticks": 2000,
+      "params": {
+        "impacts": 4,
+        "blast_radius_m": 30,
+        "blast_damage": 60,
+        "suppression": 90,
+        "length_m": 200,
+        "heading_deg": 180,
+        "interval_ticks": 4,
+        "incendiary": true
+      },
+      "why": "Su-25 ZAB-500 incendiary run: 4 canisters over 200 m set vehicles in the burst on fire"
+    },
+    {
+      "id": "pact_rk55_cruise",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "cruise",
+      "sp_cost": 150,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 4800,
+      "params": {
+        "blast_radius_m": 40,
+        "blast_damage": 600,
+        "suppression": 100
+      },
+      "why": "RK-55 Relief ground-launched cruise missile, conventional warhead: precise blast on the aim point"
+    },
+    {
+      "id": "pact_tu143_uav",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "reveal",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 1200,
+        "duration_ticks": 1200,
+        "air_only": false
+      },
+      "why": "Tu-143 Reys reconnaissance drone (1976): a 1.2 km strip revealed for 1 min"
+    },
+    {
+      "id": "pact_mig29_escort",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "escort",
+      "sp_cost": 50,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 3000,
+        "duration_ticks": 2400
+      },
+      "why": "MiG-29 escort for the strike group: enemy air-to-air missiles at our aircraft within 3 km degraded for 2 min"
+    },
+    {
+      "id": "pact_vdv_paradrop",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "air_landing",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 3000,
+      "params": {
+        "unit": "sov_motor_rifle_squad",
+        "count": 3,
+        "scatter_m": 150
+      },
+      "why": "VDV parachute landing: a platoon (3 squads, modelled with the motor rifle squad's infantry stats) dropped around the DZ"
+    },
+    {
+      "id": "pact_su24mr_recon",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "reveal",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 4800,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 1500,
+        "duration_ticks": 600,
+        "air_only": false
+      },
+      "why": "Su-24MR reconnaissance pass: everything within 1.5 km revealed for 30 s"
+    },
+    {
+      "id": "pact_a50_awacs",
+      "era": "coldwar",
+      "side": "Warsaw Pact",
+      "type": "reveal",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 15000,
+        "duration_ticks": 2400,
+        "air_only": true
+      },
+      "why": "A-50 Mainstay (in service from 1985): all aircraft within 15 km revealed for 2 min"
+    },
+    {
+      "id": "allies_105_battalion",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "barrage",
+      "sp_cost": 55,
+      "charges": 2,
+      "recharge_ticks": 4800,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "us_105mm_m2a1",
+        "rounds": 12,
+        "range_m": 8000
+      },
+      "why": "a 105 mm M2A1 battalion volley (3 batteries x 4 guns) through the forward observer; ~3 min halved"
+    },
+    {
+      "id": "allies_smoke_105",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "smoke",
+      "sp_cost": 20,
+      "charges": 3,
+      "recharge_ticks": 2400,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "us_105mm_m2a1",
+        "rounds": 8,
+        "range_m": 8000
+      },
+      "why": "105 mm WP smoke screen, 8 rounds"
+    },
+    {
+      "id": "allies_p47_strafe",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "strike_run",
+      "sp_cost": 65,
+      "charges": 2,
+      "recharge_ticks": 6000,
+      "delay_ticks": 2400,
+      "params": {
+        "impacts": 8,
+        "blast_radius_m": 12,
+        "blast_damage": 55,
+        "suppression": 50,
+        "length_m": 400,
+        "heading_deg": 0,
+        "interval_ticks": 3
+      },
+      "why": "P-47D cab-rank strafing run (8 x .50, HVARs) along 400 m; IX TAC response ~4 min halved"
+    },
+    {
+      "id": "allies_f5_recon",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "reveal",
+      "sp_cost": 30,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1800,
+      "params": {
+        "radius_m": 1500,
+        "duration_ticks": 600,
+        "air_only": false
+      },
+      "why": "F-5 (P-38) photo-reconnaissance pass: 1.5 km revealed for 30 s"
+    },
+    {
+      "id": "allies_waco_glider",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "air_landing",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 36000,
+      "delay_ticks": 3600,
+      "params": {
+        "unit": "us_rifle_squad_1944",
+        "count": 3,
+        "scatter_m": 200
+      },
+      "why": "Waco CG-4A glider landing: a rifle platoon (3 squads) scattered over the landing zone"
+    },
+    {
+      "id": "allies_b26_level",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "strike_run",
+      "sp_cost": 80,
+      "charges": 1,
+      "recharge_ticks": 9600,
+      "delay_ticks": 3600,
+      "params": {
+        "impacts": 8,
+        "blast_radius_m": 35,
+        "blast_damage": 150,
+        "suppression": 90,
+        "length_m": 400,
+        "heading_deg": 0,
+        "interval_ticks": 2
+      },
+      "why": "B-26 Marauder formation level bombing: 8 x 500 lb along 400 m; pre-planned ~6 min halved"
+    },
+    {
+      "id": "allies_p47_napalm",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "strike_run",
+      "sp_cost": 70,
+      "charges": 1,
+      "recharge_ticks": 7200,
+      "delay_ticks": 2400,
+      "params": {
+        "impacts": 2,
+        "blast_radius_m": 30,
+        "blast_damage": 60,
+        "suppression": 90,
+        "length_m": 60,
+        "heading_deg": 0,
+        "interval_ticks": 4,
+        "incendiary": true
+      },
+      "why": "P-47 with two 110 gal napalm fire bombs (used from mid-1944)"
+    },
+    {
+      "id": "allies_82nd_paradrop",
+      "era": "ww2",
+      "side": "Allies",
+      "type": "air_landing",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 36000,
+      "delay_ticks": 3600,
+      "params": {
+        "unit": "us_rifle_squad_1944",
+        "count": 3,
+        "scatter_m": 300
+      },
+      "why": "C-47 parachute drop of an airborne rifle platoon (3 squads, rifle-squad stats), widely scattered"
+    },
+    {
+      "id": "axis_fallschirmjaeger_drop",
+      "era": "ww2",
+      "side": "Axis",
+      "type": "air_landing",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 36000,
+      "delay_ticks": 3600,
+      "params": {
+        "unit": "ger_grenadier_squad_1944",
+        "count": 3,
+        "scatter_m": 300
+      },
+      "why": "Ju 52 Fallschirmj\u00e4ger drop (rare by 1944, e.g. Operation St\u00f6sser): 3 squads, grenadier-squad stats"
+    },
+    {
+      "id": "axis_lefh_battalion",
+      "era": "ww2",
+      "side": "Axis",
+      "type": "barrage",
+      "sp_cost": 55,
+      "charges": 2,
+      "recharge_ticks": 4800,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "ger_105mm_lefh18",
+        "rounds": 12,
+        "range_m": 8000
+      },
+      "why": "a leFH 18 Abteilung volley (3 batteries x 4 guns); ~3 min halved"
+    },
+    {
+      "id": "axis_nebelwerfer_battery",
+      "era": "ww2",
+      "side": "Axis",
+      "type": "barrage",
+      "sp_cost": 60,
+      "charges": 1,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "ger_150mm_nebelwerfer",
+        "rounds": 18,
+        "range_m": 5000
+      },
+      "why": "a Nebelwerfer 41 battery ripple: 3 launchers x 6 rockets"
+    },
+    {
+      "id": "axis_ju87_dive",
+      "era": "ww2",
+      "side": "Axis",
+      "type": "strike_run",
+      "sp_cost": 70,
+      "charges": 1,
+      "recharge_ticks": 7200,
+      "delay_ticks": 2400,
+      "params": {
+        "impacts": 1,
+        "blast_radius_m": 45,
+        "blast_damage": 300,
+        "suppression": 100,
+        "length_m": 0,
+        "heading_deg": 180,
+        "interval_ticks": 1
+      },
+      "why": "Ju 87 dive-bombing attack: one SC 500 placed on the aim point"
+    },
+    {
+      "id": "us_excalibur",
+      "era": "modern",
+      "side": "NATO",
+      "type": "precision",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1200,
+      "params": {
+        "weapon": "m284_155_he",
+        "rounds": 2,
+        "cep_m": 4,
+        "gps": true
+      },
+      "why": "M982 Excalibur GPS-guided 155 mm: ~4 m CEP, no designator; spoiled by GPS jamming (Wikipedia M982 Excalibur)"
+    },
+    {
+      "id": "us_gmlrs",
+      "era": "modern",
+      "side": "NATO",
+      "type": "precision",
+      "sp_cost": 90,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "gmlrs_m31",
+        "rounds": 2,
+        "cep_m": 2,
+        "gps": true
+      },
+      "why": "two GMLRS M31 unitary rockets from a HIMARS, GPS-guided (~1 m; 2 m used)"
+    },
+    {
+      "id": "us_switchblade600",
+      "era": "modern",
+      "side": "NATO",
+      "type": "loitering",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 3000,
+        "strikes": 1,
+        "interval_ticks": 1,
+        "pen": 760,
+        "blast_damage": 130,
+        "suppression": 50
+      },
+      "why": "Switchblade 600: 40 km / 40 min, Javelin-derived anti-armour warhead, top attack on the most valuable vehicle in view"
+    },
+    {
+      "id": "us_m1_ec_gps_jam",
+      "era": "modern",
+      "side": "NATO",
+      "type": "jam_gps",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 6000,
+        "duration_ticks": 4800
+      },
+      "why": "US EW detachment GPS/GLONASS denial over 6 km for 4 min (design)"
+    },
+    {
+      "id": "us_tomahawk_block5",
+      "era": "modern",
+      "side": "NATO",
+      "type": "cruise",
+      "sp_cost": 150,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 4800,
+      "params": {
+        "blast_radius_m": 40,
+        "blast_damage": 600,
+        "suppression": 100
+      },
+      "why": "Tomahawk Block V land-attack cruise missile from a destroyer: precise 450 kg warhead"
+    },
+    {
+      "id": "us_f35_sead",
+      "era": "modern",
+      "side": "NATO",
+      "type": "sead",
+      "sp_cost": 80,
+      "charges": 1,
+      "recharge_ticks": 9600,
+      "delay_ticks": 1800,
+      "params": {
+        "radius_m": 6000
+      },
+      "why": "F-35A suppression of enemy air defences: AARGM/GBU-53 against the nearest radar-directed air defence within 6 km"
+    },
+    {
+      "id": "us_sat_pass",
+      "era": "modern",
+      "side": "NATO",
+      "type": "reveal",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 48000,
+      "delay_ticks": 6000,
+      "params": {
+        "radius_m": 8000,
+        "duration_ticks": 400,
+        "air_only": false
+      },
+      "why": "commercial/military imaging satellite pass with rapid tasking: wide-area reveal for 20 s"
+    },
+    {
+      "id": "ru_kalibr_cruise",
+      "era": "modern",
+      "side": "Russia",
+      "type": "cruise",
+      "sp_cost": 150,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 4800,
+      "params": {
+        "blast_radius_m": 40,
+        "blast_damage": 600,
+        "suppression": 100
+      },
+      "why": "3M14 Kalibr land-attack cruise missile: precise 450 kg warhead"
+    },
+    {
+      "id": "ru_orlan10_recon",
+      "era": "modern",
+      "side": "Russia",
+      "type": "reveal",
+      "sp_cost": 25,
+      "charges": 3,
+      "recharge_ticks": 6000,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 2500,
+        "duration_ticks": 3600,
+        "air_only": false
+      },
+      "why": "Orlan-10 reconnaissance drone over the front: 2.5 km revealed for 3 min (spotting for artillery)"
+    },
+    {
+      "id": "us_e3g_awacs",
+      "era": "modern",
+      "side": "NATO",
+      "type": "reveal",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 20000,
+        "duration_ticks": 2400,
+        "air_only": true
+      },
+      "why": "E-3G AWACS on station: all aircraft within 20 km revealed for 2 min"
+    },
+    {
+      "id": "us_f22_escort",
+      "era": "modern",
+      "side": "NATO",
+      "type": "escort",
+      "sp_cost": 50,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 4000,
+        "duration_ticks": 2400
+      },
+      "why": "F-22A escort for the strike package: enemy air-to-air missiles at our aircraft within 4 km degraded"
+    },
+    {
+      "id": "us_ac130j_gunship",
+      "era": "modern",
+      "side": "NATO",
+      "type": "gunship",
+      "sp_cost": 110,
+      "charges": 1,
+      "recharge_ticks": 14400,
+      "delay_ticks": 2400,
+      "params": {
+        "radius_m": 1000,
+        "duration_ticks": 1800,
+        "interval_ticks": 60,
+        "blast_radius_m": 10,
+        "blast_damage": 130,
+        "suppression": 60
+      },
+      "why": "AC-130J Ghostrider orbit (105 mm, 30 mm, precision munitions): a hit every 3 s on the nearest visible enemy within 1 km for 90 s"
+    },
+    {
+      "id": "us_uh60m_air_assault",
+      "era": "modern",
+      "side": "NATO",
+      "type": "air_landing",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 2400,
+      "params": {
+        "unit": "us_infantry_squad_2026",
+        "count": 3,
+        "scatter_m": 60
+      },
+      "why": "UH-60M air assault: an infantry platoon (3 squads) landed at the LZ"
+    },
+    {
+      "id": "ru_a50u_awacs",
+      "era": "modern",
+      "side": "Russia",
+      "type": "reveal",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 20000,
+        "duration_ticks": 2400,
+        "air_only": true
+      },
+      "why": "A-50U Mainstay on station: all aircraft within 20 km revealed for 2 min"
+    },
+    {
+      "id": "ru_su35_escort",
+      "era": "modern",
+      "side": "Russia",
+      "type": "escort",
+      "sp_cost": 50,
+      "charges": 2,
+      "recharge_ticks": 9600,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 4000,
+        "duration_ticks": 2400
+      },
+      "why": "Su-35S escort for the strike group"
+    },
+    {
+      "id": "ru_mi8_air_assault",
+      "era": "modern",
+      "side": "Russia",
+      "type": "air_landing",
+      "sp_cost": 90,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 2400,
+      "params": {
+        "unit": "rus_motor_rifle_squad_2026",
+        "count": 3,
+        "scatter_m": 60
+      },
+      "why": "Mi-8AMTSh air assault: a platoon (3 sections) landed at the LZ"
+    },
+    {
+      "id": "ru_krasnopol_m2",
+      "era": "modern",
+      "side": "Russia",
+      "type": "precision",
+      "sp_cost": 60,
+      "charges": 2,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "2a64_152_he",
+        "rounds": 2,
+        "cep_m": 3,
+        "designator_m": 7000
+      },
+      "why": "Krasnopol-M2 laser-guided 152 mm: needs a laser designator (drone or observer) within 7 km"
+    },
+    {
+      "id": "ru_tornado_s_strike",
+      "era": "modern",
+      "side": "Russia",
+      "type": "precision",
+      "sp_cost": 90,
+      "charges": 2,
+      "recharge_ticks": 12000,
+      "delay_ticks": 1800,
+      "params": {
+        "weapon": "tornado_s_300",
+        "rounds": 2,
+        "cep_m": 10,
+        "gps": true
+      },
+      "why": "two 9M542 GLONASS-guided 300 mm rockets (Tornado-S, 120 km)"
+    },
+    {
+      "id": "ru_lancet3",
+      "era": "modern",
+      "side": "Russia",
+      "type": "loitering",
+      "sp_cost": 50,
+      "charges": 3,
+      "recharge_ticks": 7200,
+      "delay_ticks": 1800,
+      "params": {
+        "radius_m": 3000,
+        "strikes": 1,
+        "interval_ticks": 1,
+        "pen": 300,
+        "blast_damage": 90,
+        "suppression": 40
+      },
+      "why": "ZALA Lancet-3: 40 km / 40 min, 3 kg shaped charge (pen design), TV terminal guidance, top attack"
+    },
+    {
+      "id": "ru_fpv_strikes",
+      "era": "modern",
+      "side": "Russia",
+      "type": "fpv",
+      "sp_cost": 30,
+      "charges": 3,
+      "recharge_ticks": 4800,
+      "delay_ticks": 800,
+      "params": {
+        "radius_m": 2500,
+        "strikes": 4,
+        "interval_ticks": 40,
+        "pen": 450,
+        "blast_damage": 70,
+        "suppression": 40
+      },
+      "why": "an FPV drone section: four strikes with RPG-7 warheads (<$1,000 each, 10-20 km) on vehicles in view; jamming cuts their success"
+    },
+    {
+      "id": "ru_pole21_gps_jam",
+      "era": "modern",
+      "side": "Russia",
+      "type": "jam_gps",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 18000,
+      "delay_ticks": 600,
+      "params": {
+        "radius_m": 8000,
+        "duration_ticks": 4800
+      },
+      "why": "Pole-21 GPS/GLONASS jamming over 8 km for 4 min"
+    },
+    {
+      "id": "ru_r330zh_comms_jam",
+      "era": "modern",
+      "side": "Russia",
+      "type": "jam_comms",
+      "sp_cost": 40,
+      "charges": 1,
+      "recharge_ticks": 12000,
+      "delay_ticks": 1200,
+      "params": {
+        "radius_m": 5000,
+        "duration_ticks": 2400
+      },
+      "why": "R-330Zh Zhitel comms/drone-link jamming over 5 km"
+    }
+  ]
+}

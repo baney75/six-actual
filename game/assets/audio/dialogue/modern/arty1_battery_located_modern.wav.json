@@ -1,0 +1,55 @@
+{
+  "id": "arty1_battery_located_modern",
+  "kind": "dialogue",
+  "era": "modern",
+  "text": "Counter-battery radar has their guns. Firing back.",
+  "speaker": "arty1",
+  "mode": "design",
+  "instruction": "American male artillery officer in his fifties, gravelly low voice, methodical and precise over the radio",
+  "seed": 23,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:06:59-0400",
+    "directory": "parish-media:outputs/20261009-130659-voice-52c916",
+    "status": "success",
+    "unit": "parish-media-job-fd69f6a167a34798a48c82704a34bfe9.service",
+    "peak_gpu_mib_sampled": 4535,
+    "elapsed_seconds": 8.1,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:07:05.346096+00:00",
+    "input_text": "Counter-battery radar has their guns. Firing back.",
+    "segments_text": [
+      "Counter-battery radar has their guns. Firing back."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male artillery officer in his fifties, gravelly low voice, methodical and precise over the radio",
+    "language": "English",
+    "seed": 23,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 4.48,
+    "audio_sha256": "31d45d1eb8005e5664150ccc62aa561afe24ee03ae101ebbfe86007f96e35c0d",
+    "output": "parish-media:outputs/six-actual-voice/arty1_battery_located_modern.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "b281b9117a2da2b9",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Counter-battery radar has their guns, firing back.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

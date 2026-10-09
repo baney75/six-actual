@@ -1,0 +1,61 @@
+{
+  "operation": "md2f",
+  "era": "modern",
+  "text": "We could not hold the corridor. Tanks are coming through in the rain. Delay in depth, use the Javelins, and keep your formations dispersed.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+  "seed": 1202,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:35:43-0400",
+    "directory": "parish-media:outputs/20261009-123543-voice-3bcea6",
+    "status": "success",
+    "unit": "parish-media-job-d8669689cc9a4267a742551aca8c292f.service",
+    "peak_gpu_mib_sampled": 4549,
+    "elapsed_seconds": 10.13,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 68
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:35:52.467968+00:00",
+    "input_text": "We could not hold the corridor. Tanks are coming through in the rain. Delay in depth, use the Javelins, and keep your formations dispersed.",
+    "segments_text": [
+      "We could not hold the corridor. Tanks are coming through in the rain. Delay in depth, use the Javelins, and keep your formations dispersed."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+    "language": "English",
+    "seed": 1202,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 10.16,
+    "audio_sha256": "04aa14aff84829322f3d57dc45bcfa4527d66b8fcdfb6c337c3725d602c35251",
+    "output": "parish-media:outputs/six-actual-briefings/md2f.wav"
+  },
+  "loudness_before": {
+    "input_i": "-25.48",
+    "input_tp": "-7.72"
+  },
+  "loudness_after": {
+    "input_i": "-16.57",
+    "input_tp": "-1.46"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "We could not hold the corridor. Tanks are coming through in the rain. Delay in-depth. Use the javelins and keep your formations dispersed.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

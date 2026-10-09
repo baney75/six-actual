@@ -1,0 +1,55 @@
+{
+  "id": "xo_objective_lost_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "They have taken the objective. We go back in.",
+  "speaker": "xo",
+  "mode": "design",
+  "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+  "seed": 17,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:58:41-0400",
+    "directory": "parish-media:outputs/20261009-125841-voice-766a7d",
+    "status": "success",
+    "unit": "parish-media-job-b7284d970fa9480d9111d320f7dc6163.service",
+    "peak_gpu_mib_sampled": 4519,
+    "elapsed_seconds": 6.09,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 52
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:58:47.040281+00:00",
+    "input_text": "They have taken the objective. We go back in.",
+    "segments_text": [
+      "They have taken the objective. We go back in."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+    "language": "English",
+    "seed": 17,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.8,
+    "audio_sha256": "a80d251ee9dbc6cf8bf6fc2af9421b4faa35299ac3286efce76bf80b3b4073d6",
+    "output": "parish-media:outputs/six-actual-voice/xo_objective_lost_ww2.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "51b372527abb2cd2",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "They have taken the objective. We go back in.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

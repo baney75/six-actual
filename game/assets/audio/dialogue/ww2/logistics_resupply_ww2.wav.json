@@ -1,0 +1,55 @@
+{
+  "id": "logistics_resupply_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "Logistics, resupply under way. Ammunition and fuel moving forward.",
+  "speaker": "logistics",
+  "mode": "design",
+  "instruction": "American male supply officer in his fifties, patient and practical, warm mid voice over the radio",
+  "seed": 28,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:15:18-0400",
+    "directory": "parish-media:outputs/20261009-131518-voice-ce732e",
+    "status": "success",
+    "unit": "parish-media-job-031fdf69e5ff4c739520202295d8d1b0.service",
+    "peak_gpu_mib_sampled": 4531,
+    "elapsed_seconds": 8.1,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:15:25.146241+00:00",
+    "input_text": "Logistics, resupply under way. Ammunition and fuel moving forward.",
+    "segments_text": [
+      "Logistics, resupply under way. Ammunition and fuel moving forward."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male supply officer in his fifties, patient and practical, warm mid voice over the radio",
+    "language": "English",
+    "seed": 28,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 5.12,
+    "audio_sha256": "1a1a9fd42a1756c1a1eede13d05d3c77ba55c8b33e312073e2d02364c00de643",
+    "output": "parish-media:outputs/six-actual-voice/logistics_resupply_ww2.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "c9a82bd5b09fe64a",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Logistics resupply underway. Ammunition and fuel moving forward.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

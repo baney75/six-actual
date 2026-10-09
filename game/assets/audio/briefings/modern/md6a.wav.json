@@ -1,0 +1,61 @@
+{
+  "operation": "md6a",
+  "era": "modern",
+  "text": "The last brigade on our side of the border is cut off. Destroy it and the border is ours again.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+  "seed": 1209,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:37:15-0400",
+    "directory": "parish-media:outputs/20261009-123715-voice-df6e69",
+    "status": "success",
+    "unit": "parish-media-job-19f7fa499601453d88034d643d9160e0.service",
+    "peak_gpu_mib_sampled": 4629,
+    "elapsed_seconds": 10.11,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:37:23.025073+00:00",
+    "input_text": "The last brigade on our side of the border is cut off. Destroy it and the border is ours again.",
+    "segments_text": [
+      "The last brigade on our side of the border is cut off. Destroy it and the border is ours again."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+    "language": "English",
+    "seed": 1209,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 6.88,
+    "audio_sha256": "b2b8132549aa1fdfcf5fd5b09ffb735a08a2960e58295b11ff473829dfe4f4e1",
+    "output": "parish-media:outputs/six-actual-briefings/md6a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-27.66",
+    "input_tp": "-12.02"
+  },
+  "loudness_after": {
+    "input_i": "-16.00",
+    "input_tp": "-1.49"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "The last brigade on our side of the border is cut off. Destroy it, and the border is ours again.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

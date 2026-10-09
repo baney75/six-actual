@@ -1,0 +1,55 @@
+{
+  "id": "air1_request_coldwar",
+  "kind": "dialogue",
+  "era": "coldwar",
+  "text": "Air one requesting a strike on the marked target.",
+  "speaker": "air1",
+  "mode": "design",
+  "instruction": "American male pilot in his thirties, cool and laconic, relaxed drawl over aircraft radio",
+  "seed": 25,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:10:31-0400",
+    "directory": "parish-media:outputs/20261009-131031-voice-d272ad",
+    "status": "success",
+    "unit": "parish-media-job-6b411f6afcb645f88c224bc87638b311.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.08,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:10:36.596072+00:00",
+    "input_text": "Air one requesting a strike on the marked target.",
+    "segments_text": [
+      "Air one requesting a strike on the marked target."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male pilot in his thirties, cool and laconic, relaxed drawl over aircraft radio",
+    "language": "English",
+    "seed": 25,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.4,
+    "audio_sha256": "e08d0fe177b0c464c5ef645a4e7f04351cab4cdbdca4192e47ba28fcb522942d",
+    "output": "parish-media:outputs/six-actual-voice/air1_request_coldwar.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "09603aba07ddb92c",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Air 1 requesting a strike on the marked target.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

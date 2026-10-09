@@ -1,0 +1,55 @@
+{
+  "id": "army2_request_modern",
+  "kind": "dialogue",
+  "era": "modern",
+  "text": "Second maneuver requesting approval to push forward.",
+  "speaker": "army2",
+  "mode": "design",
+  "instruction": "American female infantry officer in her thirties, firm and level, clear mid voice over a field radio",
+  "seed": 22,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:04:31-0400",
+    "directory": "parish-media:outputs/20261009-130431-voice-91d69a",
+    "status": "success",
+    "unit": "parish-media-job-1fc0b6ac5d4541d2aade2f80e21c2f34.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.09,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 49
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:04:36.652642+00:00",
+    "input_text": "Second maneuver requesting approval to push forward.",
+    "segments_text": [
+      "Second maneuver requesting approval to push forward."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American female infantry officer in her thirties, firm and level, clear mid voice over a field radio",
+    "language": "English",
+    "seed": 22,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.64,
+    "audio_sha256": "07efce1fddb491102d79d3fcc710d6d461018e18ab6b2cbf2f859e05748907d0",
+    "output": "parish-media:outputs/six-actual-voice/army2_request_modern.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "c9d94db2c2457198",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Second maneuver requesting approval to push forward.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

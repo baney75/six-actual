@@ -1,0 +1,5941 @@
+{
+  "version": 1,
+  "decks": [
+    {
+      "id": "us_1989_armored",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United States",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "m1a1_abrams",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m60a3_tts",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 190
+        },
+        {
+          "unit": "m2a2_bradley",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 220
+        },
+        {
+          "unit": "m3a2_bradley_cfv",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 220
+        },
+        {
+          "unit": "m113a2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m901_itv",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "us_mech_rifle_squad",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "m47_dragon_team",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "m220_tow_team",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 145
+        },
+        {
+          "unit": "m577a2_cp",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "us_scout_section",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m106a2_mortar",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "m109a3_sph",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "m270_mlrs",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m163_vads",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "m48_chaparral",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "stinger_team",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "m977_hemtt",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 120
+        },
+        {
+          "unit": "m88a1_arv",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "ah64a_apache",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 270
+        },
+        {
+          "unit": "oh58d_kiowa_warrior",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 125
+        },
+        {
+          "unit": "uh60a_black_hawk",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 150
+        },
+        {
+          "unit": "a10a_thunderbolt",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 390
+        },
+        {
+          "unit": "f16c_block30",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 290
+        },
+        {
+          "unit": "f15c_eagle",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        },
+        {
+          "unit": "a10a_cbu87",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        }
+      ]
+    },
+    {
+      "id": "su_1989_motor_rifle",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Soviet Union (GSFG)",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "t80bv",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 295
+        },
+        {
+          "unit": "t64bv",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 285
+        },
+        {
+          "unit": "bmp2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "bmp1p",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "btr80",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "brdm2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "9p148_konkurs",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "sov_motor_rifle_squad",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "9k111_fagot_team",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "bmp1ksh",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "sov_razvedka_section",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "2s12_sani",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "2s1_gvozdika",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "2s3_akatsiya",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 160
+        },
+        {
+          "unit": "bm21_grad",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "zsu23_4_shilka",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "9k35_strela10",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "9k38_igla_team",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "ural4320",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "brem1",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "mi24v_hind",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 215
+        },
+        {
+          "unit": "mi8mt_hip",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "su25_frogfoot",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 340
+        },
+        {
+          "unit": "mig29_9_12",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "su24m_fencer",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "su25_zab500",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 265
+        },
+        {
+          "unit": "su24m_kh58",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 245
+        }
+      ]
+    },
+    {
+      "id": "us_1989_heavy_division",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United States",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "m1a1_abrams",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m60a3_tts",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 190
+        },
+        {
+          "unit": "m2a2_bradley",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 220
+        },
+        {
+          "unit": "m3a2_bradley_cfv",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 220
+        },
+        {
+          "unit": "m113a2",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m901_itv",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "us_mech_rifle_squad",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "m47_dragon_team",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "m220_tow_team",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 145
+        },
+        {
+          "unit": "m577a2_cp",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "us_scout_section",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m106a2_mortar",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "m109a3_sph",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "m270_mlrs",
+          "count": 4,
+          "max_count": 4,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m163_vads",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "m48_chaparral",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "stinger_team",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "m977_hemtt",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 120
+        },
+        {
+          "unit": "m88a1_arv",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "ah64a_apache",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 270
+        },
+        {
+          "unit": "oh58d_kiowa_warrior",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 125
+        },
+        {
+          "unit": "uh60a_black_hawk",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 150
+        },
+        {
+          "unit": "a10a_thunderbolt",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 390
+        },
+        {
+          "unit": "f16c_block30",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 290
+        },
+        {
+          "unit": "f15c_eagle",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        },
+        {
+          "unit": "a10a_cbu87",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        }
+      ]
+    },
+    {
+      "id": "su_1989_tank_division",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Soviet Union (GSFG)",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "t80bv",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 295
+        },
+        {
+          "unit": "t64bv",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 285
+        },
+        {
+          "unit": "bmp2",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "bmp1p",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "btr80",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "brdm2",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "9p148_konkurs",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "sov_motor_rifle_squad",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "9k111_fagot_team",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "bmp1ksh",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "sov_razvedka_section",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "2s12_sani",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "2s1_gvozdika",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "2s3_akatsiya",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 160
+        },
+        {
+          "unit": "bm21_grad",
+          "count": 3,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "zsu23_4_shilka",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "9k35_strela10",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "9k38_igla_team",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "ural4320",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "brem1",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "mi24v_hind",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 215
+        },
+        {
+          "unit": "mi8mt_hip",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "su25_frogfoot",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 340
+        },
+        {
+          "unit": "mig29_9_12",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "su24m_fencer",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "su25_zab500",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 265
+        },
+        {
+          "unit": "su24m_kh58",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 245
+        }
+      ]
+    },
+    {
+      "id": "us_1989_armored_cavalry",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United States",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "m1a1_abrams",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m60a3_tts",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 190
+        },
+        {
+          "unit": "m2a2_bradley",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 220
+        },
+        {
+          "unit": "m3a2_bradley_cfv",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 220
+        },
+        {
+          "unit": "m113a2",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m901_itv",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "us_mech_rifle_squad",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "m47_dragon_team",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "m220_tow_team",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 145
+        },
+        {
+          "unit": "m577a2_cp",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "us_scout_section",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m106a2_mortar",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "m109a3_sph",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "m270_mlrs",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m163_vads",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "m48_chaparral",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "stinger_team",
+          "count": 3,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "m977_hemtt",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 120
+        },
+        {
+          "unit": "m88a1_arv",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "ah64a_apache",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 270
+        },
+        {
+          "unit": "oh58d_kiowa_warrior",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 125
+        },
+        {
+          "unit": "uh60a_black_hawk",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 150
+        },
+        {
+          "unit": "a10a_thunderbolt",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 390
+        },
+        {
+          "unit": "f16c_block30",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 290
+        },
+        {
+          "unit": "f15c_eagle",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        },
+        {
+          "unit": "a10a_cbu87",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        }
+      ]
+    },
+    {
+      "id": "su_1989_forward_detachment",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Soviet Union (GSFG)",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "t80bv",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 295
+        },
+        {
+          "unit": "t64bv",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 285
+        },
+        {
+          "unit": "bmp2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "bmp1p",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "btr80",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "brdm2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "9p148_konkurs",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "sov_motor_rifle_squad",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "9k111_fagot_team",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "bmp1ksh",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "sov_razvedka_section",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "2s12_sani",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "2s1_gvozdika",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "2s3_akatsiya",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 160
+        },
+        {
+          "unit": "bm21_grad",
+          "count": 1,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "zsu23_4_shilka",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "9k35_strela10",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "9k38_igla_team",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "ural4320",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "brem1",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "mi24v_hind",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 215
+        },
+        {
+          "unit": "mi8mt_hip",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "su25_frogfoot",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 340
+        },
+        {
+          "unit": "mig29_9_12",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "su24m_fencer",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "su25_zab500",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 265
+        },
+        {
+          "unit": "su24m_kh58",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 245
+        }
+      ]
+    },
+    {
+      "id": "us_1989_air_cavalry",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United States",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "m1a1_abrams",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m60a3_tts",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 190
+        },
+        {
+          "unit": "m2a2_bradley",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 220
+        },
+        {
+          "unit": "m3a2_bradley_cfv",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 220
+        },
+        {
+          "unit": "m113a2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m901_itv",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "us_mech_rifle_squad",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "m47_dragon_team",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "m220_tow_team",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 145
+        },
+        {
+          "unit": "m577a2_cp",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "us_scout_section",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m106a2_mortar",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "m109a3_sph",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "m270_mlrs",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "m163_vads",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "m48_chaparral",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "stinger_team",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "m977_hemtt",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 120
+        },
+        {
+          "unit": "m88a1_arv",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "ah64a_apache",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 270
+        },
+        {
+          "unit": "oh58d_kiowa_warrior",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 125
+        },
+        {
+          "unit": "uh60a_black_hawk",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 150
+        },
+        {
+          "unit": "a10a_thunderbolt",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 390
+        },
+        {
+          "unit": "f16c_block30",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 290
+        },
+        {
+          "unit": "f15c_eagle",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        },
+        {
+          "unit": "a10a_cbu87",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 305
+        }
+      ]
+    },
+    {
+      "id": "su_1989_air_assault",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Soviet Union (GSFG)",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "t80bv",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 295
+        },
+        {
+          "unit": "t64bv",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 285
+        },
+        {
+          "unit": "bmp2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "bmp1p",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "btr80",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "brdm2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "9p148_konkurs",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "sov_motor_rifle_squad",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "9k111_fagot_team",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "bmp1ksh",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "sov_razvedka_section",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "2s12_sani",
+          "count": 1,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "2s1_gvozdika",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "2s3_akatsiya",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 160
+        },
+        {
+          "unit": "bm21_grad",
+          "count": 1,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "zsu23_4_shilka",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "9k35_strela10",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "9k38_igla_team",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 85
+        },
+        {
+          "unit": "ural4320",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "brem1",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "mi24v_hind",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 215
+        },
+        {
+          "unit": "mi8mt_hip",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "su25_frogfoot",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 340
+        },
+        {
+          "unit": "mig29_9_12",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "su24m_fencer",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 330
+        },
+        {
+          "unit": "su25_zab500",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 265
+        },
+        {
+          "unit": "su24m_kh58",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 245
+        }
+      ]
+    },
+    {
+      "id": "frg_1989_panzergrenadier",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "West Germany",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "leopard2a4",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 170
+        },
+        {
+          "unit": "leopard1a5",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "marder1a3",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "gepard",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "frg_pzgren_squad",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "frg_milan_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "man_kat1",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "pah1",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "alpha_jet_a",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "m109a3g",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "m113_bw",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "m577_bw",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 35
+        }
+      ]
+    },
+    {
+      "id": "frg_1989_panzer_division",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "West Germany",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "leopard2a4",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 170
+        },
+        {
+          "unit": "leopard1a5",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "marder1a3",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "gepard",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "frg_pzgren_squad",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "frg_milan_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "man_kat1",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "pah1",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "alpha_jet_a",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "m109a3g",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "m113_bw",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "m577_bw",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 35
+        }
+      ]
+    },
+    {
+      "id": "frg_1989_panzeraufklaerer",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "West Germany",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "leopard2a4",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 170
+        },
+        {
+          "unit": "leopard1a5",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "marder1a3",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "gepard",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "frg_pzgren_squad",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "frg_milan_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "man_kat1",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "pah1",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "alpha_jet_a",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "m109a3g",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "m113_bw",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "m577_bw",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 35
+        }
+      ]
+    },
+    {
+      "id": "frg_1989_heeresflieger",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "West Germany",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "leopard2a4",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 170
+        },
+        {
+          "unit": "leopard1a5",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "marder1a3",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "gepard",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "frg_pzgren_squad",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "frg_milan_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "man_kat1",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "pah1",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "alpha_jet_a",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "m109a3g",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "m113_bw",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "m577_bw",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 35
+        }
+      ]
+    },
+    {
+      "id": "uk_1989_mechanised_brigade",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United Kingdom",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "challenger1",
+          "count": 8,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 175
+        },
+        {
+          "unit": "warrior_fv510",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 60
+        },
+        {
+          "unit": "scimitar_fv107",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "rapier_fsb",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "uk_infantry_section_1989",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "uk_milan_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "harrier_gr5",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "bedford_mk",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m109_uk",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 115
+        }
+      ]
+    },
+    {
+      "id": "uk_1989_armoured_division",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United Kingdom",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "challenger1",
+          "count": 12,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 175
+        },
+        {
+          "unit": "warrior_fv510",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 60
+        },
+        {
+          "unit": "scimitar_fv107",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "rapier_fsb",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "uk_infantry_section_1989",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "uk_milan_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "harrier_gr5",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "bedford_mk",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m109_uk",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 115
+        }
+      ]
+    },
+    {
+      "id": "uk_1989_armoured_recce",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United Kingdom",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "challenger1",
+          "count": 4,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 175
+        },
+        {
+          "unit": "warrior_fv510",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 60
+        },
+        {
+          "unit": "scimitar_fv107",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "rapier_fsb",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "uk_infantry_section_1989",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "uk_milan_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "harrier_gr5",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "bedford_mk",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m109_uk",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 115
+        }
+      ]
+    },
+    {
+      "id": "uk_1989_raf_germany",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "United Kingdom",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "challenger1",
+          "count": 6,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 175
+        },
+        {
+          "unit": "warrior_fv510",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 60
+        },
+        {
+          "unit": "scimitar_fv107",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "rapier_fsb",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "uk_infantry_section_1989",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "uk_milan_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "harrier_gr5",
+          "count": 8,
+          "max_count": 8,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "bedford_mk",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "m109_uk",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 115
+        }
+      ]
+    },
+    {
+      "id": "fr_1989_division_blindee",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "France",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "amx30b2",
+          "count": 8,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "amx10p",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 50
+        },
+        {
+          "unit": "amx10rc",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "vab",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "roland_amx30",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "auf1",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 125
+        },
+        {
+          "unit": "fr_infantry_squad_1989",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "fr_milan_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "gazelle_hot",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "renault_trm10000",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "fr_1989_regiment_de_chars",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "France",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "amx30b2",
+          "count": 12,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "amx10p",
+          "count": 2,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 50
+        },
+        {
+          "unit": "amx10rc",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "vab",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "roland_amx30",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "auf1",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 125
+        },
+        {
+          "unit": "fr_infantry_squad_1989",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "fr_milan_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "gazelle_hot",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "renault_trm10000",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "fr_1989_cavalerie_legere",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "France",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "amx30b2",
+          "count": 4,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "amx10p",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 50
+        },
+        {
+          "unit": "amx10rc",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "vab",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "roland_amx30",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "auf1",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 125
+        },
+        {
+          "unit": "fr_infantry_squad_1989",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "fr_milan_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "gazelle_hot",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "renault_trm10000",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "fr_1989_alat",
+      "side": "NATO",
+      "era": "coldwar",
+      "nation": "France",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "amx30b2",
+          "count": 6,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 90
+        },
+        {
+          "unit": "amx10p",
+          "count": 3,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 50
+        },
+        {
+          "unit": "amx10rc",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "vab",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "roland_amx30",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "auf1",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 125
+        },
+        {
+          "unit": "fr_infantry_squad_1989",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "fr_milan_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "gazelle_hot",
+          "count": 8,
+          "max_count": 8,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "renault_trm10000",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "nva_1989_mot_schuetzen",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "East Germany",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "t72m1_nva",
+          "count": 8,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 160
+        },
+        {
+          "unit": "bmp1_nva",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "spw70",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        },
+        {
+          "unit": "nva_mot_rifle_squad",
+          "count": 12,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "w50_truck",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "2s1_nva",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zsu23_4_nva",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "mi24_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "mig29_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 225
+        },
+        {
+          "unit": "su22m4_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "mi8_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 125
+        }
+      ]
+    },
+    {
+      "id": "nva_1989_panzer_division",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "East Germany",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "t72m1_nva",
+          "count": 12,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 160
+        },
+        {
+          "unit": "bmp1_nva",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "spw70",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        },
+        {
+          "unit": "nva_mot_rifle_squad",
+          "count": 9,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "w50_truck",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "2s1_nva",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zsu23_4_nva",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "mi24_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "mig29_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 225
+        },
+        {
+          "unit": "su22m4_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "mi8_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 125
+        }
+      ]
+    },
+    {
+      "id": "nva_1989_aufklaerung",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "East Germany",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "t72m1_nva",
+          "count": 4,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 160
+        },
+        {
+          "unit": "bmp1_nva",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "spw70",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        },
+        {
+          "unit": "nva_mot_rifle_squad",
+          "count": 15,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "w50_truck",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "2s1_nva",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zsu23_4_nva",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "mi24_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "mig29_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 225
+        },
+        {
+          "unit": "su22m4_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "mi8_nva",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 125
+        }
+      ]
+    },
+    {
+      "id": "nva_1989_luftstreitkraefte",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "East Germany",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "t72m1_nva",
+          "count": 6,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 160
+        },
+        {
+          "unit": "bmp1_nva",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "spw70",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        },
+        {
+          "unit": "nva_mot_rifle_squad",
+          "count": 12,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "w50_truck",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "2s1_nva",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zsu23_4_nva",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "mi24_nva",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "mig29_nva",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 225
+        },
+        {
+          "unit": "su22m4_nva",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 300
+        },
+        {
+          "unit": "mi8_nva",
+          "count": 2,
+          "max_count": 2,
+          "phase": "A",
+          "cost": 125
+        }
+      ]
+    },
+    {
+      "id": "pl_1989_zmechanizowana",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Poland",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "t72m1_pl",
+          "count": 8,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 180
+        },
+        {
+          "unit": "bwp1",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "skot_ot64",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "pl_infantry_squad",
+          "count": 12,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "su22m4",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 335
+        },
+        {
+          "unit": "star266",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "mig29_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "mi8_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "ural4320_pl",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "2s1_pl",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "zsu23_4_pl",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "mi24_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 215
+        }
+      ]
+    },
+    {
+      "id": "pl_1989_pancerna",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Poland",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "t72m1_pl",
+          "count": 12,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 180
+        },
+        {
+          "unit": "bwp1",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "skot_ot64",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "pl_infantry_squad",
+          "count": 9,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "su22m4",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 335
+        },
+        {
+          "unit": "star266",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "mig29_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "mi8_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "ural4320_pl",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "2s1_pl",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "zsu23_4_pl",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "mi24_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 215
+        }
+      ]
+    },
+    {
+      "id": "pl_1989_rozpoznawcza",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Poland",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "t72m1_pl",
+          "count": 4,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 180
+        },
+        {
+          "unit": "bwp1",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "skot_ot64",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "pl_infantry_squad",
+          "count": 15,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "su22m4",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 335
+        },
+        {
+          "unit": "star266",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "mig29_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "mi8_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "ural4320_pl",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "2s1_pl",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "zsu23_4_pl",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "mi24_pl",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 215
+        }
+      ]
+    },
+    {
+      "id": "pl_1989_lotnictwo",
+      "side": "Warsaw Pact",
+      "era": "coldwar",
+      "nation": "Poland",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "t72m1_pl",
+          "count": 6,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 180
+        },
+        {
+          "unit": "bwp1",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "skot_ot64",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "pl_infantry_squad",
+          "count": 12,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "su22m4",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 335
+        },
+        {
+          "unit": "star266",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "mig29_pl",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 250
+        },
+        {
+          "unit": "mi8_pl",
+          "count": 2,
+          "max_count": 2,
+          "phase": "A",
+          "cost": 140
+        },
+        {
+          "unit": "ural4320_pl",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 90
+        },
+        {
+          "unit": "2s1_pl",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "zsu23_4_pl",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "mi24_pl",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 215
+        }
+      ]
+    },
+    {
+      "id": "us_1944_infantry_division",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United States",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "m4a3_75w",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "m4a3e8_76w",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "m10_wolverine",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "m18_hellcat",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "m36_jackson",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "m5a1_stuart",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m8_greyhound",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "m3_halftrack",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "m7_priest",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "m16_mgmc",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "m2a1_105_towed",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "us_rifle_squad_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "us_bazooka_team_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "us_81mm_mortar_1944",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "p47d_thunderbolt",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "gmc_cckw",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        }
+      ]
+    },
+    {
+      "id": "ger_1944_infanterie_division",
+      "side": "Axis",
+      "era": "ww2",
+      "nation": "",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "panzer_iv_h",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 75
+        },
+        {
+          "unit": "panther_g",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "tiger_i",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 120
+        },
+        {
+          "unit": "tiger_ii",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 150
+        },
+        {
+          "unit": "stug_iii_g",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "jagdpanzer_iv_70",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "sdkfz_251_1",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "sdkfz_234_2_puma",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "wespe",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "wirbelwind",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "lefh18_towed",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "ger_grenadier_squad_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ger_panzerschreck_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "ger_grw34_mortar",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "fw190f8",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "opel_blitz",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "us_1944_armored_division",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United States",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "m4a3_75w",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "m4a3e8_76w",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "m10_wolverine",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "m18_hellcat",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "m36_jackson",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "m5a1_stuart",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m8_greyhound",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "m3_halftrack",
+          "count": 2,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "m7_priest",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "m16_mgmc",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "m2a1_105_towed",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "us_rifle_squad_1944",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "us_bazooka_team_1944",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "us_81mm_mortar_1944",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "p47d_thunderbolt",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "gmc_cckw",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        }
+      ]
+    },
+    {
+      "id": "ger_1944_panzer_division",
+      "side": "Axis",
+      "era": "ww2",
+      "nation": "",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "panzer_iv_h",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 75
+        },
+        {
+          "unit": "panther_g",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "tiger_i",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 120
+        },
+        {
+          "unit": "tiger_ii",
+          "count": 2,
+          "max_count": 2,
+          "phase": "C",
+          "cost": 150
+        },
+        {
+          "unit": "stug_iii_g",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "jagdpanzer_iv_70",
+          "count": 2,
+          "max_count": 2,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "sdkfz_251_1",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "sdkfz_234_2_puma",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "wespe",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "wirbelwind",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "lefh18_towed",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "ger_grenadier_squad_1944",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ger_panzerschreck_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "ger_grw34_mortar",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "fw190f8",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "opel_blitz",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "us_1944_cavalry_group",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United States",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "m4a3_75w",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "m4a3e8_76w",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "m10_wolverine",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "m18_hellcat",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "m36_jackson",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "m5a1_stuart",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m8_greyhound",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "m3_halftrack",
+          "count": 4,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "m7_priest",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "m16_mgmc",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "m2a1_105_towed",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "us_rifle_squad_1944",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "us_bazooka_team_1944",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "us_81mm_mortar_1944",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "p47d_thunderbolt",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "gmc_cckw",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        }
+      ]
+    },
+    {
+      "id": "ger_1944_aufklaerung",
+      "side": "Axis",
+      "era": "ww2",
+      "nation": "",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "panzer_iv_h",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 75
+        },
+        {
+          "unit": "panther_g",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "tiger_i",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 120
+        },
+        {
+          "unit": "tiger_ii",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 150
+        },
+        {
+          "unit": "stug_iii_g",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "jagdpanzer_iv_70",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "sdkfz_251_1",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "sdkfz_234_2_puma",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "wespe",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "wirbelwind",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "lefh18_towed",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "ger_grenadier_squad_1944",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ger_panzerschreck_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "ger_grw34_mortar",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "fw190f8",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "opel_blitz",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "us_1944_ixth_tac_air",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United States",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "m4a3_75w",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "m4a3e8_76w",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "m10_wolverine",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 85
+        },
+        {
+          "unit": "m18_hellcat",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "m36_jackson",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "m5a1_stuart",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "m8_greyhound",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "m3_halftrack",
+          "count": 3,
+          "max_count": 4,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "m7_priest",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 135
+        },
+        {
+          "unit": "m16_mgmc",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "m2a1_105_towed",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "us_rifle_squad_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "us_bazooka_team_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "us_81mm_mortar_1944",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 95
+        },
+        {
+          "unit": "p47d_thunderbolt",
+          "count": 8,
+          "max_count": 8,
+          "phase": "B",
+          "cost": 190
+        },
+        {
+          "unit": "gmc_cckw",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 75
+        }
+      ]
+    },
+    {
+      "id": "ger_1944_schlachtgeschwader",
+      "side": "Axis",
+      "era": "ww2",
+      "nation": "",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "panzer_iv_h",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 75
+        },
+        {
+          "unit": "panther_g",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 110
+        },
+        {
+          "unit": "tiger_i",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 120
+        },
+        {
+          "unit": "tiger_ii",
+          "count": 1,
+          "max_count": 1,
+          "phase": "C",
+          "cost": 150
+        },
+        {
+          "unit": "stug_iii_g",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 80
+        },
+        {
+          "unit": "jagdpanzer_iv_70",
+          "count": 1,
+          "max_count": 1,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "sdkfz_251_1",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "sdkfz_234_2_puma",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 75
+        },
+        {
+          "unit": "wespe",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "wirbelwind",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 75
+        },
+        {
+          "unit": "lefh18_towed",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "ger_grenadier_squad_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ger_panzerschreck_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "ger_grw34_mortar",
+          "count": 2,
+          "max_count": 3,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "fw190f8",
+          "count": 8,
+          "max_count": 8,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "opel_blitz",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 80
+        }
+      ]
+    },
+    {
+      "id": "uk_1944_infantry_division",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United Kingdom",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "sherman_firefly_vc",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "cromwell_iv",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "churchill_vii",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 115
+        },
+        {
+          "unit": "universal_carrier",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "uk_25pdr_towed",
+          "count": 4,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "uk_rifle_section_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "uk_piat_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "typhoon_ib",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "bedford_ql",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "daimler_ac",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        }
+      ]
+    },
+    {
+      "id": "uk_1944_guards_armoured",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United Kingdom",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "sherman_firefly_vc",
+          "count": 4,
+          "max_count": 4,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "cromwell_iv",
+          "count": 4,
+          "max_count": 4,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "churchill_vii",
+          "count": 4,
+          "max_count": 4,
+          "phase": "C",
+          "cost": 115
+        },
+        {
+          "unit": "universal_carrier",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "uk_25pdr_towed",
+          "count": 4,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "uk_rifle_section_1944",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "uk_piat_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "typhoon_ib",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "bedford_ql",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "daimler_ac",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        }
+      ]
+    },
+    {
+      "id": "uk_1944_recce_regiment",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United Kingdom",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "sherman_firefly_vc",
+          "count": 1,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "cromwell_iv",
+          "count": 1,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "churchill_vii",
+          "count": 1,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 115
+        },
+        {
+          "unit": "universal_carrier",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "uk_25pdr_towed",
+          "count": 4,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "uk_rifle_section_1944",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "uk_piat_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "typhoon_ib",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "bedford_ql",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "daimler_ac",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        }
+      ]
+    },
+    {
+      "id": "uk_1944_2nd_tactical_air",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "United Kingdom",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "sherman_firefly_vc",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "cromwell_iv",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 95
+        },
+        {
+          "unit": "churchill_vii",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 115
+        },
+        {
+          "unit": "universal_carrier",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 35
+        },
+        {
+          "unit": "uk_25pdr_towed",
+          "count": 4,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 100
+        },
+        {
+          "unit": "uk_rifle_section_1944",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "uk_piat_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 30
+        },
+        {
+          "unit": "typhoon_ib",
+          "count": 8,
+          "max_count": 8,
+          "phase": "B",
+          "cost": 195
+        },
+        {
+          "unit": "bedford_ql",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "daimler_ac",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 60
+        }
+      ]
+    },
+    {
+      "id": "su_1944_rifle_corps",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "Soviet Union",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "t34_85",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 105
+        },
+        {
+          "unit": "is2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 125
+        },
+        {
+          "unit": "su100",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "su76m",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "su_zis3_towed",
+          "count": 4,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "t70",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ba64b",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "su_rifle_squad_1944",
+          "count": 12,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "su_61k_aa",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "il2m3",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 240
+        },
+        {
+          "unit": "studebaker_us6",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 85
+        }
+      ]
+    },
+    {
+      "id": "su_1944_guards_tank_army",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "Soviet Union",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "t34_85",
+          "count": 4,
+          "max_count": 4,
+          "phase": "C",
+          "cost": 105
+        },
+        {
+          "unit": "is2",
+          "count": 4,
+          "max_count": 4,
+          "phase": "C",
+          "cost": 125
+        },
+        {
+          "unit": "su100",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "su76m",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "su_zis3_towed",
+          "count": 4,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "t70",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ba64b",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "su_rifle_squad_1944",
+          "count": 9,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "su_61k_aa",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "il2m3",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 240
+        },
+        {
+          "unit": "studebaker_us6",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 85
+        }
+      ]
+    },
+    {
+      "id": "su_1944_mobile_group",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "Soviet Union",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "t34_85",
+          "count": 1,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 105
+        },
+        {
+          "unit": "is2",
+          "count": 1,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 125
+        },
+        {
+          "unit": "su100",
+          "count": 1,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "su76m",
+          "count": 3,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "su_zis3_towed",
+          "count": 3,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "t70",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ba64b",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "su_rifle_squad_1944",
+          "count": 15,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "su_61k_aa",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "il2m3",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 240
+        },
+        {
+          "unit": "studebaker_us6",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 85
+        }
+      ]
+    },
+    {
+      "id": "su_1944_shturmovik_corps",
+      "side": "Allies",
+      "era": "ww2",
+      "nation": "Soviet Union",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "t34_85",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 105
+        },
+        {
+          "unit": "is2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 125
+        },
+        {
+          "unit": "su100",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 115
+        },
+        {
+          "unit": "su76m",
+          "count": 3,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 65
+        },
+        {
+          "unit": "su_zis3_towed",
+          "count": 3,
+          "max_count": 6,
+          "phase": "A",
+          "cost": 115
+        },
+        {
+          "unit": "t70",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 70
+        },
+        {
+          "unit": "ba64b",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "su_rifle_squad_1944",
+          "count": 12,
+          "max_count": 18,
+          "phase": "A",
+          "cost": 80
+        },
+        {
+          "unit": "su_61k_aa",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 55
+        },
+        {
+          "unit": "il2m3",
+          "count": 8,
+          "max_count": 8,
+          "phase": "B",
+          "cost": 240
+        },
+        {
+          "unit": "studebaker_us6",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 85
+        }
+      ]
+    },
+    {
+      "id": "us_2026_abct",
+      "side": "NATO",
+      "era": "modern",
+      "nation": "United States",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "m1a2_sepv3",
+          "count": 8,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m2a4_bradley",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m1126_stryker",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "m109a7",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m142_himars",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m_shorad_inc1",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "ah64e_apache",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 145
+        },
+        {
+          "unit": "f35a",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "us_infantry_squad_2026",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "us_javelin_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "hemtt_a4",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "ru_2026_motor_rifle",
+      "side": "Russia",
+      "era": "modern",
+      "nation": "Russia",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "t90m",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 345
+        },
+        {
+          "unit": "t72b3m",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 230
+        },
+        {
+          "unit": "bmp3",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "btr82a",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "2s19m2",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tornado_s",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 360
+        },
+        {
+          "unit": "pantsir_s1",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tor_m2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "ka52_alligator",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 210
+        },
+        {
+          "unit": "su34",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 185
+        },
+        {
+          "unit": "rus_motor_rifle_squad_2026",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "rus_kornet_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "kamaz_5350",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "us_2026_armored_division",
+      "side": "NATO",
+      "era": "modern",
+      "nation": "United States",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "m1a2_sepv3",
+          "count": 12,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m2a4_bradley",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m1126_stryker",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "m109a7",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m142_himars",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m_shorad_inc1",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "ah64e_apache",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 145
+        },
+        {
+          "unit": "f35a",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "us_infantry_squad_2026",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "us_javelin_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "hemtt_a4",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "ru_2026_tank_army",
+      "side": "Russia",
+      "era": "modern",
+      "nation": "Russia",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "t90m",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 345
+        },
+        {
+          "unit": "t72b3m",
+          "count": 6,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 230
+        },
+        {
+          "unit": "bmp3",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "btr82a",
+          "count": 3,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "2s19m2",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tornado_s",
+          "count": 4,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 360
+        },
+        {
+          "unit": "pantsir_s1",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tor_m2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "ka52_alligator",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 210
+        },
+        {
+          "unit": "su34",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 185
+        },
+        {
+          "unit": "rus_motor_rifle_squad_2026",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "rus_kornet_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "kamaz_5350",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "us_2026_stryker_bct",
+      "side": "NATO",
+      "era": "modern",
+      "nation": "United States",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "m1a2_sepv3",
+          "count": 4,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m2a4_bradley",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m1126_stryker",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "m109a7",
+          "count": 3,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m142_himars",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m_shorad_inc1",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "ah64e_apache",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 145
+        },
+        {
+          "unit": "f35a",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "us_infantry_squad_2026",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "us_javelin_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "hemtt_a4",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "ru_2026_btg",
+      "side": "Russia",
+      "era": "modern",
+      "nation": "Russia",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "t90m",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 345
+        },
+        {
+          "unit": "t72b3m",
+          "count": 2,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 230
+        },
+        {
+          "unit": "bmp3",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "btr82a",
+          "count": 6,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "2s19m2",
+          "count": 3,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tornado_s",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 360
+        },
+        {
+          "unit": "pantsir_s1",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tor_m2",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "ka52_alligator",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 210
+        },
+        {
+          "unit": "su34",
+          "count": 2,
+          "max_count": 3,
+          "phase": "C",
+          "cost": 185
+        },
+        {
+          "unit": "rus_motor_rifle_squad_2026",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "rus_kornet_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "kamaz_5350",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "us_2026_combat_aviation",
+      "side": "NATO",
+      "era": "modern",
+      "nation": "United States",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "m1a2_sepv3",
+          "count": 6,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m2a4_bradley",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m1126_stryker",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 40
+        },
+        {
+          "unit": "m109a7",
+          "count": 3,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 110
+        },
+        {
+          "unit": "m142_himars",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 215
+        },
+        {
+          "unit": "m_shorad_inc1",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 140
+        },
+        {
+          "unit": "ah64e_apache",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 145
+        },
+        {
+          "unit": "f35a",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 185
+        },
+        {
+          "unit": "us_infantry_squad_2026",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 50
+        },
+        {
+          "unit": "us_javelin_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 65
+        },
+        {
+          "unit": "hemtt_a4",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "ru_2026_army_aviation",
+      "side": "Russia",
+      "era": "modern",
+      "nation": "Russia",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "t90m",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 345
+        },
+        {
+          "unit": "t72b3m",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 230
+        },
+        {
+          "unit": "bmp3",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "btr82a",
+          "count": 5,
+          "max_count": 7,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "2s19m2",
+          "count": 3,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tornado_s",
+          "count": 3,
+          "max_count": 6,
+          "phase": "C",
+          "cost": 360
+        },
+        {
+          "unit": "pantsir_s1",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 130
+        },
+        {
+          "unit": "tor_m2",
+          "count": 3,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 105
+        },
+        {
+          "unit": "ka52_alligator",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 210
+        },
+        {
+          "unit": "su34",
+          "count": 4,
+          "max_count": 4,
+          "phase": "C",
+          "cost": 185
+        },
+        {
+          "unit": "rus_motor_rifle_squad_2026",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "rus_kornet_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 110
+        },
+        {
+          "unit": "kamaz_5350",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 70
+        }
+      ]
+    },
+    {
+      "id": "pla_2026_combined_arms_brigade",
+      "side": "China",
+      "era": "modern",
+      "nation": "China",
+      "income": "balanced",
+      "cards": [
+        {
+          "unit": "type99a",
+          "count": 8,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 245
+        },
+        {
+          "unit": "zbd04a",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zbl08",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "plz05",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "hq17",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "z10",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "j16",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "pla_infantry_squad",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "eq2102",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "pla_hj12_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 95
+        }
+      ]
+    },
+    {
+      "id": "pla_2026_heavy_brigade",
+      "side": "China",
+      "era": "modern",
+      "nation": "China",
+      "income": "juggernaut",
+      "cards": [
+        {
+          "unit": "type99a",
+          "count": 12,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 245
+        },
+        {
+          "unit": "zbd04a",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zbl08",
+          "count": 3,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "plz05",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "hq17",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "z10",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "j16",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "pla_infantry_squad",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "eq2102",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "pla_hj12_team",
+          "count": 4,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 95
+        }
+      ]
+    },
+    {
+      "id": "pla_2026_reconnaissance",
+      "side": "China",
+      "era": "modern",
+      "nation": "China",
+      "income": "vanguard",
+      "cards": [
+        {
+          "unit": "type99a",
+          "count": 4,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 245
+        },
+        {
+          "unit": "zbd04a",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zbl08",
+          "count": 6,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "plz05",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "hq17",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "z10",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "j16",
+          "count": 2,
+          "max_count": 3,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "pla_infantry_squad",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "eq2102",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "pla_hj12_team",
+          "count": 7,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 95
+        }
+      ]
+    },
+    {
+      "id": "pla_2026_army_aviation",
+      "side": "China",
+      "era": "modern",
+      "nation": "China",
+      "income": "maverick",
+      "cards": [
+        {
+          "unit": "type99a",
+          "count": 6,
+          "max_count": 12,
+          "phase": "C",
+          "cost": 245
+        },
+        {
+          "unit": "zbd04a",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "zbl08",
+          "count": 5,
+          "max_count": 7,
+          "phase": "B",
+          "cost": 100
+        },
+        {
+          "unit": "plz05",
+          "count": 4,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 120
+        },
+        {
+          "unit": "hq17",
+          "count": 6,
+          "max_count": 6,
+          "phase": "B",
+          "cost": 90
+        },
+        {
+          "unit": "z10",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 150
+        },
+        {
+          "unit": "j16",
+          "count": 4,
+          "max_count": 4,
+          "phase": "B",
+          "cost": 165
+        },
+        {
+          "unit": "pla_infantry_squad",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 45
+        },
+        {
+          "unit": "eq2102",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 55
+        },
+        {
+          "unit": "pla_hj12_team",
+          "count": 6,
+          "max_count": 9,
+          "phase": "A",
+          "cost": 95
+        }
+      ]
+    }
+  ]
+}

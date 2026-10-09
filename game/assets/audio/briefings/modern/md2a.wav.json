@@ -1,0 +1,61 @@
+{
+  "operation": "md2a",
+  "era": "modern",
+  "text": "The armored brigade is up. The motor rifle brigade is digging in on the high ground. Take it back before their artillery is registered.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+  "seed": 1201,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:35:32-0400",
+    "directory": "parish-media:outputs/20261009-123532-voice-a57e42",
+    "status": "success",
+    "unit": "parish-media-job-c28335da5e4d4490bec459ae44dea21d.service",
+    "peak_gpu_mib_sampled": 4629,
+    "elapsed_seconds": 10.17,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:35:39.983738+00:00",
+    "input_text": "The armored brigade is up. The motor rifle brigade is digging in on the high ground. Take it back before their artillery is registered.",
+    "segments_text": [
+      "The armored brigade is up. The motor rifle brigade is digging in on the high ground. Take it back before their artillery is registered."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+    "language": "English",
+    "seed": 1201,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 6.8,
+    "audio_sha256": "a3e3373a526d6b3165f557e4d59c14b68480853eca442e84026e7edf991960ee",
+    "output": "parish-media:outputs/six-actual-briefings/md2a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-21.88",
+    "input_tp": "-3.92"
+  },
+  "loudness_after": {
+    "input_i": "-16.81",
+    "input_tp": "-1.50"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "The armored brigade is up. The motor rifle brigade is digging in on the high ground. Take it back before their artillery is registered.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

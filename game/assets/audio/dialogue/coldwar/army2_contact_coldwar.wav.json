@@ -1,0 +1,55 @@
+{
+  "id": "army2_contact_coldwar",
+  "kind": "dialogue",
+  "era": "coldwar",
+  "text": "Second maneuver, contact. Returning fire.",
+  "speaker": "army2",
+  "mode": "design",
+  "instruction": "American female infantry officer in her thirties, firm and level, clear mid voice over a field radio",
+  "seed": 22,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:05:43-0400",
+    "directory": "parish-media:outputs/20261009-130543-voice-daa0b1",
+    "status": "success",
+    "unit": "parish-media-job-b41c7288f6464c589486a0d26bf6d663.service",
+    "peak_gpu_mib_sampled": 4529,
+    "elapsed_seconds": 8.12,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:05:49.559654+00:00",
+    "input_text": "Second maneuver, contact. Returning fire.",
+    "segments_text": [
+      "Second maneuver, contact. Returning fire."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American female infantry officer in her thirties, firm and level, clear mid voice over a field radio",
+    "language": "English",
+    "seed": 22,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 3.6,
+    "audio_sha256": "d305fcf3abf7c1569ad2648562784fcabf138307fe28f868059e961a7c764dab",
+    "output": "parish-media:outputs/six-actual-voice/army2_contact_coldwar.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "b4aa9421491c70dc",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Second maneuver, contact. Returning fire.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

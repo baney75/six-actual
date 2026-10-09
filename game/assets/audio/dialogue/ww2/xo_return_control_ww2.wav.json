@@ -1,0 +1,55 @@
+{
+  "id": "xo_return_control_ww2",
+  "kind": "dialogue",
+  "era": "ww2",
+  "text": "You have the battle back. Handing over.",
+  "speaker": "xo",
+  "mode": "design",
+  "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+  "seed": 17,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:57:19-0400",
+    "directory": "parish-media:outputs/20261009-125719-voice-e3f3c1",
+    "status": "success",
+    "unit": "parish-media-job-0e349655cfc34bcaaafcbfbc53ee835d.service",
+    "peak_gpu_mib_sampled": 4519,
+    "elapsed_seconds": 6.09,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:57:25.196543+00:00",
+    "input_text": "You have the battle back. Handing over.",
+    "segments_text": [
+      "You have the battle back. Handing over."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+    "language": "English",
+    "seed": 17,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.8,
+    "audio_sha256": "5ca8a34eaeafe41e3ef96679fd585a3b616340ac8244779ddaf5f3e35d511ac2",
+    "output": "parish-media:outputs/six-actual-voice/xo_return_control_ww2.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "04ddb9a8dcadfee0",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "You have the battle back, handing over.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

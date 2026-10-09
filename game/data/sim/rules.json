@@ -1,0 +1,357 @@
+{
+  "combat": {
+    "air_altitude_m": 20,
+    "arc_front_half_deg": 45,
+    "cover_heavy_pct": 40,
+    "cover_light_pct": 70,
+    "cover_object_m": 12,
+    "crater_max": 512,
+    "crater_min_blast_m": 20,
+    "crit_base_pct": 25,
+    "crit_per_100mm_overmatch_pct": 25,
+    "crit_weights": {
+      "bail": 15,
+      "engine": 15,
+      "fire": 20,
+      "optics": 15,
+      "tracked": 20,
+      "turret": 15
+    },
+    "decoy_pct": 50,
+    "direct_control_hit_pct": 0,
+    "escort_pct": 40,
+    "fire_hp_per_tick": 1,
+    "fpv_jammed_pct": 20,
+    "fpv_success_pct": 60,
+    "gps_jam_cep_x": 25,
+    "jam_comms_delay_ticks": 600,
+    "jam_radar_pct": 50,
+    "mine_damage": 60,
+    "mine_deplete_pct": 20,
+    "nonpen_minor_crit_pct": 8,
+    "nonpen_suppression": 15,
+    "reveal_on_fire_ticks": 100,
+    "shooter_moving_pct": 50,
+    "target_moving_pct": 75,
+    "turret_jam_half_deg": 10,
+    "vet_accuracy_pct": [
+      100,
+      110,
+      120,
+      130
+    ],
+    "vet_kills": [
+      0,
+      2,
+      5,
+      10
+    ]
+  },
+  "command": {
+    "assemble_pct": 70,
+    "assemble_radius_m": 250,
+    "assemble_timeout_ticks": 2400,
+    "cap_leg_ticks": 300,
+    "cap_orbit_m": 2000,
+    "cas_loiter_ticks": 1200,
+    "cas_on_station_m": 1500,
+    "cas_threat_margin_m": 1000,
+    "cover_search_m": 100,
+    "damaged_hp_pct": 50,
+    "defend_spacing_m": 120,
+    "fail_strength_pct": 40,
+    "formation_spacing_m": 60,
+    "low_ammo_pct": 25,
+    "objective_radius_m": 300,
+    "plan_ticks": 20,
+    "planner_garrison_radius_m": 200,
+    "planner_micro_decay": 25,
+    "planner_prep_bonus_pct": 20,
+    "planner_prep_ticks": 2400,
+    "prep_rounds": 6,
+    "prep_wait_ticks": 1600,
+    "priority_target_pct": 300,
+    "screen_contact_ticks": 100,
+    "screen_withdraw_m": 600,
+    "staging_distance_m": 1500
+  },
+  "detect": {
+    "firing_reveal_m": 2000,
+    "reveal_ticks": 100,
+    "spot_interval_ticks": 4,
+    "stealth_forest_bonus": 150,
+    "stealth_moving_penalty": 100
+  },
+  "economy": {
+    "field_request_auto_ticks": 600,
+    "income_per_minute": {
+      "balanced": [
+        45,
+        45,
+        45
+      ],
+      "juggernaut": [
+        30,
+        40,
+        65
+      ],
+      "maverick": [
+        35,
+        60,
+        35
+      ],
+      "vanguard": [
+        60,
+        40,
+        30
+      ]
+    },
+    "phase_ticks": [
+      12000,
+      12000
+    ],
+    "sp_kill_pct": 20,
+    "sp_per_supply_points": 10,
+    "sp_spot_assist_pct": 10,
+    "start_dp": 600
+  },
+  "fires": {
+    "cb_error_m": 50,
+    "cb_locate_ticks": 600,
+    "illum_radius_m": 500,
+    "illum_ticks": 900,
+    "max_pending": 512,
+    "setup_ticks": 200,
+    "smoke_radius_m": 40,
+    "smoke_ticks": 2400
+  },
+  "frontline": {
+    "cell_m": 64,
+    "flip_margin": 50,
+    "radius_m": 500,
+    "update_ticks": 20,
+    "weight_by_kind": {
+      "aa": 1,
+      "air": 0,
+      "artillery": 0,
+      "command": 1,
+      "ifv": 2,
+      "infantry": 2,
+      "supply": 0,
+      "tank": 3
+    }
+  },
+  "grand_strategy": {
+    "army_max": 100,
+    "attack_odds_permille": 550,
+    "attrition_unsupplied_pct": 10,
+    "ceasefire_turns": 6,
+    "commander_bonus_pct": 10,
+    "commander_wound_pct": 15,
+    "commander_wound_turns": 3,
+    "commander_xp_loss": 3,
+    "commander_xp_win": 10,
+    "fallout_attrition_pct": 20,
+    "fallout_turns": 4,
+    "lend_lease_pct": 20,
+    "loss_loser_pct": 35,
+    "loss_winner_pct": 15,
+    "reinforce_turns": 2,
+    "research_base": 30,
+    "research_step": 15,
+    "start_army_per_industry": 8,
+    "strength_per_point": 5,
+    "tech_bonus_pct": 8,
+    "tech_max": 5,
+    "tension_battle": 1,
+    "tension_capture": 3,
+    "tension_strategic": 70,
+    "tension_tactical": 20,
+    "tension_theater": 40,
+    "terrain_defence_pct": {
+      "forest": 125,
+      "hills": 135,
+      "open": 100,
+      "urban": 150
+    },
+    "theater_strike_industry": 3,
+    "turn_limit": 40
+  },
+  "los": {
+    "eye_height_dm": 25,
+    "forest_block_pct_m": 12000,
+    "forest_height_dm": 180,
+    "hedge_height_dm": 30,
+    "smoke_height_dm": 250,
+    "step_m": 8,
+    "target_height_dm": 20
+  },
+  "morale": {
+    "accuracy_pct": [
+      100,
+      70,
+      40,
+      10
+    ],
+    "casualty_suppression": 30,
+    "decay_per_tick": 1,
+    "hq_decay_bonus": 1,
+    "hq_radius_m": 300,
+    "pinned_at": 80,
+    "recover_margin": 20,
+    "routed_at": 130,
+    "shaken_at": 40,
+    "suppression_max": 200,
+    "surrender_after_ticks": 200,
+    "surrender_enemy_m": 150
+  },
+  "move": {
+    "cost_forest": {
+      "infantry": 140,
+      "tracked": 300,
+      "wheeled": 600
+    },
+    "cost_open": {
+      "infantry": 100,
+      "tracked": 100,
+      "wheeled": 100
+    },
+    "cost_road": {
+      "infantry": 80,
+      "tracked": 60,
+      "wheeled": 40
+    },
+    "cost_rubble": {
+      "infantry": 200,
+      "tracked": 400,
+      "wheeled": 0
+    },
+    "dismount_ticks": 600,
+    "max_slope_pct": {
+      "infantry": 100,
+      "tracked": 60,
+      "wheeled": 30
+    },
+    "nav_cell_m": 16,
+    "replan_ticks": 40,
+    "speed_forest": {
+      "infantry": 70,
+      "tracked": 30,
+      "wheeled": 15
+    },
+    "speed_open": {
+      "infantry": 90,
+      "tracked": 75,
+      "wheeled": 55
+    },
+    "speed_road": {
+      "infantry": 100,
+      "tracked": 100,
+      "wheeled": 100
+    },
+    "speed_rubble": {
+      "infantry": 50,
+      "tracked": 25,
+      "wheeled": 0
+    }
+  },
+  "operation": {
+    "spawn_pullback_m": 500
+  },
+  "structure": {
+    "chunk_m": 3,
+    "collapse_delay_ticks": 10,
+    "fall_damage": 60,
+    "floor_dm": 28,
+    "materials": {
+      "brick": {
+        "armor": 30,
+        "hp": 400
+      },
+      "concrete": {
+        "armor": 50,
+        "hp": 600
+      },
+      "plaster": {
+        "armor": 5,
+        "hp": 120
+      },
+      "timber": {
+        "armor": 5,
+        "hp": 150
+      }
+    },
+    "rubble_dm_per_chunk": 6
+  },
+  "supply": {
+    "aircraft_turnaround_ticks": 2400,
+    "ammo_interval_ticks": 20,
+    "bingo_fuel_pct": 25,
+    "dump_refill_per_tick": 5,
+    "fuel_per_supply_point": 10,
+    "fuel_per_tick": 2,
+    "medevac_ticks": 600,
+    "radius_m": 60,
+    "repair_crit_ticks": 1200,
+    "repair_interval_ticks": 20
+  },
+  "thermal": {
+    "ignores": [
+      "fog",
+      "night"
+    ],
+    "optics_pct": 85
+  },
+  "tick_hz": 20,
+  "time_of_day": {
+    "accuracy_pct": [
+      90,
+      100,
+      90,
+      70
+    ],
+    "names": [
+      "dawn",
+      "day",
+      "dusk",
+      "night"
+    ],
+    "optics_pct": [
+      70,
+      100,
+      70,
+      40
+    ]
+  },
+  "version": 1,
+  "victory": {
+    "annihilation_grace_ticks": 1200,
+    "points_per_minute": 10,
+    "time_cap_ticks": 48000,
+    "win_points": 600
+  },
+  "weather_accuracy_pct": {
+    "clear": 100,
+    "fog": 75,
+    "night": 70,
+    "overcast": 100,
+    "rain": 90,
+    "snow": 85
+  },
+  "weather_air_ops": {
+    "clear": 1,
+    "fog": 0,
+    "night": 1,
+    "overcast": 1,
+    "rain": 1,
+    "snow": 1
+  },
+  "weather_optics_pct": {
+    "clear": 100,
+    "fog": 45,
+    "night": 40,
+    "overcast": 90,
+    "rain": 75,
+    "snow": 60
+  }
+}

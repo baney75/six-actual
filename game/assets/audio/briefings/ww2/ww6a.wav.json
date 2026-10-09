@@ -1,0 +1,61 @@
+{
+  "operation": "ww6a",
+  "era": "ww2",
+  "text": "The enemy is in full retreat. Pursue, take the last crossroads, and do not give them time to form a line.",
+  "speaker": "Aiden",
+  "mode": "custom",
+  "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+  "seed": 1109,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:34:49-0400",
+    "directory": "parish-media:outputs/20261009-123449-voice-7b8779",
+    "status": "success",
+    "unit": "parish-media-job-4f8a659a3fc24d058a63255d29ce57cd.service",
+    "peak_gpu_mib_sampled": 4635,
+    "elapsed_seconds": 10.12,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:34:56.939231+00:00",
+    "input_text": "The enemy is in full retreat. Pursue, take the last crossroads, and do not give them time to form a line.",
+    "segments_text": [
+      "The enemy is in full retreat. Pursue, take the last crossroads, and do not give them time to form a line."
+    ],
+    "mode": "custom",
+    "speaker": "Aiden",
+    "instruction": "Steady American Army staff officer of the 1940s briefing his commander in a command post; firm, measured, plain.",
+    "language": "English",
+    "seed": 1109,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 7.04,
+    "audio_sha256": "c54e9f7aba038cb34122101553e019d65b93b0c1ddc6f9a97055b480aa5d7372",
+    "output": "parish-media:outputs/six-actual-briefings/ww6a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-18.89",
+    "input_tp": "-3.00"
+  },
+  "loudness_after": {
+    "input_i": "-16.54",
+    "input_tp": "-1.49"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "The enemy is in full retreat, pursue, take the last crossroads, and do not give them time to form a line.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

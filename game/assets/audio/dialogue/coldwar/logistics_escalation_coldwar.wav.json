@@ -1,0 +1,55 @@
+{
+  "id": "logistics_escalation_coldwar",
+  "kind": "dialogue",
+  "era": "coldwar",
+  "text": "Logistics, the supply route is cut. Need it cleared.",
+  "speaker": "logistics",
+  "mode": "design",
+  "instruction": "American male supply officer in his fifties, patient and practical, warm mid voice over the radio",
+  "seed": 28,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:16:49-0400",
+    "directory": "parish-media:outputs/20261009-131649-voice-2b4da2",
+    "status": "success",
+    "unit": "parish-media-job-57d50cdb6081438c948e3e9a2d2e552b.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.08,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:16:55.157407+00:00",
+    "input_text": "Logistics, the supply route is cut. Need it cleared.",
+    "segments_text": [
+      "Logistics, the supply route is cut. Need it cleared."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male supply officer in his fifties, patient and practical, warm mid voice over the radio",
+    "language": "English",
+    "seed": 28,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.88,
+    "audio_sha256": "1195d6201a5433a1ad53219bff2a322b35404880294d85ba6d00676cca3aac8a",
+    "output": "parish-media:outputs/six-actual-voice/logistics_escalation_coldwar.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "704367260367f61e",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Logistics, the supply route is cut, need it cleared.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

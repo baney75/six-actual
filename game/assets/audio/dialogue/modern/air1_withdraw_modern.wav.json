@@ -1,0 +1,55 @@
+{
+  "id": "air1_withdraw_modern",
+  "kind": "dialogue",
+  "era": "modern",
+  "text": "Air one, winchester. Returning to rearm.",
+  "speaker": "air1",
+  "mode": "design",
+  "instruction": "American male pilot in his thirties, cool and laconic, relaxed drawl over aircraft radio",
+  "seed": 25,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:11:26-0400",
+    "directory": "parish-media:outputs/20261009-131126-voice-9b6499",
+    "status": "success",
+    "unit": "parish-media-job-9b647b15af894f00ae8a7b89332e38f3.service",
+    "peak_gpu_mib_sampled": 4531,
+    "elapsed_seconds": 8.11,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:11:32.323138+00:00",
+    "input_text": "Air one, winchester. Returning to rearm.",
+    "segments_text": [
+      "Air one, winchester. Returning to rearm."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male pilot in his thirties, cool and laconic, relaxed drawl over aircraft radio",
+    "language": "English",
+    "seed": 25,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 3.36,
+    "audio_sha256": "3f05a8d17b66c6dc4b03e1cf65a3c5aee7d90b19ac6d40c245cd8cacd2363aad",
+    "output": "parish-media:outputs/six-actual-voice/air1_withdraw_modern.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "8b183d9011fe9208",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Air 1 Winchester, returning to rearm.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

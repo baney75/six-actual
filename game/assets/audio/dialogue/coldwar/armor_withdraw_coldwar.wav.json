@@ -1,0 +1,55 @@
+{
+  "id": "armor_withdraw_coldwar",
+  "kind": "dialogue",
+  "era": "coldwar",
+  "text": "Armor pulling back damaged tanks for repair.",
+  "speaker": "armor",
+  "mode": "design",
+  "instruction": "American male tank officer in his forties, deep confident voice, loud over engine noise on the radio",
+  "seed": 27,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:13:37-0400",
+    "directory": "parish-media:outputs/20261009-131337-voice-567609",
+    "status": "success",
+    "unit": "parish-media-job-cf52b16eea884293a3873f582a3c5cab.service",
+    "peak_gpu_mib_sampled": 4515,
+    "elapsed_seconds": 6.09,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:13:43.068426+00:00",
+    "input_text": "Armor pulling back damaged tanks for repair.",
+    "segments_text": [
+      "Armor pulling back damaged tanks for repair."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male tank officer in his forties, deep confident voice, loud over engine noise on the radio",
+    "language": "English",
+    "seed": 27,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 2.88,
+    "audio_sha256": "3ecaed23a524b341dd3cfdf953821cc3f8c9e32ef9c427f42354e7c306a438e4",
+    "output": "parish-media:outputs/six-actual-voice/armor_withdraw_coldwar.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "a05f90999b7fdcad",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Armor pulling back damaged tanks for repair!",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

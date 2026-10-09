@@ -1,0 +1,55 @@
+{
+  "id": "xo_objective_taken_coldwar",
+  "kind": "dialogue",
+  "era": "coldwar",
+  "text": "Objective secured.",
+  "speaker": "xo",
+  "mode": "design",
+  "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+  "seed": 17,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:58:29-0400",
+    "directory": "parish-media:outputs/20261009-125829-voice-30be29",
+    "status": "success",
+    "unit": "parish-media-job-defbdc5a134a4da7bb5b375e236d5076.service",
+    "peak_gpu_mib_sampled": 4517,
+    "elapsed_seconds": 6.08,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:58:33.675792+00:00",
+    "input_text": "Objective secured.",
+    "segments_text": [
+      "Objective secured."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+    "language": "English",
+    "seed": 17,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 1.68,
+    "audio_sha256": "fc1c7f749bf1ee0b01aab1f699c1b72e2c759d9725e73c24bad9c18006425828",
+    "output": "parish-media:outputs/six-actual-voice/xo_objective_taken_coldwar.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "7a5f3442cc7c7ad1",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Objectives secured.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

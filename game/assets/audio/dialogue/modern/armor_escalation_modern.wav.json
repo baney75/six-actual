@@ -1,0 +1,55 @@
+{
+  "id": "armor_escalation_modern",
+  "kind": "dialogue",
+  "era": "modern",
+  "text": "Armor, we are losing tanks. Request fire support.",
+  "speaker": "armor",
+  "mode": "design",
+  "instruction": "American male tank officer in his forties, deep confident voice, loud over engine noise on the radio",
+  "seed": 27,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:14:46-0400",
+    "directory": "parish-media:outputs/20261009-131446-voice-292eb1",
+    "status": "success",
+    "unit": "parish-media-job-0249bda68e3f4fd3b72f6120cf01f88c.service",
+    "peak_gpu_mib_sampled": 4533,
+    "elapsed_seconds": 8.11,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:14:52.885947+00:00",
+    "input_text": "Armor, we are losing tanks. Request fire support.",
+    "segments_text": [
+      "Armor, we are losing tanks. Request fire support."
+    ],
+    "mode": "design",
+    "speaker": null,
+    "instruction": "American male tank officer in his forties, deep confident voice, loud over engine noise on the radio",
+    "language": "English",
+    "seed": 27,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "model_revision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+    "model_sha256": "391e8db219f292c515297cdceeb43e4eae67cdde35fa57e79a6a8a532fca0522",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 4.32,
+    "audio_sha256": "48ef0e5fdd8a74dc00bda4eee6eef8da3637799303288b4dcf14ce0ab0233f60",
+    "output": "parish-media:outputs/six-actual-voice/armor_escalation_modern.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "fd771db2d5e50306",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Armor, we are losing tanks. Request fire support.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

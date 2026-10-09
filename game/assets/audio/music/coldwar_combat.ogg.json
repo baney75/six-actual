@@ -1,0 +1,20 @@
+{
+  "id": "coldwar_combat",
+  "era": "coldwar",
+  "layer": "combat",
+  "prompt": "1980s Cold War military score, low strings, analog synth pads, snare, intense battle music, driving percussion, full ensemble, 120 BPM, instrumental, no vocals, loopable",
+  "seed": 212,
+  "duration_requested_s": 60,
+  "model": "ACE-Step 1.5 (MIT), local on Parish1",
+  "job": {
+    "status": "reused raw take"
+  },
+  "lufs": -17.94,
+  "true_peak_db": -4.32,
+  "flatness": 0.253,
+  "transcript": "",
+  "loop": "loop points chosen for a stable seam; the end cross-fades into the 3 s before the loop start",
+  "processing": "ffmpeg loudnorm two-pass to -18 LUFS / -1.5 dBTP, loop, Vorbis q5",
+  "seam_jump_ratio": 1.58,
+  "seam_spectral_corr": 0.989
+}

@@ -1,0 +1,61 @@
+{
+  "operation": "cw6a",
+  "era": "coldwar",
+  "text": "Their front is breaking. Corps wants the last motor rifle regiment destroyed before it can regroup. Finish it.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+  "seed": 1009,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:32:38-0400",
+    "directory": "parish-media:outputs/20261009-123238-voice-14d435",
+    "status": "success",
+    "unit": "parish-media-job-1f9ff1426cb840fa95a672d868dfe41a.service",
+    "peak_gpu_mib_sampled": 4535,
+    "elapsed_seconds": 8.1,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:32:45.651801+00:00",
+    "input_text": "Their front is breaking. Corps wants the last motor rifle regiment destroyed before it can regroup. Finish it.",
+    "segments_text": [
+      "Their front is breaking. Corps wants the last motor rifle regiment destroyed before it can regroup. Finish it."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+    "language": "English",
+    "seed": 1009,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 6.56,
+    "audio_sha256": "a51760c9218f8182ad1064d1ef4868481557a8214b997e7e013745fd9e94c5e3",
+    "output": "parish-media:outputs/six-actual-briefings/cw6a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-23.39",
+    "input_tp": "-4.17"
+  },
+  "loudness_after": {
+    "input_i": "-17.44",
+    "input_tp": "-1.49"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Their front is breaking. Core wants the last motor rifle regiment destroyed before it can regroup. Finish it.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

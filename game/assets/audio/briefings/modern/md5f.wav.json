@@ -1,0 +1,55 @@
+{
+  "id": "md5f",
+  "kind": "briefing",
+  "era": "modern",
+  "text": "Snow tonight and an attack before morning. Allied reinforcements are a day out. Hold the line.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+  "seed": 2208,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T13:22:10-0400",
+    "directory": "parish-media:outputs/20261009-132210-voice-24d18c",
+    "status": "success",
+    "unit": "parish-media-job-77174ab8b58145f98abd9a508389d967.service",
+    "peak_gpu_mib_sampled": 4537,
+    "elapsed_seconds": 10.14,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 79
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T17:22:18.863952+00:00",
+    "input_text": "Snow tonight and an attack before morning. Allied reinforcements are a day out. Hold the line.",
+    "segments_text": [
+      "Snow tonight and an attack before morning. Allied reinforcements are a day out. Hold the line."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Crisp, professional modern US Army operations officer giving a short tactical briefing; focused and even.",
+    "language": "English",
+    "seed": 2208,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 6.72,
+    "audio_sha256": "04a5c7ebc3ce6d70215f4e947f81b10683bdad60458cf26aa7bc94802cfde3f8",
+    "output": "parish-media:outputs/six-actual-voice/md5f.wav"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "prompt_hash": "3dc0f3882b35ef75",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "Snow tonight and an attack before morning. Allied reinforcements are a day out. Hold the line.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}

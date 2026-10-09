@@ -1,78 +1,31 @@
+using System.Linq;
 using Godot;
-using SixActual.Sim;
 
+/// <summary>UX-01 main menu.</summary>
 public partial class Main : Node
 {
+    static bool _booted;
+
     public override void _Ready()
     {
-        GD.Print($"Six Actual foundation {DeterminismReport.SelfTest()}");
-        var layer = new CanvasLayer();
-        AddChild(layer);
-        var backdrop = new ColorRect
+        if (!_booted)
         {
-            Color = new Color(0.08f, 0.09f, 0.08f),
-            AnchorRight = 1,
-            AnchorBottom = 1,
-        };
-        layer.AddChild(backdrop);
-        var box = new VBoxContainer
-        {
-            AnchorLeft = 0.5f,
-            AnchorRight = 0.5f,
-            AnchorTop = 0.5f,
-            AnchorBottom = 0.5f,
-            OffsetLeft = -180,
-            OffsetRight = 180,
-            OffsetTop = -120,
-            OffsetBottom = 120,
-        };
-        box.Alignment = BoxContainer.AlignmentMode.Center;
-        layer.AddChild(box);
-        var title = new Label { Text = "SIX ACTUAL", HorizontalAlignment = HorizontalAlignment.Center };
-        title.AddThemeFontSizeOverride("font_size", 42);
-        box.AddChild(title);
-        var sub = new Label
-        {
-            Text = "Cold War skirmish. The XO has the net when you fly.",
-            HorizontalAlignment = HorizontalAlignment.Center,
-        };
-        box.AddChild(sub);
-        var play = new Button { Text = "Fulda skirmish" };
-        play.Pressed += () => CallDeferred(MethodName.StartBattle);
-        box.AddChild(play);
-        var campaign = new Button { Text = "Cold War campaign" };
-        campaign.Pressed += () => CallDeferred(MethodName.StartCampaign);
-        box.AddChild(campaign);
-        var strategy = new Button { Text = "Grand strategy" };
-        strategy.Pressed += () => CallDeferred(MethodName.StartStrategy);
-        box.AddChild(strategy);
-        var quit = new Button { Text = "Quit" };
-        quit.Pressed += () => GetTree().Quit();
-        box.AddChild(quit);
-        if (System.Array.IndexOf(OS.GetCmdlineUserArgs(), "--shot") >= 0)
-        {
-            CallDeferred(MethodName.StartBattle);
+            _booted = true;
+            GameSettings.Load();
+            GameSettings.Apply(GetTree());
+            UxDriver.Start(GetTree().Root);
+            UxLog.Event("settings_loaded", ("ui_scale", GameSettings.UiScales[GameSettings.UiScaleIndex]), ("palette", GameSettings.Palettes[GameSettings.Palette]), ("subtitles", GameSettings.Subtitles), ("take_control_key", OS.GetKeycodeString(Controls.KeyOf("take_control"))), ("fly_left_pad", Controls.PadOf("fly_left")));
         }
-    }
 
-    void StartBattle()
-    {
-        var battle = new BattleView();
-        GetTree().Root.AddChild(battle);
-        QueueFree();
-    }
-
-    void StartCampaign()
-    {
-        var screen = new CampaignScreen();
-        GetTree().Root.AddChild(screen);
-        QueueFree();
-    }
-
-    void StartStrategy()
-    {
-        var screen = new StrategyScreen();
-        GetTree().Root.AddChild(screen);
-        QueueFree();
+        var box = Ui.Screen(this, "SIX ACTUAL", "Three eras of combined arms. The XO has the net when you fly.");
+        Ui.Button(box, "Skirmish", "Skirmish", () => { GameSession.Origin = "skirmish"; Ui.Go(this, new DeckScreen()); });
+        Ui.Button(box, "Campaign", "Cold War campaign", () => Ui.Go(this, new CampaignScreen()));
+        Ui.Button(box, "Strategy", "Grand strategy", () => Ui.Go(this, new StrategyScreen()));
+        Ui.Button(box, "Lobby", "Multiplayer lobby", () => Ui.Go(this, new LobbyScreen()));
+        Ui.Button(box, "Tutorials", "Tutorials", () => Ui.Go(this, new TutorialScreen()));
+        Ui.Button(box, "Settings", "Settings", () => Ui.Go(this, new SettingsScreen()));
+        Ui.Button(box, "Credits", "Credits", () => Ui.Go(this, new CreditsScreen()));
+        Ui.Button(box, "Quit", "Quit", () => GetTree().Quit());
+        UxLog.Event("screen", ("name", "main_menu"));
     }
 }

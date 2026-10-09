@@ -1,0 +1,61 @@
+{
+  "operation": "cw2a",
+  "era": "coldwar",
+  "text": "The covering force bought us the time we needed. The brigade is in position east of Huenfeld. The motor rifle regiment will come straight at us. Take the objectives and hold them.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+  "seed": 1001,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:31:06-0400",
+    "directory": "parish-media:outputs/20261009-123106-voice-951707",
+    "status": "success",
+    "unit": "parish-media-job-855cb7eb12864f41aa9d1745e5b10a58.service",
+    "peak_gpu_mib_sampled": 4811,
+    "elapsed_seconds": 12.17,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 0
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:31:16.627382+00:00",
+    "input_text": "The covering force bought us the time we needed. The brigade is in position east of Huenfeld. The motor rifle regiment will come straight at us. Take the objectives and hold them.",
+    "segments_text": [
+      "The covering force bought us the time we needed. The brigade is in position east of Huenfeld. The motor rifle regiment will come straight at us. Take the objectives and hold them."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+    "language": "English",
+    "seed": 1001,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 10.32,
+    "audio_sha256": "eb06d5c5e733769a7e7aec0d7c3b45eef0f9fc5f9707ea0e3126ebb272765771",
+    "output": "parish-media:outputs/six-actual-briefings/cw2a.wav"
+  },
+  "loudness_before": {
+    "input_i": "-24.19",
+    "input_tp": "-5.32"
+  },
+  "loudness_after": {
+    "input_i": "-16.83",
+    "input_tp": "-1.49"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "The covering force bought us the time we needed. The brigade is in position east of Hohenfeld. The motor rifle regiment will come straight at us. Take the objectives and hold them.",
+    "word_accuracy": 0.969,
+    "attempt": 0
+  }
+}

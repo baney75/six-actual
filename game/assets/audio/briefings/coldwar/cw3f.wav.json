@@ -1,0 +1,61 @@
+{
+  "operation": "cw3f",
+  "era": "coldwar",
+  "text": "We are on the second line now. The enemy will try a night attack with fresh tanks. Use the thermals. Hold the high ground and let them come to us.",
+  "speaker": "Ryan",
+  "mode": "custom",
+  "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+  "seed": 1004,
+  "job": {
+    "kind": "voice",
+    "started_at": "2026-10-09T12:31:42-0400",
+    "directory": "parish-media:outputs/20261009-123142-voice-21af34",
+    "status": "success",
+    "unit": "parish-media-job-042187d935974bfcb79409d7fad6c93f.service",
+    "peak_gpu_mib_sampled": 4551,
+    "elapsed_seconds": 10.12,
+    "gpu_after": {
+      "used_mib": 146,
+      "utilization_percent": 28
+    }
+  },
+  "tool_metadata": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-09T16:31:51.737417+00:00",
+    "input_text": "We are on the second line now. The enemy will try a night attack with fresh tanks. Use the thermals. Hold the high ground and let them come to us.",
+    "segments_text": [
+      "We are on the second line now. The enemy will try a night attack with fresh tanks. Use the thermals. Hold the high ground and let them come to us."
+    ],
+    "mode": "custom",
+    "speaker": "Ryan",
+    "instruction": "Calm, clipped US Army staff officer briefing a commander over a field radio; steady, serious, unhurried.",
+    "language": "English",
+    "seed": 1004,
+    "max_chars": 280,
+    "pause_seconds": 0.24,
+    "model_identifier": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "model_sha256": "38b1d5971bdbd982b561cccec982669a53b0537c3cf5e9bd4778ed07bb2f5137",
+    "speech_tokenizer_sha256": "836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258",
+    "qwen_tts_version": "0.1.1",
+    "sample_rate": 24000,
+    "duration_seconds": 9.12,
+    "audio_sha256": "c5d3292b6f4e595b600319459c5e6bb25dbbb703b7db9b2fe9dbf18388bdf143",
+    "output": "parish-media:outputs/six-actual-briefings/cw3f.wav"
+  },
+  "loudness_before": {
+    "input_i": "-24.74",
+    "input_tp": "-7.88"
+  },
+  "loudness_after": {
+    "input_i": "-16.07",
+    "input_tp": "-1.49"
+  },
+  "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
+  "asr": {
+    "tool": "tools/asr/transcribe.py (faster-whisper, CPU)",
+    "transcript": "We are on the second line now. The enemy will try a night attack with fresh tanks, use the thermals, hold the high ground and let them come to us.",
+    "word_accuracy": 1.0,
+    "attempt": 0
+  }
+}
