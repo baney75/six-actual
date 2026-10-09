@@ -2,7 +2,7 @@
 
 Working title. Six is the commander's callsign. Actual means the commander is on the net in person. The player is that commander, and can leave the table to fly an aircraft while the XO runs the battle.
 
-The full contract is `docs/BRIEF.md`. This file is the design that code should follow. Where they disagree, the brief's stricter rule wins until a `DECISIONS.md` entry says otherwise.
+The full contract is `docs/BRIEF.md` (v5). Its §C mechanics bible (battle phases, dynamic frontline, Support Points, no direct-control buff, and the rest) is binding design, not a suggestion. This file is the design that code should follow. Where they disagree, the brief's stricter rule wins until a `DECISIONS.md` entry says otherwise.
 
 ## Pillars
 
@@ -18,14 +18,14 @@ Build a battlegroup, deploy it, fight a real-time battle with income and a front
 
 ## Simulation
 
-The match lives in `sim/`, a C# library with no Godot types. Godot (`game/`) is view, input, and audio. State uses integers and `Fp` (Q48.16). The only clock is a 20 Hz tick (`Simulation.TickHz`). One second is 20 ticks. Phase 0 steps positions from orders. Combat, sight, and supply are not in the tick yet.
+The match lives in `sim/`, a C# library with no Godot types. Godot (`game/`) is view, input, and audio. State uses integers and `Fp` (Q48.16). The only clock is a 20 Hz tick (`Simulation.TickHz`). One second is 20 ticks. `BattleSim` resolves movement, fire, armor facing, sight, supply, morale and criticals for the Fulda skirmish. These are covered by unit tests, not yet by G4 scenarios.
 
 Commands are data. Replays store them and reproduce the state hash. Clients that receive the same commands must hash the same.
 
 ## Content
 
-Units, weapons, support, factions, eras, traits, and research live in versioned JSON under `data/`. No balance number lives in code. The seed catalog has the three eras and no units.
+Units, weapons, support, factions, eras, traits, and research live in versioned JSON under `data/`. No balance number lives in code. `data/units.json` holds 103 game-scale units across the three eras (D010). Their meshes are placeholders (D015).
 
 ## What is explicitly later
 
-Line of sight, armor, morale, supply, destruction, commanders, flight, support, campaigns, networking, and grand strategy are specified in `REQUIREMENTS.md` and are not in this tree yet. Nuclear weapons exist only in grand strategy, and the tactical-nuke battle card is off unless a match turns it on.
+Commander planners, the full flight model, the fires and air menus, in-battle destruction, the frontline, Support Points, networking, and most of grand strategy are specified in `REQUIREMENTS.md` and are not built yet. A thin campaign and an 8-province theater exist. Nuclear weapons exist only in grand strategy, and the tactical-nuke battle card is off unless a match turns it on.
