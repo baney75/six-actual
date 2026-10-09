@@ -1,0 +1,103 @@
+{
+  "triangles_lod0": 29880,
+  "bbox_min": [
+    -0.35,
+    -1.1,
+    0.0
+  ],
+  "bbox_max": [
+    49.98,
+    36.48,
+    16.03
+  ],
+  "chunk_m": 3.0,
+  "storey_height_m": 2.8,
+  "roof_pitches_deg": [
+    30.0,
+    30.0,
+    32.0,
+    32.0,
+    35.0,
+    35.0,
+    45.0,
+    45.0,
+    45.0,
+    45.0,
+    48.0,
+    48.0,
+    52.0,
+    52.0,
+    55.0,
+    55.0,
+    70.0,
+    70.0,
+    70.0,
+    70.0
+  ],
+  "roof_pitch_median_deg": 46.5,
+  "footprints_m": [
+    [
+      9.0,
+      12.0
+    ],
+    [
+      9.0,
+      12.0
+    ],
+    [
+      9.0,
+      15.0
+    ],
+    [
+      9.0,
+      12.0
+    ],
+    [
+      9.0,
+      18.0
+    ],
+    [
+      9.0,
+      12.0
+    ],
+    [
+      6.0,
+      15.0
+    ],
+    [
+      6.0,
+      9.0
+    ],
+    [
+      6.0,
+      6.0
+    ]
+  ],
+  "footprint_short_median_m": 9.0,
+  "footprint_long_median_m": 12.0,
+  "chunks": 191,
+  "nodes": [
+    "Building_FachwerkEave",
+    "Building_FachwerkGable",
+    "Building_Garage",
+    "Building_Gasthaus",
+    "Building_Gruenderzeit",
+    "Building_Schuppen",
+    "Building_Seitenhaus",
+    "Building_Stall",
+    "Building_Zehntscheune",
+    "GableWindows_0",
+    "GableWindows_1",
+    "Gate",
+    "Gateway_Hoftor",
+    "Ground",
+    "Root",
+    "Sign_Gasthaus",
+    "Wall_0",
+    "Wall_1",
+    "Wall_2",
+    "Wall_3",
+    "Wall_4"
+  ],
+  "id": "wgerman_town_block_1989"
+}

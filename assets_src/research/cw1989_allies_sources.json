@@ -1,0 +1,1831 @@
+{
+  "version": 1,
+  "retrieved": "2026-10-09",
+  "era": "coldwar",
+  "notes": "Cold War 1989 allied factions (ERA-01): West Germany, United Kingdom, France, East Germany, Poland. Every number carries src indices; 'design' marks fills where the source is silent (notably composite-armour figures for Challenger 1 and the T-72M1, which the sources do not give).",
+  "units": [
+    {
+      "id": "leopard2a4",
+      "name": "Leopard 2A4",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "tank",
+      "year_in_service": 1985,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 55.2,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 70,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 340,
+          "src": [
+            0
+          ],
+          "note": "road"
+        }
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": 700,
+          "src": [
+            0
+          ],
+          "note": "'against kinetic projectiles: 700 mm'"
+        },
+        "turret_front_ce": {
+          "value": 1000,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_ke": {
+          "value": 600,
+          "src": [
+            0
+          ],
+          "note": "design: Wikipedia gives no 2A4 hull KE figure",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 800,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "Bundeswehr main battle tank, Rh-120 L/44 (42 rounds); 2A4 from 1985, Leopard 2 in service 1979",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Leopard_2"
+      ]
+    },
+    {
+      "id": "leopard1a5",
+      "name": "Leopard 1A5",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "tank",
+      "year_in_service": 1987,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 42.2,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "105 mm L7A3, 10-70 mm steel; A5 deliveries from December 1986",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Leopard_1"
+      ]
+    },
+    {
+      "id": "marder1a3",
+      "name": "Marder 1A3",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "ifv",
+      "year_in_service": 1989,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 33.5,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 6,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 520,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "IFV: 20 mm Rh 202, MILAN; protected against 20-25 mm APDS",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Marder_(infantry_fighting_vehicle)"
+      ]
+    },
+    {
+      "id": "gepard",
+      "name": "Flakpanzer Gepard",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "spaag",
+      "year_in_service": 1976,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 47.5,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 550,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "2 x 35 mm Oerlikon (640 AA rounds), 5.5 km, 15 km search and tracking radars",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flakpanzer_Gepard"
+      ]
+    },
+    {
+      "id": "frg_pzgren_squad",
+      "name": "Panzergrenadier Squad (1989)",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "infantry",
+      "year_in_service": 1989,
+      "dimensions": {},
+      "crew": {
+        "value": 6,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Marder dismount team: G3 rifles, MG3, Panzerfaust 44",
+      "sources": [
+        "design: Marder carries 6 dismounts (Wikipedia Marder)"
+      ]
+    },
+    {
+      "id": "frg_milan_team",
+      "name": "MILAN Team (Bundeswehr)",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "at_team",
+      "year_in_service": 1984,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "MILAN 2: wire-guided SACLOS, 2 km, 115 mm tandem-free HEAT (1984)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MILAN"
+      ]
+    },
+    {
+      "id": "challenger1",
+      "name": "Challenger 1",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "tank",
+      "year_in_service": 1983,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 62,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 56,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 450,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": 600,
+          "src": [
+            0
+          ],
+          "note": "Chobham: no figure in source; design",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 900,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": 550,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 800,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "BAOR main battle tank, L11A5 120 mm rifled (64 rounds), Chobham armour",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Challenger_1"
+      ]
+    },
+    {
+      "id": "warrior_fv510",
+      "name": "FV510 Warrior",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "ifv",
+      "year_in_service": 1987,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 25.4,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 74,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 660,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "IFV, 30 mm L21 RARDEN (1,500 m)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Warrior_tracked_armoured_vehicle"
+      ]
+    },
+    {
+      "id": "scimitar_fv107",
+      "name": "FV107 Scimitar",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "recon",
+      "year_in_service": 1974,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 7.8,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 80.5,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 450,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "tracked recon vehicle, 30 mm RARDEN",
+      "sources": [
+        "https://en.wikipedia.org/wiki/FV107_Scimitar"
+      ]
+    },
+    {
+      "id": "rapier_fsb",
+      "name": "Rapier FSB",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "sam",
+      "year_in_service": 1979,
+      "dimensions": {},
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ],
+        "note": "design: not on the page",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "towed"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "towed SACLOS SAM, 4 rounds, 8.2 km, 5 km ceiling (FSA/FSB with Blindfire)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rapier_(missile)"
+      ]
+    },
+    {
+      "id": "uk_infantry_section_1989",
+      "name": "British Infantry Section (1989)",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "infantry",
+      "year_in_service": 1989,
+      "dimensions": {},
+      "crew": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Warrior section: SA80 IW and LSW, LAW 80",
+      "sources": [
+        "design: Warrior section of 7 (Wikipedia Warrior)"
+      ]
+    },
+    {
+      "id": "uk_milan_team",
+      "name": "MILAN Team (British Army)",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "at_team",
+      "year_in_service": 1984,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "MILAN 2 (1984)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MILAN"
+      ]
+    },
+    {
+      "id": "harrier_gr5",
+      "name": "Harrier GR5",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "attack_jet",
+      "year_in_service": 1987,
+      "dimensions": {},
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 800,
+          "src": [
+            0
+          ],
+          "note": "sim cruise design; max 1,065 km/h",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "V/STOL attack aircraft: 2 x 25 mm ADEN, bombs and CBUs (July 1987)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/British_Aerospace_Harrier_II"
+      ]
+    },
+    {
+      "id": "amx30b2",
+      "name": "AMX-30B2",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "tank",
+      "year_in_service": 1982,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 36,
+          "src": [
+            0
+          ],
+          "note": "AMX-30B figure"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "105 mm CN-105-F1 (50 rounds), APFSDS with the B2 (1982)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AMX-30"
+      ]
+    },
+    {
+      "id": "amx10p",
+      "name": "AMX-10P",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "ifv",
+      "year_in_service": 1973,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 14.2,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "IFV, 20 mm M693 (800 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AMX-10P"
+      ]
+    },
+    {
+      "id": "amx10rc",
+      "name": "AMX-10 RC",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "recon",
+      "year_in_service": 1979,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 15.8,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 85,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 800,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "6x6 armoured car, 105 mm F2 (38 rounds); front proof vs 23 mm API at 300 m",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AMX-10_RC"
+      ]
+    },
+    {
+      "id": "vab",
+      "name": "VAB",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "apc",
+      "year_in_service": 1979,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 13,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 10,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 110,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 1200,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "4x4 APC, AA52 MG, proof vs 7.62 mm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Véhicule_de_l'Avant_Blindé"
+      ]
+    },
+    {
+      "id": "roland_amx30",
+      "name": "AMX-30 Roland",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "sam",
+      "year_in_service": 1981,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 36,
+          "src": [
+            0
+          ],
+          "note": "AMX-30 chassis",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ],
+        "note": "design: not on the page",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ],
+          "note": "AMX-30 chassis",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Roland 2: 8 km, 5.5 km ceiling, 2 ready + 8 reload",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Roland_(missile)"
+      ]
+    },
+    {
+      "id": "auf1",
+      "name": "AMX-30 AuF1",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "spg",
+      "year_in_service": 1977,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 42,
+          "src": [
+            0
+          ],
+          "note": "41.9-43.5 t",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 460,
+          "src": [
+            0
+          ],
+          "note": "420-500 km",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "155 mm GCT, 23 km (28 km RAP), 8 rpm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GCT_155mm"
+      ]
+    },
+    {
+      "id": "fr_infantry_squad_1989",
+      "name": "French Infantry Group (1989)",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "infantry",
+      "year_in_service": 1989,
+      "dimensions": {},
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "groupe de combat: FAMAS, AA52, LRAC 89",
+      "sources": [
+        "design: VAB carries 10 (Wikipedia VAB)"
+      ]
+    },
+    {
+      "id": "fr_milan_team",
+      "name": "MILAN Team (French Army)",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "at_team",
+      "year_in_service": 1984,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "MILAN 2 (1984)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MILAN"
+      ]
+    },
+    {
+      "id": "gazelle_hot",
+      "name": "SA 342M Gazelle (HOT)",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "attack_helo",
+      "year_in_service": 1980,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "estimate": true,
+        "note": "page: 1 or 2; HOT needs a gunner, 2 used"
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 264,
+          "src": [
+            0
+          ],
+          "note": "SA 341G cruise"
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "French Army anti-tank helicopter, 4 HOT",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Aérospatiale_Gazelle"
+      ]
+    },
+    {
+      "id": "t72m1_nva",
+      "name": "T-72M1 (NVA)",
+      "side": "Warsaw Pact",
+      "nation": "East Germany",
+      "kind": "tank",
+      "year_in_service": 1982,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 41.5,
+          "src": [
+            0
+          ],
+          "note": "design (T-72A class)",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": 410,
+          "src": [
+            0
+          ],
+          "note": "composite turret with ceramic rods; no figure in source, design",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 500,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": 380,
+          "src": [
+            0
+          ],
+          "note": "glacis +16 mm appliqué (+43 mm LOS); design",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 450,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "export T-72 with appliqué glacis and composite turret, 2A46 125 mm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-72"
+      ]
+    },
+    {
+      "id": "bmp1_nva",
+      "name": "BMP-1 (NVA)",
+      "side": "Warsaw Pact",
+      "nation": "East Germany",
+      "kind": "ifv",
+      "year_in_service": 1966,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 13.2,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "IFV, 73 mm 2A28, Malyutka/Fagot",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BMP-1"
+      ]
+    },
+    {
+      "id": "spw70",
+      "name": "SPW-70 (BTR-70)",
+      "side": "Warsaw Pact",
+      "nation": "East Germany",
+      "kind": "apc",
+      "year_in_service": 1980,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 11.5,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ],
+          "note": "400-600 km",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "8x8 APC, 14.5 mm KPVT; 1,316 delivered to the NVA 1980-1990",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BTR-70"
+      ]
+    },
+    {
+      "id": "nva_mot_rifle_squad",
+      "name": "NVA Motorised Rifle Squad",
+      "side": "Warsaw Pact",
+      "nation": "East Germany",
+      "kind": "infantry",
+      "year_in_service": 1989,
+      "dimensions": {},
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "mot-schützen squad: MPi-KMS-72, LMG-K, RPG-7",
+      "sources": [
+        "design: BMP-1 carries 8 (Wikipedia BMP-1)"
+      ]
+    },
+    {
+      "id": "w50_truck",
+      "name": "IFA W50",
+      "side": "Warsaw Pact",
+      "nation": "East Germany",
+      "kind": "supply",
+      "year_in_service": 1967,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 9.7,
+          "src": [
+            0
+          ],
+          "note": "4.4 t unladen + 5.3 t payload",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ],
+        "estimate": true,
+        "note": "design: not on the page"
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 90,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "the NVA's standard 5-tonne truck",
+      "sources": [
+        "https://en.wikipedia.org/wiki/IFA_W50"
+      ]
+    },
+    {
+      "id": "t72m1_pl",
+      "name": "T-72M1 (Poland)",
+      "side": "Warsaw Pact",
+      "nation": "Poland",
+      "kind": "tank",
+      "year_in_service": 1982,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 41.5,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": 410,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 500,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": 380,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 450,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "licence-built T-72M1 (Bumar-Łabędy)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-72"
+      ]
+    },
+    {
+      "id": "bwp1",
+      "name": "BWP-1",
+      "side": "Warsaw Pact",
+      "nation": "Poland",
+      "kind": "ifv",
+      "year_in_service": 1972,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 13.2,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Polish BMP-1",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BMP-1"
+      ]
+    },
+    {
+      "id": "skot_ot64",
+      "name": "OT-64 SKOT-2A",
+      "side": "Warsaw Pact",
+      "nation": "Poland",
+      "kind": "apc",
+      "year_in_service": 1963,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 14.5,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 10,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 94,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 710,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "8x8 APC, 14.5 mm KPV, Malyutka; 2,500 in Polish service",
+      "sources": [
+        "https://en.wikipedia.org/wiki/OT-64_SKOT"
+      ]
+    },
+    {
+      "id": "pl_infantry_squad",
+      "name": "Polish Mechanised Squad",
+      "side": "Warsaw Pact",
+      "nation": "Poland",
+      "kind": "infantry",
+      "year_in_service": 1989,
+      "dimensions": {},
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "mechanised squad: AKM/kbk wz. 88, PKM, RPG-7",
+      "sources": [
+        "design: BWP-1 carries 8 (Wikipedia BMP-1)"
+      ]
+    },
+    {
+      "id": "su22m4",
+      "name": "Su-22M4 Fitter-K",
+      "side": "Warsaw Pact",
+      "nation": "Poland",
+      "kind": "strike_jet",
+      "year_in_service": 1984,
+      "dimensions": {},
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 900,
+          "src": [
+            0
+          ],
+          "note": "sim cruise design; max 1,400 km/h at sea level",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "strike fighter: 2 x 30 mm NR-30, bombs, Kh-25/29 (Poland 1984; East Germany 48)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sukhoi_Su-17"
+      ]
+    },
+    {
+      "id": "man_kat1",
+      "name": "MAN KAT1 (5 t 4x4)",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "supply",
+      "year_in_service": 1977,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 15.0,
+          "src": [
+            0
+          ],
+          "note": "5,000 kg payload (source); laden weight design",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 90,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Bundeswehr 5-tonne Category 1 cargo truck, 4x4 from 1977",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MAN_KAT1"
+      ]
+    },
+    {
+      "id": "bedford_mk",
+      "name": "Bedford MK (4 t 4x4)",
+      "side": "NATO",
+      "nation": "United Kingdom",
+      "kind": "supply",
+      "year_in_service": 1970,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 9.1,
+          "src": [
+            0
+          ],
+          "note": "5.1 t kerb (TK, source) + 4 t payload (design)",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "estimate": true,
+        "note": "design: not on the page"
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 75,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "British Army 4-tonne 4x4 truck, military variant of the TK (launched 1960)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bedford_TK"
+      ]
+    },
+    {
+      "id": "renault_trm10000",
+      "name": "Renault TRM 10000",
+      "side": "NATO",
+      "nation": "France",
+      "kind": "supply",
+      "year_in_service": 1987,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 20.0,
+          "src": [
+            0
+          ],
+          "note": "10,000 kg payload (source); laden weight design",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 89,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "French Army 10-tonne 6x6 logistics truck, in service 1987",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Renault_TRM_10000"
+      ]
+    },
+    {
+      "id": "star266",
+      "name": "Star 266",
+      "side": "Warsaw Pact",
+      "nation": "Poland",
+      "kind": "supply",
+      "year_in_service": 1973,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 10.9,
+          "src": [
+            0
+          ],
+          "note": "7.35 t curb + 3.5 t cross-country payload (source)"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "estimate": true,
+        "note": "design: not on the page"
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Polish Army 3.5-tonne 6x6 truck, from 1973",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Star_266"
+      ]
+    },
+    {
+      "id": "pah1",
+      "name": "Bo 105 PAH-1",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "attack_helo",
+      "year_in_service": 1979,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 242,
+          "src": [
+            0
+          ],
+          "note": "Bo 105CB max speed"
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Heeresflieger anti-tank helicopter, 6 HOT; 212 delivered 1979-84",
+      "sources": [
+        "https://en.wikipedia.org/wiki/MBB_Bo_105"
+      ]
+    },
+    {
+      "id": "alpha_jet_a",
+      "name": "Alpha Jet A",
+      "side": "NATO",
+      "nation": "West Germany",
+      "kind": "attack_jet",
+      "year_in_service": 1979,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 700,
+          "src": [
+            0
+          ],
+          "note": "sim cruise design; max 1,000 km/h at sea level",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Luftwaffe close-support jet: 27 mm BK-27 pod (150 rounds), ~5,000 lb on five hardpoints",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dassault/Dornier_Alpha_Jet"
+      ]
+    }
+  ]
+}

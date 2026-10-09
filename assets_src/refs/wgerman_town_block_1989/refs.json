@@ -1,0 +1,335 @@
+{
+  "refs": [
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/da_st_85_12340_members_of_the_2nd_battalion_42nd_ab27.jpeg",
+      "slots": [
+        "street_level",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:DA-ST-85-12340_Members_of_the_2nd_Battalion,_42nd_Infantry,_during_SPEARPOINT_%2784,_a_phase_of_Exercise_REFORGER_%2784.jpeg",
+      "author": "SSG Richard Hart",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/df_st_83_05566_view_of_an_m_60a3_tank_from_the_3_8a3e.jpeg",
+      "slots": [
+        "street_level",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:DF-ST-83-05566_View_of_an_M-60A3_tank_from_the_3rd_Armored_Division_passing_in_front_of_Hofgut_Eselsf%C3%BCrth_in_Germany.jpeg",
+      "author": "US Army photo by MSGT Don Sutherland",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/m113_during_reforger_83_in_stockhausen_herbstein_dc5c.jpeg",
+      "slots": [
+        "street_level",
+        "roof_types"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M113_during_Reforger_%2783_in_Stockhausen_(Herbstein)_Germany.JPEG",
+      "author": "SSGT Jim Pearson",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/m_2_bradley_7th_infantry_reforger_85_df_st_85_13_4762.jpeg",
+      "slots": [
+        "street_level",
+        "roof_types"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M-2_Bradley_7th_Infantry_REFORGER_%2785_DF-ST-85-13245.JPEG",
+      "author": "Staff Sgt. Fernando Serna",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/m60a3_of_3rd_battalion_32nd_armor_moving_through_403a.jpg",
+      "slots": [
+        "street_level"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M60A3_of_3rd_Battalion,_32nd_Armor_moving_through_Langg%C3%B6ns_during_Central_Guardian_%2785,_a_phase_of_REFORGER_%2785_DF-ST-85-13331.jpg",
+      "author": "STAFF SGT. Fernando Serna",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/us_army_m60_tank_in_german_village_dd55.jpg",
+      "slots": [
+        "street_level"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:US_Army_M60_tank_in_German_village.jpg",
+      "author": "SSGT Bob Simons, U.S. Army photo 330-CFD-DF-ST-99-04890",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/u_s_army_during_reforger_82_9f8c.jpeg",
+      "slots": [
+        "roof_types"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:U.S._Army_during_REFORGER_%2782.JPEG",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/reforger1986germany_6f83.jpg",
+      "slots": [
+        "roof_types"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Reforger1986Germany.jpg",
+      "author": "SSGT Fernando Serna",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_am_alten_rathaus_7_5_368e.jpg",
+      "slots": [
+        "street_level",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Am_alten_Rathaus_7-5.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_bornstra_e_18_zehntscheune_0fb8.jpg",
+      "slots": [
+        "street_level",
+        "roof_types"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Bornstra%C3%9Fe_18,_Zehntscheune.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_bornstra_e_69_1_ccc7.jpg",
+      "slots": [
+        "street_level",
+        "roof_types",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Bornstra%C3%9Fe_69_(1).JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_martinskirchstra_e_11_945b.jpg",
+      "slots": [
+        "street_level"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Martinskirchstra%C3%9Fe_11.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_ober_erlenbacher_stra_e_11_be7d.jpg",
+      "slots": [
+        "street_level",
+        "window_door_patterns",
+        "roof_types"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Ober-Erlenbacher_Stra%C3%9Fe_11.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_ober_erlenbacher_stra_e_12_e421.jpg",
+      "slots": [
+        "street_level",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Ober-Erlenbacher_Stra%C3%9Fe_12.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_ober_erlenbacher_stra_e_16_7879.jpg",
+      "slots": [
+        "street_level",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Ober-Erlenbacher_Stra%C3%9Fe_16.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_ober_erlenbacher_stra_e_18_881b.jpg",
+      "slots": [
+        "street_level"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Ober-Erlenbacher_Stra%C3%9Fe_18.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_ober_erlenbacher_stra_e_1_9f90.jpg",
+      "slots": [
+        "street_level",
+        "roof_types",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Ober-Erlenbacher_Stra%C3%9Fe_1.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_ober_erlenbacher_stra_e_3_ecf9.jpg",
+      "slots": [
+        "street_level",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Ober-Erlenbacher_Stra%C3%9Fe_3.jpg",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_erlenbach_taunussparkasse_06c0.jpg",
+      "slots": [
+        "street_level",
+        "window_door_patterns"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Erlenbach,_Taunussparkasse.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/ober_eschbach_ober_eschbacher_stra_e_37_eae7.jpg",
+      "slots": [
+        "street_level"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ober-Eschbach,_Ober-Eschbacher_Stra%C3%9Fe_37.JPG",
+      "author": "Karsten Ratzke",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/sc_201397_1st_sgt_winston_markham_urbana_iowa_an_9ae1.jpg",
+      "slots": [
+        "damaged",
+        "collapsed"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:SC_201397_-_1st_Sgt._Winston_Markham,_Urbana,_Iowa,_an_infantryman_with_the_104th_Division,_U.S._First_Army_in_Duren,_Germany,_displays_a_Nazi_flag_for_which_he_had_climbed_to_the_top_floor_of_this_bomb-shattered_building_(53005917839).jpg",
+      "author": "Signal Corps Archive from United States",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/sc_201398_compelled_to_allow_the_burning_buildin_4ba1.jpg",
+      "slots": [
+        "rubble",
+        "damaged"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:SC_201398_-_Compelled_to_allow_the_burning_building_in_the_background_to_be_leveled,_engineers_of_the_U.S._First_Army_clear_rubble_from_the_streets_of_Duren,_Germany,_to_permit_vehicles_to_pass._25_February,_1945._(53005928579).jpg",
+      "author": "Signal Corps Archive from United States",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/sc_201688_on_the_alert_for_enemy_snipers_infantr_bc50.jpg",
+      "slots": [
+        "damaged",
+        "collapsed",
+        "rubble"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:SC_201688_-_On_the_alert_for_enemy_snipers,_infantrymen_of_the_U.S._Ninth_Army_patrol_the_streets_of_Erkelenz,_Germany,_picking_their_way_through_the_rubble._27_February,_1945._(53009638412).jpg",
+      "author": "Signal Corps Archive from United States",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/sc_334983_u_s_tanks_of_the_5th_armored_division_474e.jpg",
+      "slots": [
+        "damaged",
+        "street_level"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:SC_334983_-_U.S._Tanks_of_the_5th_Armored_Division,_Ninth_U.S._Army,_wait_among_the_rubble_in_the_streets_of_Krefeld,_Germany_to_move_out_in_support_of_the_Infantry._3_March,_1945._(52232314393).jpg",
+      "author": "Signal Corps Archive from United States",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/heilbronn_strassenkampf_april_1945_25ba.jpg",
+      "slots": [
+        "collapsed",
+        "rubble"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Heilbronn_Strassenkampf_April_1945.jpg",
+      "author": "T-4 Irving Leibowitz",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/wesel_1945_15ca.jpg",
+      "slots": [
+        "rubble"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Wesel_1945.jpg",
+      "author": "USAAF",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/n_rnberg_zerst_rungen_april_1945_3a53.jpg",
+      "slots": [
+        "rubble",
+        "collapsed"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:N%C3%BCrnberg_Zerst%C3%B6rungen_April_1945.jpg",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/wgerman_town_block_1989/bomb_damaged_building_in_berlin_d6f5.jpg",
+      "slots": [
+        "damaged"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bomb_Damaged_Building_in_Berlin.jpg",
+      "author": "AIP Emilio Segrè Visual Archives, Gift of Michaele Thurgood Haynes and Terry Thurgood",
+      "retrieved": "2026-10-08"
+    }
+  ]
+}

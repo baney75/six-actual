@@ -1,0 +1,88 @@
+{
+  "view": "top",
+  "source": "assets_src/refs/su25/sukhoi_su_25_two_view_silhouette_d478.png",
+  "box": [
+    18,
+    12,
+    278,
+    304
+  ],
+  "bg": [],
+  "fg": [],
+  "length_m": 15.53,
+  "height_m": 13.42,
+  "px_per_m": 100,
+  "flipped": false,
+  "open_m": 0.0,
+  "mask_confidence": "drawing",
+  "confidence_why": "public-domain 2-view silhouette; length includes the twin nose probes (sourced 15.53 m with probe); at this scale the drawn span is 7% under the sourced 14.36 m",
+  "height_scaled_to_m": null,
+  "top_cut": false,
+  "bottom_cut_m": 0.0,
+  "front_cut": false,
+  "erase": [
+    [
+      68,
+      140,
+      77,
+      159
+    ],
+    [
+      80,
+      140,
+      90,
+      155
+    ],
+    [
+      94,
+      135,
+      103,
+      151
+    ],
+    [
+      107,
+      110,
+      118,
+      147
+    ],
+    [
+      57,
+      150,
+      61,
+      165
+    ],
+    [
+      216,
+      140,
+      225,
+      159
+    ],
+    [
+      203,
+      140,
+      213,
+      155
+    ],
+    [
+      190,
+      135,
+      199,
+      151
+    ],
+    [
+      175,
+      110,
+      186,
+      147
+    ],
+    [
+      232,
+      150,
+      236,
+      165
+    ]
+  ],
+  "erase_why": "drawn stores (rocket pods, bombs, drop tanks, R-60s) ahead of the wing LE; stores are separate loadout attachments, not airframe",
+  "gear_up": false,
+  "note": "ink trace of a distributable orthographic drawing"
+}

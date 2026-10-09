@@ -1,0 +1,22 @@
+{
+  "view": "side",
+  "source": "assets_src/refs/m1a1/abrams_in_formation_12b8.jpg",
+  "box": [
+    484,
+    603,
+    1203,
+    790
+  ],
+  "bg": [],
+  "length_m": 9.83,
+  "height_m": 2.6,
+  "px_per_m": 100,
+  "flipped": false,
+  "open_m": 0.1,
+  "mask_confidence": "low",
+  "confidence_why": "desert dust at the rear and under the hull hides the running gear below the belly; overloaded Desert Storm stowage; gun foreshortened by slight traverse",
+  "height_scaled_to_m": null,
+  "top_cut": true,
+  "bottom_cut_m": 0.45,
+  "note": "GrabCut trace of a distributable photo; perspective not corrected (telephoto side/front views only)"
+}

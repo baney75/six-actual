@@ -1,0 +1,300 @@
+{
+  "refs": [
+    {
+      "file": "assets_src/refs/m60a3/2_70_ar_bright_star_85_c81b.jpg",
+      "slots": [
+        "left",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:2-70_AR_Bright_Star_85.jpg",
+      "author": "Photo by TSgt Jim Pearson",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/df_st_83_05566_view_of_an_m_60a3_tank_from_the_3_8a3e.jpeg",
+      "slots": [
+        "three_quarter",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:DF-ST-83-05566_View_of_an_M-60A3_tank_from_the_3rd_Armored_Division_passing_in_front_of_Hofgut_Eselsf%C3%BCrth_in_Germany.jpeg",
+      "author": "US Army photo by MSGT Don Sutherland",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/left_side_view_of_m60a3_tank_during_reforger_82_8d18.jpg",
+      "slots": [
+        "left",
+        "running_gear",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Left_side_view_of_M60A3_tank_during_Reforger_82.jpg",
+      "author": "Bob Simons",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m60a3_2_220f.jpg",
+      "slots": [
+        "three_quarter",
+        "variant_difference"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M60A3_2.jpg",
+      "author": "SRA D. Myles Cullen, USAF",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m60a3_main_battle_tank_28657558736_12a5.jpg",
+      "slots": [
+        "three_quarter",
+        "turret_detail"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M60A3_Main_Battle_Tank_(28657558736).jpg",
+      "author": "Gary Todd from Xinzheng, China",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m60a3_main_battle_tank_memorial_ninety_six_south_ebca.jpg",
+      "slots": [
+        "rear",
+        "rear_deck_engine"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M60A3_Main_Battle_Tank_memorial_(Ninety_Six,_South_Carolina).jpg",
+      "author": "G1B71",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m_60a3_near_giessen_in_germany_1985_6bf7.jpeg",
+      "slots": [
+        "front",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M-60A3_near_Giessen_in_Germany_1985.JPEG",
+      "author": "Tech. Sgt. Boyd Belcher",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m60a3_of_3rd_battalion_32nd_armor_moving_through_403a.jpg",
+      "slots": [
+        "three_quarter",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M60A3_of_3rd_Battalion,_32nd_Armor_moving_through_Langg%C3%B6ns_during_Central_Guardian_%2785,_a_phase_of_REFORGER_%2785_DF-ST-85-13331.jpg",
+      "author": "STAFF SGT. Fernando Serna",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m60a3_of_4_69_armor_with_commander_using_binocul_95c3.jpg",
+      "slots": [
+        "turret_detail",
+        "interior_or_hatch_open"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M60A3_of_4-69_Armor_with_commander_using_binoculars_during_REFORGER_%2785_DF-ST-85-13241.jpg",
+      "author": "SSGT David Nolan",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m88_and_m60_during_bright_star_1985_5825.jpeg",
+      "slots": [
+        "three_quarter",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M88_and_M60_during_Bright_Star_1985.JPEG",
+      "author": "TSGT David Nolan, U.S. Air Force",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m_60a3_tank_johnny_ro_veterans_memorial_park_leo_0565.jpg",
+      "slots": [
+        "right"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M-60A3_tank_-_Johnny_Ro_Veterans_Memorial_Park_-_Leominster,_Massachusetts_-_DSC09117.jpg",
+      "author": "Daderot",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m_60a3_tank_johnny_ro_veterans_memorial_park_leo_f567.jpg",
+      "slots": [
+        "three_quarter"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M-60A3_tank_-_Johnny_Ro_Veterans_Memorial_Park_-_Leominster,_Massachusetts_-_DSC09143.jpg",
+      "author": "Daderot",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/m_60a3_tank_johnny_ro_veterans_memorial_park_leo_fc27.jpg",
+      "slots": [
+        "three_quarter",
+        "running_gear"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M-60A3_tank_-_Johnny_Ro_Veterans_Memorial_Park_-_Leominster,_Massachusetts_-_DSC09121.jpg",
+      "author": "Daderot",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/tank_bancroft_nebraska_ca0b.jpg",
+      "slots": [
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Tank_Bancroft,_Nebraska.jpg",
+      "author": "WiinterU",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/us_army_m60_tank_in_german_village_dd55.jpg",
+      "slots": [
+        "variant_difference",
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:US_Army_M60_tank_in_German_village.jpg",
+      "author": "SSGT Bob Simons, U.S. Army photo 330-CFD-DF-ST-99-04890",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m60a3/destroyed_m60_0859.jpg",
+      "slots": [
+        "destroyed"
+      ],
+      "kind": "look-only",
+      "license": "Public domain (look-only: PD-Egypt claim; may still be under copyright in the US (URAA))",
+      "url": "https://commons.wikimedia.org/wiki/File:Destroyed_m60.jpg",
+      "author": "Sherif9282 at en.wikipedia",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m60a3/israeli_m60_wreckage_1ff5.jpg",
+      "slots": [
+        "destroyed"
+      ],
+      "kind": "look-only",
+      "license": "Public domain (look-only: PD-Egypt claim; may still be under copyright in the US (URAA))",
+      "url": "https://commons.wikimedia.org/wiki/File:Israeli_M60_wreckage.jpg",
+      "author": "Military Battles on the Egyptian Front by Gammal Hammad. Published by Dār al-Shurūq, Egypt.",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/fgm_148_javelin_id_061024_a_0497k_006_5fb2.jpeg",
+      "slots": [
+        "destroyed"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:FGM-148_Javelin_-_ID_061024-A-0497K-006.JPEG",
+      "author": "GARY L. KIEFFER",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m60a3/m60a3_at_1st_cavalry_division_museum_rear_f3a2.jpg",
+      "slots": [
+        "rear",
+        "three_quarter",
+        "rear_deck_engine"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M60A3_at_1st_Cavalry_Division_Museum_rear.jpg",
+      "author": "Articseahorse",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m60a3/m60_running_gear_8730.jpg",
+      "slots": [
+        "running_gear"
+      ],
+      "kind": "look-only",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M60_running_gear.jpg",
+      "author": "Nico Gilbert-Igelsrud",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m60a3/gowen_field_military_heritage_museum_gowen_field_51d2.jpg",
+      "slots": [
+        "three_quarter",
+        "rear",
+        "running_gear"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Gowen_Field_Military_Heritage_Museum,_Gowen_Field_ANGB,_Boise,_Idaho_2018_(45913436185).jpg",
+      "author": "JTOcchialini",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m60a3/m60_tank_interior_eec7.jpg",
+      "slots": [
+        "interior_or_hatch_open"
+      ],
+      "kind": "look-only",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M60_tank_interior.jpg",
+      "author": "Nevada Tumbleweed (Mark Holloway)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m60a3/m60a3_blueprint_06603.jpg",
+      "slots": [
+        "top_or_plan",
+        "left",
+        "front",
+        "rear"
+      ],
+      "kind": "look-only",
+      "license": "all rights reserved (the-blueprints.com)",
+      "url": "https://the-blueprints.com/blueprints/tanks/tanks-m/6603/view/m60a3",
+      "author": "the-blueprints.com",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/df_st_87_07162_an_aerial_view_of_two_m60a1_main_3fab.jpeg",
+      "slots": [
+        "top_or_plan",
+        "variant_difference"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:DF-ST-87-07162_An_aerial_view_of_two_M60A1_main_battle_tanks_maneuvering_through_the_trees_during_Exercise_REFORGER_%2786.jpeg",
+      "author": "Ssgt Fernando Serna",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m60a3/dimensions.md",
+      "slots": [
+        "dimension_source"
+      ],
+      "kind": "distributable",
+      "license": "own work (notes)",
+      "url": "n/a (own notes)",
+      "author": "Claude (Six Actual ref-hunter)",
+      "retrieved": "2026-10-08"
+    }
+  ]
+}

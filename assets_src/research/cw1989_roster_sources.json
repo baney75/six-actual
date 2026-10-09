@@ -1,0 +1,6190 @@
+{
+  "version": 1,
+  "retrieved": "2026-10-08",
+  "notes": "Every number carries src indices into the unit's sources list. Values converted from imperial units say so in the note. Armor and penetration figures are public estimates and are marked estimate. 'from memory, unverified' marks the few facts not checked against a fetched source. gradient: Soviet sources give degrees; those are kept in notes rather than converted.",
+  "units": [
+    {
+      "id": "m1a1_abrams",
+      "name": "M1A1 Abrams",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "tank",
+      "year_in_service": 1985,
+      "in_service_1989": {
+        "value": true,
+        "note": "M1A1 fielded from Aug 1985; M1A1 Heavy Armor (DU armor) in production from Oct 1988, so a 1989 USAREUR unit could have either; data below is baseline M1A1 unless noted."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 7.93,
+          "src": [
+            0
+          ],
+          "note": "hull 26.02 ft converted"
+        },
+        "width_m": {
+          "value": 3.66,
+          "src": [
+            0
+          ],
+          "note": "12 ft converted"
+        },
+        "height_m": {
+          "value": 2.44,
+          "src": [
+            0
+          ],
+          "note": "8 ft converted; FAS turret height 93.5 in = 2.37 m"
+        },
+        "combat_weight_t": {
+          "value": 57.2,
+          "src": [
+            0,
+            1
+          ],
+          "note": "63 short tons converted; M1A1HA ~61.3 t per [2]"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 66.8,
+          "src": [
+            1,
+            2
+          ],
+          "note": "41.5 mph governed per FAS; en.wikipedia gives 45 mph (72 km/h) governed for M1A1"
+        },
+        "cross_country_speed_kmh": {
+          "value": 48,
+          "src": [
+            1
+          ],
+          "note": "30 mph"
+        },
+        "range_km": {
+          "value": 426,
+          "src": [
+            1
+          ],
+          "note": "265 mi cruising range"
+        },
+        "fuel_l": {
+          "value": 1909,
+          "src": [
+            0
+          ],
+          "note": "504.4 US gal"
+        },
+        "gradient_pct": {
+          "value": 60,
+          "src": [
+            1
+          ],
+          "note": "FAS lists speed on 60% slope (4.1 mph)"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "M256 120 mm smoothbore",
+          "caliber_mm": 120,
+          "type": "APFSDS",
+          "round": "M829A1 (type classified 1988)",
+          "basic_load": 40,
+          "effective_range_m": 3000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 650,
+          "penetration_note": "650 mm at 2000 m per [3] table (stated as 'LoS at 60 deg'); M829 (1984) 525-540 mm at 2000 m",
+          "penetration_is_estimate": true,
+          "src": [
+            0,
+            3,
+            4
+          ]
+        },
+        {
+          "name": "M256 120 mm smoothbore",
+          "caliber_mm": 120,
+          "type": "HEAT",
+          "round": "M830 HEAT-MP-T (US licence of DM12)",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 480,
+          "penetration_note": "DM12/M830 row in [3]: 480 mm; mixed load within the 40 rounds",
+          "penetration_is_estimate": true,
+          "src": [
+            3
+          ]
+        },
+        {
+          "name": "M2HB",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": 900,
+          "effective_range_m": 1800,
+          "rate_of_fire_rpm": "450-600",
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "M240 (coax + loader)",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": 10400,
+          "effective_range_m": 1800,
+          "rate_of_fire_rpm": "650-950",
+          "note": "2 guns; some sources give 11,400",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "turret_front_ke": {
+          "value": 480,
+          "src": [
+            2
+          ],
+          "note": "M1A1, ru.wikipedia infobox estimate",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": "700-800",
+          "src": [
+            2
+          ],
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": "360-380",
+          "src": [
+            2
+          ],
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": "600-750",
+          "src": [
+            2
+          ],
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 65,
+          "src": [
+            2
+          ],
+          "note": "hull side over crew/fighting compartment, without skirts"
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            2
+          ]
+        },
+        "era": null,
+        "notes": "Chobham-type composite; DU inserts in turret from Oct 1988 (M1A1HA) [0]. ru.wikipedia gives 600 KE / 900-1100 CE for M1A1HC/M1A2 turret. Forum-relayed Russian estimates (GSPO/btvt: M1A1HA 530-550 KE / 750-780 CE; NII Stali 700 KE / 850 CE) are unverified and not used."
+      },
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "Gunner's Primary Sight with Hughes Thermal Imaging System and laser rangefinder; driver image-intensifier periscope [1]",
+        "night": "full thermal day/night"
+      },
+      "countermeasures": {
+        "smoke": "2 x 6-barrel M250 grenade launchers [0]; VEESS engine smoke [0]"
+      },
+      "one_line_role": "Use it for: main line tank killer, fights on the move day or night and outranges Soviet tanks.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M1_Abrams",
+        "https://man.fas.org/dod-101/sys/land/m1.htm",
+        "https://ru.wikipedia.org/wiki/M1_%C2%AB%D0%90%D0%B1%D1%80%D0%B0%D0%BC%D1%81%C2%BB",
+        "https://en.wikipedia.org/wiki/120%C3%97570mm_NATO",
+        "https://en.wikipedia.org/wiki/M829"
+      ]
+    },
+    {
+      "id": "m60a3_tts",
+      "name": "M60A3 TTS",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "tank",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": "M60A3 fielded to Europe from 1979; TTS version with AN/VSG-2 thermal sight. Being replaced by M1 in USAREUR by 1989 but still in many units/NG."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.946,
+          "src": [
+            0
+          ],
+          "note": "hull; Foss 2005 via [0], M60A1 spec, same hull"
+        },
+        "width_m": {
+          "value": 3.631,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.27,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 47.7,
+          "src": [
+            0
+          ],
+          "note": "52.6 short tons, M60A1 spec label; FAS gives '60 tons'"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 48,
+          "src": [
+            0,
+            1
+          ],
+          "note": "30 mph"
+        },
+        "cross_country_speed_kmh": {
+          "value": 19,
+          "src": [
+            0
+          ],
+          "note": "12 mph"
+        },
+        "range_km": {
+          "value": 480,
+          "src": [
+            0
+          ],
+          "note": "300 mi"
+        },
+        "fuel_l": {
+          "value": 1457,
+          "src": [
+            0
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [],
+          "note": "ru.wikipedia gives 35 deg climbing"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "M68E1 105 mm rifled",
+          "caliber_mm": 105,
+          "type": "APFSDS",
+          "round": "M833 (DU, 1983)",
+          "basic_load": 63,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 420,
+          "penetration_note": "420 mm 'LoS at 60 deg at 2000 m' per [3]; FAS gives 63 rounds, ru.wikipedia 57",
+          "penetration_is_estimate": true,
+          "src": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "M68E1 105 mm rifled",
+          "caliber_mm": 105,
+          "type": "HEAT",
+          "round": "M456A2 HEAT-T",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 175,
+          "penetration_note": "175 mm at 60 deg at any range per [3]",
+          "penetration_is_estimate": true,
+          "src": [
+            3
+          ]
+        },
+        {
+          "name": "M240 coax",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": 5950,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            1
+          ]
+        },
+        {
+          "name": "M85 cupola",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": 900,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": "400-625",
+          "note": "M85 rate from en.wikipedia M85 article",
+          "src": [
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "turret_front_ke": null,
+        "turret_front_ce": null,
+        "hull_front_ke": null,
+        "hull_front_ce": null,
+        "hull_upper_glacis_mm": {
+          "value": 109,
+          "src": [
+            0
+          ],
+          "note": "4.29 in at 65 deg, ~258 mm line of sight (10.15 in)"
+        },
+        "turret_front_mm": {
+          "value": 178,
+          "src": [
+            2
+          ],
+          "note": "cast steel, 0 deg"
+        },
+        "side_mm": {
+          "value": "36-74",
+          "src": [
+            2
+          ]
+        },
+        "rear_mm": {
+          "value": "25-41",
+          "src": [
+            2
+          ]
+        },
+        "era": null,
+        "notes": "All-steel cast/rolled homogeneous armor; no published RHA-equivalent needed (thickness is RHA-class steel)."
+      },
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "AN/VSG-2 Tank Thermal Sight (HgCdTe); AN/VVG-2 ruby laser rangefinder; M21 ballistic computer [0][1]",
+        "night": "thermal (gunner)"
+      },
+      "countermeasures": {
+        "smoke": {
+          "value": null,
+          "src": [],
+          "note": "M60A3 carried turret smoke grenade launchers (M239, 2 x 6) from memory, unverified"
+        }
+      },
+      "one_line_role": "Use it for: second-line tank support and overwatch; thermal sight lets it fight at night but armor is thin against 125 mm.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M60_tank",
+        "https://man.fas.org/dod-101/sys/land/m60.htm",
+        "https://ru.wikipedia.org/wiki/M60_(%D1%82%D0%B0%D0%BD%D0%BA)",
+        "https://en.wikipedia.org/wiki/105%C3%97617mmR"
+      ]
+    },
+    {
+      "id": "m2a2_bradley",
+      "name": "M2A2 Bradley IFV",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "ifv",
+      "year_in_service": 1988,
+      "in_service_1989": {
+        "value": true,
+        "note": "M2A2 introduced 1988 [0]; many units still had M2/M2A1 in 1989."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.55,
+          "src": [
+            0
+          ],
+          "note": "21.49 ft"
+        },
+        "width_m": {
+          "value": 3.6,
+          "src": [
+            0
+          ],
+          "note": "11.82 ft"
+        },
+        "height_m": {
+          "value": 2.98,
+          "src": [
+            0
+          ],
+          "note": "9.78 ft"
+        },
+        "combat_weight_t": {
+          "value": 30.5,
+          "src": [
+            0
+          ],
+          "note": "30,519 kg cumulative gross weight after A2 upgrade"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 6,
+        "src": [
+          0
+        ],
+        "note": "A2 reduced troops to six; 7 in later A2 ODS"
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 64,
+          "src": [
+            0
+          ],
+          "note": "40 mph (generic M2 infobox); FAS 45 mph"
+        },
+        "cross_country_speed_kmh": {
+          "value": 40,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 483,
+          "src": [
+            0,
+            1
+          ],
+          "note": "300 mi"
+        },
+        "fuel_l": {
+          "value": null,
+          "src": [],
+          "note": "not in sources fetched"
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [],
+          "note": "ru.wikipedia gives 30 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "M242 Bushmaster",
+          "caliber_mm": 25,
+          "type": "autocannon",
+          "round": "M791 APDS-T / M792 HEI-T",
+          "basic_load": 900,
+          "effective_range_m": 3000,
+          "rate_of_fire_rpm": "200 or 500",
+          "src": [
+            0,
+            4
+          ]
+        },
+        {
+          "name": "TOW 2 launcher (2 tubes)",
+          "caliber_mm": 152,
+          "type": "ATGM",
+          "round": "BGM-71D TOW 2 (1983)",
+          "basic_load": 7,
+          "effective_range_m": 3750,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 900,
+          "penetration_note": "estimate per [3] table; CIA-declassified figures are lower for earlier TOWs",
+          "penetration_is_estimate": true,
+          "src": [
+            0,
+            3
+          ]
+        },
+        {
+          "name": "M240C coax",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": 2200,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "turret_front_ke": null,
+        "turret_front_ce": null,
+        "hull_front_ke": {
+          "value": "30 mm APDS",
+          "src": [
+            0
+          ],
+          "note": "M2A2 armor protects against 30 mm APDS and RPGs (qualitative)"
+        },
+        "hull_front_ce": {
+          "value": "RPG class",
+          "src": [
+            0
+          ],
+          "note": "qualitative"
+        },
+        "side_mm": {
+          "value": "aluminum + 32 mm steel appliqué",
+          "src": [
+            0
+          ],
+          "note": "1.25 in steel plates added to hull sides"
+        },
+        "rear_mm": null,
+        "era": {
+          "value": "provision for ERA tiles (fitted later, not standard 1989)",
+          "src": [
+            0
+          ]
+        },
+        "notes": "Hull 5083/7039 aluminum with spaced laminate armor. M2/M2A1 rated vs 14.5 mm AP [0]."
+      },
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "Integrated Sight Unit with thermal imaging [0]",
+        "night": "thermal"
+      },
+      "countermeasures": {
+        "smoke": "2 x 4-barrel M257 grenade launchers [0]"
+      },
+      "one_line_role": "Use it for: carrying a rifle squad up with the tanks and killing BMPs with the 25 mm and tanks with TOW from a halt.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M2_Bradley",
+        "https://man.fas.org/dod-101/sys/land/m2.htm",
+        "https://ru.wikipedia.org/wiki/M2_%C2%AB%D0%91%D1%80%D1%8D%D0%B4%D0%BB%D0%B8%C2%BB",
+        "https://en.wikipedia.org/wiki/BGM-71_TOW",
+        "https://en.wikipedia.org/wiki/M242_Bushmaster"
+      ]
+    },
+    {
+      "id": "m3a2_bradley_cfv",
+      "name": "M3A2 Bradley CFV",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "recon",
+      "year_in_service": 1988,
+      "in_service_1989": {
+        "value": true,
+        "note": "M3A2 upgrade introduced with the A2 standard (1988); earlier M3/M3A1 also in service."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": "6.45-6.55",
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": "3.20-3.28",
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.97,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": "23-28",
+          "src": [
+            0
+          ],
+          "note": "range across M3 variants; A2 at upper end"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ],
+        "note": "plus 2 scouts (infobox crew 5)"
+      },
+      "dismounts": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": "56-66",
+          "src": [
+            0
+          ]
+        },
+        "cross_country_speed_kmh": null,
+        "range_km": {
+          "value": "400-480",
+          "src": [
+            0
+          ]
+        },
+        "fuel_l": null,
+        "gradient_pct": null,
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "M242 Bushmaster",
+          "caliber_mm": 25,
+          "type": "autocannon",
+          "basic_load": 1500,
+          "effective_range_m": 3000,
+          "rate_of_fire_rpm": "200 or 500",
+          "note": "300 ready",
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "TOW 2 launcher",
+          "caliber_mm": 152,
+          "type": "ATGM",
+          "round": "BGM-71D TOW 2",
+          "basic_load": 12,
+          "effective_range_m": 3750,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 900,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "note": "2 in launcher",
+          "src": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "M240C coax",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "notes": "As M2A2: aluminum + steel appliqué; protected against 30 mm APDS frontally per M2A2 description [1].",
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "Integrated Sight Unit with thermal imaging (as M2) [1]",
+        "night": "thermal"
+      },
+      "countermeasures": {
+        "smoke": "2 x 4-barrel M257 [1]"
+      },
+      "one_line_role": "Use it for: cavalry screen and armed reconnaissance with extra TOWs; finds the enemy and kills his recon.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M3_Bradley",
+        "https://en.wikipedia.org/wiki/M2_Bradley",
+        "https://en.wikipedia.org/wiki/BGM-71_TOW"
+      ]
+    },
+    {
+      "id": "m113a2",
+      "name": "M113A2 APC",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "apc",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": "M113A2 introduced 1979; A3 from 1987."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 4.86,
+          "src": [
+            0
+          ],
+          "note": "191.5 in"
+        },
+        "width_m": {
+          "value": 2.69,
+          "src": [
+            0
+          ],
+          "note": "105.75 in"
+        },
+        "height_m": {
+          "value": 2.2,
+          "src": [
+            0
+          ],
+          "note": "86.5 in to hull roof; wiki 2.5 m overall"
+        },
+        "combat_weight_t": {
+          "value": 11.2,
+          "src": [
+            0
+          ],
+          "note": "24,728 lb combat weight M113A2"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 11,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ],
+          "note": "37 mph for A2"
+        },
+        "cross_country_speed_kmh": null,
+        "range_km": {
+          "value": 483,
+          "src": [
+            0
+          ],
+          "note": "300 mi"
+        },
+        "fuel_l": {
+          "value": 360,
+          "src": [
+            0
+          ],
+          "note": "95 gal"
+        },
+        "gradient_pct": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "5.8 km/h in water"
+        }
+      },
+      "armament": [
+        {
+          "name": "M2HB",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": 2000,
+          "effective_range_m": 1800,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "hull_mm": {
+          "value": "28-44",
+          "src": [
+            1
+          ],
+          "note": "5083 aluminum"
+        },
+        "notes": "Proof against small arms and shell splinters only.",
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "driver periscopes only",
+        "night": "driver image intensifier (assumed, not sourced)"
+      },
+      "countermeasures": {
+        "smoke": null
+      },
+      "one_line_role": "Use it for: moving infantry, mortars and support troops behind the line; avoid direct fire.",
+      "sources": [
+        "https://man.fas.org/dod-101/sys/land/m113.htm",
+        "https://en.wikipedia.org/wiki/M113_armored_personnel_carrier"
+      ]
+    },
+    {
+      "id": "m901_itv",
+      "name": "M901 ITV",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "atgm_vehicle",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": "M901/M901A1 Improved TOW Vehicle in service with mech infantry AT companies."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 4.86,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.69,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.94,
+          "src": [
+            0
+          ],
+          "note": "head stowed; 3.41 m extended"
+        },
+        "combat_weight_t": {
+          "value": 11.8,
+          "src": [
+            0
+          ],
+          "note": "'12 tons' (assumed short tons, converted)"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": []
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 64,
+          "src": [
+            0
+          ],
+          "note": "40 mph"
+        },
+        "range_km": {
+          "value": 480,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [],
+          "note": "M113 base is amphibious; not confirmed for ITV"
+        }
+      },
+      "armament": [
+        {
+          "name": "M220 TOW twin launcher head",
+          "caliber_mm": 152,
+          "type": "ATGM",
+          "round": "BGM-71D TOW 2",
+          "basic_load": null,
+          "effective_range_m": 3750,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 900,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "note": "missile stowage not in fetched sources; commonly 10 stowed + 2 ready (from memory, unverified)",
+          "src": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "M60 / 7.62 mm MG",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "hull_mm": {
+          "value": "28-44",
+          "src": [],
+          "note": "as M113 aluminum hull"
+        },
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "TOW night sight (AN/TAS-4 thermal) in the launcher head (from memory, unverified)",
+        "night": "thermal"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: long-range hull-down tank killing from overwatch positions.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M901_ITV",
+        "https://man.fas.org/dod-101/sys/land/tow.htm",
+        "https://en.wikipedia.org/wiki/BGM-71_TOW"
+      ]
+    },
+    {
+      "id": "us_mech_rifle_squad",
+      "name": "US mechanized infantry rifle squad",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "infantry",
+      "year_in_service": 1985,
+      "in_service_1989": {
+        "value": true,
+        "note": "M16A2 adopted mid-1980s, M249 1984, AT4 (M136) adopted 1987."
+      },
+      "dimensions": {},
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "squad size set by TO&E; not verified"
+      },
+      "dismounts": {
+        "value": 6,
+        "src": [
+          5
+        ],
+        "note": "dismount team size = M2A2 troop capacity"
+      },
+      "mobility": {
+        "propulsion": "foot",
+        "amphibious": {
+          "value": false,
+          "src": []
+        },
+        "max_road_speed_kmh": null
+      },
+      "armament": [
+        {
+          "name": "M16A2 rifle",
+          "caliber_mm": 5.56,
+          "type": "rifle",
+          "basic_load": null,
+          "effective_range_m": 550,
+          "rate_of_fire_rpm": "700-900 cyclic",
+          "note": "550 m point / 800 m area",
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "M249 SAW",
+          "caliber_mm": 5.56,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": 800,
+          "rate_of_fire_rpm": 850,
+          "note": "800 m point with 521 mm barrel",
+          "src": [
+            1
+          ]
+        },
+        {
+          "name": "M203 grenade launcher",
+          "caliber_mm": 40,
+          "type": "HE",
+          "basic_load": null,
+          "effective_range_m": 350,
+          "rate_of_fire_rpm": "5-7 aimed",
+          "note": "150 m point, 350 m area, 400 m max",
+          "src": [
+            2
+          ]
+        },
+        {
+          "name": "M72A2/A3 LAW",
+          "caliber_mm": 66,
+          "type": "HEAT",
+          "basic_load": null,
+          "effective_range_m": 200,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 300,
+          "penetration_note": "M72A2 warhead penetrated 30 cm",
+          "penetration_is_estimate": true,
+          "src": [
+            3
+          ]
+        },
+        {
+          "name": "AT4 (M136)",
+          "caliber_mm": 84,
+          "type": "HEAT",
+          "basic_load": null,
+          "effective_range_m": 300,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 450,
+          "penetration_note": "'up to 45 cm' per [4]; 500 m area target",
+          "penetration_is_estimate": true,
+          "src": [
+            4
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "AN/PVS-4 image intensifier option for AT4/rifles per [4]",
+        "night": "image intensifier"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: clearing woods and villages, holding ground, and close anti-armor ambush with AT4.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M16_rifle",
+        "https://en.wikipedia.org/wiki/M249_Squad_Automatic_Weapon",
+        "https://en.wikipedia.org/wiki/M203_grenade_launcher",
+        "https://en.wikipedia.org/wiki/M72_LAW",
+        "https://en.wikipedia.org/wiki/AT4",
+        "https://en.wikipedia.org/wiki/M2_Bradley"
+      ]
+    },
+    {
+      "id": "m47_dragon_team",
+      "name": "M47 Dragon team",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "at_team",
+      "year_in_service": 1975,
+      "in_service_1989": {
+        "value": true,
+        "note": "Dragon II warhead entered service 1988."
+      },
+      "dimensions": {},
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "gunner plus assistant typical; not verified"
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "foot"
+      },
+      "armament": [
+        {
+          "name": "M47 Dragon II",
+          "caliber_mm": 140,
+          "type": "ATGM",
+          "round": "Dragon II (MK1 MOD0)",
+          "basic_load": null,
+          "effective_range_m": 1000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 610,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "note": "65-1000 m; missile 85-110 m/s; launcher 14.57 kg with day sight, 21.29 kg with night sight",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "night tracker sight available (weight figure in [0]); 6x day sight",
+        "night": "thermal night sight"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: platoon-level anti-tank defense out to 1 km; slow missile, gunner exposed during flight.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M47_Dragon"
+      ]
+    },
+    {
+      "id": "m220_tow_team",
+      "name": "M220 TOW team (ground mount)",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "at_team",
+      "year_in_service": 1970,
+      "in_service_1989": {
+        "value": true,
+        "note": "TOW 2 (BGM-71D) in service from 1983."
+      },
+      "dimensions": {},
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ],
+        "note": "'man portable crew of 4'"
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "foot",
+        "note": "usually carried by HMMWV/M113"
+      },
+      "armament": [
+        {
+          "name": "M220 launcher",
+          "caliber_mm": 152,
+          "type": "ATGM",
+          "round": "BGM-71D TOW 2",
+          "basic_load": null,
+          "effective_range_m": 3750,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 900,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "note": "missile 47.3 lb (21.5 kg); max velocity 329 m/s",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "AN/TAS-4 night sight (from memory, unverified)",
+        "night": "thermal"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: dug-in long-range anti-tank fire from cover.",
+      "sources": [
+        "https://man.fas.org/dod-101/sys/land/tow.htm",
+        "https://en.wikipedia.org/wiki/BGM-71_TOW"
+      ]
+    },
+    {
+      "id": "m577a2_cp",
+      "name": "M577A2 command post carrier",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "command",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 4.93,
+          "src": [
+            1
+          ],
+          "note": "194 in"
+        },
+        "width_m": {
+          "value": 2.69,
+          "src": [
+            1
+          ],
+          "note": "105.8 in"
+        },
+        "height_m": {
+          "value": 2.71,
+          "src": [
+            1
+          ],
+          "note": "106.5 in"
+        },
+        "combat_weight_t": {
+          "value": 14.4,
+          "src": [
+            0
+          ],
+          "note": "31,800 lb combat loaded"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          1
+        ]
+      },
+      "dismounts": {
+        "value": 3,
+        "src": [
+          1
+        ],
+        "note": "3 operators; FAS personnel capacity 8"
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 64,
+          "src": [
+            0
+          ],
+          "note": "40 mph"
+        },
+        "range_km": {
+          "value": 483,
+          "src": [
+            0
+          ]
+        },
+        "fuel_l": {
+          "value": 360,
+          "src": [
+            0
+          ],
+          "note": "95 gal per FAS; en.wikipedia 120 gal (454 L)"
+        },
+        "gradient_pct": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": null,
+          "src": [],
+          "note": "not stated"
+        }
+      },
+      "armament": [],
+      "armor": {
+        "hull_mm": {
+          "value": "38-45",
+          "src": [
+            1
+          ],
+          "note": "5083 aluminum"
+        }
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "30 ft telescoping antenna mast [0]"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: battalion/brigade TOC; protect it, its loss degrades command.",
+      "sources": [
+        "https://man.fas.org/dod-101/sys/land/m577.htm",
+        "https://en.wikipedia.org/wiki/M577_command_post_carrier"
+      ]
+    },
+    {
+      "id": "us_scout_section",
+      "name": "Scout section (dismounted recon)",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "recon",
+      "year_in_service": 1985,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {},
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "section size varies with TO&E; not researched"
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "foot"
+      },
+      "armament": [
+        {
+          "name": "M16A2",
+          "caliber_mm": 5.56,
+          "type": "rifle",
+          "basic_load": null,
+          "effective_range_m": 550,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "M249",
+          "caliber_mm": 5.56,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": 800,
+          "rate_of_fire_rpm": 850,
+          "src": [
+            1
+          ]
+        },
+        {
+          "name": "AT4",
+          "caliber_mm": 84,
+          "type": "HEAT",
+          "basic_load": null,
+          "effective_range_m": 300,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 450,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "src": [
+            2
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "binoculars, image intensifiers (AN/PVS-4 per AT4 article)",
+        "night": "image intensifier"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: observation posts and spotting for artillery; avoid contact.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M16_rifle",
+        "https://en.wikipedia.org/wiki/M249_Squad_Automatic_Weapon",
+        "https://en.wikipedia.org/wiki/AT4"
+      ]
+    },
+    {
+      "id": "m106a2_mortar",
+      "name": "M106A2 107 mm mortar carrier",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "mortar",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": "M106A2 = M113A2-based carrier with M30 4.2 in mortar; 120 mm M121 replaced it only in the 1990s."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 4.94,
+          "src": [
+            0
+          ],
+          "note": "16.2 ft"
+        },
+        "width_m": {
+          "value": 2.74,
+          "src": [
+            0
+          ],
+          "note": "9 ft"
+        },
+        "height_m": {
+          "value": 2.23,
+          "src": [
+            0
+          ],
+          "note": "7.3 ft"
+        },
+        "combat_weight_t": {
+          "value": 11.7,
+          "src": [
+            0
+          ],
+          "note": "12.9 short tons"
+        }
+      },
+      "crew": {
+        "value": 6,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": []
+      },
+      "mobility": {
+        "max_road_speed_kmh": null,
+        "range_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "infobox says 250 nmi (463 km), units look doubtful"
+        },
+        "fuel_l": {
+          "value": 341,
+          "src": [
+            0
+          ],
+          "note": "90 US gal"
+        },
+        "propulsion": "tracked",
+        "amphibious": null
+      },
+      "armament": [
+        {
+          "name": "M30 4.2 in mortar",
+          "caliber_mm": 106.7,
+          "type": "HE",
+          "basic_load": 88,
+          "effective_range_m": 6840,
+          "rate_of_fire_rpm": "18 max, 3 sustained",
+          "note": "min range 770 m; HE/illum/WP",
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "M2HB",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "hull_mm": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "5083 aluminum, thickness as M113"
+        }
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: fast close indirect fire, smoke and illumination for the battalion.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M106_mortar_carrier",
+        "https://en.wikipedia.org/wiki/M30_mortar"
+      ]
+    },
+    {
+      "id": "m109a3_sph",
+      "name": "M109A3 155 mm SPH",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "spg",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": "M109A3 = rebuilt M109A1 with M185 39-cal tube."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.19,
+          "src": [
+            0
+          ],
+          "note": "hull 20.3 ft"
+        },
+        "width_m": {
+          "value": 3.15,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.25,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 24.95,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 6,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 56,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 350,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "M185 155 mm/39 howitzer",
+          "caliber_mm": 155,
+          "type": "HE",
+          "round": "M107 HE / M549A1 RAP",
+          "basic_load": "28-36",
+          "effective_range_m": 18100,
+          "rate_of_fire_rpm": "4 for 3 min, 1 sustained",
+          "note": "M549A1 RAP 23.5 km; stowage 28 (A1) or 36 (A2-A4) per [0], A3 not stated",
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "M2HB",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "notes": "aluminum alloy hull, splinter protection only [0]"
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: general support fires, counter-battery and DPICM against armor in the open.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M109_howitzer"
+      ]
+    },
+    {
+      "id": "m270_mlrs",
+      "name": "M270 MLRS",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "mlrs",
+      "year_in_service": 1983,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.97,
+          "src": [
+            0
+          ],
+          "note": "274.5 in"
+        },
+        "width_m": {
+          "value": 2.97,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.59,
+          "src": [
+            0
+          ],
+          "note": "launcher stowed"
+        },
+        "combat_weight_t": {
+          "value": 24.0,
+          "src": [
+            0
+          ],
+          "note": "52,990 lb with 12 rockets"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 64,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 483,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "M26 rocket (2 pods x 6)",
+          "caliber_mm": 227,
+          "type": "rocket",
+          "round": "M26 DPICM, 644 M77 submunitions",
+          "basic_load": 12,
+          "effective_range_m": 32000,
+          "rate_of_fire_rpm": "~3 s per rocket",
+          "note": "FAS gives 31.8 km; reload 9 min",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "notes": "5083 aluminum hull, 7039 aluminum cab [0]"
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: saturating a grid square or enemy battery with submunitions, then moving before counter-fire.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M270_Multiple_Launch_Rocket_System",
+        "https://man.fas.org/dod-101/sys/land/m270.htm"
+      ]
+    },
+    {
+      "id": "m163_vads",
+      "name": "M163 VADS",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "spaag",
+      "year_in_service": 1968,
+      "in_service_1989": {
+        "value": true,
+        "note": "M163A1 standard in 1989."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 4.86,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.85,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.92,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 12.3,
+          "src": [
+            0
+          ],
+          "note": "M163A1"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 64,
+          "src": [
+            0
+          ],
+          "note": "40 mph; FAS 35 mph"
+        },
+        "cross_country_speed_kmh": {
+          "value": 31,
+          "src": [
+            1
+          ],
+          "note": "19 mph"
+        },
+        "range_km": {
+          "value": 483,
+          "src": [
+            0
+          ],
+          "note": "300 mi (A1)"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [
+            1
+          ],
+          "note": "3.6 mph in water"
+        }
+      },
+      "armament": [
+        {
+          "name": "M168 Vulcan",
+          "caliber_mm": 20,
+          "type": "autocannon",
+          "basic_load": 2230,
+          "effective_range_m": 1600,
+          "rate_of_fire_rpm": 3000,
+          "note": "FAS: AA range 5,249 ft (1.6 km), ground 3,281 yd (3.0 km)",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "hull_mm": {
+          "value": "29-45",
+          "src": [
+            0
+          ],
+          "note": "aluminum; FAS 12-38 mm"
+        },
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "AN/TVS-2B night vision sight [1]",
+        "night": "image intensifier"
+      },
+      "countermeasures": null,
+      "air_defense": {
+        "radar": {
+          "value": true,
+          "src": [
+            1
+          ],
+          "note": "range-only radar supplies range and range rate"
+        },
+        "engagement_range_m": {
+          "value": 1600,
+          "src": [
+            1
+          ]
+        },
+        "engagement_altitude_m": null
+      },
+      "one_line_role": "Use it for: point defense of the battalion against helicopters and low jets; also shreds light vehicles.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M163_VADS",
+        "https://man.fas.org/dod-101/sys/land/m163.htm"
+      ]
+    },
+    {
+      "id": "m48_chaparral",
+      "name": "M48 Chaparral",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "sam",
+      "year_in_service": 1969,
+      "in_service_1989": {
+        "value": true,
+        "note": "M48A1/A2 in service until 1990-98."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.06,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.69,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.68,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 6.6,
+          "src": [
+            0
+          ],
+          "note": "14,691 lb as given for M48A1; looks low for a loaded vehicle"
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "fuel_l": {
+          "value": 643,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked",
+        "amphibious": null
+      },
+      "armament": [
+        {
+          "name": "MIM-72 Chaparral",
+          "caliber_mm": 127,
+          "type": "SAM",
+          "basic_load": null,
+          "effective_range_m": 4800,
+          "rate_of_fire_rpm": null,
+          "note": "84 kg, Mach 2.5, 12.7 kg continuous-rod HE, IR homing; 4 on launcher rails (from memory, unverified)",
+          "src": [
+            1
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": null,
+          "src": [],
+          "note": "FLIR fitted on M48A2 per common references (from memory, unverified)"
+        }
+      },
+      "countermeasures": null,
+      "air_defense": {
+        "radar": {
+          "value": false,
+          "src": [
+            1
+          ],
+          "note": "optical aiming, IR homing"
+        },
+        "engagement_range_m": {
+          "value": 4800,
+          "src": [
+            1
+          ]
+        },
+        "engagement_altitude_m": {
+          "value": 2500,
+          "src": [
+            1
+          ]
+        }
+      },
+      "one_line_role": "Use it for: division-area low-level air defense beyond Vulcan range.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M48_Chaparral",
+        "https://man.fas.org/dod-101/sys/land/chaparral.htm"
+      ]
+    },
+    {
+      "id": "stinger_team",
+      "name": "FIM-92 Stinger MANPADS team",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "manpads",
+      "year_in_service": 1981,
+      "in_service_1989": {
+        "value": true,
+        "note": "FIM-92B/C in service; FAS lists 1987 introduction for USMC."
+      },
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          1
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "foot"
+      },
+      "armament": [
+        {
+          "name": "FIM-92 Stinger",
+          "caliber_mm": 70,
+          "type": "SAM",
+          "basic_load": null,
+          "effective_range_m": 8000,
+          "rate_of_fire_rpm": null,
+          "note": "missile 10.1 kg, system 15.7 kg, 3 kg HE-frag, IR fire-and-forget, Mach 2.2",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "air_defense": {
+        "radar": {
+          "value": false,
+          "src": []
+        },
+        "engagement_range_m": {
+          "value": "up to 8000",
+          "src": [
+            0,
+            1
+          ],
+          "note": "wiki 0.1-5 mi; FAS 1-8 km"
+        },
+        "engagement_altitude_m": {
+          "value": 3046,
+          "src": [
+            1
+          ],
+          "note": "10,000 ft"
+        }
+      },
+      "one_line_role": "Use it for: hiding near the front to ambush helicopters and low jets.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/FIM-92_Stinger",
+        "https://man.fas.org/dod-101/sys/land/stinger.htm"
+      ]
+    },
+    {
+      "id": "m977_hemtt",
+      "name": "M977 HEMTT (cargo/ammo)",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "supply",
+      "year_in_service": 1982,
+      "in_service_1989": {
+        "value": true,
+        "note": "M977 (A0) in service since 1982; figures below are M977A4 from en.wikipedia and differ from the 1989 A0 (8V92 engine)."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 10.39,
+          "src": [
+            0
+          ],
+          "note": "409 in, A4"
+        },
+        "width_m": {
+          "value": 2.44,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.0,
+          "src": [
+            0
+          ],
+          "note": "118 in over spare tire"
+        },
+        "combat_weight_t": {
+          "value": 19.3,
+          "src": [
+            0
+          ],
+          "note": "42,500 lb unladen A4; payload rated 10 short tons (9.07 t)"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 100,
+          "src": [
+            0
+          ],
+          "note": "62 mph A4"
+        },
+        "range_km": {
+          "value": 483,
+          "src": [
+            0
+          ],
+          "note": "300 mi loaded"
+        },
+        "fuel_l": {
+          "value": 587,
+          "src": [
+            0
+          ],
+          "note": "155 gal"
+        },
+        "propulsion": "wheeled",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: hauling ammo and fuel to the line; keep it out of direct fire.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Heavy_Expanded_Mobility_Tactical_Truck"
+      ]
+    },
+    {
+      "id": "m88a1_arv",
+      "name": "M88A1 recovery vehicle",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "recovery",
+      "year_in_service": 1977,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 8.27,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.43,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.12,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 50.8,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 42,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 450,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "M2HB",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": 1300,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "notes": "hull and cab armored against small arms (infobox says up to 30 mm direct fire)"
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: towing disabled tanks back for repair. Note: at 50.8 t it is marginal for towing a 57+ t M1A1.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M88_recovery_vehicle"
+      ]
+    },
+    {
+      "id": "ah64a_apache",
+      "name": "AH-64A Apache",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "attack_helo",
+      "year_in_service": 1986,
+      "in_service_1989": {
+        "value": true,
+        "note": "AH-64 first deployed to Europe Sept 1987 [0]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 17.73,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "rotor_diameter_m": {
+          "value": 14.63,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 4.64,
+          "src": [
+            1
+          ],
+          "note": "AH-64A; wiki A/D 3.87"
+        },
+        "mtow_t": {
+          "value": 10.43,
+          "src": [
+            0
+          ],
+          "note": "23,000 lb A/D spec; FAS primary mission gross 6.84 t (A)"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "rotor"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 293,
+          "src": [
+            0
+          ],
+          "note": "158 kt"
+        },
+        "cruise_speed_kmh": {
+          "value": 265,
+          "src": [
+            0
+          ],
+          "note": "143 kt"
+        },
+        "combat_radius_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "wiki lists 'combat range 260 nmi'; FAS range 400 km internal fuel"
+        },
+        "service_ceiling_m": {
+          "value": 6096,
+          "src": [
+            0
+          ],
+          "note": "20,000 ft"
+        }
+      },
+      "armament": [
+        {
+          "name": "M230 chain gun",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "basic_load": 1200,
+          "effective_range_m": 4000,
+          "rate_of_fire_rpm": 625,
+          "note": "max range 4 km per [3]",
+          "src": [
+            0,
+            3
+          ]
+        },
+        {
+          "name": "AGM-114A/C Hellfire",
+          "caliber_mm": 178,
+          "type": "ATGM",
+          "basic_load": 16,
+          "effective_range_m": 8000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": null,
+          "penetration_note": "8 kg HEAT, no published penetration in [2]; FAS anti-armor loadout 8+8",
+          "note": "range 0.5-8 km for early models (wiki gives 0.5-11 km for family)",
+          "src": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "Hydra 70 FFAR",
+          "caliber_mm": 70,
+          "type": "rocket",
+          "basic_load": "up to 76",
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "19-tube pods; load varies by mission",
+          "src": [
+            1,
+            4
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "TADS/PNVS FLIR (FLIR use cited in [0])",
+        "night": "thermal"
+      },
+      "countermeasures": {
+        "chaff_flare": {
+          "value": null,
+          "src": [],
+          "note": "not in sources fetched"
+        }
+      },
+      "one_line_role": "Use it for: killing tank columns from stand-off with Hellfire at night.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache",
+        "https://man.fas.org/dod-101/sys/ac/ah-64.htm",
+        "https://en.wikipedia.org/wiki/AGM-114_Hellfire",
+        "https://en.wikipedia.org/wiki/M230_chain_gun",
+        "https://en.wikipedia.org/wiki/Hydra_70"
+      ]
+    },
+    {
+      "id": "oh58d_kiowa_warrior",
+      "name": "OH-58D Kiowa (Warrior)",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "recon_helo",
+      "year_in_service": 1985,
+      "in_service_1989": {
+        "value": true,
+        "note": "partial: OH-58D scout with mast-mounted sight in service by 1989; armed 'Kiowa Warrior' configuration was approved after Operation Prime Chance (1987-88) and fielded from about 1991. For 1989, treat as scout with limited arms."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 12.85,
+          "src": [
+            0
+          ]
+        },
+        "rotor_diameter_m": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "four-blade rotor; diameter not in spec block fetched"
+        },
+        "height_m": {
+          "value": 3.93,
+          "src": [
+            0
+          ]
+        },
+        "mtow_t": {
+          "value": 2.5,
+          "src": [
+            0
+          ],
+          "note": "gross weight 2,495 kg"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "rotor"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 240,
+          "src": [
+            0
+          ]
+        },
+        "cruise_speed_kmh": {
+          "value": 204,
+          "src": [
+            0
+          ]
+        },
+        "combat_radius_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "range 260 km"
+        },
+        "service_ceiling_m": {
+          "value": 4575,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "two pylons (Hellfire, Hydra 70, Stinger, .50 cal pod)",
+          "caliber_mm": null,
+          "type": "mixed",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "armed config mostly post-1989",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": []
+        },
+        "detail": "Mast Mounted Sight (TV, thermal, laser designator) [0]",
+        "night": "thermal"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: scouting from behind cover and lasing targets for Apaches and artillery.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bell_OH-58_Kiowa"
+      ]
+    },
+    {
+      "id": "uh60a_black_hawk",
+      "name": "UH-60A Black Hawk",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "transport_helo",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": "UH-60A entered service June 1979 [0]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 19.76,
+          "src": [
+            1
+          ],
+          "note": "64 ft 10 in incl. rotors"
+        },
+        "rotor_diameter_m": {
+          "value": 16.36,
+          "src": [
+            1
+          ],
+          "note": "53 ft 8 in"
+        },
+        "height_m": {
+          "value": 5.13,
+          "src": [
+            1
+          ]
+        },
+        "mtow_t": {
+          "value": 9.98,
+          "src": [
+            1
+          ],
+          "note": "22,000 lb max gross per FAS table (later models); UH-60A lower, not verified"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ],
+        "note": "2 pilots + 2 crew chiefs/gunners"
+      },
+      "dismounts": {
+        "value": 11,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "rotor"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 294,
+          "src": [
+            1
+          ],
+          "note": "159 kt at 2,000 ft"
+        },
+        "cruise_speed_kmh": {
+          "value": 282,
+          "src": [
+            1
+          ],
+          "note": "152 kt"
+        },
+        "combat_radius_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "wiki combat range 320 nmi is for UH-60M"
+        },
+        "service_ceiling_m": {
+          "value": 5837,
+          "src": [
+            1
+          ],
+          "note": "19,150 ft (FAS prints '19,1510')"
+        }
+      },
+      "armament": [
+        {
+          "name": "door guns",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "M60D in 1989 (from memory, unverified); later M240H/M134",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "crew night-vision goggles",
+        "night": "NVG"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: air assault lift of an infantry squad and sling-load resupply.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sikorsky_UH-60_Black_Hawk",
+        "https://man.fas.org/dod-101/sys/ac/uh-60.htm"
+      ]
+    },
+    {
+      "id": "a10a_thunderbolt",
+      "name": "A-10A Thunderbolt II",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "attack_jet",
+      "year_in_service": 1977,
+      "in_service_1989": {
+        "value": true,
+        "note": "deployed March 1976 per FAS [1]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 16.26,
+          "src": [
+            0
+          ]
+        },
+        "wingspan_m": {
+          "value": 17.53,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 4.47,
+          "src": [
+            0
+          ]
+        },
+        "mtow_t": {
+          "value": 23.1,
+          "src": [
+            1
+          ],
+          "note": "51,000 lb per FAS; en.wikipedia (A-10C spec) 20.87 t"
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "jet"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 706,
+          "src": [
+            0
+          ],
+          "note": "FAS 420 mph (676 km/h)"
+        },
+        "cruise_speed_kmh": {
+          "value": 560,
+          "src": [
+            0
+          ]
+        },
+        "combat_radius_km": {
+          "value": 463,
+          "src": [
+            0
+          ],
+          "note": "A-10C spec block"
+        },
+        "service_ceiling_m": {
+          "value": 13700,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "GAU-8/A Avenger",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "basic_load": 1174,
+          "effective_range_m": 1220,
+          "rate_of_fire_rpm": 3900,
+          "note": "effective ~4,000 ft",
+          "src": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "AGM-65 Maverick",
+          "caliber_mm": 305,
+          "type": "ATGM",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": null,
+          "note": "AGM-65B/D on A-10; 126 lb shaped charge (A/B/D)",
+          "src": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "11 hardpoints, 7,260 kg",
+          "caliber_mm": null,
+          "type": "bomb",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "Mk 82, CBU-87, AIM-9 for self-defense",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "no radar; Maverick seeker as night aid (D model IIR)"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: close air support against armor; vulnerable to Shilka and Strela at low level.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II",
+        "https://man.fas.org/dod-101/sys/ac/a-10.htm",
+        "https://en.wikipedia.org/wiki/GAU-8_Avenger",
+        "https://en.wikipedia.org/wiki/AGM-65_Maverick"
+      ]
+    },
+    {
+      "id": "f16c_block30",
+      "name": "F-16C Block 30/32",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "multirole_jet",
+      "year_in_service": 1987,
+      "in_service_1989": {
+        "value": true,
+        "note": "Block 30/32 delivered from 1986-87 (FAS lists 360 Blk 30, 56 Blk 32)."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 15.06,
+          "src": [
+            0
+          ]
+        },
+        "wingspan_m": {
+          "value": 9.96,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 4.88,
+          "src": [
+            0
+          ]
+        },
+        "mtow_t": {
+          "value": 17.0,
+          "src": [
+            1
+          ],
+          "note": "37,500 lb F-16C/D per FAS; wiki Block 50/52 42,300 lb"
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "jet"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 2178,
+          "src": [
+            0
+          ],
+          "note": "Mach 2.05 / 1,176 kt at 40,000 ft (Block 50/52 block)"
+        },
+        "cruise_speed_kmh": {
+          "value": 933,
+          "src": [
+            0
+          ],
+          "note": "504 kt"
+        },
+        "combat_radius_km": {
+          "value": 546,
+          "src": [
+            0
+          ],
+          "note": "295 nmi hi-lo-hi with 4 x 1,000 lb bombs"
+        },
+        "service_ceiling_m": {
+          "value": 15240,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "M61A1 Vulcan",
+          "caliber_mm": 20,
+          "type": "autocannon",
+          "basic_load": 500,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": 6000,
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "AIM-9 Sidewinder",
+          "caliber_mm": 127,
+          "type": "AAM",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "AGM-65 / Mk 82 / Mk 84 / CBU-87",
+          "caliber_mm": null,
+          "type": "bomb",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "17,000 lb external stores (wiki)",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "pulse-Doppler radar (APG-68, from memory, unverified)"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: battlefield interdiction and air superiority backup.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon",
+        "https://man.fas.org/dod-101/sys/ac/f-16.htm",
+        "https://en.wikipedia.org/wiki/AIM-9_Sidewinder"
+      ]
+    },
+    {
+      "id": "f15c_eagle",
+      "name": "F-15C Eagle",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "fighter",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 19.43,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "wingspan_m": {
+          "value": 13.06,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "height_m": {
+          "value": 5.64,
+          "src": [
+            0
+          ],
+          "note": "FAS 5.69"
+        },
+        "mtow_t": {
+          "value": 30.84,
+          "src": [
+            0,
+            1
+          ],
+          "note": "68,000 lb"
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "jet"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 2655,
+          "src": [
+            0
+          ],
+          "note": "Mach 2.5 / 1,650 mph at altitude"
+        },
+        "cruise_speed_kmh": {
+          "value": 919,
+          "src": [
+            0
+          ],
+          "note": "496 kt"
+        },
+        "combat_radius_km": {
+          "value": 1085,
+          "src": [
+            0
+          ],
+          "note": "586 nmi counter-air, one external tank"
+        },
+        "service_ceiling_m": {
+          "value": 19812,
+          "src": [
+            0
+          ],
+          "note": "65,000 ft"
+        }
+      },
+      "armament": [
+        {
+          "name": "M61A1 Vulcan",
+          "caliber_mm": 20,
+          "type": "autocannon",
+          "basic_load": 940,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": 6000,
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "AIM-7 Sparrow",
+          "caliber_mm": 203,
+          "type": "AAM",
+          "basic_load": 4,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            1
+          ]
+        },
+        {
+          "name": "AIM-9 Sidewinder",
+          "caliber_mm": 127,
+          "type": "AAM",
+          "basic_load": 4,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            1
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "APG-63 pulse-Doppler radar (from memory, unverified)"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: air superiority; clears MiG-29s and Su-24s from the sky.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle",
+        "https://man.fas.org/dod-101/sys/ac/f-15.htm"
+      ]
+    },
+    {
+      "id": "t80bv",
+      "name": "T-80BV",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "tank",
+      "year_in_service": 1985,
+      "in_service_1989": {
+        "value": true,
+        "note": "T-80BV adopted 1985; ~2,256 T-80s (up to BV) with GSFG 1986-87 per en.wikipedia; T-80U never deployed to Europe."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.982,
+          "src": [
+            1
+          ],
+          "note": "hull, ru.wikipedia modification table"
+        },
+        "width_m": {
+          "value": 3.582,
+          "src": [
+            1
+          ],
+          "note": "en.wikipedia T-80B 3.4 m (Foss)"
+        },
+        "height_m": {
+          "value": 2.219,
+          "src": [
+            1
+          ]
+        },
+        "combat_weight_t": {
+          "value": 43.7,
+          "src": [
+            1
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": []
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 70,
+          "src": [
+            1
+          ]
+        },
+        "cross_country_speed_kmh": {
+          "value": 48,
+          "src": [
+            0
+          ],
+          "note": "Baryatinskiy via en.wikipedia; ru gives 50 for T-80"
+        },
+        "range_km": {
+          "value": 335,
+          "src": [
+            0
+          ],
+          "note": "road, internal fuel (Foss); 415 km with external tanks; ru table says 500 km"
+        },
+        "fuel_l": {
+          "value": 1100,
+          "src": [
+            0
+          ],
+          "note": "internal; +740 L external"
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "ru.wikipedia: 32 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        },
+        "engine": {
+          "value": "GTD-1000TF gas turbine, 1,100 hp",
+          "src": [
+            1
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "2A46M-1 125 mm smoothbore",
+          "caliber_mm": 125,
+          "type": "APFSDS",
+          "round": "3BM42 'Mango' (1986); 3BM32 'Vant' (1985) also issued",
+          "basic_load": 38,
+          "effective_range_m": 3700,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 520,
+          "penetration_note": "3BM42: 520 mm at 0 deg / 230 mm at 60 deg at 2000 m; 3BM32: 395 mm at 0 deg / 230 mm at 60 deg (both 'citation needed' in [2]); ammo 38 per ru table, en gives 36 + 4 ATGM for T-80B; 3,700 m APFSDS firing range per ru infobox (T-80)",
+          "penetration_is_estimate": true,
+          "src": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "2A46M-1 125 mm smoothbore",
+          "caliber_mm": 125,
+          "type": "HEAT",
+          "round": "3BK18M (3BK29 'Breyk' from c.1988)",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 550,
+          "penetration_note": "3BK18M 550 mm at 0 deg; 3BK29 350-400 mm at 60 deg (tandem)",
+          "penetration_is_estimate": true,
+          "src": [
+            2
+          ]
+        },
+        {
+          "name": "9K112-1 Kobra gun-launched ATGM",
+          "caliber_mm": 125,
+          "type": "ATGM",
+          "round": "9M112M",
+          "basic_load": 4,
+          "effective_range_m": 4000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 600,
+          "penetration_note": "9M112 base warhead 600 mm; 9M112M rated +20% penetration per [3] (absolute value not stated)",
+          "penetration_is_estimate": true,
+          "note": "ru table lists 9K119 Refleks for T-80BV, conflicting with en.wikipedia (Kobra); Kobra used here",
+          "src": [
+            0,
+            3
+          ]
+        },
+        {
+          "name": "PKT coax",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "NSVT AA",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "turret_front_ke": {
+          "value": 500,
+          "src": [
+            0
+          ],
+          "note": "T-80B, en.wikipedia infobox; ru.wikipedia gives 550",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 650,
+          "src": [
+            0
+          ],
+          "note": "T-80B; ru gives 650-700 (without ERA)",
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": "440-450",
+          "src": [
+            0
+          ],
+          "note": "T-80B; ru gives 550",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": "500-575",
+          "src": [
+            0
+          ],
+          "note": "T-80B; ru gives 800",
+          "estimate": true
+        },
+        "hull_upper_glacis": {
+          "value": "205 mm layered steel/STB (60+35+30+35+45) at 68 deg",
+          "src": [
+            1,
+            5
+          ],
+          "note": "BV-type glacis described by btvt for T-64BV, 'similar structure on T-80BV'"
+        },
+        "side_mm": {
+          "value": "80 upper / 50 lower",
+          "src": [
+            1
+          ]
+        },
+        "rear_mm": null,
+        "era": {
+          "value": "Kontakt-1 (4S20)",
+          "src": [
+            0,
+            1,
+            4
+          ],
+          "note": "no effect on KE; manufacturer claims -52% penetration for tank HEAT rounds, -86% for Konkurs-type ATGM; up to 27% of frontal arc uncovered"
+        },
+        "notes": "Russian and Western estimates differ by ~100 mm; treat as ranges."
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "1A33 FCS with 1G42 laser sight-rangefinder [1]; TPN-3-49 night sight [1] (TPN-49 active 1,300 m / passive 850 m per [0])",
+        "night": "active IR / image intensifier, no thermal"
+      },
+      "countermeasures": {
+        "smoke": "902A 'Tucha' grenade launchers [1] (count not stated in sources fetched)"
+      },
+      "one_line_role": "Use it for: the fast spearhead tank; Kobra lets it outrange NATO at 4 km, but it burns fuel fast and has no thermals.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-80",
+        "https://ru.wikipedia.org/wiki/%D0%A2-80",
+        "https://en.wikipedia.org/wiki/125_mm_smoothbore_ammunition",
+        "https://en.wikipedia.org/wiki/9K112_Kobra",
+        "https://en.wikipedia.org/wiki/Kontakt-1",
+        "http://btvt.narod.ru/4/armor.htm"
+      ]
+    },
+    {
+      "id": "t64bv",
+      "name": "T-64BV",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "tank",
+      "year_in_service": 1985,
+      "in_service_1989": {
+        "value": true,
+        "note": "T-64BV (Kontakt-1) entered service 1985 [3]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": null,
+          "src": [],
+          "note": "T-64BV hull length not in sources fetched; T-64A 9.225 m gun forward"
+        },
+        "width_m": {
+          "value": 3.415,
+          "src": [
+            0
+          ],
+          "note": "T-64A"
+        },
+        "height_m": {
+          "value": 2.172,
+          "src": [
+            0
+          ],
+          "note": "T-64A"
+        },
+        "combat_weight_t": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "T-64A 38 t; BV heavier (Kontakt-1 adds 1.2-2 t per [3]); exact BV figure not sourced"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": []
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ],
+          "note": "'45-60 depending on version'"
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ],
+          "note": "700 km with external tanks"
+        },
+        "fuel_l": null,
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "ru: 30 deg (base T-64)"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        },
+        "engine": {
+          "value": "5TDF diesel, 700 hp",
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "2A46M-1 125 mm smoothbore",
+          "caliber_mm": 125,
+          "type": "APFSDS",
+          "round": "3BM42 / 3BM32 (see T-80BV)",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 520,
+          "penetration_note": "see 3BM42 in [2]; T-64B carried 28 shells + 8 missiles per en text",
+          "penetration_is_estimate": true,
+          "src": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "2A46M-1",
+          "caliber_mm": 125,
+          "type": "HEAT",
+          "round": "3BK18M",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 550,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "src": [
+            2
+          ]
+        },
+        {
+          "name": "9K112-1 Kobra",
+          "caliber_mm": 125,
+          "type": "ATGM",
+          "round": "9M112",
+          "basic_load": null,
+          "effective_range_m": 4000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 600,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "PKT coax",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "NSVT AA",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "turret_front_ke": {
+          "value": "370-440",
+          "src": [
+            0
+          ],
+          "note": "en infobox range for T-64 hull & turret (version not specified)",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": "500-575",
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": "370-440",
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": "500-575",
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "hull_upper_glacis": {
+          "value": "205 mm, 3 steel + 2 glass-plastic layers (60+35+30+35+45)",
+          "src": [
+            4
+          ],
+          "note": "new-build T-64BV glacis per btvt"
+        },
+        "era": {
+          "value": "Kontakt-1",
+          "src": [
+            0,
+            3
+          ]
+        },
+        "notes": "T-64A base: turret front 600-675 mm line-of-sight (ru)."
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "1A33(-1) FCS, 1G21 laser sight; TPN-3-49 night sight on later B/BV [0]",
+        "night": "active IR / image intensifier"
+      },
+      "countermeasures": {
+        "smoke": "902A 'Tucha' in two groups of four (T-64B 1981 modernisation) [0]"
+      },
+      "one_line_role": "Use it for: the bulk second-echelon tank; same gun and missile as T-80 but slower.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-64",
+        "https://ru.wikipedia.org/wiki/%D0%A2-64",
+        "https://en.wikipedia.org/wiki/125_mm_smoothbore_ammunition",
+        "https://en.wikipedia.org/wiki/Kontakt-1",
+        "http://btvt.narod.ru/4/armor.htm"
+      ]
+    },
+    {
+      "id": "bmp2",
+      "name": "BMP-2",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "ifv",
+      "year_in_service": 1980,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.735,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "width_m": {
+          "value": 3.15,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "height_m": {
+          "value": 2.45,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "combat_weight_t": {
+          "value": 14.3,
+          "src": [
+            0
+          ],
+          "note": "ru: 14.7"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "cross_country_speed_kmh": {
+          "value": 45,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ],
+          "note": "ru 550-600"
+        },
+        "fuel_l": null,
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "35 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "7 km/h"
+        }
+      },
+      "armament": [
+        {
+          "name": "2A42",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "round": "3UBR6 APBC-T / 3UBR8 APDS / 3UOF8 HEI",
+          "basic_load": 500,
+          "effective_range_m": 2000,
+          "rate_of_fire_rpm": "200-300 or 550-800",
+          "penetration_mm_rha": 25,
+          "penetration_note": "3UBR8: 25 mm at 60 deg at 1500 m; 3UBR6: 20 mm at 60 deg at 700 m [2]",
+          "penetration_is_estimate": true,
+          "src": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "9P135M launcher",
+          "caliber_mm": 135,
+          "type": "ATGM",
+          "round": "9M113 Konkurs (or 9M111)",
+          "basic_load": null,
+          "effective_range_m": 4000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 600,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "note": "missile stowage not in fetched sources",
+          "src": [
+            1,
+            3
+          ]
+        },
+        {
+          "name": "PKT coax",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "hull_front_mm": {
+          "value": 23,
+          "src": [
+            1
+          ]
+        },
+        "side_mm": {
+          "value": 9,
+          "src": [
+            1
+          ],
+          "note": "ru infobox"
+        },
+        "notes": "max 33 mm per en; proof vs small arms/splinters; front vs 12.7-14.5 mm at range (not sourced)",
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "BPK-2-42 day / active-passive night sight; 1PZ-3 AA sight [1]",
+        "night": "image intensifier + IR"
+      },
+      "countermeasures": {
+        "smoke": {
+          "value": null,
+          "src": [],
+          "note": "902V launchers fitted (from memory, unverified)"
+        }
+      },
+      "one_line_role": "Use it for: carrying the motor rifle squad and suppressing infantry/light armor with the 30 mm; Konkurs for tanks.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BMP-2",
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%9C%D0%9F-2",
+        "https://en.wikipedia.org/wiki/Shipunov_2A42",
+        "https://en.wikipedia.org/wiki/9M113_Konkurs",
+        "https://en.wikipedia.org/wiki/9K111_Fagot"
+      ]
+    },
+    {
+      "id": "bmp1p",
+      "name": "BMP-1P",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "ifv",
+      "year_in_service": 1979,
+      "in_service_1989": {
+        "value": true,
+        "note": "BMP-1P (ob'yekt 765Sp4/5) upgrade replaced Malyutka with Konkurs/Fagot."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.735,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.94,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.068,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 13.4,
+          "src": [
+            0
+          ],
+          "note": "BMP-1P column of variant table"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "cross_country_speed_kmh": {
+          "value": 45,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ],
+          "note": "500 km off-road"
+        },
+        "fuel_l": {
+          "value": 462,
+          "src": [
+            0
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "35 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "7-8 km/h"
+        }
+      },
+      "armament": [
+        {
+          "name": "2A28 Grom",
+          "caliber_mm": 73,
+          "type": "HEAT",
+          "round": "PG-15V",
+          "basic_load": 40,
+          "effective_range_m": 1300,
+          "rate_of_fire_rpm": 8,
+          "penetration_mm_rha": null,
+          "penetration_note": "no penetration figure found in sources fetched",
+          "note": "OG-15V HE-frag to 4,500 m",
+          "src": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "9P135M launcher",
+          "caliber_mm": 120,
+          "type": "ATGM",
+          "round": "9M111 Fagot / 9M113 Konkurs",
+          "basic_load": null,
+          "effective_range_m": 2500,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 400,
+          "penetration_note": "9M111 400 mm; 9M111M 600 mm; Konkurs 600 mm",
+          "penetration_is_estimate": true,
+          "src": [
+            0,
+            3
+          ]
+        },
+        {
+          "name": "PKT coax",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": 2000,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "turret_front_mm": {
+          "value": 23,
+          "src": [
+            1
+          ],
+          "note": "at 42 deg"
+        },
+        "hull_upper_front_mm": {
+          "value": 7,
+          "src": [
+            1
+          ],
+          "note": "at 80 deg"
+        },
+        "hull_lower_front_mm": {
+          "value": 19,
+          "src": [
+            1
+          ],
+          "note": "at 57 deg"
+        },
+        "side_mm": {
+          "value": "16-18",
+          "src": [
+            1
+          ]
+        },
+        "rear_mm": {
+          "value": 16,
+          "src": [
+            1
+          ]
+        },
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "1PN22M1 image-intensifier day/night sight [0]",
+        "night": "image intensifier"
+      },
+      "countermeasures": {
+        "smoke": "six 902V 'Tucha' 81 mm launchers on later BMP-1Ps (Zaloga & Sarson 1994 via [0])"
+      },
+      "one_line_role": "Use it for: second-echelon infantry carrier; 73 mm is short-ranged, rely on the ATGM.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BMP-1",
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%9C%D0%9F-1",
+        "https://en.wikipedia.org/wiki/2A28_Grom",
+        "https://en.wikipedia.org/wiki/9K111_Fagot"
+      ]
+    },
+    {
+      "id": "btr80",
+      "name": "BTR-80",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "apc",
+      "year_in_service": 1986,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 7.65,
+          "src": [
+            1
+          ],
+          "note": "en 7.7"
+        },
+        "width_m": {
+          "value": 2.9,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "height_m": {
+          "value": 2.41,
+          "src": [
+            0
+          ],
+          "note": "ru 2.35-2.46"
+        },
+        "combat_weight_t": {
+          "value": 13.6,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 80,
+          "src": [
+            1
+          ],
+          "note": "en 80-90"
+        },
+        "cross_country_speed_kmh": {
+          "value": "20-40",
+          "src": [
+            1
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "fuel_l": null,
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "30 deg"
+        },
+        "propulsion": "wheeled",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "9-10 km/h"
+        }
+      },
+      "armament": [
+        {
+          "name": "KPVT",
+          "caliber_mm": 14.5,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": 2000,
+          "rate_of_fire_rpm": 600,
+          "src": [
+            1,
+            2
+          ]
+        },
+        {
+          "name": "PKT",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": 2000,
+          "effective_range_m": 1500,
+          "rate_of_fire_rpm": null,
+          "src": [
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "hull_front_mm": {
+          "value": 10,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "side_mm": {
+          "value": "7-9",
+          "src": [
+            1
+          ]
+        },
+        "turret_mm": {
+          "value": 7,
+          "src": [
+            0
+          ]
+        },
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "1P3-2 day sight [1]; OU-3GA2M IR searchlight [0]",
+        "night": "active IR"
+      },
+      "countermeasures": {
+        "smoke": "six 81 mm 902V 'Tucha' [0]"
+      },
+      "one_line_role": "Use it for: fast wheeled motor-rifle transport on roads; very thin armor.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BTR-80",
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%A2%D0%A0-80",
+        "https://en.wikipedia.org/wiki/KPV_heavy_machine_gun"
+      ]
+    },
+    {
+      "id": "brdm2",
+      "name": "BRDM-2",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "recon",
+      "year_in_service": 1962,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 5.75,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "width_m": {
+          "value": 2.37,
+          "src": [
+            0
+          ],
+          "note": "ru 2.35"
+        },
+        "height_m": {
+          "value": 2.31,
+          "src": [
+            0
+          ],
+          "note": "ru 2.395"
+        },
+        "combat_weight_t": {
+          "value": 7.0,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": []
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 100,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 750,
+          "src": [
+            0
+          ]
+        },
+        "fuel_l": {
+          "value": 290,
+          "src": [
+            0
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "30 deg"
+        },
+        "propulsion": "wheeled",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "10 km/h"
+        }
+      },
+      "armament": [
+        {
+          "name": "KPVT",
+          "caliber_mm": 14.5,
+          "type": "MG",
+          "basic_load": 500,
+          "effective_range_m": 2000,
+          "rate_of_fire_rpm": 600,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "PKT",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": 2000,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "turret_front_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        },
+        "hull_nose_mm": {
+          "value": 14,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 7,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 7,
+          "src": [
+            0
+          ]
+        },
+        "era": null
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "PP-61AM sight [1]",
+        "night": "active IR (not confirmed)"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: route and regimental reconnaissance; runs from anything armored.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BRDM-2",
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%A0%D0%94%D0%9C-2"
+      ]
+    },
+    {
+      "id": "9p148_konkurs",
+      "name": "9P148 Konkurs (BRDM-2 ATGM carrier)",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "atgm_vehicle",
+      "year_in_service": 1977,
+      "in_service_1989": {
+        "value": true,
+        "note": "9P148 tank destroyer on BRDM-2 chassis [0]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 5.75,
+          "src": [
+            0
+          ],
+          "note": "BRDM-2 chassis value"
+        },
+        "width_m": {
+          "value": 2.37,
+          "src": [
+            0
+          ]
+        },
+        "height_m": null,
+        "combat_weight_t": {
+          "value": 7.0,
+          "src": [
+            0
+          ],
+          "note": "BRDM-2 base; 9P148 figure not sourced"
+        }
+      },
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "not sourced (commonly 2)"
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 100,
+          "src": [
+            0
+          ],
+          "note": "base chassis"
+        },
+        "range_km": {
+          "value": 750,
+          "src": [
+            0
+          ],
+          "note": "base chassis"
+        },
+        "propulsion": "wheeled",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "9P148 launcher",
+          "caliber_mm": 135,
+          "type": "ATGM",
+          "round": "9M113 Konkurs (also 9M111)",
+          "basic_load": null,
+          "effective_range_m": 4000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 600,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "note": "ready/stowed missile count not in fetched sources (5 ready commonly cited, from memory, unverified); 208 m/s, 70 m min range",
+          "src": [
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "notes": "as BRDM-2 (7-14 mm)",
+        "era": null
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: regimental anti-tank reserve; ambush tanks at 3-4 km then relocate.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BRDM-2",
+        "https://en.wikipedia.org/wiki/9M113_Konkurs",
+        "https://en.wikipedia.org/wiki/9K111_Fagot"
+      ]
+    },
+    {
+      "id": "sov_motor_rifle_squad",
+      "name": "Soviet motor rifle squad",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "infantry",
+      "year_in_service": 1974,
+      "in_service_1989": {
+        "value": true,
+        "note": "AK-74 family standard; RPG-18 disposable launcher in service."
+      },
+      "dimensions": {},
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "squad size set by TO&E"
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          5
+        ],
+        "note": "BMP-2 troop capacity (8 in BMP-1)"
+      },
+      "mobility": {
+        "propulsion": "foot"
+      },
+      "armament": [
+        {
+          "name": "AK-74",
+          "caliber_mm": 5.45,
+          "type": "rifle",
+          "basic_load": null,
+          "effective_range_m": 500,
+          "rate_of_fire_rpm": "650 cyclic",
+          "note": "500 m point / 800 m area",
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "RPK-74",
+          "caliber_mm": 5.45,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": 800,
+          "rate_of_fire_rpm": 600,
+          "src": [
+            1
+          ]
+        },
+        {
+          "name": "PKM",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": 1000,
+          "rate_of_fire_rpm": "600-800",
+          "src": [
+            4
+          ]
+        },
+        {
+          "name": "RPG-7",
+          "caliber_mm": 93,
+          "type": "HEAT",
+          "round": "PG-7VL (c.1977)",
+          "basic_load": null,
+          "effective_range_m": 330,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": null,
+          "penetration_note": "PG-7VL value not given in [2]; PG-7VM 300 mm, PG-7VS 400 mm; family range 300-600 mm",
+          "note": "effective 330 m for PG-7V",
+          "src": [
+            2
+          ]
+        },
+        {
+          "name": "RPG-18",
+          "caliber_mm": 64,
+          "type": "HEAT",
+          "basic_load": null,
+          "effective_range_m": 200,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 300,
+          "penetration_note": "",
+          "penetration_is_estimate": true,
+          "note": "100-150 m effective, 200 m max",
+          "src": [
+            3
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: dismounted assault behind the BMPs, and RPG ambushes in close terrain.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AK-74",
+        "https://en.wikipedia.org/wiki/RPK-74",
+        "https://en.wikipedia.org/wiki/RPG-7",
+        "https://en.wikipedia.org/wiki/RPG-18",
+        "https://en.wikipedia.org/wiki/PK_machine_gun",
+        "https://en.wikipedia.org/wiki/BMP-2"
+      ]
+    },
+    {
+      "id": "9k111_fagot_team",
+      "name": "9K111 Fagot ATGM team",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "at_team",
+      "year_in_service": 1970,
+      "in_service_1989": {
+        "value": true,
+        "note": "9M111M Faktoriya improved missile in service in the 1980s."
+      },
+      "dimensions": {},
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "commonly 2-3; not sourced"
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "foot"
+      },
+      "armament": [
+        {
+          "name": "9P135 launcher",
+          "caliber_mm": 120,
+          "type": "ATGM",
+          "round": "9M111M Faktoriya",
+          "basic_load": null,
+          "effective_range_m": 2500,
+          "rate_of_fire_rpm": 3,
+          "penetration_mm_rha": 600,
+          "penetration_note": "9M111M 600 mm; basic 9M111 400 mm (2,000 m)",
+          "penetration_is_estimate": true,
+          "note": "9P135 post 22.5 kg; missile 12.5-13.4 kg; 186 m/s",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: company-level anti-tank screen to 2.5 km.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/9K111_Fagot"
+      ]
+    },
+    {
+      "id": "bmp1ksh",
+      "name": "BMP-1KSh command vehicle",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "command",
+      "year_in_service": 1972,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.735,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.94,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 1.92,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 13.0,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 4,
+        "src": [
+          0
+        ],
+        "note": "staff officers"
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": "550-600",
+          "src": [
+            0
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "35 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "7-8 km/h"
+        }
+      },
+      "armament": [
+        {
+          "name": "PK",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "notes": "bullet-proof, as BMP-1",
+        "era": null
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: regimental/battalion command post on the move; a priority target.",
+      "sources": [
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%9C%D0%9F-1%D0%9A%D0%A8",
+        "https://en.wikipedia.org/wiki/BMP-1"
+      ]
+    },
+    {
+      "id": "sov_razvedka_section",
+      "name": "Razvedka (recon) section",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "recon",
+      "year_in_service": 1974,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {},
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "size varies; not researched"
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "foot"
+      },
+      "armament": [
+        {
+          "name": "AK-74",
+          "caliber_mm": 5.45,
+          "type": "rifle",
+          "basic_load": null,
+          "effective_range_m": 500,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "RPK-74",
+          "caliber_mm": 5.45,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": 800,
+          "rate_of_fire_rpm": 600,
+          "src": [
+            1
+          ]
+        },
+        {
+          "name": "RPG-7",
+          "caliber_mm": 93,
+          "type": "HEAT",
+          "basic_load": null,
+          "effective_range_m": 330,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": null,
+          "src": [
+            2
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "binoculars, image-intensifier night sights (not sourced)"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: finding NATO positions ahead of the main body and calling fire.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AK-74",
+        "https://en.wikipedia.org/wiki/RPK-74",
+        "https://en.wikipedia.org/wiki/RPG-7"
+      ]
+    },
+    {
+      "id": "2s12_sani",
+      "name": "2S12 Sani 120 mm mortar system",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "mortar",
+      "year_in_service": 1981,
+      "in_service_1989": {
+        "value": true,
+        "note": "2S12 = 2B11 mortar + 2L81/2F510 wheeled carriage + GAZ-66 prime mover."
+      },
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 0.21,
+          "src": [
+            1
+          ],
+          "note": "2B11 mortar 210 kg; vehicle (GAZ-66) not given"
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          1
+        ],
+        "note": "plus 2 truck crew per [0]"
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "wheeled",
+        "note": "carried/towed by GAZ-66 4x4 truck; truck figures not researched"
+      },
+      "armament": [
+        {
+          "name": "2B11 120 mm mortar",
+          "caliber_mm": 120,
+          "type": "HE",
+          "basic_load": null,
+          "effective_range_m": 7180,
+          "rate_of_fire_rpm": "15 per [1]; 12 per [0]; up to 10 per [2]",
+          "note": "min 460-500 m; bomb 16-16.8 kg",
+          "src": [
+            1,
+            0,
+            2
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: battalion close support fires; sets up and displaces quickly.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2S12_Sani",
+        "https://en.wikipedia.org/wiki/2B11",
+        "https://ru.wikipedia.org/wiki/2%D0%A112"
+      ]
+    },
+    {
+      "id": "2s1_gvozdika",
+      "name": "2S1 Gvozdika 122 mm SPH",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "spg",
+      "year_in_service": 1972,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 7.26,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "width_m": {
+          "value": 2.85,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "height_m": {
+          "value": 2.73,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 15.7,
+          "src": [
+            1
+          ],
+          "note": "en 16 t"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ],
+        "note": "ru 4-5"
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "cross_country_speed_kmh": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "ru 26-32"
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "fuel_l": {
+          "value": 550,
+          "src": [
+            1
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "35 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "4.5 km/h"
+        }
+      },
+      "armament": [
+        {
+          "name": "2A31 122 mm howitzer",
+          "caliber_mm": 122,
+          "type": "HE",
+          "basic_load": 40,
+          "effective_range_m": 15300,
+          "rate_of_fire_rpm": "5 max, 1-2 sustained",
+          "note": "21.9 km with extended-range round",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "hull_front_mm": {
+          "value": 15,
+          "src": [
+            1
+          ]
+        },
+        "turret_front_mm": {
+          "value": 20,
+          "src": [
+            1
+          ]
+        },
+        "notes": "en: 7-20 mm"
+      },
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "PG-2 panoramic, OP5-37 direct fire, TKN-3B commander [1]"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: regimental direct support fires; amphibious, keeps up with BMPs.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2S1_Gvozdika",
+        "https://ru.wikipedia.org/wiki/2%D0%A11"
+      ]
+    },
+    {
+      "id": "2s3_akatsiya",
+      "name": "2S3 Akatsiya 152 mm SPH",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "spg",
+      "year_in_service": 1971,
+      "in_service_1989": {
+        "value": true,
+        "note": "GSFG artillery regiments had 36-54 each by late 1980s [0]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.97,
+          "src": [
+            1
+          ],
+          "note": "hull per ru; en says hull 7.765 m, which ru gives as length with gun"
+        },
+        "width_m": {
+          "value": 3.25,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "height_m": {
+          "value": 3.05,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "combat_weight_t": {
+          "value": 27.5,
+          "src": [
+            1
+          ],
+          "note": "en max 28 t"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            1
+          ]
+        },
+        "cross_country_speed_kmh": {
+          "value": "25-30",
+          "src": [
+            1
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            1
+          ]
+        },
+        "fuel_l": {
+          "value": 830,
+          "src": [
+            1
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "30 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "2A33 (D-22) 152 mm howitzer",
+          "caliber_mm": 152,
+          "type": "HE",
+          "basic_load": 46,
+          "effective_range_m": 18500,
+          "rate_of_fire_rpm": "4 max, 1 sustained",
+          "note": "RAP 24 km (en); ru max 20.5 km",
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "PKT",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": 1500,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "hull_front_mm": {
+          "value": 30,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "side_mm": {
+          "value": 15,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: divisional heavy fires and counter-battery.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2S3_Akatsiya",
+        "https://ru.wikipedia.org/wiki/2%D0%A13"
+      ]
+    },
+    {
+      "id": "bm21_grad",
+      "name": "BM-21 Grad (9K51)",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "mlrs",
+      "year_in_service": 1963,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 7.35,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.4,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.09,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 13.71,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 75,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 405,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled",
+        "amphibious": {
+          "value": false,
+          "src": []
+        },
+        "note": "Ural-375D 6x6 chassis"
+      },
+      "armament": [
+        {
+          "name": "40-tube 122 mm launcher",
+          "caliber_mm": 122,
+          "type": "rocket",
+          "round": "9M22U HE-frag",
+          "basic_load": 40,
+          "effective_range_m": 20380,
+          "rate_of_fire_rpm": "2 rounds/s",
+          "note": "min 5 km for 9M22U; later rockets to 52 km are post-1989",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: area saturation of a NATO position or assembly area in one 20-second salvo.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BM-21_Grad"
+      ]
+    },
+    {
+      "id": "zsu23_4_shilka",
+      "name": "ZSU-23-4 Shilka",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "spaag",
+      "year_in_service": 1965,
+      "in_service_1989": {
+        "value": true,
+        "note": "ZSU-23-4M variants in 1989."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.535,
+          "src": [
+            0
+          ],
+          "note": "ru 6.495"
+        },
+        "width_m": {
+          "value": 3.125,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.576,
+          "src": [
+            0
+          ],
+          "note": "3.572 with radar raised"
+        },
+        "combat_weight_t": {
+          "value": 19,
+          "src": [
+            0
+          ],
+          "note": "ru 21 t (late)"
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 50,
+          "src": [
+            0
+          ]
+        },
+        "cross_country_speed_kmh": {
+          "value": 30,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 450,
+          "src": [
+            0
+          ],
+          "note": "300 off-road"
+        },
+        "fuel_l": {
+          "value": 515,
+          "src": [
+            0
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "30 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "4 x 2A7 (AZP-23 Amur)",
+          "caliber_mm": 23,
+          "type": "autocannon",
+          "basic_load": 2000,
+          "effective_range_m": 2500,
+          "rate_of_fire_rpm": "850-1000 per barrel, 3400-4000 combined",
+          "note": "ground targets to 2,000 m",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": {
+        "turret_mm": {
+          "value": 9.2,
+          "src": [
+            0
+          ]
+        },
+        "hull_mm": {
+          "value": "up to 15",
+          "src": [
+            0
+          ]
+        }
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "air_defense": {
+        "radar": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "RPK-2 'Tobol' (Gun Dish)"
+        },
+        "engagement_range_m": {
+          "value": "200-2500",
+          "src": [
+            1
+          ]
+        },
+        "engagement_altitude_m": {
+          "value": 1500,
+          "src": [
+            1
+          ]
+        },
+        "max_target_speed": {
+          "value": "450 m/s",
+          "src": [
+            1
+          ]
+        }
+      },
+      "one_line_role": "Use it for: shredding low helicopters and jets over the tank regiment; deadly to A-10s and Apaches inside 2.5 km.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ZSU-23-4_Shilka",
+        "https://ru.wikipedia.org/wiki/%D0%A8%D0%B8%D0%BB%D0%BA%D0%B0_(%D0%97%D0%A1%D0%A3)"
+      ]
+    },
+    {
+      "id": "9k35_strela10",
+      "name": "9K35 Strela-10 (SA-13)",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "sam",
+      "year_in_service": 1976,
+      "in_service_1989": {
+        "value": true,
+        "note": "9K35M/M2 in service; M3 accepted 1989 per ru."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 6.6,
+          "src": [
+            0
+          ],
+          "note": "ru 6.45"
+        },
+        "width_m": {
+          "value": 2.85,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "height_m": {
+          "value": 2.3,
+          "src": [
+            0
+          ],
+          "note": "travelling; 3.8 firing"
+        },
+        "combat_weight_t": {
+          "value": 12.3,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 61.5,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        },
+        "fuel_l": {
+          "value": 450,
+          "src": [
+            0
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            1
+          ],
+          "note": "35 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "6 km/h"
+        }
+      },
+      "armament": [
+        {
+          "name": "9M37M SAM",
+          "caliber_mm": 120,
+          "type": "SAM",
+          "basic_load": 8,
+          "effective_range_m": 5000,
+          "rate_of_fire_rpm": null,
+          "note": "4 on launcher + reloads (ru: 8 missiles); 41-42.5 kg; 3 kg (ru) / 5 kg (en, 9M333) warhead; IR/photocontrast seeker",
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "PKT",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "hull_mm": {
+          "value": 7,
+          "src": [
+            0
+          ],
+          "note": "ru: 14 front"
+        }
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "air_defense": {
+        "radar": {
+          "value": true,
+          "src": [
+            0
+          ],
+          "note": "9S86 'Snap Shot' range-only radar on 9A34M2 launchers; guidance is passive IR"
+        },
+        "engagement_range_m": {
+          "value": "800-5000",
+          "src": [
+            1
+          ],
+          "note": "M3 figures"
+        },
+        "engagement_altitude_m": {
+          "value": "25-3500",
+          "src": [
+            1
+          ]
+        }
+      },
+      "one_line_role": "Use it for: regimental low-level SAM cover; passive seeker gives no radar warning.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/9K35_Strela-10",
+        "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D0%B0-10"
+      ]
+    },
+    {
+      "id": "9k38_igla_team",
+      "name": "9K38 Igla MANPADS team",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "manpads",
+      "year_in_service": 1983,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {},
+      "crew": {
+        "value": null,
+        "src": [],
+        "note": "commonly 2; not sourced"
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "foot"
+      },
+      "armament": [
+        {
+          "name": "9M39 missile",
+          "caliber_mm": 72,
+          "type": "SAM",
+          "basic_load": null,
+          "effective_range_m": 5200,
+          "rate_of_fire_rpm": null,
+          "note": "10.8 kg missile, 17.9 kg system, 1.17 kg warhead, 570 m/s; ru gives 5,000 m",
+          "src": [
+            0,
+            1
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "air_defense": {
+        "radar": {
+          "value": false,
+          "src": []
+        },
+        "engagement_range_m": {
+          "value": "up to 5200",
+          "src": [
+            0
+          ]
+        },
+        "engagement_altitude_m": {
+          "value": "10-3500",
+          "src": [
+            1
+          ]
+        }
+      },
+      "one_line_role": "Use it for: company-level ambush of helicopters and CAS jets.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/9K38_Igla",
+        "https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D0%BB%D0%B0_(%D0%BF%D0%B5%D1%80%D0%B5%D0%BD%D0%BE%D1%81%D0%BD%D0%BE%D0%B9_%D0%B7%D0%B5%D0%BD%D0%B8%D1%82%D0%BD%D1%8B%D0%B9_%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81)"
+      ]
+    },
+    {
+      "id": "ural4320",
+      "name": "Ural-4320 (cargo/ammo)",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "supply",
+      "year_in_service": 1977,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 7.366,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.5,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.715,
+          "src": [
+            0
+          ],
+          "note": "3.005 with tent"
+        },
+        "combat_weight_t": {
+          "value": 15.3,
+          "src": [
+            0
+          ],
+          "note": "GVWR; payload 6 t (YaMZ-238M2) / 5 t (YaMZ-236)"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ],
+        "note": "cab seats"
+      },
+      "dismounts": {
+        "value": 27,
+        "src": [
+          0
+        ],
+        "note": "bench seating in cargo body"
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 82,
+          "src": [
+            0
+          ],
+          "note": "75 with YaMZ-236; early KamAZ-740 210 PS"
+        },
+        "range_km": null,
+        "fuel_l": null,
+        "propulsion": "wheeled",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: ammunition and fuel resupply; tows 11.5 t trailers.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ural-4320",
+        "https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%B0%D0%BB-4320"
+      ]
+    },
+    {
+      "id": "brem1",
+      "name": "BREM-1 recovery vehicle",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "recovery",
+      "year_in_service": 1984,
+      "in_service_1989": {
+        "value": true,
+        "note": "T-72-based ARV; assignment to T-80 units not confirmed."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 7.98,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.46,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.425,
+          "src": [
+            0
+          ]
+        },
+        "combat_weight_t": {
+          "value": 41,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "cross_country_speed_kmh": {
+          "value": "35-45",
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 700,
+          "src": [
+            0
+          ]
+        },
+        "gradient_pct": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "30 deg"
+        },
+        "propulsion": "tracked",
+        "amphibious": {
+          "value": false,
+          "src": []
+        }
+      },
+      "armament": [
+        {
+          "name": "NSVT",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": {
+        "notes": "bullet-proof combined (T-72 hull)"
+      },
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: recovering disabled tanks; 12 t crane, 25 t winch (100 t with blocks).",
+      "sources": [
+        "https://ru.wikipedia.org/wiki/%D0%91%D0%A0%D0%AD%D0%9C-1",
+        "https://en.wikipedia.org/wiki/T-72_operators_and_variants"
+      ],
+      "notes": "Crane 12,000 kg; winch 25 tf, 100 tf with pulleys; tows 50 t [0]."
+    },
+    {
+      "id": "mi24v_hind",
+      "name": "Mi-24V Hind-E",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "attack_helo",
+      "year_in_service": 1976,
+      "in_service_1989": {
+        "value": true,
+        "note": "Mi-24V built 1976-1986 [1]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 17.51,
+          "src": [
+            1
+          ],
+          "note": "fuselage"
+        },
+        "rotor_diameter_m": {
+          "value": 17.3,
+          "src": [
+            1
+          ],
+          "note": "en 17.2"
+        },
+        "height_m": {
+          "value": 5.47,
+          "src": [
+            1
+          ],
+          "note": "with rotating rotor; en 6.5"
+        },
+        "mtow_t": {
+          "value": 11.5,
+          "src": [
+            1
+          ],
+          "note": "en 12.0"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          1
+        ],
+        "note": "2-3"
+      },
+      "dismounts": {
+        "value": 8,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "mobility": {
+        "propulsion": "rotor"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 320,
+          "src": [
+            0
+          ],
+          "note": "ru 345"
+        },
+        "cruise_speed_kmh": {
+          "value": 270,
+          "src": [
+            0
+          ],
+          "note": "ru 250"
+        },
+        "combat_radius_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "practical range 450 km"
+        },
+        "service_ceiling_m": {
+          "value": 4950,
+          "src": [
+            1
+          ],
+          "note": "dynamic ceiling; en 5,750"
+        }
+      },
+      "armament": [
+        {
+          "name": "Yak-B 12.7 mm turret gun",
+          "caliber_mm": 12.7,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "9K113 Shturm-V",
+          "caliber_mm": 130,
+          "type": "ATGM",
+          "round": "9M114",
+          "basic_load": 4,
+          "effective_range_m": 5000,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": 560,
+          "penetration_note": "560-600 mm per [2] (source flagged unreliable there)",
+          "penetration_is_estimate": true,
+          "src": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "S-5/S-8 rocket pods (UB-32 / B-8V20)",
+          "caliber_mm": 57,
+          "type": "rocket",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "bombs up to 500 kg",
+          "caliber_mm": null,
+          "type": "bomb",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            1
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "optical sights; no FLIR in 1989"
+      },
+      "countermeasures": {
+        "chaff_flare": {
+          "value": null,
+          "src": [],
+          "note": "ASO-2V flares and L-166 IR jammer commonly fitted (from memory, unverified)"
+        }
+      },
+      "one_line_role": "Use it for: armored gunship strikes and anti-tank work; can carry a squad.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mil_Mi-24",
+        "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8-24",
+        "https://en.wikipedia.org/wiki/9K114_Shturm"
+      ]
+    },
+    {
+      "id": "mi8mt_hip",
+      "name": "Mi-8MT Hip-H",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "transport_helo",
+      "year_in_service": 1977,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 18.4,
+          "src": [
+            0
+          ]
+        },
+        "rotor_diameter_m": {
+          "value": 21.29,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 5.5,
+          "src": [
+            0
+          ]
+        },
+        "mtow_t": {
+          "value": 13.0,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 24,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "rotor",
+        "fuel_l": {
+          "value": 3700,
+          "src": [
+            0
+          ]
+        }
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 250,
+          "src": [
+            0
+          ]
+        },
+        "cruise_speed_kmh": {
+          "value": 240,
+          "src": [
+            0
+          ]
+        },
+        "combat_radius_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "range 495 km"
+        },
+        "service_ceiling_m": {
+          "value": 5000,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "6 hardpoints, 4,000 kg (S-5 pods, bombs, Falanga ATGM)",
+          "caliber_mm": 57,
+          "type": "rocket",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "door PK MG",
+          "caliber_mm": 7.62,
+          "type": "MG",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": null,
+      "one_line_role": "Use it for: air-landing a platoon and resupply; armed with rockets for escort.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mil_Mi-8"
+      ]
+    },
+    {
+      "id": "su25_frogfoot",
+      "name": "Su-25 Frogfoot",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "attack_jet",
+      "year_in_service": 1981,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 15.53,
+          "src": [
+            0
+          ],
+          "note": "incl. nose probe"
+        },
+        "wingspan_m": {
+          "value": 14.36,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 4.8,
+          "src": [
+            0
+          ]
+        },
+        "mtow_t": {
+          "value": 19.3,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "jet",
+        "fuel_l": {
+          "value": 3200,
+          "src": [
+            0
+          ]
+        }
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 975,
+          "src": [
+            0
+          ],
+          "note": "sea level"
+        },
+        "cruise_speed_kmh": null,
+        "combat_radius_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "en lists 'combat range 750 km' with 4,400 kg ordnance and 2 tanks; radius not stated"
+        },
+        "service_ceiling_m": {
+          "value": 7000,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "GSh-30-2",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "basic_load": 250,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "Kh-25ML / Kh-29L",
+          "caliber_mm": null,
+          "type": "ATGM",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "penetration_mm_rha": null,
+          "note": "laser-guided ASMs",
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "S-8 / S-24 rockets, FAB-250/500, RBK cluster",
+          "caliber_mm": null,
+          "type": "bomb",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "11 hardpoints, 4,000 kg",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": null,
+      "countermeasures": {
+        "chaff_flare": {
+          "value": "ASO-2V dispensers",
+          "src": [
+            0
+          ],
+          "note": "count in 1989 config not stated"
+        }
+      },
+      "one_line_role": "Use it for: armored close air support against NATO forward positions.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sukhoi_Su-25",
+        "https://ru.wikipedia.org/wiki/%D0%A1%D1%83-25"
+      ]
+    },
+    {
+      "id": "mig29_9_12",
+      "name": "MiG-29 (9.12) Fulcrum-A",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "fighter",
+      "year_in_service": 1983,
+      "in_service_1989": {
+        "value": true,
+        "note": "introduced August 1983 [0]."
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 17.32,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "wingspan_m": {
+          "value": 11.36,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "height_m": {
+          "value": 4.73,
+          "src": [
+            0,
+            1
+          ]
+        },
+        "mtow_t": {
+          "value": 18.0,
+          "src": [
+            0
+          ],
+          "note": "ru 18.48"
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "jet"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 2450,
+          "src": [
+            0,
+            1
+          ],
+          "note": "high altitude; 1,500 at sea level"
+        },
+        "cruise_speed_kmh": {
+          "value": 850,
+          "src": [
+            1
+          ]
+        },
+        "combat_radius_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "en gives 'combat range 700-900 km' with 2 R-27 + 4 R-73"
+        },
+        "service_ceiling_m": {
+          "value": 18000,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "GSh-30-1",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "basic_load": 150,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": "1500-1800",
+          "src": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "R-27R",
+          "caliber_mm": 230,
+          "type": "AAM",
+          "basic_load": 2,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0,
+            3
+          ]
+        },
+        {
+          "name": "R-73 / R-60",
+          "caliber_mm": 170,
+          "type": "AAM",
+          "basic_load": "4-6",
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0,
+            2
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": true,
+          "src": [],
+          "note": "IRST fitted (from memory, unverified)"
+        },
+        "detail": "pulse-Doppler radar: 50-70 km detection of 3 m^2 target [1]"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: front-line air superiority and escort; short legs.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mikoyan_MiG-29",
+        "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%93-29",
+        "https://en.wikipedia.org/wiki/R-73_(missile)",
+        "https://en.wikipedia.org/wiki/R-27_(air-to-air_missile)"
+      ]
+    },
+    {
+      "id": "su24m_fencer",
+      "name": "Su-24M Fencer-D",
+      "side": "Warsaw Pact",
+      "nation": "Soviet Union (GSFG)",
+      "kind": "strike_jet",
+      "year_in_service": 1983,
+      "in_service_1989": {
+        "value": true,
+        "note": ""
+      },
+      "dimensions": {
+        "length_m": {
+          "value": 24.594,
+          "src": [
+            1
+          ],
+          "note": "with probe; en 22.53"
+        },
+        "wingspan_m": {
+          "value": 17.638,
+          "src": [
+            1
+          ],
+          "note": "16 deg sweep; 10.366 at 69 deg"
+        },
+        "height_m": {
+          "value": 6.193,
+          "src": [
+            1
+          ]
+        },
+        "mtow_t": {
+          "value": 39.7,
+          "src": [
+            1
+          ],
+          "note": "en (Su-24MK) 43.755"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0,
+          1
+        ]
+      },
+      "dismounts": null,
+      "mobility": {
+        "propulsion": "jet"
+      },
+      "aircraft_performance": {
+        "max_speed_kmh": {
+          "value": 1700,
+          "src": [
+            1
+          ],
+          "note": "high altitude; 1,400 at 200 m"
+        },
+        "cruise_speed_kmh": null,
+        "combat_radius_km": {
+          "value": 560,
+          "src": [
+            1
+          ],
+          "note": "at 200 m with drop tanks and normal load; en 615 lo-lo-lo"
+        },
+        "service_ceiling_m": {
+          "value": 11000,
+          "src": [
+            0,
+            1
+          ]
+        }
+      },
+      "armament": [
+        {
+          "name": "GSh-6-23M",
+          "caliber_mm": 23,
+          "type": "autocannon",
+          "basic_load": 500,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "Kh-25ML / Kh-29L / KAB-500L",
+          "caliber_mm": null,
+          "type": "bomb",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "laser-guided weapons",
+          "src": [
+            0
+          ]
+        },
+        {
+          "name": "FAB-500, RBK-500 cluster",
+          "caliber_mm": null,
+          "type": "bomb",
+          "basic_load": null,
+          "effective_range_m": null,
+          "rate_of_fire_rpm": null,
+          "note": "up to 8,000 kg on 9 hardpoints",
+          "src": [
+            0
+          ]
+        }
+      ],
+      "armor": null,
+      "sensors": {
+        "thermal": {
+          "value": false,
+          "src": []
+        },
+        "detail": "terrain-following radar; Kaira laser/TV designator (from memory, unverified)"
+      },
+      "countermeasures": null,
+      "one_line_role": "Use it for: deep night/low-level strikes on NATO depots, bridges and airfields.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sukhoi_Su-24",
+        "https://ru.wikipedia.org/wiki/%D0%A1%D1%83-24"
+      ]
+    }
+  ]
+}

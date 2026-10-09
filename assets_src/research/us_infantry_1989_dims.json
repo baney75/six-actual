@@ -1,0 +1,12 @@
+{
+  "note": "Equipment dimensions for the 1989 US rifle squad blockout (assets_src/procedural/specs/us_rifle_squad_1989.py). Body proportions: assets_src/research/anthro/ansur1988_men_means.json.",
+  "items": [
+    {"name": "m16a2_length_m", "value": 1.007, "source": "data/assets/us_rifle_squad_1989.json (Wikipedia M16 infobox, 39.63 in)"},
+    {"name": "m16a2_barrel_m", "value": 0.508, "source": "data/assets/us_rifle_squad_1989.json (20 in)"},
+    {"name": "m249_length_m", "value": 1.035, "source": "https://en.wikipedia.org/wiki/M249_Squad_Automatic_Weapon (40.75 in)"},
+    {"name": "m249_barrel_m", "value": 0.465, "source": "https://en.wikipedia.org/wiki/M249_Squad_Automatic_Weapon (18.3 in)"},
+    {"name": "m72a2_length_closed_m", "value": 0.630, "source": "https://man.fas.org/dod-101/sys/land/m72.htm (24.8 in)"},
+    {"name": "m72a2_length_extended_m", "value": 0.881, "source": "https://man.fas.org/dod-101/sys/land/m72.htm (34.67 in)"},
+    {"name": "prc77_whd_m", "value": [0.273, 0.100, 0.273], "source": "web search summary of AN/PRC-77 specifications (10.75 x 3.94 x 10.75 in, 6.2 kg); https://armyradio.com/PRC-77-Back-Pack-VHF-Radio.html"}
+  ]
+}

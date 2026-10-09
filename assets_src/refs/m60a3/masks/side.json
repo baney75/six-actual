@@ -1,0 +1,92 @@
+{
+  "view": "side",
+  "source": "assets_src/refs/m60a3/left_side_view_of_m60a3_tank_during_reforger_82_8d18.jpg",
+  "box": [
+    362,
+    470,
+    1568,
+    988
+  ],
+  "bg": [
+    [
+      362,
+      700,
+      405,
+      990
+    ],
+    [
+      365,
+      622,
+      600,
+      686
+    ],
+    [
+      640,
+      930,
+      680,
+      962
+    ],
+    [
+      790,
+      930,
+      830,
+      962
+    ],
+    [
+      937,
+      930,
+      975,
+      962
+    ],
+    [
+      1085,
+      930,
+      1120,
+      962
+    ],
+    [
+      1235,
+      930,
+      1270,
+      962
+    ],
+    [
+      405,
+      945,
+      520,
+      990
+    ],
+    [
+      1400,
+      945,
+      1568,
+      990
+    ],
+    [
+      1455,
+      905,
+      1568,
+      945
+    ]
+  ],
+  "fg": [
+    [
+      362,
+      580,
+      585,
+      604
+    ]
+  ],
+  "length_m": 6.946,
+  "height_m": 3.0,
+  "px_per_m": 100,
+  "flipped": true,
+  "open_m": 0.06,
+  "mask_confidence": "photo",
+  "confidence_why": "",
+  "height_scaled_to_m": null,
+  "top_cut": true,
+  "bottom_cut_m": 0.0,
+  "front_cut": true,
+  "note": "GrabCut trace of a distributable photo; perspective not corrected (telephoto side/front views only)"
+}

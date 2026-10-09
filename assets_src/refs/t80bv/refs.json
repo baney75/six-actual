@@ -1,0 +1,375 @@
+{
+  "refs": [
+    {
+      "file": "assets_src/refs/t80bv/soviet_t_80_a48a.jpeg",
+      "slots": [
+        "three_quarter",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Soviet_T-80.JPEG",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/soviet_t_80_mbt_b89f.jpeg",
+      "slots": [
+        "right",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Soviet_T-80_MBT.JPEG",
+      "author": "Unknown author (US DoD, via defenseimagery.mil)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/rear_view_of_a_soviet_t_80_mbt_77b0.jpeg",
+      "slots": [
+        "rear",
+        "three_quarter",
+        "rear_deck_engine"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Rear_view_of_a_Soviet_T-80_MBT.JPEG",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/mechanizedexercise2020_01_cfb9.jpg",
+      "slots": [
+        "left",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:MechanizedExercise2020-01.jpg",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/mechanizedexercise2020_05_5bfa.jpg",
+      "slots": [
+        "three_quarter"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:MechanizedExercise2020-05.jpg",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/t_80bv_in_field_7f9c.jpg",
+      "slots": [
+        "front",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_in_field.jpg",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/t_80bv_fb41.jpg",
+      "slots": [
+        "front",
+        "turret_detail"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV.jpg",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/t_80bv_25th_brigade_5f30.jpg",
+      "slots": [
+        "left",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_25th_brigade.jpg",
+      "author": "Міністерство оборони України",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/t_80bv_25th_brigade_3_65eb.jpg",
+      "slots": [
+        "three_quarter"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_25th_brigade_3.jpg",
+      "author": "Міністерство оборони України",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/80_da09.jpg",
+      "slots": [
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D0%B9%D0%BE%D0%B2%D0%B8%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA_%D0%A2-80_%D0%91%D0%92.jpg",
+      "author": "dshv.mil.gov.ua",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/best_tank_platoon_of_uaf_competition_ukraine_201_ebf9.jpg",
+      "slots": [
+        "three_quarter",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Best_tank_platoon_of_UAF_competition,_Ukraine_2019,_01.jpg",
+      "author": "Міністерство оборони України",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/80_01_1fba.jpg",
+      "slots": [
+        "destroyed",
+        "running_gear"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE%D1%8F%D1%80%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BF%D1%96%D1%85%D0%BE%D1%82%D0%B0_%D0%B7%D0%BD%D0%B8%D1%89%D0%B8%D0%BB%D0%B0_%D1%80%D0%BE%D1%81%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA_%D0%A2-80_01.jpg",
+      "author": "armyinform.com.ua",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/80_02_8aec.jpg",
+      "slots": [
+        "destroyed"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%A5%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D0%BE%D1%8F%D1%80%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D0%BF%D1%96%D1%85%D0%BE%D1%82%D0%B0_%D0%B7%D0%BD%D0%B8%D1%89%D0%B8%D0%BB%D0%B0_%D1%80%D0%BE%D1%81%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D1%82%D0%B0%D0%BD%D0%BA_%D0%A2-80_02.jpg",
+      "author": "armyinform.com.ua",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/gasturbine_gtd1000_4f52.jpg",
+      "slots": [
+        "rear_deck_engine"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Gasturbine_GTD1000.JPG",
+      "author": "Alf van Beem",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/t80_d7ae.jpg",
+      "slots": [
+        "three_quarter"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T80%D0%91%D0%92_%D0%92%D0%A1%D0%A3.jpg",
+      "author": "http://www.mil.gov.ua/",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/tank_t_80_ukraine_cropped_dfc8.jpg",
+      "slots": [
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Tank_T-80_Ukraine_(cropped).jpg",
+      "author": "Адміністрація Президента України",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/victory_day_parade_2005_18_c3f8.jpg",
+      "slots": [
+        "three_quarter"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Victory_Day_Parade_2005-18.jpg",
+      "author": "ITAR-TASS",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/turret_of_a_russian_t_80bv_77c4.jpg",
+      "slots": [
+        "turret_detail"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Turret_of_a_Russian_T-80BV.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_34e7.jpg",
+      "slots": [
+        "turret_detail"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-05.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80b_in_front_of_the_t_34_museum_moscow_oblast_5d42.jpg",
+      "slots": [
+        "variant_difference",
+        "three_quarter"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80B_in_front_of_the_T-34_museum,_Moscow_Oblast_-_rear_view.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80u_tank_interior_03_e84c.jpg",
+      "slots": [
+        "interior_or_hatch_open"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80U_tank_interior_-03.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_2dc3.jpg",
+      "slots": [
+        "three_quarter"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-01.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_893b.jpg",
+      "slots": [
+        "left",
+        "running_gear"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-03.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_7ab1.jpg",
+      "slots": [
+        "rear",
+        "rear_deck_engine"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-06.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_1695.jpg",
+      "slots": [
+        "turret_detail"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-10.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_5b0e.jpg",
+      "slots": [
+        "rear_deck_engine"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-14.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_0bd3.jpg",
+      "slots": [
+        "top_or_plan",
+        "turret_detail"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-15.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv_military_vehicles_static_displays_in_luzh_e419.jpg",
+      "slots": [
+        "variant_difference",
+        "turret_detail"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80BV_-_military_vehicles_static_displays_in_Luzhniki_2010-07.jpg",
+      "author": "Vitaly V. Kuzmin",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80_museum_of_technique_rear_016f.jpg",
+      "slots": [
+        "rear"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:T-80_Museum_of_technique_Rear.jpg",
+      "author": "Mike1979 Russia",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80-03996.jpg",
+      "slots": [
+        "top_or_plan",
+        "left",
+        "front"
+      ],
+      "kind": "look-only",
+      "license": "all rights reserved (the-blueprints.com)",
+      "url": "https://the-blueprints.com/blueprints/tanks/russiantanks/3996/view/t-80",
+      "author": "the-blueprints.com",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/t80bv/t_80bv-88216.jpg",
+      "slots": [
+        "left",
+        "front",
+        "rear"
+      ],
+      "kind": "look-only",
+      "license": "all rights reserved (the-blueprints.com)",
+      "url": "https://the-blueprints.com/blueprints/tanks/tanks-t/88216/view/t-80bv",
+      "author": "Dr Dan Saranga via the-blueprints.com",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/t80bv/dimensions.md",
+      "slots": [
+        "dimension_source"
+      ],
+      "kind": "distributable",
+      "license": "own work (notes)",
+      "url": "n/a (own notes)",
+      "author": "Claude (Six Actual ref-hunter)",
+      "retrieved": "2026-10-08"
+    }
+  ]
+}

@@ -1,0 +1,1670 @@
+{
+  "version": 1,
+  "retrieved": "2026-10-09",
+  "era": "modern",
+  "notes": "Every number carries src indices into the unit's sources list (Wikipedia articles, ru.wikipedia for Abrams protection estimates, CRS IF12397 for M-SHORAD, battleorder.org and US Army ROTC material for squads), fetched 2026-10-09. Protection figures are public estimates and marked estimate; 'design' marks fills where the source is silent. Guided-munition and drone figures are with the weapons and support options (Excalibur CEP and its fall from 70% to 6% efficiency under Russian GPS jamming: Wikipedia M982 Excalibur; GMLRS ~1 m: Wikipedia M142 HIMARS; Lancet-3 3 kg payload, 40 km: Wikipedia ZALA Lancet; Switchblade 600 40 km, Javelin-derived warhead: Wikipedia AeroVironment Switchblade; FPV range 10-20 km, RPG-7 warhead, <$1,000: search summaries of Kyiv Post / NV.ua / Forbes reporting).",
+  "units": [
+    {
+      "id": "m1a2_sepv3",
+      "name": "M1A2 SEPv3 Abrams",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "tank",
+      "year_in_service": 2020,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 66.8,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 7.93,
+          "src": [
+            0
+          ],
+          "note": "hull"
+        },
+        "width_m": {
+          "value": 3.66,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.44,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 67,
+          "src": [
+            0
+          ],
+          "note": "governed"
+        },
+        "range_km": {
+          "value": 426,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": "800-950",
+          "src": [
+            1
+          ],
+          "note": "M1A2 SEP/SEPv2 group estimate (ru.wikipedia); SEPv3 not separately given",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 1600,
+          "src": [
+            1
+          ],
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": "600-650",
+          "src": [
+            1
+          ],
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 1100,
+          "src": [
+            1
+          ],
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 70,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "US main battle tank, 120 mm M256 (40 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M1_Abrams",
+        "https://ru.wikipedia.org/wiki/M1_Abrams"
+      ]
+    },
+    {
+      "id": "t90m",
+      "name": "T-90M Proryv",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "tank",
+      "year_in_service": 2020,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 48,
+          "src": [
+            0
+          ],
+          "note": "T-90SM table"
+        },
+        "length_m": {
+          "value": 6.86,
+          "src": [
+            0
+          ],
+          "note": "hull"
+        },
+        "width_m": {
+          "value": 3.78,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.22,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 550,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": "1100-1200",
+          "src": [
+            0
+          ],
+          "note": "with Relikt ERA",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 1900,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": "1100-1200",
+          "src": [
+            0
+          ],
+          "note": "same estimate applied to hull; design",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 1900,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "Russian main battle tank, 125 mm 2A46M-5 (43 rounds), Refleks ATGM, Relikt ERA; deliveries from April 2020",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-90"
+      ]
+    },
+    {
+      "id": "t72b3m",
+      "name": "T-72B3M",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "tank",
+      "year_in_service": 2016,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 44.5,
+          "src": [
+            0
+          ],
+          "note": "T-72B base weight; B3M not listed",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": 800,
+          "src": [
+            0
+          ],
+          "note": "Relikt-equipped T-72B3M; no figure in source, design",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 1300,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ke": {
+          "value": 700,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 1200,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "the Russian army's most numerous tank, 2A46M-5, Relikt ERA (2016 upgrade)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-72"
+      ]
+    },
+    {
+      "id": "m2a4_bradley",
+      "name": "M2A4 Bradley",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "ifv",
+      "year_in_service": 2022,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 35.92,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.6,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.3,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.3,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 66,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 480,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "IFV, 25 mm M242 (900 rounds), TOW-2; fielded April 2022",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M2_Bradley"
+      ]
+    },
+    {
+      "id": "bmp3",
+      "name": "BMP-3",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "ifv",
+      "year_in_service": 1987,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 18.7,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 7.14,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.2,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.4,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 72,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "IFV: 100 mm 2A70 (40 rounds + 8 Bastion ATGMs) and 30 mm 2A72 (500)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BMP-3"
+      ]
+    },
+    {
+      "id": "m1126_stryker",
+      "name": "M1126 Stryker ICV",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "apc",
+      "year_in_service": 2002,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 16.47,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.95,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.72,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.64,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 9,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 97,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "8x8 infantry carrier, .50 cal RWS, 14.5 mm all-round protection",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Stryker"
+      ]
+    },
+    {
+      "id": "btr82a",
+      "name": "BTR-82A",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "apc",
+      "year_in_service": 2013,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 13.6,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 85,
+          "src": [
+            0
+          ],
+          "note": "80-90 km/h",
+          "estimate": true
+        },
+        "range_km": {
+          "value": 600,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "8x8 APC with a 30 mm 2A72 turret (adopted 2013)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BTR-80"
+      ]
+    },
+    {
+      "id": "m109a7",
+      "name": "M109A7 Paladin",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "spg",
+      "year_in_service": 2015,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 38,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 61,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 300,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "155 mm M284 L/39: 21 km HE, 30 km RAP, 40 km Excalibur",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M109_howitzer"
+      ]
+    },
+    {
+      "id": "2s19m2",
+      "name": "2S19M2 Msta-S",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "spg",
+      "year_in_service": 2013,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 42,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "152 mm 2A64: 24.7 km HE, 29 km base bleed, 10 rpm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/2S19_Msta"
+      ]
+    },
+    {
+      "id": "m142_himars",
+      "name": "M142 HIMARS",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "mlrs",
+      "year_in_service": 2005,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 16.25,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 94,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 480,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "6 GMLRS M31 (15-92 km, GPS, ~1 m accuracy)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M142_HIMARS"
+      ]
+    },
+    {
+      "id": "tornado_s",
+      "name": "9K515 Tornado-S",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "mlrs",
+      "year_in_service": 2016,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 24.65,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 90,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "12 x 300 mm GLONASS-guided rockets, 120 km",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tornado_(multiple_rocket_launcher)"
+      ]
+    },
+    {
+      "id": "pantsir_s1",
+      "name": "Pantsir-S1",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "spaag",
+      "year_in_service": 2012,
+      "dimensions": {},
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "gun-missile air defence: 12 x 57E6 (18 km), 2 x 30 mm 2A38M (4 km), radar 32-36 km",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pantsir_missile_system"
+      ]
+    },
+    {
+      "id": "tor_m2",
+      "name": "Tor-M2",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "sam",
+      "year_in_service": 2007,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 34,
+          "src": [
+            0
+          ],
+          "note": "Tor-M1 figure",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "short-range SAM, 16 x 9M338 (16 km), 2-3 s reaction",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tor_missile_system"
+      ]
+    },
+    {
+      "id": "m_shorad_inc1",
+      "name": "M-SHORAD Increment 1",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "spaag",
+      "year_in_service": 2021,
+      "dimensions": {},
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "Stryker short-range air defence: 4 Stinger, XM914 30 mm, 2 Longbow Hellfire, multi-mission radar (first fielded April 2021)",
+      "sources": [
+        "https://www.everycrsreport.com/reports/IF12397.html (CRS IF12397)"
+      ]
+    },
+    {
+      "id": "ah64e_apache",
+      "name": "AH-64E Apache Guardian",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "attack_helo",
+      "year_in_service": 2013,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "attack helicopter: 30 mm M230, Hellfire/JAGM, Hydra 70 (IOC 2013)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Boeing_AH-64_Apache"
+      ]
+    },
+    {
+      "id": "ka52_alligator",
+      "name": "Ka-52 Alligator",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "attack_helo",
+      "year_in_service": 2011,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 270,
+          "src": [
+            0
+          ],
+          "note": "cruise; max 315 km/h"
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "attack helicopter: 30 mm 2A42 (460), 12 Vikhr (8 km), S-8 rockets",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kamov_Ka-50"
+      ]
+    },
+    {
+      "id": "f35a",
+      "name": "F-35A Lightning II",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "multirole_jet",
+      "year_in_service": 2016,
+      "dimensions": {},
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 900,
+          "src": [
+            0
+          ],
+          "note": "sim cruise design; max Mach 1.6",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "stealth multirole fighter: GAU-22/A (182 rounds), JDAM, AIM-120 (IOC 2 Aug 2016)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lockheed_Martin_F-35_Lightning_II"
+      ]
+    },
+    {
+      "id": "su34",
+      "name": "Su-34 Fullback",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "strike_jet",
+      "year_in_service": 2014,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 900,
+          "src": [
+            0
+          ],
+          "note": "sim cruise design; max 1,435 km/h at sea level",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "strike fighter: GSh-30-1 (180), FAB-500 UMPK glide bombs (service 20 March 2014)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sukhoi_Su-34"
+      ]
+    },
+    {
+      "id": "us_infantry_squad_2026",
+      "name": "US Infantry Squad (2026)",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "infantry",
+      "year_in_service": 2020,
+      "crew": {
+        "value": 9,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "9-man squad: leader and two 4-man fire teams with M249 and M320",
+      "sources": [
+        "https://www.uakron.edu/armyrotc/MS1/10.pdf (US Army ROTC squad organisation, search summary)"
+      ]
+    },
+    {
+      "id": "us_javelin_team",
+      "name": "Javelin Team",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "at_team",
+      "year_in_service": 1996,
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "1 or 2"
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "FGM-148 Javelin: fire-and-forget top attack, 4 km, >760 mm RHA",
+      "sources": [
+        "https://en.wikipedia.org/wiki/FGM-148_Javelin"
+      ]
+    },
+    {
+      "id": "rus_motor_rifle_squad_2026",
+      "name": "Motor Rifle Squad (2026)",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "infantry",
+      "year_in_service": 2000,
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "8-man rifle section of a BMP platoon: commander, grenadier, assistant grenadier, machine gunner, riflemen",
+      "sources": [
+        "https://www.battleorder.org/rus-bmp-platoon"
+      ]
+    },
+    {
+      "id": "rus_kornet_team",
+      "name": "Kornet Team",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "at_team",
+      "year_in_service": 1998,
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "9M133 Kornet-E: SACLOS laser beam riding, 5.5 km, 1,200 mm RHA behind ERA",
+      "sources": [
+        "https://en.wikipedia.org/wiki/9M133_Kornet"
+      ]
+    },
+    {
+      "id": "hemtt_a4",
+      "name": "HEMTT A4 (M977A4)",
+      "side": "NATO",
+      "nation": "United States",
+      "kind": "supply",
+      "year_in_service": 2008,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 31,
+          "src": [
+            0
+          ],
+          "note": "laden"
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 100,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 483,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "10 short ton cargo truck",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Heavy_Expanded_Mobility_Tactical_Truck"
+      ]
+    },
+    {
+      "id": "kamaz_5350",
+      "name": "KamAZ-5350",
+      "side": "Russia",
+      "nation": "Russia",
+      "kind": "supply",
+      "year_in_service": 2002,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 13.3,
+          "src": [
+            0
+          ],
+          "note": "curb 6-7.3 t + 6 t payload; design sum",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "6x6 military truck, 6 t payload (accepted 2002)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/KamAZ-5350"
+      ]
+    },
+    {
+      "id": "type99a",
+      "name": "Type 99A",
+      "side": "China",
+      "nation": "China",
+      "kind": "tank",
+      "year_in_service": 2011,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 55,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 76,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 625,
+          "src": [
+            0
+          ],
+          "note": "600-650 km",
+          "estimate": true
+        }
+      },
+      "armor": {
+        "turret_front_ke": {
+          "value": 800,
+          "src": [
+            0
+          ],
+          "note": "KE not given; design",
+          "estimate": true
+        },
+        "turret_front_ce": {
+          "value": 1000,
+          "src": [
+            0
+          ],
+          "note": "'equivalent to HEAT more than 1000mm RHA'"
+        },
+        "hull_front_ke": {
+          "value": 700,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "hull_front_ce": {
+          "value": 1000,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "PLA main battle tank, 125 mm ZPT-98 (42 rounds, autoloader), GP125 ATGM (5 km)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Type_99_tank"
+      ]
+    },
+    {
+      "id": "zbd04a",
+      "name": "ZBD-04A",
+      "side": "China",
+      "nation": "China",
+      "kind": "ifv",
+      "year_in_service": 2004,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 24,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 75,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "IFV: 100 mm gun-launcher and 30 mm ZPT-99; front proof vs 30 mm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ZBD-04"
+      ]
+    },
+    {
+      "id": "zbl08",
+      "name": "ZBL-08",
+      "side": "China",
+      "nation": "China",
+      "kind": "ifv",
+      "year_in_service": 2008,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 21,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 100,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 800,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "8x8 IFV: 30 mm ZPT-99, HJ-73C; front proof vs 25 mm at 1 km",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ZBL-08"
+      ]
+    },
+    {
+      "id": "plz05",
+      "name": "PLZ-05",
+      "side": "China",
+      "nation": "China",
+      "kind": "spg",
+      "year_in_service": 2008,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "35-45 t",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 56,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 550,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "155 mm L/52: 39 km ERFB-BB, 8-10 rpm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/PLZ-05"
+      ]
+    },
+    {
+      "id": "hq17",
+      "name": "HQ-17",
+      "side": "China",
+      "nation": "China",
+      "kind": "sam",
+      "year_in_service": 2013,
+      "dimensions": {},
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ],
+        "note": "design: not on the page",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 65,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "short-range SAM: 8 missiles, 1.5-15 km, 45 km PESA radar",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HQ-17"
+      ]
+    },
+    {
+      "id": "z10",
+      "name": "Z-10",
+      "side": "China",
+      "nation": "China",
+      "kind": "attack_helo",
+      "year_in_service": 2009,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 230,
+          "src": [
+            0
+          ],
+          "note": "cruise"
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "attack helicopter: 23 mm PX-10A, up to 16 AKD-10",
+      "sources": [
+        "https://en.wikipedia.org/wiki/CAIC_Z-10"
+      ]
+    },
+    {
+      "id": "j16",
+      "name": "J-16",
+      "side": "China",
+      "nation": "China",
+      "kind": "multirole_jet",
+      "year_in_service": 2015,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 900,
+          "src": [
+            0
+          ],
+          "note": "sim cruise design; max 2,120 km/h",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "strike fighter: GSh-30-1, PL-15, LS-500J laser-guided bombs (2015)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Shenyang_J-16"
+      ]
+    },
+    {
+      "id": "pla_infantry_squad",
+      "name": "PLA Mechanised Squad",
+      "side": "China",
+      "nation": "China",
+      "kind": "infantry",
+      "year_in_service": 2020,
+      "dimensions": {},
+      "crew": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "mechanised squad: QBZ-191, QJB-201, PF-98",
+      "sources": [
+        "design: ZBD-04A/ZBL-08 carry 7 (Wikipedia)"
+      ]
+    },
+    {
+      "id": "pla_hj12_team",
+      "name": "HJ-12 Team",
+      "side": "China",
+      "nation": "China",
+      "kind": "at_team",
+      "year_in_service": 2020,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "HJ-12: fire-and-forget top attack, 4 km, ~1,100 mm behind ERA",
+      "sources": [
+        "https://en.wikipedia.org/wiki/HJ-12"
+      ]
+    },
+    {
+      "id": "eq2102",
+      "name": "Dongfeng EQ2102",
+      "side": "China",
+      "nation": "China",
+      "kind": "supply",
+      "year_in_service": 1995,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 10.4,
+          "src": [
+            0
+          ],
+          "note": "6,920 kg + 3,500 kg cross-country payload (source)"
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ],
+        "note": "driver; cab seats 1+4 (EQ2102) per page"
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 90,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "PLA 3.5-tonne 6x6 truck, in service from the 1990s (year design)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dongfeng_EQ2102"
+      ]
+    }
+  ]
+}

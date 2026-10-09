@@ -1,0 +1,18 @@
+{
+  "scheme": "soviet_4bo",
+  "tile_m": 4.0,
+  "px": 512,
+  "colors_srgb": [
+    [
+      89,
+      90,
+      67
+    ]
+  ],
+  "coverage": {
+    "0": 1.0
+  },
+  "placeholder_colors": false,
+  "palette_source": "assets_src/research/palettes_1989.json",
+  "seed": 1989
+}

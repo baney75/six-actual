@@ -1,0 +1,230 @@
+{
+  "retrieved": "2026-10-09",
+  "notes": "Arcade flight-model reference values. Source quality tags: [A] official fact sheet / flight-manual-derived, [B] Jane's- or book-cited encyclopedia infobox, [C] secondary spec aggregator, [D] forum or game wiki (pilot or manual quotes, unverified). km/h conversions: 1 kt = 1.852 km/h, 1 ft/min = 0.00508 m/s.",
+  "aircraft": {
+    "a10a_thunderbolt": {
+      "vmax_sl_kmh": {
+        "value": 706,
+        "unit": "km/h",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II",
+          "https://www.milavia.net/aircraft/a-10/a-10_specs.htm",
+          "https://www.af.mil/Portals/1/documents/aboutus/FactSheets/A10_Thunderbolt_II.pdf"
+        ],
+        "note": "381 kt at sea level, clean (Wikipedia infobox citing Jenkins 1998 p.54 [B]; MILAVIA 706 km/h [C]). USAF fact sheet gives 420 mph (676 km/h) without altitude or configuration [A]. Picked 706 because it is the explicit sea-level clean figure."
+      },
+      "vstall_kmh": {
+        "value": 222,
+        "unit": "km/h",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II"
+        ],
+        "note": "120 kt at 30,000 lb (Wikipedia infobox citing a 2001 SimHQ article [D-quality citation]). Configuration not stated; treat as approximate."
+      },
+      "g_limit": {
+        "value": 7.33,
+        "unit": "g",
+        "sources": [
+          "https://www.globalsecurity.org/military/systems/aircraft/a-10-specs.htm",
+          "https://forum.dcs.world/topic/147020-a-10c-g-limit/"
+        ],
+        "note": "+7.33/-3.0 g symmetric at about 30,000 lb; +5.8 asymmetric; drops to +5.0/-2.0 near max gross weight [C/D, flight-manual-derived]. Wikipedia infobox lists no g limit."
+      },
+      "climb_m_s": {
+        "value": 30.5,
+        "unit": "m/s",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II"
+        ],
+        "note": "6,000 ft/min (Wikipedia infobox [B])."
+      }
+    },
+    "su25_frogfoot": {
+      "vmax_sl_kmh": {
+        "value": 950,
+        "unit": "km/h",
+        "sources": [
+          "https://ru.wikipedia.org/wiki/Су-25",
+          "https://en.wikipedia.org/wiki/Sukhoi_Su-25",
+          "https://milavia.net/aircraft/su-25/su-25_specifications.htm"
+        ],
+        "note": "Sources disagree: ru-Wikipedia 950 km/h with normal combat load (Su-25K) [B]; en-Wikipedia 975 km/h at sea level for late-production Su-25/Su-25K (Jane's 2003-04) [B]; MILAVIA 850 km/h for Frogfoot-A (Gordon & Dawes 2004) [C]. Picked 950: the loaded figure from a 1980s-production variant, between the clean and conservative values."
+      },
+      "vstall_kmh": {
+        "value": 210,
+        "unit": "km/h",
+        "sources": [
+          "https://ru.wikipedia.org/wiki/Су-25",
+          "https://forum.dcs.world/topic/93293-su-25t-flight-test-section-2-takeoff-and-landing"
+        ],
+        "note": "Landing speed, not stall (ru-Wikipedia, 210 km/h [B]). A DCS test thread gives landing-configuration stall of 220 km/h light to 260-270 km/h fully loaded for the Su-25T [D]. No published clean stall figure found."
+      },
+      "g_limit": {
+        "value": 6.5,
+        "unit": "g",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sukhoi_Su-25",
+          "https://milavia.net/aircraft/su-25/su-25_specifications.htm",
+          "https://ru.wikipedia.org/wiki/Су-25"
+        ],
+        "note": "+6.5 g with normal combat load; +5.2 g with maximum load (all three sources agree) [B]."
+      },
+      "climb_m_s": {
+        "value": 58,
+        "unit": "m/s",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sukhoi_Su-25"
+        ],
+        "note": "58 m/s (11,400 ft/min), late-production Su-25/Su-25K, Jane's 2003-04 [B]."
+      }
+    },
+    "f16c_block30": {
+      "vmax_sl_kmh": {
+        "value": 1482,
+        "unit": "km/h",
+        "sources": [
+          "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon"
+        ],
+        "note": "Mach 1.2 / 800 kt at sea level (Wikipedia infobox for F-16C Block 50/52, citing Frawley, International Directory of Military Aircraft [B]). No Block 30-specific figure found; Block 30 (F110-GE-100) is comparable. High-altitude figure is Mach 2.05."
+      },
+      "vstall_kmh": {
+        "value": 278,
+        "unit": "km/h",
+        "sources": [
+          "https://skybrary.aero/aircraft/f16",
+          "https://www.f-16.net/forum/viewtopic.php?p=5488",
+          "https://www.f-16.net/forum/viewtopic.php?p=2410"
+        ],
+        "note": "Approach speed, not stall. SKYbrary Vapp 150 kt [C, page blocked to fetch; value seen in search extract]. A line pilot on f-16.net reports 160-175 kt at 11 deg AOA [D]. f-16.net pilots state there is no single published stall speed. Picked 150 kt as the lightweight approach figure."
+      },
+      "g_limit": {
+        "value": 9,
+        "unit": "g",
+        "sources": [
+          "https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon"
+        ],
+        "note": "+9 g (Wikipedia infobox [B]; widely published design limit)."
+      },
+      "climb_m_s": {
+        "value": 254,
+        "unit": "m/s",
+        "sources": [
+          "https://aeropedia.com.au/?p=11549",
+          "https://aerocorner.com/aircraft/lockheed-martin-f16-fighting-falcon/",
+          "https://www.f-16.net/forum/viewtopic.php?p=5488"
+        ],
+        "note": "50,000 ft/min, from secondary aggregators [C]; Wikipedia infobox omits climb. An early F-16 pilot on f-16.net describes 20,000 ft/min easy in AB and 5,000-7,000 ft/min loaded [D], so 254 m/s is a clean peak, not typical."
+      }
+    },
+    "f15c_eagle": {
+      "vmax_sl_kmh": {
+        "value": 1482,
+        "unit": "km/h",
+        "sources": [
+          "https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle"
+        ],
+        "note": "Mach 1.2 / 800 kt at sea level (Wikipedia infobox, F-15C, citing USAF fact sheet, Jane's and TO 1F-15A-1 [A/B]). High-altitude figure is Mach 2.5."
+      },
+      "vstall_kmh": {
+        "value": 228,
+        "unit": "km/h",
+        "sources": [
+          "https://forum.dcs.world/topic/117823-f-14-low-speed-prowess-vs-other-aircraft/page/13"
+        ],
+        "note": "123 kt level flight, power off, speed brake in, gear and flaps down, 39,000 lb (forum post quoting flight-manual data [D]). Landing-configuration stall, not clean. Approach speed is about 150 kt (same search extract)."
+      },
+      "g_limit": {
+        "value": 9,
+        "unit": "g",
+        "sources": [
+          "https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle",
+          "https://forum.warthunder.com/t/f-15-eagle-history-performance-discussion/919?page=58"
+        ],
+        "note": "Sources disagree: Wikipedia +9 [B]; flight-manual limit without the Overload Warning System is +7.33 [D, forum]. Picked 9 as the infobox figure for an OWS-equipped F-15C; use 7.33 if modeling non-OWS jets."
+      },
+      "climb_m_s": {
+        "value": 340.6,
+        "unit": "m/s",
+        "sources": [
+          "https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle"
+        ],
+        "note": "67,050 ft/min, maximum with 3 pylons (Wikipedia infobox [B]). Peak figure, likely not at the sea-level start of the climb."
+      }
+    },
+    "mig29_9_12": {
+      "vmax_sl_kmh": {
+        "value": 1500,
+        "unit": "km/h",
+        "sources": [
+          "https://www.airforce-technology.com/projects/mig29/",
+          "https://plandiy.com.ua/ru/shvydkist-mih-29-povnyi-rozbir-shvydkisnykh-kharakterystyk-vynyshchuvacha/",
+          "https://wiki.warthunder.com/unit/mig_29_9_12"
+        ],
+        "note": "1,500 km/h near the ground (airforce-technology [C]; Russian-language summary [C]). War Thunder wiki lists 1,400 km/h at sea level [D, game]. Picked 1,500 as the more widely quoted figure. Wikipedia infobox gives only the high-altitude Mach 2.3+ (2,450 km/h)."
+      },
+      "vstall_kmh": {
+        "value": 260,
+        "unit": "km/h",
+        "sources": [
+          "https://forum.dcs.world/topic/18803-mig-29-landing-approach-in-lockon-and-irl",
+          "https://wiki.warthunder.com/unit/mig_29_9_12"
+        ],
+        "note": "Touchdown/landing speed, not stall. Forum post quoting the pilot's manual gives touchdown 250-260 km/h at typical weight, flare 280-290 km/h [D]; War Thunder wiki landing speed 260 km/h [D]. No published stall speed found."
+      },
+      "g_limit": {
+        "value": 9,
+        "unit": "g",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mikoyan_MiG-29",
+          "https://www.airforce-technology.com/projects/mig29/"
+        ],
+        "note": "+9 g (Wikipedia infobox citing RAC MiG [B]; airforce-technology [C])."
+      },
+      "climb_m_s": {
+        "value": 330,
+        "unit": "m/s",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Mikoyan_MiG-29",
+          "https://www.airforce-technology.com/projects/mig29/"
+        ],
+        "note": "330 m/s (Wikipedia infobox citing Flug Revue [B]; airforce-technology [C]). Peak figure, light weight."
+      }
+    },
+    "su24m_fencer": {
+      "vmax_sl_kmh": {
+        "value": 1315,
+        "unit": "km/h",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sukhoi_Su-24",
+          "https://ru.wikipedia.org/wiki/Су-24"
+        ],
+        "note": "Sources disagree: en-Wikipedia 1,315 km/h (M1.06) at sea level for Su-24MK (Sukhoi, Combat Aircraft since 1945, deagel [B/C]); ru-Wikipedia 1,400 km/h at 200 m without stores for Su-24M [B]. Picked 1,315 as the conservative figure closer to a loaded strike jet."
+      },
+      "vstall_kmh": {
+        "value": 285,
+        "unit": "km/h",
+        "sources": [
+          "https://ru.wikipedia.org/wiki/Су-24"
+        ],
+        "note": "Landing speed, not stall: 285-310 km/h (ru-Wikipedia, Su-24M [B]). Picked the low end. No stall figure found."
+      },
+      "g_limit": {
+        "value": 6,
+        "unit": "g",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sukhoi_Su-24",
+          "https://ru.wikipedia.org/wiki/Су-24"
+        ],
+        "note": "Sources disagree: en-Wikipedia +6 (operational) [B]; ru-Wikipedia +6.5 max operational [B]. Picked 6 as the conservative operational limit."
+      },
+      "climb_m_s": {
+        "value": 150,
+        "unit": "m/s",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Sukhoi_Su-24"
+        ],
+        "note": "150 m/s (30,000 ft/min), en-Wikipedia Su-24MK infobox citing aggregated sources [C]. Single source; treat as approximate."
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "scheme": "su25_1989",
+  "tile_m": 8.0,
+  "px": 1024,
+  "colors_srgb": [
+    [
+      110,
+      110,
+      110
+    ],
+    [
+      150,
+      150,
+      150
+    ],
+    [
+      190,
+      190,
+      190
+    ]
+  ],
+  "coverage": {
+    "0": 0.491,
+    "1": 0.259,
+    "2": 0.25
+  },
+  "placeholder_colors": true,
+  "palette_source": "assets_src/research/palettes_1989.json",
+  "seed": 1989
+}

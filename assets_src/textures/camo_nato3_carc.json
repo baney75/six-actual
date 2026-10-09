@@ -1,0 +1,30 @@
+{
+  "scheme": "nato3_carc",
+  "tile_m": 6.0,
+  "px": 1024,
+  "colors_srgb": [
+    [
+      78,
+      84,
+      68
+    ],
+    [
+      90,
+      78,
+      70
+    ],
+    [
+      54,
+      55,
+      56
+    ]
+  ],
+  "coverage": {
+    "0": 0.5,
+    "1": 0.3,
+    "2": 0.2
+  },
+  "placeholder_colors": false,
+  "palette_source": "assets_src/research/palettes_1989.json",
+  "seed": 1989
+}

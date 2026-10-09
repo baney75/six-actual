@@ -1,0 +1,247 @@
+{
+  "refs": [
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/alice01a_ba75.jpg",
+      "slots": [
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Alice01a.jpg",
+      "author": "US gov",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/alice09_448a.jpg",
+      "slots": [
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Alice09.jpg",
+      "author": "The original uploader was Sgt monroe at English Wikipedia.",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/alice11_7a1d.jpg",
+      "slots": [
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Alice11.jpg",
+      "author": "The original uploader was Sgt monroe at English Wikipedia.",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/a_marine_demonstrates_a_kneeling_firing_position_01c5.jpeg",
+      "slots": [
+        "uniform_side",
+        "weapon_held",
+        "helmet",
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A_Marine_demonstrates_a_kneeling_firing_position_with_an_M-16A2_5.56mm_rifle_-_DPLA_-_9b61faeddc60effb46a81dc08b23c74d.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/a_marine_holds_an_m72a2_light_antitank_weapon_la_f587.jpeg",
+      "slots": [
+        "radio_or_launcher_carry"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A_Marine_holds_an_M72A2_light_antitank_weapon_(LAW)_-_DPLA_-_92e734de76c3ed788e2baf4fa838674d.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/a_member_of_the_4th_bn_6th_inf_5th_inf_div_aims_4fc9.jpeg",
+      "slots": [
+        "weapon_held",
+        "helmet"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A_member_of_the_4th_Bn.,_6th_Inf.,_5th_Inf._Div.,_aims_his_M-16A2_rifle_through_a_barbed_wire_fence_during_a_joint_exercise_involving_units_of_the_Army,_Navy,_and_Air_Force_-_DPLA_-_aa2cf6e6e10cf48741a7bc6fd1fc6235.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/an_82nd_airborne_division_radio_operator_holding_02ef.jpeg",
+      "slots": [
+        "radio_or_launcher_carry",
+        "weapon_held",
+        "uniform_side"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:An_82nd_Airborne_Division_radio_operator_holding_an_M16A2_rifle_kneels_near_an_M998_high_mobility_multi-purpose_wheeled_vehicle_during_Operation_GOLDEN_PHEASANT_-_DPLA_-_48e81e06cae6d5713c2b610023bb1d24.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/a_radio_operator_with_co_c_5th_bn_14th_inf_div_l_7da0.jpeg",
+      "slots": [
+        "radio_or_launcher_carry",
+        "uniform_front",
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A_radio_operator_with_Co._C,_5th_Bn.,_14th_Inf.,_Div._(Light),_advances_along_a_road_toward_his_unit%27s_objective_during_the_joint_South_Korean-U.S._exercise_Team_Spirit_%2789_-_DPLA_-_3bf1e09823988e68ed060659d046376c.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/a_us_army_soldier_armed_with_an_m16a2_rifle_watc_71a6.jpeg",
+      "slots": [
+        "helmet",
+        "weapon_held"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A_US_Army_Soldier_armed_with_an_M16A2_rifle_watches_for_opposing_forces_during_Exercise_COBRA_GOLD%2787_-_DPLA_-_9732702c550de2dce536b165bdd228a1.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/dressed_in_full_battle_gear_members_of_the_3rd_b_0fd6.jpeg",
+      "slots": [
+        "uniform_front",
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Dressed_in_full_battle_gear,_members_of_the_3rd_Battalion,_17th_Infantry,_7th_Infantry_Division_(Light),_march_across_the_flight_line_to_board_an_aircraft_for_flight_to_Camp_Long_du_-_DPLA_-_d16f62f7c0150665179282ccc390f9a8.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/dressed_in_full_battle_gear_members_of_the_3rd_b_64f9.jpeg",
+      "slots": [
+        "uniform_front",
+        "webbing",
+        "helmet"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Dressed_in_full_battle_gear,_members_of_the_3rd_Battalion,_17th_Infantry,_7th_Infantry_Division_(Light),_stand_in_formation_on_the_flight_line_after_their_arrival_for_the_joint_US-S_-_DPLA_-_066a6c779160b312650f8d8ca194c180.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/panama_7th_infantry_1990_df_st_91_02532_db26.jpg",
+      "slots": [
+        "uniform_front"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Panama_7th_infantry_1990_DF-ST-91-02532.jpg",
+      "author": "Camera Operator: MASTER SGT. KEN HAMMOND",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/pasgt_kpot_ca5e.jpg",
+      "slots": [
+        "helmet"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:PASGT_KPot.jpg",
+      "author": "Pelz Der Untoten",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/sgt_james_patterson_of_2nd_bn_502nd_inf_regt_101_e09a.jpeg",
+      "slots": [
+        "uniform_side",
+        "webbing",
+        "weapon_held"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:SGT._James_Patterson_of_2nd_Bn.,_502nd_Inf._Regt.,_101st_Airborne_Div.,_carries_an_M-16A2_rifle_equipped_with_an_M-203_grenade_launcher_as_he_moves_through_Landing_Zone_Hue_during_a_-_DPLA_-_ca5a22b265634d829bdbfbe78180032d.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/soldiers_of_co_a_1st_bn_505th_parachute_infantry_6702.jpeg",
+      "slots": [
+        "uniform_front",
+        "webbing",
+        "weapon_held"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Soldiers_of_Co._A,_1ST_Bn.,_505th_Parachute_Infantry_Regt.,_march_through_a_bean_field_toward_a_landing_zone_during_a_joint_Air_Force_and_Army_air-drop-air-assault_exercise_-_DPLA_-_99d774a8866acdcfb04c8958470d583d.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/spec_4_mario_garcia_a_radioman_from_2nd_bn_502nd_dba5.jpeg",
+      "slots": [
+        "radio_or_launcher_carry",
+        "uniform_front"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:SPEC._4_Mario_Garcia,_a_radioman_from_2nd_Bn.,_502nd_Inf._Regt.,_101st_Airborne_Div.,_talks_on_his_field_radio_during_a_live-fire_exercise._Garcia_is_holding_an_M-16A2_rifle_equippe_-_DPLA_-_aa114b4d4cfb58e3ca2d78ebbd1e3ac3.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/two_members_of_the_7th_infantry_division_take_a_2ede.jpg",
+      "slots": [
+        "uniform_front",
+        "weapon_held"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Two_members_of_the_7th_Infantry_Division_take_a_break_while_on_patrol_during_Operation_Just_Cause._The_soldiers_are_armed_with_M-16A2_rifles_DF-ST-91-02533.jpg",
+      "author": "MASTER SGT. Ken Hammond",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/m2_bradley_and_infantry_reforger_1984_3a70.jpg",
+      "slots": [
+        "uniform_back",
+        "uniform_side",
+        "radio_or_launcher_carry",
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M2_Bradley_and_Infantry_Reforger_1984.jpg",
+      "author": "SSG RICHARD HART",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/reforger_90_c141b_starlifter_lux_apt_df_st_91_00_1281.jpg",
+      "slots": [
+        "uniform_back",
+        "webbing"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Reforger_90_C141B_Starlifter_Lux_Apt_DF-ST-91-00046.jpg",
+      "author": "Sergeant Derrick Shine",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/us_rifle_squad_1989/da_st_85_12340_members_of_the_2nd_battalion_42nd_ab27.jpeg",
+      "slots": [
+        "uniform_front",
+        "weapon_held"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:DA-ST-85-12340_Members_of_the_2nd_Battalion,_42nd_Infantry,_during_SPEARPOINT_%2784,_a_phase_of_Exercise_REFORGER_%2784.jpeg",
+      "author": "SSG Richard Hart",
+      "retrieved": "2026-10-08"
+    }
+  ]
+}

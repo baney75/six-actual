@@ -1,0 +1,239 @@
+{
+  "refs": [
+    {
+      "file": "assets_src/refs/a10a/fairchild_republic_a_10_thunderbolt_ii_3_view_li_4d99.png",
+      "slots": [
+        "side",
+        "top",
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Fairchild_Republic_A-10_Thunderbolt_II_3-view_line_drawing.png",
+      "author": "US Army (airdefense.bliss.army.mil recognition drawing)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a_10a_78_0723_cn_343_crashed_9_feb_1985_30_mi_so_7c97.jpg",
+      "slots": [
+        "side",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A-10A_78-0723_CN_343_crashed_9_Feb_1985_30_mi_south_Flagstaff_AZ_pilot_killed.jpg",
+      "author": "United States Air Force",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a_10a_78th_tfs_taking_off_1986_93b7.jpeg",
+      "slots": [
+        "side",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A-10A_78th_TFS_taking_off_1986.JPEG",
+      "author": "SSgt. David S. Nolan, USAF",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a_10a_81st_tfw_in_fllight_1980_1857.jpeg",
+      "slots": [
+        "pylon_config",
+        "exhaust_or_prop"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A-10A_81st_TFW_in_fllight_1980.JPEG",
+      "author": "Camera Operator: Maj. Dennis A. Guyitt, USAF",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a_10a_81st_tfw_over_spain_1987_2b0e.jpeg",
+      "slots": [
+        "side"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A-10A_81st_TFW_over_Spain_1987.JPEG",
+      "author": "Camera Operator: SSgt. David S. Nolan, USAF",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a_10a_91st_tfs_in_flight_1987_877d.jpeg",
+      "slots": [
+        "side",
+        "cockpit_canopy"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A-10A_91st_TFS_in_flight_1987.JPEG",
+      "author": "SSgt. David Nolan, USAF",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a10thunderbolt2_990422_f_7910d_517_a8b4.jpg",
+      "slots": [
+        "top",
+        "pylon_config",
+        "exhaust_or_prop"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A10Thunderbolt2_990422-F-7910D-517.jpg",
+      "author": "U.S. Air Force photo by Senior Airman Greg L. Davis",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a_10_thunderbolt_ii_aircraft_refuel_with_kc_135_cff3.jpg",
+      "slots": [
+        "engine_glow",
+        "top",
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A-10_Thunderbolt_II_aircraft_refuel_with_KC-135_Stratotanker_at_night_(8826394).jpg",
+      "author": "U.S. Air Force AFCENT by Staff Sgt. Jackson Manske",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/a_front_view_of_an_a_10_thunderbolt_ii_aircraft_2c7b.jpeg",
+      "slots": [
+        "front",
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:A_front_view_of_an_A-10_Thunderbolt_II_aircraft_being_uploaded_with_AGM-65_Maverick_missiles.JPEG",
+      "author": "STAFF SGT DONALD S. MCMICHAEL",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/an_a_10_recovery_team_member_holds_one_of_the_th_a50d.jpeg",
+      "slots": [
+        "wreck"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:An_A-10_recovery_team_member_holds_one_of_the_thousands_of_pieces_that_the_accident_investigation_board_must_look_through_to_help_it_determine_why_the_aircraft_crashed_-_DPLA_-_ebdc6e3b720de25b0558a9c030193f28.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/an_overhead_right_side_view_of_an_a_10a_thunderb_4206.jpeg",
+      "slots": [
+        "top"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:An_overhead_right_side_view_of_an_A-10A_Thunderbolt_aircraft_undergoing_in-flight_refueling_through_the_boom_of_a_KC-10A_Extender_aircraft_-_DPLA_-_a2bcacfe3b1107e2551c297892650909.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/comparison_of_a_10_and_su_25_ef0d.png",
+      "slots": [
+        "top"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Comparison_of_A-10_and_Su-25.png",
+      "author": "Greg Goebel",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/df_st_92_07675_5375900890_6112.jpg",
+      "slots": [
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:DF-ST-92-07675_(5375900890).jpg",
+      "author": "US Air Force from USA",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/fairchild_oa_10a_thunderbolt_ii_jun_1989_cab_6c1f.jpg",
+      "slots": [
+        "side",
+        "cockpit_canopy",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Fairchild_OA-10A_Thunderbolt_II_-_Jun_1989_CAB.JPG",
+      "author": "Jean-Pol GRANDMONT",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/fairchild_republic_a_10a_thunderbolt_ii_cockpit_e02f.jpg",
+      "slots": [
+        "cockpit_canopy"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Fairchild_Republic_A-10A_Thunderbolt_II_cockpit_USAF.jpg",
+      "author": "US Air Force (National Museum of the USAF)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/propulsion_techs_ensure_a_10s_fit_to_fight_14022_ace4.jpg",
+      "slots": [
+        "exhaust_or_prop"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Propulsion_techs_ensure_A-10s_%27fit_to_fight%27_140228-F-JB386-179.jpg",
+      "author": "Siuta Ika",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/removing_chocks_on_a_10_at_eielson_june_12_2012_7649.jpg",
+      "slots": [
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Removing_chocks_on_A-10_at_Eielson_June_12_2012.jpg",
+      "author": "Tech. Sgt. Michael R. Holzworth",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/thunderbolt_a10_closeup_fairford_arp_6646.jpg",
+      "slots": [
+        "cockpit_canopy",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Thunderbolt.a10.closeup.fairford.arp.jpg",
+      "author": "Arpingstone",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/ya_10a_parked_0924.jpg",
+      "slots": [
+        "front",
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:YA-10A_Parked.jpg",
+      "author": "U.S. Air Force",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/a10a/dimensions.md",
+      "slots": [
+        "dimension_source"
+      ],
+      "kind": "distributable",
+      "license": "own work (notes)",
+      "url": "n/a (own notes)",
+      "author": "Claude (Six Actual ref-hunter)",
+      "retrieved": "2026-10-08"
+    }
+  ]
+}

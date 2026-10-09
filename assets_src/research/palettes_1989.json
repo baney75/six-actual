@@ -1,0 +1,463 @@
+{
+  "retrieved": "2026-10-09",
+  "method_notes": [
+    "All hex values are sRGB approximations for screen use. Paint, dye and stone colours were defined by physical chips, cloth standards or natural material, not by sRGB.",
+    "Source quality tags: primary = standard or government report; measured-secondary = a colour database that publishes CIELAB-derived sRGB for the official chip; approx-secondary = a hand-made web approximation; modelling = paint-maker or modelling reference; forum = hobby forum or blog; snippet = value read from the search engine's index of the page because WebFetch was refused (HTTP 403). For hextoral, the hex value is also part of the page URL, which corroborates it.",
+    "derived_from_lab: Claude converted the published CIELAB values to sRGB with the standard CIE 1976 L*a*b* to XYZ (D65 white point) to sRGB (IEC 61966-2-1) conversion. The CIELAB values come from the cited source. The conversion is arithmetic and no value was invented.",
+    "No images were downloaded. No colour was sampled from photographs."
+  ],
+  "schemes": {
+    "us_army_nato_3color_carc": {
+      "usage": "US Army NATO three-colour pattern on CARC. The base is Green 383 with disruptive Brown 383 and Black. The pattern came in during the mid-1980s alongside the US Army's move to CARC paint, and sources date its use on temperate-environment AFVs from about 1984. By 1989 it was standard on US vehicles in Central Europe (M1, M2/M3, M113, M60A3, M109, HMMWV and others). Pattern drawings: TB 43-209. Application: TM 43-0139. AR 750-1 required the pattern on any tactical vehicle with more than 9 sq ft on a side. The Bundeswehr adopted the matching scheme in 1984 using RAL 6031-F9 Bronzegrün, RAL 8027-F9 Lederbraun and RAL 9021-F9 Teerschwarz, so German vehicles in 1989 look nearly the same. In 1989 some US vehicles were still in MERDC paint or a mix of the two (see us_army_merdc_context).",
+      "usage_sources": [
+        "https://militarytrader.com/mv-101/nato-three-color-camoflage (secondary; magazine article quoting AR 750-1, TB 43-209, TM 43-0139)",
+        "https://www.miniatures.de/camouflage-NATO.html (modelling; Bundeswehr RAL F9 colours, 1984)",
+        "https://www.miniatures.de/colour-leather-brown-ral-8027.html (modelling; RAL 8027 matched to FS 30051)",
+        "https://box24.com.ua/en/nabir-farb-modern-us-army-and-usmc-afv-paint-set-hataka-hobby-htk-as67/ (modelling; 'from 1984 onward', via search snippet)"
+      ],
+      "colors": [
+        {
+          "name": "CARC Green 383",
+          "standard": "FED-STD-595 34094 (Green 383 camouflage); CARC per MIL-DTL-53039/53072",
+          "hex": "#4E5444",
+          "alternatives": [
+            {"hex": "#4A5444", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary; the page itself calls its values 'non official approximate values intended to simulate FS 595C colors'"}
+          ],
+          "sources": [
+            "https://hextoral.com/hex-color/4e5444/federal-std-595c/ (measured-secondary, snippet: RGB 78,84,68, Lab 35,-6,9, LRV 8.5%)",
+            "https://www.w3schools.com/colors/colors_fs595.asp",
+            "https://militarytrader.com/mv-101/nato-three-color-camoflage (FS number)"
+          ],
+          "note": "The sources differ by about 4 units of red. I chose hextoral because it publishes the CIELAB value it converted from. w3schools says its values are unofficial approximations."
+        },
+        {
+          "name": "CARC Brown 383",
+          "standard": "FED-STD-595 30051 (Brown 383 / camouflage / leather brown); German equivalent RAL 8027 Lederbraun",
+          "hex": "#5A4E46",
+          "alternatives": [
+            {"hex": "#594D45", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary"}
+          ],
+          "sources": [
+            "https://hextoral.com/hex-color/5A4E46/ams-std-595a/ (measured-secondary, snippet: RGB 90,78,70, Lab 34,4,7; AMS-STD-595A, the 2016 successor to FED-STD-595C)",
+            "https://www.myperfectcolor.com/paint/68119-us-government-fed-std-595c-30051 (snippet)",
+            "https://www.w3schools.com/colors/colors_fs595.asp"
+          ],
+          "note": "The two sources differ by only 1 unit per channel. I chose hextoral because it publishes its Lab value."
+        },
+        {
+          "name": "CARC Black",
+          "standard": "FED-STD-595 37030 (Black camouflage); German equivalent RAL 9021 Teerschwarz",
+          "hex": "#363738",
+          "alternatives": [
+            {"hex": "#373538", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary"}
+          ],
+          "sources": [
+            "https://hextoral.com/hex-color/363738/federal-std-595c/ (measured-secondary, snippet: RGB 54,55,56, Lab 23.14,-0.19,-0.74, LRV 3.8%)",
+            "https://www.myperfectcolor.com/paint/68164-us-government-fed-std-595c-37030",
+            "https://www.w3schools.com/colors/colors_fs595.asp"
+          ],
+          "note": "I chose hextoral because it publishes its Lab value. The two sources differ by 2 units or less per channel."
+        }
+      ]
+    },
+    "us_army_merdc_context": {
+      "usage": "MERDC four-colour system, published in TB 43-0209 (29 Oct 1975) and used from the mid-1970s until the NATO three-colour CARC scheme replaced it in the mid-1980s. Winter Verdant (Europe) was 45% Forest Green, 45% Field Drab, 5% Sand, 5% Black. Summer Verdant (CONUS) was 45% Forest Green, 45% Light Green, 5% Sand, 5% Black. Other MERDC colours were Dark Green FS 34102, Light Green FS 34151, Sand FS 30277, Field Drab FS 30118, Earth Yellow (FS 30257), Earth Red (FS 30117), White FS 37875 and Black FS 37038. Only the two greens most useful for 1989 holdovers are given hex values here.",
+      "usage_sources": [
+        "https://cdn.shopify.com/s/files/1/0789/8803/files/MERDC.pdf (modelling guide, 2016, reproduces the TB 43-0209 colour table; quality: modelling)"
+      ],
+      "colors": [
+        {
+          "name": "MERDC Forest Green",
+          "standard": "FED-STD-595 34079 (Army forest green / ANA 631)",
+          "hex": "#535548",
+          "alternatives": [
+            {"hex": "#4C4D43", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary"}
+          ],
+          "sources": [
+            "https://hextoral.com/hex-color/535548/federal-std-595c/ (measured-secondary, snippet: RGB 83,85,72, Lab 35.84,-2.89,7.71)",
+            "https://www.w3schools.com/colors/colors_fs595.asp"
+          ],
+          "note": "I chose hextoral because its Lab value converts back to #555548, which confirms it. The MERDC guide notes that real batches of 34079 varied, some with more cyan."
+        },
+        {
+          "name": "MERDC Dark Green",
+          "standard": "FED-STD-595 34102",
+          "hex": "#595A43",
+          "alternatives": [
+            {"hex": "#565845", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary"}
+          ],
+          "sources": [
+            "https://www.myperfectcolor.com/paint/67995-us-government-fed-std-595c-34102 (snippet: #595A43, RGB 89,90,67; page fetch refused)",
+            "https://www.w3schools.com/colors/colors_fs595.asp"
+          ],
+          "note": "MyPerfectColor sells paint matched to the chip. I chose its value over w3schools' self-described approximation. The same colour is used in the A-10 scheme below."
+        }
+      ]
+    },
+    "usaf_a10a_european_i": {
+      "usage": "A-10A 'European I' wrap-around woodland scheme (dark green, medium green, dark grey). It was the most common Cold War A-10 scheme from about 1980 to the early 1990s, then Compass Ghost greys (FS 36320 over 36375) replaced it. Early Euro I aircraft (circa 1978) carried FS 36118 Gunship Gray, and one early variant used FS 36231. The standard mix was 34092/34102/36081. Markings were low-visibility black stencils or decals: single-colour national insignia, 10-inch two-letter tail codes, and TAC and wing badges. A false canopy was painted in dark grey on the underside.",
+      "usage_sources": [
+        "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II (secondary; scheme description and false canopy)",
+        "https://www.usaf-sig.org/index.php/references/reference/112-color-schemes/139-a-10-fairchild/101-a-10a-european-1-scheme-circa-1978 (IPMS USAF SIG; early variant 34092/34102/36231)",
+        "https://usaf-sig.org/index.php/references/reference/112-color-schemes/139-a-10-fairchild/85-a-10a-european-1-scheme-v1 (IPMS USAF SIG)",
+        "https://box24.com.ua/en/emalevaya-kraska-medium-green-arcus-598/ (modelling, snippet: 36118 later replaced by 36081)",
+        "https://www.tapatalk.com/groups/hyperscale/viewtopic.php?p=2927665 (forum, snippet: black 10-inch stencils, decals once Euro I came in)",
+        "https://forum.finescale.com/t/correct-a-10-color/208656 (forum; Compass Ghost 36320/36375)"
+      ],
+      "colors": [
+        {
+          "name": "Dark Green (Euro I)",
+          "standard": "FED-STD-595 34092 (Gunship green / ANA 612)",
+          "hex": "#49584F",
+          "alternatives": [
+            {"hex": "#495951", "source": "https://www.e-paint.co.uk/lab-hlc-rgb-lrv-values.asp?cRange=Federal+Standard+595C&cRef=34092&cDescription=Gunship+green+/+ANA+612", "quality": "measured-secondary; the same page's sRGB 73,89,81 with the IEC 61966-2-1 D50-adapted conversion"},
+            {"hex": "#46554F", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary"},
+            {"hex": "#53645A", "source": "search-engine summary, page not identified", "quality": "unverified; ignored"}
+          ],
+          "sources": [
+            "https://www.e-paint.co.uk/lab-hlc-rgb-lrv-values.asp?cRange=Federal+Standard+595C&cRef=34092&cDescription=Gunship+green+/+ANA+612 (measured-secondary, snippet: Lab 36.15,-7.82,2.6, RGB 73,88,79, #49584F, LRV 8.99)",
+            "https://www.w3schools.com/colors/colors_fs595.asp"
+          ],
+          "note": "I chose e-paint's #49584F because its published Lab converts to #495951 (D65), within 2 units. w3schools is about 3 units darker."
+        },
+        {
+          "name": "Medium Green (Euro I)",
+          "standard": "FED-STD-595 34102",
+          "hex": "#595A43",
+          "alternatives": [
+            {"hex": "#565845", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary"}
+          ],
+          "sources": [
+            "https://www.myperfectcolor.com/paint/67995-us-government-fed-std-595c-34102 (snippet)",
+            "https://www.w3schools.com/colors/colors_fs595.asp"
+          ],
+          "note": "This is the same chip as MERDC Dark Green. Euro I calls it the 'medium' green."
+        },
+        {
+          "name": "Dark Gunship Gray (Euro I)",
+          "standard": "FED-STD-595 36081 (Dark gunship gray / Deep gray / F-4 aircraft)",
+          "hex": "#575A5A",
+          "alternatives": [
+            {"hex": "#575A58", "source": "https://hextoral.com/hex-color/575a5a/federal-std-595c/", "quality": "same page; the search summary reported RGB 87,90,88, which conflicts with the URL hex"},
+            {"hex": "#4E4F54", "source": "https://www.w3schools.com/colors/colors_fs595.asp", "quality": "approx-secondary"}
+          ],
+          "sources": [
+            "https://hextoral.com/hex-color/575a5a/federal-std-595c/ (measured-secondary, snippet: Lab 38,-1,0, LRV 10.01)",
+            "https://www.myperfectcolor.com/paint/29395-us-government-fed-std-595c-36081",
+            "https://www.w3schools.com/colors/colors_fs595.asp"
+          ],
+          "note": "I chose the hex in the hextoral URL. Lab 38,-1,0 is a neutral grey, which fits #575A5A better than the slightly green #575A58. w3schools is clearly darker and bluer. Its value is not used."
+        },
+        {
+          "name": "Early Euro I grey (circa 1978-80 only)",
+          "standard": "FED-STD-595 36118 (Gunship Gray)",
+          "hex": null,
+          "sources": [
+            "https://box24.com.ua/en/emalevaya-kraska-medium-green-arcus-598/ (snippet)"
+          ],
+          "note": "Context only. 36118 had been replaced by 36081 well before 1989. No hex was looked up because 1989 aircraft do not need it."
+        },
+        {
+          "name": "Markings / national insignia (low-vis black)",
+          "standard": "Black stencils/decals. The FS number is NOT confirmed by any source I fetched (FS 37038 is the likely candidate but is unverified).",
+          "hex": null,
+          "sources": [
+            "https://www.tapatalk.com/groups/hyperscale/viewtopic.php?p=2927665 (forum snippet: black stenciled tail codes and badges)",
+            "https://www.nationalmuseum.af.mil/Upcoming/Photos/igphoto/2000573560/ (NMUSAF photo caption, quoted by the search engine: insignia 'stenciled ... using low gloss black paint'; fetch refused with 403)"
+          ],
+          "note": "The hex is null because no source ties the markings to a specific FS chip. If the art team needs a value, use the CARC Black #363738 (FS 37030) or look up FS 37038 (hextoral lists #373838, snippet) as a stated assumption."
+        }
+      ]
+    },
+    "us_m81_woodland_bdu": {
+      "usage": "US Woodland BDU print (Battle Dress Uniform), adopted in 1981. The four colours cover these areas: Light Green 354 20%, Dark Green 355 30%, Brown 356 34%, Black 357 16%. The pattern is a 60% enlargement of the 1948 ERDL pattern. At a distance it is meant to blend to roughly OG-107. Natick colorimetry used a Macbeth MS-2000, the CIE 1931 2-degree observer and Illuminant D65, giving CIE L*a*b* values. In 1989 it was standard issue for US troops in Germany.",
+      "usage_sources": [
+        "https://ciehub.info/ref/ADA096884.pdf (primary: Ramsley & Bushnell, 'Development of the U.S. Woodland Battle Dress Uniform', NATICK/TR-81/008, Jan 1981, DTIC ADA096884; Table 1 and Appendix A)",
+        "https://ciehub.info/glossary/WoodlandCamouflagePattern.html (secondary summary of the same report)"
+      ],
+      "colors": [
+        {
+          "name": "Light Green 354",
+          "standard": "US Army shade Light Green 354 (Natick TR-81/008; cloth specs MIL-C-44031 and related)",
+          "hex": "#69624A",
+          "hex_basis": "derived_from_lab",
+          "lab_d65": [41.64, -1.27, 14.55],
+          "alternatives": [
+            {"hex": "#9C9177", "source": "https://www.schemecolor.com/u-s-woodland-camouflage-pattern.php", "quality": "approx-secondary; the site gives no derivation and probably sampled a photo. Much lighter than the spec, though it may match faded, washed cloth."}
+          ],
+          "sources": ["https://ciehub.info/ref/ADA096884.pdf"],
+          "note": "This is the colour many people call 'sand' or 'khaki' on M81. The primary report names it Light Green 354 and gives these Lab values. Natick deliberately made the shades a little dark because production cloth comes out lighter and fades."
+        },
+        {
+          "name": "Dark Green 355",
+          "standard": "US Army shade 355",
+          "hex": "#4E493B",
+          "hex_basis": "derived_from_lab",
+          "lab_d65": [31.22, -0.57, 9.44],
+          "alternatives": [
+            {"hex": "#50654D", "source": "https://www.schemecolor.com/u-s-woodland-camouflage-pattern.php", "quality": "approx-secondary, no derivation given"}
+          ],
+          "sources": [
+            "https://ciehub.info/ref/ADA096884.pdf",
+            "https://ciehub.info/glossary/WoodlandCamouflagePattern.html"
+          ],
+          "note": "NAME DISAGREEMENT: the task brief called shade 355 'Field Drab 355'. The primary 1981 Natick report and CIE Hub both call it 'Dark Green 355', so I used the report's name. The measured Lab is a very low-chroma olive. Real BDU cloth reads greener than this conversion, likely because of fluorescence and the IR-tuned dyes. Treat it as a measured anchor, not the final art value."
+        },
+        {
+          "name": "Brown 356",
+          "standard": "US Army shade 356",
+          "hex": "#473B30",
+          "hex_basis": "derived_from_lab",
+          "lab_d65": [25.78, 2.98, 8.98],
+          "alternatives": [
+            {"hex": "#655949", "source": "https://www.schemecolor.com/u-s-woodland-camouflage-pattern.php", "quality": "approx-secondary, no derivation given"}
+          ],
+          "sources": ["https://ciehub.info/ref/ADA096884.pdf"],
+          "note": "Primary Lab value, converted to sRGB."
+        },
+        {
+          "name": "Black 357",
+          "standard": "US Army shade 357",
+          "hex": "#2A2628",
+          "hex_basis": "derived_from_lab",
+          "lab_d65": [15.81, 2.34, -0.51],
+          "alternatives": [
+            {"hex": "#313831", "source": "https://www.schemecolor.com/u-s-woodland-camouflage-pattern.php", "quality": "approx-secondary, no derivation given"}
+          ],
+          "sources": ["https://ciehub.info/ref/ADA096884.pdf"],
+          "note": "Primary Lab value, converted to sRGB. Carbon black was approved for this shade."
+        },
+        {
+          "name": "Olive Green 107 (reference monotone)",
+          "standard": "US Army shade OG-107 (cotton sateen)",
+          "hex": "#4F4D39",
+          "hex_basis": "derived_from_lab",
+          "lab_d65": [32.28, -2.86, 11.87],
+          "sources": ["https://ciehub.info/ref/ADA096884.pdf"],
+          "note": "Not part of the print. It is the target colour the pattern blends to at range, and it is useful for distant LOD or the impostor tint. The report gives Lab 30.40,-2.14,9.76 for the blended Woodland colour."
+        }
+      ]
+    },
+    "soviet_ground_vehicles_gsfg_1989": {
+      "usage": "In 1989, GSFG T-80BV, T-64B, BMP-1/2 and trucks were overwhelmingly a single protective green. 4BO is the WWII name: it was developed in 1937, mass-produced from 1940, and remained in use 'into the 1960s'. From about 1956 into the 1980s the standard vehicle enamels were ZIS-508 khaki green and XB-518 (ХВ-518) 'zashchitnyi' (protective) green, which is described as greener and slightly darker than 4BO. A modelling leaflet lists KhS-5146 green khaki and PKhV-512 light green khaki for 1980-2005. Soviet camouflage manual percentages for woodland: 1977 edition, 45-75% khaki base with 30-55% of light green, light yellow, light grey or dark grey. 1989 edition, 60% khaki base, 20% black, 20% light yellow or light grey. Disruptive camouflage was rare in GSFG. The best-known T-80BV disruptive scheme photo is Wünsdorf 1994. Revell recommends a mix of 75% RAL 6031 and 25% RAL 8027 for 1989 Jena T-80BVs, which is a model-kit recommendation, not a Soviet specification.",
+      "usage_sources": [
+        "https://wheelswingshobbies.com/akirc877-ak-interactive-real-colors-russian-modern-green-17-ml/ (modelling: XB-518, 1956 to 1990s, 'greener and slightly darker than WWII 4BO')",
+        "https://wheelswingshobbies.com/akirc876-ak-interactive-real-colors-russian-green-protective-4bo-17-ml/ (modelling: 4BO dates and 1941 pigment recipe)",
+        "https://www.scribd.com/document/427762411/Russian-Greens-Leaflet (modelling leaflet, author unknown: period table)",
+        "https://armoredwarfare.com/en/node/13471 (secondary article on Soviet camouflage manuals, 1977 and 1989 percentages)",
+        "https://www.miniatures.de/camouflage-warsaw-pact.html (modelling: Revell Jena 1989 mix)",
+        "https://forum.finescale.com/t/color-question-soviet-armor/191542 (forum: late-1980s lighter grey-green)",
+        "https://prom.ua/p2053713-emal-518.html and https://glotr.uz/emal-xv-518-zashitnaya-p-869557/ (vendor listings: XB-518 is a 'zashchitnyi', semi-matte perchlorovinyl enamel; via search snippet)"
+      ],
+      "colors": [
+        {
+          "name": "Protective green XB-518 (ХВ-518 защитная), Cold War standard",
+          "standard": "Soviet enamel ХВ-518, colour 'zashchitnyi' (protective). Per GOST colour-card practice; card number not found.",
+          "hex": null,
+          "sources": [
+            "https://wheelswingshobbies.com/akirc877-ak-interactive-real-colors-russian-modern-green-17-ml/",
+            "https://www.scribd.com/document/427762411/Russian-Greens-Leaflet"
+          ],
+          "note": "NULL. I found no measured, FS, RAL or hex value for XB-518. Russian vendor pages give no RAL equivalent, and the modelling sources describe it only relative to 4BO. Recommendation: start from the 4BO proxy below, push it slightly greener and darker, and validate it against licensed 1989 GSFG colour photos."
+        },
+        {
+          "name": "4BO protective green (WWII/early Cold War; proxy anchor)",
+          "standard": "Soviet 4BO (4БО). Russian historians match the official colour card to FED-STD-595 34102 (some prefer 34095/34096). Surviving samples range from FS 34052 to 34098.",
+          "hex": "#595A43",
+          "hex_basis": "fs_proxy (FS 34102 value from myperfectcolor; see us_army_merdc_context)",
+          "sources": [
+            "https://archive.armorama.com/forums/117497/index.htm (forum, snippet: card matched to FS 34102 by Russian historians; fetch refused)",
+            "https://www.miniatures.de/colour-4BO-dark-green.html (modelling: introduced 1941, base for WWII camouflage; Vallejo 71.017 labelled FS 34082)",
+            "https://www.myperfectcolor.com/paint/67995-us-government-fed-std-595c-34102 (snippet: #595A43)"
+          ],
+          "note": "This is a proxy through an FS cross-reference, not a measured Soviet chip. Vallejo labels its 4BO as FS 34082 instead, and w3schools approximates 34082 as #535640. The sources disagree on the FS match. I used 34102 because it is the one attributed to historians who compared the official card, not to a paint label."
+        },
+        {
+          "name": "Black (1989 manual secondary colour)",
+          "standard": "Soviet camouflage manual, 1989 edition: 20% black. Paint designation not found.",
+          "hex": null,
+          "sources": ["https://armoredwarfare.com/en/node/13471"],
+          "note": "NULL. No designation or colour value was found."
+        },
+        {
+          "name": "Light yellow / light grey (1989 manual tertiary colour)",
+          "standard": "Soviet camouflage manual, 1989 edition: 20% light yellow or light grey. Paint designation not found.",
+          "hex": null,
+          "sources": ["https://armoredwarfare.com/en/node/13471"],
+          "note": "NULL. No designation or colour value was found. The brief asked for a 'camo brown', but the 1989 manual as summarised lists no brown. Brown only appears in Revell's model-kit mix (RAL 8027) and in WWII 6K/7K schemes."
+        }
+      ]
+    },
+    "su25_1980s": {
+      "usage": "Su-25 (and MiG-23BN/27, Su-17/22M4, late MiG-21) tactical camouflage from about 1978. A 1974 VVS specification, known through an IPMS Netherlands translation, defines two- to five-tone upper surfaces drawn from Protective Green, Light Green, Brown, Sand and Light Sand, with Light Blue undersides (Grey-Blue less often). Field touch-ups used non-standard bright green and ochre-brown. The typical 1980s Su-25 upper surface, as rendered by modelling paint sets, is beige/sand/brown/green with grey-blue or light-blue undersides. The WWII aircraft enamels the brief asked about (A-21m, A-24m, AMT-4, AMT-7) belong to 1943-45 and are not documented for the Su-25. Claude did not view any reference photographs (image downloads were out of scope), so no photo-based observation is recorded. Sources say there is 'preciously little official information about the actual specifications'.",
+      "usage_sources": [
+        "http://www.theworldwars.net/resources/file.php?r=camo_vvsmod (secondary: summary of the 1974 VVS specification via IPMS Netherlands, with RLM/RAF/FS comparisons)",
+        "https://www.cybermodeler.com/hobby/paint/akan/paint_akan_47314.shtml (modelling review: AKAN 47314 USSR AF 1978-89 set, 'prior to 1978 most tactical aircraft were bare metal or gray')",
+        "https://mail.modelingmadness.com/scott/accessories/akan/46314.htm (modelling review: set includes an Su-25 two-view)",
+        "https://emmasplanes.com/paints/voyenno-vozdushnye-sily-colours-ussr/ (modelling: A-21m/A-24m/AMT series are WWII)"
+      ],
+      "colors": [
+        {
+          "name": "Protective Green (very dark green)",
+          "standard": "1974 VVS tactical spec 'protective green'. Soviet enamel designation not found. Compared to RLM 70 (fresh) and FS 34079 (faded).",
+          "hex": null,
+          "sources": ["http://www.theworldwars.net/resources/file.php?r=camo_vvsmod"],
+          "note": "NULL. The only values are comparisons to other standards. The faded comparison FS 34079 is #535548 (see MERDC Forest Green) if the art team accepts that as a stated proxy."
+        },
+        {
+          "name": "Green / Light Green",
+          "standard": "1974 VVS spec 'light green' (darker than the name suggests, compared to RLM 82). AKAN 73099 Green.",
+          "hex": null,
+          "sources": [
+            "http://www.theworldwars.net/resources/file.php?r=camo_vvsmod",
+            "https://www.cybermodeler.com/hobby/paint/akan/paint_akan_47314.shtml"
+          ],
+          "note": "NULL. No sourced hex or Soviet designation was found."
+        },
+        {
+          "name": "Brown (dark/chocolate)",
+          "standard": "1974 VVS spec 'brown'. AKAN 73098 Brown.",
+          "hex": null,
+          "sources": [
+            "http://www.theworldwars.net/resources/file.php?r=camo_vvsmod",
+            "https://www.cybermodeler.com/hobby/paint/akan/paint_akan_47314.shtml"
+          ],
+          "note": "NULL. No sourced hex or Soviet designation was found."
+        },
+        {
+          "name": "Sand (earth brown)",
+          "standard": "1974 VVS spec 'sand', compared to RAF Dark Earth. AKAN 73097 Sand.",
+          "hex": null,
+          "sources": [
+            "http://www.theworldwars.net/resources/file.php?r=camo_vvsmod",
+            "https://www.cybermodeler.com/hobby/paint/akan/paint_akan_47314.shtml"
+          ],
+          "note": "NULL. No sourced hex or Soviet designation was found."
+        },
+        {
+          "name": "Light Sand / Beige",
+          "standard": "1974 VVS spec 'light sand' ('darkish beige', with no Western match). AKAN 73096 Beige.",
+          "hex": null,
+          "sources": [
+            "http://www.theworldwars.net/resources/file.php?r=camo_vvsmod",
+            "https://www.cybermodeler.com/hobby/paint/akan/paint_akan_47314.shtml"
+          ],
+          "note": "NULL. No sourced hex or Soviet designation was found."
+        },
+        {
+          "name": "Underside Light Blue / Grey-Blue",
+          "standard": "1974 VVS spec underside 'light blue' (compared to RLM 65); 'grey-blue' (compared to RLM 76) less often. AKAN 73023 Gray-Blue.",
+          "hex": null,
+          "sources": [
+            "http://www.theworldwars.net/resources/file.php?r=camo_vvsmod",
+            "https://www.cybermodeler.com/hobby/paint/akan/paint_akan_47314.shtml"
+          ],
+          "note": "NULL. No sourced hex or Soviet designation was found. Next step: AKAN publishes its paints by number, so the AKAN 7309x/73023 chips, or the Vallejo 71.603 'Su-25/39 Frogfoot 80s to present' set, are the most practical sources if a maker publishes sRGB swatches."
+        }
+      ]
+    },
+    "hessian_village_materials": {
+      "usage": "Natural and traditional building materials for a Hessian village. Every value below is an sRGB approximation of a RAL card that a German building, heritage or trade source associates with the material, so the chain is material, then RAL reference, then RAL sRGB. Real stone, clay, slate and lime vary by quarry, firing, weathering and wetness. Use these as starting tints and vary them per asset. RAL sRGB values come from Wikipedia's 'List of RAL colours', which publishes both a hex column and an RGB column computed from the RAL CIELAB values; the two disagree by up to about 10 units. I used the RGB column because it matches my own conversion of the listed Lab to within 2-4 units, and recorded the hex column as the alternative.",
+      "usage_sources": [
+        "https://en.wikipedia.org/wiki/List_of_RAL_colours (secondary; RAL sRGB and Lab)",
+        "https://lgrbwissen.lgrb-bw.de/printpdf/23357 (geological survey: red Main sandstone = Miltenberger/Dorfprozeltener/Stadtprozeltener, Lower Buntsandstein, Miltenberg to Wertheim; red from hematite coating)",
+        "https://www.baulinks.de/webplugin/2004/0882.php4 (trade article on red sandstones: Uder sandstone is 'classic sandstone red')"
+      ],
+      "colors": [
+        {
+          "name": "Red Main sandstone (Mainsandstein, roter)",
+          "standard": "Natural stone, Lower Buntsandstein. No colour standard. Proxy: RAL 3012 Beigerot (weathered face) to RAL 8004 Kupferbraun (fresh, darker red).",
+          "hex": null,
+          "candidates": [
+            {"ral": "RAL 3012 Beige red", "hex": "#C2856D", "alt_hex_column": "#CB8D73"},
+            {"ral": "RAL 8004 Copper brown", "hex": "#8A4931", "alt_hex_column": "#8F4E35"}
+          ],
+          "sources": [
+            "https://lgrbwissen.lgrb-bw.de/printpdf/23357",
+            "https://en.wikipedia.org/wiki/List_of_RAL_colours",
+            "https://www.baulinks.de/webplugin/2004/0882.php4 (search snippet linking red sandstone facades to these RAL tones; weak)"
+          ],
+          "note": "NULL as a primary value. I found no published measurement (Lab or RAL) for Mainsandstein itself. The two candidates are RAL cards that trade sources associate with red-sandstone facades, so treat them as bounding tints. I searched for CIELAB studies of Buntsandstein and found only a Spanish red arkose (Molinaza Roja, L* about 58), which does not apply here."
+        },
+        {
+          "name": "Red clay plain tile (Biberschwanz, naturrot)",
+          "standard": "Natural-red fired clay. German building plans that allow red roofs typically cite RAL 2001, 2002, 3000, 3016 or 8004. Proxy: RAL 3016 Korallenrot (fresh) or RAL 8004 (aged/darker).",
+          "hex": "#A43C30",
+          "hex_basis": "ral_proxy (RAL 3016)",
+          "alternatives": [
+            {"ral": "RAL 8004 Copper brown", "hex": "#8A4931", "note": "older, weathered or dark-fired tiles"},
+            {"ral": "RAL 2001 Red orange", "hex": "#B6481C", "note": "freshly fired, orange tiles"},
+            {"ral": "RAL 3016 hex column", "hex": "#AC4034"}
+          ],
+          "sources": [
+            "https://bau.de/forum/dach/12955.php (forum, snippet: building plans list RAL 2001, 2002, 3000, 3016, 8004 for red/red-brown roofs)",
+            "https://en.wikipedia.org/wiki/List_of_RAL_colours"
+          ],
+          "note": "Low-confidence chain: the RAL list comes from planning rules, not from tile measurements. Manufacturers (Erlus, Creaton) publish no RAL or hex for 'naturrot'. A 1989 village roof would be weathered, so lean toward RAL 8004 with moss and soot variation."
+        },
+        {
+          "name": "Slate (Moselschiefer, blue-grey/blue-black)",
+          "standard": "Natural roofing slate. Proxy: RAL 7016 Anthrazitgrau (dark) to RAL 7015 Schiefergrau (lighter, weathered).",
+          "hex": "#383E42",
+          "hex_basis": "ral_proxy (RAL 7016)",
+          "alternatives": [
+            {"ral": "RAL 7015 Slate grey", "hex": "#505359", "alt_hex_column": "#51565C"},
+            {"ral": "RAL 7016 hex column", "hex": "#373F43"}
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_RAL_colours",
+            "https://www.hausbau-forum.de/posts/221548/ (forum, snippet: RAL 7015 'Schiefergrau' and RAL 7016 compared to slate-grey roofing)"
+          ],
+          "note": "Low-confidence chain. Moselschiefer is darker and bluer than 7015 when wet or fresh, and greyer when weathered. RAL 7016 has a slight blue cast (Lab b* -3.4), which suits it. I found no measured value for Moselschiefer."
+        },
+        {
+          "name": "Lime render / limewash (Kalkputz, Kalkanstrich)",
+          "standard": "Lime render or limewash in 'naturweiß'. Proxy: RAL 9001 Cremeweiß (common for Fachwerk infill), with RAL 1015 Hellelfenbein for warmer, older render.",
+          "hex": "#E9E0D2",
+          "hex_basis": "ral_proxy (RAL 9001)",
+          "alternatives": [
+            {"ral": "RAL 9001 hex column", "hex": "#EFEBDC"},
+            {"ral": "RAL 1015 Light ivory", "hex": "#E6D2B5"}
+          ],
+          "sources": [
+            "https://en.wikipedia.org/wiki/List_of_RAL_colours",
+            "https://facadecolorizer.com/de/farbkombinationen/fachwerk-weiss-braun (approx-secondary: RAL 9001 for traditional Fachwerk infill)",
+            "https://www.baumit-selbermachen.de/chameleon/public/d18816c5-0794-715d-e776-33dfc8a8bfb6/pds_kalkin_kalkputz_wei__de_56382.pdf (manufacturer data sheet for lime render 'weiß'; via search snippet, no colour value)"
+          ],
+          "note": "Low-confidence chain. Real limewash is whiter when fresh and greys or yellows with soot and age. Pure white is unrealistic for a 1989 village."
+        },
+        {
+          "name": "Fachwerk timber, ox-blood red (Ochsenblutrot)",
+          "standard": "Historic red-oxide timber paint. Trade sources name RAL 3009 Oxidrot or RAL 3011 Braunrot as the closest RAL. Proxy: RAL 3009.",
+          "hex": "#663029",
+          "hex_basis": "ral_proxy (RAL 3009, RGB column)",
+          "alternatives": [
+            {"ral": "RAL 3009 hex column", "hex": "#703731"},
+            {"ral": "RAL 3011 Brown red", "hex": "#772424", "alt_hex_column": "#7E292C"}
+          ],
+          "sources": [
+            "https://bau.de/forum/holzschutz/10129.php (forum, snippet: closest RAL for traditional Fachwerk is RAL 3011 or 3009)",
+            "https://en.wikipedia.org/wiki/List_of_RAL_colours",
+            "https://journals.ub.uni-heidelberg.de/index.php/nbdpfbw/article/view/15281/9157 (heritage journal, Denkmalpflege Baden-Württemberg: ox-blood red timbers with limewashed infill; via search snippet, no colour value)"
+          ],
+          "note": "Low-confidence chain. Heritage practice relies on paint archaeology for each building, not on RAL."
+        },
+        {
+          "name": "Fachwerk timber, brown",
+          "standard": "Brown glaze on timbers (the common post-war look). Proxy: RAL 8007 Rehbraun, with RAL 8012 Rotbraun for a redder brown.",
+          "hex": "#6D462B",
+          "hex_basis": "ral_proxy (RAL 8007, RGB column)",
+          "alternatives": [
+            {"ral": "RAL 8007 hex column", "hex": "#6F4A2F"},
+            {"ral": "RAL 8012 Red brown", "hex": "#64332B", "alt_hex_column": "#673831"}
+          ],
+          "sources": [
+            "https://facadecolorizer.com/de/farbkombinationen/fachwerk-weiss-braun (approx-secondary: Rehbraun RAL 8007 glazed timbers with RAL 9001 infill)",
+            "https://en.wikipedia.org/wiki/List_of_RAL_colours"
+          ],
+          "note": "Low-confidence chain. For 1989, dark brown or near-black stained timbers are also common. Vary them per building."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "refs": [
+    {
+      "file": "assets_src/refs/m1a1/m1a1_abrams_on_captured_equipment_exhibition_in_013d.jpg",
+      "slots": [
+        "three_quarter",
+        "destroyed"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M1A1_%22Abrams%22_on_captured_equipment_exhibition_in_Moscow_(front_view).jpg",
+      "author": "Kirill Borisenko",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/m1a1_abrams_on_captured_equipment_exhibition_in_e3c5.jpg",
+      "slots": [
+        "right",
+        "destroyed"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M1A1_%22Abrams%22_on_captured_equipment_exhibition_in_Moscow_(front-right_view).jpg",
+      "author": "Kirill Borisenko",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/m1a1_abrams_on_captured_equipment_exhibition_in_2d37.jpg",
+      "slots": [
+        "three_quarter",
+        "destroyed"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:M1A1_%22Abrams%22_on_captured_equipment_exhibition_in_Moscow_(rear_view).jpg",
+      "author": "Kirill Borisenko",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/united_states_army_m1a1_abrams_tank_deployed_dur_3023.jpg",
+      "slots": [
+        "three_quarter",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:United_States_Army_M1A1_Abrams_tank_deployed_during_Operation_Desert_Storm.jpg",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/abrams_in_formation_12b8.jpg",
+      "slots": [
+        "left",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Abrams_in_formation.jpg",
+      "author": "PHC D. W. HOLMES II, US Navy",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/da_sc_98_04644_08a8.jpg",
+      "slots": [
+        "front",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:DA-SC-98-04644.jpg",
+      "author": "MASTER SGT. Sebastian Sciotti",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/m1_road_wheel_replacement_323b.jpg",
+      "slots": [
+        "running_gear"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M1_road_wheel_replacement.JPG",
+      "author": "USMC photo",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/destroyed_m1a1_abrams_3bfe.jpg",
+      "slots": [
+        "destroyed"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Destroyed_M1A1_Abrams.jpg",
+      "author": "U.S. Department of Defense",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/destroyed_m1_dm_sd_04_03261_fde4.jpeg",
+      "slots": [
+        "destroyed",
+        "three_quarter"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Destroyed-M1-DM-SD-04-03261.JPEG",
+      "author": "MSGT HOWARD J. FARRELL, United States Marine Corps",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m1a1/m1_abrams_tank_in_west_germany_in_1988_with_hoff_c9ce.jpg",
+      "slots": [
+        "top_or_plan",
+        "turret_detail",
+        "variant_difference"
+      ],
+      "kind": "look-only",
+      "license": "Public domain (look-only: PD-US-1978-89 claim on a Yves Debay / Tankograd photo is doubtful)",
+      "url": "https://commons.wikimedia.org/wiki/File:M1_Abrams_tank_in_West_Germany_in_1988_with_Hoffman_device.jpg",
+      "author": "Yves Debay",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/left_side_front_view_of_a_m1a1_abrams_tank_in_th_df26.jpeg",
+      "slots": [
+        "left",
+        "three_quarter",
+        "camo_per_faction"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Left_side_front_view_of_a_M1A1_Abrams_tank_in_the_middle_of_the_road._Two_US_Marines_are_seen_on_top_of_the_tank_with_the_one_in_front_manning_the_tank%27s_.50_caliber_machine._The_ta_-_DPLA_-_4f288febdb3abaff8c4040b323ded9ab.jpeg",
+      "author": "Department of Defense. American Forces Information Service. Defense Visual Information Center. 1994",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/m1a1_auxiliary_power_unit_saudi_arabia_e292.jpg",
+      "slots": [
+        "three_quarter",
+        "turret_detail"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M1A1_auxiliary_power_unit_Saudi_Arabia.jpg",
+      "author": "U.S. Army",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/m1a1_abrams_national_victory_celebration_16ca.jpg",
+      "slots": [
+        "front",
+        "three_quarter"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:M1A1_Abrams_National_Victory_Celebration.jpg",
+      "author": "Michael E. Buchanan",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/agt1500_engine_and_m1_tank_cd0c.jpeg",
+      "slots": [
+        "rear_deck_engine"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:AGT1500_engine_and_M1_tank.JPEG",
+      "author": "SGT PAUL L. ANSTINE II, USMC",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/us_navy_070416_n_2903m_005_commander_carrier_str_99e4.jpg",
+      "slots": [
+        "interior_or_hatch_open"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:US_Navy_070416-N-2903M-005_Commander,_Carrier_Strike_Group_Two_Rear_Adm._Mike_C._Vitale_peers_through_the_commander%27s_hatch_of_a_U.S._Marine_Corps_M1A1_Abrams_main_battle_tank.jpg",
+      "author": "U.S. Navy photo by Mass Communication Specialist 1st Class Terry Matlock",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/df_st_99_04891_u_s_army_m1_abrams_tanks_on_a_roa_d8e5.jpeg",
+      "slots": [
+        "rear",
+        "camo_per_faction",
+        "variant_difference"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:DF-ST-99-04891_U.S._Army_M1_Abrams_tanks_on_a_road_through_the_German_countryside_during_REFORGER_%2782.jpeg",
+      "author": "SSGT Bob Simons",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/m1_abrams_three_vehicle_formation_during_reforge_6d04.jpg",
+      "slots": [
+        "right",
+        "camo_per_faction",
+        "variant_difference"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:M1_Abrams_three_vehicle_formation_during_REFORGER_%2785.jpg",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/abrams1_6417.jpg",
+      "slots": [
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Abrams1.jpg",
+      "author": "unknown",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/side_view_of_australian_m1a1_abrams_turret_durin_dea0.jpg",
+      "slots": [
+        "turret_detail"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Side_view_of_Australian_M1A1_Abrams_turret_during_Exercise_Hamel_2015.jpg",
+      "author": "U.S. Army photo by Sgt. Sinthia Rosario, 5th Mobile Public Affairs Detachment",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/2nd_abct_3rd_id_200212_a_nf979_113_7f36.jpg",
+      "slots": [
+        "rear"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:2nd_ABCT,_3rd_ID_-_200212-A-NF979-113.jpg",
+      "author": "Eben Boothby",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/usmc_04999_4968.jpg",
+      "slots": [
+        "turret_detail"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:USMC-04999.jpg",
+      "author": "http://www.marines.mil/unit/29palms/PublishingImages/2009/November/20091025M4150N821.jpg",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/m1a1/rear_left_m1a1_ahm_2024_04_28_a842.jpg",
+      "slots": [
+        "three_quarter",
+        "rear"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Rear_left,_M1A1,_AHM,_2024-04-28.jpg",
+      "author": "Joshbaumgartner",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/stallion_families_visit_live_tank_gunnery_dvids3_a340.jpg",
+      "slots": [
+        "top_or_plan",
+        "rear_deck_engine",
+        "interior_or_hatch_open"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Stallion_families_visit_live_tank_gunnery_DVIDS338187.jpg",
+      "author": "2nd Lt. Seth Model",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/m1a1/dimensions.md",
+      "slots": [
+        "dimension_source"
+      ],
+      "kind": "distributable",
+      "license": "own work (notes)",
+      "url": "n/a (own notes)",
+      "author": "Claude (Six Actual ref-hunter)",
+      "retrieved": "2026-10-08"
+    }
+  ]
+}

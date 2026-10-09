@@ -1,0 +1,76 @@
+{
+  "view": "front",
+  "source": "assets_src/refs/su25/sukhoi_su_25_two_view_silhouette_d478.png",
+  "box": [
+    14,
+    318,
+    280,
+    420
+  ],
+  "bg": [],
+  "fg": [],
+  "length_m": 14.36,
+  "height_m": 4.8,
+  "px_per_m": 100,
+  "flipped": false,
+  "open_m": 0.0,
+  "mask_confidence": "low",
+  "confidence_why": "drawing front view is 18% taller than its plan at span scale; height normalised to sourced 4.8 m; gear down",
+  "height_scaled_to_m": 4.8,
+  "top_cut": false,
+  "bottom_cut_m": 0.0,
+  "front_cut": false,
+  "erase": [
+    [
+      66,
+      388,
+      78,
+      402
+    ],
+    [
+      79,
+      388,
+      90,
+      402
+    ],
+    [
+      92,
+      388,
+      103,
+      402
+    ],
+    [
+      105,
+      388,
+      118,
+      402
+    ],
+    [
+      175,
+      388,
+      189,
+      402
+    ],
+    [
+      190,
+      388,
+      201,
+      402
+    ],
+    [
+      203,
+      388,
+      214,
+      402
+    ],
+    [
+      216,
+      388,
+      228,
+      402
+    ]
+  ],
+  "erase_why": "drawn bombs below the pylons; stores are separate loadout attachments, not airframe",
+  "gear_up": false,
+  "note": "ink trace of a distributable orthographic drawing"
+}

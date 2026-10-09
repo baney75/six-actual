@@ -1,0 +1,36 @@
+{
+  "scheme": "m81_woodland",
+  "tile_m": 0.9,
+  "px": 1024,
+  "colors_srgb": [
+    [
+      105,
+      98,
+      74
+    ],
+    [
+      71,
+      59,
+      48
+    ],
+    [
+      78,
+      73,
+      59
+    ],
+    [
+      42,
+      38,
+      40
+    ]
+  ],
+  "coverage": {
+    "0": 0.442,
+    "1": 0.26,
+    "2": 0.198,
+    "3": 0.1
+  },
+  "placeholder_colors": false,
+  "palette_source": "assets_src/research/palettes_1989.json",
+  "seed": 1989
+}

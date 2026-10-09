@@ -1,0 +1,30 @@
+{
+  "scheme": "a10_european1",
+  "tile_m": 9.0,
+  "px": 1024,
+  "colors_srgb": [
+    [
+      73,
+      88,
+      79
+    ],
+    [
+      89,
+      90,
+      67
+    ],
+    [
+      87,
+      90,
+      90
+    ]
+  ],
+  "coverage": {
+    "0": 0.443,
+    "1": 0.307,
+    "2": 0.25
+  },
+  "placeholder_colors": false,
+  "palette_source": "assets_src/research/palettes_1989.json",
+  "seed": 1989
+}

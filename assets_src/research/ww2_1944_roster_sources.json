@@ -1,0 +1,4228 @@
+{
+  "version": 1,
+  "retrieved": "2026-10-09",
+  "era": "ww2",
+  "notes": "Every number carries src indices into the unit's sources list. Imperial values converted, with the original in the note. Values marked estimate are ranges (midpoint), readings of an unclear source, or design fills where the source is silent (said in the note). Penetration tables live with the weapons in scripts/generate_roster.py; 30-degree figures are converted to normal impact with the per-range ratio of the 8.8 cm KwK 43 table, which gives both (Wikipedia 8.8 cm KwK 43).",
+  "units": [
+    {
+      "id": "m4a3_75w",
+      "name": "M4A3(75)W Sherman",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 31.57,
+          "src": [
+            0
+          ],
+          "note": "69,600 lb"
+        },
+        "length_m": {
+          "value": 6.274,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.667,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.939,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 41.8,
+          "src": [
+            0
+          ],
+          "note": "26 mph"
+        },
+        "range_km": {
+          "value": 160.9,
+          "src": [
+            0
+          ],
+          "note": "100 mi"
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 64,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 47,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 76,
+          "src": [
+            0
+          ],
+          "note": "mantlet 89 mm at 0 deg"
+        },
+        "turret_front_slope_deg": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "40-45 deg"
+        },
+        "side_mm": {
+          "value": 38,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 38,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 19,
+          "src": [
+            1
+          ],
+          "note": "from the general 12.7-177.8 mm range; design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "the US Army's standard medium tank of 1944, 75 mm M3 gun, 104 rounds",
+      "sources": [
+        "https://www.armedconflicts.com/-t6347 (cites R.P. Hunnicutt, Sherman)",
+        "https://en.wikipedia.org/wiki/M4_Sherman"
+      ]
+    },
+    {
+      "id": "m4a3e8_76w",
+      "name": "M4A3E8 (76)W HVSS Sherman",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 33.657,
+          "src": [
+            0
+          ],
+          "note": "74,200 lb"
+        },
+        "length_m": {
+          "value": 6.274,
+          "src": [
+            0
+          ],
+          "note": "hull"
+        },
+        "width_m": {
+          "value": 2.997,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.972,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 41.8,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 160.9,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 64,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 47,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 64,
+          "src": [
+            0
+          ],
+          "note": "mantlet 89 mm"
+        },
+        "turret_front_slope_deg": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "40-45 deg"
+        },
+        "side_mm": {
+          "value": 38,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 38,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 19,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "Easy Eight: HVSS and the 76 mm M1A1/A2, 71 rounds; produced Aug 1944 - Apr 1945",
+      "sources": [
+        "https://www.armedconflicts.com/topic/view/6348 (cites R.P. Hunnicutt, Sherman)"
+      ]
+    },
+    {
+      "id": "m10_wolverine",
+      "name": "M10 3-inch GMC",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "td",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 29.6,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 5.97,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.05,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.9,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 48,
+          "src": [
+            0
+          ],
+          "note": "25-30 mph",
+          "estimate": true
+        },
+        "range_km": {
+          "value": 320,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 38,
+          "src": [
+            0
+          ],
+          "note": "glacis 1.5 in"
+        },
+        "hull_front_slope_deg": {
+          "value": 55,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 57,
+          "src": [
+            0
+          ],
+          "note": "gun shield 2.25 in"
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 25,
+          "src": [
+            0
+          ],
+          "note": "turret sides 1 in"
+        },
+        "rear_mm": {
+          "value": 19,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open-topped turret"
+        }
+      },
+      "armament": [],
+      "one_line_role": "tank destroyer, 3-inch M7 gun (54 rounds), open turret",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M10_tank_destroyer"
+      ]
+    },
+    {
+      "id": "m18_hellcat",
+      "name": "M18 76 mm GMC Hellcat",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "td",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 17.036,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 5.28,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.87,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.57,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 89,
+          "src": [
+            0
+          ],
+          "note": "55 mph"
+        },
+        "range_km": {
+          "value": 160,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 13,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 38,
+          "src": [
+            0
+          ],
+          "note": "upper plates 38 and 64 deg"
+        },
+        "turret_front_mm": {
+          "value": 25,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 23,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 13,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 13,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open-topped turret"
+        }
+      },
+      "armament": [],
+      "one_line_role": "fastest US armoured vehicle of the war, 76 mm M1A1/A2 (45 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M18_Hellcat"
+      ]
+    },
+    {
+      "id": "m36_jackson",
+      "name": "M36 90 mm GMC",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "td",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 29,
+          "src": [
+            0
+          ],
+          "note": "63,000 lb"
+        },
+        "length_m": {
+          "value": 5.97,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.05,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.28,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 42,
+          "src": [
+            0
+          ],
+          "note": "26 mph"
+        },
+        "range_km": {
+          "value": 240,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 38,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 55,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 76,
+          "src": [
+            0
+          ],
+          "note": "cast gun shield 3 in"
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 32,
+          "src": [
+            0
+          ],
+          "note": "turret sides 1.25 in"
+        },
+        "rear_mm": {
+          "value": 19,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open-topped turret"
+        }
+      },
+      "armament": [],
+      "one_line_role": "90 mm M3 tank destroyer (47 rounds), first combat October 1944",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M36_tank_destroyer"
+      ]
+    },
+    {
+      "id": "m5a1_stuart",
+      "name": "M5A1 Stuart",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "recon",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 15.2,
+          "src": [
+            0
+          ],
+          "note": "M5A1 late production"
+        },
+        "length_m": {
+          "value": 4.84,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.29,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.57,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 58,
+          "src": [
+            0
+          ],
+          "note": "36 mph"
+        },
+        "range_km": {
+          "value": 160,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 51,
+          "src": [
+            0
+          ],
+          "note": "0.375-2.0 in range; front taken as the maximum",
+          "estimate": true
+        },
+        "hull_front_slope_deg": {
+          "value": 48,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 51,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 25,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 25,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 13,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "light tank for reconnaissance, 37 mm M6 (147 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M3_Stuart"
+      ]
+    },
+    {
+      "id": "m8_greyhound",
+      "name": "M8 Greyhound",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "recon",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 7.4,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 4.7,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.31,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 1.91,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 89,
+          "src": [
+            0
+          ],
+          "note": "55 mph"
+        },
+        "range_km": {
+          "value": 480,
+          "src": [
+            0
+          ],
+          "note": "200-400 mi; midpoint",
+          "estimate": true
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 19,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 19,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open-topped turret"
+        }
+      },
+      "armament": [],
+      "one_line_role": "6x6 armoured car of the cavalry recon squadrons, 37 mm M6 (80 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M8_Greyhound"
+      ]
+    },
+    {
+      "id": "m3_halftrack",
+      "name": "M3 half-track",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "apc",
+      "year_in_service": 1941,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 8.01,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.17,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.223,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.26,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ],
+        "note": "driver"
+      },
+      "dismounts": {
+        "value": 12,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 72,
+          "src": [
+            0
+          ],
+          "note": "45 mph"
+        },
+        "range_km": {
+          "value": 320,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "half-track"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 12,
+          "src": [
+            0
+          ],
+          "note": "6-12 mm"
+        },
+        "hull_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 12,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 6,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 6,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "armoured personnel carrier of the armored infantry, .50 cal",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M3_half-track"
+      ]
+    },
+    {
+      "id": "m7_priest",
+      "name": "M7 Priest",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "spg",
+      "year_in_service": 1942,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 22.97,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.02,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.87,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.54,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 39,
+          "src": [
+            0
+          ],
+          "note": "24 mph"
+        },
+        "range_km": {
+          "value": 193,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 62,
+          "src": [
+            0
+          ],
+          "note": "12-62 mm"
+        },
+        "hull_front_slope_deg": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 12,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 12,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 12,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "self-propelled 105 mm howitzer of the armored field artillery (69 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M7_Priest"
+      ]
+    },
+    {
+      "id": "m16_mgmc",
+      "name": "M16 MGMC",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "spaag",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 9,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.5,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.16,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.34,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 67.1,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 282,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "half-track"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 12,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 12,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 12,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 6,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "self-propelled anti-aircraft half-track, four .50 cal M2 in the M45 Quadmount",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M16_multiple_gun_motor_carriage"
+      ]
+    },
+    {
+      "id": "m2a1_105_towed",
+      "name": "105 mm Howitzer M2A1 (towed)",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "towed_gun",
+      "year_in_service": 1941,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 2.26,
+          "src": [
+            0
+          ],
+          "note": "4,980 lb"
+        }
+      },
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ],
+        "note": "crew not in source; US section of 8, design",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "towed"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "towed 105 mm howitzer of the infantry division artillery; 11.16 km range, 14.97 kg HE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M101_howitzer"
+      ]
+    },
+    {
+      "id": "us_rifle_squad_1944",
+      "name": "US Rifle Squad (1944)",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "infantry",
+      "year_in_service": 1944,
+      "crew": {
+        "value": 12,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "12-man rifle squad: M1 Garands, one M1918A2 BAR, M7 grenade launchers",
+      "sources": [
+        "https://www.battleorder.org/post/usa-rifleco-1944"
+      ]
+    },
+    {
+      "id": "us_bazooka_team_1944",
+      "name": "Bazooka Team (M9)",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "at_team",
+      "year_in_service": 1943,
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "2-man M9 bazooka team, M6A3 rocket 102 mm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bazooka"
+      ]
+    },
+    {
+      "id": "us_81mm_mortar_1944",
+      "name": "81 mm Mortar M1 Squad",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "mortar_team",
+      "year_in_service": 1935,
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "81 mm M1 mortar, 3 km range",
+      "sources": [
+        "https://en.wikipedia.org/wiki/M1_mortar"
+      ]
+    },
+    {
+      "id": "p47d_thunderbolt",
+      "name": "P-47D Thunderbolt",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "attack_jet",
+      "year_in_service": 1942,
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 6.0,
+          "src": [
+            0
+          ],
+          "note": "gross 13,230 lb"
+        }
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 560,
+          "src": [
+            0
+          ],
+          "note": "cruise speed 350 mph used as the sim's flight speed; max 715 km/h at 7,071 m"
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "fighter-bomber: 8 x .50 M2, HVAR rockets, bombs",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Republic_P-47_Thunderbolt"
+      ]
+    },
+    {
+      "id": "gmc_cckw",
+      "name": "GMC CCKW 2½-ton",
+      "side": "Allies",
+      "nation": "United States",
+      "kind": "supply",
+      "year_in_service": 1941,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 7.4,
+          "src": [
+            0
+          ],
+          "note": "loaded"
+        },
+        "length_m": {
+          "value": 6.86,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.24,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.77,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 72,
+          "src": [
+            0
+          ],
+          "note": "45 mph"
+        },
+        "range_km": {
+          "value": 480,
+          "src": [
+            0
+          ],
+          "note": "300 mi"
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "the Deuce-and-a-half supply truck",
+      "sources": [
+        "https://en.wikipedia.org/wiki/GMC_CCKW"
+      ]
+    },
+    {
+      "id": "panzer_iv_h",
+      "name": "Panzer IV Ausf. H",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "tank",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 25.0,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 5.92,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.88,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.68,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "38-42 km/h",
+          "estimate": true
+        },
+        "range_km": {
+          "value": 298,
+          "src": [
+            0
+          ],
+          "note": "235-360 km road; midpoint",
+          "estimate": true
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "near-vertical front plate; design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 50,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "turret side"
+        },
+        "rear_mm": {
+          "value": 30,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [],
+      "one_line_role": "the Panzerwaffe's workhorse, 7.5 cm KwK 40 L/48 (87 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panzer_IV"
+      ]
+    },
+    {
+      "id": "panther_g",
+      "name": "Panther Ausf. G",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 44.8,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.87,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.27,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.99,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 46,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 260,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 55,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 100,
+          "src": [
+            0
+          ],
+          "note": "cast mantlet"
+        },
+        "turret_front_slope_deg": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 50,
+          "src": [
+            0
+          ],
+          "note": "40-50 mm"
+        },
+        "rear_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 16,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [],
+      "one_line_role": "medium tank, 7.5 cm KwK 42 L/70 (82 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panther_tank"
+      ]
+    },
+    {
+      "id": "tiger_i",
+      "name": "Tiger I",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "tank",
+      "year_in_service": 1942,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 57,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.316,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.56,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.0,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 45.4,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 195,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 100,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 9,
+          "src": [
+            0
+          ],
+          "note": "near-vertical; design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 110,
+          "src": [
+            0
+          ],
+          "note": "mantlet 110-200 mm; 110 used",
+          "estimate": true
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "60-80 mm"
+        },
+        "rear_mm": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 25,
+          "src": [
+            0
+          ],
+          "note": "40 mm from March 1944"
+        }
+      },
+      "armament": [],
+      "one_line_role": "heavy tank, 8.8 cm KwK 36 L/56 (92 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tiger_I"
+      ]
+    },
+    {
+      "id": "tiger_ii",
+      "name": "Tiger II",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 69.8,
+          "src": [
+            0
+          ],
+          "note": "production turret"
+        },
+        "length_m": {
+          "value": 7.38,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.75,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 3.09,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 41.5,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 190,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 150,
+          "src": [
+            0
+          ],
+          "note": "upper glacis"
+        },
+        "hull_front_slope_deg": {
+          "value": 50,
+          "src": [
+            0
+          ],
+          "note": "source lists 40 deg for the hull front; glacis 50 deg from vertical is the common figure, design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 180,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "source '80 deg' read as 10 deg from vertical",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 44,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [],
+      "one_line_role": "King Tiger heavy tank, 8.8 cm KwK 43 L/71 (86 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tiger_II"
+      ]
+    },
+    {
+      "id": "stug_iii_g",
+      "name": "StuG III Ausf. G",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "td",
+      "year_in_service": 1942,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 23.9,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.85,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.95,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.16,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 40,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 155,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "casemate front"
+        },
+        "turret_front_slope_deg": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "16-80 mm range; design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 16,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [],
+      "one_line_role": "assault gun / tank destroyer, 7.5 cm StuK 40 L/48 (54 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sturmgeschütz_III"
+      ]
+    },
+    {
+      "id": "jagdpanzer_iv_70",
+      "name": "Panzer IV/70 (V)",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "td",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 25.8,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 8.5,
+          "src": [
+            0
+          ],
+          "note": "with gun"
+        },
+        "width_m": {
+          "value": 3.17,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 1.85,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 35,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 210,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "10-80 mm"
+        },
+        "hull_front_slope_deg": {
+          "value": 45,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 45,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [],
+      "one_line_role": "tank destroyer, 7.5 cm Pak 42 L/70 (55-60 rounds), from August 1944",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jagdpanzer_IV"
+      ]
+    },
+    {
+      "id": "sdkfz_251_1",
+      "name": "Sd.Kfz. 251/1",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "apc",
+      "year_in_service": 1942,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 7.81,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 5.8,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.1,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 1.75,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 10,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 52.5,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 300,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "half-track"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 14.5,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 14.5,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 8,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 8,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "armoured half-track of the Panzergrenadiers, MG 34/42",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sd.Kfz._251"
+      ]
+    },
+    {
+      "id": "sdkfz_234_2_puma",
+      "name": "Sd.Kfz. 234/2 Puma",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "recon",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 10.5,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.02,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.36,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.1,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 90,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 1000,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 30,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "mantlet 40-100 mm"
+        },
+        "turret_front_slope_deg": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "8-wheeled armoured car, 5 cm KwK 39/1",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sd.Kfz._234"
+      ]
+    },
+    {
+      "id": "wespe",
+      "name": "Wespe (Sd.Kfz. 124)",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "spg",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 11,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 4.81,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.28,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.3,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 40,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 220,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "5-30 mm"
+        },
+        "hull_front_slope_deg": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "self-propelled 10.5 cm leFH 18/2 (40 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wespe"
+      ]
+    },
+    {
+      "id": "wirbelwind",
+      "name": "Flakpanzer IV Wirbelwind",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "spaag",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 22,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 5.89,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.88,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.76,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 40,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 200,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 80,
+          "src": [
+            0
+          ],
+          "note": "10-80 mm"
+        },
+        "hull_front_slope_deg": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 16,
+          "src": [
+            0
+          ],
+          "note": "open turret; design",
+          "estimate": true
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "anti-aircraft tank, quad 2 cm Flak 38 (3,200 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wirbelwind"
+      ]
+    },
+    {
+      "id": "lefh18_towed",
+      "name": "10.5 cm leFH 18 (towed)",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "towed_gun",
+      "year_in_service": 1935,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 1.985,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 6,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "towed"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "towed divisional howitzer, 10.675 km range, 14.81 kg HE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/10.5_cm_leFH_18"
+      ]
+    },
+    {
+      "id": "ger_grenadier_squad_1944",
+      "name": "Grenadier Squad (1944)",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "infantry",
+      "year_in_service": 1944,
+      "crew": {
+        "value": 9,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "9-man Grenadiergruppe built around the MG 42, MP 40s for the leaders",
+      "sources": [
+        "https://www.battleorder.org/volksgrenadiers-1944 (search summary of battleorder.org Grenadier squad)"
+      ]
+    },
+    {
+      "id": "ger_panzerschreck_team",
+      "name": "Panzerschreck Team (RPzB 54)",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "at_team",
+      "year_in_service": 1943,
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ],
+        "note": "crew not in source; 2-man team, design",
+        "estimate": true
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "RPzB 54 team: 150 m, 230 mm (German RHA test)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Panzerschreck"
+      ]
+    },
+    {
+      "id": "ger_grw34_mortar",
+      "name": "8 cm GrW 34 Mortar Team",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "mortar_team",
+      "year_in_service": 1937,
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ],
+        "note": "four-man crew per photo caption",
+        "estimate": true
+      },
+      "dimensions": {},
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "8 cm mortar, 2.4 km range",
+      "sources": [
+        "https://en.wikipedia.org/wiki/8_cm_Granatwerfer_34"
+      ]
+    },
+    {
+      "id": "fw190f8",
+      "name": "Fw 190 F-8",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "attack_jet",
+      "year_in_service": 1944,
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 4.925,
+          "src": [
+            0
+          ],
+          "note": "max takeoff"
+        }
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 635,
+          "src": [
+            0
+          ],
+          "note": "maximum speed"
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "ground-attack fighter: 2 x 20 mm, 2 x 13 mm, 1,200 kg bombs",
+      "sources": [
+        "https://airpages.ru/eng/lw/fw190f.shtml"
+      ]
+    },
+    {
+      "id": "opel_blitz",
+      "name": "Opel Blitz 3.6-36S",
+      "side": "Axis",
+      "nation": "Germany",
+      "kind": "supply",
+      "year_in_service": 1940,
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 5.8,
+          "src": [
+            0
+          ],
+          "note": "zulässiges Gesamtgewicht"
+        }
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "not in source"
+        },
+        "range_km": {
+          "value": null,
+          "src": [
+            0
+          ],
+          "note": "92 l tank; range not in source"
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "the Wehrmacht's 3-tonne standard truck (payload 3,305 kg)",
+      "sources": [
+        "https://de.wikipedia.org/wiki/Opel_Blitz"
+      ]
+    },
+    {
+      "id": "sherman_firefly_vc",
+      "name": "Sherman VC Firefly",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 35.3,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 40,
+          "src": [
+            0
+          ],
+          "note": "25 mph bursts"
+        },
+        "range_km": {
+          "value": 193,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 51,
+          "src": [
+            1
+          ],
+          "note": "M4A4 hull 51 mm (2 in) at 56 deg: the M4 article's 12.7-177.8 mm range; design reading",
+          "estimate": true
+        },
+        "hull_front_slope_deg": {
+          "value": 56,
+          "src": [
+            1
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 89,
+          "src": [
+            0
+          ],
+          "note": "turret front max"
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 38,
+          "src": [
+            1
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 38,
+          "src": [
+            1
+          ],
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 19,
+          "src": [
+            1
+          ],
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "British Sherman with the 17-pounder (77 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sherman_Firefly",
+        "https://en.wikipedia.org/wiki/M4_Sherman"
+      ]
+    },
+    {
+      "id": "cromwell_iv",
+      "name": "Cromwell IV",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "tank",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 28.0,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.35,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 2.908,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.49,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 51,
+          "src": [
+            0
+          ],
+          "note": "later final drive lowered top speed to 32 mph (51 km/h); 40 mph (64 km/h) was the original ratio"
+        },
+        "range_km": {
+          "value": 270,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 64,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "near-vertical; design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 76,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 32,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 32,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "fast cruiser tank of the armoured regiments, OQF 75 mm (64 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cromwell_tank"
+      ]
+    },
+    {
+      "id": "churchill_vii",
+      "name": "Churchill VII",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 40.64,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 5,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 21.7,
+          "src": [
+            0
+          ],
+          "note": "specifications box 21.7-26.4 km/h; lower bound for the heavy Mk VII"
+        },
+        "range_km": {
+          "value": 165,
+          "src": [
+            0
+          ],
+          "note": "120-210 km; midpoint",
+          "estimate": true
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 152,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "near-vertical; design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 152,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 95,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 51,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "heavy infantry tank, 152 mm front, OQF 75 mm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Churchill_tank"
+      ]
+    },
+    {
+      "id": "universal_carrier",
+      "name": "Universal Carrier",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "apc",
+      "year_in_service": 1940,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 3.86,
+          "src": [
+            0
+          ],
+          "note": "laden"
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 48,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 240,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 7,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 7,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "tracked carrier for the infantry's Bren group",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Universal_Carrier"
+      ]
+    },
+    {
+      "id": "uk_25pdr_towed",
+      "name": "QF 25-pounder (towed)",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "towed_gun",
+      "year_in_service": 1940,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 1.633,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 6,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "towed"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "field gun-howitzer, 12,253 m, 11.5 kg HE",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ordnance_QF_25-pounder"
+      ]
+    },
+    {
+      "id": "uk_rifle_section_1944",
+      "name": "British Rifle Section (1944)",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "infantry",
+      "year_in_service": 1944,
+      "dimensions": {},
+      "crew": {
+        "value": 10,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "10-man section: rifle group with No. 4 rifles, Bren group",
+      "sources": [
+        "search summary of British 1943-45 infantry organisation (themodellingnews.com / warlordgames.com previews); Wikipedia Bren"
+      ]
+    },
+    {
+      "id": "uk_piat_team",
+      "name": "PIAT Team",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "at_team",
+      "year_in_service": 1943,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "PIAT: 105 m, ~100 mm",
+      "sources": [
+        "https://en.wikipedia.org/wiki/PIAT"
+      ]
+    },
+    {
+      "id": "typhoon_ib",
+      "name": "Hawker Typhoon Mk IB",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "attack_jet",
+      "year_in_service": 1941,
+      "dimensions": {},
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 560,
+          "src": [
+            0
+          ],
+          "note": "sim cruise design; max 679 km/h at 12,500 ft",
+          "estimate": true
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "rocket fighter-bomber: 4 x 20 mm Hispano, 8 x RP-3",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hawker_Typhoon"
+      ]
+    },
+    {
+      "id": "bedford_ql",
+      "name": "Bedford QL",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "supply",
+      "year_in_service": 1941,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 6.985,
+          "src": [
+            0
+          ],
+          "note": "loaded"
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "range_km": {
+          "value": 250,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "3-ton 4x4 truck",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bedford_QL"
+      ]
+    },
+    {
+      "id": "t34_85",
+      "name": "T-34-85 (1944)",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 32.4,
+          "src": [
+            0
+          ]
+        },
+        "length_m": {
+          "value": 6.68,
+          "src": [
+            0
+          ]
+        },
+        "width_m": {
+          "value": 3.0,
+          "src": [
+            0
+          ]
+        },
+        "height_m": {
+          "value": 2.46,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 53,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 45,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 90,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 45,
+          "src": [
+            0
+          ],
+          "note": "turret side 45 at 30"
+        },
+        "rear_mm": {
+          "value": 45,
+          "src": [
+            0
+          ]
+        },
+        "top_mm": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "the Red Army's main tank, 85 mm ZiS-S-53 (55-60 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-34"
+      ]
+    },
+    {
+      "id": "is2",
+      "name": "IS-2",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "tank",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 46,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 37,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 240,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 100,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 60,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 100,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "rounded"
+        },
+        "side_mm": {
+          "value": 90,
+          "src": [
+            0
+          ],
+          "note": "90-130 mm at 9-25 deg"
+        },
+        "rear_mm": {
+          "value": 60,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 25,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "breakthrough heavy tank, 122 mm D-25T (28 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/IS-2"
+      ]
+    },
+    {
+      "id": "su100",
+      "name": "SU-100",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "td",
+      "year_in_service": 1944,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 31.6,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 48,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 250,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 75,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 55,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_mm": {
+          "value": 75,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 55,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 45,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 45,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 20,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "tank destroyer, 100 mm D-10S (October 1944)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SU-100"
+      ]
+    },
+    {
+      "id": "su76m",
+      "name": "SU-76M",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "spg",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 10.5,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 4,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "tracked",
+        "max_road_speed_kmh": {
+          "value": 45,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 250,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "25-35 mm",
+          "estimate": true
+        },
+        "hull_front_slope_deg": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ]
+        },
+        "side_mm": {
+          "value": 12,
+          "src": [
+            0
+          ],
+          "note": "10-15 mm",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 10,
+          "src": [
+            0
+          ],
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open"
+        }
+      },
+      "armament": [],
+      "one_line_role": "light assault gun / infantry support, 76 mm ZiS-3",
+      "sources": [
+        "https://en.wikipedia.org/wiki/SU-76"
+      ]
+    },
+    {
+      "id": "su_zis3_towed",
+      "name": "76 mm ZiS-3 (towed)",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "towed_gun",
+      "year_in_service": 1942,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 1.116,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 7,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "towed"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "divisional gun, direct-fire anti-tank and indirect fire (13.29 km)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/76_mm_divisional_gun_M1942_(ZiS-3)"
+      ]
+    },
+    {
+      "id": "su_rifle_squad_1944",
+      "name": "Soviet Rifle Squad (1944)",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "infantry",
+      "year_in_service": 1944,
+      "dimensions": {},
+      "crew": {
+        "value": 10,
+        "src": [
+          0
+        ],
+        "note": "9-11 men",
+        "estimate": true
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {},
+      "armor": {},
+      "armament": [],
+      "one_line_role": "rifle squad around a DP-27, Mosin rifles and PPSh-41s",
+      "sources": [
+        "https://battleorder.org/ussr-rifle-co-1944 (search summary; historyrise.com)"
+      ]
+    },
+    {
+      "id": "su_61k_aa",
+      "name": "37 mm 61-K AA gun",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "spaag",
+      "year_in_service": 1939,
+      "dimensions": {},
+      "crew": {
+        "value": 8,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "towed"
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "towed automatic AA gun, 80 rpm practical, 4 km ceiling",
+      "sources": [
+        "https://en.wikipedia.org/wiki/37_mm_automatic_air_defense_gun_M1939_(61-K)"
+      ]
+    },
+    {
+      "id": "il2m3",
+      "name": "Ilyushin Il-2M3",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "attack_jet",
+      "year_in_service": 1943,
+      "dimensions": {},
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 410,
+          "src": [
+            0
+          ],
+          "note": "max at 1,500 m"
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "armoured Shturmovik: 2 x 23 mm VYa, RS-82/132, PTAB bomblets",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ilyushin_Il-2"
+      ]
+    },
+    {
+      "id": "studebaker_us6",
+      "name": "Studebaker US6",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "supply",
+      "year_in_service": 1941,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 7.7,
+          "src": [
+            0
+          ],
+          "note": "empty 4.48 t + 3.2 t Soviet load",
+          "estimate": true
+        }
+      },
+      "crew": {
+        "value": 1,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "propulsion": "wheeled",
+        "max_road_speed_kmh": {
+          "value": 72,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 380,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armor": {},
+      "armament": [],
+      "one_line_role": "lend-lease 6x6 truck",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Studebaker_US6"
+      ]
+    },
+    {
+      "id": "ba64b",
+      "name": "BA-64B",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "recon",
+      "year_in_service": 1943,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 2.4,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 80,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 500,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 15,
+          "src": [
+            0
+          ]
+        },
+        "hull_front_slope_deg": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "plates angled ~30 deg"
+        },
+        "turret_front_mm": {
+          "value": 15,
+          "src": [
+            0
+          ],
+          "note": "design: as hull front",
+          "estimate": true
+        },
+        "turret_front_slope_deg": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 6,
+          "src": [
+            0
+          ]
+        },
+        "rear_mm": {
+          "value": 6,
+          "src": [
+            0
+          ],
+          "note": "design: as sides",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "open-topped turret"
+        }
+      },
+      "armament": [],
+      "one_line_role": "Red Army light armoured car for reconnaissance and liaison, 7.62 mm DT (1,070 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/BA-64"
+      ]
+    },
+    {
+      "id": "daimler_ac",
+      "name": "Daimler Armoured Car",
+      "side": "Allies",
+      "nation": "United Kingdom",
+      "kind": "recon",
+      "year_in_service": 1941,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 7.85,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 3,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 80.4,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 320,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "wheeled"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 16,
+          "src": [
+            0
+          ],
+          "note": "armour 7-16 mm; front taken as the maximum"
+        },
+        "hull_front_slope_deg": {
+          "value": 30,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 16,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 7,
+          "src": [
+            0
+          ],
+          "note": "minimum of the 7-16 mm range, design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 7,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 7,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        }
+      },
+      "armament": [],
+      "one_line_role": "British recce armoured car, QF 2-pounder (52 rounds) and Besa MG (2,700 rounds)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Daimler_Armoured_Car"
+      ]
+    },
+    {
+      "id": "t70",
+      "name": "T-70",
+      "side": "Allies",
+      "nation": "Soviet Union",
+      "kind": "recon",
+      "year_in_service": 1942,
+      "dimensions": {
+        "combat_weight_t": {
+          "value": 9.2,
+          "src": [
+            0
+          ]
+        }
+      },
+      "crew": {
+        "value": 2,
+        "src": [
+          0
+        ]
+      },
+      "dismounts": {
+        "value": 0,
+        "src": [
+          0
+        ]
+      },
+      "mobility": {
+        "max_road_speed_kmh": {
+          "value": 45,
+          "src": [
+            0
+          ]
+        },
+        "range_km": {
+          "value": 360,
+          "src": [
+            0
+          ]
+        },
+        "propulsion": "tracked"
+      },
+      "armor": {
+        "hull_front_mm": {
+          "value": 35,
+          "src": [
+            0
+          ],
+          "note": "design within the 10-50 mm range",
+          "estimate": true
+        },
+        "hull_front_slope_deg": {
+          "value": 60,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "turret_front_mm": {
+          "value": 50,
+          "src": [
+            0
+          ]
+        },
+        "turret_front_slope_deg": {
+          "value": 0,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "side_mm": {
+          "value": 15,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "rear_mm": {
+          "value": 15,
+          "src": [
+            0
+          ],
+          "note": "design",
+          "estimate": true
+        },
+        "top_mm": {
+          "value": 10,
+          "src": [
+            0
+          ]
+        }
+      },
+      "armament": [],
+      "one_line_role": "light tank, 45 mm 20K (45 rounds) and DT; production ended Oct 1943, in service until 1948; recon role design",
+      "sources": [
+        "https://en.wikipedia.org/wiki/T-70"
+      ]
+    }
+  ]
+}

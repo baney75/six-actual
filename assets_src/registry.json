@@ -1,0 +1,682 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "a10",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "a10a",
+      "class": "aircraft",
+      "state": "blockout",
+      "route": "P",
+      "rejections": {
+        "blockout": 1
+      },
+      "review": "blockout approved round 2 (4.00/5); front IoU 0.638 needs the drawing-inconsistency waiver (Donovan)"
+    },
+    {
+      "id": "a10c",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "amx30",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "b17",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "b26",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "bf109",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "blowpipe",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "bm21",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "bmp2",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "bmp3",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "bren",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "challenger",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "cn_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "cromwell",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "ddr_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "f15",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "f16",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "f16v",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "f35",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "fpv_cn",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "fpv_ru",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "fr_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "fw190",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "gepard",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "ger_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "hawk",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "himars",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "igla",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "il2",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "is2",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "j16",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "j20",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "jaguar",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "javelin",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "ju87",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "katyusha",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "konkurs",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "kornet",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "lancaster",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "leo2a7",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "leopard2",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "m109",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "m113",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "m1_abrams",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "m1a1",
+      "class": "ground_vehicle",
+      "state": "blockout-escalated",
+      "route": "P",
+      "rejections": {
+        "blockout": 4
+      }
+    },
+    {
+      "id": "m1a2",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "m2_bradley",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "m4_sherman",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "m60a3",
+      "class": "ground_vehicle",
+      "state": "blockout",
+      "route": "P",
+      "rejections": {
+        "blockout": 1
+      }
+    },
+    {
+      "id": "m7_priest",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "marder",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "mg42",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "mig23",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "mig29",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "milan",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "mlrs",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "mq9",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "nebelwerfer",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "p47",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "p51",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "panther",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "pantsir",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "patriot",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "pcl191",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "pol_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "pz4",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "ru_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "s2s3",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "s400",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "sa8",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "spitfire",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "stinger_team",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "stryker",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "su24",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "su25",
+      "class": "aircraft",
+      "state": "blockout-escalated",
+      "route": "P",
+      "rejections": {
+        "blockout": 4
+      }
+    },
+    {
+      "id": "su34",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "su35",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "su_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "su_rifle_cw",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "supply_su_cw",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "supply_us_cw",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "supply_us_m",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "supply_us_ww2",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "t14",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "t34_85",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "t72",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "t72_ddr",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "t72_pol",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "t80",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "t80bv",
+      "class": "ground_vehicle",
+      "state": "blockout",
+      "route": "P",
+      "rejections": {
+        "blockout": 3
+      }
+    },
+    {
+      "id": "t90m",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "tiger",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "tornado",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "tornados",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "tow_team",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "type99",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "typhoon",
+      "class": "aircraft",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "uk_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "uk_rifle_cw",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "us_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "us_rifle_cw",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "us_rifle_m",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "us_rifle_squad_1989",
+      "class": "infantry_kit",
+      "state": "blockout-escalated",
+      "route": "P",
+      "rejections": {
+        "blockout": 4
+      }
+    },
+    {
+      "id": "wespe",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "wg_rifle",
+      "class": "infantry_kit",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "wgerman_town_block_1989",
+      "class": "building_kit",
+      "state": "blockout",
+      "route": "P",
+      "rejections": {
+        "blockout": 1
+      },
+      "review": "blockout approved round 2 (4.00/5); detail-stage fixes in review_2.md (Hoftor scale, gable/gate/gable rhythm, gable timbering, roof clean-up)"
+    },
+    {
+      "id": "zbd04",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    },
+    {
+      "id": "zsu23",
+      "class": "ground_vehicle",
+      "state": "placeholder",
+      "route": "legacy-box-gate"
+    }
+  ]
+}

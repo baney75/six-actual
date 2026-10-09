@@ -1,0 +1,25 @@
+{
+  "view": "top",
+  "source": "assets_src/refs/a10a/fairchild_republic_a_10_thunderbolt_ii_3_view_li_4d99.png",
+  "box": [
+    8,
+    52,
+    312,
+    330
+  ],
+  "bg": [],
+  "fg": [],
+  "length_m": 16.26,
+  "height_m": 17.63,
+  "px_per_m": 100,
+  "flipped": false,
+  "open_m": 0.0,
+  "mask_confidence": "drawing",
+  "confidence_why": "3-view drawn gear-up",
+  "height_scaled_to_m": null,
+  "top_cut": false,
+  "bottom_cut_m": 0.0,
+  "front_cut": false,
+  "note": "GrabCut trace of a distributable photo; perspective not corrected (telephoto side/front views only)",
+  "gear_up": true
+}

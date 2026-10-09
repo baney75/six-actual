@@ -1,0 +1,270 @@
+{
+  "refs": [
+    {
+      "file": "assets_src/refs/su25/sukhoi_su_25_two_view_silhouette_d478.png",
+      "slots": [
+        "top",
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-25_two-view_silhouette.png",
+      "author": "Greg Goebel",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/comparison_of_a_10_and_su_25_ef0d.png",
+      "slots": [
+        "top"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Comparison_of_A-10_and_Su-25.png",
+      "author": "Greg Goebel",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_jh01_d64d.jpg",
+      "slots": [
+        "side",
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25-JH01.jpg",
+      "author": "Jan Hrdonka",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_at_central_air_force_museum_monino_pic2_3f2e.jpg",
+      "slots": [
+        "side",
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25_at_Central_Air_Force_Museum_Monino_pic2.JPG",
+      "author": "Alf van Beem",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_at_le_bourget_1989_6b24.jpeg",
+      "slots": [
+        "front",
+        "cockpit_canopy",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25_at_Le_Bourget,_1989.JPEG",
+      "author": "Master Sergeant Dave Casey",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_nose_view_le_bourget_a740.jpeg",
+      "slots": [
+        "cockpit_canopy"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25_Nose_view_-_Le_Bourget.JPEG",
+      "author": "MASTER SERGEANT DAVE CASEY",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/25_6baa.jpg",
+      "slots": [
+        "cockpit_canopy"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%B8%D0%B1%D0%BE%D1%80%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C_%D1%88%D1%82%D1%83%D1%80%D0%BC%D0%BE%D0%B2%D0%B8%D0%BA%D0%B0_%D0%A1%D1%83-25.jpg",
+      "author": "FightinG FalcoN",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_in_flight_01_80d7.jpeg",
+      "slots": [
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25_in_flight_01.JPEG",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/mod_sukhoi_su_25_2_e111.jpg",
+      "slots": [
+        "top",
+        "pylon_config"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:MOD_Sukhoi_Su-25_(2).jpg",
+      "author": "Ministry of Defence",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_kiev1_d94c.jpg",
+      "slots": [
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25_Kiev1.jpg",
+      "author": "Аимаина хикари",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_kiev2_2bfa.jpg",
+      "slots": [
+        "pylon_config",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25_Kiev2.jpg",
+      "author": "Аимаина хикари",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su_25_jh02_d991.jpg",
+      "slots": [
+        "gear_doors",
+        "cockpit_canopy"
+      ],
+      "kind": "distributable",
+      "license": "Public domain",
+      "url": "https://commons.wikimedia.org/wiki/File:Su-25-JH02.jpg",
+      "author": "Jan Hrdonka",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/russian_sukhoi_su_25_at_latakia_3_459d.jpg",
+      "slots": [
+        "gear_doors",
+        "front"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Russian_Sukhoi_Su-25_at_Latakia_(3).jpg",
+      "author": "Mil.ru",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/62blue_su_25ub_frogfoot_229_avbrta_ukrain_radom_020d.jpg",
+      "slots": [
+        "exhaust_or_prop"
+      ],
+      "kind": "distributable",
+      "license": "CC0 1.0",
+      "url": "https://commons.wikimedia.org/wiki/File:62blue_Su-25UB_Frogfoot_229.avbrta_Ukrain,_Radom_2011_IMG_6388_(50435719202).jpg",
+      "author": "Jim van de Burgt from Wijk bij Duurstede, Netherlands",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su25sm3_video_frame_6s.jpg",
+      "slots": [
+        "exhaust_or_prop"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-25SM3.webm",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su25sm3_video_frame_66s.jpg",
+      "slots": [
+        "side",
+        "cockpit_canopy",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-25SM3.webm",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su25sm3_video_frame_72s.jpg",
+      "slots": [
+        "exhaust_or_prop",
+        "gear_doors"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-25SM3.webm",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/su25sm3_video_frame_74s.jpg",
+      "slots": [
+        "exhaust_or_prop",
+        "engine_glow"
+      ],
+      "kind": "distributable",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-25SM3.webm",
+      "author": "Ministry of Defence of the Russian Federation",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/destroyed_iraqi_su_25_140e.jpg",
+      "slots": [
+        "wreck"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Destroyed_Iraqi_Su-25.jpg",
+      "author": "Unknown author (US DoD, via NARA)",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/iraqi_su_25_gulf_war_1991_3903.jpg",
+      "slots": [
+        "wreck"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Iraqi_Su-25_-_Gulf_War_1991.jpg",
+      "author": "Staff Sgt. Dean Wagner",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/saddam_h_seyin_in_kuma_g_m_l_su_25_i_cb97.jpg",
+      "slots": [
+        "wreck"
+      ],
+      "kind": "distributable",
+      "license": "Public domain (US government work)",
+      "url": "https://commons.wikimedia.org/wiki/File:Saddam_H%C3%BCseyin%27in_kuma_g%C3%B6m%C3%BCl%C3%BC_Su-25%27i.jpg",
+      "author": "Master Sgt. T. Collins / U.S. Air Force",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "refs_private/su25/sukhoi_su_25_2005_g2_380c.jpg",
+      "slots": [
+        "exhaust_or_prop"
+      ],
+      "kind": "look-only",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Sukhoi_Su-25_2005_G2.jpg",
+      "author": "George Chernilevsky",
+      "retrieved": "2026-10-08"
+    },
+    {
+      "file": "assets_src/refs/su25/dimensions.md",
+      "slots": [
+        "dimension_source"
+      ],
+      "kind": "distributable",
+      "license": "own work (notes)",
+      "url": "n/a (own notes)",
+      "author": "Claude (Six Actual ref-hunter)",
+      "retrieved": "2026-10-08"
+    }
+  ]
+}

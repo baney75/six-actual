@@ -1,0 +1,27 @@
+{
+  "view": "front",
+  "source": "assets_src/refs/m1a1/da_sc_98_04644_08a8.jpg",
+  "box": [
+    300,
+    398,
+    1378,
+    962
+  ],
+  "bg": [
+    [
+      548,
+      845,
+      1135,
+      962
+    ]
+  ],
+  "length_m": 3.66,
+  "height_m": 2.44,
+  "px_per_m": 100,
+  "flipped": false,
+  "open_m": 0.1,
+  "mask_confidence": "low",
+  "height_scaled_to_m": 2.44,
+  "top_cut": true,
+  "note": "GrabCut trace of a distributable photo; perspective not corrected (telephoto side/front views only)"
+}
