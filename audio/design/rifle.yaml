@@ -1,0 +1,31 @@
+id: rifle
+purpose: rifle and carbine report
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- transient crack
+- body thump
+- 'mechanics: bolt clicks'
+- tail by distance
+distance_bands:
+- far
+- mid
+- near
+variants: 4
+loop_points: none
+priority: 2
+max_concurrent: 8
+files:
+- game/assets/audio/sfx/rifle/rifle_near_v1.wav
+- game/assets/audio/sfx/rifle/rifle_mid_v1.wav
+- game/assets/audio/sfx/rifle/rifle_far_v1.wav
+- game/assets/audio/sfx/rifle/rifle_near_v2.wav
+- game/assets/audio/sfx/rifle/rifle_mid_v2.wav
+- game/assets/audio/sfx/rifle/rifle_far_v2.wav
+- game/assets/audio/sfx/rifle/rifle_near_v3.wav
+- game/assets/audio/sfx/rifle/rifle_mid_v3.wav
+- game/assets/audio/sfx/rifle/rifle_far_v3.wav
+- game/assets/audio/sfx/rifle/rifle_near_v4.wav
+- game/assets/audio/sfx/rifle/rifle_mid_v4.wav
+- game/assets/audio/sfx/rifle/rifle_far_v4.wav
+generator: scripts/generate_sfx.py

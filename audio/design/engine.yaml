@@ -1,0 +1,17 @@
+id: engine
+purpose: vehicle engine loops
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- firing pulses or turbine whine
+- broadband noise
+distance_bands:
+- single
+variants: 1
+loop_points: whole file (seamless)
+priority: 3
+max_concurrent: 6
+files:
+- game/assets/audio/sfx/engine/engine_diesel.wav
+- game/assets/audio/sfx/engine/engine_turbine.wav
+generator: scripts/generate_sfx.py

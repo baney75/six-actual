@@ -1,0 +1,626 @@
+{
+ "version": 1,
+ "generator": "scripts/generate_sfx.py (numpy synthesis, D068)",
+ "files": [
+  {
+   "family": "rifle",
+   "name": "rifle_near_v1",
+   "band": "near",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/rifle/rifle_near_v1.wav",
+   "duration_s": 0.75
+  },
+  {
+   "family": "mg",
+   "name": "mg_near_v1",
+   "band": "near",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/mg/mg_near_v1.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_near_v1",
+   "band": "near",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/cannon/cannon_near_v1.wav",
+   "duration_s": 1.5
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_mid_v1",
+   "band": "mid",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/rifle/rifle_mid_v1.wav",
+   "duration_s": 1.05
+  },
+  {
+   "family": "mg",
+   "name": "mg_mid_v1",
+   "band": "mid",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/mg/mg_mid_v1.wav",
+   "duration_s": 1.2
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_mid_v1",
+   "band": "mid",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/cannon/cannon_mid_v1.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_far_v1",
+   "band": "far",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/rifle/rifle_far_v1.wav",
+   "duration_s": 1.65
+  },
+  {
+   "family": "mg",
+   "name": "mg_far_v1",
+   "band": "far",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/mg/mg_far_v1.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_far_v1",
+   "band": "far",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/cannon/cannon_far_v1.wav",
+   "duration_s": 2.4
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_small_v1",
+   "size": "small",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/explosion/explosion_small_v1.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_medium_v1",
+   "size": "medium",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/explosion/explosion_medium_v1.wav",
+   "duration_s": 1.6
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_large_v1",
+   "size": "large",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/explosion/explosion_large_v1.wav",
+   "duration_s": 3.0
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_near_v2",
+   "band": "near",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/rifle/rifle_near_v2.wav",
+   "duration_s": 0.75
+  },
+  {
+   "family": "mg",
+   "name": "mg_near_v2",
+   "band": "near",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/mg/mg_near_v2.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_near_v2",
+   "band": "near",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/cannon/cannon_near_v2.wav",
+   "duration_s": 1.5
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_mid_v2",
+   "band": "mid",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/rifle/rifle_mid_v2.wav",
+   "duration_s": 1.05
+  },
+  {
+   "family": "mg",
+   "name": "mg_mid_v2",
+   "band": "mid",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/mg/mg_mid_v2.wav",
+   "duration_s": 1.2
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_mid_v2",
+   "band": "mid",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/cannon/cannon_mid_v2.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_far_v2",
+   "band": "far",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/rifle/rifle_far_v2.wav",
+   "duration_s": 1.65
+  },
+  {
+   "family": "mg",
+   "name": "mg_far_v2",
+   "band": "far",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/mg/mg_far_v2.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_far_v2",
+   "band": "far",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/cannon/cannon_far_v2.wav",
+   "duration_s": 2.4
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_small_v2",
+   "size": "small",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/explosion/explosion_small_v2.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_medium_v2",
+   "size": "medium",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/explosion/explosion_medium_v2.wav",
+   "duration_s": 1.6
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_large_v2",
+   "size": "large",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/explosion/explosion_large_v2.wav",
+   "duration_s": 3.0
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_near_v3",
+   "band": "near",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/rifle/rifle_near_v3.wav",
+   "duration_s": 0.75
+  },
+  {
+   "family": "mg",
+   "name": "mg_near_v3",
+   "band": "near",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/mg/mg_near_v3.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_near_v3",
+   "band": "near",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/cannon/cannon_near_v3.wav",
+   "duration_s": 1.5
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_mid_v3",
+   "band": "mid",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/rifle/rifle_mid_v3.wav",
+   "duration_s": 1.05
+  },
+  {
+   "family": "mg",
+   "name": "mg_mid_v3",
+   "band": "mid",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/mg/mg_mid_v3.wav",
+   "duration_s": 1.2
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_mid_v3",
+   "band": "mid",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/cannon/cannon_mid_v3.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_far_v3",
+   "band": "far",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/rifle/rifle_far_v3.wav",
+   "duration_s": 1.65
+  },
+  {
+   "family": "mg",
+   "name": "mg_far_v3",
+   "band": "far",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/mg/mg_far_v3.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_far_v3",
+   "band": "far",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/cannon/cannon_far_v3.wav",
+   "duration_s": 2.4
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_small_v3",
+   "size": "small",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/explosion/explosion_small_v3.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_medium_v3",
+   "size": "medium",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/explosion/explosion_medium_v3.wav",
+   "duration_s": 1.6
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_large_v3",
+   "size": "large",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/explosion/explosion_large_v3.wav",
+   "duration_s": 3.0
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_near_v4",
+   "band": "near",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/rifle/rifle_near_v4.wav",
+   "duration_s": 0.75
+  },
+  {
+   "family": "mg",
+   "name": "mg_near_v4",
+   "band": "near",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/mg/mg_near_v4.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_near_v4",
+   "band": "near",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/cannon/cannon_near_v4.wav",
+   "duration_s": 1.5
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_mid_v4",
+   "band": "mid",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/rifle/rifle_mid_v4.wav",
+   "duration_s": 1.05
+  },
+  {
+   "family": "mg",
+   "name": "mg_mid_v4",
+   "band": "mid",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/mg/mg_mid_v4.wav",
+   "duration_s": 1.2
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_mid_v4",
+   "band": "mid",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/cannon/cannon_mid_v4.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "rifle",
+   "name": "rifle_far_v4",
+   "band": "far",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/rifle/rifle_far_v4.wav",
+   "duration_s": 1.65
+  },
+  {
+   "family": "mg",
+   "name": "mg_far_v4",
+   "band": "far",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/mg/mg_far_v4.wav",
+   "duration_s": 1.8
+  },
+  {
+   "family": "cannon",
+   "name": "cannon_far_v4",
+   "band": "far",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/cannon/cannon_far_v4.wav",
+   "duration_s": 2.4
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_small_v4",
+   "size": "small",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/explosion/explosion_small_v4.wav",
+   "duration_s": 0.9
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_medium_v4",
+   "size": "medium",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/explosion/explosion_medium_v4.wav",
+   "duration_s": 1.6
+  },
+  {
+   "family": "explosion",
+   "name": "explosion_large_v4",
+   "size": "large",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/explosion/explosion_large_v4.wav",
+   "duration_s": 3.0
+  },
+  {
+   "family": "crack",
+   "name": "crack_v1",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/crack/crack_v1.wav",
+   "duration_s": 0.12
+  },
+  {
+   "family": "crack",
+   "name": "crack_v2",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/crack/crack_v2.wav",
+   "duration_s": 0.12
+  },
+  {
+   "family": "crack",
+   "name": "crack_v3",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/crack/crack_v3.wav",
+   "duration_s": 0.12
+  },
+  {
+   "family": "crack",
+   "name": "crack_v4",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/crack/crack_v4.wav",
+   "duration_s": 0.12
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_dirt_v1",
+   "surface": "dirt",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/footstep/footstep_dirt_v1.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_dirt_v2",
+   "surface": "dirt",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/footstep/footstep_dirt_v2.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_dirt_v3",
+   "surface": "dirt",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/footstep/footstep_dirt_v3.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_dirt_v4",
+   "surface": "dirt",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/footstep/footstep_dirt_v4.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_grass_v1",
+   "surface": "grass",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/footstep/footstep_grass_v1.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_grass_v2",
+   "surface": "grass",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/footstep/footstep_grass_v2.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_grass_v3",
+   "surface": "grass",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/footstep/footstep_grass_v3.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_grass_v4",
+   "surface": "grass",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/footstep/footstep_grass_v4.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_gravel_v1",
+   "surface": "gravel",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/footstep/footstep_gravel_v1.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_gravel_v2",
+   "surface": "gravel",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/footstep/footstep_gravel_v2.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_gravel_v3",
+   "surface": "gravel",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/footstep/footstep_gravel_v3.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_gravel_v4",
+   "surface": "gravel",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/footstep/footstep_gravel_v4.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_concrete_v1",
+   "surface": "concrete",
+   "variant": 1,
+   "path": "game/assets/audio/sfx/footstep/footstep_concrete_v1.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_concrete_v2",
+   "surface": "concrete",
+   "variant": 2,
+   "path": "game/assets/audio/sfx/footstep/footstep_concrete_v2.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_concrete_v3",
+   "surface": "concrete",
+   "variant": 3,
+   "path": "game/assets/audio/sfx/footstep/footstep_concrete_v3.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "footstep",
+   "name": "footstep_concrete_v4",
+   "surface": "concrete",
+   "variant": 4,
+   "path": "game/assets/audio/sfx/footstep/footstep_concrete_v4.wav",
+   "duration_s": 0.18
+  },
+  {
+   "family": "squelch",
+   "name": "squelch_ww2",
+   "path": "game/assets/audio/sfx/squelch/squelch_ww2.wav",
+   "duration_s": 0.35
+  },
+  {
+   "family": "squelch",
+   "name": "squelch_coldwar",
+   "path": "game/assets/audio/sfx/squelch/squelch_coldwar.wav",
+   "duration_s": 0.14
+  },
+  {
+   "family": "squelch",
+   "name": "squelch_modern",
+   "path": "game/assets/audio/sfx/squelch/squelch_modern.wav",
+   "duration_s": 0.07
+  },
+  {
+   "family": "ambience",
+   "name": "ambience_wind",
+   "loop": true,
+   "path": "game/assets/audio/sfx/ambience/ambience_wind.wav",
+   "duration_s": 8.0
+  },
+  {
+   "family": "ambience",
+   "name": "ambience_birds",
+   "loop": true,
+   "path": "game/assets/audio/sfx/ambience/ambience_birds.wav",
+   "duration_s": 8.0
+  },
+  {
+   "family": "ambience",
+   "name": "ambience_insects",
+   "loop": true,
+   "path": "game/assets/audio/sfx/ambience/ambience_insects.wav",
+   "duration_s": 8.0
+  },
+  {
+   "family": "ambience",
+   "name": "ambience_rain",
+   "loop": true,
+   "path": "game/assets/audio/sfx/ambience/ambience_rain.wav",
+   "duration_s": 8.0
+  },
+  {
+   "family": "ambience",
+   "name": "ambience_fire",
+   "loop": true,
+   "path": "game/assets/audio/sfx/ambience/ambience_fire.wav",
+   "duration_s": 8.0
+  },
+  {
+   "family": "ambience",
+   "name": "ambience_rumble",
+   "loop": true,
+   "path": "game/assets/audio/sfx/ambience/ambience_rumble.wav",
+   "duration_s": 8.0
+  },
+  {
+   "family": "engine",
+   "name": "engine_diesel",
+   "loop": true,
+   "path": "game/assets/audio/sfx/engine/engine_diesel.wav",
+   "duration_s": 4.0
+  },
+  {
+   "family": "engine",
+   "name": "engine_turbine",
+   "loop": true,
+   "path": "game/assets/audio/sfx/engine/engine_turbine.wav",
+   "duration_s": 4.0
+  },
+  {
+   "family": "ui",
+   "name": "ui_click",
+   "path": "game/assets/audio/sfx/ui/ui_click.wav",
+   "duration_s": 0.05
+  }
+ ]
+}

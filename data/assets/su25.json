@@ -1,0 +1,43 @@
+{
+  "id": "su25",
+  "class": "aircraft",
+  "numbers": [
+    {
+      "name": "length_m",
+      "value": 15.53,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/Sukhoi_Su-25 (specs citing Jane's All The World's Aircraft 2003-2004) - including nose probe"
+    },
+    {
+      "name": "wingspan_m",
+      "value": 14.36,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/Sukhoi_Su-25 (specs citing Jane's All The World's Aircraft 2003-2004)"
+    },
+    {
+      "name": "height_m",
+      "value": 4.8,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/Sukhoi_Su-25 (specs citing Jane's All The World's Aircraft 2003-2004)"
+    },
+    {
+      "name": "wing_area_m2",
+      "value": 33.7,
+      "unit": "m2",
+      "source": "https://en.wikipedia.org/wiki/Sukhoi_Su-25 (specs citing Jane's All The World's Aircraft 2003-2004)"
+    },
+    {
+      "name": "hardpoints",
+      "value": 10,
+      "unit": "count",
+      "source": "https://en.wikipedia.org/wiki/Sukhoi_Su-25 (armament: 10 underwing pylons); visible in assets_src/refs/su25/su_25_kiev2_2bfa.jpg"
+    }
+  ],
+  "signature_features": [
+    "Two R-95Sh turbojets in long nacelles alongside the fuselage, under the wing roots, with fixed round nozzles",
+    "Shoulder-mounted moderately swept wing with wingtip pods that split into speed brakes",
+    "Long pointed nose with laser rangefinder window, pitot boom, and a framed canopy over an armored cockpit",
+    "Ten underwing pylons typically carrying UB-32/B-8 rocket pods, bombs and outer R-60 rails",
+    "Short tall fin; trailing-link main gear retracting into the fuselage; Soviet two-tone sand/green camouflage with red star"
+  ]
+}

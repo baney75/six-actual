@@ -1,0 +1,29 @@
+id: explosion
+purpose: shell, bomb and vehicle explosions
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- transient click
+- body roar
+- low end boom
+- debris grains
+distance_bands:
+- single
+variants: 4
+loop_points: none
+priority: 1
+max_concurrent: 4
+files:
+- game/assets/audio/sfx/explosion/explosion_small_v1.wav
+- game/assets/audio/sfx/explosion/explosion_medium_v1.wav
+- game/assets/audio/sfx/explosion/explosion_large_v1.wav
+- game/assets/audio/sfx/explosion/explosion_small_v2.wav
+- game/assets/audio/sfx/explosion/explosion_medium_v2.wav
+- game/assets/audio/sfx/explosion/explosion_large_v2.wav
+- game/assets/audio/sfx/explosion/explosion_small_v3.wav
+- game/assets/audio/sfx/explosion/explosion_medium_v3.wav
+- game/assets/audio/sfx/explosion/explosion_large_v3.wav
+- game/assets/audio/sfx/explosion/explosion_small_v4.wav
+- game/assets/audio/sfx/explosion/explosion_medium_v4.wav
+- game/assets/audio/sfx/explosion/explosion_large_v4.wav
+generator: scripts/generate_sfx.py

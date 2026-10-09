@@ -1,0 +1,118 @@
+id,speaker,era,faction,trigger,priority,text,variants,audio_tags
+xo_take_control_ww2,xo,ww2,player,take_control,1,"I have the command, sir. The plane is yours.",1,radio
+xo_take_control_coldwar,xo,coldwar,player,take_control,1,I have the battle. Your aircraft.,1,radio
+xo_take_control_modern,xo,modern,player,take_control,1,I have the battle. Your aircraft.,1,radio
+xo_return_control_ww2,xo,ww2,player,return_control,1,You have the battle back. Handing over.,1,radio
+xo_return_control_coldwar,xo,coldwar,player,return_control,1,You have the battle back. Handing over.,1,radio
+xo_return_control_modern,xo,modern,player,return_control,1,You have the battle back. Handing over.,1,radio
+xo_phase_change_ww2,xo,ww2,player,phase_change,3,Reinforcements are coming up. New phase.,1,radio
+xo_phase_change_coldwar,xo,coldwar,player,phase_change,3,New phase. Fresh reserves are available.,1,radio
+xo_phase_change_modern,xo,modern,player,phase_change,3,New phase. Fresh reserves are available.,1,radio
+xo_objective_taken_ww2,xo,ww2,player,objective_taken,3,We hold the objective.,1,radio
+xo_objective_taken_coldwar,xo,coldwar,player,objective_taken,3,Objective secured.,1,radio
+xo_objective_taken_modern,xo,modern,player,objective_taken,3,Objective secured.,1,radio
+xo_objective_lost_ww2,xo,ww2,player,objective_lost,1,They have taken the objective. We go back in.,1,radio
+xo_objective_lost_coldwar,xo,coldwar,player,objective_lost,1,We lost the objective. Retaking it.,1,radio
+xo_objective_lost_modern,xo,modern,player,objective_lost,1,We lost the objective. Retaking it.,1,radio
+army1_assault_started_ww2,army1,ww2,player,assault_started,3,First battalion advancing. Assault under way.,1,radio
+army1_assault_started_coldwar,army1,coldwar,player,assault_started,3,"First maneuver, moving out. Assault under way.",1,radio
+army1_assault_started_modern,army1,modern,player,assault_started,3,"First maneuver, moving out. Assault under way.",1,radio
+army1_withdraw_ww2,army1,ww2,player,withdraw,3,First maneuver pulling damaged vehicles back to refit.,1,radio
+army1_withdraw_coldwar,army1,coldwar,player,withdraw,3,First maneuver pulling damaged vehicles back to refit.,1,radio
+army1_withdraw_modern,army1,modern,player,withdraw,3,First maneuver pulling damaged vehicles back to refit.,1,radio
+army1_request_ww2,army1,ww2,player,request,2,First maneuver requesting approval to attack.,1,radio
+army1_request_coldwar,army1,coldwar,player,request,2,First maneuver requesting approval to attack.,1,radio
+army1_request_modern,army1,modern,player,request,2,First maneuver requesting approval to attack.,1,radio
+army1_escalation_ww2,army1,ww2,player,escalation,1,"First maneuver, the attack has stalled. I need help.",1,radio
+army1_escalation_coldwar,army1,coldwar,player,escalation,1,"First maneuver, the attack has stalled. I need help.",1,radio
+army1_escalation_modern,army1,modern,player,escalation,1,"First maneuver, the attack has stalled. I need help.",1,radio
+army1_contact_ww2,army1,ww2,player,contact,2,Enemy in front of us. Engaging.,1,radio
+army1_contact_coldwar,army1,coldwar,player,contact,2,Contact front. Engaging.,1,radio
+army1_contact_modern,army1,modern,player,contact,2,Contact front. Engaging.,1,radio
+army2_assault_started_ww2,army2,ww2,player,assault_started,3,Second battalion going in now.,1,radio
+army2_assault_started_coldwar,army2,coldwar,player,assault_started,3,"Second maneuver, assault is moving.",1,radio
+army2_assault_started_modern,army2,modern,player,assault_started,3,"Second maneuver, assault is moving.",1,radio
+army2_withdraw_ww2,army2,ww2,player,withdraw,3,"Second maneuver, falling back to rearm.",1,radio
+army2_withdraw_coldwar,army2,coldwar,player,withdraw,3,"Second maneuver, falling back to rearm.",1,radio
+army2_withdraw_modern,army2,modern,player,withdraw,3,"Second maneuver, falling back to rearm.",1,radio
+army2_request_ww2,army2,ww2,player,request,2,Second maneuver requesting approval to push forward.,1,radio
+army2_request_coldwar,army2,coldwar,player,request,2,Second maneuver requesting approval to push forward.,1,radio
+army2_request_modern,army2,modern,player,request,2,Second maneuver requesting approval to push forward.,1,radio
+army2_escalation_ww2,army2,ww2,player,escalation,1,"Second maneuver, we are pinned. Request support.",1,radio
+army2_escalation_coldwar,army2,coldwar,player,escalation,1,"Second maneuver, we are pinned. Request support.",1,radio
+army2_escalation_modern,army2,modern,player,escalation,1,"Second maneuver, we are pinned. Request support.",1,radio
+army2_contact_ww2,army2,ww2,player,contact,2,Second battalion under fire. Returning fire.,1,radio
+army2_contact_coldwar,army2,coldwar,player,contact,2,"Second maneuver, contact. Returning fire.",1,radio
+army2_contact_modern,army2,modern,player,contact,2,"Second maneuver, contact. Returning fire.",1,radio
+arty1_fire_mission_ww2,arty1,ww2,player,fire_mission,3,Guns firing. Rounds on the way.,1,radio
+arty1_fire_mission_coldwar,arty1,coldwar,player,fire_mission,3,"Shot, over. Rounds on the way.",1,radio
+arty1_fire_mission_modern,arty1,modern,player,fire_mission,3,"Shot, over. Rounds on the way.",1,radio
+arty1_battery_located_ww2,arty1,ww2,player,battery_located,3,Sound ranging has their battery. Firing back.,1,radio
+arty1_battery_located_coldwar,arty1,coldwar,player,battery_located,3,Counter-battery radar has their guns. Firing back.,1,radio
+arty1_battery_located_modern,arty1,modern,player,battery_located,3,Counter-battery radar has their guns. Firing back.,1,radio
+arty1_request_ww2,arty1,ww2,player,request,2,First fires requesting clearance for the fire mission.,1,radio
+arty1_request_coldwar,arty1,coldwar,player,request,2,First fires requesting clearance for the fire mission.,1,radio
+arty1_request_modern,arty1,modern,player,request,2,First fires requesting clearance for the fire mission.,1,radio
+arty1_escalation_ww2,arty1,ww2,player,escalation,1,"First fires, we are taking counter-battery. Displacing.",1,radio
+arty1_escalation_coldwar,arty1,coldwar,player,escalation,1,"First fires, we are taking counter-battery. Displacing.",1,radio
+arty1_escalation_modern,arty1,modern,player,escalation,1,"First fires, we are taking counter-battery. Displacing.",1,radio
+arty2_fire_mission_ww2,arty2,ww2,player,fire_mission,3,Second battery firing for effect.,1,radio
+arty2_fire_mission_coldwar,arty2,coldwar,player,fire_mission,3,"Second fires, rounds complete on target.",1,radio
+arty2_fire_mission_modern,arty2,modern,player,fire_mission,3,"Second fires, rounds complete on target.",1,radio
+arty2_battery_located_ww2,arty2,ww2,player,battery_located,3,"Second fires, enemy guns located. Engaging.",1,radio
+arty2_battery_located_coldwar,arty2,coldwar,player,battery_located,3,"Second fires, enemy guns located. Engaging.",1,radio
+arty2_battery_located_modern,arty2,modern,player,battery_located,3,"Second fires, enemy guns located. Engaging.",1,radio
+arty2_request_ww2,arty2,ww2,player,request,2,Second fires requesting approval to fire.,1,radio
+arty2_request_coldwar,arty2,coldwar,player,request,2,Second fires requesting approval to fire.,1,radio
+arty2_request_modern,arty2,modern,player,request,2,Second fires requesting approval to fire.,1,radio
+arty2_escalation_ww2,arty2,ww2,player,escalation,1,"Second fires, ammunition low. Need resupply.",1,radio
+arty2_escalation_coldwar,arty2,coldwar,player,escalation,1,"Second fires, ammunition low. Need resupply.",1,radio
+arty2_escalation_modern,arty2,modern,player,escalation,1,"Second fires, ammunition low. Need resupply.",1,radio
+air1_cas_on_station_ww2,air1,ww2,player,cas_on_station,3,Fighter-bombers overhead. Ready to strike.,1,radio
+air1_cas_on_station_coldwar,air1,coldwar,player,cas_on_station,3,Air one on station. Ready for tasking.,1,radio
+air1_cas_on_station_modern,air1,modern,player,cas_on_station,3,Air one on station. Ready for tasking.,1,radio
+air1_request_ww2,air1,ww2,player,request,2,Air one requesting a strike on the marked target.,1,radio
+air1_request_coldwar,air1,coldwar,player,request,2,Air one requesting a strike on the marked target.,1,radio
+air1_request_modern,air1,modern,player,request,2,Air one requesting a strike on the marked target.,1,radio
+air1_escalation_ww2,air1,ww2,player,escalation,1,"Air one, heavy flak. Need the defenses suppressed.",1,radio
+air1_escalation_coldwar,air1,coldwar,player,escalation,1,"Air one, heavy flak. Need the defenses suppressed.",1,radio
+air1_escalation_modern,air1,modern,player,escalation,1,"Air one, surface-to-air threat. Need suppression.",1,radio
+air1_withdraw_ww2,air1,ww2,player,withdraw,3,"Air one, winchester. Returning to rearm.",1,radio
+air1_withdraw_coldwar,air1,coldwar,player,withdraw,3,"Air one, winchester. Returning to rearm.",1,radio
+air1_withdraw_modern,air1,modern,player,withdraw,3,"Air one, winchester. Returning to rearm.",1,radio
+air2_cas_on_station_ww2,air2,ww2,player,cas_on_station,3,Second flight overhead. Ready.,1,radio
+air2_cas_on_station_coldwar,air2,coldwar,player,cas_on_station,3,Air two checking in. Weapons hot.,1,radio
+air2_cas_on_station_modern,air2,modern,player,cas_on_station,3,Air two checking in. Weapons hot.,1,radio
+air2_request_ww2,air2,ww2,player,request,2,Air two requesting clearance to engage.,1,radio
+air2_request_coldwar,air2,coldwar,player,request,2,Air two requesting clearance to engage.,1,radio
+air2_request_modern,air2,modern,player,request,2,Air two requesting clearance to engage.,1,radio
+air2_escalation_ww2,air2,ww2,player,escalation,1,"Air two, we have lost an aircraft. Request cover.",1,radio
+air2_escalation_coldwar,air2,coldwar,player,escalation,1,"Air two, we have lost an aircraft. Request cover.",1,radio
+air2_escalation_modern,air2,modern,player,escalation,1,"Air two, we have lost an aircraft. Request cover.",1,radio
+air2_withdraw_ww2,air2,ww2,player,withdraw,3,"Air two, bingo fuel. Heading home.",1,radio
+air2_withdraw_coldwar,air2,coldwar,player,withdraw,3,"Air two, bingo fuel. Heading home.",1,radio
+air2_withdraw_modern,air2,modern,player,withdraw,3,"Air two, bingo fuel. Heading home.",1,radio
+armor_assault_started_ww2,armor,ww2,player,assault_started,3,Tanks rolling. Follow us in.,1,radio
+armor_assault_started_coldwar,armor,coldwar,player,assault_started,3,Armor moving. Tanks forward.,1,radio
+armor_assault_started_modern,armor,modern,player,assault_started,3,Armor moving. Tanks forward.,1,radio
+armor_withdraw_ww2,armor,ww2,player,withdraw,3,Armor pulling back damaged tanks for repair.,1,radio
+armor_withdraw_coldwar,armor,coldwar,player,withdraw,3,Armor pulling back damaged tanks for repair.,1,radio
+armor_withdraw_modern,armor,modern,player,withdraw,3,Armor pulling back damaged tanks for repair.,1,radio
+armor_request_ww2,armor,ww2,player,request,2,Armor requesting approval to counterattack.,1,radio
+armor_request_coldwar,armor,coldwar,player,request,2,Armor requesting approval to counterattack.,1,radio
+armor_request_modern,armor,modern,player,request,2,Armor requesting approval to counterattack.,1,radio
+armor_escalation_ww2,armor,ww2,player,escalation,1,"Armor, we are losing tanks. Request fire support.",1,radio
+armor_escalation_coldwar,armor,coldwar,player,escalation,1,"Armor, we are losing tanks. Request fire support.",1,radio
+armor_escalation_modern,armor,modern,player,escalation,1,"Armor, we are losing tanks. Request fire support.",1,radio
+armor_contact_ww2,armor,ww2,player,contact,2,Panzers. Engaging.,1,radio
+armor_contact_coldwar,armor,coldwar,player,contact,2,Enemy armor. Engaging.,1,radio
+armor_contact_modern,armor,modern,player,contact,2,"Enemy tanks, thermal contact. Engaging.",1,radio
+logistics_resupply_ww2,logistics,ww2,player,resupply,3,"Logistics, resupply under way. Ammunition and fuel moving forward.",1,radio
+logistics_resupply_coldwar,logistics,coldwar,player,resupply,3,"Logistics, resupply under way. Ammunition and fuel moving forward.",1,radio
+logistics_resupply_modern,logistics,modern,player,resupply,3,"Logistics, resupply under way. Ammunition and fuel moving forward.",1,radio
+logistics_request_ww2,logistics,ww2,player,request,2,Logistics requesting escort for the convoy.,1,radio
+logistics_request_coldwar,logistics,coldwar,player,request,2,Logistics requesting escort for the convoy.,1,radio
+logistics_request_modern,logistics,modern,player,request,2,Logistics requesting escort for the convoy.,1,radio
+logistics_escalation_ww2,logistics,ww2,player,escalation,1,"Logistics, the supply route is cut. Need it cleared.",1,radio
+logistics_escalation_coldwar,logistics,coldwar,player,escalation,1,"Logistics, the supply route is cut. Need it cleared.",1,radio
+logistics_escalation_modern,logistics,modern,player,escalation,1,"Logistics, the supply route is cut. Need it cleared.",1,radio

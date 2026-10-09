@@ -16,3 +16,17 @@ obj/
 audio/generated/
 docs/godot-api/**
 !docs/godot-api/README.md
+tools/blender/
+tools/blender-unpacked/
+tools/godot-unpacked/
+refs_private/
+.claude/verify-unlock
+.claude/settings.local.json
+tools/asr/.venv/
+tools/py/.venv/
+# D073 review: build and tool byproducts
+__pycache__/
+*.pyc
+*.blend1
+assets_src/work/
+assets_src/refs/*/masks/*.debug.png

@@ -1,0 +1,43 @@
+{
+  "id": "a10a",
+  "class": "aircraft",
+  "numbers": [
+    {
+      "name": "length_m",
+      "value": 16.26,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II (specs citing USAF A-10 fact sheet, Spick 2000 pp. 21, 44-48, Jenkins 1998 p. 54) - 53 ft 4 in"
+    },
+    {
+      "name": "wingspan_m",
+      "value": 17.53,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II (specs citing USAF A-10 fact sheet, Spick 2000 pp. 21, 44-48, Jenkins 1998 p. 54) - 57 ft 6 in"
+    },
+    {
+      "name": "height_m",
+      "value": 4.47,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II (specs citing USAF A-10 fact sheet, Spick 2000 pp. 21, 44-48, Jenkins 1998 p. 54) - 14 ft 8 in"
+    },
+    {
+      "name": "wing_area_m2",
+      "value": 47.0,
+      "unit": "m2",
+      "source": "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II (specs citing USAF A-10 fact sheet, Spick 2000 pp. 21, 44-48, Jenkins 1998 p. 54) - 506 sq ft"
+    },
+    {
+      "name": "hardpoints",
+      "value": 11,
+      "unit": "count",
+      "source": "https://en.wikipedia.org/wiki/Fairchild_Republic_A-10_Thunderbolt_II (armament: 11 hardpoints); visible in assets_src/refs/a10a/ya_10a_parked_0924.jpg"
+    }
+  ],
+  "signature_features": [
+    "Two TF34-GE-100 turbofans in separate nacelles high on the aft fuselage between wing and tail",
+    "Twin vertical fins on the ends of a straight tailplane, masking engine exhaust",
+    "Straight, thick low wing with 11 pylons (8 underwing, 3 under fuselage) and drooping wingtips",
+    "GAU-8/A 30 mm cannon muzzle under the nose, nose gear offset to the right; main gear retracting forward into wing pods, partly exposed",
+    "Bubble canopy set high on a blunt nose; 1989 USAFE aircraft in two-tone dark green/gray European I scheme"
+  ]
+}

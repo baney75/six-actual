@@ -1,0 +1,67 @@
+{
+  "id": "t80bv",
+  "class": "ground_vehicle",
+  "numbers": [
+    {
+      "name": "length_hull_m",
+      "value": 6.982,
+      "unit": "m",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - 6982 mm"
+    },
+    {
+      "name": "length_gun_forward_m",
+      "value": 9.651,
+      "unit": "m",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - 9651 mm"
+    },
+    {
+      "name": "width_m",
+      "value": 3.582,
+      "unit": "m",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - 3582 mm"
+    },
+    {
+      "name": "height_turret_roof_m",
+      "value": 2.219,
+      "unit": "m",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - 2219 mm to turret roof"
+    },
+    {
+      "name": "ground_clearance_m",
+      "value": 0.451,
+      "unit": "m",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - 451 mm"
+    },
+    {
+      "name": "track_width_m",
+      "value": 0.58,
+      "unit": "m",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - running gear section, 580 mm"
+    },
+    {
+      "name": "road_wheels_per_side",
+      "value": 6,
+      "unit": "count",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - 12 road wheels total"
+    },
+    {
+      "name": "return_rollers_per_side",
+      "value": 5,
+      "unit": "count",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - 10 support rollers total"
+    },
+    {
+      "name": "combat_mass_t",
+      "value": 43.7,
+      "unit": "t",
+      "source": "https://ru.wikipedia.org/wiki/Т-80 (ТТХ table for Т-80Б/Т-80БВ, citing Техническое описание и инструкция по эксплуатации танка Т-80Б, 1984) - T-80BV combat mass"
+    }
+  ],
+  "signature_features": [
+    "Kontakt-1 ERA bricks in chevron rows on the turret front/roof and a block array on the glacis (the B to BV difference)",
+    "Low cast rounded turret with 125 mm 2A46-2 gun with thermal sleeve and fume extractor; commander cupola with NSVT 12.7 mm",
+    "Six large rubber-tyred road wheels and five return rollers per side, rubber side skirts with flap plates at the front",
+    "GTD-1000TF gas turbine: wide rear-deck louvre grille and rear exhaust, snorkel tube stowed on turret rear",
+    "Two 200 l drop-tank fuel drums on the hull rear and hinged front mudguard plates"
+  ]
+}

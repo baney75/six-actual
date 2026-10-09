@@ -1,0 +1,19 @@
+id: crack
+purpose: supersonic crack of a round passing near the listener
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- N-wave
+- hiss
+distance_bands:
+- single
+variants: 4
+loop_points: none
+priority: 1
+max_concurrent: 4
+files:
+- game/assets/audio/sfx/crack/crack_v1.wav
+- game/assets/audio/sfx/crack/crack_v2.wav
+- game/assets/audio/sfx/crack/crack_v3.wav
+- game/assets/audio/sfx/crack/crack_v4.wav
+generator: scripts/generate_sfx.py

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "godot": {
+      "command": "npx",
+      "args": ["-y", "@beremaran/godot-agent-loop@3.0.1"],
+      "env": { "GODOT_PATH": "tools/godot/godot" }
+    },
+    "blender": {
+      "command": "uvx",
+      "args": ["mcp-for-blender==2.1.9"]
+    }
+  }
+}

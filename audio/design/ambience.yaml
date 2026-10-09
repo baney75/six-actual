@@ -1,0 +1,21 @@
+id: ambience
+purpose: ambience beds
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- filtered noise bed
+- wrapped events
+distance_bands:
+- single
+variants: 1
+loop_points: whole file (seamless)
+priority: 4
+max_concurrent: 4
+files:
+- game/assets/audio/sfx/ambience/ambience_wind.wav
+- game/assets/audio/sfx/ambience/ambience_birds.wav
+- game/assets/audio/sfx/ambience/ambience_insects.wav
+- game/assets/audio/sfx/ambience/ambience_rain.wav
+- game/assets/audio/sfx/ambience/ambience_fire.wav
+- game/assets/audio/sfx/ambience/ambience_rumble.wav
+generator: scripts/generate_sfx.py

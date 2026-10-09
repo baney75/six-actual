@@ -1,0 +1,73 @@
+{
+  "id": "m1a1",
+  "class": "ground_vehicle",
+  "numbers": [
+    {
+      "name": "length_hull_m",
+      "value": 7.917,
+      "unit": "m",
+      "source": "https://afvdatabase.com/usa/m1abrams.html (citing Hunnicutt, Abrams: A History of the American Main Battle Tank vol. 2, 1990, and Army TMs) - 311.7 in without gun"
+    },
+    {
+      "name": "length_gun_forward_m",
+      "value": 9.83,
+      "unit": "m",
+      "source": "https://man.fas.org/dod-101/sys/land/m1.htm (FAS, M1 vs M1A1 table) - 387 in gun forward"
+    },
+    {
+      "name": "width_over_skirts_m",
+      "value": 3.66,
+      "unit": "m",
+      "source": "https://man.fas.org/dod-101/sys/land/m1.htm (FAS, M1 vs M1A1 table) - 144 in; afvdatabase 144.0 in"
+    },
+    {
+      "name": "height_turret_roof_m",
+      "value": 2.44,
+      "unit": "m",
+      "source": "US Army fact file via https://en.wikipedia.org/wiki/M1_Abrams infobox (8 ft)"
+    },
+    {
+      "name": "height_over_cal50_mg_m",
+      "value": 2.885,
+      "unit": "m",
+      "source": "https://afvdatabase.com/usa/m1abrams.html (citing Hunnicutt, Abrams: A History of the American Main Battle Tank vol. 2, 1990, and Army TMs) - 113.6 in"
+    },
+    {
+      "name": "track_width_m",
+      "value": 0.635,
+      "unit": "m",
+      "source": "https://afvdatabase.com/usa/m1abrams.html (citing Hunnicutt, Abrams: A History of the American Main Battle Tank vol. 2, 1990, and Army TMs) - 25 in"
+    },
+    {
+      "name": "ground_contact_length_m",
+      "value": 4.575,
+      "unit": "m",
+      "source": "https://afvdatabase.com/usa/m1abrams.html (citing Hunnicutt, Abrams: A History of the American Main Battle Tank vol. 2, 1990, and Army TMs) - 180.1 in"
+    },
+    {
+      "name": "ground_clearance_m",
+      "value": 0.432,
+      "unit": "m",
+      "source": "https://afvdatabase.com/usa/m1abrams.html (citing Hunnicutt, Abrams: A History of the American Main Battle Tank vol. 2, 1990, and Army TMs) - 17.0 in"
+    },
+    {
+      "name": "road_wheels_per_side",
+      "value": 7,
+      "unit": "count",
+      "source": "https://afvdatabase.com/usa/m1abrams.html (citing Hunnicutt, Abrams: A History of the American Main Battle Tank vol. 2, 1990, and Army TMs) - 7 dual road wheels, 2 return rollers per side; confirmed in assets_src/refs/m1a1/m1_road_wheel_replacement_323b.jpg"
+    },
+    {
+      "name": "return_rollers_per_side",
+      "value": 2,
+      "unit": "count",
+      "source": "https://afvdatabase.com/usa/m1abrams.html (citing Hunnicutt, Abrams: A History of the American Main Battle Tank vol. 2, 1990, and Army TMs)"
+    }
+  ],
+  "signature_features": [
+    "120 mm M256 smoothbore with bore evacuator and thermal shroud on a flat, wedge-faced turret with special armor",
+    "Long low turret with rear bustle rack and 6-barrel M250 smoke grenade launchers on each turret cheek",
+    "AGT1500 gas turbine: large rear grille louvers and flat rear deck with angled exhaust",
+    "Seven road wheels and two return rollers per side behind full-length armored side skirts with a hinged front skirt section",
+    "Commander cupola with .50 cal M2 and loader M240 mount; GPS (gunner primary sight) doghouse on right turret roof"
+  ]
+}

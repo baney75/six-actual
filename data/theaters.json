@@ -1,0 +1,842 @@
+{
+  "version": 1,
+  "theaters": [
+    {
+      "era": "coldwar",
+      "start": "1989-08",
+      "factions": [
+        {
+          "id": "usa",
+          "side": "NATO",
+          "capital": "frankfurt",
+          "at_war": true
+        },
+        {
+          "id": "frg",
+          "side": "NATO",
+          "capital": "bonn",
+          "at_war": true
+        },
+        {
+          "id": "uk",
+          "side": "NATO",
+          "capital": "hannover",
+          "at_war": true
+        },
+        {
+          "id": "fra",
+          "side": "NATO",
+          "capital": "strasbourg",
+          "at_war": false
+        },
+        {
+          "id": "ussr",
+          "side": "Warsaw Pact",
+          "capital": "berlin_east",
+          "at_war": true
+        },
+        {
+          "id": "gdr",
+          "side": "Warsaw Pact",
+          "capital": "leipzig",
+          "at_war": true
+        },
+        {
+          "id": "pol",
+          "side": "Warsaw Pact",
+          "capital": "szczecin",
+          "at_war": false
+        }
+      ],
+      "provinces": [
+        {
+          "id": "hamburg",
+          "name": "Hamburg",
+          "x": 420,
+          "y": 900,
+          "terrain": "urban",
+          "owner": "frg",
+          "industry": 4,
+          "manpower": 3,
+          "neighbours": [
+            "hannover",
+            "rostock",
+            "bremen"
+          ],
+          "why": "port and industry; BAOR/FRG northern flank"
+        },
+        {
+          "id": "bremen",
+          "name": "Bremen-Oldenburg",
+          "x": 300,
+          "y": 860,
+          "terrain": "open",
+          "owner": "frg",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "hamburg",
+            "hannover",
+            "ruhr"
+          ],
+          "why": "North German Plain"
+        },
+        {
+          "id": "hannover",
+          "name": "Hannover",
+          "x": 430,
+          "y": 760,
+          "terrain": "open",
+          "owner": "uk",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "hamburg",
+            "bremen",
+            "ruhr",
+            "kassel",
+            "magdeburg"
+          ],
+          "why": "I (BR) Corps sector"
+        },
+        {
+          "id": "ruhr",
+          "name": "Ruhr",
+          "x": 200,
+          "y": 680,
+          "terrain": "urban",
+          "owner": "frg",
+          "industry": 5,
+          "manpower": 4,
+          "neighbours": [
+            "bremen",
+            "hannover",
+            "bonn",
+            "kassel"
+          ],
+          "why": "industrial heartland"
+        },
+        {
+          "id": "bonn",
+          "name": "Bonn-Cologne",
+          "x": 180,
+          "y": 560,
+          "terrain": "urban",
+          "owner": "frg",
+          "industry": 3,
+          "manpower": 3,
+          "neighbours": [
+            "ruhr",
+            "frankfurt",
+            "strasbourg"
+          ],
+          "why": "federal capital"
+        },
+        {
+          "id": "kassel",
+          "name": "Kassel",
+          "x": 400,
+          "y": 620,
+          "terrain": "hills",
+          "owner": "frg",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "hannover",
+            "ruhr",
+            "frankfurt",
+            "fulda",
+            "erfurt"
+          ],
+          "why": "Weser uplands"
+        },
+        {
+          "id": "fulda",
+          "name": "Fulda Gap",
+          "x": 450,
+          "y": 520,
+          "terrain": "hills",
+          "owner": "usa",
+          "industry": 1,
+          "manpower": 1,
+          "neighbours": [
+            "kassel",
+            "frankfurt",
+            "nuremberg",
+            "erfurt"
+          ],
+          "why": "the Fulda Gap, V Corps"
+        },
+        {
+          "id": "frankfurt",
+          "name": "Frankfurt",
+          "x": 330,
+          "y": 470,
+          "terrain": "urban",
+          "owner": "usa",
+          "industry": 4,
+          "manpower": 3,
+          "neighbours": [
+            "bonn",
+            "kassel",
+            "fulda",
+            "nuremberg",
+            "strasbourg"
+          ],
+          "why": "Rhein-Main air base and finance"
+        },
+        {
+          "id": "nuremberg",
+          "name": "Nuremberg",
+          "x": 520,
+          "y": 380,
+          "terrain": "forest",
+          "owner": "usa",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "frankfurt",
+            "fulda",
+            "munich",
+            "pilsen",
+            "dresden"
+          ],
+          "why": "VII Corps, Franconian forest"
+        },
+        {
+          "id": "munich",
+          "name": "Munich",
+          "x": 560,
+          "y": 220,
+          "terrain": "hills",
+          "owner": "frg",
+          "industry": 4,
+          "manpower": 3,
+          "neighbours": [
+            "nuremberg",
+            "strasbourg",
+            "pilsen"
+          ],
+          "why": "Bavaria"
+        },
+        {
+          "id": "strasbourg",
+          "name": "Alsace",
+          "x": 200,
+          "y": 330,
+          "terrain": "forest",
+          "owner": "fra",
+          "industry": 3,
+          "manpower": 3,
+          "neighbours": [
+            "bonn",
+            "frankfurt",
+            "munich"
+          ],
+          "why": "French II Corps, Rhine crossing"
+        },
+        {
+          "id": "rostock",
+          "name": "Rostock",
+          "x": 560,
+          "y": 930,
+          "terrain": "open",
+          "owner": "gdr",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "hamburg",
+            "berlin_east",
+            "szczecin"
+          ],
+          "why": "Baltic coast"
+        },
+        {
+          "id": "magdeburg",
+          "name": "Magdeburg",
+          "x": 560,
+          "y": 760,
+          "terrain": "open",
+          "owner": "ussr",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "hannover",
+            "berlin_east",
+            "leipzig"
+          ],
+          "why": "3rd Shock Army"
+        },
+        {
+          "id": "berlin_east",
+          "name": "Berlin (East)",
+          "x": 680,
+          "y": 800,
+          "terrain": "urban",
+          "owner": "ussr",
+          "industry": 4,
+          "manpower": 3,
+          "neighbours": [
+            "rostock",
+            "magdeburg",
+            "leipzig",
+            "szczecin",
+            "dresden"
+          ],
+          "why": "GSFG headquarters, Wünsdorf"
+        },
+        {
+          "id": "erfurt",
+          "name": "Erfurt-Thuringia",
+          "x": 520,
+          "y": 600,
+          "terrain": "forest",
+          "owner": "ussr",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "kassel",
+            "fulda",
+            "leipzig"
+          ],
+          "why": "8th Guards Army"
+        },
+        {
+          "id": "leipzig",
+          "name": "Leipzig-Halle",
+          "x": 620,
+          "y": 650,
+          "terrain": "urban",
+          "owner": "gdr",
+          "industry": 4,
+          "manpower": 3,
+          "neighbours": [
+            "magdeburg",
+            "berlin_east",
+            "erfurt",
+            "dresden"
+          ],
+          "why": "chemical industry"
+        },
+        {
+          "id": "dresden",
+          "name": "Dresden",
+          "x": 720,
+          "y": 560,
+          "terrain": "hills",
+          "owner": "gdr",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "leipzig",
+            "berlin_east",
+            "nuremberg",
+            "pilsen"
+          ],
+          "why": "1st Guards Tank Army"
+        },
+        {
+          "id": "pilsen",
+          "name": "Pilsen-Bohemia",
+          "x": 680,
+          "y": 380,
+          "terrain": "forest",
+          "owner": "ussr",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "dresden",
+            "nuremberg",
+            "munich"
+          ],
+          "why": "Central Group of Forces"
+        },
+        {
+          "id": "szczecin",
+          "name": "Szczecin",
+          "x": 800,
+          "y": 900,
+          "terrain": "open",
+          "owner": "pol",
+          "industry": 2,
+          "manpower": 3,
+          "neighbours": [
+            "rostock",
+            "berlin_east"
+          ],
+          "why": "Polish Front"
+        }
+      ]
+    },
+    {
+      "era": "ww2",
+      "start": "1944-09",
+      "factions": [
+        {
+          "id": "usa",
+          "side": "Allies",
+          "capital": "paris",
+          "at_war": true
+        },
+        {
+          "id": "uk",
+          "side": "Allies",
+          "capital": "brussels",
+          "at_war": true
+        },
+        {
+          "id": "fra",
+          "side": "Allies",
+          "capital": "paris",
+          "at_war": true
+        },
+        {
+          "id": "ger",
+          "side": "Axis",
+          "capital": "berlin",
+          "at_war": true
+        }
+      ],
+      "provinces": [
+        {
+          "id": "antwerp",
+          "name": "Antwerp",
+          "x": 250,
+          "y": 820,
+          "terrain": "urban",
+          "owner": "uk",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "brussels",
+            "arnhem"
+          ],
+          "why": "the port the Allies needed"
+        },
+        {
+          "id": "brussels",
+          "name": "Brussels",
+          "x": 230,
+          "y": 720,
+          "terrain": "urban",
+          "owner": "uk",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "antwerp",
+            "liege",
+            "paris"
+          ],
+          "why": "liberated September 1944"
+        },
+        {
+          "id": "paris",
+          "name": "Paris",
+          "x": 100,
+          "y": 450,
+          "terrain": "urban",
+          "owner": "fra",
+          "industry": 4,
+          "manpower": 3,
+          "neighbours": [
+            "brussels",
+            "metz",
+            "liege"
+          ],
+          "why": "liberated August 1944"
+        },
+        {
+          "id": "liege",
+          "name": "Liège-Ardennes",
+          "x": 330,
+          "y": 640,
+          "terrain": "forest",
+          "owner": "usa",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "brussels",
+            "paris",
+            "aachen",
+            "metz"
+          ],
+          "why": "Ardennes, First Army"
+        },
+        {
+          "id": "metz",
+          "name": "Metz-Lorraine",
+          "x": 300,
+          "y": 420,
+          "terrain": "hills",
+          "owner": "usa",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "paris",
+            "liege",
+            "saar"
+          ],
+          "why": "Third Army, Moselle forts"
+        },
+        {
+          "id": "arnhem",
+          "name": "Arnhem",
+          "x": 380,
+          "y": 860,
+          "terrain": "open",
+          "owner": "ger",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "antwerp",
+            "ruhr"
+          ],
+          "why": "the bridge too far"
+        },
+        {
+          "id": "aachen",
+          "name": "Aachen-Hürtgen",
+          "x": 420,
+          "y": 650,
+          "terrain": "forest",
+          "owner": "ger",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "liege",
+            "ruhr",
+            "cologne"
+          ],
+          "why": "Westwall, Hürtgen forest"
+        },
+        {
+          "id": "saar",
+          "name": "Saar",
+          "x": 420,
+          "y": 420,
+          "terrain": "hills",
+          "owner": "ger",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "metz",
+            "cologne",
+            "frankfurt"
+          ],
+          "why": "Westwall industry"
+        },
+        {
+          "id": "ruhr",
+          "name": "Ruhr",
+          "x": 520,
+          "y": 780,
+          "terrain": "urban",
+          "owner": "ger",
+          "industry": 5,
+          "manpower": 3,
+          "neighbours": [
+            "arnhem",
+            "aachen",
+            "cologne",
+            "berlin"
+          ],
+          "why": "Germany's arsenal"
+        },
+        {
+          "id": "cologne",
+          "name": "Cologne",
+          "x": 500,
+          "y": 640,
+          "terrain": "urban",
+          "owner": "ger",
+          "industry": 3,
+          "manpower": 3,
+          "neighbours": [
+            "aachen",
+            "ruhr",
+            "saar",
+            "frankfurt"
+          ],
+          "why": "the Rhine"
+        },
+        {
+          "id": "frankfurt",
+          "name": "Frankfurt",
+          "x": 560,
+          "y": 480,
+          "terrain": "urban",
+          "owner": "ger",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "saar",
+            "cologne",
+            "berlin"
+          ],
+          "why": "Rhine-Main"
+        },
+        {
+          "id": "berlin",
+          "name": "Berlin",
+          "x": 900,
+          "y": 700,
+          "terrain": "urban",
+          "owner": "ger",
+          "industry": 5,
+          "manpower": 4,
+          "neighbours": [
+            "ruhr",
+            "frankfurt"
+          ],
+          "why": "the Reich capital"
+        }
+      ]
+    },
+    {
+      "era": "modern",
+      "start": "2026-05",
+      "factions": [
+        {
+          "id": "usa",
+          "side": "NATO",
+          "capital": "warsaw",
+          "at_war": true
+        },
+        {
+          "id": "pol",
+          "side": "NATO",
+          "capital": "warsaw",
+          "at_war": true
+        },
+        {
+          "id": "ltu",
+          "side": "NATO",
+          "capital": "vilnius",
+          "at_war": true
+        },
+        {
+          "id": "deu",
+          "side": "NATO",
+          "capital": "berlin",
+          "at_war": false
+        },
+        {
+          "id": "rus",
+          "side": "Russia",
+          "capital": "pskov",
+          "at_war": true
+        },
+        {
+          "id": "blr",
+          "side": "Russia",
+          "capital": "minsk",
+          "at_war": true
+        }
+      ],
+      "provinces": [
+        {
+          "id": "berlin",
+          "name": "Berlin",
+          "x": 80,
+          "y": 600,
+          "terrain": "urban",
+          "owner": "deu",
+          "industry": 5,
+          "manpower": 3,
+          "neighbours": [
+            "warsaw",
+            "gdansk"
+          ],
+          "why": "German rear area"
+        },
+        {
+          "id": "gdansk",
+          "name": "Gdańsk",
+          "x": 300,
+          "y": 820,
+          "terrain": "urban",
+          "owner": "pol",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "berlin",
+            "warsaw",
+            "kaliningrad",
+            "suwalki"
+          ],
+          "why": "Baltic port"
+        },
+        {
+          "id": "warsaw",
+          "name": "Warsaw",
+          "x": 360,
+          "y": 560,
+          "terrain": "urban",
+          "owner": "pol",
+          "industry": 5,
+          "manpower": 4,
+          "neighbours": [
+            "berlin",
+            "gdansk",
+            "suwalki",
+            "bialystok",
+            "brest"
+          ],
+          "why": "Polish capital"
+        },
+        {
+          "id": "suwalki",
+          "name": "Suwałki Gap",
+          "x": 560,
+          "y": 760,
+          "terrain": "forest",
+          "owner": "pol",
+          "industry": 1,
+          "manpower": 1,
+          "neighbours": [
+            "gdansk",
+            "warsaw",
+            "bialystok",
+            "kaliningrad",
+            "vilnius",
+            "grodno"
+          ],
+          "why": "the gap between Kaliningrad and Belarus"
+        },
+        {
+          "id": "bialystok",
+          "name": "Białystok",
+          "x": 520,
+          "y": 600,
+          "terrain": "forest",
+          "owner": "pol",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "warsaw",
+            "suwalki",
+            "grodno",
+            "brest"
+          ],
+          "why": "eastern Poland"
+        },
+        {
+          "id": "vilnius",
+          "name": "Vilnius",
+          "x": 760,
+          "y": 760,
+          "terrain": "urban",
+          "owner": "ltu",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "suwalki",
+            "kaunas",
+            "grodno",
+            "minsk"
+          ],
+          "why": "Lithuanian capital"
+        },
+        {
+          "id": "kaunas",
+          "name": "Kaunas",
+          "x": 680,
+          "y": 860,
+          "terrain": "open",
+          "owner": "ltu",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "vilnius",
+            "kaliningrad",
+            "pskov"
+          ],
+          "why": "NATO eFP brigade"
+        },
+        {
+          "id": "kaliningrad",
+          "name": "Kaliningrad",
+          "x": 470,
+          "y": 880,
+          "terrain": "urban",
+          "owner": "rus",
+          "industry": 3,
+          "manpower": 2,
+          "neighbours": [
+            "gdansk",
+            "suwalki",
+            "kaunas"
+          ],
+          "why": "Russian exclave, 11th Corps"
+        },
+        {
+          "id": "grodno",
+          "name": "Grodno",
+          "x": 680,
+          "y": 640,
+          "terrain": "forest",
+          "owner": "blr",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "suwalki",
+            "bialystok",
+            "vilnius",
+            "minsk",
+            "brest"
+          ],
+          "why": "Belarusian border"
+        },
+        {
+          "id": "brest",
+          "name": "Brest",
+          "x": 600,
+          "y": 460,
+          "terrain": "open",
+          "owner": "blr",
+          "industry": 2,
+          "manpower": 2,
+          "neighbours": [
+            "warsaw",
+            "bialystok",
+            "grodno",
+            "minsk"
+          ],
+          "why": "Brest gate"
+        },
+        {
+          "id": "minsk",
+          "name": "Minsk",
+          "x": 900,
+          "y": 600,
+          "terrain": "urban",
+          "owner": "blr",
+          "industry": 4,
+          "manpower": 3,
+          "neighbours": [
+            "vilnius",
+            "grodno",
+            "brest",
+            "pskov"
+          ],
+          "why": "Belarusian capital"
+        },
+        {
+          "id": "pskov",
+          "name": "Pskov",
+          "x": 950,
+          "y": 900,
+          "terrain": "open",
+          "owner": "rus",
+          "industry": 4,
+          "manpower": 4,
+          "neighbours": [
+            "kaunas",
+            "minsk"
+          ],
+          "why": "76th Guards Air Assault"
+        }
+      ]
+    }
+  ]
+}

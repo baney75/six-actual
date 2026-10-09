@@ -1,0 +1,49 @@
+{
+  "id": "wgerman_town_block_1989",
+  "class": "building_kit",
+  "numbers": [
+    {
+      "name": "clear_room_height_min_m",
+      "value": 2.4,
+      "unit": "m",
+      "source": "Musterbauordnung (MBO) §47(1): Aufenthaltsräume need a clear height of at least 2.40 m"
+    },
+    {
+      "name": "storey_height_typical_m",
+      "value": 2.75,
+      "unit": "m",
+      "source": "Derived: MBO §47(1) 2.40 m clear height plus approx. 0.35 m floor/slab build-up, on the DIN 4172 12.5 cm module (https://www.baunetzwissen.de/glossar/m/massordnung-48043)"
+    },
+    {
+      "name": "roof_pitch_typical_deg",
+      "value": 45,
+      "unit": "deg",
+      "source": "https://www.hausjournal.net/dachneigung-satteldach (German gable roofs typically 35-45 deg; older steep roofs to 60+ deg); consistent with assets_src/refs/wgerman_town_block_1989/ refs"
+    },
+    {
+      "name": "building_footprint_short_side_median_m",
+      "value": 9.3,
+      "unit": "m",
+      "source": "Measured from OpenStreetMap building footprints (ODbL) within 300 m of Am Alten Rathaus, Ober-Erlenbach, Overpass query 2026-10-08: 494 buildings >50 m2, IQR 7.7-11.4 m"
+    },
+    {
+      "name": "building_footprint_long_side_median_m",
+      "value": 12.9,
+      "unit": "m",
+      "source": "Same OSM measurement, IQR 11.0-16.0 m"
+    },
+    {
+      "name": "plot_width_typical_m",
+      "value": 16,
+      "unit": "m",
+      "source": "Derived estimate: footprint long side 12.9 m (OSM, above) plus one 3 m minimum boundary distance (Hessische Bauordnung §6 minimum Abstandsfläche 3 m); old-core Hofreite plots built to one boundary. Needs a cadastral check."
+    }
+  ],
+  "signature_features": [
+    "Steep red clay-tile gable roofs (35-60 deg) with dormers, plus slate-hung gables and mansard roofs on 19th-century houses",
+    "Half-timbered (Fachwerk) frontages with exposed red/brown timber framing over a sandstone or plinth ground floor",
+    "Plastered postwar 2-3 storey houses in pale render with shutters, small windows in regular bays",
+    "Hofreite courtyard farmsteads with large arched sandstone gateways (Hoftor) set between houses on the street line",
+    "1960s-80s infill: flat-fronted commercial buildings with balconies, shop windows and a Gasthaus sign on the corner"
+  ]
+}

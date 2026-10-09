@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# A commit that touches verify/ must start with "VERIFY:", stage DECISIONS.md,
+# and stage nothing outside verify/ and DECISIONS.md (contract section G).
+set -euo pipefail
+msg_file="$1"
+staged="$(git diff --cached --name-only)"
+if ! grep -q '^verify/' <<<"$staged"; then
+  exit 0
+fi
+fail() { echo "commit-msg: $1" >&2; exit 1; }
+head -1 "$msg_file" | grep -q '^VERIFY:' || fail "changes to verify/ need a message starting with 'VERIFY:'."
+grep -qx 'DECISIONS.md' <<<"$staged" || fail "changes to verify/ need a DECISIONS.md entry in the same commit."
+other="$(grep -v -e '^verify/' -e '^DECISIONS.md$' <<<"$staged" || true)"
+[[ -z "$other" ]] || fail "verify/ changes go in their own commit. Unstage: ${other//$'\n'/ }"

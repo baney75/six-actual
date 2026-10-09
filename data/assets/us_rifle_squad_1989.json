@@ -1,0 +1,49 @@
+{
+  "id": "us_rifle_squad_1989",
+  "class": "infantry_kit",
+  "numbers": [
+    {
+      "name": "helmet_type",
+      "value": "PASGT (Kevlar, 19 plies)",
+      "unit": "type",
+      "source": "https://en.wikipedia.org/wiki/Personnel_Armor_System_for_Ground_Troops (in US service from 1983)"
+    },
+    {
+      "name": "helmet_mass_kg",
+      "value": 1.41,
+      "unit": "kg",
+      "source": "https://en.wikipedia.org/wiki/Personnel_Armor_System_for_Ground_Troops (1.41 kg smallest to 1.91 kg largest)"
+    },
+    {
+      "name": "vest_mass_kg",
+      "value": 4.1,
+      "unit": "kg",
+      "source": "https://man.fas.org/dod-101/sys/land/pasgtv.htm via PASGT article (approx. 9 lb)"
+    },
+    {
+      "name": "rifle_m16a2_length_m",
+      "value": 1.007,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/M16_rifle infobox (M16A2 39.63 in)"
+    },
+    {
+      "name": "rifle_m16a2_barrel_length_m",
+      "value": 0.508,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/M16_rifle infobox (20 in)"
+    },
+    {
+      "name": "rifle_m16a2_mass_loaded_kg",
+      "value": 4.0,
+      "unit": "kg",
+      "source": "https://en.wikipedia.org/wiki/M16_rifle (M16A2 8.8 lb with 30-round magazine)"
+    }
+  ],
+  "signature_features": [
+    "M81 woodland Battle Dress Uniform with sleeves down and trousers bloused into black leather boots",
+    "PASGT Kevlar helmet in woodland cloth cover, often with band and foliage; PASGT vest in woodland",
+    "ALICE LC-2 webbing: pistol belt, Y-suspenders, two ammo pouches at front, canteens and E-tool at hips, ALICE pack",
+    "M16A2 rifle (some with M203 grenade launcher), carried at the ready with the carry-handle sight",
+    "AN/PRC-77 radio on an ALICE frame with long whip antenna; M72 LAW or AT4 slung across the back"
+  ]
+}

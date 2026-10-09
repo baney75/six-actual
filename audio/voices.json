@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "engine": "Qwen3-TTS-12Hz-1.7B VoiceDesign (local, D020)",
+  "speakers": {
+    "xo": {
+      "role": "Executive officer",
+      "names": {
+        "ww2": "Major Thomas Whitlock",
+        "coldwar": "Major Daniel Hale",
+        "modern": "Major Andrew Brennan"
+      },
+      "mode": "design",
+      "instruction": "American male Army officer in his forties, calm and clipped, steady mid-low voice, speaking over a military radio net, confident, unhurried",
+      "seed": 17
+    },
+    "army1": {
+      "role": "1st maneuver commander",
+      "names": {
+        "ww2": "Captain Joseph Kowalski",
+        "coldwar": "Captain Raymond Ortiz",
+        "modern": "Captain Marcus Reed"
+      },
+      "mode": "design",
+      "instruction": "American male infantry officer in his thirties, brisk and energetic, mid voice, slightly breathless over a field radio",
+      "seed": 21
+    },
+    "army2": {
+      "role": "2nd maneuver commander",
+      "names": {
+        "ww2": "Captain Henry Maddox",
+        "coldwar": "Captain Ellen Shaw",
+        "modern": "Captain Laura Kim"
+      },
+      "mode": "design",
+      "instruction": "American female infantry officer in her thirties, firm and level, clear mid voice over a field radio",
+      "seed": 22
+    },
+    "arty1": {
+      "role": "1st fires commander",
+      "names": {
+        "ww2": "Major Walter Briggs",
+        "coldwar": "Major Frank Dawson",
+        "modern": "Major Samuel Price"
+      },
+      "mode": "design",
+      "instruction": "American male artillery officer in his fifties, gravelly low voice, methodical and precise over the radio",
+      "seed": 23
+    },
+    "arty2": {
+      "role": "2nd fires commander",
+      "names": {
+        "ww2": "Lieutenant Paul Hendricks",
+        "coldwar": "Lieutenant Kevin Moore",
+        "modern": "Lieutenant Jason Park"
+      },
+      "mode": "design",
+      "instruction": "American male artillery officer in his twenties, quick and exact, light tenor over the radio",
+      "seed": 24
+    },
+    "air1": {
+      "role": "1st air commander",
+      "names": {
+        "ww2": "Captain Robert Lane",
+        "coldwar": "Major Glen Carver",
+        "modern": "Major Tyler Grant"
+      },
+      "mode": "design",
+      "instruction": "American male pilot in his thirties, cool and laconic, relaxed drawl over aircraft radio",
+      "seed": 25
+    },
+    "air2": {
+      "role": "2nd air commander",
+      "names": {
+        "ww2": "Lieutenant Edward Hayes",
+        "coldwar": "Captain Rachel Turner",
+        "modern": "Captain Megan Ross"
+      },
+      "mode": "design",
+      "instruction": "American female pilot in her thirties, crisp and fast, bright clear voice over aircraft radio",
+      "seed": 26
+    },
+    "armor": {
+      "role": "Armor commander",
+      "names": {
+        "ww2": "Captain William Archer",
+        "coldwar": "Major Curtis Boyd",
+        "modern": "Major Nathan Cole"
+      },
+      "mode": "design",
+      "instruction": "American male tank officer in his forties, deep confident voice, loud over engine noise on the radio",
+      "seed": 27
+    },
+    "logistics": {
+      "role": "Logistics commander",
+      "names": {
+        "ww2": "Captain George Fuller",
+        "coldwar": "Major Harold Webb",
+        "modern": "Major Steven Barnes"
+      },
+      "mode": "design",
+      "instruction": "American male supply officer in his fifties, patient and practical, warm mid voice over the radio",
+      "seed": 28
+    }
+  }
+}

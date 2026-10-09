@@ -1,0 +1,31 @@
+id: mg
+purpose: machine-gun burst (5 rounds)
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- transient cracks
+- body thumps
+- 'mechanics: bolt clicks'
+- tail by distance
+distance_bands:
+- far
+- mid
+- near
+variants: 4
+loop_points: none
+priority: 2
+max_concurrent: 6
+files:
+- game/assets/audio/sfx/mg/mg_near_v1.wav
+- game/assets/audio/sfx/mg/mg_mid_v1.wav
+- game/assets/audio/sfx/mg/mg_far_v1.wav
+- game/assets/audio/sfx/mg/mg_near_v2.wav
+- game/assets/audio/sfx/mg/mg_mid_v2.wav
+- game/assets/audio/sfx/mg/mg_far_v2.wav
+- game/assets/audio/sfx/mg/mg_near_v3.wav
+- game/assets/audio/sfx/mg/mg_mid_v3.wav
+- game/assets/audio/sfx/mg/mg_far_v3.wav
+- game/assets/audio/sfx/mg/mg_near_v4.wav
+- game/assets/audio/sfx/mg/mg_mid_v4.wav
+- game/assets/audio/sfx/mg/mg_far_v4.wav
+generator: scripts/generate_sfx.py

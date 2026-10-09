@@ -2,7 +2,7 @@
 """Build roster GLBs in Blender and refuse a model whose silhouette is still a box.
 
 Run:
-  blender --background --factory-startup --python scripts/build_models.py
+  tools/blender/blender --background --factory-startup --python scripts/build_models.py
 """
 
 import json

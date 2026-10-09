@@ -1,0 +1,17 @@
+id: squelch
+purpose: radio squelch tail per era
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- noise or chirp
+distance_bands:
+- single
+variants: 1
+loop_points: none
+priority: 2
+max_concurrent: 1
+files:
+- game/assets/audio/sfx/squelch/squelch_ww2.wav
+- game/assets/audio/sfx/squelch/squelch_coldwar.wav
+- game/assets/audio/sfx/squelch/squelch_modern.wav
+generator: scripts/generate_sfx.py

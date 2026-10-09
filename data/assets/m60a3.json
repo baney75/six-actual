@@ -1,0 +1,61 @@
+{
+  "id": "m60a3",
+  "class": "ground_vehicle",
+  "numbers": [
+    {
+      "name": "length_hull_m",
+      "value": 6.946,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/M60_tank (spec table citing Foss 2005, Tanks and Combat Vehicles of the Modern Era, p. 166, and Jane's Tank Recognition Guide 1996) - 22 ft 9.5 in"
+    },
+    {
+      "name": "length_gun_forward_m",
+      "value": 9.309,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/M60_tank (spec table citing Foss 2005, Tanks and Combat Vehicles of the Modern Era, p. 166, and Jane's Tank Recognition Guide 1996) - 30 ft 6.5 in"
+    },
+    {
+      "name": "width_m",
+      "value": 3.631,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/M60_tank (spec table citing Foss 2005, Tanks and Combat Vehicles of the Modern Era, p. 166, and Jane's Tank Recognition Guide 1996) - 11 ft 11.0 in"
+    },
+    {
+      "name": "height_over_cupola_m",
+      "value": 3.27,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/M60_tank (spec table citing Foss 2005, Tanks and Combat Vehicles of the Modern Era, p. 166, and Jane's Tank Recognition Guide 1996) - 10 ft 9 in"
+    },
+    {
+      "name": "ground_clearance_m",
+      "value": 0.463,
+      "unit": "m",
+      "source": "https://en.wikipedia.org/wiki/M60_tank (spec table citing Foss 2005, Tanks and Combat Vehicles of the Modern Era, p. 166, and Jane's Tank Recognition Guide 1996) - 1 ft 6.2 in"
+    },
+    {
+      "name": "track_width_m",
+      "value": 0.711,
+      "unit": "m",
+      "source": "https://man.fas.org/dod-101/sys/land/m60.htm (FAS M60 series: track width 28 in)"
+    },
+    {
+      "name": "road_wheels_per_side",
+      "value": 6,
+      "unit": "count",
+      "source": "https://www.hmdb.org/m.asp?m=12572 (M60A3 marker text: six road wheels per side, torsion bar); confirmed in assets_src/refs/m60a3/left_side_view_of_m60a3_tank_during_reforger_82_8d18.jpg"
+    },
+    {
+      "name": "return_rollers_per_side",
+      "value": 3,
+      "unit": "count",
+      "source": "Counted in assets_src/refs/m60a3/left_side_view_of_m60a3_tank_during_reforger_82_8d18.jpg and m_60a3_tank_johnny_ro_veterans_memorial_park_leo_0565.jpg"
+    }
+  ],
+  "signature_features": [
+    "Tall needle-nose cast turret with M19 commander cupola mounting the M85 .50 cal",
+    "105 mm M68 rifled gun with thermal sleeve and bore evacuator; smoke grenade launchers on turret sides (A3)",
+    "Wind sensor mast on turret rear roof and TTS thermal sight housing on A3 TTS (variant difference vs M60A1)",
+    "Six road wheels and three return rollers per side, no side skirts, large front idler and rear sprocket",
+    "Rear deck with louvred grille doors and big rear exhaust grilles for the AVDS-1790 diesel; turret bustle rack with stowage"
+  ]
+}

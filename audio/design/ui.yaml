@@ -1,0 +1,15 @@
+id: ui
+purpose: interface click
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- tone blip
+distance_bands:
+- single
+variants: 1
+loop_points: none
+priority: 1
+max_concurrent: 2
+files:
+- game/assets/audio/sfx/ui/ui_click.wav
+generator: scripts/generate_sfx.py

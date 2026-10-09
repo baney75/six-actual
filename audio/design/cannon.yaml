@@ -1,0 +1,32 @@
+id: cannon
+purpose: tank and anti-tank gun report
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- transient crack
+- body boom
+- low end rumble
+- 'mechanics: breech clank'
+- tail by distance
+distance_bands:
+- far
+- mid
+- near
+variants: 4
+loop_points: none
+priority: 1
+max_concurrent: 4
+files:
+- game/assets/audio/sfx/cannon/cannon_near_v1.wav
+- game/assets/audio/sfx/cannon/cannon_mid_v1.wav
+- game/assets/audio/sfx/cannon/cannon_far_v1.wav
+- game/assets/audio/sfx/cannon/cannon_near_v2.wav
+- game/assets/audio/sfx/cannon/cannon_mid_v2.wav
+- game/assets/audio/sfx/cannon/cannon_far_v2.wav
+- game/assets/audio/sfx/cannon/cannon_near_v3.wav
+- game/assets/audio/sfx/cannon/cannon_mid_v3.wav
+- game/assets/audio/sfx/cannon/cannon_far_v3.wav
+- game/assets/audio/sfx/cannon/cannon_near_v4.wav
+- game/assets/audio/sfx/cannon/cannon_mid_v4.wav
+- game/assets/audio/sfx/cannon/cannon_far_v4.wav
+generator: scripts/generate_sfx.py

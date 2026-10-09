@@ -1,0 +1,30 @@
+id: footstep
+purpose: infantry footfalls per surface (dirt, grass, gravel, concrete)
+references: 'none: procedural synthesis from first principles (D020); no look-only
+  listening references used'
+layers:
+- surface layer (thud, swish, grains or tap)
+distance_bands:
+- single
+variants: 4
+loop_points: none
+priority: 4
+max_concurrent: 12
+files:
+- game/assets/audio/sfx/footstep/footstep_dirt_v1.wav
+- game/assets/audio/sfx/footstep/footstep_dirt_v2.wav
+- game/assets/audio/sfx/footstep/footstep_dirt_v3.wav
+- game/assets/audio/sfx/footstep/footstep_dirt_v4.wav
+- game/assets/audio/sfx/footstep/footstep_grass_v1.wav
+- game/assets/audio/sfx/footstep/footstep_grass_v2.wav
+- game/assets/audio/sfx/footstep/footstep_grass_v3.wav
+- game/assets/audio/sfx/footstep/footstep_grass_v4.wav
+- game/assets/audio/sfx/footstep/footstep_gravel_v1.wav
+- game/assets/audio/sfx/footstep/footstep_gravel_v2.wav
+- game/assets/audio/sfx/footstep/footstep_gravel_v3.wav
+- game/assets/audio/sfx/footstep/footstep_gravel_v4.wav
+- game/assets/audio/sfx/footstep/footstep_concrete_v1.wav
+- game/assets/audio/sfx/footstep/footstep_concrete_v2.wav
+- game/assets/audio/sfx/footstep/footstep_concrete_v3.wav
+- game/assets/audio/sfx/footstep/footstep_concrete_v4.wav
+generator: scripts/generate_sfx.py

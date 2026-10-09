@@ -8,9 +8,12 @@ cd "$ROOT"
 # shellcheck disable=SC1091
 source tools/versions.env
 
+# Blender is not here: the pinned tarball goes to tools/blender/ (below), so
+# `yay -Syu` cannot change the asset build. GPU drivers are never swapped.
 SYSTEM_PACKAGES=(
-  git git-lfs base-devel blender python uv ffmpeg sox imagemagick
-  vulkan-tools mesa-utils fastfetch grim slurp jq unzip p7zip
+  git git-lfs base-devel python uv ffmpeg sox imagemagick jq unzip p7zip
+  vulkan-tools mesa-utils fastfetch grim slurp wl-clipboard libxkbcommon-x11
+  noto-fonts openal cage
 )
 
 echo "System packages (one sudo prompt, run by the user):"
@@ -66,7 +69,22 @@ if [[ ! -d "${TEMPLATE_DIR}" ]]; then
   rm -rf "${tmp}"
 fi
 
+BLENDER_XZ="tools/cache/${BLENDER_TARBALL}"
+if [[ ! -f "${BLENDER_XZ}" ]]; then
+  curl -fL --retry 3 -o "${BLENDER_XZ}" "${BLENDER_URL}"
+fi
+echo "${BLENDER_SHA256}  ${BLENDER_XZ}" | sha256sum -c -
+if [[ "$(tools/blender/blender --version 2>/dev/null | head -1)" != "Blender ${BLENDER_VERSION}"* ]]; then
+  rm -rf tools/blender tools/blender-unpacked
+  mkdir -p tools/blender-unpacked
+  tar -xJf "${BLENDER_XZ}" -C tools/blender-unpacked
+  mv tools/blender-unpacked/blender-"${BLENDER_VERSION}"-linux-x64 tools/blender
+  rm -rf tools/blender-unpacked
+fi
+
+git config core.hooksPath scripts/githooks
 python3 scripts/generate_catalog.py
 echo "bootstrap complete"
 tools/godot/godot --version
+tools/blender/blender --version | head -1
 mise exec -- dotnet --version
