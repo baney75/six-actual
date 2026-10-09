@@ -13,6 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\sim\SixActual.Sim.csproj" />
+    <ProjectReference Include="..\sim\Headless\SixActual.Headless.csproj" />
     <ProjectReference Include="..\analyzers\SixActual.Analyzers.csproj" />
   </ItemGroup>
 </Project>

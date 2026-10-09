@@ -100,4 +100,21 @@ public class CampaignTests
         Assert.Equal(new[] { 0, 0, 0 }, column);
         Assert.Equal(0, Collapse.Step(column));
     }
+
+    [Fact]
+    public void Campaign_state_survives_save_and_load()
+    {
+        // CMD-08: XP and wounds persist through a save/load round trip, and play continues identically.
+        var a = Campaign.Start(1);
+        Campaign.ApplyResult(a, playerWon: true);
+        Campaign.ApplyResult(a, playerWon: false);
+        var json = Campaign.Save(a);
+        var b = Campaign.Load(json);
+        Assert.Equal(json, Campaign.Save(b));
+        Assert.Equal(12, b.Xp);
+        Assert.Equal(1, b.Wounded);
+        Campaign.ApplyResult(a, playerWon: true);
+        Campaign.ApplyResult(b, playerWon: true);
+        Assert.Equal(Campaign.Save(a), Campaign.Save(b));
+    }
 }

@@ -21,6 +21,13 @@ public static class Campaign
         public int Wounded;
     }
 
+    /// <summary>CMD-08: the campaign state (XP, wounds) saved and loaded as JSON.</summary>
+    public static string Save(State state) => System.Text.Json.JsonSerializer.Serialize(state, JsonOptions);
+
+    public static State Load(string json) => System.Text.Json.JsonSerializer.Deserialize<State>(json, JsonOptions)!;
+
+    static readonly System.Text.Json.JsonSerializerOptions JsonOptions = new() { IncludeFields = true };
+
     public static State Start(int era)
     {
         if (era < 0 || era >= Eras.Length)

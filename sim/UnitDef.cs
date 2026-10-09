@@ -60,6 +60,8 @@ public struct UnitDef
 
     public const int KindSupply = 7;
 
+    public const int KindCommand = 8;
+
     public bool IsAir => Kind == KindAir;
 
     public static int ParseKind(string kind) => kind switch
@@ -71,6 +73,7 @@ public struct UnitDef
         "aa" => KindAa,
         "air" => KindAir,
         "supply" => KindSupply,
+        "command" => KindCommand,
         _ => throw new InvalidDataException($"Unknown unit kind {kind}."),
     };
 }
