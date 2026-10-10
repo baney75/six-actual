@@ -18,6 +18,17 @@ public partial class SkirmishView : Node3D
     /// <summary>The live battle view (G13 helpers need a unit's screen position).</summary>
     public static SkirmishView? Current;
 
+    /// <summary>The local player's slot: 0 offline, the LAN slot in a network battle (NET-01).</summary>
+    int _me;
+
+    bool IsFriend(int player) => player == _me || _w.Players[player].Team == _w.Players[_me].Team;
+
+    public int UnitCount => _w.Units.Count(u => u.Alive != 0);
+
+    public long SimTick => _w.Tick;
+
+    public Camera3D ViewCamera => _camera;
+
     bool _logSeats;
     Radio _radio = null!;
     MusicDirector _music = null!;
@@ -70,15 +81,26 @@ public partial class SkirmishView : Node3D
             Weather = GameSession.Weather,
             FieldRequests = GameSession.FieldRequests,
             StartSp = GameSession.StartSp,
+            Map = GameSession.Map,
         };
-        _w = Skirmish.Create(GameData.Data, _rules, GameSession.Seed, GameSession.PlayerDeck, GameSession.EnemyDeck, xo0: false, xo1: true, opt, DeckBuilderScreen.Load());
+        if (GameSession.Peer is { } peer)
+        {
+            _w = peer.World;
+            _me = peer.Self;
+            TicksPerFrame = 0;
+        }
+        else
+        {
+            _w = Skirmish.Create(GameData.Data, _rules, GameSession.Seed, GameSession.PlayerDeck, GameSession.EnemyDeck, xo0: GameSession.PerfAllAi, xo1: true, opt, DeckBuilderScreen.Load());
+        }
+
         BuildScene();
         BuildHud();
         _objOwner = _w.Objectives.Select(o => o.Owner).ToArray();
         var seats = new List<(string, object)>();
         for (var r = 1; r < Command.SeatNames.Length; r++)
         {
-            var st = _w.Seats[Command.SeatIndex(0, r)];
+            var st = _w.Seats[Command.SeatIndex(_me, r)];
             seats.Add((Radio.Speakers[r], $"{_radio.CommanderName(Radio.Speakers[r])}, {Radio.Trait(st.Aggression, st.CasualtyTolerance)}"));
         }
 
@@ -86,9 +108,9 @@ public partial class SkirmishView : Node3D
         UxLog.Event("screen", ("name", "battle"));
         // Options as the sim world holds them (read back, not echoed from the menu).
         UxLog.Event("battle_started", ("deck", GameSession.PlayerDeck), ("enemy", GameSession.EnemyDeck), ("seed", (long)GameSession.Seed), ("palette", GameSettings.Palettes[GameSettings.Palette]),
-            ("players", _w.Players.Length), ("team0", _w.Players.Count(p => p.Team == 0)), ("start_dp", _w.Players[0].Dp), ("income", BattleRules.IncomeProfiles[_w.Players[0].Profile]),
+            ("players", _w.Players.Length), ("team0", _w.Players.Count(p => p.Team == 0)), ("start_dp", _w.Players[_me].Dp), ("income", BattleRules.IncomeProfiles[_w.Players[_me].Profile]),
             ("victory", _w.VictoryType == 1 ? "annihilation" : "conquest"), ("time_of_day", new[] { "dawn", "day", "dusk", "night" }[_w.TimeOfDay]), ("weather", BattleRules.WeatherNames[_w.Weather]), ("air_grounded", _w.AirGrounded),
-            ("ai_xos", _w.XoActive.Count(x => x != 0)));
+            ("ai_xos", _w.XoActive.Count(x => x != 0)), ("net", GameSession.Peer is null ? "offline" : GameSession.Peer.IsHost ? "host" : "client"), ("slot", _me), ("map", GameSession.Map ?? "generated"));
     }
 
     void BuildScene()
@@ -133,8 +155,15 @@ public partial class SkirmishView : Node3D
         top.AddChild(row);
         Ui.Button(row, "TakeControl", "Take control (T)", TakeControl);
         Ui.Button(row, "ReturnControl", "Return (G)", ReturnControl);
-        Ui.Button(row, "Pause", "Pause", () => { _paused = !_paused; UxLog.Event("pause", ("paused", _paused)); });
-        Ui.Button(row, "Faster", "Speed x8", () => TicksPerFrame = TicksPerFrame == 0 ? 8 : 0);
+        Ui.Button(row, "Pause", "Pause", () =>
+        {
+            if (GameSession.Peer is null)
+            {
+                _paused = !_paused;
+                UxLog.Event("pause", ("paused", _paused));
+            }
+        });
+        Ui.Button(row, "Faster", "Speed x8", () => TicksPerFrame = TicksPerFrame == 0 && GameSession.Peer is null ? 8 : 0);
         Ui.Button(row, "JumpToAlert", "Latest alert (Home)", JumpToAlert);
         Ui.Button(row, "Surrender", "Surrender", () => { UxLog.Event("surrendered", ("tick", _w.Tick)); Finish(surrendered: true); });
         // CMD-01/02 commander panel: arm a seat, then drag a rectangle on the map to assign every friendly ground unit
@@ -144,7 +173,7 @@ public partial class SkirmishView : Node3D
         seats.AddChild(new Label { Text = "Commanders (paint a sector)" });
         for (var role = 1; role < Command.SeatNames.Length; role++)
         {
-            var seat = Command.SeatIndex(0, role);
+            var seat = Command.SeatIndex(_me, role);
             _seatButtons.Add(Ui.Button(seats, $"Paint_{Command.SeatNames[role]}", Command.SeatNames[role], () => ArmPaint(seat)));
         }
 
@@ -164,7 +193,7 @@ public partial class SkirmishView : Node3D
         var support = new VBoxContainer { Name = "Support", Position = new Vector2(1080, 330) };
         layer.AddChild(support);
         support.AddChild(new Label { Text = "Support (SP)" });
-        var side = _w.Decks[_w.Players[0].Deck].Side;
+        var side = _w.Decks[_w.Players[_me].Deck].Side;
         var shown = 0;
         for (var i = 0; i < _w.SupportDefs.Length && shown < 6; i++)
         {
@@ -176,7 +205,7 @@ public partial class SkirmishView : Node3D
                 {
                     _supportArmed = option;
                     _fireArmed = false;
-                    UxLog.Event("support_armed", ("option", _w.SupportDefs[option].Id), ("sp", _w.Players[0].Sp), ("cost", _w.SupportDefs[option].SpCost));
+                    UxLog.Event("support_armed", ("option", _w.SupportDefs[option].Id), ("sp", _w.Players[_me].Sp), ("cost", _w.SupportDefs[option].SpCost));
                 });
                 shown++;
             }
@@ -211,7 +240,7 @@ public partial class SkirmishView : Node3D
         layer.AddChild(cardScroll);
         _cards = new HBoxContainer { MouseFilter = Control.MouseFilterEnum.Ignore };
         cardScroll.AddChild(_cards);
-        var deck = _w.Decks[_w.Players[0].Deck];
+        var deck = _w.Decks[_w.Players[_me].Deck];
         for (var c = 0; c < deck.Cards.Length; c++)
         {
             var card = c;
@@ -219,7 +248,7 @@ public partial class SkirmishView : Node3D
             var info = CardInfo.Of(def, _w.Weapons);
             var panel = new VBoxContainer { Name = $"CardPanel_{c}", CustomMinimumSize = new Vector2(150, 0), MouseFilter = Control.MouseFilterEnum.Ignore };
             _cards.AddChild(panel);
-            var b = Ui.Button(panel, $"Card_{c}_{KindName(def.Kind)}_{(def.IsAir ? "air" : "ground")}", string.Empty, () => _pending.Add(new UnitOrder { Kind = UnitOrder.Deploy, Player = 0, Card = card }));
+            var b = Ui.Button(panel, $"Card_{c}_{KindName(def.Kind)}_{(def.IsAir ? "air" : "ground")}", string.Empty, () => _pending.Add(new UnitOrder { Kind = UnitOrder.Deploy, Player = _me, Card = card }));
             _cardButtons.Add(b);
             panel.AddChild(new Label { Name = $"CardRole_{c}", Text = $"{info.Icon} {info.Role}" });
             panel.AddChild(new ProgressBar { Name = $"CardRange_{c}", MaxValue = CardInfo.RangeScaleM, Value = info.RangeM, ShowPercentage = false, CustomMinimumSize = new Vector2(140, 6), MouseFilter = Control.MouseFilterEnum.Ignore });
@@ -247,7 +276,7 @@ public partial class SkirmishView : Node3D
             var choice = i;
             var tf = _w.FieldRequestDefs[offers[i]];
             var units = string.Join(", ", tf.Units.Select(u => $"{u.Count}x {_w.Defs[u.Unit].Id}"));
-            Ui.Button(_offers, $"Offer_{i}", $"{tf.Id}: {units}", () => _pending.Add(new UnitOrder { Kind = UnitOrder.FieldRequest, Player = 0, Card = choice }));
+            Ui.Button(_offers, $"Offer_{i}", $"{tf.Id}: {units}", () => _pending.Add(new UnitOrder { Kind = UnitOrder.FieldRequest, Player = _me, Card = choice }));
         }
 
         _offers.Visible = true;
@@ -292,7 +321,7 @@ public partial class SkirmishView : Node3D
             ref readonly var u = ref _w.Units[i];
             var x = ToFloat(u.X);
             var z = ToFloat(u.Y);
-            if (u.Player == 0 && u.Alive != 0 && !_w.Defs[u.Def].IsAir && x >= x0 && x <= x1 && z >= z0 && z <= z1)
+            if (u.Player == _me && u.Alive != 0 && !_w.Defs[u.Def].IsAir && x >= x0 && x <= x1 && z >= z0 && z <= z1)
             {
                 _pending.Add(new UnitOrder { Kind = UnitOrder.AssignSeat, UnitId = u.Id, Card = _paintSeat });
                 n++;
@@ -313,7 +342,7 @@ public partial class SkirmishView : Node3D
         {
             ref readonly var u = ref _w.Units[i];
             var d = new Vector2(ToFloat(u.X) - g.X, ToFloat(u.Y) - g.Z).LengthSquared();
-            if (u.Player == 0 && u.Alive != 0 && d < bestD)
+            if (u.Player == _me && u.Alive != 0 && d < bestD)
             {
                 best = i;
                 bestD = d;
@@ -341,14 +370,14 @@ public partial class SkirmishView : Node3D
 
     void TakeControl()
     {
-        var air = System.Array.FindIndex(_w.Units, u => u.Player == 0 && u.Alive != 0 && _w.Defs[u.Def].IsAir);
+        var air = System.Array.FindIndex(_w.Units, u => u.Player == _me && u.Alive != 0 && _w.Defs[u.Def].IsAir);
         if (air < 0)
         {
             UxLog.Event("take_control_refused", ("reason", "no aircraft"));
             return;
         }
 
-        _pending.Add(new UnitOrder { Kind = UnitOrder.TakeControl, UnitId = _w.Units[air].Id, Player = 0 });
+        _pending.Add(new UnitOrder { Kind = UnitOrder.TakeControl, UnitId = _w.Units[air].Id, Player = _me });
         UxLog.Event("take_control_ordered", ("unit", _w.Units[air].Id), ("tick", _w.Tick));
     }
 
@@ -356,7 +385,7 @@ public partial class SkirmishView : Node3D
     {
         if (_flown >= 0)
         {
-            _pending.Add(new UnitOrder { Kind = UnitOrder.Release, UnitId = _flown, Player = 0 });
+            _pending.Add(new UnitOrder { Kind = UnitOrder.Release, UnitId = _flown, Player = _me });
         }
     }
 
@@ -385,7 +414,7 @@ public partial class SkirmishView : Node3D
                 var g = Ground(mb.Position);
                 if (_supportArmed >= 0)
                 {
-                    _pending.Add(new UnitOrder { Kind = UnitOrder.Support, Player = 0, Card = _supportArmed, X = (int)g.X, Y = (int)g.Z });
+                    _pending.Add(new UnitOrder { Kind = UnitOrder.Support, Player = _me, Card = _supportArmed, X = (int)g.X, Y = (int)g.Z });
                 }
                 else if (_selected >= 0)
                 {
@@ -418,7 +447,7 @@ public partial class SkirmishView : Node3D
         {
             ReturnControl();
         }
-        else if (e.IsActionPressed("pause"))
+        else if (e.IsActionPressed("pause") && GameSession.Peer is null)
         {
             _paused = !_paused;
             UxLog.Event("pause", ("paused", _paused));
@@ -436,7 +465,11 @@ public partial class SkirmishView : Node3D
 
     public override void _Process(double delta)
     {
-        if (!_over && !_paused)
+        if (GameSession.Peer is { } peer)
+        {
+            NetProcess(peer, delta);
+        }
+        else if (!_over && !_paused)
         {
             var steps = TicksPerFrame;
             if (steps == 0)
@@ -454,6 +487,16 @@ public partial class SkirmishView : Node3D
                     _fogDue = true;
                 }
 
+                // PERF capture: an off-map barrage on the centre every 30 s for artillery load.
+                if (GameSession.PerfAllAi && _w.Tick % 600 == 0 && _w.Tick > 0)
+                {
+                    var opt2 = System.Array.FindIndex(_w.SupportDefs, d => d.Era == _w.Era && d.Side == _w.Decks[_w.Players[_me].Deck].Side && d.Type == SupportDef.Barrage);
+                    if (opt2 >= 0)
+                    {
+                        _pending.Add(new UnitOrder { Kind = UnitOrder.Support, Player = _me, Card = opt2, X = 4000, Y = 4000 });
+                    }
+                }
+
                 FlyStick();
                 // The sim applies an order only on the tick it names, so pending input is stamped with the current tick.
                 BattleWorld.Step(_w, _rules, _pending.Select(o => o with { Tick = _w.Tick }).ToArray());
@@ -467,6 +510,73 @@ public partial class SkirmishView : Node3D
             }
         }
 
+        AfterFrame(delta);
+    }
+
+    /// <summary>NET-01 LAN battle: the peer owns the world. Local orders go to the peer, which executes them InputDelay
+    /// ticks later on every machine; a tick is stepped once every player's inputs for it have arrived (real time, no
+    /// speed-up or pause online: the others would stall).</summary>
+    void NetProcess(SixActual.Sim.Net.LockstepPeer peer, double delta)
+    {
+        var now = (long)Time.GetTicksMsec();
+        GameSession.LanHost?.Pump(now);
+        GameSession.LanClient?.Pump(now);
+        if (_over)
+        {
+            return;
+        }
+
+        // A client that could not build the battle (missing or different map, unknown deck) refuses; the host ends
+        // the session instead of waiting for inputs that will never come.
+        if (GameSession.LanHost is { Refusals.Count: > 0 } h)
+        {
+            var (slot, reason) = h.Refusals[0];
+            UxLog.Event("lan_refused", ("slot", slot), ("reason", reason));
+            GameSession.EndLan();
+            Ui.Go(this, new LobbyScreen());
+            return;
+        }
+
+        _accum = System.Math.Min(_accum + delta, 1.0);
+        for (var i = 0; i < 8 && _accum >= 0.05; i++)
+        {
+            FlyStick();
+            foreach (var o in _pending)
+            {
+                peer.Issue(o with { Player = _me });
+            }
+
+            _pending.Clear();
+            if (!peer.TryStep())
+            {
+                break;
+            }
+
+            _accum -= 0.05;
+            if (_w.Tick % 600 == 300)
+            {
+                _fogDue = true;
+            }
+
+            ReadEvents();
+            if (_w.Tick % 200 == 0)
+            {
+                UxLog.Event("net_status", ("slot", _me), ("tick", _w.Tick), ("host", peer.IsHost), ("desyncs", peer.Desyncs), ("hash_checks", peer.HashChecks), ("stalled_polls", peer.StalledPolls));
+            }
+
+            if (_logSeats)
+            {
+                _logSeats = false;
+                LogSeats();
+            }
+        }
+
+        GameSession.LanHost?.Pump(now);
+        GameSession.LanClient?.Pump(now);
+    }
+
+    void AfterFrame(double delta)
+    {
         _radio.Pump(_w.Tick);
         // BRIEF D7: the listener sits at the camera's ground focus point (the battlefield under the screen centre).
         _sfx.Listener = Ground(GetViewport().GetVisibleRect().Size / 2);
@@ -551,7 +661,7 @@ public partial class SkirmishView : Node3D
             SoundFor(e);
             switch (e.Kind)
             {
-                case BattleEvent.Deployed when e.A == 0:
+                case BattleEvent.Deployed when e.A == _me:
                     var u = System.Array.FindIndex(_w.Units, x => x.Id == e.B);
                     if (u < 0)
                     {
@@ -565,47 +675,47 @@ public partial class SkirmishView : Node3D
                     }
 
                     break;
-                case BattleEvent.DeployRefused when e.A == 0:
+                case BattleEvent.DeployRefused when e.A == _me:
                     UxLog.Event("deploy_refused", ("card", e.B), ("tick", _w.Tick));
                     break;
                 case BattleEvent.PhaseChange:
                     _radio.Report("xo", "phase_change", _w.Tick);
                     UxLog.Event("phase", ("phase", "ABC"[System.Math.Clamp(e.Value, 0, 2)].ToString()), ("tick", _w.Tick));
                     break;
-                case BattleEvent.XoTookCommand when e.A == 0:
+                case BattleEvent.XoTookCommand when e.A == _me:
                     _radio.Report("xo", "take_control", _w.Tick);
                     _flown = e.B;
                     _stickLogged = false;
                     Say("XO", "I have the battle. Your aircraft, sir.");
-                    UxLog.Event("take_control", ("unit", e.B), ("xo_active", _w.XoActive[0]), ("tick", _w.Tick));
+                    UxLog.Event("take_control", ("unit", e.B), ("xo_active", _w.XoActive[_me]), ("tick", _w.Tick));
                     break;
-                case BattleEvent.ControlReturned when e.A == 0:
+                case BattleEvent.ControlReturned when e.A == _me:
                     _radio.Report("xo", "return_control", _w.Tick);
                     _flown = -1;
                     Say("XO", "Back with you. Battle handed over.");
                     UxLog.Event("control_returned", ("unit", e.B), ("reason", e.Value), ("tick", _w.Tick));
                     break;
-                case BattleEvent.FieldOffered when e.A == 0:
+                case BattleEvent.FieldOffered when e.A == _me:
                     ShowOffers([e.B, e.C, e.Value]);
                     UxLog.Event("field_offered", ("offers", new[] { e.B, e.C, e.Value }.Where(x => x >= 0 && x < _w.FieldRequestDefs.Length).Select(x => _w.FieldRequestDefs[x].Id).ToArray()), ("tick", _w.Tick));
                     break;
-                case BattleEvent.FieldTaken when e.A == 0 && e.B >= 0 && e.B < _w.FieldRequestDefs.Length:
+                case BattleEvent.FieldTaken when e.A == _me && e.B >= 0 && e.B < _w.FieldRequestDefs.Length:
                     _offers.Visible = false;
-                    UxLog.Event("field_taken", ("task_force", _w.FieldRequestDefs[e.B].Id), ("units", e.Value), ("xo_active", _w.XoActive[0]), ("tick", _w.Tick));
+                    UxLog.Event("field_taken", ("task_force", _w.FieldRequestDefs[e.B].Id), ("units", e.Value), ("xo_active", _w.XoActive[_me]), ("tick", _w.Tick));
                     break;
                 case BattleEvent.GameOver:
                     Finish();
                     break;
-                case BattleEvent.SupportCalled when e.A == 0:
+                case BattleEvent.SupportCalled when e.A == _me:
                     UxLog.Event("support_called", ("option", _w.SupportDefs[e.B].Id), ("arrives_tick", e.C), ("tick", _w.Tick));
                     break;
-                case BattleEvent.SupportArrived when e.A == 0:
+                case BattleEvent.SupportArrived when e.A == _me:
                     UxLog.Event("support_arrived", ("option", _w.SupportDefs[e.B].Id), ("tick", _w.Tick));
                     break;
-                case BattleEvent.SupportRefused when e.A == 0:
+                case BattleEvent.SupportRefused when e.A == _me:
                     UxLog.Event("support_refused", ("option", e.B >= 0 && e.B < _w.SupportDefs.Length ? _w.SupportDefs[e.B].Id : "?"), ("reason", e.Value), ("tick", _w.Tick));
                     break;
-                case BattleEvent.MissionStarted when System.Array.FindIndex(_w.Units, x => x.Id == e.A) is var bi && bi >= 0 && _w.Units[bi].Player == 0:
+                case BattleEvent.MissionStarted when System.Array.FindIndex(_w.Units, x => x.Id == e.A) is var bi && bi >= 0 && _w.Units[bi].Player == _me:
                     UxLog.Event("fire_mission", ("unit", _w.Defs[_w.Units[bi].Def].Id), ("x", e.B), ("y", e.C), ("rounds", e.Value), ("tick", _w.Tick));
                     RadioFor(e);
                     break;
@@ -619,7 +729,7 @@ public partial class SkirmishView : Node3D
     /// <summary>CMD-07: the commander who would report a sim event on player 0's net, and where to ping the map.</summary>
     void RadioFor(BattleEvent e)
     {
-        string? SeatSpeaker(int seat) => seat >= 0 && seat / Command.SeatsPerPlayer == 0 ? Radio.Speakers[seat % Command.SeatsPerPlayer] : null;
+        string? SeatSpeaker(int seat) => seat >= 0 && seat / Command.SeatsPerPlayer == _me ? Radio.Speakers[seat % Command.SeatsPerPlayer] : null;
         int UnitIndex(int id) => System.Array.FindIndex(_w.Units, u => u.Id == id);
         switch (e.Kind)
         {
@@ -638,7 +748,7 @@ public partial class SkirmishView : Node3D
             case BattleEvent.MissionStarted:
                 {
                     var u = UnitIndex(e.A);
-                    if (u >= 0 && _w.Units[u].Player == 0)
+                    if (u >= 0 && _w.Units[u].Player == _me)
                     {
                         var sp = SeatSpeaker(_w.Units[u].Seat);
                         Say2(sp is "arty1" or "arty2" ? sp : "arty1", "fire_mission", e.B, e.C);
@@ -653,7 +763,7 @@ public partial class SkirmishView : Node3D
             case BattleEvent.CasOnStation:
                 {
                     var a = UnitIndex(e.B);
-                    if (a >= 0 && _w.Units[a].Player == 0)
+                    if (a >= 0 && _w.Units[a].Player == _me)
                     {
                         var sp = SeatSpeaker(_w.Units[a].Seat);
                         Say2(sp is "air1" or "air2" ? sp : "air1", "cas_on_station", (int)ToFloat(_w.Units[a].X), (int)ToFloat(_w.Units[a].Y));
@@ -665,7 +775,7 @@ public partial class SkirmishView : Node3D
             case BattleEvent.Resupplied:
                 {
                     var t = UnitIndex(e.A);
-                    if (t >= 0 && _w.Units[t].Player == 0)
+                    if (t >= 0 && _w.Units[t].Player == _me)
                     {
                         Say2("logistics", "resupply");
                     }
@@ -694,7 +804,7 @@ public partial class SkirmishView : Node3D
                     break;
                 }
 
-            case BattleEvent.Spotted when e.A == 0:
+            case BattleEvent.Spotted when e.A == _me:
                 {
                     var target = UnitIndex(e.B);
                     if (target < 0)
@@ -707,7 +817,7 @@ public partial class SkirmishView : Node3D
                     for (var i = 0; i < _w.Units.Length; i++)
                     {
                         ref readonly var u = ref _w.Units[i];
-                        if (u.Player == 0 && u.Alive != 0 && !_w.Defs[u.Def].IsAir)
+                        if (u.Player == _me && u.Alive != 0 && !_w.Defs[u.Def].IsAir)
                         {
                             var dx = (u.X.Raw - _w.Units[target].X.Raw) >> 16;
                             var dy = (u.Y.Raw - _w.Units[target].Y.Raw) >> 16;
@@ -782,9 +892,10 @@ public partial class SkirmishView : Node3D
         }
 
         _over = true;
-        GameSession.Winner = surrendered ? 1 : _w.Winner;
+        GameSession.MyTeam = _w.Players[_me].Team;
+        GameSession.Winner = surrendered ? 1 - GameSession.MyTeam : _w.Winner;
         GameSession.Score = [_w.Score[0], _w.Score[1]];
-        GameSession.Deployed = [_w.Units.Count(u => u.Player == 0), _w.Units.Count(u => u.Player == 1)];
+        GameSession.Deployed = [_w.Units.Count(u => _w.Players[u.Player].Team == 0), _w.Units.Count(u => _w.Players[u.Player].Team == 1)];
         GameSession.Kills = [0, 0];
         foreach (var e in _w.Events.Where(e => e.Kind == BattleEvent.Killed))
         {
@@ -799,6 +910,8 @@ public partial class SkirmishView : Node3D
         UxLog.Event("battle_over", ("winner", _w.Winner), ("score0", _w.Score[0]), ("score1", _w.Score[1]), ("tick", _w.Tick), ("hash", WorldHash.Of(_w)[..16]));
         TicksPerFrame = 0;
         GameSession.Tutorial = null;
+        // The LAN endpoint stays up through the debrief so the last inputs and hashes still reach the others; the
+        // debrief pumps it and closes it when the player leaves (GameSession.EndLan).
         GameSession.StartSp = 0;
         Ui.Go(this, new DebriefScreen());
     }
@@ -815,13 +928,13 @@ public partial class SkirmishView : Node3D
                 view = new MeshInstance3D
                 {
                     Mesh = new BoxMesh { Size = size },
-                    MaterialOverride = new StandardMaterial3D { AlbedoColor = u.Player == 0 ? GameSettings.SideColors[GameSettings.Palette].Friend : GameSettings.SideColors[GameSettings.Palette].Enemy },
+                    MaterialOverride = new StandardMaterial3D { AlbedoColor = IsFriend(u.Player) ? GameSettings.SideColors[GameSettings.Palette].Friend : GameSettings.SideColors[GameSettings.Palette].Enemy },
                 };
                 AddChild(view);
                 _views[u.Id] = view;
             }
 
-            view.Visible = u.Alive != 0 && (u.Player == 0 || Sight.Visible(_w, 0, i));
+            view.Visible = u.Alive != 0 && (IsFriend(u.Player) || Sight.Visible(_w, _me, i));
             view.Position = new Vector3(ToFloat(u.X), System.Math.Max(1.5f, ToFloat(u.Z)), ToFloat(u.Y));
         }
 
@@ -887,11 +1000,11 @@ public partial class SkirmishView : Node3D
         var fields = new List<(string, object)>();
         for (var r = 1; r < Command.SeatNames.Length; r++)
         {
-            var seat = Command.SeatIndex(0, r);
-            fields.Add((Command.SeatNames[r], _w.Units.Count(u => u.Player == 0 && u.Alive != 0 && u.Seat == seat)));
+            var seat = Command.SeatIndex(_me, r);
+            fields.Add((Command.SeatNames[r], _w.Units.Count(u => u.Player == _me && u.Alive != 0 && u.Seat == seat)));
         }
 
-        fields.Add(("Player", _w.Units.Count(u => u.Player == 0 && u.Alive != 0 && u.Seat == -1)));
+        fields.Add(("Player", _w.Units.Count(u => u.Player == _me && u.Alive != 0 && u.Seat == -1)));
         fields.Add(("tick", _w.Tick));
         UxLog.Event("seats", [.. fields]);
     }
@@ -903,7 +1016,7 @@ public partial class SkirmishView : Node3D
         for (var i = 0; i < _w.Units.Length; i++)
         {
             ref readonly var u = ref _w.Units[i];
-            if (u.Player == 0 && u.Alive != 0 && !_w.Defs[u.Def].IsAir)
+            if (u.Player == _me && u.Alive != 0 && !_w.Defs[u.Def].IsAir)
             {
                 var p = new Vector3(ToFloat(u.X), 1.5f, ToFloat(u.Y));
                 if (!_camera.IsPositionBehind(p))
@@ -923,13 +1036,13 @@ public partial class SkirmishView : Node3D
         for (var i = 0; i < _w.Units.Length; i++)
         {
             ref readonly var u = ref _w.Units[i];
-            if (u.Player == 0 || u.Alive == 0)
+            if (IsFriend(u.Player) || u.Alive == 0)
             {
                 continue;
             }
 
             alive++;
-            spotted += Sight.Visible(_w, 0, i) ? 1 : 0;
+            spotted += Sight.Visible(_w, _me, i) ? 1 : 0;
             shown += _views.TryGetValue(u.Id, out var v) && v.Visible ? 1 : 0;
         }
 
@@ -941,19 +1054,19 @@ public partial class SkirmishView : Node3D
     {
         for (var r = 1; r < Command.SeatNames.Length && r - 1 < _seatButtons.Count; r++)
         {
-            var seat = Command.SeatIndex(0, r);
-            _seatButtons[r - 1].Text = $"{Command.SeatNames[r]}: {_w.Units.Count(u => u.Player == 0 && u.Alive != 0 && u.Seat == seat)}";
+            var seat = Command.SeatIndex(_me, r);
+            _seatButtons[r - 1].Text = $"{Command.SeatNames[r]}: {_w.Units.Count(u => u.Player == _me && u.Alive != 0 && u.Seat == seat)}";
         }
 
         if (_seatButtons.Count >= Command.SeatNames.Length)
         {
-            _seatButtons[^1].Text = $"Player: {_w.Units.Count(u => u.Player == 0 && u.Alive != 0 && u.Seat == -1)}";
+            _seatButtons[^1].Text = $"Player: {_w.Units.Count(u => u.Player == _me && u.Alive != 0 && u.Seat == -1)}";
         }
 
-        var p = _w.Players[0];
+        var p = _w.Players[_me];
         _fireButton.Disabled = _selected < 0 || _w.Units[_selected].Alive == 0 || _w.Defs[_w.Units[_selected].Def].Kind != SixActual.Sim.UnitDef.KindArtillery;
         _status.Text = $"SP {p.Sp}   Phase {"ABC"[System.Math.Clamp(_w.Phase, 0, 2)]}   DP {p.Dp}   Score {_w.Score[0]} : {_w.Score[1]}   "
-            + $"{(_w.XoActive[0] != 0 ? "XO has the battle" : "You have the battle")}{(_flown >= 0 ? "   FLYING" : string.Empty)}{(_paused ? "   PAUSED" : string.Empty)}   {_w.Tick / 20 / 60}:{_w.Tick / 20 % 60:00}";
+            + $"{(_w.XoActive[_me] != 0 ? "XO has the battle" : "You have the battle")}{(_flown >= 0 ? "   FLYING" : string.Empty)}{(_paused ? "   PAUSED" : string.Empty)}   {_w.Tick / 20 / 60}:{_w.Tick / 20 % 60:00}";
         var deck = _w.Decks[p.Deck];
         for (var c = 0; c < deck.Cards.Length && c < _cardButtons.Count; c++)
         {

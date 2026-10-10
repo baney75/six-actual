@@ -159,7 +159,7 @@ public static class NetRunner
     /// <summary>Scripted player inputs, decided from the client's own (identical) world: every 10 s each player
     /// sends its lowest-index living ground unit to a point that cycles with time; "fly" also has player 0 take
     /// control of its A-10 at 2 s and work the stick every second.</summary>
-    static IEnumerable<UnitOrder> Script(int client, WorldState w, string script)
+    internal static IEnumerable<UnitOrder> Script(int client, WorldState w, string script)
     {
         var t = w.Tick;
         if (t % 200 == 17)

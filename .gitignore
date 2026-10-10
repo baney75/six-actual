@@ -30,3 +30,4 @@ __pycache__/
 *.blend1
 assets_src/work/
 assets_src/refs/*/masks/*.debug.png
+tools/dem/.venv/

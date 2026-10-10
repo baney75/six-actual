@@ -11,15 +11,26 @@ public static class Skirmish
 {
     public static readonly (int X, int Y)[] ObjectiveSpots = [(2000, 4000), (4000, 4000), (6000, 4000), (4000, 2600), (4000, 5400)];
 
-    /// <summary>Deterministic terrain from a seed: rolling hills, forest blocks, a road grid and six villages.</summary>
-    public static JsonElement Terrain(ulong seed)
+    /// <summary>Deterministic terrain from a seed: rolling hills, forest blocks, a road grid and six villages. With
+    /// <paramref name="map"/> (ERA-03) the real heightfield replaces the hills; vegetation and villages stay seeded.
+    /// The hill draws still happen so the rest of the layout is the same for a seed with or without a map.</summary>
+    public static JsonElement Terrain(ulong seed, MapDef? map = null)
     {
         var rng = new XorShift64(seed);
         int Next(int n) => (int)(rng.NextULong() % (ulong)n);
         var features = new List<object>();
         for (var i = 0; i < 40; i++)
         {
-            features.Add(new { type = "hill", x = Next(8000), y = Next(8000), radius_m = 300 + Next(900), height_dm = 100 + Next(500) });
+            var hill = new { type = "hill", x = Next(8000), y = Next(8000), radius_m = 300 + Next(900), height_dm = 100 + Next(500) };
+            if (map is null)
+            {
+                features.Add(hill);
+            }
+        }
+
+        if (map is not null)
+        {
+            features.Add(new { type = "heightfield", n = map.N, spacing_m = map.SpacingM, dm_b64 = map.DmB64 });
         }
 
         for (var i = 0; i < 60; i++)
@@ -67,6 +78,9 @@ public static class Skirmish
         public int Weather { get; init; }
         public bool FieldRequests { get; init; }
 
+        /// <summary>ERA-03 map id from data/maps.json; null keeps the generated hills.</summary>
+        public string? Map { get; init; }
+
         /// <summary>Starting support points for every player (off-map support, MEC-03).</summary>
         public int StartSp { get; init; }
     }
@@ -79,7 +93,8 @@ public static class Skirmish
 
     public static WorldState Create(BattleData data, BattleRules rules, ulong seed, string deck0, string deck1, bool xo0, bool xo1, Options opt, DeckDef[]? customDecks = null)
     {
-        var spec = Terrain(seed);
+        var map = opt.Map is null ? null : data.Maps.FirstOrDefault(m => m.Id == opt.Map) ?? throw new InvalidDataException($"unknown map {opt.Map}");
+        var spec = Terrain(seed, map);
         var w = new WorldState
         {
             Seed = seed,

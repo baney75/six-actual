@@ -14,6 +14,11 @@ public partial class Main : Node
             GameSettings.Load();
             GameSettings.Apply(GetTree());
             UxDriver.Start(GetTree().Root);
+            if (PerfCapture.Start(GetTree().Root))
+            {
+                QueueFree();
+                return;
+            }
             UxLog.Event("settings_loaded", ("ui_scale", GameSettings.UiScales[GameSettings.UiScaleIndex]), ("palette", GameSettings.Palettes[GameSettings.Palette]), ("subtitles", GameSettings.Subtitles), ("take_control_key", OS.GetKeycodeString(Controls.KeyOf("take_control"))), ("fly_left_pad", Controls.PadOf("fly_left")));
         }
 

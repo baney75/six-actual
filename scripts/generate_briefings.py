@@ -18,6 +18,9 @@ import sys
 import time
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from voice_lines import portable  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "game" / "assets" / "audio" / "briefings"
 TOOL = Path.home() / ".local" / "bin" / "parish-media"
@@ -77,7 +80,7 @@ def main() -> int:
                 "loudness_after": {k: after.get(k) for k in ("input_i", "input_tp")},
                 "processing": "ffmpeg loudnorm two-pass to -16 LUFS / -1.5 dBTP, 24 kHz mono",
             }
-            dst.with_suffix(".wav.json").write_text(json.dumps(meta, indent=2) + "\n")
+            dst.with_suffix(".wav.json").write_text(json.dumps(portable(meta), indent=2) + "\n")
             made += 1
             print(f"ok {era}/{n['id']}: {after.get('input_i')} LUFS, {meta['tool_metadata'] and meta['tool_metadata'].get('duration_seconds')} s")
     print(f"briefings generated: {made}")

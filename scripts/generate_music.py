@@ -164,13 +164,14 @@ def main() -> int:
                 dst.with_suffix(".ogg.json").write_text(json.dumps(meta, indent=2) + "\n")
                 print(f"ok {era}/{layer}: {meta['lufs']} LUFS, flatness {meta['flatness']}, heard {words!r}", flush=True)
             meta = json.loads(dst.with_suffix(".ogg.json").read_text())
-            if recheck or "seam_spectral_corr" not in meta:
+            digest = hashlib.sha256(dst.read_bytes()).hexdigest()
+            if recheck or "seam_spectral_corr" not in meta or meta.get("sha256") != digest:
                 ld = loudness(dst)
-                meta.update({"lufs": float(ld["input_i"]), "true_peak_db": float(ld["input_tp"]), "flatness": round(flatness(dst), 3), "transcript": heard(dst), **seam(dst)})
+                meta.update({"lufs": float(ld["input_i"]), "true_peak_db": float(ld["input_tp"]), "flatness": round(flatness(dst), 3), "transcript": heard(dst), **seam(dst), "sha256": digest})
                 dst.with_suffix(".ogg.json").write_text(json.dumps(meta, indent=2) + "\n")
                 print(f"rechecked {era}/{layer}: {meta['lufs']} LUFS, flatness {meta['flatness']}, heard {meta['transcript']!r}, seam {meta['seam_jump_ratio']}x / {meta['seam_spectral_corr']}")
             manifest.append({**{k: meta[k] for k in ("id", "era", "layer", "prompt", "seed", "lufs", "true_peak_db", "flatness", "transcript", "seam_jump_ratio", "seam_spectral_corr")},
-                             "category": "music", "path": str(dst.relative_to(ROOT)), "sha256": hashlib.sha256(dst.read_bytes()).hexdigest()})
+                             "category": "music", "path": str(dst.relative_to(ROOT)), "sha256": digest})
     (ROOT / "audio" / "music_manifest.json").write_text(json.dumps({"version": 1, "files": manifest}, indent=1) + "\n")
     print(f"music stems: {len(manifest)}")
     return 0

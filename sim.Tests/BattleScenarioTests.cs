@@ -14,8 +14,9 @@ public class BattleScenarioTests
 
     /// <summary>Battle scenarios. Grand-strategy scenarios run on their own runner in
     /// <see cref="Grand_strategy_scenarios_pass"/>. Network scenarios (8 lockstep clients, minutes each) run headless in
-    /// G4; <see cref="Lockstep_short_match_stays_in_sync_under_loss"/> keeps the lockstep code under test here (D058).</summary>
-    public static TheoryData<string> Files() => ScenarioFiles(f => !NetRunner.IsNetScenario(f) && !GsRunner.IsGsScenario(f));
+    /// G4; <see cref="Lockstep_short_match_stays_in_sync_under_loss"/> keeps the lockstep code under test here (D058).
+    /// LAN scenarios (real UDP, D076) also run in G4, and LanTests covers the same code here.</summary>
+    public static TheoryData<string> Files() => ScenarioFiles(f => !NetRunner.IsNetScenario(f) && !LanRunner.IsLanScenario(f) && !GsRunner.IsGsScenario(f));
 
     public static TheoryData<string> StrategicFiles() => ScenarioFiles(GsRunner.IsGsScenario);
 

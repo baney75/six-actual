@@ -52,7 +52,7 @@ def main() -> int:
         files = {}
         tmp = Path(tempfile.mkdtemp(prefix="mutant-"))
         (tmp / "data").mkdir()
-        for name in ("roster.json", "weapons.json", "units.json", "support.json", "decks.json"):
+        for name in ("roster.json", "weapons.json", "units.json", "support.json", "decks.json", "maps.json"):
             if (ROOT / "data" / name).exists():
                 shutil.copy(ROOT / "data" / name, tmp / "data" / name)
         try:
@@ -90,6 +90,11 @@ def main() -> int:
         finally:
             shutil.rmtree(tmp)
         missing = set(m["must_fail"]) - failed_ids(mout)
+        if "scenarios=" not in mout:
+            # The runner crashed before reporting: that is a broken harness, not a surviving mutant.
+            print(f"mutant {m['name']}: CRASHED, runner printed no summary: {mout.strip()[-400:]}")
+            bad += 1
+            continue
         status = "ok" if not missing else f"SURVIVED by {sorted(missing)}"
         print(f"mutant {m['name']}: {status}")
         bad += 1 if missing else 0

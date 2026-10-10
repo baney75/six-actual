@@ -64,6 +64,13 @@ public static class ScenarioRunner
                 continue;
             }
 
+            if (LanRunner.IsLanScenario(file))
+            {
+                // NET-01 LAN / direct IP: host and clients over real localhost UDP sockets (D076).
+                failed += LanRunner.RunScenario(file, defs, rules) ? 0 : 1;
+                continue;
+            }
+
             if (GsRunner.IsGsScenario(file))
             {
                 // GS-01..05, CMD-08: grand-strategy scenarios run on the strategic sim.

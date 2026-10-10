@@ -25,6 +25,7 @@ public partial class BriefingScreen : Node
             GameSession.PlayerDeck = op.PlayerDeck;
             GameSession.EnemyDeck = op.EnemyDeck;
             GameSession.Seed = op.Seed;
+            GameSession.Map = null;
             GameSession.FieldRequests = true;
             GameSession.PerSide = 1;
             GameSession.StartDp = 1000;

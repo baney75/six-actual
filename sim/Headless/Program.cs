@@ -44,6 +44,12 @@ public static class Program
             return GsRunner.Soak(args.Skip(1).ToArray());
         }
 
+        if (args[0] == "--net-bot" && args.Length >= 3)
+        {
+            var root = Environment.CurrentDirectory;
+            return LanRunner.Bot(args.Skip(1).ToArray(), BattleData.Load(root), BattleRules.Load(Path.Combine(root, "data", "rules.json")));
+        }
+
         if (args[0] == "--scenario")
         {
             return ScenarioRunner.Run(args.Skip(1).ToArray());

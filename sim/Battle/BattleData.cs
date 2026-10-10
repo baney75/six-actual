@@ -19,6 +19,9 @@ public sealed class BattleData
     /// <summary>MEC-07 operation event deck (data/operation_events.json).</summary>
     public OperationEventDef[] OperationEvents { get; init; } = [];
 
+    /// <summary>ERA-03 battle maps with real heightfields (data/maps.json).</summary>
+    public MapDef[] Maps { get; init; } = [];
+
     /// <summary>
     /// Loads data/roster.json + data/weapons.json when present; until the sourced roster lands it adapts the
     /// Phase 0 placeholder catalog data/units.json. Exactly one source is used, chosen by file presence.
@@ -60,6 +63,15 @@ public sealed class BattleData
         var support = File.Exists(roster) ? SupportDef.Load(Path.Combine(repoRoot, "data", "support.json"), weaps, units) : [];
         var field = File.Exists(roster) ? FieldRequestDef.Load(Path.Combine(repoRoot, "data", "field_requests.json"), units) : [];
         var events = OperationEventDef.Load(Path.Combine(repoRoot, "data", "operation_events.json"));
-        return new BattleData { Units = units, Weapons = weaps, Decks = decks.ToArray(), Support = support, FieldRequests = field, OperationEvents = events };
+        // ERA-03 maps ship with the sourced roster; a build missing them would offer only generated ground and could
+        // not join a LAN battle on a real map, so that is an error rather than a silent fallback.
+        var mapsPath = Path.Combine(repoRoot, "data", "maps.json");
+        if (File.Exists(roster) && !File.Exists(mapsPath))
+        {
+            throw new FileNotFoundException("data/maps.json is missing (run scripts/generate_maps.py and scripts/sync_game_data.py)", mapsPath);
+        }
+
+        var maps = MapDef.Load(mapsPath);
+        return new BattleData { Units = units, Weapons = weaps, Decks = decks.ToArray(), Support = support, FieldRequests = field, OperationEvents = events, Maps = maps };
     }
 }

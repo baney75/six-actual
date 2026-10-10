@@ -206,7 +206,7 @@ public sealed class BattleUnitDef
                 ArmorRear = d.ArmorRear,
                 ArmorTop = d.ArmorTop,
                 OpticsM = d.OpticsM,
-                Stealth = d.Stealth,
+                Stealth = BattleRules.NonNegative(d.Stealth, $"{d.Id}.stealth"),
                 Fuel = d.Fuel,
                 Weapons = d.RangeM > 0 ? [new Mount { Weapon = i, Ammo = d.Ammo }] : [],
             };

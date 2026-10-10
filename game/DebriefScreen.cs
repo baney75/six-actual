@@ -6,8 +6,8 @@ public partial class DebriefScreen : Node
 {
     public override void _Ready()
     {
-        var you = GameSession.Winner == 0;
-        var box = Ui.Screen(this, GameSession.Winner switch { 0 => "VICTORY", 1 => "DEFEAT", _ => "DRAW" });
+        var you = GameSession.Winner == GameSession.MyTeam;
+        var box = Ui.Screen(this, you ? "VICTORY" : GameSession.Winner == 1 - GameSession.MyTeam ? "DEFEAT" : "DRAW");
         box.AddChild(new Label
         {
             Text = $"Score {GameSession.Score[0]} to {GameSession.Score[1]}.  Kills {GameSession.Kills[0]} to {GameSession.Kills[1]}.  "
@@ -17,11 +17,19 @@ public partial class DebriefScreen : Node
         {
             CampaignScreen.Record(you);
             GameSession.Origin = "skirmish";
-            Ui.Button(box, "Continue", "Continue the campaign", () => Ui.Go(this, new CampaignScreen()));
+            Ui.Button(box, "Continue", "Continue the campaign", () => { GameSession.EndLan(); Ui.Go(this, new CampaignScreen()); });
         }
 
-        Ui.Button(box, "MainMenu", "Main menu", () => Ui.Go(this, new Main()));
+        Ui.Button(box, "MainMenu", "Main menu", () => { GameSession.EndLan(); Ui.Go(this, new Main()); });
         UxLog.Event("screen", ("name", "debrief"));
-        UxLog.Event("debrief", ("result", you ? "victory" : GameSession.Winner == 1 ? "defeat" : "draw"), ("score0", GameSession.Score[0]), ("score1", GameSession.Score[1]));
+        UxLog.Event("debrief", ("you_team", GameSession.MyTeam), ("result", you ? "victory" : GameSession.Winner == 1 - GameSession.MyTeam ? "defeat" : "draw"), ("score0", GameSession.Score[0]), ("score1", GameSession.Score[1]));
+    }
+
+    /// <summary>Keeps a finished LAN battle's endpoint pumping so the last packets reach the other peers.</summary>
+    public override void _Process(double delta)
+    {
+        var now = (long)Time.GetTicksMsec();
+        GameSession.LanHost?.Pump(now);
+        GameSession.LanClient?.Pump(now);
     }
 }

@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FILES = ("roster.json", "weapons.json", "units.json", "decks.json", "rules.json", "support.json",
-         "field_requests.json", "operation_events.json", "theaters.json", "campaign.json")
+         "field_requests.json", "operation_events.json", "theaters.json", "campaign.json", "maps.json")
 DEST = ROOT / "game" / "data" / "sim"
 # Files from outside data/ that the game reads at runtime (radio dialogue, CMD-07): source -> name in game/data/sim.
 # dialogue/lines.csv ships as JSON: Godot imports .csv files as translation tables, so a raw CSV never reaches the build.
@@ -39,6 +39,10 @@ def credits() -> bytes:
         {"title": "Generated content and tools", "lines": tools},
         {"title": "Reference material (look and proportion only)", "lines": sorted(set(refs))},
     ]
+    maps = ROOT / "data" / "maps.json"
+    if maps.exists():
+        m = json.loads(maps.read_text(encoding="utf-8"))
+        sections.append({"title": "Map data", "lines": [m["attribution"], m["liability"], "\u00a9 OpenStreetMap contributors, ODbL"]})
     return (json.dumps({"source": "ASSETS.md", "sections": sections}, indent=1, ensure_ascii=False) + "\n").encode()
 
 

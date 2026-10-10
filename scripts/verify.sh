@@ -160,6 +160,7 @@ gate_g10() {
   mise exec -- uvx --from check-jsonschema check-jsonschema --schemafile data/schema/catalog.schema.json data/catalog.json
   mise exec -- uvx --from check-jsonschema check-jsonschema --schemafile data/schema/units.schema.json data/units.json
   python3 scripts/validate_data.py
+  python3 scripts/check_maps.py
   python3 scripts/generate_rules.py build/rules.generated.json
   if ! cmp -s data/rules.json build/rules.generated.json; then
     echo "data/rules.json does not match scripts/generate_rules.py" >&2

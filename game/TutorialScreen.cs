@@ -17,6 +17,7 @@ public partial class TutorialScreen : Node
                 GameSession.PlayerDeck = "us_1989_armored";
                 GameSession.EnemyDeck = "su_1989_motor_rifle";
                 GameSession.Seed = 7;
+                GameSession.Map = null;
                 GameSession.PerSide = 1;
                 GameSession.StartDp = 2000;
                 GameSession.StartSp = tid == "support" ? 200 : 0;

@@ -42,6 +42,9 @@ public static class TerrainBuilder
                 case "hill":
                     Hill(t, f.GetProperty("x").GetInt32(), f.GetProperty("y").GetInt32(), f.GetProperty("radius_m").GetInt32(), baseDm + f.GetProperty("height_dm").GetInt32());
                     break;
+                case "heightfield":
+                    Heightfield(t, f, baseDm);
+                    break;
                 case "ridge":
                     Ridge(t, f, baseDm);
                     break;
@@ -213,6 +216,38 @@ public static class TerrainBuilder
                 var h = (int)(peakDm - ((peakDm - t.HeightDm[t.Index(cx, cy)]) * d2 / r2));
                 var i = t.Index(cx, cy);
                 t.HeightDm[i] = Math.Max(t.HeightDm[i], h);
+            }
+        }
+    }
+
+    /// <summary>ERA-03 real ground: {"type":"heightfield","n","spacing_m","dm_b64"}, sampled bilinearly in integers at
+    /// each cell centre (sample (i, j) sits at x = i * spacing, y = j * spacing). Combines by maximum like hills.</summary>
+    static void Heightfield(TerrainGrid t, JsonElement f, int baseDm)
+    {
+        var n = f.GetProperty("n").GetInt32();
+        var spacing = f.GetProperty("spacing_m").GetInt32();
+        var raw = Convert.FromBase64String(f.GetProperty("dm_b64").GetString()!);
+        if (n < 2 || spacing <= 0 || raw.Length != n * n * 2)
+        {
+            throw new InvalidDataException("heightfield is not n x n uint16");
+        }
+
+        int S(int i, int j) => raw[2 * ((j * n) + i)] | (raw[(2 * ((j * n) + i)) + 1] << 8);
+        for (var cy = 0; cy < t.Cells; cy++)
+        {
+            long py = Math.Clamp(((long)cy * t.CellM) + (t.CellM / 2), 0, (long)(n - 1) * spacing);
+            var j0 = (int)Math.Min(n - 2, py / spacing);
+            var fy = py - ((long)j0 * spacing);
+            for (var cx = 0; cx < t.Cells; cx++)
+            {
+                long px = Math.Clamp(((long)cx * t.CellM) + (t.CellM / 2), 0, (long)(n - 1) * spacing);
+                var i0 = (int)Math.Min(n - 2, px / spacing);
+                var fx = px - ((long)i0 * spacing);
+                var top = (S(i0, j0 + 1) * (spacing - fx)) + (S(i0 + 1, j0 + 1) * fx);
+                var bottom = (S(i0, j0) * (spacing - fx)) + (S(i0 + 1, j0) * fx);
+                var h = (int)(((bottom * (spacing - fy)) + (top * fy)) / ((long)spacing * spacing));
+                var idx = t.Index(cx, cy);
+                t.HeightDm[idx] = Math.Max(t.HeightDm[idx], baseDm + h);
             }
         }
     }

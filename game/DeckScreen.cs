@@ -7,6 +7,8 @@ public partial class DeckScreen : Node
 {
     static readonly string[] Eras = ["coldwar", "ww2", "modern"];
     VBoxContainer _list = null!;
+    OptionButton _map = null!;
+    SixActual.Sim.Battle.MapDef[] _eraMaps = [];
 
     public override void _Ready()
     {
@@ -31,6 +33,10 @@ public partial class DeckScreen : Node
         Option(opts, "Victory", ["conquest", "annihilation"], GameSession.VictoryType, i => GameSession.VictoryType = i);
         Option(opts, "TimeOfDay", ["dawn", "day", "dusk", "night"], GameSession.TimeOfDay, i => GameSession.TimeOfDay = i);
         Option(opts, "Weather", SixActual.Sim.Battle.BattleRules.WeatherNames, GameSession.Weather, i => GameSession.Weather = i);
+        _map = new OptionButton { Name = "Map" };
+        _map.ItemSelected += i => GameSession.Map = i == 0 ? null : _eraMaps[(int)i - 1].Id;
+        box.AddChild(_map);
+        box.AddChild(new Label { Name = "MapPlaceholderNote", Text = "PLACEHOLDER: real-terrain maps already shape line of sight and movement, but the 3D ground is still drawn flat." });
         _list = new VBoxContainer();
         box.AddChild(_list);
         Ui.Button(box, "Build", "Build a custom deck from the last deck chosen", () => Ui.Go(this, new DeckBuilderScreen()));
@@ -57,6 +63,19 @@ public partial class DeckScreen : Node
 
     void Fill()
     {
+        // ERA-03: the era's real-terrain maps (Copernicus DEM), or the generated hills.
+        _eraMaps = GameData.Data.Maps.Where(m => m.Era == GameSession.Era).ToArray();
+        _map.Clear();
+        _map.AddItem("generated ground");
+        foreach (var m in _eraMaps)
+        {
+            _map.AddItem(m.Name);
+        }
+
+        var at = System.Array.FindIndex(_eraMaps, m => m.Id == GameSession.Map);
+        GameSession.Map = at >= 0 ? GameSession.Map : null;
+        _map.Select(at + 1);
+
         foreach (var c in _list.GetChildren())
         {
             c.QueueFree();
@@ -71,7 +90,7 @@ public partial class DeckScreen : Node
                 var enemy = decks.FirstOrDefault(o => Side(o.Id) != Side(deck.Id) && o.Income == deck.Income) ?? decks.First(o => Side(o.Id) != Side(deck.Id));
                 GameSession.PlayerDeck = deck.Id;
                 GameSession.EnemyDeck = enemy.Id;
-                UxLog.Event("deck_selected", ("deck", deck.Id), ("enemy", enemy.Id), ("era", GameSession.Era), ("field_requests", GameSession.FieldRequests));
+                UxLog.Event("deck_selected", ("deck", deck.Id), ("enemy", enemy.Id), ("era", GameSession.Era), ("field_requests", GameSession.FieldRequests), ("map", GameSession.Map ?? "generated"));
                 Ui.Go(this, new SkirmishView());
             });
         }

@@ -76,6 +76,32 @@ public static class GameSession
     /// <summary>UX-03: the running tutorial ("command", "support", "fly") or null; starting SP for skirmish/tutorials.</summary>
     public static string? Tutorial;
     public static int StartSp;
+
+    /// <summary>PERF capture: every player, including player 0, is an AI XO.</summary>
+    public static bool PerfAllAi;
+
+    /// <summary>ERA-03 map id (data/maps.json); null = generated hills.</summary>
+    public static string? Map;
+
+    /// <summary>The local player's team at the end of the last battle (the debrief's point of view).</summary>
+    public static int MyTeam;
+
+    /// <summary>NET-01 LAN session: the host or client endpoint and this machine's lockstep peer (null offline).</summary>
+    public static SixActual.Sim.Net.LanHost? LanHost;
+
+    public static SixActual.Sim.Net.LanClient? LanClient;
+
+    public static SixActual.Sim.Net.LockstepPeer? Peer;
+
+    /// <summary>Closes the LAN session, if any.</summary>
+    public static void EndLan()
+    {
+        LanHost?.Dispose();
+        LanClient?.Dispose();
+        LanHost = null;
+        LanClient = null;
+        Peer = null;
+    }
     public static int Winner = -1;
     public static int[] Score = [0, 0];
     public static int[] Kills = [0, 0];

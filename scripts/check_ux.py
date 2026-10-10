@@ -163,14 +163,35 @@ def main() -> int:
     for path in scripts:
         spec = json.loads(path.read_text())
         log_path = OUT / f"{spec['id']}.jsonl"
+        game_args = ["--ux", str(path), "--ux-log", str(log_path)]
+        bot = None
+        if "bot" in spec:
+            # NET-01 (D076): a headless AI client joins the game's LAN lobby over real UDP on localhost.
+            port = str(spec["bot"]["port"])
+            game_args += ["--lan-port", port]
+            subprocess.run(["mise", "exec", "--", "dotnet", "build", "sim/Headless/SixActual.Headless.csproj", "-c", "Release", "-v", "q", "-warnaserror"], cwd=ROOT, check=True, capture_output=True)
+            bot_log_path = OUT / f"{spec['id']}.bot.log"
+            bot_log = bot_log_path.open("w")
+            bot = subprocess.Popen(["mise", "exec", "--", "dotnet", "sim/Headless/bin/Release/net8.0/SixActual.Headless.dll", "--net-bot", "127.0.0.1", port, "bot1"],
+                                   cwd=ROOT, stdout=bot_log, stderr=subprocess.STDOUT)
         try:
-            r = subprocess.run([str(binary), "--headless", "--", "--ux", str(path), "--ux-log", str(log_path)],
+            r = subprocess.run([str(binary), "--headless", "--", *game_args],
                                cwd=ROOT, env=env, capture_output=True, text=True, timeout=spec.get("timeout_s", 900))
             rc, tail = r.returncode, (r.stdout + r.stderr)[-1500:]
         except subprocess.TimeoutExpired:
             rc, tail = -1, "timeout"
+        finally:
+            if bot is not None:
+                bot.terminate()
+                try:
+                    bot.wait(timeout=10)
+                except subprocess.TimeoutExpired:
+                    bot.kill()
+                bot_log.close()
         log = [json.loads(line) for line in log_path.read_text().splitlines() if line.strip()] if log_path.exists() else []
         problems = check(log, spec["expect"])
+        if bot is not None and "bot: slot" not in bot_log_path.read_text(errors="replace"):
+            problems.append(f"the LAN bot never joined a battle; see {bot_log_path.relative_to(ROOT)}")
         if rc != 0:
             problems.insert(0, f"exit code {rc}")
         # An engine error or unhandled C# exception fails the script even when the expected events appeared.

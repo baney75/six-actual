@@ -20,6 +20,10 @@ Re-read each license before 1.0. Voices designed from text descriptions do not i
 
 Building footprint statistics for the West German town block (`data/assets/wgerman_town_block_1989.json`) come from OpenStreetMap data. Credit: "© OpenStreetMap contributors, ODbL". This line must appear on the credits screen, and the maps under W2 will add more OSM-derived data.
 
+## Copernicus DEM GLO-30 (D075)
+
+The ERA-03 battle-map heightfields (`data/maps.json`, `scripts/generate_maps.py`) are resampled and smoothed from the Copernicus DEM GLO-30 public tiles (`s3://copernicus-dem-30m`, licence: https://documentation.dataspace.copernicus.eu/APIs/SentinelHub/Data/DEM/resources/license/License-COPDEM-30.pdf). The licence is free of charge and allows commercial use with attribution. Because the data is modified, the required notice is: "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved". The licence also requires this sentence in any legal notice covering distribution: "The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM-30". Both lines go on the credits screen. Source tiles stay in the gitignored `tools/cache/dem/` and do not ship.
+
 ## Research data
 
 - `assets_src/research/anthro/ansurMen.csv`: ANSUR I (1988) US Army anthropometric survey, male raw data (n = 1774), from https://tools.openlab.psu.edu/publicData/ansurMen.csv (Penn State OpenLab mirror of Gordon et al. 1989, NATICK/TR-89/044). It is a US Government work, public domain. It is used only to derive body proportions (`ansur1988_men_means.json`) and is not shipped.
