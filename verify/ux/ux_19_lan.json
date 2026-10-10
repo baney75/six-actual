@@ -1,0 +1,24 @@
+{
+  "id": "ux_19_lan",
+  "requirement": "NET-01",
+  "description": "LAN / direct-IP play over real UDP (D076): the game hosts from the lobby, a headless AI client (--net-bot) joins by address, the host starts the battle, and both run the same lockstep battle in real time. The host's peer compares state hashes with the client's every second: at tick 600 (30 s of game time, reached within 60 s of wall time) it has made 27 to 30 comparisons with no desync, and waited for the client's inputs on at most 20 polls. The bot sends no orders; client-to-host orders are covered by G4 lan_2v2_udp_loss5.",
+  "bot": {"port": 47619},
+  "timeout_s": 300,
+  "steps": [
+    {"press": "Lobby"},
+    {"press": "StartLan"},
+    {"press": "HostLan"},
+    {"wait_event": "lobby_peer_joined", "timeout_s": 90},
+    {"press": "StartLan"},
+    {"wait_event": "net_status", "count": 3, "timeout_s": 60}
+  ],
+  "expect": [
+    {"event": "lobby_created"},
+    {"event": "lan_start_refused", "fields": {"hosting": false}},
+    {"event": "lan_hosting", "fields": {"port": 47619}},
+    {"event": "lobby_peer_joined", "fields": {"name": "bot1", "slot": 1, "players": 2}},
+    {"event": "lan_battle_starting", "fields": {"slot": 0, "peers": 2, "humans": 1}},
+    {"event": "battle_started", "fields": {"net": "host", "slot": 0}},
+    {"event": "net_status", "fields": {"tick": 600, "host": true, "desyncs": 0}, "range": {"hash_checks": [27, 30], "stalled_polls": [0, 20]}}
+  ]
+}

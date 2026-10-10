@@ -1027,3 +1027,72 @@ Three independent reviewer agents (sim determinism, gate integrity, data and lic
   - The engine-error check caught "N resources still in use at exit" in every G13 script. The driver now frees every screen and quits a frame later; no more leak reports.
   - Shorter matches cut the AA cost sample to 7,690 points, under its 8,000 floor. The air-war soak now runs 3× `n_single` matches, the same floor with more data.
 - **Not changed.** GS-05 counts a turn-limit stalemate as an end state, the game's defined end. Weak sources for the UK and Soviet 1944 rifle squads are noted for a later research pass.
+
+## D074: PERF capture mode; PERF-02 and PERF-01 numbers are preliminary
+
+- **What.** `--perf <seconds> <out.json> [--res WxH]` (`game/PerfCapture.cs`) runs a rendered 5v5 AI battle in a real window at real time, vsync off, with an off-map barrage every 30 s. `scripts/check_perf.py` runs it and applies `verify/thresholds.toml [perf]`: `soak` for PERF-02, `resolutions` for PERF-01 numbers, `evaluate <capture> --log <log>` to re-check a capture. It reads `parish-media status` first and refuses on battery or a busy GPU. It deletes any old capture before running, so a stale file cannot pass.
+- **Measured honestly:**
+  - The tiling window manager ignores requested window sizes. The 3D world therefore renders into an offscreen viewport at exactly the requested resolution, with main-window 3D off. Video memory scaling (110 / 160 / 295 MB at 1080p / 1440p / 4K) confirms the larger render targets are real.
+  - Godot's delta smoothing snapped `delta` to 1/720 s, so frame times are wall-clock (`Time.GetTicksUsec`). GPU time comes from `ViewportGetMeasuredRenderTimeGpu`.
+  - The static-memory monitor reads 0 in release builds, so memory is process RSS from `/proc/self/statm`.
+  - The first 20-minute soak failed memory (13.6% growth). The cause was the capture itself: it stored every frame time, about 2.7 M doubles plus list-growth copies. A forced-GC census showed the live heap rising in 4 MB and 8 MB doubling steps, while Godot node and object counts stayed flat and the sim alone stayed flat (31.6 → 32.5 MB over 24 000 ticks). Frame and GPU times now go into preallocated 0.01 ms histograms. The forced-GC probe was removed afterwards, since it distorts what it measures.
+  - After review, the worst frame and the 100 ms count cover every frame, warm-up included. Percentiles still skip the first 10 s.
+- **PERF-02 is not verified.** The adversarial review was right that BRIEF G6 measures PERF-02 in the benchmark scene (the PERF-01 scene: 2,000 entities, full VFX), which does not exist yet, and that G6 does not run `check_perf.py`. The skirmish-scene soak is preliminary evidence (`build/reports/20261010T004734Z-perf.md`, built before the review fixes): 20 min at 1440p, worst frame after warm-up 61.9 ms, 0 frames ≥ 100 ms, RSS growth 1.74% after 5 min.
+  - The frames over 33 ms land on the same sim ticks in every run (2761, 2881, 2994, 6681, 8701, 10441), so they are deterministic heavy ticks, worth a profile.
+- **PERF-01 stays todo** for the same reason. With placeholder meshes, no full VFX and about 215 units, frames take 0.3–3 ms and the GPU renders in 0.13–0.47 ms at any resolution.
+
+## D075: ERA-03 battle maps from the Copernicus DEM GLO-30
+
+- **Allowed by Donovan** ("Allow Copernicus DEM"). Licence: free, commercial use allowed, attribution required. Because the data is modified, the notice is "produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved", plus the licence's no-liability sentence. Both are in LEGAL.md and ASSETS.md and on the credits screen (a new "Map data" section, which also carries the OSM credit LEGAL.md already required).
+- **Maps:** 4 real 8×8 km areas per era.
+  - WW2: Hürtgen (Vossenack ridge), Oosterbeek, Seelow Heights, Noville.
+  - Cold War: Fulda Gap, Hof Gap, Eichsfeld, Lüneburg Heath.
+  - Modern: Suwałki Gap, Narva, Tapa, Daugavpils.
+- **Pipeline.** `scripts/generate_maps.py` crops each area from the public COG tiles (cached in gitignored `tools/cache/dem/`; read with tifffile in `tools/dem`, Python 3.12). It applies a 3×3 box blur, samples 251×251 points at 32 m and stores decimetres above the map minimum as base64 uint16 (2.0 MB for all 12).
+- **Sim.** A new `heightfield` terrain feature uses integer bilinear sampling, so it is deterministic and hashed with the rest of the terrain. `Skirmish.Options.Map` replaces the generated hills but keeps the seed's forests, roads and villages: the hill draws still happen, so the RNG sequence is unchanged. The bench hash is unchanged.
+- **Checks:**
+  - Unit tests (`MapTests`) cover exact interpolation, determinism, 4 maps per era, unchanged vegetation for a seed, and that an unknown map id fails.
+  - G10 gains `scripts/check_maps.py`: counts, coverage, real relief ≥ 20 m, the verbatim attribution, tile sha256s, and the game copy in sync. When the tiles are cached it also regenerates byte for byte; otherwise it says "skipped", never "passed".
+  - A hillshade contact sheet matched the real landforms: the Kall valley ridges, the Rhine below the Veluwe edge, the Seelow escarpment over the Oderbruch, the Daugava bend.
+- **Known limits.** GLO-30 is a surface model, so large forest blocks read as raised plateaus (visible at Lüneburg and Tapa), and rivers and lakes are not yet water or blocked cells. The skirmish screen offers the maps; campaign operations still use generated ground. ERA-03 stays in progress until G8 (visual) exists.
+
+## D076: NET-01 LAN / direct-IP play; Steam deferred
+
+- **Donovan's call** ("LAN/IP play instead" of Steam). Steam lobbies stay out of scope until he asks.
+- **`sim/Net/LockstepPeer.cs`** is one machine's side of a real-network battle, in a star topology: the host relays every input.
+  - Inputs are sealed for tick t + 4. Each packet carries the sender's whole unacknowledged window (up to 32 ticks), so the next packet repairs a lost one. With nothing new to send, the window is resent every 20 ms.
+  - Receivers acknowledge the highest contiguous tick per player. Acks are clamped to what was actually sent: one forged max ack used to stop all resends and crash `Poll`.
+  - A client may speak only for itself. Orders stamped for another tick or player are stripped, but the tick is always accepted: dropping a whole tick for one bad order stalled every peer, which the review's test exposed.
+  - Inputs more than two input delays plus a window ahead are ignored, which bounds memory.
+  - The host compares every client's state hash every 20 ticks, deduplicated per (tick, peer) and pruned after 50 intervals.
+  - Inputs are pruned once executed and acknowledged by every destination. The confirmed input log replays to the same state.
+- **`sim/Net/NetOrders.cs`** screens every order at execution time, on the world as it stands at that tick. It drops another player's unit or seat, an index outside its table, a point off the map, an out-of-range parameter, `Blast` (a test fixture) and unknown kinds. Every peer drops the same orders, so they stay in sync. Before this, a crafted `SetIntent` crashed every peer, and a client could steer the host's aircraft or units. Offline play and the G4 battle scenarios do not go through it.
+- **`sim/Net/Lan.cs`** runs over UDP: Hello (AI flag + name) / Welcome / Setup / SetupAck or Refuse, with a session tag.
+  - A client takes the Setup only once it holds a slot (a lost Welcome used to give it slot -1), and acknowledges only after building its world.
+  - If it cannot build the battle (map missing, map data different per `MapSha`, unknown deck), it sends Refuse with the reason. The host then ends the session and shows the reason.
+  - The host drops a client's lockstep packets until that client has acknowledged the Setup.
+- **Game:**
+  - The lobby gains Host LAN game, Join by IP and Start LAN battle (UDP 47610, or `--lan-port`). The host builds and validates the battle before sending it, and refuses custom decks online.
+  - The battle view uses the local slot (`_me`) for its units, seats, paint, flight, radio and support events. Allies show as friendly and stay visible.
+  - Pause and speed-up are off online. The debrief headline and result judge from your own team. The LAN endpoint keeps pumping through the debrief so the last packets get through.
+- **Checks:**
+  - G4 `lan_2v2_udp_loss5`: 4 peers on real localhost sockets, a 10-minute battle on the Fulda map with slot 0 human, 5% of datagrams dropped. It checks desyncs 0, ≥ 1,600 hash checks, matching replays, client orders executed and units destroyed.
+  - Unit tests:
+    - 3 peers over lossy UDP.
+    - The genuine packet accepted while the same bytes relabelled for another player are not.
+    - A forged max ack still leaves resends going.
+    - Crafted orders (out-of-range seat, another player's unit, `Blast`, negative support index) dropped on both peers with no desync.
+    - A lost Welcome, then the Setup taken only with a slot.
+    - A missing or different map fails with a reason.
+    - A corrupted client detected (≥ 4 desyncs).
+  - G13 `ux_19_lan`: the game hosts from the lobby and the headless `--net-bot` joins over UDP. At tick 600 (within 60 s) the host has made 27–30 hash comparisons with no desync and stalled at most 20 polls. `check_ux` fails if the bot never joined.
+- **Evidence:** `build/reports/20261010T015202Z-gates-G1-G2-G3-G4-G5-G6-G9-G10-G11-G12-G13-G14.md` (G1–G3, G5, G6, G9–G11, G13, G14 pass; G13 includes `ux_19_lan`) and `build/reports/20261010T020905Z-gates-G4-G12.md` (G4 including `lan_2v2_udp_loss5`, all 122 mutants killed; G12). The full run's G4 failure was the mutant harness not copying `maps.json` into its temp data root, so every mutant run crashed and was reported as "survived". The harness now copies it and reports a crash as CRASHED. Its G12 failure was formatting.
+- **Not done, so NET-01 stays in progress.** No per-player deck choice in the LAN lobby (the host's skirmish decks apply). No reconnect over real sockets (only in the simulated session). A peer that leaves stalls the others.
+- **Latent, for the terrain mesh.** The view draws sim (x, y) as Godot (x, z) with the camera facing +Z, so screen-right is −X: real maps would render mirrored east-west. Fix the axis mapping when the ground mesh lands, with a test on a known landform.
+
+## D077: Smaller fixes from the reviewer follow-up list
+
+- The legacy roster path validates stealth through `BattleRules.NonNegative`, like the sourced roster.
+- `generate_briefings.py` writes portable sidecars (`portable()`).
+- `generate_music.py` re-measures a stem whose file hash differs from the hash recorded in its sidecar, and records the hash. It has not been re-run, so existing sidecars get the hash on the next run.
+- Second-pass review minors, open: the host shows no on-screen reason when a client refuses and other clients are not told the session ended; QueueTask carries its deadline in the order's player field (no UI sends it yet); the crafted-orders test does not assert the orders reached the host before screening; `ux_19` has little headroom on `stalled_polls` (13 at start-up, limit 20).

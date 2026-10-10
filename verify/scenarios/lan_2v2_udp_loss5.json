@@ -1,0 +1,45 @@
+{
+  "id": "lan_2v2_udp_loss5",
+  "requirement": "NET-01",
+  "type": "lan",
+  "players_per_side": 2,
+  "peers": 4,
+  "deck0": "us_1989_armored",
+  "deck1": "su_1989_motor_rifle",
+  "map": "fulda",
+  "ticks": 12000,
+  "loss_pct": 5,
+  "input_delay_ticks": 4,
+  "seed": 23,
+  "timeout_s": 300,
+  "script": "moves",
+  "description": "A 10-minute (12 000-tick) 2v2 LAN battle on the Fulda Gap map: a host and three clients in one process, each on its own localhost UDP socket, joining through the real Hello/Welcome/Setup handshake, each building its world from the setup bytes it received (slot 0 is a human slot with its XO off; the others are AI players), and exchanging inputs through LockstepPeer while 5% of every datagram is dropped on purpose. State hashes compared every second never differ, every peer's confirmed input log replays to the same final state, client orders reach the host, and the battle progresses.",
+  "assert": [
+    {
+      "check": "desyncs",
+      "value": 0
+    },
+    {
+      "check": "hash_checks_at_least",
+      "value": 1600
+    },
+    {
+      "check": "replay_matches"
+    },
+    {
+      "check": "datagrams_dropped_at_least",
+      "value": 100
+    },
+    {
+      "check": "orders_exchanged_at_least",
+      "value": 80
+    },
+    {
+      "check": "battle_progressed",
+      "value": 40
+    }
+  ],
+  "humans": [
+    0
+  ]
+}
