@@ -1096,3 +1096,11 @@ Three independent reviewer agents (sim determinism, gate integrity, data and lic
 - `generate_briefings.py` writes portable sidecars (`portable()`).
 - `generate_music.py` re-measures a stem whose file hash differs from the hash recorded in its sidecar, and records the hash. It has not been re-run, so existing sidecars get the hash on the next run.
 - Second-pass review minors, open: the host shows no on-screen reason when a client refuses and other clients are not told the session ended; QueueTask carries its deadline in the order's player field (no UI sends it yet); the crafted-orders test does not assert the orders reached the host before screening; `ux_19` has little headroom on `stalled_polls` (13 at start-up, limit 20).
+
+## D078: Public GitHub repo under GPL-3.0
+
+- **Donovan's call** (2026-10-10): publish as a public repo, `github.com/baney75/six-actual`, licensed GPL-3.0. Third-party material keeps its own terms (LEGAL.md "Project license").
+- **Before the first push:**
+  - The tracked tree was scanned: no secrets, keys, private references, or the owner's email in file contents. `refs_private/` is gitignored, and the largest file is 2 MB.
+  - The 15 local commits were rewritten from the personal Gmail address to the GitHub noreply address, at Donovan's choice. This repo's `user.email` is set to the noreply address.
+- Only `main` is pushed. The merged work branches stay local.

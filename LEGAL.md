@@ -1,5 +1,9 @@
 # Legal
 
+## Project license
+
+Six Actual's code and Claude-authored content (scripts, sim, game, scripted meshes, generated audio and data) are released under the GNU General Public License v3.0 (`LICENSE`), chosen by Donovan on 2026-10-10. Third-party material keeps its own terms, listed below: the Copernicus DEM-derived map heightfields (attribution and no-liability notice required), OpenStreetMap-derived statistics (ODbL), and the public-domain or CC references in `assets_src/refs/`. The local generation models' licences apply to the models, not to this repo.
+
 Working title: Six Actual. A store, trademark, and domain collision check is due before Phase 1 ends. Not run yet.
 
 Unit names in the brief use real military designations. Do not add manufacturer logos or trademarked branding. Anything that needs a license review before a commercial release gets a line here.
