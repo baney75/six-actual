@@ -1,16 +1,17 @@
 # State
 
-Updated 2026-10-09 21:05Z. Phase: **1 (Cold War vertical slice)**, with the sim extended across all three eras. Nothing is committed; commits wait for Donovan.
+Updated 2026-10-10 02:15Z. Phase: **1 (Cold War vertical slice)**, with the sim extended across all three eras. Work merges to `main` after adversarial review (Donovan's standing approval); there is no git remote, so nothing is pushed.
 
 ## Verified (62)
 
 SIM-01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13; CMD-01, 02, 03, 04, 05, 06, 08; FLY-01, 02, 03, 04, 07; SUP-01, 02, 03, 04, 05; ERA-01, 04; UX-01, 02, 03; MODE-01, 02; AUD-01, 02, 03; NET-02; GS-01, 02, 03, 05; QA-01, 02, 03; DET-08; MEC-01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13.
 
-**Latest full gate set**, all green:
-- G1–G4, G9–G14: `build/reports/20261009T205008Z-gates-G1-G2-G3-G4-G9-G10-G11-G12-G13-G14.md`
-- G5: `build/reports/20261009T210319Z-gates-G5.md`
-- G6: `build/reports/20261009T210439Z-gates-G6.md` (tick p95 3.19 ms; the limit was tightened to 5.0, D072)
-- G13 runs 20 recorded input scripts. Gates fail on any failing command (D058).
+**Latest gate set**, every built gate green:
+- G1–G3, G5, G6, G9–G11, G13, G14: `build/reports/20261010T015202Z-gates-G1-G2-G3-G4-G5-G6-G9-G10-G11-G12-G13-G14.md`
+- G4 (135 scenarios, 122/122 mutants) and G12: `build/reports/20261010T020905Z-gates-G4-G12.md`
+- G13 runs 21 recorded input scripts, including `ux_19_lan` (game hosts, a headless bot joins over UDP).
+
+**In progress this block:** ERA-03 (real DEM maps; G8 missing), NET-01 (LAN play done; per-player decks and real-socket reconnect missing). PERF-01/02 have a harness and preliminary numbers only.
 
 ## In the sim now
 
@@ -24,7 +25,8 @@ SIM-01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13; CMD-01, 02, 03, 04, 05, 
   - Command: XO plus 8 seats, AI deployment and artillery doctrine.
   - Flight: Take Control and the flight model, loadouts, threat warnings.
 - **Grand strategy (`sim/GrandStrategy/`).** 3 theaters; production, research, supply, armies, commanders; RTS or auto-resolved battles; diplomacy; nuclear escalation; AI; save/load.
-- **Network (`sim/Net/`).** Deterministic lockstep: 8 clients, latency, loss, replays, reconnect.
+- **Network (`sim/Net/`).** Deterministic lockstep: 8 clients, latency, loss, replays, reconnect (simulated). LAN / direct-IP play over UDP: host-relay `LockstepPeer`, `NetOrders` screening, Hello/Welcome/Setup/Refuse handshake (D076).
+- **Maps.** 12 real 8x8 km heightfields from the Copernicus DEM GLO-30, 4 per era (D075).
 - **Data.** 194 units and 56 decks across 3 eras and 14 factions (D054, D055, D057). Every number is sourced in `assets_src/research/*.json` or marked as a design value. Haiku agents cross-checked the new entries against their pages, and confirmed errors were fixed.
 
 ## Style board (Cold War) — blockout status

@@ -624,3 +624,27 @@ The pipeline additions (store erasing, the gear-up flag, the twin-rudder node ru
   - Cause: `HasLine` did three divisions plus a smoke-list scan per 8 m sample.
   - Fix: one cell lookup per sample, and the smoke scan only when smoke is active.
   - Check: bench hash unchanged (`c282297aea0879ab`), tick p95 3.1 ms, ratchet limit now 5.0 ms.
+
+## 2026-10-10 02:15Z: ERA-03 maps, NET-01 LAN play, PERF harness (D074–D077)
+
+- **Reports:** `build/reports/20261010T015202Z-gates-G1-G2-G3-G4-G5-G6-G9-G10-G11-G12-G13-G14.md` and `build/reports/20261010T020905Z-gates-G4-G12.md` (every built gate green across the two).
+- **ERA-03 (in progress):** 12 real 8x8 km heightfields, 4 per era, from the Copernicus DEM GLO-30, with the licence notice on the credits screen. In the sim and selectable in skirmish; the 3D ground is still a flat placeholder (labelled in-game). G8 is not built.
+- **NET-01 (in progress):** LAN / direct-IP play over UDP with a host-relay lockstep peer, order screening and a refuse path. Verified over real sockets in G4 and from the game in G13. Steam deferred by Donovan.
+- **PERF-01/02 (todo):** capture harness and checker built; skirmish-scene numbers are preliminary only (benchmark scene missing).
+- **Field note: the perf capture leaked into its own memory number.**
+  - Symptom: RSS +13.6% over 20 minutes.
+  - Cause: the capture stored every frame time (about 2.7 M doubles).
+  - Fix: preallocated histograms.
+  - Check: forced-GC census flat (32.5 → 32.8 MB), soak growth 1.74%.
+- **Field note: a lockstep receive check stalled every peer.**
+  - Symptom: a review test hung at tick 304.
+  - Cause: one forbidden order made the host drop the whole tick, which then never arrived.
+  - Fix: strip mis-stamped orders, always accept the tick, screen at execution.
+  - Check: `LanTests.Orders_a_player_may_not_give_are_dropped_on_every_peer`.
+- **Field note: a new data file broke the mutant harness.**
+  - Symptom: every G4 mutant "survived".
+  - Cause: the temp data root lacked `maps.json`, so each run crashed before printing.
+  - Fix: copy it, and report crashes as CRASHED.
+  - Check: 122/122 mutants killed.
+- **Review:** three adversarial reviewers (net, maps/perf, gates) rejected the first candidate (PERF-02 overclaim, player-0 assumptions online, lost-Welcome crash, forged-ack and crafted-order crashes, stranded lobby, vacuous forgery test), then approved after the fixes.
+
